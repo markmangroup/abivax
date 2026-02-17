@@ -1,0 +1,67 @@
+{
+  "notes": [
+    {
+      "id": "20260212-netsuite-demo",
+      "createdAt": "2026-02-12T10:30:00.000-05:00",
+      "title": "NetSuite/Oracle Demo — Value Proposition & Scoping",
+      "rawText": "NetSuite Customer Success team presentation. Attendees: Mike (remote), Camille Girard, Jade Nguyen, Ben Alaya Aymen from Abivax. Venceslas d'Echallens (NetSuite CS Advisor), Laurent Bailly, Levon, Jamal from NetSuite.\n\nKey Numbers:\n- Implementation: 449,200 EUR (fixed bid)\n- Annual licenses: 134,020 EUR (after 29% discount)\n- 5-year licenses: ~670k EUR\n- Total 5-year: ~1.12M EUR\n\nScope Included:\n- R2R: Global COA, 1 parent + 2 subs (France, USA), multi-GAAP (IFRS, French GAAP, US GAAP), automated consolidation, journal entries\n- P2P: Vendor master, PO, vendor bills, 3-way matching, approval flows (vendors, PO, bills, banks), advanced procurement\n- Design to Build: Item master, inventory management, advanced inventory module\n- French/US localization: Included\n- Users: 42 general access, 17 employee self-serve, 2 specialized view/approve\n\nOut of Scope:\n- OCR/Invoice capture - requires ZoneCapture SuiteApp (separate subscription) - RED FLAG vs SAP Ariba native\n- API integration with NSIP platform\n\nTimeline:\n- Kickoff: April 1, 2026\n- Engage phase: Mar-Apr 26\n- Drive phase: Apr-Aug 26\n- Enable phase (UAT): Aug-Oct 26\n- Convert phase (go-live): Oct-Dec 26\n- Go-live target: Dec 2026 / Jan 2027 - CAN HIT 1/1/27\n\nSupport Hours:\n- Integration bucket: 480 hours\n- Specific development: 1,200 hours\n- PDF printout: 80 hours\n- UAT support: 80 hours\n- Post go-live: 80 hours\n\nMike asked about OCR - they confirmed it's not native, requires separate subscription to ZoneCapture or similar certified SuiteApp.\n\nNext Steps:\n- Friday call with Camille to get SAP/KPMG implementation cost for comparison\n- Discuss Sage sunset timing",
+      "summary": {
+        "truthsNow": [
+          "NetSuite total 5-year cost: ~1.12M EUR (449k implementation + 670k licenses)",
+          "NetSuite can hit 1/1/27 go-live with April kickoff",
+          "OCR not native to NetSuite - requires ZoneCapture add-on (extra cost)",
+          "NetSuite implements their own tool (single vendor accountability)",
+          "Multi-GAAP (IFRS, French GAAP, US GAAP) included in scope"
+        ],
+        "decisions": [],
+        "risks": [
+          "OCR add-on gap vs SAP Ariba native invoice capture",
+          "NetSuite 1.12M EUR vs SAP 554k + unknown implementation - cost comparison incomplete"
+        ],
+        "openQuestions": [
+          "SAP/KPMG implementation cost - need for apples-to-apples comparison",
+          "ZoneCapture OCR annual cost",
+          "Sage sunset date - when does reporting move to new ERP?"
+        ],
+        "nextConstraints": [
+          "Friday call with Camille - get SAP implementation estimate",
+          "Decision needed soon to hit April kickoff and 1/1/27 go-live"
+        ]
+      }
+    },
+    {
+      "id": "20260210-hema-matt-intro",
+      "createdAt": "2026-02-10T10:00:00.000-05:00",
+      "title": "Hema/Matt Intro Call — ERP Priorities & P2P Scope",
+      "rawText": "Erp priorities:\n\nLaunching end of 2027 in the US publicly. Need to replace Sage \n\n1. Substituting and replacing core\n2. Sox and speed\n3. Expansion - No procurement system currently - need to expand current core Sage abilities\n4. \n\n\nFly window fix \n\nMatt Epley role:\n- Boots on the ground accountant\n- SEC reporting for NADAQ\n- Financial press release\n- Equity tracking - Certent is owned by Insight \n    - Certant Equity Solution\n    - Matt does all accounting and setup \n    - (IFRS adjustment needing as well booked quarterly)\n    - Certant is a backend tool, not front-facing, used primarily for tracking\n    - Activa (sp?) French company that manages this for users\n        - US side not particular thrilled with it, not the most user friendly\n        - Hema/Matt are basically the only ones that are updating it\n        - Operates like an expense program accounting system for \n        - Audit for sox purposes happening this year\n        - Because these are all French IFRS, they are adjustments and not needed to go into the ERP\n        - Hema thinks that with the new ERP she DOES want it in there because the ERP has to have multi-gap \n\nHema views:\n- No inhouse manufacturing - all done by sequence, thermofisher, and others (Fill gaps)\n- Dont need a manufacturing model right now at all - always should be external\n- When we sell…. Will be a 3rd party logistics provider… and they would give us reporting that feeds into sales. \n- All vendors are GXP compliant\n- Customer level details not needed in ERP either as they can come from the 3rd party logistics provider\n- Need Revenue by product (single journal entry)\n    - Same with AR, aging, etc… \"we are a small biotech and we dont want to take that on\"\n    - \"DO NOT LET SUPPLY CHAIN DERAIL THE IMPLEMENTATION\" \n\nCritical things needed in Hema's view\n    - P2P - feels this is critical\n    - Financial reporting -Journal entries - park/post\n    - Reporting by cost center\n    - Consolidation\n\nchallenge: US and French regulations that we have to deal with.\n\nOverview per Hema:\nDidier sits atop, Hema does \"anything Didier doesn't want to do\", pat maloy - investor relations (fundraising/ir)\n\nUnder Hema - responsible for: FP&A, treasury, tax, accounting \n- Although different entities but look at everything globally\n- French also has finance people (Trinidad - accounting manager that drives consolidation process)\n- Frederick is FP&A lead\n- P2P team - Juliette (reports to Phillipe) and Kimberly Gordon (US contractor). Juliette also has a staff AP person. \n\nP2P Current process:\n- Use docushare - \"glorified Sharepoint\" - Matt\n- Some drop-down currently, but no automation exists \n- Approver limits, etc are basic\n- Need to then go into the SAGE entry module for purchase entries and need to type that in (all hand keyed)\n- ~100 vendors (need to get better volume metrics)\n- LLC ~20 invoices per month but has been increasing\n- Correct sox controls not being met and material weaknesses haven't been addressed - doing it manually is too much (not a material misstatement) - investors aren't worried about it yet so sounds like primarily an audit issue that needs to be cleared. \n- French PWC is the auditor\n- Process right now is initiate a PO (tracked manually)\n- Essential to have PO approvals and monitoring of budgeting.\n- 1099 functionality would be a great benefit - currently doesn't exist for S.A. \n    - Get an extract of all expenses paid to US vendors from France side and then have to do a ton of work \n    - Not a must-have but huge benefit\n    - Currently consult with KPMG Tax for the 1099 process\n  \nHave an IT function mostly driven by France - Kristoph and Jade (pronounced Jahd)\n\nGo live 1/1/27 - need P2P and Financial Reporting\n\nAbout the French team: \n- French team \"very prickly\" -hema. \n- They might be nervous now that Americans are getting hired more and was traditionally a French company\n- Need to be cognizant of the perception\n\nCamille - worth talking about Ariba/Tungsten\n\t- \"spend a lot of time with her\" - Hema \"we did tons of work with her and she has all the stuff you might be looking for like volumes and processes.\" \n\n\nAnother system being used is Adaptive (FP&A tool)\n\nFinancial reporting - exports like my old days and all manual, so want\n\n\nSAP/KPMG discussion:\n\n",
+      "summary": {
+        "truthsNow": [
+          "Go-live 1/1/27; US public launch end of 2027; Sage must be replaced",
+          "ERP priorities: core replacement, SOX/speed, expansion—no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage",
+          "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical",
+          "P2P today: Docushare, manual PO tracking; SOX material weaknesses unaddressed; French PWC auditor",
+          "SAP commercial offer presented: 554k€/5yr, AACV 110.8k€; Finance, Supply Chain, Ariba, BTPEA; valid through end Q1 2026"
+        ],
+        "decisions": [
+          "Scope excludes manufacturing; external logistics/provider model",
+          "SAP Lot 1 quantities voluntarily reduced for 2026 cash flow; 5yr contract, option to extend to 7yr"
+        ],
+        "risks": [
+          "SOX material weaknesses; manual P2P unsustainable for audit clearance",
+          "US/French regulatory duality; French team perception risk as US hires increase",
+          "Offer subject to SAP Finance approval; deadline end Q1 2026"
+        ],
+        "openQuestions": [
+          "Ariba vs Tungsten—Camille has volumes and process data; engage for scoping",
+          "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system",
+          "1099: must-have or nice-to-have given current KPMG Tax workaround"
+        ],
+        "nextConstraints": [
+          "Go-live 1/1/27 non-negotiable for P2P and financial reporting",
+          "SAP offer valid until end Q1 2026",
+          "PO approvals and budget monitoring required in P2P scope"
+        ]
+      }
+    }
+  ]
+}

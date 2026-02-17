@@ -1,0 +1,108 @@
+{
+  "people": [
+    {
+      "id": "didier",
+      "name": "Didier",
+      "role": "CEO / Top",
+      "entity": "Global",
+      "needThem": "Executive sponsor",
+      "notes": "Sits atop; Hema does anything he doesn't want to do."
+    },
+    {
+      "id": "hema",
+      "name": "Hema Kesh",
+      "role": "Finance lead (FP&A, treasury, tax, accounting)",
+      "entity": "Global",
+      "needThem": "Critical — key stakeholder, drives ERP scope",
+      "notes": "No manufacturing in ERP; external CMOs. P2P + financial reporting critical. \"DO NOT LET SUPPLY CHAIN DERAIL.\" French team \"very prickly.\""
+    },
+    {
+      "id": "pat-maloy",
+      "name": "Pat Maloy",
+      "role": "Investor relations (fundraising/IR)",
+      "entity": "Global",
+      "needThem": "Context only",
+      "notes": "Finance-adjacent, not ERP core."
+    },
+    {
+      "id": "trinidad",
+      "name": "Trinidad",
+      "role": "Accounting manager, drives consolidation",
+      "entity": "France",
+      "needThem": "Critical for consolidation",
+      "notes": "French finance."
+    },
+    {
+      "id": "frederick",
+      "name": "Frederick",
+      "role": "FP&A lead",
+      "entity": "France",
+      "needThem": "FP&A scope",
+      "notes": ""
+    },
+    {
+      "id": "juliette",
+      "name": "Juliette",
+      "role": "P2P, reports to Philippe",
+      "entity": "France",
+      "needThem": "Critical — P2P process owner",
+      "notes": "Has staff AP person. Juliette + Kimberly = P2P team."
+    },
+    {
+      "id": "kimberly-gordon",
+      "name": "Kimberly Gordon",
+      "role": "P2P contractor",
+      "entity": "US",
+      "needThem": "Critical — P2P US side",
+      "notes": "US contractor."
+    },
+    {
+      "id": "philippe",
+      "name": "Philippe",
+      "role": "Reports to Juliette",
+      "entity": "France",
+      "needThem": "P2P chain",
+      "notes": "Juliette reports to Philippe."
+    },
+    {
+      "id": "matt-epley",
+      "name": "Matt Epley",
+      "role": "Boots-on-ground accountant",
+      "entity": "US",
+      "needThem": "Critical — SEC, equity, reporting",
+      "notes": "SEC/NADAQ reporting, financial press, equity (Certent). Activa—US not thrilled; Hema/Matt main updaters. IFRS adjustments quarterly."
+    },
+    {
+      "id": "kristoph",
+      "name": "Kristoph",
+      "role": "IT",
+      "entity": "France",
+      "needThem": "IT decisions",
+      "notes": "IT mostly France-driven."
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "role": "IT",
+      "entity": "France",
+      "needThem": "IT decisions",
+      "notes": "Pronounced Jahd. IT France-driven."
+    },
+    {
+      "id": "thelma",
+      "name": "Thelma",
+      "role": "Meeting organizer",
+      "entity": "Abivax",
+      "needThem": "Context",
+      "notes": "Invited to NetSuite/Oracle demo Feb 12."
+    },
+    {
+      "id": "camille",
+      "name": "Camille",
+      "role": "Ariba/Tungsten experience",
+      "entity": "External or internal",
+      "needThem": "Engage — has volumes, processes",
+      "notes": "\"Spend a lot of time with her.\" Hema: \"We did tons of work with her and she has all the stuff you might be looking for like volumes and processes.\""
+    }
+  ]
+}

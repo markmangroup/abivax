@@ -1,0 +1,22 @@
+{
+  "meetings": [
+    {
+      "id": "netsuite-demo-20260212",
+      "title": "NetSuite/Oracle demonstration",
+      "date": "2026-02-12",
+      "time": "10:30 am EST",
+      "location": "Microsoft Teams (Salle Crohn)",
+      "organizer": "Thelma",
+      "attendees": "16 invited (2 yes, 14 awaiting)",
+      "purpose": "NetSuite pitch/demo vs SAP. ERP evaluation. French session all day (modules, in the weeds); they switch to English toward the end for you.",
+      "prep": [
+        "You join 10:30am EST for the English portion. French team had modules/deep-dive earlier.",
+        "Compare: SAP 554k€/5yr, AACV 110.8k€, valid Q1 2026 — what does NetSuite offer?",
+        "Must-have scope: P2P, financial reporting (park/post), cost center, consolidation. No manufacturing.",
+        "US/French multi-entity, IFRS. Go-live 1/1/27 non-negotiable.",
+        "Ask: implementation timeline, French/localization, Ariba vs NetSuite P2P."
+      ],
+      "link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjJIM2Z|YTctNTgzZC00MTI4LTk0NzgtZGVjMmM1NzQ3ODMw%40thread.v2/0?context=%7b%22Tid%22%3a%22deff24bb-2089-4400-8c8e-f71e680378b2%22%2c%22Oid%22%3a%22c058eabb-cc5e-43ba-8bfb-204024cf6b47%22%7d"
+    }
+  ]
+}

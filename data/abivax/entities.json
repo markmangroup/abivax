@@ -1,0 +1,735 @@
+{
+  "entities": [
+    {
+      "id": "didier",
+      "name": "Didier",
+      "type": "person",
+      "aliases": [],
+      "description": "CEO of Abivax. Executive sponsor for ERP initiative.",
+      "properties": {
+        "role": "CEO / Top",
+        "entity": "Abivax Global"
+      },
+      "links": ["abivax", "hema"],
+      "notes": "Sits atop; Hema does anything he doesn't want to do.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "hema",
+      "name": "Hema Kesh",
+      "type": "person",
+      "aliases": ["Hema"],
+      "description": "Finance lead responsible for FP&A, treasury, tax, and accounting. Key stakeholder driving ERP scope.",
+      "properties": {
+        "role": "Finance Lead (FP&A, treasury, tax, accounting)",
+        "entity": "Abivax Global",
+        "needLevel": "critical"
+      },
+      "links": ["abivax", "didier", "trinidad", "frederick", "juliette", "kimberly-gordon", "matt-epley", "camille", "p2p", "financial-reporting", "consolidation", "sage", "sap-s4hana"],
+      "notes": "No manufacturing in ERP; external CMOs. P2P + financial reporting critical. \"DO NOT LET SUPPLY CHAIN DERAIL.\" French team \"very prickly.\" Reports directly under Didier.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "pat-maloy",
+      "name": "Pat Maloy",
+      "type": "person",
+      "aliases": ["Pat"],
+      "description": "Investor relations lead handling fundraising and IR.",
+      "properties": {
+        "role": "Investor Relations (fundraising/IR)",
+        "entity": "Abivax Global",
+        "needLevel": "context"
+      },
+      "links": ["abivax"],
+      "notes": "Finance-adjacent, not ERP core.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "trinidad",
+      "name": "Trinidad",
+      "type": "person",
+      "aliases": [],
+      "description": "Accounting manager who drives the consolidation process.",
+      "properties": {
+        "role": "Accounting Manager",
+        "entity": "Abivax France",
+        "needLevel": "critical"
+      },
+      "links": ["abivax-france", "hema", "consolidation", "financial-reporting"],
+      "notes": "French finance. Critical for consolidation.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "frederick",
+      "name": "Frederick",
+      "type": "person",
+      "aliases": [],
+      "description": "FP&A lead on the French finance team.",
+      "properties": {
+        "role": "FP&A Lead",
+        "entity": "Abivax France",
+        "needLevel": "engage"
+      },
+      "links": ["abivax-france", "hema", "adaptive"],
+      "notes": "FP&A scope.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "juliette",
+      "name": "Juliette",
+      "type": "person",
+      "aliases": [],
+      "description": "P2P process owner on the French side. Reports to Philippe and has a staff AP person.",
+      "properties": {
+        "role": "P2P (reports to Philippe)",
+        "entity": "Abivax France",
+        "needLevel": "critical"
+      },
+      "links": ["abivax-france", "philippe", "kimberly-gordon", "p2p", "docushare"],
+      "notes": "Critical — P2P process owner. Juliette + Kimberly = P2P team.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "kimberly-gordon",
+      "name": "Kimberly Gordon",
+      "type": "person",
+      "aliases": ["Kimberly"],
+      "description": "P2P contractor on the US side.",
+      "properties": {
+        "role": "P2P Contractor",
+        "entity": "Abivax US",
+        "needLevel": "critical"
+      },
+      "links": ["abivax-us", "juliette", "p2p"],
+      "notes": "US contractor. Critical — P2P US side.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "philippe",
+      "name": "Philippe",
+      "type": "person",
+      "aliases": [],
+      "description": "Manager of Juliette in the P2P chain.",
+      "properties": {
+        "role": "Juliette's Manager",
+        "entity": "Abivax France",
+        "needLevel": "engage"
+      },
+      "links": ["abivax-france", "juliette", "p2p"],
+      "notes": "Juliette reports to Philippe.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "matt-epley",
+      "name": "Matt Epley",
+      "type": "person",
+      "aliases": ["Matt"],
+      "description": "Boots-on-the-ground accountant handling SEC reporting, financial press releases, and equity tracking.",
+      "properties": {
+        "role": "Accountant (SEC, equity, reporting)",
+        "entity": "Abivax US",
+        "needLevel": "critical"
+      },
+      "links": ["abivax-us", "hema", "certent", "activa", "sox-compliance", "ifrs"],
+      "notes": "SEC/NASDAQ reporting, financial press, equity (Certent). Activa—US not thrilled; Hema/Matt main updaters. IFRS adjustments quarterly.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "kristoph",
+      "name": "Kristoph",
+      "type": "person",
+      "aliases": [],
+      "description": "IT team member based in France.",
+      "properties": {
+        "role": "IT",
+        "entity": "Abivax France",
+        "needLevel": "engage"
+      },
+      "links": ["abivax-france", "jade"],
+      "notes": "IT mostly France-driven.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "jade",
+      "name": "Jade Nguyen",
+      "type": "person",
+      "aliases": ["Jade", "Jahd"],
+      "description": "IT team member based in France.",
+      "properties": {
+        "role": "IT",
+        "entity": "Abivax France",
+        "needLevel": "engage",
+        "pronunciation": "Jahd"
+      },
+      "links": ["abivax-france", "kristoph", "netsuite-demo-20260212"],
+      "notes": "Pronounced Jahd. IT France-driven. Was in Paris conference room for NetSuite demo.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}, {"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-02-12T10:00:00.000Z"
+    },
+    {
+      "id": "thelma",
+      "name": "Thelma",
+      "type": "person",
+      "aliases": [],
+      "description": "Meeting organizer at Abivax.",
+      "properties": {
+        "role": "Meeting Organizer",
+        "entity": "Abivax",
+        "needLevel": "context"
+      },
+      "links": ["abivax", "netsuite-demo-20260212"],
+      "notes": "Invited to NetSuite/Oracle demo Feb 12.",
+      "mentions": [],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "camille",
+      "name": "Camille Girard",
+      "type": "person",
+      "aliases": ["Camille"],
+      "description": "KPMG contractor running the ERP RFP process. Main point of contact for vendor evaluation.",
+      "properties": {
+        "role": "RFP Lead / Contractor",
+        "entity": "KPMG",
+        "needLevel": "critical"
+      },
+      "links": ["kpmg", "sap-s4hana", "netsuite", "hema", "netsuite-demo-20260212"],
+      "notes": "Main contact managing the RFP process. Meeting with Mike on Friday 2/14 to discuss SAP implementation costs and next steps. Was in Paris conference room for NetSuite demo.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}, {"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-02-12T10:00:00.000Z"
+    },
+    {
+      "id": "venceslas-dechallens",
+      "name": "Venceslas d'Echallens",
+      "type": "person",
+      "aliases": ["Venceslas"],
+      "description": "NetSuite Customer Success Advisor. Part of NetSuite's delivery team for Abivax evaluation.",
+      "properties": {
+        "role": "NetSuite CS Advisor",
+        "entity": "Oracle NetSuite",
+        "appearance": "Bald, glasses, dark blue jacket"
+      },
+      "links": ["netsuite", "oracle", "netsuite-demo-20260212"],
+      "notes": "Led the NetSuite demo on 2/12. In Paris conference room. Part of the team handling all of Europe.",
+      "mentions": [{"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "createdAt": "2026-02-12T10:00:00.000Z",
+      "updatedAt": "2026-02-12T10:00:00.000Z"
+    },
+    {
+      "id": "sage",
+      "name": "Sage",
+      "type": "system",
+      "aliases": [],
+      "description": "Current ERP system used by Abivax. Manual entry, lacks SOX controls. Must be replaced by Jan 1, 2027.",
+      "properties": {
+        "status": "current",
+        "category": "ERP",
+        "limitations": ["Manual PO entry", "No automation", "SOX material weaknesses"]
+      },
+      "links": ["abivax", "sage-sunset", "p2p", "matt-epley"],
+      "notes": "~100 vendors, ~20 LLC invoices/month manually keyed. SOX controls not being met.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "sap-s4hana",
+      "name": "SAP S/4HANA",
+      "type": "system",
+      "aliases": ["SAP", "S/4HANA"],
+      "description": "Proposed ERP replacement. Commercial offer presented with Finance, Supply Chain, Ariba, BTPEA modules.",
+      "properties": {
+        "status": "proposed",
+        "category": "ERP",
+        "offer": {
+          "total5yr": 554119,
+          "currency": "EUR",
+          "aacv": 110824,
+          "validUntil": "2026-Q1"
+        },
+        "modules": ["SAP Finance Base", "SAP Finance & Supply Chain", "SAP Ariba Central Invoice Management", "SAP BTPEA Build Automation", "SAP AI Units"],
+        "terms": ["5-year contract, option to extend to 7", "CPI cap 3.3% from 2027", "2026 quantities reduced for cash flow"]
+      },
+      "links": ["sap-company", "ariba", "sap-offer-expiry", "hema", "erp-go-live"],
+      "notes": "No manufacturing in scope (external CMO model). Offer subject to SAP Finance approval.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "netsuite",
+      "name": "NetSuite",
+      "type": "system",
+      "aliases": ["Oracle NetSuite"],
+      "description": "Alternative ERP being evaluated. Demo completed Feb 12, 2026. In-house implementation by NetSuite Customer Success team.",
+      "properties": {
+        "status": "evaluating",
+        "category": "ERP",
+        "offer": {
+          "implementationCost": 449200,
+          "annualLicenseCost": 134020,
+          "fiveYearLicenseCost": 670098,
+          "totalFiveYear": 1119298,
+          "currency": "EUR",
+          "discount": "29%",
+          "kickoffDate": "2026-04-01",
+          "goLiveTarget": "2026-12 / 2027-01"
+        },
+        "modules": ["SuiteSuccess Financials Premium", "Advanced Electronic Bank Payments", "Advanced Order Management", "CRM", "Core ERP", "Financial Management", "Fixed Asset Management", "OneWorld", "Procurement Mid-Market", "Inventory Management", "Sandbox", "Premium Support"],
+        "users": {
+          "generalAccess": 42,
+          "employeeSelfServ": 17,
+          "specializedViewApprove": 2
+        },
+        "scope": ["P2P (PO, vendor bills, 3-way matching, approval flows)", "R2R (Global COA, consolidation, journal entries)", "Multi-entity (1 parent, 2 subs: France, USA)", "Multi-GAAP (IFRS, French GAAP, US GAAP)", "French/US localization included"],
+        "outOfScope": ["OCR/Invoice capture (requires ZoneCapture add-on)", "API integration with NSIP platform"],
+        "implementedBy": "NetSuite Customer Success (in-house)"
+      },
+      "links": ["oracle", "netsuite-demo-20260212", "venceslas-dechallens"],
+      "notes": "Demo completed 2/12. Total 5-year cost ~1.12M EUR (vs SAP 554k licenses + unknown implementation). OCR not native - red flag for P2P automation. Timeline can hit 1/1/27 with April kickoff. Single vendor accountability (NetSuite implements their own tool).",
+      "mentions": [{"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "createdAt": "2026-02-01T10:00:00.000Z",
+      "updatedAt": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "docushare",
+      "name": "Docushare",
+      "type": "system",
+      "aliases": [],
+      "description": "Current document management used for P2P workflow. Described as a \"glorified SharePoint.\"",
+      "properties": {
+        "status": "current",
+        "category": "Document Management",
+        "limitations": ["No automation", "Basic approver limits", "Manual workflows"]
+      },
+      "links": ["p2p", "juliette", "matt-epley"],
+      "notes": "Some drop-down functionality but no automation. Used in P2P workflow before Sage entry.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "ariba",
+      "name": "Ariba",
+      "type": "system",
+      "aliases": ["SAP Ariba", "Ariba Central Invoice Management"],
+      "description": "SAP's procurement and invoice management solution. Part of SAP offer.",
+      "properties": {
+        "status": "proposed",
+        "category": "Procurement"
+      },
+      "links": ["sap-s4hana", "p2p", "camille"],
+      "notes": "Camille has experience with Ariba. Compare vs Tungsten.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "certent",
+      "name": "Certent",
+      "type": "system",
+      "aliases": ["Certent Equity Solution"],
+      "description": "Equity tracking system owned by Insightful. Backend tool for equity accounting.",
+      "properties": {
+        "status": "current",
+        "category": "Equity Management",
+        "owner": "Insightful"
+      },
+      "links": ["matt-epley", "activa"],
+      "notes": "Not front-facing. Matt does all accounting and setup. IFRS adjustments booked quarterly.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "activa",
+      "name": "Activa",
+      "type": "system",
+      "aliases": [],
+      "description": "French company system that manages equity/expense program for users.",
+      "properties": {
+        "status": "current",
+        "category": "Expense Management"
+      },
+      "links": ["certent", "matt-epley", "hema"],
+      "notes": "US side not thrilled—not user friendly. Hema/Matt main updaters. Operates like expense program accounting system.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "adaptive",
+      "name": "Adaptive",
+      "type": "system",
+      "aliases": ["Adaptive Insights"],
+      "description": "FP&A planning tool currently in use.",
+      "properties": {
+        "status": "current",
+        "category": "FP&A"
+      },
+      "links": ["frederick", "hema"],
+      "notes": "Financial reporting currently done via exports—all manual.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "abivax",
+      "name": "Abivax",
+      "type": "organization",
+      "aliases": ["Abivax Global"],
+      "description": "Biotech company headquartered in France with US operations. Pursuing ERP modernization ahead of US public launch.",
+      "properties": {
+        "industry": "Biotech",
+        "model": "External CMO (no in-house manufacturing)"
+      },
+      "links": ["abivax-france", "abivax-us", "didier", "hema"],
+      "notes": "Launching publicly in US end of 2027. All vendors are GxP compliant. External logistics providers for supply chain.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "abivax-france",
+      "name": "Abivax France",
+      "type": "organization",
+      "aliases": ["French team", "France"],
+      "description": "French entity of Abivax. Handles most IT and has finance team including consolidation.",
+      "properties": {
+        "location": "France",
+        "auditor": "PWC"
+      },
+      "links": ["abivax", "trinidad", "frederick", "juliette", "philippe", "kristoph", "jade", "pwc"],
+      "notes": "French team \"very prickly\" per Hema. May be nervous about increased US hiring. Traditional center of the company.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "abivax-us",
+      "name": "Abivax US",
+      "type": "organization",
+      "aliases": ["US team", "LLC"],
+      "description": "US entity of Abivax. Growing as company prepares for US public launch.",
+      "properties": {
+        "location": "US",
+        "invoiceVolume": "~20/month (increasing)"
+      },
+      "links": ["abivax", "matt-epley", "kimberly-gordon"],
+      "notes": "~20 LLC invoices per month, increasing. US public launch planned for end of 2027.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "pwc",
+      "name": "PWC",
+      "type": "organization",
+      "aliases": ["PricewaterhouseCoopers"],
+      "description": "French auditor for Abivax.",
+      "properties": {
+        "role": "Auditor",
+        "location": "France"
+      },
+      "links": ["abivax-france", "sox-compliance"],
+      "notes": "French PWC is the auditor.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "kpmg",
+      "name": "KPMG",
+      "type": "organization",
+      "aliases": ["KPMG Tax"],
+      "description": "Tax consultant used for 1099 process.",
+      "properties": {
+        "role": "Tax Consultant"
+      },
+      "links": ["abivax-us"],
+      "notes": "Currently consulted for 1099 process workaround.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "sap-company",
+      "name": "SAP (Company)",
+      "type": "organization",
+      "aliases": ["SAP SE"],
+      "description": "Enterprise software vendor. Commercial offer pending approval.",
+      "properties": {
+        "role": "ERP Vendor"
+      },
+      "links": ["sap-s4hana", "ariba"],
+      "notes": "Offer subject to SAP Finance approval; deadline end Q1 2026.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "type": "organization",
+      "aliases": [],
+      "description": "Enterprise software vendor. Parent company of NetSuite.",
+      "properties": {
+        "role": "ERP Vendor"
+      },
+      "links": ["netsuite", "netsuite-demo-20260212"],
+      "notes": "NetSuite demo scheduled for Feb 12.",
+      "mentions": [],
+      "createdAt": "2026-02-01T10:00:00.000Z",
+      "updatedAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "hema-matt-intro-20260210",
+      "name": "Hema/Matt Intro Call",
+      "type": "meeting",
+      "aliases": [],
+      "description": "Hema introducing Mike to Matt Epley. Overview of ERP priorities, P2P current state, org structure, and critical scope.",
+      "properties": {
+        "date": "2026-02-10",
+        "attendees": "Hema, Matt Epley, Mike"
+      },
+      "links": ["hema", "matt-epley", "p2p", "sage", "sox-compliance", "erp-go-live", "financial-reporting", "consolidation"],
+      "notes": "First substantive meeting. Established: P2P and Financial Reporting are critical scope, no manufacturing, go-live 1/1/27 non-negotiable, SOX material weaknesses need addressing.",
+      "mentions": [],
+      "createdAt": "2026-02-10T10:00:00.000Z",
+      "updatedAt": "2026-02-12T10:00:00.000Z"
+    },
+    {
+      "id": "netsuite-demo-20260212",
+      "name": "NetSuite/Oracle Demo",
+      "type": "meeting",
+      "aliases": [],
+      "description": "NetSuite Customer Success team value proposition and scoping presentation. COMPLETED.",
+      "properties": {
+        "date": "2026-02-12",
+        "time": "10:30 AM EST",
+        "location": "Microsoft Teams (Salle Burrill B. Crohn - Paris conference room)",
+        "organizer": "Thelma",
+        "attendees": "Mike Markman (remote), Camille Girard, Jade Nguyen, Ben Alaya Aymen (Abivax Paris). Venceslas d'Echallens, Laurent Bailly, Levon, Jamal (NetSuite team)",
+        "status": "completed",
+        "duration": "~45 minutes"
+      },
+      "links": ["netsuite", "oracle", "thelma", "sap-s4hana", "erp-go-live", "camille", "venceslas-dechallens", "jade"],
+      "notes": "Full scope presentation: R2R, P2P, Design to Build. Key numbers: 449k EUR implementation, 134k EUR/year licenses (670k over 5yr), total ~1.12M EUR. Timeline: April kickoff, Dec/Jan go-live (hits 1/1/27). OCR not included (ZoneCapture add-on required) - flagged as concern vs SAP Ariba native. French/US localization included. Multi-GAAP (IFRS, French GAAP, US GAAP) included. Mike asked about OCR - they confirmed it requires separate subscription.",
+      "mentions": [],
+      "createdAt": "2026-02-01T10:00:00.000Z",
+      "updatedAt": "2026-02-12T12:00:00.000Z"
+    },
+    {
+      "id": "erp-go-live",
+      "name": "ERP Go-Live",
+      "type": "milestone",
+      "aliases": ["Go-Live", "January 1 2027"],
+      "description": "Target date for new ERP system to be live with P2P and Financial Reporting.",
+      "properties": {
+        "date": "2027-01-01",
+        "scope": "P2P + Financial Reporting",
+        "status": "target"
+      },
+      "links": ["sap-s4hana", "netsuite", "p2p", "financial-reporting", "sage-sunset"],
+      "notes": "Non-negotiable. Need P2P and financial reporting live.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "us-public-launch",
+      "name": "US Public Launch",
+      "type": "milestone",
+      "aliases": [],
+      "description": "Commercial launch in the US market.",
+      "properties": {
+        "date": "2027-12-31",
+        "scope": "Commercial",
+        "status": "target"
+      },
+      "links": ["abivax-us", "erp-go-live"],
+      "notes": "ERP must support by go-live.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "sap-offer-expiry",
+      "name": "SAP Offer Expiry",
+      "type": "milestone",
+      "aliases": ["SAP Deadline"],
+      "description": "Deadline for SAP commercial offer validity.",
+      "properties": {
+        "date": "2026-03-31",
+        "scope": "Commercial",
+        "status": "deadline"
+      },
+      "links": ["sap-s4hana", "sap-company"],
+      "notes": "Conditions valid until end Q1 2026. Subject to SAP Finance approval.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "sage-sunset",
+      "name": "Sage Sunset",
+      "type": "milestone",
+      "aliases": [],
+      "description": "Date when Sage will be decommissioned.",
+      "properties": {
+        "date": null,
+        "scope": "Migration",
+        "status": "tbd"
+      },
+      "links": ["sage", "erp-go-live"],
+      "notes": "Define date; part of quarter leverage.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "p2p",
+      "name": "Procure-to-Pay (P2P)",
+      "type": "concept",
+      "aliases": ["P2P", "Procurement", "Purchase-to-Pay"],
+      "description": "End-to-end procurement process from purchase requisition through payment. Critical scope for ERP implementation.",
+      "properties": {
+        "currentState": "Manual (Docushare + Sage)",
+        "targetState": "Automated (SAP Ariba or equivalent)",
+        "priority": "critical"
+      },
+      "links": ["juliette", "kimberly-gordon", "philippe", "docushare", "sage", "ariba", "erp-go-live", "sox-compliance"],
+      "notes": "Current process: Docushare for workflow, manual PO tracking, hand-keyed into Sage. ~100 vendors. SOX controls not being met. Essential to have PO approvals and budget monitoring.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "sox-compliance",
+      "name": "SOX Compliance",
+      "type": "concept",
+      "aliases": ["SOX", "Sarbanes-Oxley"],
+      "description": "Financial reporting and internal control requirements. Current P2P process has material weaknesses.",
+      "properties": {
+        "status": "material weaknesses",
+        "auditYear": 2026
+      },
+      "links": ["p2p", "pwc", "matt-epley", "erp-go-live"],
+      "notes": "Material weaknesses haven't been addressed. Manual process is unsustainable. Not a material misstatement but audit issue. Investors aren't worried yet.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "ifrs",
+      "name": "IFRS",
+      "type": "concept",
+      "aliases": ["International Financial Reporting Standards"],
+      "description": "International accounting standards used by Abivax (French parent). Requires adjustments for US GAAP.",
+      "properties": {},
+      "links": ["gaap", "matt-epley", "certent", "consolidation"],
+      "notes": "French IFRS basis. Adjustments booked quarterly. Hema wants multi-GAAP capability in new ERP.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "gaap",
+      "name": "US GAAP",
+      "type": "concept",
+      "aliases": ["GAAP", "Generally Accepted Accounting Principles"],
+      "description": "US accounting standards. Required for SEC reporting.",
+      "properties": {},
+      "links": ["ifrs", "matt-epley", "abivax-us"],
+      "notes": "Need multi-GAAP support in new ERP for US/French compliance.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "consolidation",
+      "name": "Consolidation",
+      "type": "concept",
+      "aliases": ["Financial Consolidation"],
+      "description": "Process of combining financial statements from multiple entities (US + France).",
+      "properties": {
+        "priority": "critical"
+      },
+      "links": ["trinidad", "hema", "financial-reporting", "ifrs"],
+      "notes": "Trinidad drives consolidation process. Critical need in ERP scope.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "financial-reporting",
+      "name": "Financial Reporting",
+      "type": "concept",
+      "aliases": ["Reporting"],
+      "description": "Journal entries, park/post, reporting by cost center. Critical ERP scope alongside P2P.",
+      "properties": {
+        "currentState": "Manual exports",
+        "priority": "critical"
+      },
+      "links": ["hema", "trinidad", "consolidation", "erp-go-live", "sage"],
+      "notes": "Currently manual exports. Want journal entries park/post, cost center reporting, consolidation.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "no-manufacturing-module",
+      "name": "No Manufacturing Module",
+      "type": "decision",
+      "aliases": [],
+      "description": "Decision to exclude manufacturing from ERP scope. Abivax uses external CMOs.",
+      "properties": {
+        "madeBy": "Hema",
+        "date": "2026-01-12"
+      },
+      "links": ["hema", "sap-s4hana", "external-cmo-model"],
+      "notes": "No in-house manufacturing. All done by Sequence, Thermofisher, and others. Always should be external. \"DO NOT LET SUPPLY CHAIN DERAIL THE IMPLEMENTATION.\"",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "external-cmo-model",
+      "name": "External CMO Model",
+      "type": "decision",
+      "aliases": ["CMO Model"],
+      "description": "Business model where all manufacturing is outsourced to Contract Manufacturing Organizations.",
+      "properties": {
+        "vendors": ["Sequence", "Thermofisher", "Others"]
+      },
+      "links": ["no-manufacturing-module", "abivax"],
+      "notes": "All vendors are GxP compliant. When selling, 3rd party logistics provider handles fulfillment and provides reporting that feeds into sales. Customer-level details not needed in ERP—comes from 3PL.",
+      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "updatedAt": "2026-01-12T10:00:00.000Z"
+    }
+  ]
+}

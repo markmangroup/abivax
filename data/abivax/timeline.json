@@ -1,0 +1,36 @@
+{
+  "milestones": [
+    {
+      "id": "go-live",
+      "date": "2027-01-01",
+      "label": "ERP Go-Live",
+      "scope": "P2P + Financial Reporting",
+      "status": "target",
+      "notes": "Non-negotiable. Need P2P and financial reporting live."
+    },
+    {
+      "id": "us-launch",
+      "date": "2027-12-31",
+      "label": "US Public Launch",
+      "scope": "Commercial",
+      "status": "target",
+      "notes": "ERP must support by go-live."
+    },
+    {
+      "id": "sap-offer-expiry",
+      "date": "2026-03-31",
+      "label": "SAP Offer Validity",
+      "scope": "Commercial",
+      "status": "deadline",
+      "notes": "Conditions valid until end Q1 2026. Subject to SAP Finance approval."
+    },
+    {
+      "id": "sage-sunset",
+      "date": null,
+      "label": "Sage Sunset",
+      "scope": "Migration",
+      "status": "tbd",
+      "notes": "Define date; part of quarter leverage."
+    }
+  ]
+}

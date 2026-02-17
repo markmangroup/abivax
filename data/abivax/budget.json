@@ -1,0 +1,24 @@
+{
+  "sapOffer": {
+    "total5yr": 554119,
+    "currency": "EUR",
+    "aacv": 110824,
+    "validUntil": "2026-Q1",
+    "terms": [
+      "5-year contract, option to extend to 7",
+      "CPI cap 3.3% from 2027",
+      "2026 quantities reduced for cash flow; adjustable"
+    ],
+    "modules": [
+      "SAP Finance Base",
+      "SAP Finance & Supply Chain (dev, full, light users)",
+      "SAP Ariba Central Invoice Management",
+      "SAP BTPEA Build Automation",
+      "SAP AI Units"
+    ]
+  },
+  "keyNumbers": [
+    { "label": "Vendors (current)", "value": "~100" },
+    { "label": "LLC invoices/mo", "value": "~20 (increasing)" }
+  ]
+}
