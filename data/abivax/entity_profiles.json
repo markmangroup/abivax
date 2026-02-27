@@ -1,0 +1,2093 @@
+{
+  "profiles": [
+    {
+      "entityId": "didier",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "board decision gate",
+        "executive signoff",
+        "staffing sufficiency",
+        "timeline protection"
+      ],
+      "noteIds": [
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260219-us-finance-live-outcomes",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260217-it-welcome-call",
+        "20260217-post-11am-review",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Didier Blondel profile baseline -> role: CFO / Executive sponsor; team: Finance; reports to: Marc de Garidel; org: Abivax Global.",
+        "Outlook GAL enrichment -> title Chief Finance Officer; dept Finance; manager Marc de Garidel.",
+        "Org chart in deck confirms Didier > Christophe > Jade/Benjamin/Erwan reporting structure and provider support model (MBVSI/NEI).",
+        "Camille states NetSuite is cheaper across the board pending Excel breakout"
+      ],
+      "decisions": [
+        "Prepare ABIVAX answers before Thursday on negotiation owner, board one-pager expectation, contract-law preference, and legal review...",
+        "Use the deck as primary evidence for IT roadmap/organization slides in board and audit narratives."
+      ],
+      "risks": [
+        "Staffing sufficiency risk could impact delivery confidence for 1/1/27.",
+        "Budget baseline is not confirmed with Hema and Didier"
+      ],
+      "openLoops": [
+        "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
+        "Confirm actual approved 1-year budget with Hema and Didier"
+      ],
+      "lastTouchedAt": "2026-02-23T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "hema",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "budget approval path",
+        "finance scope lock",
+        "p2p + reporting priority",
+        "board-ready tradeoffs"
+      ],
+      "noteIds": [
+        "20260226-erp-decision-netsuite-selected",
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-it-welcome-call",
+        "20260217-post-11am-review",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Hema Kesh profile baseline -> role: Finance lead (FP&A, treasury, tax, accounting); team: Finance; reports to: Didier Blondel; org: Abivax Global.",
+        "Outlook GAL enrichment -> title SVP, Finance; dept Finance; manager Didier Blondel.",
+        "Hema Kesh is linked to workstreams/systems: sage.",
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical",
+        "US finance reporting, SEC workflow, and IFRS bridge are still highly manual and consultant-dependent."
+      ],
+      "decisions": [
+        "Route detailed budget tracking discussion through Fred (FP&A).",
+        "Prepare ABIVAX answers before Thursday on negotiation owner, board one-pager expectation, contract-law preference, and legal review..."
+      ],
+      "risks": [
+        "Budget baseline is not confirmed with Hema and Didier",
+        "Offer subject to SAP Finance approval; deadline end Q1 2026",
+        "Budget discussion timing at audit committee may delay planning clarity."
+      ],
+      "openLoops": [
+        "Confirm actual approved 1-year budget with Hema and Didier",
+        "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
+        "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system",
+        "PO approvals and budget monitoring required in P2P scope"
+      ],
+      "lastTouchedAt": "2026-02-26T15:00:00Z"
+    },
+    {
+      "entityId": "pat-maloy",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Pat Maloy profile baseline -> role: Investor relations (fundraising/IR); team: Investor Relations; reports to: Fabio Cataldi; org: Abivax Global.",
+        "Outlook GAL enrichment -> title Vice President, Global Head of Drug Safety and Pharmacovigilance; dept Drug Safety and Pharmacovigilance (Medical); manager Fabio Cataldi."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "trinidad",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "consolidation ownership",
+        "monthly close coordination",
+        "finance handoff dependencies"
+      ],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260217-post-11am-review",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Trinidad profile baseline -> role: Accounting manager, drives consolidation; team: Finance; reports to: Hema Kesh; org: Abivax France.",
+        "Outlook GAL enrichment -> title Finance & Accounting Director; dept Finance; manager Hema Keshava.",
+        "Finance attendee set includes FP&A, accounting, P2P, and additional roles requiring ownership clarification.",
+        "Trinidad is a central execution voice and highlighted currency handling, workflow approvals, and capacity constraints.",
+        "Final decision meeting is set for February 26, 2026 with Hema, Trinidad, and KPMG"
+      ],
+      "decisions": [
+        "Tag gaps into ERP-addressable vs immediate non-ERP fixes vs management/ownership decisions."
+      ],
+      "risks": [
+        "Trinidad capacity risk could affect timeline and readiness",
+        "Offer subject to SAP Finance approval; deadline end Q1 2026"
+      ],
+      "openLoops": [
+        "Temporary or dedicated finance support may be needed before kickoff",
+        "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?"
+      ],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "frederick",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "budget tracking cadence",
+        "fp&a baseline",
+        "audit committee inputs"
+      ],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260217-it-welcome-call",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Frederick profile baseline -> role: FP&A lead; team: FP&A; reports to: Hema Kesh; org: Abivax France.",
+        "Outlook GAL enrichment -> title Director FP&A; dept Finance; manager Hema Keshava.",
+        "Frederick is linked to workstreams/systems: adaptive."
+      ],
+      "decisions": [
+        "Route detailed budget tracking discussion through Fred (FP&A)."
+      ],
+      "risks": [
+        "Budget discussion timing at audit committee may delay planning clarity.",
+        "SOX material weaknesses; manual P2P unsustainable for audit clearance"
+      ],
+      "openLoops": [
+        "Audit committee timing influences budget confirmation and staffing decisions.",
+        "What approvals and budget-monitoring handoffs should Juliette own post-intro?",
+        "PO approvals and budget monitoring required in P2P scope"
+      ],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "juliette",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "p2p approvals ownership",
+        "ap workflow controls",
+        "budget monitoring handoff"
+      ],
+      "noteIds": [
+        "20260218-finance-intro-prep",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Juliette profile baseline -> role: P2P, reports to Philippe; team: P2P; reports to: Philippe Has staff AP person. Juliette; org: Abivax France.",
+        "Outlook GAL enrichment -> title Accountant; dept Finance; manager Philippe Goncalves.",
+        "Juliette is linked to workstreams/systems: docushare.",
+        "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "What approvals and budget-monitoring handoffs should Juliette own post-intro?",
+        "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?",
+        "PO approvals and budget monitoring required in P2P scope"
+      ],
+      "lastTouchedAt": "2026-02-18T09:55:00.000-05:00"
+    },
+    {
+      "entityId": "kimberly-gordon",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "us p2p execution",
+        "invoice process handoff",
+        "us vendor controls"
+      ],
+      "noteIds": [
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Kimberly Gordon profile baseline -> role: P2P contractor; team: P2P; reports to: Matt Epley; org: Abivax US.",
+        "Outlook GAL enrichment -> title Staff Accountant; dept Finance; manager Matt Epley.",
+        "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
+      ],
+      "decisions": [
+        "Treat workload feasibility and staffing coverage as first-order selection criteria in vendor comparison."
+      ],
+      "risks": [
+        "Manual SEC/IFRS bridge process creates execution and key-person dependency risk."
+      ],
+      "openLoops": [
+        "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?",
+        "Require side-by-side implementation workload model (internal effort + external support) before vendor finalization.",
+        "Ariba vs TungstenÃ¢â‚¬â€Camille has volumes and process data; engage for scoping"
+      ],
+      "lastTouchedAt": "2026-02-19T13:20:00.000-05:00"
+    },
+    {
+      "entityId": "philippe",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "p2p management oversight",
+        "approval governance"
+      ],
+      "noteIds": [
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep"
+      ],
+      "signalsNow": [
+        "Philippe profile baseline -> role: Finance manager (Juliette reports to him); team: P2P; reports to: him; org: Abivax France.",
+        "Outlook GAL enrichment -> title Senior Accounting Manager; dept Finance; manager Trinidad Mesa.",
+        "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "What approvals and budget-monitoring handoffs should Juliette own post-intro?",
+        "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?"
+      ],
+      "lastTouchedAt": "2026-02-18T11:50:00.000-05:00"
+    },
+    {
+      "entityId": "matt-epley",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "sec reporting dependencies",
+        "accounting close impacts",
+        "equity integration constraints"
+      ],
+      "noteIds": [
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Matt Epley profile baseline -> role: Boots-on-ground accountant; team: Finance; reports to: Hema Kesh; org: Abivax US.",
+        "Outlook GAL enrichment -> title Finance Manager; dept Finance; manager Hema Keshava."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Need clarity on FPI-driven reporting calendar milestones and ERP dependencies."
+      ],
+      "lastTouchedAt": "2026-02-19T13:20:00.000-05:00"
+    },
+    {
+      "entityId": "jade",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "it resourcing model",
+        "integration ownership",
+        "sage support boundary",
+        "it involvement session"
+      ],
+      "noteIds": [
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-it-welcome-call",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Jade Nguyen profile baseline -> role: IT lead/contact for ERP integration coordination; team: IT; reports to: Christophe Hennequin; org: Abivax France.",
+        "Outlook GAL enrichment -> title IT Consultant; dept Information Technology; manager Christophe Hennequin.",
+        "Jade is key IT point of contact for ERP involvement model.",
+        "Jade's deck validates the 4-pillar IT operating model: IT Operations, Cybersecurity, Compliance, Business.",
+        "IT currently has limited Sage support and stronger integration coordination responsibilities."
+      ],
+      "decisions": [
+        "Use Jade as primary IT coordination point for integration and access topics.",
+        "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for...",
+        "Use Jade's live ILC/CSVLC tracker as the source to seed system-owner/admin/backup mappings into the ERP system...",
+        "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact."
+      ],
+      "risks": [
+        "If the Sage-centric flow slide and consolidated interface list slip, integration/control design may be built on...",
+        "IT capacity requirements for integration/API support are not yet quantified.",
+        "IT role and resourcing model are not yet explicit, creating execution ambiguity.",
+        "Concurrent IT initiatives (SOX, SOC/SIEM, SOC2, DR, Freshservice rollout) may reduce ERP support capacity unless explicitly..."
+      ],
+      "openLoops": [
+        "When is the Jade deep-dive session and what decisions must be made in it?",
+        "Did Jade deliver the updated Sage-focused slide by Monday, and if not what is the revised...",
+        "Reference slide labels directly in follow-up questions to Jade/Benjamin to speed alignment and reduce re-explaining context.",
+        "Was Trustpair read-only access granted alongside Sage and Agicap, or is it still pending?",
+        "Need explicit IT involvement definition soon to avoid timeline slippage.",
+        "What is the full system-by-system owner/admin/backup map and access model?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+    },
+    {
+      "entityId": "thelma",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [],
+      "signalsNow": [
+        "Thelma profile baseline -> role: Meeting organizer; team: IT; org: Abivax."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Thelma."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "camille",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "rfp process ownership",
+        "vendor comparison assumptions",
+        "implementation estimate inputs"
+      ],
+      "noteIds": [
+        "20260226-erp-decision-netsuite-selected",
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-post-11am-review",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Camille Girard profile baseline -> role: Ariba/Tungsten experience; team: IT; reports to: Aude Garcel; org: KPMG.",
+        "Outlook GAL enrichment -> title Researcher Consultant - Ingénieur Biologie; dept Scientific Affairs; manager Aude Garcel.",
+        "Camille Girard is linked to workstreams/systems: kpmg, netsuite.",
+        "Camille says current status materials do not cover all requested content and need updated vendor elements first.",
+        "Camille states NetSuite is cheaper across the board pending Excel breakout"
+      ],
+      "decisions": [],
+      "risks": [
+        "Undefined negotiation/legal ownership can delay post-selection contracting even if vendor selection is made on time.",
+        "Vendor cost comparison may be challenged until Excel breakout is validated",
+        "Delay in post-selection communication/ownership alignment could compress April mobilization target."
+      ],
+      "openLoops": [
+        "Ariba vs TungstenÃ¢â‚¬â€Camille has volumes and process data; engage for scoping",
+        "Friday call with Camille - get SAP implementation estimate",
+        "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
+        "Thursday KPMG call should close ownership decisions so legal/commercial work can start immediately after selection."
+      ],
+      "lastTouchedAt": "2026-02-26T15:00:00Z"
+    },
+    {
+      "entityId": "venceslas-dechallens",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "Venceslas d'Echallens profile baseline -> role: NetSuite CS Advisor; org: Oracle NetSuite.",
+        "Venceslas d'Echallens is linked to workstreams/systems: netsuite."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Venceslas d'Echallens.",
+        "Confirm team for Venceslas d'Echallens."
+      ],
+      "lastTouchedAt": "2026-02-12T10:30:00.000-05:00"
+    },
+    {
+      "entityId": "sage",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "sunset date",
+        "manual controls risk",
+        "interim support model"
+      ],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-us-finance-live-outcomes",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260217-it-welcome-call",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Sage: ERP/Finance Core used for General ledger and core finance entries.",
+        "Owners (to confirm): business Finance (confirm exact owner); system Finance Operations (confirm); admin IT + Finance admin (confirm).",
+        "Access model noted: Managed devices and role-based app access.",
+        "Mapped integrations (6): SAP Concur -> Sage (batch/as-needed); ADP -> Sage (pay-cycle); Docushare -> Sage (transactional); Sage -> Trustpair (scheduled).",
+        "Access request status: granted-pending-remote-desktop-setup (Read/analysis access for ERP planning)."
+      ],
+      "decisions": [
+        "Treat Sage integration validation as part of ERP design and controls scope (6/6 mapped as active).",
+        "Sage appears in ERP-signaled control areas and should stay in pillar-level design review.",
+        "Scope excludes manufacturing; external logistics/provider model",
+        "Use the CFTI RCMs and remediation tracker as primary source evidence for the Controls pillar baseline...",
+        "Use the deck roadmap to anchor IT capacity-risk questions (ERP vs SOX/cyber/compliance concurrent work)."
+      ],
+      "risks": [
+        "Primary legacy core; limited audit flow per IT call.",
+        "SAP Concur -> Sage: Manual correction and re-entry.",
+        "ADP -> Sage: Manual reload and finance correction.",
+        "Docushare -> Sage: P2P correction and repost.",
+        "Sage -> Trustpair: Escalate to IT + finance controls owner."
+      ],
+      "openLoops": [
+        "Confirm integration owner for SAP Concur -> Sage.",
+        "Confirm integration owner for ADP -> Sage.",
+        "Confirm integration owner for Docushare -> Sage.",
+        "Confirm integration owner for Sage -> Trustpair.",
+        "Confirm integration owner for Sage (US LLC) -> Trustpair.",
+        "Access owner: Denis Jankovic / MBVSI Support."
+      ],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "sap-s4hana",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "offer expiry",
+        "implementation estimate",
+        "scope fit for p2p"
+      ],
+      "noteIds": [
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260217-post-11am-review",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "SAP Concur: Expense Management used for Expense management with manual downstream entry to Sage.",
+        "Owners (to confirm): business Finance (confirm); system Finance (confirm); admin IT/Finance (confirm).",
+        "Access model noted: SaaS with manual entry handoff.",
+        "Mapped integrations (1): SAP Concur -> Sage (batch/as-needed).",
+        "SAP commercial offer presented: 554kÃ¢â€šÂ¬/5yr, AACV 110.8kÃ¢â€šÂ¬; Finance, Supply Chain, Ariba, BTPEA; valid through end Q1 2026"
+      ],
+      "decisions": [
+        "Treat SAP S/4HANA integration validation as part of ERP design and controls scope (1/1 mapped as active).",
+        "SAP Lot 1 quantities voluntarily reduced for 2026 cash flow; 5yr contract, option to extend to...",
+        "Request sent to KPMG to prepare a new post-selection scope document",
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [
+        "Manual bridge to Sage.",
+        "SAP Concur -> Sage: Manual correction and re-entry.",
+        "Offer subject to SAP Finance approval; deadline end Q1 2026",
+        "NetSuite 1.12M EUR vs SAP 554k + unknown implementation - cost comparison incomplete",
+        "OCR add-on gap vs SAP Ariba native invoice capture"
+      ],
+      "openLoops": [
+        "Confirm integration owner for SAP Concur -> Sage.",
+        "Friday call with Camille - get SAP implementation estimate",
+        "SAP offer valid until end Q1 2026",
+        "SAP/KPMG implementation cost - need for apples-to-apples comparison",
+        "Need updated SAP and NetSuite commercial/timeline elements before finalizing the financial slide.",
+        "What objective workload delta exists between SAP and NetSuite plans by phase?"
+      ],
+      "lastTouchedAt": "2026-02-23T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "netsuite",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "implementation ownership",
+        "ocr addon gap",
+        "cost transparency"
+      ],
+      "noteIds": [
+        "20260226-erp-decision-netsuite-selected",
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-netsuite-feedback-pptx",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-post-11am-review",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "NetSuite total 5-year cost: ~1.12M EUR (449k implementation + 670k licenses)",
+        "Jamal Azil appears to be Oracle/NetSuite-side in this thread (jamal.azil@oracle.com).",
+        "OCR not native to NetSuite - requires ZoneCapture add-on (extra cost)",
+        "NetSuite demo feedback highlights unresolved technical assumptions around integrations, treasury interfaces, and e-invoicing model details.",
+        "NetSuite selected on February 26, 2026 (team vote/alignment)."
+      ],
+      "decisions": [
+        "Add Jamal as Oracle/NetSuite contact in entity graph.",
+        "Proceed with NetSuite path.",
+        "Request NetSuite to provide a 2-hour deep-dive slot covering technical assumptions and workload calibration."
+      ],
+      "risks": [
+        "NetSuite 1.12M EUR vs SAP 554k + unknown implementation - cost comparison incomplete",
+        "Integration scope and pricing ambiguity (custom vs free app vs paid app) can distort total cost...",
+        "Delay in post-selection communication/ownership alignment could compress April mobilization target.",
+        "Undefined negotiation/legal ownership can delay post-selection contracting even if vendor selection is made on time.",
+        "Vendor cost comparison may be challenged until Excel breakout is validated"
+      ],
+      "openLoops": [
+        "Confirm Jamal's Oracle/NetSuite role title for technical and offer clarifications.",
+        "Can NetSuite provide concrete TrustPair integration references for comparable implementations?",
+        "Can NetSuite meet French e-invoicing and VAT declaration requirements without additional scope risk?",
+        "Can NetSuite support treasury integrations (Agicap/Kyriba/FIS), hedge accounting, and direct payment flow as needed?",
+        "Keep vendor-thread context scoped to NetSuite evaluation, not finance intro priorities.",
+        "Define exact KPMG role if NetSuite implementation is vendor-led"
+      ],
+      "lastTouchedAt": "2026-02-26T15:00:00Z"
+    },
+    {
+      "entityId": "docushare",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260219-it-landscape-live-outcomes",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Docushare: P2P / Document Workflow used for Purchase order management before Sage replication.",
+        "Owners (to confirm): business Finance P2P (confirm); system Finance P2P (confirm); admin IT France (confirm).",
+        "Access model noted: On-prem access path.",
+        "Mapped integrations (1): Docushare -> Sage (transactional).",
+        "Access request status: to-request (P2P process visibility access)."
+      ],
+      "decisions": [
+        "Treat Docushare integration validation as part of ERP design and controls scope (1/1 mapped as active).",
+        "Docushare appears in ERP-signaled control areas and should stay in pillar-level design review.",
+        "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact.",
+        "Use Jade as primary IT coordination point for integration and access topics."
+      ],
+      "risks": [
+        "On-prem; process details and controls need mapping.",
+        "Docushare -> Sage: P2P correction and repost.",
+        "Manual interfaces create control and audit-evidence risk during transition.",
+        "IT capacity requirements for integration/API support are not yet quantified."
+      ],
+      "openLoops": [
+        "Confirm integration owner for Docushare -> Sage.",
+        "Access owner: P2P owner + IT (confirm).",
+        "Confirm on-prem access prerequisites and request route.",
+        "What is the documented failure workflow for each feed when integrations break?",
+        "Need explicit IT time allocation assumptions before implementation plan lock."
+      ],
+      "lastTouchedAt": "2026-02-19T12:05:00.000-05:00"
+    },
+    {
+      "entityId": "ariba",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260218-finance-intro-live-outcomes",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "SAP commercial offer presented: 554kÃ¢â€šÂ¬/5yr, AACV 110.8kÃ¢â€šÂ¬; Finance, Supply Chain, Ariba, BTPEA; valid through end Q1 2026",
+        "Trinidad is a central execution voice and highlighted currency handling, workflow approvals, and capacity constraints.",
+        "Mike is now positioned as central intake/filter for questions to reduce finance team load."
+      ],
+      "decisions": [
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [
+        "OCR add-on gap vs SAP Ariba native invoice capture"
+      ],
+      "openLoops": [
+        "Ariba vs TungstenÃ¢â‚¬â€Camille has volumes and process data; engage for scoping"
+      ],
+      "lastTouchedAt": "2026-02-18T11:50:00.000-05:00"
+    },
+    {
+      "entityId": "certent",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "ERP priorities: core replacement, SOX/speed, expansionÃ¢â‚¬â€no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage",
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical"
+      ],
+      "decisions": [
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [
+        "SOX material weaknesses; manual P2P unsustainable for audit clearance"
+      ],
+      "openLoops": [
+        "PO approvals and budget monitoring required in P2P scope"
+      ],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "activa",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "ERP priorities: core replacement, SOX/speed, expansionÃ¢â‚¬â€no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage",
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical"
+      ],
+      "decisions": [
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [
+        "SOX material weaknesses; manual P2P unsustainable for audit clearance"
+      ],
+      "openLoops": [
+        "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system"
+      ],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "adaptive",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Adaptive Planning: FP&A / Reporting used for Cost center and planning reporting (needs process confirmation).",
+        "Owners (to confirm): business FP&A (Frederick to confirm); system FP&A (confirm); admin Finance + IT (confirm).",
+        "Access model noted: SaaS with managed access.",
+        "Access request status: to-request (Read-only FP&A reporting visibility).",
+        "ERP priorities: core replacement, SOX/speed, expansionÃ¢â‚¬â€no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage"
+      ],
+      "decisions": [
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [
+        "Referenced as active by finance stakeholders; validate exact outputs and dependencies.",
+        "SOX material weaknesses; manual P2P unsustainable for audit clearance"
+      ],
+      "openLoops": [
+        "Access owner: FP&A owner (Frederick/Adrian confirm).",
+        "Confirm actual usage and request read-only access if active.",
+        "PO approvals and budget monitoring required in P2P scope"
+      ],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "abivax",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260218-netsuite-feedback-pptx",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-it-welcome-call",
+        "20260217-post-11am-review",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "KPMG is now pushing ABIVAX to define internal decision/negotiation/legal ownership for post-selection execution.",
+        "Abivax requested timeline adjustment to April start to match team availability."
+      ],
+      "decisions": [
+        "Prepare ABIVAX answers before Thursday on negotiation owner, board one-pager expectation, contract-law preference, and legal review..."
+      ],
+      "risks": [
+        "If workload assumptions are under-scoped, Abivax capacity risk could impact delivery readiness."
+      ],
+      "openLoops": [
+        "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
+        "What revised timeline (April start) and Abivax workload plan does NetSuite commit to in writing?"
+      ],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "abivax-france",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "COA and cost-center model decisions are now strategic design choices for future US/France scale.",
+        "Mike is now positioned as central intake/filter for questions to reduce finance team load.",
+        "Multi-GAAP (IFRS, French GAAP, US GAAP) included in scope",
+        "P2P today: Docushare, manual PO tracking; SOX material weaknesses unaddressed; French PWC auditor"
+      ],
+      "decisions": [],
+      "risks": [
+        "US/French regulatory duality; French team perception risk as US hires increase",
+        "Unidentified in-room France attendees indicate remaining role-map ambiguity."
+      ],
+      "openLoops": [
+        "Who were the unnamed France-room participants and what ERP/P2P responsibilities do they own?",
+        "Capture attendee identity and role map for all France-side participants before next checkpoint."
+      ],
+      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+    },
+    {
+      "entityId": "abivax-us",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-us-finance-live-outcomes",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "ERP priorities: core replacement, SOX/speed, expansionÃ¢â‚¬â€no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage"
+      ],
+      "decisions": [],
+      "risks": [
+        "US/French regulatory duality; French team perception risk as US hires increase"
+      ],
+      "openLoops": [
+        "Should SA and LLC maintain separate COAs or a harmonized global model with mapping layers?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:05:00.000-05:00"
+    },
+    {
+      "entityId": "pwc",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "P2P today: Docushare, manual PO tracking; SOX material weaknesses unaddressed; French PWC auditor"
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "kpmg",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260219-us-finance-live-outcomes",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-post-11am-review",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "KPMG is now pushing ABIVAX to define internal decision/negotiation/legal ownership for post-selection execution.",
+        "Aymen Ben Alaya appears to be KPMG-side in this thread (abenalaya@kpmg.fr).",
+        "Final decision meeting is set for February 26, 2026 with Hema, Trinidad, and KPMG",
+        "KPMG involvement is being reframed toward change management",
+        "US finance reporting, SEC workflow, and IFRS bridge are still highly manual and consultant-dependent."
+      ],
+      "decisions": [
+        "Classify Aymen as KPMG consultant/stakeholder in entity context.",
+        "Request sent to KPMG to prepare a new post-selection scope document",
+        "Recommended KPMG lane to prioritize is change management"
+      ],
+      "risks": [],
+      "openLoops": [
+        "Thursday KPMG call should close ownership decisions so legal/commercial work can start immediately after selection.",
+        "Which reports and journal entries should be brought in-house versus retained with KPMG support?",
+        "Confirm Aymen's exact KPMG role title in the ERP workstream.",
+        "Define exact KPMG role if NetSuite implementation is vendor-led",
+        "SAP/KPMG implementation cost - need for apples-to-apples comparison",
+        "1099: must-have or nice-to-have given current KPMG Tax workaround"
+      ],
+      "lastTouchedAt": "2026-02-23T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "sap-company",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [],
+      "signalsNow": [],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "oracle",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260218-email-thread-netsuite-offer",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "Jamal Azil appears to be Oracle/NetSuite-side in this thread (jamal.azil@oracle.com).",
+        "Thread context belongs to vendor-offer clarification, not finance intro ownership alignment.",
+        "NetSuite implements their own tool (single vendor accountability)"
+      ],
+      "decisions": [
+        "Add Jamal as Oracle/NetSuite contact in entity graph."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Confirm Jamal's Oracle/NetSuite role title for technical and offer clarifications.",
+        "Keep vendor-thread context scoped to NetSuite evaluation, not finance intro priorities."
+      ],
+      "lastTouchedAt": "2026-02-18T07:10:00.000-05:00"
+    },
+    {
+      "entityId": "hema-matt-intro-20260210",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical"
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system"
+      ],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "netsuite-demo-20260212",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "NetSuite total 5-year cost: ~1.12M EUR (449k implementation + 670k licenses)",
+        "NetSuite can hit 1/1/27 go-live with April kickoff",
+        "OCR not native to NetSuite - requires ZoneCapture add-on (extra cost)",
+        "NetSuite implements their own tool (single vendor accountability)"
+      ],
+      "decisions": [],
+      "risks": [
+        "NetSuite 1.12M EUR vs SAP 554k + unknown implementation - cost comparison incomplete"
+      ],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-12T10:30:00.000-05:00"
+    },
+    {
+      "entityId": "erp-go-live",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "critical path",
+        "scope by go-live",
+        "readiness risks"
+      ],
+      "noteIds": [
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260217-it-welcome-call",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Go-live target remains January 1, 2027 with aggressive timeline pressure.",
+        "Go-live 1/1/27; US public launch end of 2027; Sage must be replaced",
+        "NetSuite can hit 1/1/27 go-live with April kickoff",
+        "Multi-GAAP (IFRS, French GAAP, US GAAP) included in scope",
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical"
+      ],
+      "decisions": [
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [
+        "Missing budget cadence clarity can weaken board-readiness narrative.",
+        "Unresolved P2P specifics (including 1099 process expectations) can create late scope churn."
+      ],
+      "openLoops": [
+        "What are the top three non-negotiable P2P outcomes for month one after go-live?",
+        "What minimum staffing threshold is required to protect 1/1/27 go-live?",
+        "Decision needed soon to hit April kickoff and 1/1/27 go-live",
+        "Go-live 1/1/27 non-negotiable for P2P and financial reporting",
+        "What exact 1099 capability is required (scope, jurisdictions, owners, and timing)?",
+        "What is the escalation path if staffing pressure increases in finance or IT?"
+      ],
+      "lastTouchedAt": "2026-02-23T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "us-public-launch",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Go-live 1/1/27; US public launch end of 2027; Sage must be replaced"
+      ],
+      "decisions": [],
+      "risks": [
+        "Offer subject to SAP Finance approval; deadline end Q1 2026"
+      ],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "sap-offer-expiry",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [],
+      "signalsNow": [],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "sage-sunset",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Sage sunset date - when does reporting move to new ERP?"
+      ],
+      "lastTouchedAt": "2026-02-12T10:30:00.000-05:00"
+    },
+    {
+      "entityId": "p2p",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "po approvals",
+        "sox controls",
+        "budget monitoring"
+      ],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260219-us-finance-live-outcomes",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "CFTI has finalized P2P and FSCP RCMs and is actively running SOX implementation/remediation coordination.",
+        "Current finance stack remains highly manual across P2P, payroll, payments, and reconciliation flows.",
+        "P2P depth remains under-validated because both demos were too short on practical process detail.",
+        "Finance attendee set includes FP&A, accounting, P2P, and additional roles requiring ownership clarification.",
+        "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
+      ],
+      "decisions": [
+        "Use the CFTI RCMs and remediation tracker as primary source evidence for the Controls pillar baseline..."
+      ],
+      "risks": [
+        "Unresolved P2P specifics (including 1099 process expectations) can create late scope churn.",
+        "SOX material weaknesses; manual P2P unsustainable for audit clearance",
+        "If RCM/tracker intake is delayed, controls design discussions may stay generic instead of deficiency-driven.",
+        "ITGC RCM delay (awaiting validation) may slow full controls mapping across application + IT controls.",
+        "Missing budget cadence clarity can weaken board-readiness narrative."
+      ],
+      "openLoops": [
+        "PO approvals and budget monitoring required in P2P scope",
+        "What approvals and budget-monitoring handoffs should Juliette own post-intro?",
+        "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
+        "What are the top three non-negotiable P2P outcomes for month one after go-live?",
+        "Who were the unnamed France-room participants and what ERP/P2P responsibilities do they own?",
+        "Lock one dated follow-up focused on P2P depth and 1099 requirements."
+      ],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "sox-compliance",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Roadmap references ERP framing/build alongside SOX, cybersecurity, and compliance initiatives, confirming parallel demand on IT capacity.",
+        "CFTI has finalized P2P and FSCP RCMs and is actively running SOX implementation/remediation coordination.",
+        "ERP-related gaps have already been identified in the SOX work and some non-ERP remediations can be addressed immediately.",
+        "Finance owns SOX/control-gap remediation tracking; IT supports technical enablement.",
+        "Sage audit flow is seen as weak and linked to SOX concern by IT stakeholders."
+      ],
+      "decisions": [
+        "Use the deck roadmap to anchor IT capacity-risk questions (ERP vs SOX/cyber/compliance concurrent work)."
+      ],
+      "risks": [
+        "Concurrent IT initiatives (SOX, SOC/SIEM, SOC2, DR, Freshservice rollout) may reduce ERP support capacity unless explicitly...",
+        "SOX material weaknesses; manual P2P unsustainable for audit clearance"
+      ],
+      "openLoops": [
+        "Who in Finance owns the SOX deficiency register and remediation tracker (named owner + repository)?",
+        "Where are current SOX control deficiencies logged and who owns remediation?",
+        "What are the month-by-month IT allocations to ERP versus cybersecurity/compliance objectives in 2026?"
+      ],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "ifrs",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260219-us-finance-live-outcomes",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "US finance reporting, SEC workflow, and IFRS bridge are still highly manual and consultant-dependent.",
+        "Multi-GAAP (IFRS, French GAAP, US GAAP) included in scope",
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical",
+        "Data quality and extract limitations in Sage are a major FP&A and reporting friction point."
+      ],
+      "decisions": [
+        "Run separate FP&A-focused follow-up with Adrian/Frederick to map reporting model and data dependencies."
+      ],
+      "risks": [
+        "Manual SEC/IFRS bridge process creates execution and key-person dependency risk."
+      ],
+      "openLoops": [
+        "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system",
+        "Go-live 1/1/27 non-negotiable for P2P and financial reporting",
+        "What minimum reporting data model is required for US growth and SEC readiness?",
+        "Need clarity on FPI-driven reporting calendar milestones and ERP dependencies.",
+        "Sage sunset date - when does reporting move to new ERP?"
+      ],
+      "lastTouchedAt": "2026-02-19T13:20:00.000-05:00"
+    },
+    {
+      "entityId": "gaap",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Multi-GAAP (IFRS, French GAAP, US GAAP) included in scope"
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system"
+      ],
+      "lastTouchedAt": "2026-02-19T13:20:00.000-05:00"
+    },
+    {
+      "entityId": "consolidation",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260217-post-11am-review",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical"
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Go-live 1/1/27 non-negotiable for P2P and financial reporting"
+      ],
+      "lastTouchedAt": "2026-02-17T11:00:00.000-05:00"
+    },
+    {
+      "entityId": "financial-reporting",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260212-netsuite-demo",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical",
+        "Org chart in deck confirms Didier > Christophe > Jade/Benjamin/Erwan reporting structure and provider support model (MBVSI/NEI).",
+        "US finance reporting, SEC workflow, and IFRS bridge are still highly manual and consultant-dependent.",
+        "Data quality and extract limitations in Sage are a major FP&A and reporting friction point."
+      ],
+      "decisions": [
+        "Run separate FP&A-focused follow-up with Adrian/Frederick to map reporting model and data dependencies."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Go-live 1/1/27 non-negotiable for P2P and financial reporting",
+        "What minimum reporting data model is required for US growth and SEC readiness?",
+        "Need clarity on FPI-driven reporting calendar milestones and ERP dependencies.",
+        "Who owns weekly budget tracking and reporting packet preparation before March 19?",
+        "Sage sunset date - when does reporting move to new ERP?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+    },
+    {
+      "entityId": "no-manufacturing-module",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical"
+      ],
+      "decisions": [
+        "Scope excludes manufacturing; external logistics/provider model"
+      ],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-10T10:00:00.000-05:00"
+    },
+    {
+      "entityId": "external-cmo-model",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [],
+      "signalsNow": [],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "board-decision-20260319",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "decision narrative",
+        "required pre-reads",
+        "owner/date commitments"
+      ],
+      "noteIds": [
+        "20260217-it-welcome-call"
+      ],
+      "signalsNow": [
+        "Board decision communication point is March 19, 2026."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "March 19, 2026 board communication is the next executive decision gate.",
+        "What budget tracking cadence and ownership does Fred propose before March 19?",
+        "What minimum staffing threshold is required to protect 1/1/27 go-live?"
+      ],
+      "lastTouchedAt": "2026-02-17T16:55:00.000-05:00"
+    },
+    {
+      "entityId": "marc-de-garidel",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "board decision gate",
+        "executive signoff",
+        "erp decision direction"
+      ],
+      "noteIds": [
+        "20260218-finance-intro-live-outcomes"
+      ],
+      "signalsNow": [
+        "Marc de Garidel profile baseline -> role: Chief Executive Officer; team: Direction Générale; org: Abivax Global.",
+        "Outlook GAL enrichment -> title CEO; dept Direction Générale."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Marc de Garidel."
+      ],
+      "lastTouchedAt": "2026-02-18T11:50:00.000-05:00"
+    },
+    {
+      "entityId": "roxandra-sturdza",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "finance intro role clarity",
+        "erp ownership boundary"
+      ],
+      "noteIds": [
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep"
+      ],
+      "signalsNow": [
+        "Roxandra Sturdza profile baseline -> role: Finance stakeholder (role details pending); team: Finance; reports to: Hema Keshava; org: Abivax Finance.",
+        "Outlook GAL enrichment -> title Group Treasury Director; dept Finance; manager Hema Keshava.",
+        "The Sage-specific architecture/process slide is still pending Jade/Finance update (target was Monday).",
+        "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro.",
+        "Finance owns SOX/control-gap remediation tracking; IT supports technical enablement."
+      ],
+      "decisions": [
+        "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for..."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Who in Finance owns the SOX deficiency register and remediation tracker (named owner + repository)?",
+        "What is Roxandra's exact role and ERP interface responsibility?",
+        "What approvals and budget-monitoring handoffs should Juliette own post-intro?",
+        "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:05:00.000-05:00"
+    },
+    {
+      "entityId": "adrian-holbrook",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "cost center reporting design",
+        "data quality and extract limitations",
+        "FP&A reporting model clarity"
+      ],
+      "noteIds": [
+        "20260219-us-finance-live-outcomes",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep"
+      ],
+      "signalsNow": [
+        "Adrian Holbrook profile baseline -> role: FP&A / reporting (reports to Frederick); team: FP&A; reports to: Frederick; org: Abivax Finance.",
+        "Outlook GAL enrichment -> title Sr Financial Analyst; dept Finance; manager Frederick Golly.",
+        "Data quality and extract limitations in Sage are a major FP&A and reporting friction point.",
+        "COA and cost-center model decisions are now strategic design choices for future US/France scale.",
+        "US finance reporting, SEC workflow, and IFRS bridge are still highly manual and consultant-dependent."
+      ],
+      "decisions": [],
+      "risks": [
+        "Unclear future-state COA ownership could delay design decisions during ERP blueprint phase."
+      ],
+      "openLoops": [
+        "What minimum reporting data model is required for US growth and SEC readiness?",
+        "Need COA and cost-center extracts quickly to shape blueprint assumptions.",
+        "Need clarity on FPI-driven reporting calendar milestones and ERP dependencies.",
+        "Should SA and LLC maintain separate COAs or a harmonized global model with mapping layers?"
+      ],
+      "lastTouchedAt": "2026-02-19T13:20:00.000-05:00"
+    },
+    {
+      "entityId": "fatma-hemdani",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "finance intro role clarity",
+        "erp ownership boundary"
+      ],
+      "noteIds": [
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep"
+      ],
+      "signalsNow": [
+        "Fatma Hemdani profile baseline -> role: Finance stakeholder; team: P2P; reports to: Juliette Courtot; org: Abivax Finance.",
+        "Outlook GAL enrichment -> title General Accountant; dept Finance; manager Juliette Courtot.",
+        "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "What is Fatma's exact role and ERP interface responsibility?",
+        "What approvals and budget-monitoring handoffs should Juliette own post-intro?",
+        "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?",
+        "Capture role map and owners in-meeting; do not defer this to email."
+      ],
+      "lastTouchedAt": "2026-02-18T11:50:00.000-05:00"
+    },
+    {
+      "entityId": "mike-markman",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "role mandate clarity",
+        "cross-functional alignment",
+        "owner/date follow-through"
+      ],
+      "noteIds": [
+        "20260226-erp-decision-netsuite-selected",
+        "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260218-finance-intro-live-outcomes",
+        "20260218-finance-intro-prep",
+        "20260218-email-thread-netsuite-offer",
+        "20260217-it-welcome-call",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "Michael Markman profile baseline -> role: VP, Global ERP Lead; team: Finance; reports to: Didier Blondel; org: Abivax Global.",
+        "Outlook GAL enrichment -> title VP, Global ERP Lead; dept Finance; manager Didier Blondel.",
+        "Mike is now positioned as central intake/filter for questions to reduce finance team load.",
+        "NetSuite selected on February 26, 2026 (team vote/alignment).",
+        "Jade delivered the IT Master Plan deck and a live owner tracker link with access granted."
+      ],
+      "decisions": [
+        "Prepare ABIVAX answers before Thursday on negotiation owner, board one-pager expectation, contract-law preference, and legal review...",
+        "Use Jade's live ILC/CSVLC tracker as the source to seed system-owner/admin/backup mappings into the ERP system..."
+      ],
+      "risks": [
+        "Delay in post-selection communication/ownership alignment could compress April mobilization target.",
+        "Misclassified people/org roles can produce wrong owner/ping recommendations."
+      ],
+      "openLoops": [
+        "Who in Finance owns the SOX deficiency register and remediation tracker (named owner + repository)?",
+        "Capture role map and owners in-meeting; do not defer this to email."
+      ],
+      "lastTouchedAt": "2026-02-26T15:00:00Z"
+    },
+    {
+      "entityId": "aymen-ben-alaya",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "netsuite offer clarifications",
+        "technical assumption tracking",
+        "vendor feedback consolidation"
+      ],
+      "noteIds": [
+        "20260218-netsuite-feedback-pptx",
+        "20260218-email-thread-netsuite-offer",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "Aymen Ben Alaya profile baseline -> role: Consultant (exact title to confirm); org: KPMG.",
+        "Aymen Ben Alaya is linked to workstreams/systems: netsuite, kpmg.",
+        "NetSuite demo feedback highlights unresolved technical assumptions around integrations, treasury interfaces, and e-invoicing model details.",
+        "Aymen Ben Alaya appears to be KPMG-side in this thread (abenalaya@kpmg.fr).",
+        "A dedicated technical deep-dive and workload calibration session was requested from NetSuite."
+      ],
+      "decisions": [
+        "Classify Aymen as KPMG consultant/stakeholder in entity context.",
+        "Request NetSuite to provide a 2-hour deep-dive slot covering technical assumptions and workload calibration.",
+        "Add Jamal as Oracle/NetSuite contact in entity graph."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Aymen Ben Alaya.",
+        "Confirm team for Aymen Ben Alaya.",
+        "Confirm Jamal's Oracle/NetSuite role title for technical and offer clarifications.",
+        "Confirm Aymen's exact KPMG role title in the ERP workstream.",
+        "Schedule technical deep-dive/workload session before locking vendor fit assumptions.",
+        "Can NetSuite provide concrete TrustPair integration references for comparable implementations?"
+      ],
+      "lastTouchedAt": "2026-02-18T10:05:00.000-05:00"
+    },
+    {
+      "entityId": "trustpair",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-us-finance-live-outcomes",
+        "20260219-it-landscape-live-outcomes",
+        "20260218-netsuite-feedback-pptx"
+      ],
+      "signalsNow": [
+        "Trustpair: Vendor and Payment Control used for Vendor validation and payment checks.",
+        "Owners (to confirm): business Finance (confirm); system Treasury/Payments (confirm); admin IT + vendor setup team (confirm).",
+        "Access model noted: SFTP feed from Sage.",
+        "Mapped integrations (4): Sage -> Trustpair (scheduled); Sage -> Trustpair (payment-run); Trustpair -> Agicap (payment-run); Sage (US LLC) -> Trustpair (payment-run).",
+        "Access request status: requested-in-progress (Control-flow visibility)."
+      ],
+      "decisions": [
+        "Treat TrustPair integration validation as part of ERP design and controls scope (4/4 mapped as active).",
+        "TrustPair appears in ERP-signaled control areas and should stay in pillar-level design review.",
+        "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact.",
+        "Use Jade as primary IT coordination point for integration and access topics."
+      ],
+      "risks": [
+        "Implemented last year; key SOX/control relevance.",
+        "Sage -> Trustpair: Escalate to IT + finance controls owner.",
+        "Sage -> Trustpair: Retry/validate feed before payment release.",
+        "Trustpair -> Agicap: Payment hold and escalation.",
+        "Sage (US LLC) -> Trustpair: Manual re-upload and reconciliation review."
+      ],
+      "openLoops": [
+        "Confirm integration owner for Sage -> Trustpair.",
+        "Confirm integration owner for Trustpair -> Agicap.",
+        "Confirm integration owner for Sage (US LLC) -> Trustpair.",
+        "Access owner: Denis Jankovic + Treasury (Roxandra/Trinidad confirm).",
+        "Confirm whether Trustpair read-only was provisioned alongside Sage/Agicap; if not, request ETA and owner.",
+        "Can NetSuite provide concrete TrustPair integration references for comparable implementations?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+    },
+    {
+      "entityId": "jamal-azil",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "netsuite technical clarifications",
+        "offer response follow-ups"
+      ],
+      "noteIds": [
+        "20260218-email-thread-netsuite-offer",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "Jamal Azil profile baseline -> role: Oracle/NetSuite contact (exact title to confirm); org: Oracle.",
+        "Jamal Azil is linked to workstreams/systems: netsuite.",
+        "Jamal Azil appears to be Oracle/NetSuite-side in this thread (jamal.azil@oracle.com).",
+        "Thread context belongs to vendor-offer clarification, not finance intro ownership alignment."
+      ],
+      "decisions": [
+        "Add Jamal as Oracle/NetSuite contact in entity graph."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Jamal Azil.",
+        "Confirm team for Jamal Azil.",
+        "Confirm Jamal's Oracle/NetSuite role title for technical and offer clarifications.",
+        "Confirm Aymen's exact KPMG role title in the ERP workstream."
+      ],
+      "lastTouchedAt": "2026-02-18T07:10:00.000-05:00"
+    },
+    {
+      "entityId": "denis",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "finance intro role clarity",
+        "erp ownership boundary",
+        "workload feasibility input"
+      ],
+      "noteIds": [
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260218-finance-intro-live-outcomes"
+      ],
+      "signalsNow": [
+        "Denis profile baseline -> role: Finance team role (to confirm); team: Finance; reports to: Trinidad Mesa; org: Abivax Finance.",
+        "Outlook GAL enrichment -> title General Accountant Manager; dept Finance; manager Trinidad Mesa.",
+        "The Sage-specific architecture/process slide is still pending Jade/Finance update (target was Monday).",
+        "Finance owns SOX/control-gap remediation tracking; IT supports technical enablement."
+      ],
+      "decisions": [
+        "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for...",
+        "Treat workload feasibility and staffing coverage as first-order selection criteria in vendor comparison."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Who in Finance owns the SOX deficiency register and remediation tracker (named owner + repository)?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:05:00.000-05:00"
+    },
+    {
+      "entityId": "france-room-attendee-1",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "identity confirmation",
+        "role ownership mapping",
+        "erp/p2p dependency capture"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "France Room Attendee 1 profile baseline -> role: Unknown (to confirm); org: Abivax France."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for France Room Attendee 1.",
+        "Confirm team for France Room Attendee 1."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "france-room-attendee-2",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "identity confirmation",
+        "role ownership mapping",
+        "erp/p2p dependency capture"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "France Room Attendee 2 profile baseline -> role: Unknown (to confirm); org: Abivax France."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for France Room Attendee 2.",
+        "Confirm team for France Room Attendee 2."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "benjamin-talmant",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-it-landscape-live-outcomes"
+      ],
+      "signalsNow": [
+        "Benjamin Talmant profile baseline -> role: IT project manager; team: IT; reports to: Christophe Hennequin; org: Abivax.",
+        "Outlook GAL enrichment -> dept Information Technology; manager Christophe Hennequin.",
+        "Jade delivered the IT Master Plan deck and a live owner tracker link with access granted."
+      ],
+      "decisions": [
+        "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for...",
+        "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Reference slide labels directly in follow-up questions to Jade/Benjamin to speed alignment and reduce re-explaining context.",
+        "Need IT slide deck and architecture diagrams for confirmation and dependency mapping."
+      ],
+      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+    },
+    {
+      "entityId": "christophe-hennequin",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "integration coordination",
+        "technical change ownership",
+        "it resourcing"
+      ],
+      "noteIds": [
+        "20260220-jade-it-master-plan-deck-extract",
+        "20260220-email-jade-follow-up-and-access-confirmations",
+        "20260219-it-landscape-live-outcomes",
+        "20260210-hema-matt-intro"
+      ],
+      "signalsNow": [
+        "Christophe Hennequin profile baseline -> role: IT leadership; team: IT; reports to: Didier Blondel; org: Abivax France.",
+        "Outlook GAL enrichment -> dept Information Technology; manager Didier Blondel.",
+        "Finance owns SOX/control-gap remediation tracking; IT supports technical enablement.",
+        "Jade delivered the IT Master Plan deck and a live owner tracker link with access granted."
+      ],
+      "decisions": [
+        "Use Jade as primary IT coordination point for integration and access topics.",
+        "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for...",
+        "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact."
+      ],
+      "risks": [
+        "If the Sage-centric flow slide and consolidated interface list slip, integration/control design may be built on...",
+        "IT capacity requirements for integration/API support are not yet quantified."
+      ],
+      "openLoops": [
+        "Need IT slide deck and architecture diagrams for confirmation and dependency mapping."
+      ],
+      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+    },
+    {
+      "entityId": "denis-jankovic",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260220-email-jade-follow-up-and-access-confirmations"
+      ],
+      "signalsNow": [
+        "Denis Jankovic profile baseline -> role: Finance/operations support; team: IT; reports to: Trinidad Mesa; org: Abivax.",
+        "Outlook GAL enrichment -> title General Accountant Manager; dept Finance; manager Trinidad Mesa.",
+        "The Sage-specific architecture/process slide is still pending Jade/Finance update (target was Monday).",
+        "Finance owns SOX/control-gap remediation tracking; IT supports technical enablement."
+      ],
+      "decisions": [
+        "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for..."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Who in Finance owns the SOX deficiency register and remediation tracker (named owner + repository)?"
+      ],
+      "lastTouchedAt": "2026-02-20T12:05:00.000-05:00"
+    },
+    {
+      "entityId": "ewan",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [],
+      "noteIds": [
+        "20260219-it-landscape-live-outcomes"
+      ],
+      "signalsNow": [
+        "Ewan profile baseline -> role: IT team member; team: IT; reports to: Christophe Hennequin."
+      ],
+      "decisions": [
+        "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact."
+      ],
+      "risks": [],
+      "openLoops": [
+        "Need IT slide deck and architecture diagrams for confirmation and dependency mapping."
+      ],
+      "lastTouchedAt": "2026-02-19T12:05:00.000-05:00"
+    },
+    {
+      "entityId": "sophie-lacourrege",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Human Resources",
+        "VP, HR Engagement & Culture",
+        "new meeting attendee"
+      ],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes"
+      ],
+      "signalsNow": [
+        "Sophie Lacourrege profile baseline -> role: VP, HR Engagement & Culture; team: Human Resources; reports to: Ida Hatoum; org: Abivax.",
+        "Outlook GAL enrichment -> title Global Quality Assurance Lead; dept Quality; manager David Zhang."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "ben-alaya",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "new meeting attendee"
+      ],
+      "noteIds": [
+        "20260218-netsuite-feedback-pptx",
+        "20260218-email-thread-netsuite-offer",
+        "20260212-netsuite-demo"
+      ],
+      "signalsNow": [
+        "Ben Alaya profile baseline -> role: Role pending confirmation; team: Unknown; reports to: Christophe Hennequin; org: Abivax.",
+        "Outlook GAL enrichment -> dept Information Technology; manager Christophe Hennequin.",
+        "Aymen Ben Alaya appears to be KPMG-side in this thread (abenalaya@kpmg.fr)."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-18T10:05:00.000-05:00"
+    },
+    {
+      "entityId": "aude-garcel",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Research",
+        "Director R&D",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Aude Garcel profile baseline -> role: Director R&D; team: Research; reports to: Didier Scherrer; org: Abivax.",
+        "Outlook GAL enrichment -> title Director R&D; dept Research; manager Didier Scherrer."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "laurence-desroys-du-roure",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Operations",
+        "Associate Director, Clin Ops  ABTECT",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Laurence Desroys du Roure profile baseline -> role: Associate Director, Clin Ops  ABTECT; team: Clinical Operations; reports to: Nadege Briancon-Eris; org: Abivax.",
+        "Outlook GAL enrichment -> title Associate Director, Clin Ops  ABTECT; dept Clinical Operations; manager Nadege Briancon-Eris."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "julien-santo",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Development",
+        "Director Translational Research",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Julien Santo profile baseline -> role: Director Translational Research; team: Clinical Development; reports to: Doug Jacobstein; org: Abivax.",
+        "Outlook GAL enrichment -> title Director Translational Research; dept Clinical Development; manager Doug Jacobstein."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "mary-mantock",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Regulatory Affairs",
+        "SVP Global Head of Regulatory Affairs",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Mary Mantock profile baseline -> role: SVP Global Head of Regulatory Affairs; team: Regulatory Affairs; reports to: David Zhang; org: Abivax.",
+        "Outlook GAL enrichment -> title SVP Global Head of Regulatory Affairs; dept Regulatory Affairs; manager David Zhang."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "kejia-shan",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Biometrics",
+        "VP, Global Head Biometrics",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Kejia Shan profile baseline -> role: VP, Global Head Biometrics; team: Biometrics; reports to: David Zhang; org: Abivax.",
+        "Outlook GAL enrichment -> title VP, Global Head Biometrics; dept Biometrics; manager David Zhang."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "jennifer-fine",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "HEOR/RWE",
+        "Global Head HEOR&RWE",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Jennifer Fine profile baseline -> role: Global Head HEOR&RWE; team: HEOR/RWE; reports to: David Zhang; org: Abivax.",
+        "Outlook GAL enrichment -> title Global Head HEOR&RWE; dept HEOR/RWE; manager David Zhang."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "sophie-gibelli",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Quality",
+        "Global Quality Assurance Lead",
+        "new meeting attendee"
+      ],
+      "noteIds": [
+        "20260225-cfti-sox-rcm-remediation-call-live-outcomes"
+      ],
+      "signalsNow": [
+        "Sophie Gibelli profile baseline -> role: Global Quality Assurance Lead; team: Quality; reports to: David Zhang; org: Abivax.",
+        "Outlook GAL enrichment -> title Global Quality Assurance Lead; dept Quality; manager David Zhang."
+      ],
+      "decisions": [],
+      "risks": [
+        "ITGC RCM delay (awaiting validation) may slow full controls mapping across application + IT controls."
+      ],
+      "openLoops": [],
+      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+    },
+    {
+      "entityId": "marianne-perdrijat",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Trial Supplies",
+        "Director Clinical Supply",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Marianne Perdrijat profile baseline -> role: Director Clinical Supply; team: Clinical Trial Supplies; reports to: Jerome Denis; org: Abivax.",
+        "Outlook GAL enrichment -> title Director Clinical Supply; dept Clinical Trial Supplies; manager Jerome Denis."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "chris-rabbat",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Medical Affairs",
+        "VP, Global Head of Medical Affairs",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Chris Rabbat profile baseline -> role: VP, Global Head of Medical Affairs; team: Medical Affairs; reports to: Fabio Cataldi; org: Abivax.",
+        "Outlook GAL enrichment -> title VP, Global Head of Medical Affairs; dept Medical Affairs; manager Fabio Cataldi."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "patrick-malloy",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Finance",
+        "SVP, Investor Relations",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Patrick Malloy profile baseline -> role: SVP, Investor Relations; team: Finance; reports to: Didier Blondel; org: Abivax.",
+        "Outlook GAL enrichment -> title SVP, Investor Relations; dept Finance; manager Didier Blondel."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "rebecca-mosig",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Development",
+        "SD Clin Dev and Translational Medicine",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Rebecca Mosig profile baseline -> role: SD Clin Dev and Translational Medicine; team: Clinical Development; reports to: Doug Jacobstein; org: Abivax.",
+        "Outlook GAL enrichment -> title SD Clin Dev and Translational Medicine; dept Clinical Development; manager Doug Jacobstein."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "patricia-fleuranceau-morel",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Drug Safety and Pharmacovigilance (Medical)",
+        "Vice President, Global Head of Drug Safety and Pharmacovigilance",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Patricia Fleuranceau Morel profile baseline -> role: Vice President, Global Head of Drug Safety and Pharmacovigilance; team: Drug Safety and Pharmacovigilance (Medical); reports to: Fabio Cataldi; org: Abivax.",
+        "Outlook GAL enrichment -> title Vice President, Global Head of Drug Safety and Pharmacovigilance; dept Drug Safety and Pharmacovigilance (Medical); manager Fabio Cataldi."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "murielle-salaun-lancien",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Pharmacovigilance",
+        "Safety Monitor",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Murielle Salaun Lancien profile baseline -> role: Safety Monitor; team: Pharmacovigilance; org: Abivax.",
+        "Outlook GAL enrichment -> title Safety Monitor; dept Pharmacovigilance."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Murielle Salaun Lancien."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "nakesha-harding-boyce",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Pharmacovigilance",
+        "Senior Director Safety Ops",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Nakesha Harding-Boyce profile baseline -> role: Senior Director Safety Ops; team: Pharmacovigilance; org: Abivax.",
+        "Outlook GAL enrichment -> title Senior Director Safety Ops; dept Pharmacovigilance."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Nakesha Harding-Boyce."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "maurus-de-la-rosa",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Scientific Affairs",
+        "VP R&D contractor",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Maurus de la Rosa profile baseline -> role: VP R&D contractor; team: Scientific Affairs; reports to: Didier Scherrer; org: Abivax.",
+        "Outlook GAL enrichment -> title VP R&D contractor; dept Scientific Affairs; manager Didier Scherrer."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "valerie-contassot",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Assurance Quality Team",
+        "Manufacturing Quality Assurance Associate Director consultant",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Valerie Contassot profile baseline -> role: Manufacturing Quality Assurance Associate Director consultant; team: Assurance Quality Team; reports to: Mark Hronec; org: Abivax.",
+        "Outlook GAL enrichment -> title Manufacturing Quality Assurance Associate Director consultant; dept Assurance Quality Team; manager Mark Hronec."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "thomas-descusses",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Finance",
+        "Legal Affairs Manager",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Thomas Descusses profile baseline -> role: Legal Affairs Manager; team: Finance; reports to: Didier Blondel; org: Abivax."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "josianne-nitcheu",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Operations",
+        "CTM, Phase 1 /Pediatric",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Josianne Nitcheu profile baseline -> role: CTM, Phase 1 /Pediatric; team: Clinical Operations; reports to: Nadege Briancon-Eris; org: Abivax.",
+        "Outlook GAL enrichment -> title CTM, Phase 1 /Pediatric; dept Clinical Operations; manager Nadege Briancon-Eris."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "pascaline-ploncard",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Operations",
+        "CTM Crohn’s/108",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Pascaline Ploncard profile baseline -> role: CTM Crohn’s/108; team: Clinical Operations; reports to: Nadege Briancon-Eris; org: Abivax.",
+        "Outlook GAL enrichment -> title CTM Crohn’s/108; dept Clinical Operations; manager Nadege Briancon-Eris."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "bindu-saini",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Program Management",
+        "Medical Writing",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Bindu Saini profile baseline -> role: Medical Writing; team: Program Management; reports to: Nadege Briancon-Eris; org: Abivax.",
+        "Outlook GAL enrichment -> title Medical Writing; dept Program Management; manager Nadege Briancon-Eris."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "mark-hronec",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Quality",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Mark Hronec profile baseline -> role: Role pending confirmation; team: Quality; reports to: David Zhang; org: Abivax.",
+        "Outlook GAL enrichment -> dept Quality; manager David Zhang."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "jessica-huskey",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Operations",
+        "Director Clin Ops, ABTECT + LATAM/NA",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Jessica Huskey profile baseline -> role: Director Clin Ops, ABTECT + LATAM/NA; team: Clinical Operations; reports to: Nadege Briancon-Eris; org: Abivax.",
+        "Outlook GAL enrichment -> title Director Clin Ops, ABTECT + LATAM/NA; dept Clinical Operations; manager Nadege Briancon-Eris."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "doug-jacobstein",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "Clinical Development",
+        "SVP, Global Head Of Clinical Dev",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Doug Jacobstein profile baseline -> role: SVP, Global Head Of Clinical Dev; team: Clinical Development; reports to: Fabio Cataldi; org: Abivax.",
+        "Outlook GAL enrichment -> title Senior Data Manager; dept Biometrics; manager Amy Adams."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "keith-fournier",
+      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "focusHints": [
+        "REGULATORY AFFAIRS",
+        "SVP Regulatory Affairs",
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Keith Fournier profile baseline -> role: SVP Regulatory Affairs; team: REGULATORY AFFAIRS; reports to: Fabio Cataldi; org: Abivax.",
+        "Outlook GAL enrichment -> title SVP Regulatory Affairs; dept REGULATORY AFFAIRS; manager Fabio Cataldi."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [],
+      "lastTouchedAt": null
+    }
+  ]
+}

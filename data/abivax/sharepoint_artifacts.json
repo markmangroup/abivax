@@ -1,0 +1,1035 @@
+{
+  "generatedAt": "2026-02-26T20:42:03.699Z",
+  "summary": {
+    "artifactCount": 18,
+    "localAttachmentMatches": 5,
+    "sourceEmailsScanned": 19,
+    "attachmentBodiesScanned": 18
+  },
+  "artifacts": [
+    {
+      "id": "sp-9780bc1c9c3f",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE",
+        "https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE?email=mike.markman%40abivax.com&e=4%3aP4O2rE&sharingv2=true&fromShare=true&at=9",
+        "https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE?email=mike.markman%40abivax.com&e=4%3aP4O2rE&web=1&openShare=true&fromShare=true&at=9"
+      ],
+      "title": "https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "",
+      "itemType": "excel",
+      "extension": "",
+      "fileName": "",
+      "folderPath": "",
+      "phase": "",
+      "sourceEmails": [
+        {
+          "received": "2026-02-20T11:59:06.6050000",
+          "subject": "Re: IT Landscape Follow-Up",
+          "sender": "Jade Nguyen",
+          "bodyPath": "temp\\email-review\\attachments\\20260220-115906-03 - Re_ IT Landscape Follow-Up\\body.txt"
+        },
+        {
+          "received": "2026-02-20T11:52:03.9560000",
+          "subject": "Jade Nguyen shared \"ABIVAX_ILC & CSVLC Indexes Tracker\" with you",
+          "sender": "Jade Nguyen",
+          "bodyPath": "temp\\email-review\\attachments\\20260220-115203-04 - Jade Nguyen shared _ABIVAX_ILC & CSVLC Indexes Tracker_ with\\body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-115203-04 - Jade Nguyen shared _ABIVAX_ILC & CSVLC Indexes Tracker_ with",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-115203-04 - Jade Nguyen shared _ABIVAX_ILC & CSVLC Indexes Tracker_ with/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-115906-03 - Re_ IT Landscape Follow-Up",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-115906-03 - Re_ IT Landscape Follow-Up/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-20T11:52:03.9560000",
+      "lastSeenAt": "2026-02-20T11:59:06.6050000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-d5315c57bd90",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/ABIVAX%20LoE%20-%20ERP%20Choice%20assistance%20-%20v230925.docx.pdf",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/ABIVAX%20LoE%20-%20ERP%20Choice%20assistance%20-%20v230925.docx.pdf?csf=1&web=1&e=WFwJJz"
+      ],
+      "title": "ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "pdf",
+      "fileName": "ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf",
+      "folderPath": "General / Phase 0 - intiate",
+      "phase": "Phase 0 - intiate",
+      "sourceEmails": [
+        {
+          "received": "2026-02-20T03:47:27.4720000",
+          "subject": "Re: ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260220-034727-10 - Re_ ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T14:25:32.3380000",
+          "subject": "Fw: ABIVAX ERP - Project update",
+          "sender": "Girard, Camille",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-142532-12 - Fw_ ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-115504-16 - ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-20T03:47:27.4720000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-22503c066562",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/Proposal%20KPMG_ABIVAX_ERP%20Choice_V250801.pdf",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/Proposal%20KPMG_ABIVAX_ERP%20Choice_V250801.pdf?csf=1&web=1&e=2lQVno"
+      ],
+      "title": "Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "pdf",
+      "fileName": "Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf",
+      "folderPath": "General / Phase 0 - intiate",
+      "phase": "Phase 0 - intiate",
+      "sourceEmails": [
+        {
+          "received": "2026-02-20T03:47:27.4720000",
+          "subject": "Re: ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260220-034727-10 - Re_ ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T14:25:32.3380000",
+          "subject": "Fw: ABIVAX ERP - Project update",
+          "sender": "Girard, Camille",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-142532-12 - Fw_ ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-115504-16 - ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-20T03:47:27.4720000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-241608c86c3e",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Analysis%20Report/Abivax%20-%20Analysis%20report%20VF.pdf",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Analysis%20Report/Abivax%20-%20Analysis%20report%20VF.pdf?csf=1&web=1&e=0eJNJB"
+      ],
+      "title": "Abivax - Analysis report VF.pdf",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "pdf",
+      "fileName": "Abivax - Analysis report VF.pdf",
+      "folderPath": "General / Phase 1 - Diagnostics / Analysis Report",
+      "phase": "Phase 1 - Diagnostics",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T14:25:32.3380000",
+          "subject": "Fw: ABIVAX ERP - Project update",
+          "sender": "Girard, Camille",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-142532-12 - Fw_ ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-115504-16 - ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T14:25:32.3380000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-5c919b38a421",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Kick-off/Abivax%20-%20KickOff.pdf",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Kick-off/Abivax%20-%20KickOff.pdf?csf=1&web=1&e=lZdnmA"
+      ],
+      "title": "Abivax - KickOff.pdf",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "pdf",
+      "fileName": "Abivax - KickOff.pdf",
+      "folderPath": "General / Phase 1 - Diagnostics / Kick-off",
+      "phase": "Phase 1 - Diagnostics",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T14:25:32.3380000",
+          "subject": "Fw: ABIVAX ERP - Project update",
+          "sender": "Girard, Camille",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-142532-12 - Fw_ ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-115504-16 - ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T14:25:32.3380000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-d477b432f5bc",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20-%20RFP%20-%20Functional%20%26%20technical%20requirements.xlsx?d=weffc8e3f47644639b10de6105390e58a",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20-%20RFP%20-%20Functional%20%26%20technical%20requirements.xlsx?d=weffc8e3f47644639b10de6105390e58a&csf=1&web=1&e=AyBX0F"
+      ],
+      "title": "Abivax - RFP - Functional & technical requirements.xlsx",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "excel",
+      "extension": "xlsx",
+      "fileName": "Abivax - RFP - Functional & technical requirements.xlsx",
+      "folderPath": "General / Phase 2 - Requirements identification and request for proposal / Request for proposal (RFP)",
+      "phase": "Phase 2 - Requirements identification and request for proposal",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        }
+      ],
+      "localPaths": [
+        "temp/Abivax - RFP - Functional & technical requirements.xlsx"
+      ],
+      "tags": [
+        "kpmg-project-update"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "local-attachment-available"
+    },
+    {
+      "id": "sp-b2fd9f824684",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20%E2%80%93%20RFP%20-%20ERP%20Finance.pdf",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20%E2%80%93%20RFP%20-%20ERP%20Finance.pdf?csf=1&web=1&e=JKuFaA"
+      ],
+      "title": "Abivax – RFP - ERP Finance.pdf",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "pdf",
+      "fileName": "Abivax – RFP - ERP Finance.pdf",
+      "folderPath": "General / Phase 2 - Requirements identification and request for proposal / Request for proposal (RFP)",
+      "phase": "Phase 2 - Requirements identification and request for proposal",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "kpmg-project-update"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-deb93edb0fda",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP"
+      ],
+      "title": "Request for proposal (RFP",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "",
+      "fileName": "Request for proposal (RFP",
+      "folderPath": "General / Phase 2 - Requirements identification and request for proposal",
+      "phase": "Phase 2 - Requirements identification and request for proposal",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-115504-16 - ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-fe0c7f064e79",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP"
+      ],
+      "title": "Request for proposal (RFP",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "excel",
+      "extension": "",
+      "fileName": "Request for proposal (RFP",
+      "folderPath": "General / Phase 2 - Requirements identification and request for proposal",
+      "phase": "Phase 2 - Requirements identification and request for proposal",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": "temp\\email-review\\attachments\\20260219-115504-16 - ABIVAX ERP - Project update\\body.txt"
+        },
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "email-review",
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-2cd5eb240a45",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Abivax%20-%20Analyse%20consultation%20ERP.xlsx?d=wf0455abc2a0c40a19655070315618f0e",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Abivax%20-%20Analyse%20consultation%20ERP.xlsx?d=wf0455abc2a0c40a19655070315618f0e&csf=1&web=1&e=RR5dW9"
+      ],
+      "title": "Abivax - Analyse consultation ERP.xlsx",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "excel",
+      "extension": "xlsx",
+      "fileName": "Abivax - Analyse consultation ERP.xlsx",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-14ff6c778714",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Abivax%20-%20Comparaison%20Financial%20Offer.xlsx?d=wcf14f65338b34b49b8c85f69e4fcb7be",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Abivax%20-%20Comparaison%20Financial%20Offer.xlsx?d=wcf14f65338b34b49b8c85f69e4fcb7be&csf=1&web=1&e=gU2v3A"
+      ],
+      "title": "Abivax - Comparaison Financial Offer.xlsx",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "excel",
+      "extension": "xlsx",
+      "fileName": "Abivax - Comparaison Financial Offer.xlsx",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-1036227d7912",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Demonstrations/Abivax%20-%20Demonstrations%20phase.xlsb?d=w3d77d51f3ae84be2b506dc227a00bb1f",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Demonstrations/Abivax%20-%20Demonstrations%20phase.xlsb?d=w3d77d51f3ae84be2b506dc227a00bb1f&csf=1&web=1&e=pbNtPR"
+      ],
+      "title": "Abivax - Demonstrations phase.xlsb",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "excel",
+      "extension": "xlsb",
+      "fileName": "Abivax - Demonstrations phase.xlsb",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Demonstrations",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-90e5ce9b6d0d",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Final%20Financial%20comparaison%20Offer.xlsx?d=wb36a57ad9abb4af6aa87092fd8476d9b",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Final%20Financial%20comparaison%20Offer.xlsx?d=wb36a57ad9abb4af6aa87092fd8476d9b&csf=1&web=1&e=y4e87Q"
+      ],
+      "title": "Abivax - Final Financial comparaison Offer.xlsx",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "excel",
+      "extension": "xlsx",
+      "fileName": "Abivax - Final Financial comparaison Offer.xlsx",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation / Second round",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [
+        "temp/Abivax - Final Financial comparaison Offer.xlsx"
+      ],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "local-attachment-available"
+    },
+    {
+      "id": "sp-f1fc42f8969a",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Netsuite/Abivax%20-%20Netsuite%20Demonstration%20Feedback.pptx?d=w8783e9d1b2f148e08b0cf8625621a13d",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Netsuite/Abivax%20-%20Netsuite%20Demonstration%20Feedback.pptx?d=w8783e9d1b2f148e08b0cf8625621a13d&csf=1&web=1&e=bidDHi"
+      ],
+      "title": "Abivax - Netsuite Demonstration Feedback.pptx",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "powerpoint",
+      "extension": "pptx",
+      "fileName": "Abivax - Netsuite Demonstration Feedback.pptx",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation / Netsuite",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [
+        "temp/Abivax - Netsuite Demonstration Feedback.pptx"
+      ],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "local-attachment-available"
+    },
+    {
+      "id": "sp-eae6d3fd3aed",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round/Abivax%20-%20RFP%20Analysis%20review_20260205.pdf",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round/Abivax%20-%20RFP%20Analysis%20review_20260205.pdf?csf=1&web=1&e=sGdZ5l"
+      ],
+      "title": "Abivax - RFP Analysis review_20260205.pdf",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "pdf-or-binary",
+      "extension": "pdf",
+      "fileName": "Abivax - RFP Analysis review_20260205.pdf",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation / First Round",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [
+        "temp/Abivax - RFP Analysis review_20260205.pdf"
+      ],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "local-attachment-available"
+    },
+    {
+      "id": "sp-9ef06282c759",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/SAP%20-%20KPMG/Abivax%20-%20SAP%20Demonstration%20Feedback.pptx?d=wc4ee4e13d4a44105bd8ce0ab2b20106c",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/SAP%20-%20KPMG/Abivax%20-%20SAP%20Demonstration%20Feedback.pptx?d=wc4ee4e13d4a44105bd8ce0ab2b20106c&csf=1&web=1&e=YLfze3"
+      ],
+      "title": "Abivax - SAP Demonstration Feedback.pptx",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "powerpoint",
+      "extension": "pptx",
+      "fileName": "Abivax - SAP Demonstration Feedback.pptx",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation / SAP - KPMG",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [
+        "temp/Abivax - SAP Demonstration Feedback.pptx"
+      ],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "local-attachment-available"
+    },
+    {
+      "id": "sp-cb41e2e39c20",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round?csf=1&web=1&e=JezYH9"
+      ],
+      "title": "First Round",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "folder",
+      "extension": "",
+      "fileName": "First Round",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Consultation",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    },
+    {
+      "id": "sp-544bffb6a385",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Demonstrations/Recordings",
+      "rawUrls": [
+        "https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Demonstrations/Recordings?csf=1&web=1&e=0sbWCb"
+      ],
+      "title": "Recordings",
+      "host": "abivaxfr.sharepoint.com",
+      "site": "ERPChoiceProjectxKPMGQ42025",
+      "itemType": "folder",
+      "extension": "",
+      "fileName": "Recordings",
+      "folderPath": "General / Phase 3 - Consultation process and preparation / Demonstrations",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "sourceEmails": [
+        {
+          "received": "2026-02-19T11:55:04.3620000",
+          "subject": "ABIVAX ERP - Project update",
+          "sender": "Ben Alaya, Aymen",
+          "bodyPath": ""
+        },
+        {
+          "received": null,
+          "subject": "20260219-115504-16 - ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-115504-16 - ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260219-142532-12 - Fw_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260219-142532-12 - Fw_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-034727-10 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-034727-10 - Re_ ABIVAX ERP - Project update/body.txt"
+        },
+        {
+          "received": null,
+          "subject": "20260220-044311-09 - Re_ ABIVAX ERP - Project update",
+          "sender": "",
+          "bodyPath": "temp/email-review/attachments/20260220-044311-09 - Re_ ABIVAX ERP - Project update/body.txt"
+        }
+      ],
+      "localPaths": [],
+      "tags": [
+        "kpmg-project-update",
+        "attachment-body"
+      ],
+      "firstSeenAt": "2026-02-19T11:55:04.3620000",
+      "lastSeenAt": "2026-02-19T11:55:04.3620000",
+      "status": "link-only"
+    }
+  ]
+}

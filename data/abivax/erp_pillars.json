@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "updatedAt": "2026-02-24",
+  "pillars": [
+    {
+      "id": "p2p",
+      "shortLabel": "P2P",
+      "label": "P2P / Transaction Operations",
+      "description": "Requisition-to-approval-to-PO-to-invoice-to-payment operating flow, including vendor setup/validation and payment execution controls.",
+      "doneMeans": [
+        "Workflow approvals are designed and system-enforced.",
+        "Vendor setup/validation path and payment flow ownership are explicit.",
+        "Key manual handoffs are reduced or intentionally controlled.",
+        "Exception handling and evidence retention paths are defined."
+      ],
+      "subtopics": [
+        "approvals-workflows",
+        "vendor-master",
+        "invoice-processing",
+        "payment-validation",
+        "payment-execution",
+        "expense-management",
+        "1099-tax-outputs",
+        "evidence-retention"
+      ],
+      "executivePrompt": "Are we building a scalable, controlled transaction engine or recreating today's manual P2P bottlenecks?"
+    },
+    {
+      "id": "reporting-data",
+      "shortLabel": "Reporting",
+      "label": "Financial Reporting / Data Model",
+      "description": "Close and reporting outputs, data model/COA/cost centers, multi-entity and multi-GAAP reporting, FP&A data access, and reporting extract quality.",
+      "doneMeans": [
+        "Target COA/cost-center design (or explicit mapping strategy) is agreed.",
+        "Reporting extract/data model supports finance and FP&A needs.",
+        "Multi-entity, FX, and multi-GAAP requirements are explicitly designed.",
+        "Consultant dependency vs in-house reporting scope is a deliberate decision."
+      ],
+      "subtopics": [
+        "coa",
+        "cost-centers",
+        "entity-structure",
+        "fx-currency",
+        "multi-gaap-ifrs-sec",
+        "close-process",
+        "reporting-extracts",
+        "fpa-reporting-model",
+        "consolidation-bridge"
+      ],
+      "executivePrompt": "Will the ERP materially improve reporting quality and reduce manual bridging, or only move transactions into a new UI?"
+    },
+    {
+      "id": "controls-audit",
+      "shortLabel": "Controls",
+      "label": "SOX / Controls / Auditability",
+      "description": "Control design, audit trail/evidence, remediation tracking, owner accountability, and system-enforced control capabilities.",
+      "doneMeans": [
+        "Key controls are mapped to named owners and system/process steps.",
+        "Audit evidence retention paths are defined for critical flows.",
+        "Deficiency/remediation ownership and tracking repository are explicit.",
+        "ERP design decisions support testable and traceable controls."
+      ],
+      "subtopics": [
+        "sox-scope",
+        "control-ownership",
+        "remediation-tracking",
+        "audit-trail",
+        "segregation-of-duties",
+        "access-controls",
+        "evidence-repository",
+        "control-automation-vs-manual"
+      ],
+      "executivePrompt": "Does the ERP program close auditability gaps by design, or defer controls decisions until after selection?"
+    }
+  ],
+  "crossCutting": [
+    {
+      "id": "enablement",
+      "shortLabel": "Enablement",
+      "label": "Platform / Enablement",
+      "description": "IT architecture, integrations, access, resourcing, change management, and execution feasibility supporting all three pillars.",
+      "subtopics": [
+        "integrations-interfaces",
+        "system-ownership-admin",
+        "access-validation",
+        "it-capacity",
+        "architecture-mapping",
+        "timeline-dependencies",
+        "vendor-coordination",
+        "change-management"
+      ]
+    }
+  ]
+}

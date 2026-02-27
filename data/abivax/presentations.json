@@ -1,0 +1,696 @@
+{
+  "presentations": [
+    {
+      "id": "board-erp-readout-20260319",
+      "title": "Board ERP Readout",
+      "audience": "Board",
+      "meetingDate": "2026-03-19",
+      "owner": "Mike Markman",
+      "status": "in-review-exec",
+      "objective": "Secure board alignment on ERP selection direction, implementation risk controls, and the first 90-day execution posture to protect Jan 1, 2027 go-live.",
+      "narrative": [
+        "Abivax ran a structured selection process with documented outputs across all phases.",
+        "Decision quality now depends on delivery model realism and internal capacity, not feature marketing.",
+        "Board decision this cycle should lock direction, owners, and governance rhythm."
+      ],
+      "keyMessages": [
+        "Selection process is rigorous and source-backed.",
+        "Primary risk is execution capacity and governance discipline.",
+        "A focused 90-day plan de-risks Jan 1, 2027 readiness."
+      ],
+      "dataRequests": [],
+      "artifacts": [
+        {
+          "id": "brd-art-1",
+          "title": "Didier Board Format Ask (sent)",
+          "type": "email",
+          "status": "available",
+          "source": "Outlook Sent",
+          "link": "",
+          "owner": "Mike Markman",
+          "notes": "Sent on 2026-02-18 with ask on expected board presentation format and offer to prepare ERP selection summary."
+        },
+        {
+          "id": "brd-art-2",
+          "title": "Aymen Project Update Summary",
+          "type": "email",
+          "status": "available",
+          "source": "Outlook Inbox",
+          "link": "",
+          "owner": "Mike Markman",
+          "notes": "Timeline and deliverables from Sep 2025 to Feb 2026, including final decision expected on 2026-02-26."
+        },
+        {
+          "id": "brd-art-3",
+          "title": "RFP Analysis Review Deck (2026-02-05)",
+          "type": "deck",
+          "status": "linked",
+          "source": "SharePoint via KPMG email",
+          "link": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round/Abivax%20-%20RFP%20Analysis%20review_20260205.pdf",
+          "owner": "KPMG",
+          "notes": "Core rationale for shortlist and technical scoring narrative."
+        },
+        {
+          "id": "brd-art-4",
+          "title": "Final Financial Comparison Offer",
+          "type": "workbook",
+          "status": "linked",
+          "source": "SharePoint via KPMG email",
+          "link": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Final%20Financial%20comparaison%20Offer.xlsx",
+          "owner": "KPMG + Finance",
+          "notes": "Primary quantitative source for vendor comparison."
+        },
+        {
+          "id": "brd-art-5",
+          "title": "France P2P Swimlane Visual Asset (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Use as supporting visual for execution risk/current-state process complexity in board discussions when needed."
+        },
+        {
+          "id": "brd-art-6",
+          "title": "Reporting / FP&A Data Flow Swimlane Visual Asset (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Use selectively to explain reporting/data-model dependency and KPMG bridge handoffs behind board-level tradeoffs."
+        }
+      ],
+      "slidePlan": [
+        {
+          "id": "brd-slide-1",
+          "section": "Context",
+          "title": "Mandate and Timing",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "timeline",
+          "notes": "",
+          "content": [
+            "ERP/SOX is a declared 2026 finance priority with executive sponsorship.",
+            "Jan 1, 2027 go-live remains the operating target.",
+            "March 19 board cycle is the decision-communication checkpoint.",
+            "Delay now increases execution and control risk."
+          ]
+        },
+        {
+          "id": "brd-slide-2",
+          "section": "Process",
+          "title": "What Has Been Completed",
+          "status": "ready",
+          "owner": "Mike + KPMG",
+          "evidenceStatus": "confirmed",
+          "visual": "phase-map",
+          "notes": "",
+          "content": [
+            "Initiate and scope completed (Sep-Oct 2025).",
+            "Diagnostic and pain-point mapping completed (Oct-Nov 2025).",
+            "RFP workshops and requirements completed (Nov-Dec 2025).",
+            "Bid analysis, shortlist, and demos completed (Jan-Feb 2026)."
+          ]
+        },
+        {
+          "id": "brd-slide-3",
+          "section": "Decision",
+          "title": "Selection Decision Outcome and Tradeoffs",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "matrix",
+          "notes": "",
+          "content": [
+            "Abivax team aligned on NetSuite as the selected path on February 26, 2026.",
+            "Decision reflects execution fit, usability, and implementation practicality for current organization size and constraints.",
+            "Open items now move to commercial negotiation, scope confirmation, and implementation mobilization timing.",
+            "Target remains early April mobilization to support Jan 1, 2027 go-live objective."
+          ]
+        },
+        {
+          "id": "brd-slide-4",
+          "section": "Risk",
+          "title": "Top Delivery Risks and Mitigations",
+          "status": "ready",
+          "owner": "Mike + IT + Finance",
+          "evidenceStatus": "confirmed",
+          "visual": "risk-heatmap",
+          "notes": "Optional supporting visual: use France P2P and Reporting/FP&A swimlane previews (brd-art-5, brd-art-6) in appendix or discussion backup to show execution/control risk concentration by process stage.",
+          "content": [
+            "Risk: manual legacy handoffs and unclear ownership. Mitigation: named owner matrix by process/feed.",
+            "Risk: business capacity constraints. Mitigation: phase-based staffing commitments.",
+            "Risk: control evidence gaps. Mitigation: control-by-design checkpoints in blueprint phase.",
+            "Risk: timeline slippage. Mitigation: weekly workstream governance and monthly executive review."
+          ]
+        },
+        {
+          "id": "brd-slide-5",
+          "section": "Ask",
+          "title": "Board Decision and Next 90 Days",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "decision",
+          "notes": "",
+          "content": [
+            "Acknowledge NetSuite selection and pivot governance focus to implementation execution risk.",
+            "Confirm post-selection negotiation/contracting ownership and cadence (Mike/Hema with vendor and advisors).",
+            "Confirm staffing and decision rights for design phase mobilization ahead of early April start target.",
+            "Maintain monthly executive and board-ready progress reporting against Jan 1, 2027 target."
+          ]
+        }
+      ],
+      "actionLog": [
+        {
+          "date": "2026-02-18",
+          "author": "Mike",
+          "action": "Sent Didier board format query to align output expectations."
+        },
+        {
+          "date": "2026-02-19",
+          "author": "Mike",
+          "action": "Captured IT and US finance call findings to refine board narrative and open data requests."
+        },
+        {
+          "date": "2026-02-19",
+          "author": "Codex",
+          "action": "Initialized structured slide plan, source library, and gap tracker for this deck."
+        },
+        {
+          "date": "2026-02-23",
+          "author": "Codex",
+          "action": "Added KPMG project-update email timeline/deliverables as source-backed evidence for process-completeness narrative."
+        },
+        {
+          "date": "2026-02-25",
+          "author": "Codex",
+          "action": "Linked reusable process visual assets (France P2P and Reporting/FP&A swimlanes) into board deck artifacts and risk-slide notes as optional backup visuals."
+        },
+        {
+          "date": "2026-02-26",
+          "author": "Codex",
+          "action": "Updated board deck metadata for NetSuite selection outcome and shifted next-step messaging to negotiation and implementation mobilization (early April target)."
+        }
+      ],
+      "tags": [
+        "erp",
+        "board",
+        "selection",
+        "sox"
+      ],
+      "lastUpdated": "2026-02-26"
+    },
+    {
+      "id": "audit-committee-erp-controls-202603week",
+      "title": "Audit Committee ERP Controls Readout",
+      "audience": "Audit Committee",
+      "meetingDate": "2026-03-19 (week)",
+      "owner": "Mike Markman",
+      "status": "in-review-exec",
+      "objective": "Establish audit committee confidence that ERP delivery will close priority control gaps with owner/date accountability.",
+      "narrative": [
+        "Current finance operations rely on manual controls that do not scale to commercialization.",
+        "ERP program should be governed as a control-remediation program, not only a technology rollout.",
+        "Audit oversight should anchor on deficiency closure, evidence quality, and accountability cadence."
+      ],
+      "keyMessages": [
+        "Manual process dependency is the primary control risk.",
+        "Control design and ownership decisions in 2026 determine audit readiness in 2027.",
+        "A dated remediation cadence is required now, not post-selection."
+      ],
+      "artifacts": [
+        {
+          "id": "audit-art-1",
+          "title": "IT Landscape Intro Notes (Jade/Benjamin)",
+          "type": "meeting-notes",
+          "status": "available",
+          "source": "Today call notes",
+          "link": "",
+          "owner": "Mike",
+          "notes": "Captured architecture, manual flows, and control pain points including Sage audit limitations."
+        },
+        {
+          "id": "audit-art-2",
+          "title": "US Finance Intro Notes (Matt/Kimberly/Adrian)",
+          "type": "meeting-notes",
+          "status": "available",
+          "source": "Today call notes",
+          "link": "",
+          "owner": "Mike",
+          "notes": "Captured manual SEC reporting, IFRS bridge process, and US entity operational workflows."
+        },
+        {
+          "id": "audit-art-3",
+          "title": "SAP and NetSuite Demo Feedback Decks",
+          "type": "deck",
+          "status": "linked",
+          "source": "SharePoint via KPMG email",
+          "link": "https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation",
+          "owner": "KPMG",
+          "notes": "Provides gap list and control-relevant observations from demonstrations."
+        },
+        {
+          "id": "audit-art-4",
+          "title": "France P2P Swimlane Visual Asset (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Primary controls-oriented process visual for audit committee discussion of ERP-addressable P2P gaps and remediation path."
+        },
+        {
+          "id": "audit-art-5",
+          "title": "Reporting / FP&A Data Flow Swimlane Visual Asset (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Use to explain reporting bridge/manual control dependency and future-state control-by-design objectives."
+        },
+        {
+          "id": "audit-art-6",
+          "title": "Controls / Auditability Swimlane Payload (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Primary audit-facing controls process visual tying findings, remediation statuses, and ERP design checkpoints to the control program narrative."
+        }
+      ],
+      "slidePlan": [
+        {
+          "id": "audit-slide-1",
+          "section": "Baseline",
+          "title": "Current Control Posture",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "risk-baseline",
+          "notes": "",
+          "content": [
+            "Core P2P, reporting, and reconciliation activities remain heavily manual.",
+            "Control evidence and traceability are inconsistent across systems.",
+            "Legacy process design increases key-person and timing risk.",
+            "Current posture is not scalable for future filing scrutiny."
+          ]
+        },
+        {
+          "id": "audit-slide-2",
+          "section": "Gaps",
+          "title": "Priority Control Gaps",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "gap-table",
+          "notes": "Use controls/remediation swimlane (audit-art-6) to frame the current-state control program flow before discussing design principles and remediation roadmap.",
+          "content": [
+            "P2P workflow approvals and evidence capture are fragmented.",
+            "Reporting and bridge processes are manual and consultant-dependent.",
+            "Integration monitoring/failure procedures are not standardized by owner.",
+            "US/France process divergence increases close and control complexity."
+          ]
+        },
+        {
+          "id": "audit-slide-3",
+          "section": "Target",
+          "title": "Target Control Model",
+          "status": "ready",
+          "owner": "Mike + Finance",
+          "evidenceStatus": "confirmed",
+          "visual": "control-architecture",
+          "notes": "Use France P2P and Reporting/FP&A swimlane visuals (audit-art-4, audit-art-5) to show where control gaps and manual handoffs concentrate before detailing remediation expectations.",
+          "content": [
+            "Embed approvals, role controls, and audit logging in-system.",
+            "Standardize feed ownership, monitoring, and failure escalation.",
+            "Create traceable flow from transaction initiation to filing support.",
+            "Align entity-level variations under a common control framework."
+          ]
+        },
+        {
+          "id": "audit-slide-4",
+          "section": "Remediation",
+          "title": "Remediation Governance",
+          "status": "ready",
+          "owner": "Finance Controls + IT",
+          "evidenceStatus": "confirmed",
+          "visual": "roadmap",
+          "notes": "Tie remediation roadmap to CFTI tracker/RCM signals and process visual stages so owners can see where ERP milestones support control closure.",
+          "content": [
+            "Single deficiency register with severity, owner, due date, and status.",
+            "Weekly remediation governance with monthly audit committee rollup.",
+            "ERP milestones tied to control-closure checkpoints.",
+            "Escalation triggered on slippage against critical controls."
+          ]
+        },
+        {
+          "id": "audit-slide-5",
+          "section": "Ask",
+          "title": "Audit Committee Ask",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "decision",
+          "notes": "",
+          "content": [
+            "Endorse control-by-design as non-negotiable ERP principle.",
+            "Require owner/date accountability on top control gaps.",
+            "Approve monthly remediation reporting format and cadence.",
+            "Authorize fast-track support where controls threaten timeline."
+          ]
+        }
+      ],
+      "actionLog": [
+        {
+          "date": "2026-02-19",
+          "author": "Mike",
+          "action": "Requested IT follow-up artifacts and control-path details from Jade/Benjamin."
+        },
+        {
+          "date": "2026-02-19",
+          "author": "Mike",
+          "action": "Captured US finance manual control pain points and data asks for COA/cost-center/reporting."
+        },
+        {
+          "date": "2026-02-19",
+          "author": "Codex",
+          "action": "Created audit-focused deck skeleton with open data gap tracker and slide-level readiness."
+        },
+        {
+          "date": "2026-02-23",
+          "author": "Codex",
+          "action": "Logged Adrian audit committee slide request (overview, timeline, financials) with March 6 target."
+        },
+        {
+          "date": "2026-02-23",
+          "author": "Codex",
+          "action": "Captured Camille questions for next-phase contracting prep (validation, negotiation owner, contract law, legal review owner)."
+        },
+        {
+          "date": "2026-02-25",
+          "author": "Codex",
+          "action": "Added reusable process swimlane assets to audit deck artifacts and mapped them to controls current-state/remediation slides."
+        },
+        {
+          "date": "2026-02-25",
+          "author": "Codex",
+          "action": "Added controls/remediation swimlane asset to audit deck and mapped it to current-state controls framing slide."
+        },
+        {
+          "date": "2026-02-26",
+          "author": "Codex",
+          "action": "Recorded post-selection transition to NetSuite path; audit deck can now focus on controls remediation and implementation control-by-design checkpoints rather than vendor comparison."
+        }
+      ],
+      "tags": [
+        "audit",
+        "sox",
+        "controls",
+        "erp"
+      ],
+      "lastUpdated": "2026-02-26",
+      "dataRequests": [
+        {
+          "id": "audit-dr-1",
+          "topic": "Audit Committee date/time confirmation",
+          "priority": "medium",
+          "owner": "Mike / Hema",
+          "due": "2026-02-26",
+          "status": "open",
+          "ask": "Camille asked for next Audit Committee date to plan deck support timing."
+        },
+        {
+          "id": "audit-dr-2",
+          "topic": "Updated SAP + NetSuite commercial/timeline elements",
+          "priority": "medium",
+          "owner": "KPMG + vendors",
+          "due": "2026-02-28",
+          "status": "open",
+          "ask": "Camille indicated current status pack does not cover all requested financial/timeline points."
+        },
+        {
+          "id": "audit-dr-3",
+          "topic": "Audit deck 3-slide content pack (overview/timeline/financials)",
+          "priority": "high",
+          "owner": "Mike + KPMG",
+          "due": "2026-03-06",
+          "status": "open",
+          "ask": "Requested by Adrian for audit committee prep."
+        }
+      ]
+    },
+    {
+      "id": "exec-erp-program-backbone-living",
+      "title": "ERP Program Priorities and Readiness (Living Executive Deck)",
+      "audience": "Executive / Board (broad)",
+      "meetingDate": "Rolling (update weekly)",
+      "owner": "Mike Markman",
+      "status": "active-draft",
+      "objective": "Maintain a continuously updated executive-level program deck that clearly communicates ERP priorities (P2P, Reporting, Controls), readiness posture, major decisions, and delivery risk as the program evolves.",
+      "narrative": [
+        "This is the canonical executive storyline for the ERP program and should stay aligned to the three ERP pillars.",
+        "The deck should be reusable for Didier, board, audit committee, and executive updates with audience-specific cuts.",
+        "Content should prioritize signal: current posture, changes since last update, decisions needed, and owner-dated actions."
+      ],
+      "keyMessages": [
+        "NetSuite selection is complete; executive focus now shifts to negotiation discipline, implementation mobilization, and control-by-design execution.",
+        "The ERP program is a business operating-model and controls program, not only a system replacement.",
+        "Progress and risks should be reported consistently across P2P, reporting/data, and controls/auditability.",
+        "Executive governance quality and resourcing discipline determine delivery confidence more than vendor feature marketing."
+      ],
+      "dataRequests": [
+        {
+          "id": "exec-gap-1",
+          "topic": "P2P baseline pain-point quantification",
+          "priority": "high",
+          "owner": "Mike + Finance",
+          "due": "TBD",
+          "status": "open",
+          "ask": "Quantify current P2P manual touchpoints, approval gaps, and monthly transaction volumes by entity (SA/LLC), including 1099-related process pain points."
+        },
+        {
+          "id": "exec-gap-2",
+          "topic": "Reporting baseline and bridge dependency",
+          "priority": "high",
+          "owner": "Matt + Frederick + KPMG",
+          "due": "TBD",
+          "status": "open",
+          "ask": "Summarize current French GAAP -> IFRS/SEC bridge process, who does what (internal vs KPMG), cycle timing, and top failure points/manual dependencies."
+        },
+        {
+          "id": "exec-gap-3",
+          "topic": "Controls/deficiencies inventory",
+          "priority": "high",
+          "owner": "Hema + Finance + IT",
+          "due": "TBD",
+          "status": "open",
+          "ask": "Identify current SOX/control gaps, where remediation tracking lives today, and which deficiencies the ERP program is expected to address directly."
+        },
+        {
+          "id": "exec-gap-4",
+          "topic": "Program governance and resourcing model",
+          "priority": "medium",
+          "owner": "Didier + Hema + Mike",
+          "due": "TBD",
+          "status": "open",
+          "ask": "Confirm executive decision rights, workstream owners, meeting cadence, and expected internal capacity commitments by function (Finance/IT/KPMG/vendors)."
+        },
+        {
+          "id": "exec-gap-5",
+          "topic": "Executive visuals/data sources",
+          "priority": "medium",
+          "owner": "Mike",
+          "due": "TBD",
+          "status": "open",
+          "ask": "Define standard visuals for recurring updates (pillar scorecard, timeline, risk heatmap, open decisions, owner-date tracker) and map source systems/notes feeding each visual."
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "exec-art-1",
+          "title": "Aymen ERP Project Update Email + Links",
+          "type": "email",
+          "status": "available",
+          "source": "Outlook Inbox",
+          "link": "",
+          "owner": "Mike",
+          "notes": "Current best summary of work completed to date and links to supporting KPMG artifacts. Use as backbone evidence for process-completeness and timeline framing."
+        },
+        {
+          "id": "exec-art-2",
+          "title": "Board ERP Readout deck workspace",
+          "type": "internal-deck",
+          "status": "available",
+          "source": "Presentations module",
+          "link": "/abivax/spine/presentations#board-erp-readout-20260319",
+          "owner": "Mike",
+          "notes": "Board-specific cut should inherit from this living executive deck once the backbone is stabilized."
+        },
+        {
+          "id": "exec-art-3",
+          "title": "Audit Committee ERP Controls Readout deck workspace",
+          "type": "internal-deck",
+          "status": "available",
+          "source": "Presentations module",
+          "link": "/abivax/spine/presentations#audit-committee-erp-controls-202603week",
+          "owner": "Mike",
+          "notes": "Controls-specific cut should inherit controls narrative and remediation visuals from the backbone deck."
+        },
+        {
+          "id": "exec-art-4",
+          "title": "France P2P Current/Future Swimlane Payload (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Canonical diagram payload + rendered swimlane preview for France P2P. Use on current-state/future-state process visual slides and iterate as Trinidad/CFTI evidence matures."
+        },
+        {
+          "id": "exec-art-5",
+          "title": "Reporting / FP&A Data Flow Swimlane Payload (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Canonical reporting/bridge flow diagram payload for executive storytelling. Use to explain current handoffs, KPMG dependency, and future-state data model objectives."
+        },
+        {
+          "id": "exec-art-6",
+          "title": "Controls / Auditability Swimlane Payload (v1)",
+          "type": "process-diagram",
+          "status": "available",
+          "source": "Process Flows module",
+          "link": "/abivax/spine/process-flows",
+          "owner": "Codex",
+          "notes": "Canonical controls/remediation swimlane visual showing findings, remediation tracking, and ERP control-by-design checkpoints for executive/audit narratives."
+        }
+      ],
+      "slidePlan": [
+        {
+          "id": "exec-slide-1",
+          "section": "Executive Framing",
+          "title": "ERP Program Mandate and Why It Matters Now",
+          "status": "draft",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "headline + context bar",
+          "notes": "Keep this short and executive-level. Anchor on ERP/SOX framing, Jan 1 2027 target, and why delay increases execution/control risk.",
+          "content": [
+            "ERP/SOX is a 2026 finance priority with direct executive sponsorship.",
+            "The program is foundational to scaling finance and controls toward commercialization.",
+            "Near-term decisions should optimize execution certainty and governance, not feature theater."
+          ]
+        },
+        {
+          "id": "exec-slide-2",
+          "section": "Program Focus",
+          "title": "Three ERP Priorities (P2P, Reporting, Controls)",
+          "status": "draft",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "3-pillar scorecard",
+          "notes": "This should become the canonical recurring slide for exec audiences. Update the status indicators over time and keep terminology consistent across all decks.",
+          "content": [
+            "P2P / Transaction Operations: modernize workflows, approvals, and payment control path.",
+            "Financial Reporting / Data Model: improve multi-entity, multi-GAAP, and management reporting capability.",
+            "SOX / Controls / Auditability: design traceable, testable controls and evidence retention into the future-state operating model."
+          ]
+        },
+        {
+          "id": "exec-slide-3",
+          "section": "Current State",
+          "title": "Baseline Reality: Manual Complexity and Control Risk",
+          "status": "draft",
+          "owner": "Mike",
+          "evidenceStatus": "partial",
+          "visual": "current-state swimlane pair + pain callouts",
+          "notes": "Use France P2P and Reporting/FP&A swimlane visuals (exec-art-4 and exec-art-5) with limited callouts from source-backed controls and current system handoffs. Keep it executive-level and avoid detailed control counts on this slide.",
+          "content": [
+            "Current workflows are fragmented across multiple systems with manual handoffs.",
+            "Reporting and bridge processes remain heavily spreadsheet/KPMG dependent.",
+            "Control evidence and ownership are inconsistent, creating scaling and audit risk."
+          ]
+        },
+        {
+          "id": "exec-slide-4",
+          "section": "Readiness",
+          "title": "Program Readiness, Open Decisions, and Resourcing",
+          "status": "draft",
+          "owner": "Mike",
+          "evidenceStatus": "partial",
+          "visual": "traffic-light + owner/date table",
+          "notes": "Use traffic-light status table as primary visual. Optional companion visual: controls/remediation swimlane (exec-art-6) to show where open issues sit in the operating process and where ERP checkpoints matter.",
+          "content": [
+            "Separate completed selection work from unresolved delivery/governance decisions.",
+            "Show owner-dated actions required in next 30/60/90 days.",
+            "Explicitly call out capacity constraints and mitigation plan by function."
+          ]
+        },
+        {
+          "id": "exec-slide-5",
+          "section": "Governance",
+          "title": "What Executives Should Review Each Update",
+          "status": "draft",
+          "owner": "Mike",
+          "evidenceStatus": "draft",
+          "visual": "recurring dashboard layout",
+          "notes": "Define the recurring operating cadence for this deck: changes since last update, pillar status, key risks, decision requests, and next milestones.",
+          "content": [
+            "Changes since last update (net-new evidence, decisions, risks).",
+            "Pillar status summary with confidence and major blockers.",
+            "Decision requests and milestone outlook with accountable owners."
+          ]
+        }
+      ],
+      "actionLog": [
+        {
+          "date": "2026-02-24",
+          "author": "Mike",
+          "action": "Requested creation of a living executive-level ERP program presentation scaffold focused on the three core ERP pillars."
+        },
+        {
+          "date": "2026-02-24",
+          "author": "Codex",
+          "action": "Initialized living executive deck scaffold with pillar-based storyline, recurring visual structure notes, and open data requests for ongoing updates."
+        },
+        {
+          "date": "2026-02-25",
+          "author": "Codex",
+          "action": "Linked canonical process-flow swimlane payloads (France P2P and Reporting/FP&A) into deck artifacts so executive visuals can reuse source-backed process diagrams."
+        },
+        {
+          "date": "2026-02-25",
+          "author": "Codex",
+          "action": "Mapped Baseline Reality slide to reusable process visual assets (France P2P and Reporting/FP&A swimlane payloads) for future executive deck iterations."
+        },
+        {
+          "date": "2026-02-25",
+          "author": "Codex",
+          "action": "Added controls/remediation swimlane asset to living executive deck and mapped it to readiness/governance slide as optional companion visual."
+        },
+        {
+          "date": "2026-02-26",
+          "author": "Codex",
+          "action": "Recorded NetSuite selection decision and moved living deck posture from vendor-selection framing to post-selection execution/negotiation readiness."
+        }
+      ],
+      "tags": [
+        "erp",
+        "executive",
+        "board",
+        "audit",
+        "program",
+        "living-deck",
+        "pillars"
+      ],
+      "lastUpdated": "2026-02-26"
+    }
+  ]
+}

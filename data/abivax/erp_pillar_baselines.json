@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "updatedAt": "2026-02-26",
+  "baselines": [
+    {
+      "pillarId": "p2p",
+      "status": "active-fact-finding",
+      "evidenceStrength": "partial",
+      "ownerClarity": "partial",
+      "erpAddressableMapping": "not-started",
+      "whatDone": [
+        "ERP decision forum completed on 2026-02-26 with team alignment to proceed with NetSuite; selection phase moved to post-selection execution planning.",
+        "Finance stakeholder feedback captured from demos (P2P depth concerns, workload concerns, approval workflow gaps).",
+        "P2P identified as one of the three canonical ERP program priorities.",
+        "Initial follow-up sent to KPMG focused on P2P detail / what must be seen and clarified.",
+        "France and US internal P2P fact-finding emails sent to Trinidad, Kimberly, and Matt requesting existing process documentation first.",
+        "Reviewed NetSuite Demonstration Feedback deck (source artifact) confirming concrete P2P/enablement questions: Trustpair integration proof points and detailed interface classification (custom vs bundled vs paid app).",
+        "Reviewed SAP Demonstration Feedback deck (source artifact) confirming additional P2P/finance concerns: dedicated SAP BI reporting session request for P2P/finance and proposal scope/RACI clarifications (interfaces, forms, workflows).",
+        "CFTI SOX implementation call confirmed finalized P2P RCM and remediation tracker exist, with ERP-related controls/gaps already identified and at least one vendor-management gap tied to Sage material weakness.",
+        "Received CFTI attachments from Youness (Project Plan tracker workbook, FSCP RCM, P2P RCM) and confirmed workbook/tab structures via local OpenXML inspection.",
+        "Received and parsed Trinidad France P2P artifact bundle (10 files) into the system: 2 approval matrices, 2 P2P SOP/procedure PDFs, signature policy, currency-entry guide, DocuShare user guide, supplier master-cleaning workbook, and payment-process workbook.",
+        "Trinidad payment-process workbook intake confirms operational details useful for process mapping, including Trustpair/Agicap/Sage references, an AGICAP sheet, an EBICS signer-key mention, a documented cadence of two vendor payment campaigns per month (10th and 25th), and a payment-file preparation lead-time note (~4 working days before value date).",
+        "Trinidad payment-process workbook intake references Juliette and Fatma in payment-file preparation roles, which gives named-owner clues for France payment-step mapping and walkthrough targeting.",
+        "Trinidad supplier-data workbook intake confirms vendor-master data fields/cleanup guidance are documented (including country, VAT, Siret, and bank fields) plus identification/bank/free-field setup tabs, which supports vendor-setup current-state mapping."
+      ],
+      "openItems": [
+        "Current-state P2P workflow map by entity (SA vs LLC) is not yet documented in the program baseline.",
+        "Must-have P2P controls/workflows list is not yet formalized for implementation scope.",
+        "1099-specific process requirements remain unclear.",
+        "Need proof points and implementation examples for Trustpair integration feasibility (explicitly flagged in NetSuite demo feedback).",
+        "Need vendor response separating interfaces into custom build vs standard app vs paid app to avoid hidden scope/cost.",
+        "Need side-by-side SAP vs NetSuite evidence on P2P integrations/interfaces/workflows to avoid decision-making from demo style rather than implementation scope reality.",
+        "Need CFTI P2P RCM intake to identify which of the ERP-related controls/gaps should be explicit ERP design requirements vs non-ERP remediation.",
+        "Need PDF-level extraction/review of Trinidad approval matrices/SOPs/signature/currency docs to complement the workbook-derived operational signals."
+      ],
+      "waitingOn": [
+        "KPMG response on P2P-focused follow-up and available process/detail documentation.",
+        "Kimberly/Matt response with US LLC P2P process artifacts and current review/evidence practices.",
+        "Detailed row-level extraction/classification of the CFTI P2P RCM and project-plan micro view (files received; structure confirmed)."
+      ],
+      "nextMoves": [
+        "Review parsed Trinidad bundle summaries and priority artifacts (approval matrices, SOP/procedures, payment workbook, DocuShare guide) and convert them into a source-backed France P2P current-state map before the next walkthrough.",
+        "Deep-dive Trinidad payment workbook tabs to map current payment sequencing, Trustpair touchpoints, Agicap handoffs, and signer/validator roles.",
+        "Review France and US artifacts before live sessions to keep meetings focused and reduce generic discussion.",
+        "Build side-by-side France vs US current-state P2P map (steps, approvals, exceptions, evidence).",
+        "Convert findings into a P2P must-have workflow/control list tied to ERP design checkpoints.",
+        "Map CFTI P2P RCM gaps into three buckets: ERP-addressable, immediate non-ERP remediation, and management/ownership decisions."
+      ],
+      "keyContacts": [
+        "Trinidad",
+        "Hema",
+        "Kimberly Gordon",
+        "Matt Epley",
+        "Juliet (vendor setup)",
+        "KPMG"
+      ],
+      "evidenceRequests": [
+        {
+          "id": "p2p-req-kpmg-1",
+          "sentDate": "2026-02-23",
+          "source": "email",
+          "sentTo": "Camille / Aymen (KPMG)",
+          "topic": "P2P process detail and what must be seen in ERP solution fit",
+          "status": "partial",
+          "why": "Moves P2P pillar from generic preference comments to specific workflow, approval, and control requirements.",
+          "nextMove": "Use response to define P2P must-haves and map into selection/implementation scope."
+        },
+        {
+          "id": "p2p-req-france-trinidad-1",
+          "sentDate": "2026-02-24",
+          "source": "email",
+          "sentTo": "Trinidad Mesa",
+          "topic": "France P2P current-state documentation and must-have ERP process changes",
+          "status": "received",
+          "why": "Starts internal fact-finding on the France-side P2P process, controls, workarounds, and audit-trail gaps using existing documentation first.",
+          "nextMove": "Use the parsed Trinidad bundle inventory (approval matrices, SOPs, payment workbook, vendor-master workbook, DocuShare guide) to build a focused walkthrough agenda tied to documented steps, approvals, and evidence gaps."
+        },
+        {
+          "id": "p2p-req-us-kim-matt-1",
+          "sentDate": "2026-02-24",
+          "source": "email",
+          "sentTo": "Kimberly Gordon; Matt Epley",
+          "topic": "US LLC P2P current-state documentation and must-have ERP process changes",
+          "status": "partial",
+          "why": "Builds US-side P2P baseline (vendor setup, payment/review/posting, audit evidence, exceptions) before design assumptions are made.",
+          "nextMove": "Compare US and France P2P flows and identify where a global design can be standardized vs intentionally different by entity."
+        },
+        {
+          "id": "p2p-req-cfti-rcm-1",
+          "sentDate": "2026-02-25",
+          "source": "meeting-commitment",
+          "sentTo": "Walid Bouassida; Youness Tyamaz (CFTI)",
+          "topic": "Finalized P2P RCM and remediation tracker (ERP-related controls/gaps)",
+          "status": "received",
+          "why": "Provides control-by-control evidence for P2P design requirements and immediate remediation opportunities.",
+          "nextMove": "Extract P2P RCM control rows/gap remediation fields and classify ERP-addressable vs non-ERP vs management-decision items."
+        }
+      ]
+    },
+    {
+      "pillarId": "reporting-data",
+      "status": "active-fact-finding",
+      "evidenceStrength": "partial",
+      "ownerClarity": "partial",
+      "erpAddressableMapping": "not-started",
+      "whatDone": [
+        "Hema identified Robin Lapous (KPMG) as the contact supporting consolidation and IFRS adjustments; process currently described as manual in Excel with no formal documentation/process flows.",
+        "US Finance intro notes captured manual SEC reporting / IFRS bridge dependency and Sage extract limitations.",
+        "Reporting/Data identified as one of the three canonical ERP program priorities.",
+        "Living executive deck scaffold includes reporting baseline and bridge dependency as a high-priority data request.",
+        "Reviewed NetSuite Demonstration Feedback deck for proposal/workload assumptions; confirms need to validate scope/resourcing assumptions before relying on reporting capability claims.",
+        "Frederick fact-finding call captured pragmatic reporting target: improve quarterly reporting quality/visibility first; monthly reporting is a later-stage need (likely 2027/2028).",
+        "Frederick described Workday Adaptive/Interactive as an underused transition tool intended for internal consolidation/intercompany support and forecasting/variance visibility, currently used at low capacity.",
+        "Reporting/Data pillar now includes explicit cross-pillar dependency: P2P process timing quality affects reporting quality and timing.",
+        "CFTI SOX implementation call identified finalized FSCP RCM and remediation tracker, with functional ownership pointers (Trinidad/Hema for FSCP, Frederick for FP&A, Roxandra for Treasury, Sophie for HR) that can help structure reporting/controls owner mapping.",
+        "Received CFTI FSCP RCM and project-plan tracker workbooks from Youness and confirmed sheet/header structures (including reporting-close control fields and remediation-plan column).",
+        "Sent follow-up to Hema requesting the correct non-ERP KPMG contacts for reporting/process advisory (bridge/consolidation/current-state documentation owners)."
+      ],
+      "openItems": [
+        "Current consolidation/IFRS adjustment process is manual in Excel with limited/no formal documentation; need direct KPMG fact-finding with Robin Lapous to map current-state flow and dependencies.",
+        "Current reporting process baseline (French GAAP -> IFRS -> SEC) is not documented in one source in the app.",
+        "COA/cost center future-state design principles (global consistency vs entity separation) are not yet formalized.",
+        "Internal vs KPMG ownership split by reporting step is not yet mapped.",
+        "Frederick note: current system lacks a country tag, which appears important for reporting and cost center design/use cases.",
+        "Reporting design should prioritize a scalable quarterly operating model first, with monthly capability as future-ready rather than immediate scope.",
+        "Current milestone billing is not automated, creating reporting/timing visibility limitations.",
+        "Commercial/licensing/royalty reporting requirements exist as future design considerations (2027/2028) but are not core ERP scope at this stage.",
+        "Department reporting expectations are not standardized today (e.g., clinical visibility expectations unclear).",
+        "Need FSCP RCM intake to identify reporting/financial statement close control gaps that should shape near-term data model and process design decisions."
+      ],
+      "waitingOn": [
+        "Hema response / source docs for current reporting process and bridge workflow.",
+        "Frederick response with reporting dimensions/core outputs documentation (following 2026-02-24 follow-up email).",
+        "Follow-up detail from Matt / Adrian to confirm owners, timing, and data pain points for current reporting outputs.",
+        "Detailed row-level extraction/classification of FSCP RCM and tracker micro-view rows (files received; structure confirmed)."
+      ],
+      "nextMoves": [
+        "Build reporting baseline flow (steps, owners, systems, KPMG handoffs).",
+        "Tag which reporting pain points are ERP-addressable vs process/governance-only.",
+        "Define a minimum reporting dimension set (including country/entity/cost center and other Frederick-required dimensions) for core ERP/data design.",
+        "Separate near-term reporting needs (quarterly quality/visibility) from later-phase scalability needs (monthly/commercial/royalties) in scope discussions.",
+        "Use FSCP RCM to anchor reporting/close control requirements and owner assignments to actual control IDs/gaps."
+      ],
+      "keyContacts": [
+        "Hema",
+        "Matt Epley",
+        "Frederick Golly",
+        "Adrian Holbrook",
+        "KPMG",
+        "Chief Commercial Officer (incoming)"
+      ],
+      "evidenceRequests": [
+        {
+          "id": "reporting-req-hema-1",
+          "sentDate": "2026-02-24",
+          "source": "email",
+          "sentTo": "Hema",
+          "topic": "Current reporting process docs (French GAAP -> IFRS / SEC bridge, owners, steps, internal vs KPMG split)",
+          "status": "partial",
+          "why": "Creates the baseline for the Reporting/Data pillar and identifies what can move in-house vs remain external.",
+          "nextMove": "Convert response into current-state reporting flow and target-state ERP reporting requirements."
+        },
+        {
+          "id": "reporting-req-hema-kpmg-contacts-1",
+          "sentDate": "2026-02-25",
+          "source": "email",
+          "sentTo": "Hema",
+          "topic": "Identify non-ERP KPMG contacts for reporting / bridge / consolidation process fact-finding",
+          "status": "received",
+          "why": "Separates ERP-selection KPMG contacts (Camille/Aymen) from other KPMG advisory teams that may already own reporting-process documentation and bridge/consolidation workpapers.",
+          "nextMove": "Reach out to Robin Lapous (KPMG) on current consolidation / IFRS adjustments process and identify what documentation or workpapers can be used for reporting process mapping."
+        },
+        {
+          "id": "reporting-req-frederick-1",
+          "sentDate": "2026-02-24",
+          "source": "email",
+          "sentTo": "Frederick Golly",
+          "topic": "FP&A reporting dimensions and core output needs",
+          "status": "awaiting-response",
+          "why": "Anchors reporting/data design to actual dimension and output needs (not generic future-state reporting assumptions).",
+          "nextMove": "Use Frederick inputs to define minimum reporting dimensions and core quarterly output requirements in the reporting-data baseline."
+        },
+        {
+          "id": "reporting-req-cfti-fscp-1",
+          "sentDate": "2026-02-25",
+          "source": "meeting-commitment",
+          "sentTo": "Walid Bouassida; Youness Tyamaz (CFTI)",
+          "topic": "Finalized FSCP RCM and remediation tracker (financial close/reporting control gaps)",
+          "status": "received",
+          "why": "Adds documented FSCP control gaps and ownership to the Reporting/Data pillar baseline and ties reporting design to real deficiencies.",
+          "nextMove": "Extract FSCP RCM control rows and map gaps/remediation plans to reporting flow steps, owners, and ERP/non-ERP categories."
+        }
+      ]
+    },
+    {
+      "pillarId": "controls-audit",
+      "status": "active-fact-finding",
+      "evidenceStrength": "partial",
+      "ownerClarity": "partial",
+      "erpAddressableMapping": "not-started",
+      "whatDone": [
+        "Controls/Auditability identified as a core ERP pillar and reflected in board/audit deck scaffolds.",
+        "IT and Finance intro notes captured control-relevant issues (manual flows, weak audit trail, inconsistent evidence).",
+        "Hema and Jade requests sent to obtain documented SOX findings, remediation tracking, and IT control documentation.",
+        "Reviewed Jade IT Master Plan 2026-2027 deck (source artifact) confirming compliance scope explicitly includes SOX compliance, change request management, CSV/IQ, audits, and inspection readiness.",
+        "Reviewed SAP Demonstration Feedback deck showing proposal/RACI scrutiny and explicit concern on governance/PMO sufficiency (control-relevant for delivery oversight).",
+        "CFTI SOX implementation call confirmed finalized P2P and FSCP RCMs, an active remediation tracker (macro/micro views with control IDs and statuses), ERP-related design gaps, non-ERP immediate remediation opportunities, and management/ownership decision gaps.",
+        "Received Youness CFTI attachment package and confirmed workbook structures: project tracker macro/micro tabs plus finalized P2P and FSCP RCM tabs with control metadata/remediation columns."
+      ],
+      "openItems": [
+        "Documented SOX findings / deficiencies are not yet loaded into the program baseline.",
+        "Finance vs IT remediation ownership and tracking process is not yet confirmed in one place.",
+        "ERP-addressable vs non-ERP control remediation split has not yet been mapped.",
+        "Documented control deficiencies/findings are still missing even though IT roadmap confirms SOX/compliance workstreams exist.",
+        "ITGC RCM is not yet finalized (expected next week), so full application + IT control view is still incomplete.",
+        "Need explicit prioritization of the ~8 ERP-related controls in P2P/FSCP for ERP blueprint sequencing and early remediation planning."
+      ],
+      "waitingOn": [
+        "Hema response with SOX findings, remediation tracker location, and control narratives.",
+        "Jade response with IT control gaps, interface monitoring/failure handling docs, and admin ownership matrix.",
+        "Row-level extraction of P2P/FSCP RCM and project tracker micro-view to convert workbook content into app issue/control mappings.",
+        "Walid/Youness (CFTI) follow-up next week for ITGC RCM after final validation."
+      ],
+      "nextMoves": [
+        "Create deficiency inventory and tag each item as ERP-addressable / process / governance / audit-only.",
+        "Use findings as the basis for controls design checkpoints in ERP blueprint and audit committee reporting.",
+        "Use Jade IT Master Plan roadmap as supporting context, but anchor controls pillar to actual findings/deficiencies once Hema/Jade responses arrive.",
+        "Use CFTI tracker structure (macro/micro tabs) as the baseline issue register format for ERP controls remediation mapping and status reporting.",
+        "Track French e-invoicing September legal change as a control/process design dependency that may affect AP/P2P control design."
+      ],
+      "keyContacts": [
+        "Hema",
+        "Jade Nguyen",
+        "Benjamin",
+        "Didier",
+        "KPMG / Audit",
+        "Walid Bouassida (CFTI)",
+        "Youness Tyamaz (CFTI)"
+      ],
+      "evidenceRequests": [
+        {
+          "id": "controls-req-hema-1",
+          "sentDate": "2026-02-24",
+          "source": "email",
+          "sentTo": "Hema",
+          "topic": "Documented SOX findings / deficiencies, remediation tracker, and control narratives",
+          "status": "partial",
+          "why": "Gives the Controls pillar a documented problem list so ERP design can target real deficiencies.",
+          "nextMove": "Tag deficiencies that ERP can address directly vs process/governance-only remediation."
+        },
+        {
+          "id": "controls-req-jade-1",
+          "sentDate": "2026-02-24",
+          "source": "email",
+          "sentTo": "Jade",
+          "topic": "IT control gaps, interface monitoring/failure handling docs, and system admin ownership matrix",
+          "status": "awaiting-response",
+          "why": "Adds IT control evidence and ownership paths needed for finance-system auditability and SOX support.",
+          "nextMove": "Map IT controls into ERP controls design and enablement dependencies."
+        },
+        {
+          "id": "controls-req-cfti-rcm-tracker-1",
+          "sentDate": "2026-02-25",
+          "source": "meeting-commitment",
+          "sentTo": "Walid Bouassida; Youness Tyamaz (CFTI)",
+          "topic": "Finalized P2P/FSCP RCMs and remediation tracker (macro/micro status views with control IDs)",
+          "status": "received",
+          "why": "Provides the documented deficiency/gap list and remediation tracker needed to make the Controls pillar evidence-based and audit-ready.",
+          "nextMove": "Extract tracker/RCM rows and classify control gaps into ERP-addressable, immediate non-ERP, and management-decision buckets; then use in audit committee reporting."
+        },
+        {
+          "id": "controls-req-cfti-itgc-1",
+          "sentDate": "2026-02-25",
+          "source": "meeting-follow-up-planned",
+          "sentTo": "Walid Bouassida; Youness Tyamaz (CFTI)",
+          "topic": "ITGC RCM (awaiting final validation; expected next week)",
+          "status": "partial",
+          "why": "Completes the controls baseline with ITGC coverage beyond P2P/FSCP process controls.",
+          "nextMove": "Follow up next week once final validation is complete and integrate ITGC gaps into controls pillar mapping."
+        }
+      ]
+    },
+    {
+      "pillarId": "enablement",
+      "status": "active-support",
+      "evidenceStrength": "strong",
+      "ownerClarity": "strong",
+      "erpAddressableMapping": "n/a-cross-cutting",
+      "whatDone": [
+        "NetSuite selected on 2026-02-26; program moves into post-selection communication, negotiation, and implementation readiness planning.",
+        "IT landscape and architecture context captured (systems, integrations, hosting, security tooling, ownership hints).",
+        "Access request tracking and SharePoint evidence intake are active in the app.",
+        "Program and system map pages now expose cross-cutting dependencies and automation status.",
+        "Reviewed Jade IT Master Plan 2026-2027 deck confirming IT org reporting line (Didier -> Christophe -> Jade/Benjamin/Erwan) and roadmap alignment to ERP framing/build, finance integrations, SOX, and filing milestones.",
+        "IT roadmap source evidence now confirms ERP is embedded within broader IT priorities (cybersecurity, compliance, business applications) rather than a standalone project."
+      ],
+      "openItems": [
+        "Need explicit post-selection next-step plan with Camille/KPMG and NetSuite covering notification, negotiation path, ownership, and early-April mobilization target.",
+        "Direct SharePoint Graph automation is not enabled (permission blocker).",
+        "System owner/admin matrix is still incomplete for several finance applications.",
+        "Internal capacity commitments by function/month are not yet documented.",
+        "Need the updated Sage-centric IT map and centralized interface inventory to convert roadmap context into implementation-level control/process evidence."
+      ],
+      "waitingOn": [
+        "Jade/Finance responses and source docs for ownership matrices and interface monitoring details.",
+        "IT/admin approval path if direct SharePoint Graph permissions are pursued."
+      ],
+      "nextMoves": [
+        "Draft/align post-selection next-step email to Camille (cc Hema) to lock owners, negotiation path, and timing toward early April work start.",
+        "Continue using fallback email-based evidence intake while preparing for SharePoint Graph activation.",
+        "Map enablement blockers explicitly to pillar-level delivery risk in executive reporting."
+      ],
+      "keyContacts": [
+        "Jade Nguyen",
+        "Benjamin",
+        "Christophe Hennequin",
+        "Hema",
+        "IT/Admin"
+      ],
+      "evidenceRequests": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-02-26T20:39:41.707Z",
+  "summary": {
+    "openTodos": 1,
+    "highPriority": 0,
+    "mediumPriority": 0
+  },
+  "todos": [
+    {
+      "id": "ci-agent-ir-web-reliability",
+      "priority": "low",
+      "title": "Stabilize direct Abivax IR website detector (degraded fallback acceptable)",
+      "why": "IR website sync is timing out, but SEC-derived fallback plus IR email alerts are active and covering daily signal needs.",
+      "nextStep": "Treat as reliability improvement (not urgent) while fallback remains healthy.",
+      "owner": "Codex"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-02-26T20:38:06.561Z",
+  "summary": {
+    "pendingReview": 5,
+    "reviewed": 0,
+    "highPriorityPending": 0,
+    "byCategory": {
+      "legacy-blocks": 4,
+      "layout-density": 1
+    },
+    "byPage": {
+      "company": 1,
+      "presentations": 1,
+      "program": 1,
+      "today": 2
+    }
+  },
+  "items": [
+    {
+      "queueType": "page-readability-review",
+      "source": "page-readability-detector",
+      "category": "legacy-blocks",
+      "pageId": "company",
+      "route": "/abivax/spine/company",
+      "title": "Company Intel: legacy sections still present in source",
+      "why": "Found labels: Daily Headline Digest (Pilot), Review Queue (Codex), Agent Improvement Backlog.",
+      "priority": "medium",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:06.545Z",
+      "reviewHint": "Confirm which legacy blocks are intentionally retained (Advanced) vs deprecated-candidate.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    },
+    {
+      "queueType": "page-readability-review",
+      "source": "page-readability-detector",
+      "category": "legacy-blocks",
+      "pageId": "presentations",
+      "route": "/abivax/spine/presentations",
+      "title": "Presentations: legacy sections still present in source",
+      "why": "Found labels: Slide Plan, Sources and Audit Trail, Process Visual Assets (Reusable).",
+      "priority": "medium",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:06.545Z",
+      "reviewHint": "Confirm which legacy blocks are intentionally retained (Advanced) vs deprecated-candidate.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    },
+    {
+      "queueType": "page-readability-review",
+      "source": "page-readability-detector",
+      "category": "legacy-blocks",
+      "pageId": "program",
+      "route": "/abivax/spine/program",
+      "title": "Program: advanced-only legacy sections retained in source",
+      "why": "Found advanced-only labels: Cross-Pillar Queue, Operational Detail, SharePoint Intake.",
+      "priority": "low",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:06.545Z",
+      "reviewHint": "Confirm which legacy blocks are intentionally retained (Advanced) vs deprecated-candidate.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    },
+    {
+      "queueType": "page-readability-review",
+      "source": "page-readability-detector",
+      "category": "layout-density",
+      "pageId": "today",
+      "route": "/abivax/spine/today",
+      "title": "Today: high section density",
+      "why": "11 <section> blocks detected (target <= 8); default-view lifecycle sections=3 (budget 3).",
+      "priority": "low",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:06.544Z",
+      "reviewHint": "Raw source density is high, but default-view budget may already be controlled. Review only if readability still feels heavy.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    },
+    {
+      "queueType": "page-readability-review",
+      "source": "page-readability-detector",
+      "category": "legacy-blocks",
+      "pageId": "today",
+      "route": "/abivax/spine/today",
+      "title": "Today: advanced-only legacy sections retained in source",
+      "why": "Found advanced-only labels: Today At A Glance, Immediate Prep, Cross-Page Handoff, ERP Pillar Focus, Questions For Mike.",
+      "priority": "low",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:06.545Z",
+      "reviewHint": "Some retained labels are deprecated-candidates; review for removal when queues/backlogs replace them.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    }
+  ]
+}

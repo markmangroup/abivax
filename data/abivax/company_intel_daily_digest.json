@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-02-26T20:39:40.656Z",
+  "asOf": "2026-02-26",
+  "freshness": {
+    "intelAsOf": "2026-02-25",
+    "daysSinceIntelSnapshot": 1,
+    "stale": true,
+    "staleReason": "Curated company intel snapshot is 1 day(s) old. Live feeds may be partial while direct sources are still being connected/stabilized."
+  },
+  "summary": {
+    "newCount": 0,
+    "highPriorityCount": 7,
+    "sourceFeedsActive": 3,
+    "sourceFeedsPlanned": 2
+  },
+  "headlines": [
+    {
+      "id": "ir-email-headline-ir-email-1-QWJpdmF4IFByZX",
+      "date": "2026-02-21",
+      "title": "Abivax Presents First Evidence of Anti-Fibrotic Activity for Obefazimod Alongside New Clinical Efficacy and Safety Analyses in Inflammatory Bowel Disease at ECCO 2026",
+      "summary": "Abivax Presents First Evidence of Anti-Fibr",
+      "category": "ir-email-alert",
+      "confidence": "confirmed",
+      "sourceType": "primary",
+      "sourceTitle": "Abivax IR Email Alert",
+      "sourceUrl": "",
+      "impact": "",
+      "status": "carry-forward"
+    },
+    {
+      "id": "ir-email-headline-ir-email-2-V2Vla2x5IFN1bW",
+      "date": "2026-02-20",
+      "title": "Weekly Summary Alert for Abivax",
+      "summary": "added the following items during the week of February 16, 2026",
+      "category": "ir-email-alert",
+      "confidence": "confirmed",
+      "sourceType": "primary",
+      "sourceTitle": "Abivax IR Email Alert",
+      "sourceUrl": "",
+      "impact": "",
+      "status": "carry-forward"
+    },
+    {
+      "id": "digest-pipe-5-ecco26-antifibrotic-ir",
+      "date": "2026-02-21",
+      "title": "Abivax announced ECCO 2026 data highlighting first evidence of anti-fibrotic activity for obefazimod alongside additional clinical efficacy and safety analyses in IBD.",
+      "summary": "IR email alert plus SEC 6-K filing (2026-02-23) confirm ECCO 2026 anti-fibrotic / efficacy / safety announcement.",
+      "category": "pipeline-context",
+      "confidence": "confirmed",
+      "sourceType": "primary",
+      "sourceTitle": "Abivax IR Email Alert (notification.gcs-web.com)",
+      "sourceUrl": "https://ir.abivax.com/news-releases",
+      "impact": "Reinforces clinical momentum and increases executive focus on readiness, controls, and ERP execution discipline ahead of upcoming milestones.",
+      "status": "carry-forward"
+    },
+    {
+      "id": "digest-exec-1",
+      "date": "2026-02-18",
+      "title": "Abivax focuses on developing therapeutics to stabilize immune response in chronic inflammatory diseases, with obefazimod as lead for ulcerative colitis.",
+      "summary": "Develops therapeutics to stabilize immune response in chronic inflammatory diseases.",
+      "category": "executive-context",
+      "confidence": "confirmed",
+      "sourceType": "primary",
+      "sourceTitle": "Abivax Pipeline",
+      "sourceUrl": "https://www.abivax.com/pipeline",
+      "impact": "Targeted pipeline reduces ERP execution risk.",
+      "status": "carry-forward"
+    },
+    {
+      "id": "digest-exec-2",
+      "date": "2026-02-18",
+      "title": "Leadership includes CEO Marc de Garidel, CFO Didier Blondel, CMO Fabio Cataldi, and others with pharma experience.",
+      "summary": "Marc de Garidel CEO, Didier Blondel CFO, Fabio Cataldi CMO.",
+      "category": "executive-context",
+      "confidence": "confirmed",
+      "sourceType": "primary",
+      "sourceTitle": "Abivax Management",
+      "sourceUrl": "https://ir.abivax.com/corporate-governance/management",
+      "impact": "Experienced team aids strategic ERP management.",
+      "status": "carry-forward"
+    },
+    {
+      "id": "digest-mna-2",
+      "date": "2026-01-20",
+      "title": "CEO Marc de Garidel dismissed Eli Lilly bid rumors as 'noise' on 2026-01-20, stating there was no discussion on the acquisition and declining comment on informal talks.",
+      "summary": "The noise around this potential acquisition is a distraction, but our duty is not to be distracted.",
+      "category": "mna-intel",
+      "confidence": "confirmed",
+      "sourceType": "primary",
+      "sourceTitle": "Abivax CEO dismisses 'noise' around rumored Eli Lilly bid",
+      "sourceUrl": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-ceo-dismisses-noise-around-rumored-eli-lilly-bid-2026-01-20",
+      "impact": "Confirmed leadership messaging lowers rumor-driven distraction but does not prove absence of informal interest.",
+      "status": "carry-forward"
+    },
+    {
+      "id": "digest-op-3",
+      "date": "2026-01-20",
+      "title": "Prepare contingencies for M&A amid Lilly rumors.",
+      "summary": "CEO dismisses rumored Eli Lilly bid.",
+      "category": "operator-implications",
+      "confidence": "rumor",
+      "sourceType": "unverified",
+      "sourceTitle": "Abivax CEO dismisses 'noise' around rumored Eli Lilly bid",
+      "sourceUrl": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-ceo-dismisses-noise-around-rumored-eli-lilly-bid-2026-01-20",
+      "impact": "May adjust operating model for integration.",
+      "status": "carry-forward"
+    },
+    {
+      "id": "digest-mkt-2",
+      "date": "2026-01-12",
+      "title": "Stock surged on M&A rumors, with speculated $15B valuation.",
+      "summary": "Shares soar on media report of Eli Lilly bid.",
+      "category": "market-intel",
+      "confidence": "reported",
+      "sourceType": "secondary",
+      "sourceTitle": "France denies contact with Eli Lilly",
+      "sourceUrl": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-shares-soar-23-media-report-reignites-ma-chatter-2026-01-12",
+      "impact": "Volatility impacts ERP planning.",
+      "status": "carry-forward"
+    }
+  ],
+  "sourceStatus": [
+    {
+      "id": "abivax-ir",
+      "label": "Abivax IR / Press Releases",
+      "status": "degraded",
+      "mode": "automated-sec-derived-fallback",
+      "lastCheckedAt": "2026-02-26T20:38:13.651Z",
+      "notes": "Direct IR sync failed; using SEC-derived fallback (3 item(s)) while detector is stabilized."
+    },
+    {
+      "id": "abivax-ir-email",
+      "label": "Abivax IR Email Alerts",
+      "status": "active",
+      "mode": "outlook-email-derived",
+      "lastCheckedAt": "2026-02-26T20:39:36.507Z",
+      "notes": "Using inbox alerts as fallback/secondary IR source (3 item(s))."
+    },
+    {
+      "id": "sec-filings",
+      "label": "SEC / 6-K / filings",
+      "status": "active",
+      "mode": "automated-sec-edgar",
+      "lastCheckedAt": "2026-02-26T20:39:37.539Z",
+      "notes": "SEC detector active (20 recent filing item(s))."
+    },
+    {
+      "id": "news-monitor",
+      "label": "Biotech News Monitor",
+      "status": "planned",
+      "mode": "not-configured",
+      "lastCheckedAt": null,
+      "notes": "Use filtered reputable sources only."
+    },
+    {
+      "id": "x-watchlist",
+      "label": "X / social chatter watchlist",
+      "status": "planned",
+      "mode": "not-configured",
+      "lastCheckedAt": null,
+      "notes": "Use for rumor monitoring only; never primary confirmation."
+    },
+    {
+      "id": "curated-manual",
+      "label": "Curated internal intel file",
+      "status": "active",
+      "mode": "manual-curated",
+      "lastCheckedAt": "2026-02-26T20:39:40.656Z",
+      "notes": "Current company_intel.json is the active source until feed agents are added."
+    }
+  ],
+  "todo": [
+    "Tune Abivax IR feed parsing to improve summaries and impact classification.",
+    "Tune SEC detector filtering/prioritization (forms and filing relevance).",
+    "Add filtered biotech news monitor and classify as reported vs rumor.",
+    "Add 'new since yesterday' highlighting at top of Company Intel page.",
+    "Add company-intel digest summary block to Today page when major change detected."
+  ]
+}

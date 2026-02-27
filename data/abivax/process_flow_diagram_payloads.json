@@ -1,0 +1,1304 @@
+{
+  "generatedAt": "2026-02-26T20:58:28.478Z",
+  "status": "ok",
+  "payloads": [
+    {
+      "flowId": "p2p-france-current-to-future",
+      "title": "France P2P (SA) Current vs Future State",
+      "pillarId": "p2p",
+      "scope": "Abivax SA / France finance operations",
+      "status": "source-backed-fact-finding",
+      "generatedAt": "2026-02-26T20:58:28.477Z",
+      "lanes": [
+        {
+          "id": "owners",
+          "label": "Owners"
+        },
+        {
+          "id": "process",
+          "label": "Process Steps"
+        },
+        {
+          "id": "systems",
+          "label": "Systems"
+        },
+        {
+          "id": "controls",
+          "label": "Control Signals"
+        },
+        {
+          "id": "future",
+          "label": "Future State"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "step:fr-p2p-1",
+          "type": "step",
+          "lane": "process",
+          "label": "Vendor setup / validation",
+          "subtitle": "Finance + Trustpair validation path (to confirm)",
+          "stepIndex": 1,
+          "systems": [
+            "Sage",
+            "Trustpair",
+            "Docushare (to confirm exact role)"
+          ],
+          "painPoints": [
+            "Exact current flow and evidence retention path not yet documented end-to-end.",
+            "Sage-based vendor master changes rely on manual/IT-dependent manual controls and email evidence (per P2P RCM gap examples)."
+          ]
+        },
+        {
+          "id": "step:fr-p2p-2",
+          "type": "step",
+          "lane": "process",
+          "label": "Invoice / coding / approval flow",
+          "subtitle": "Finance (Trinidad/France team - confirm by step)",
+          "stepIndex": 2,
+          "systems": [
+            "Sage",
+            "Docushare"
+          ],
+          "painPoints": [
+            "Workflow approvals not currently present in Sage.",
+            "Manual process and timing variability."
+          ]
+        },
+        {
+          "id": "step:fr-p2p-3",
+          "type": "step",
+          "lane": "process",
+          "label": "Payment validation and execution",
+          "subtitle": "Finance / Treasury (Roxandra + team to confirm)",
+          "stepIndex": 3,
+          "systems": [
+            "Sage",
+            "Trustpair",
+            "Agicap",
+            "Banks"
+          ],
+          "painPoints": [
+            "Need exact handoffs and exception handling path documented end-to-end despite workbook process clues.",
+            "Need confirmation of current signer/validator roles and where control evidence is retained across Trustpair/Agicap/bank steps."
+          ]
+        },
+        {
+          "id": "owner:finance",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Finance"
+        },
+        {
+          "id": "owner:trustpair-validation-path",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Trustpair validation path"
+        },
+        {
+          "id": "owner:finance-treasury",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Finance / Treasury"
+        },
+        {
+          "id": "system:sage",
+          "type": "system",
+          "lane": "systems",
+          "label": "Sage"
+        },
+        {
+          "id": "system:trustpair",
+          "type": "system",
+          "lane": "systems",
+          "label": "Trustpair"
+        },
+        {
+          "id": "system:docushare",
+          "type": "system",
+          "lane": "systems",
+          "label": "Docushare"
+        },
+        {
+          "id": "system:agicap",
+          "type": "system",
+          "lane": "systems",
+          "label": "Agicap"
+        },
+        {
+          "id": "system:banks",
+          "type": "system",
+          "lane": "systems",
+          "label": "Banks"
+        },
+        {
+          "id": "controls:fr-p2p-1",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "P2P controls (3)",
+          "subtitle": "ERP 1 | OOS 1",
+          "metrics": {
+            "erpSignals": 1,
+            "trackerDesign": 0,
+            "outOfScope": 1
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-PTP-02G",
+              "title": "New Vendor Set-Up",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-PTP-03",
+              "title": "Trustpair Vendor Master Data Validation",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-PTP-15",
+              "title": "Vendor Master Data",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "controls:fr-p2p-2",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "P2P controls (5)",
+          "subtitle": "ERP 3 | OOS 4",
+          "metrics": {
+            "erpSignals": 3,
+            "trackerDesign": 0,
+            "outOfScope": 4
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-PTP-04G",
+              "title": "Purchase Order approval",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-PTP-05G",
+              "title": "Review of open orders",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-PTP-06G",
+              "title": "Two-way match",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            }
+          ]
+        },
+        {
+          "id": "controls:fr-p2p-3",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "P2P controls (7)",
+          "subtitle": "ERP 1 | OOS 5",
+          "metrics": {
+            "erpSignals": 1,
+            "trackerDesign": 0,
+            "outOfScope": 5
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-PTP-14G",
+              "title": "Search for Unrecorded Liabilities",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-PTP-10",
+              "title": "Segregation of Duties in Agicap",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-PTP-11",
+              "title": "Cash Disbursement Journal Entry",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "future:p2p-france-current-to-future",
+          "type": "future-target",
+          "lane": "future",
+          "label": "Future State Target",
+          "subtitle": "Target state should system-enforce approvals, reduce manual handoffs, and make control evidence traceable across vendor setup through payment.",
+          "targetChanges": [
+            "System-enforced approvals and workflow routing",
+            "Clear owner matrix by P2P step",
+            "Standardized exception handling",
+            "Traceable audit evidence retention path"
+          ],
+          "erpAddressableChanges": [
+            "Workflow approvals",
+            "P2P transaction flow standardization",
+            "Integration/hand-off reduction",
+            "Audit trail and reporting visibility"
+          ],
+          "nonErpChanges": [
+            "Owner accountability discipline",
+            "Policy/process decisions outside system configuration"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge:step:fr-p2p-1->fr-p2p-2",
+          "from": "step:fr-p2p-1",
+          "to": "step:fr-p2p-2",
+          "type": "sequence",
+          "label": "next"
+        },
+        {
+          "id": "edge:step:fr-p2p-2->fr-p2p-3",
+          "from": "step:fr-p2p-2",
+          "to": "step:fr-p2p-3",
+          "type": "sequence",
+          "label": "next"
+        },
+        {
+          "id": "edge:owner:finance->step:fr-p2p-1",
+          "from": "owner:finance",
+          "to": "step:fr-p2p-1",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:trustpair-validation-path->step:fr-p2p-1",
+          "from": "owner:trustpair-validation-path",
+          "to": "step:fr-p2p-1",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:fr-p2p-1->system:sage",
+          "from": "step:fr-p2p-1",
+          "to": "system:sage",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:fr-p2p-1->system:trustpair",
+          "from": "step:fr-p2p-1",
+          "to": "system:trustpair",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:fr-p2p-1->system:docushare",
+          "from": "step:fr-p2p-1",
+          "to": "system:docushare",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:owner:finance->step:fr-p2p-2",
+          "from": "owner:finance",
+          "to": "step:fr-p2p-2",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:fr-p2p-2->system:sage",
+          "from": "step:fr-p2p-2",
+          "to": "system:sage",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:fr-p2p-2->system:docushare",
+          "from": "step:fr-p2p-2",
+          "to": "system:docushare",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:owner:finance-treasury->step:fr-p2p-3",
+          "from": "owner:finance-treasury",
+          "to": "step:fr-p2p-3",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:fr-p2p-3->system:sage",
+          "from": "step:fr-p2p-3",
+          "to": "system:sage",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:fr-p2p-3->system:trustpair",
+          "from": "step:fr-p2p-3",
+          "to": "system:trustpair",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:fr-p2p-3->system:agicap",
+          "from": "step:fr-p2p-3",
+          "to": "system:agicap",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:fr-p2p-3->system:banks",
+          "from": "step:fr-p2p-3",
+          "to": "system:banks",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:controls:fr-p2p-1->step:fr-p2p-1",
+          "from": "controls:fr-p2p-1",
+          "to": "step:fr-p2p-1",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:controls:fr-p2p-2->step:fr-p2p-2",
+          "from": "controls:fr-p2p-2",
+          "to": "step:fr-p2p-2",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:controls:fr-p2p-3->step:fr-p2p-3",
+          "from": "controls:fr-p2p-3",
+          "to": "step:fr-p2p-3",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:step:fr-p2p-3->future:p2p-france-current-to-future",
+          "from": "step:fr-p2p-3",
+          "to": "future:p2p-france-current-to-future",
+          "type": "target-state",
+          "label": "future-state transition"
+        }
+      ],
+      "source": {
+        "processFlowLastUpdated": "2026-02-26",
+        "overlayGeneratedAt": "2026-02-26T20:58:28.158Z"
+      }
+    },
+    {
+      "flowId": "reporting-fpa-bridge-current-to-future",
+      "title": "Reporting / FP&A Data Flow Current vs Future State",
+      "pillarId": "reporting-data",
+      "scope": "French GAAP -> IFRS / SEC bridge, management reporting, FP&A dimensions",
+      "status": "source-backed-fact-finding",
+      "generatedAt": "2026-02-26T20:58:28.478Z",
+      "lanes": [
+        {
+          "id": "owners",
+          "label": "Owners"
+        },
+        {
+          "id": "process",
+          "label": "Process Steps"
+        },
+        {
+          "id": "systems",
+          "label": "Systems"
+        },
+        {
+          "id": "controls",
+          "label": "Control Signals"
+        },
+        {
+          "id": "future",
+          "label": "Future State"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "step:rep-1",
+          "type": "step",
+          "lane": "process",
+          "label": "Source accounting / exports",
+          "subtitle": "FR Finance + US Finance",
+          "stepIndex": 1,
+          "systems": [
+            "Sage",
+            "Excel",
+            "Bank templates",
+            "Workday Adaptive/Interactive (limited use)"
+          ],
+          "painPoints": [
+            "Sage exports are limited.",
+            "Missing data dimensions (e.g., country tag) impact reporting and cost center use cases."
+          ]
+        },
+        {
+          "id": "step:rep-2",
+          "type": "step",
+          "lane": "process",
+          "label": "Bridge / consolidation / IFRS & SEC support",
+          "subtitle": "KPMG, Internal Finance / FP&A (split to document)",
+          "stepIndex": 2,
+          "systems": [
+            "Excel / bridge files",
+            "KPMG workflows",
+            "Sage inputs"
+          ],
+          "painPoints": [
+            "Internal vs KPMG ownership not mapped by step.",
+            "Manual bridge dependency."
+          ]
+        },
+        {
+          "id": "step:rep-3",
+          "type": "step",
+          "lane": "process",
+          "label": "Management / departmental reporting and forecast visibility",
+          "subtitle": "Frederick + Adrian (FP&A)",
+          "stepIndex": 3,
+          "systems": [
+            "Workday Adaptive/Interactive",
+            "Excel",
+            "Sage extracts"
+          ],
+          "painPoints": [
+            "Underused tool capacity.",
+            "Department expectations not standardized."
+          ]
+        },
+        {
+          "id": "owner:fr-finance",
+          "type": "owner",
+          "lane": "owners",
+          "label": "FR Finance"
+        },
+        {
+          "id": "owner:us-finance",
+          "type": "owner",
+          "lane": "owners",
+          "label": "US Finance"
+        },
+        {
+          "id": "owner:kpmg",
+          "type": "owner",
+          "lane": "owners",
+          "label": "KPMG"
+        },
+        {
+          "id": "owner:internal-finance-fp-a",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Internal Finance / FP&A"
+        },
+        {
+          "id": "owner:frederick",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Frederick"
+        },
+        {
+          "id": "owner:adrian",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Adrian"
+        },
+        {
+          "id": "system:sage",
+          "type": "system",
+          "lane": "systems",
+          "label": "Sage"
+        },
+        {
+          "id": "system:excel",
+          "type": "system",
+          "lane": "systems",
+          "label": "Excel"
+        },
+        {
+          "id": "system:bank-templates",
+          "type": "system",
+          "lane": "systems",
+          "label": "Bank templates"
+        },
+        {
+          "id": "system:workday-adaptive-interactive-limited-use",
+          "type": "system",
+          "lane": "systems",
+          "label": "Workday Adaptive/Interactive (limited use)"
+        },
+        {
+          "id": "system:excel-bridge-files",
+          "type": "system",
+          "lane": "systems",
+          "label": "Excel / bridge files"
+        },
+        {
+          "id": "system:kpmg-workflows",
+          "type": "system",
+          "lane": "systems",
+          "label": "KPMG workflows"
+        },
+        {
+          "id": "system:sage-inputs",
+          "type": "system",
+          "lane": "systems",
+          "label": "Sage inputs"
+        },
+        {
+          "id": "system:workday-adaptive-interactive",
+          "type": "system",
+          "lane": "systems",
+          "label": "Workday Adaptive/Interactive"
+        },
+        {
+          "id": "system:sage-extracts",
+          "type": "system",
+          "lane": "systems",
+          "label": "Sage extracts"
+        },
+        {
+          "id": "controls:rep-1",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "Reporting controls (11)",
+          "subtitle": "ERP 2 | Design 2 | OOS 6",
+          "metrics": {
+            "erpSignals": 2,
+            "trackerDesign": 2,
+            "outOfScope": 6
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-FSCP-06",
+              "title": "Post period close journal entries",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-FSCP-05G",
+              "title": "Manual Journal Entries",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-FSCP-22G",
+              "title": "Quarterly Flux Analysis Review",
+              "trackerGap": "Design",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "controls:rep-2",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "Reporting controls (17)",
+          "subtitle": "Design 8 | OOS 4",
+          "metrics": {
+            "erpSignals": 0,
+            "trackerDesign": 8,
+            "outOfScope": 4
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-FSCP-21G",
+              "title": "Consolidation Preparation and Review",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-FSCP-26G",
+              "title": "Disclosure Committee Approval of Financials",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-FSCP-32G",
+              "title": "D&O Questionnaire Review (Annual)",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "controls:rep-3",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "Reporting controls (3)",
+          "subtitle": "Design 1",
+          "metrics": {
+            "erpSignals": 0,
+            "trackerDesign": 1,
+            "outOfScope": 0
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-FSCP-02G",
+              "title": "Budget to Actuals Review",
+              "trackerGap": "Design",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-FSCP-01",
+              "title": "Annual Budget and Forecast Approval",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-FSCP-10",
+              "title": "Cost centre allocation review (G&A and R&D split)",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "future:reporting-fpa-bridge-current-to-future",
+          "type": "future-target",
+          "lane": "future",
+          "label": "Future State Target",
+          "subtitle": "Target state should support a stronger quarterly reporting model immediately, with scalable data design for later monthly/commercial complexity.",
+          "targetChanges": [
+            "Minimum reporting dimension model (entity/country/cost center/etc.) defined",
+            "Cleaner current-state reporting data flows and ownership map",
+            "Reduced manual bridge dependency where practical",
+            "Future-ready architecture for monthly/commercial scaling without forcing it immediately"
+          ],
+          "erpAddressableChanges": [
+            "Data model and tagging support",
+            "Core reporting extract quality",
+            "Entity/currency structure support",
+            "Process/timing improvements from upstream P2P quality"
+          ],
+          "nonErpChanges": [
+            "Cadence decisions (quarterly vs monthly timing by stage)",
+            "Commercial/licensing/royalty operating model governance"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge:step:rep-1->rep-2",
+          "from": "step:rep-1",
+          "to": "step:rep-2",
+          "type": "sequence",
+          "label": "next"
+        },
+        {
+          "id": "edge:step:rep-2->rep-3",
+          "from": "step:rep-2",
+          "to": "step:rep-3",
+          "type": "sequence",
+          "label": "next"
+        },
+        {
+          "id": "edge:owner:fr-finance->step:rep-1",
+          "from": "owner:fr-finance",
+          "to": "step:rep-1",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:us-finance->step:rep-1",
+          "from": "owner:us-finance",
+          "to": "step:rep-1",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:rep-1->system:sage",
+          "from": "step:rep-1",
+          "to": "system:sage",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-1->system:excel",
+          "from": "step:rep-1",
+          "to": "system:excel",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-1->system:bank-templates",
+          "from": "step:rep-1",
+          "to": "system:bank-templates",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-1->system:workday-adaptive-interactive-limited-use",
+          "from": "step:rep-1",
+          "to": "system:workday-adaptive-interactive-limited-use",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:owner:kpmg->step:rep-2",
+          "from": "owner:kpmg",
+          "to": "step:rep-2",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:internal-finance-fp-a->step:rep-2",
+          "from": "owner:internal-finance-fp-a",
+          "to": "step:rep-2",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:rep-2->system:excel-bridge-files",
+          "from": "step:rep-2",
+          "to": "system:excel-bridge-files",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-2->system:kpmg-workflows",
+          "from": "step:rep-2",
+          "to": "system:kpmg-workflows",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-2->system:sage-inputs",
+          "from": "step:rep-2",
+          "to": "system:sage-inputs",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:owner:frederick->step:rep-3",
+          "from": "owner:frederick",
+          "to": "step:rep-3",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:adrian->step:rep-3",
+          "from": "owner:adrian",
+          "to": "step:rep-3",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:rep-3->system:workday-adaptive-interactive",
+          "from": "step:rep-3",
+          "to": "system:workday-adaptive-interactive",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-3->system:excel",
+          "from": "step:rep-3",
+          "to": "system:excel",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:rep-3->system:sage-extracts",
+          "from": "step:rep-3",
+          "to": "system:sage-extracts",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:controls:rep-1->step:rep-1",
+          "from": "controls:rep-1",
+          "to": "step:rep-1",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:controls:rep-2->step:rep-2",
+          "from": "controls:rep-2",
+          "to": "step:rep-2",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:controls:rep-3->step:rep-3",
+          "from": "controls:rep-3",
+          "to": "step:rep-3",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:step:rep-3->future:reporting-fpa-bridge-current-to-future",
+          "from": "step:rep-3",
+          "to": "future:reporting-fpa-bridge-current-to-future",
+          "type": "target-state",
+          "label": "future-state transition"
+        }
+      ],
+      "source": {
+        "processFlowLastUpdated": "2026-02-24",
+        "overlayGeneratedAt": "2026-02-26T20:58:28.158Z"
+      }
+    },
+    {
+      "flowId": "controls-remediation-current-to-future",
+      "title": "SOX / Controls / Auditability Current vs Future State",
+      "pillarId": "controls-audit",
+      "scope": "Finance + IT controls relevant to ERP program and auditability",
+      "status": "source-backed-fact-finding",
+      "generatedAt": "2026-02-26T20:58:28.478Z",
+      "lanes": [
+        {
+          "id": "owners",
+          "label": "Owners"
+        },
+        {
+          "id": "process",
+          "label": "Process Steps"
+        },
+        {
+          "id": "systems",
+          "label": "Systems"
+        },
+        {
+          "id": "controls",
+          "label": "Control Signals"
+        },
+        {
+          "id": "future",
+          "label": "Future State"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "step:ctrl-1",
+          "type": "step",
+          "lane": "process",
+          "label": "Identify control gaps / findings",
+          "subtitle": "Finance (primary), IT support",
+          "stepIndex": 1,
+          "systems": [
+            "Finance process controls",
+            "IT compliance framework",
+            "Tracker(s) TBD"
+          ],
+          "painPoints": [
+            "ITGC deficiency set is still pending final validation.",
+            "CFTI files are received but not yet fully extracted into a structured app issue list."
+          ]
+        },
+        {
+          "id": "step:ctrl-2",
+          "type": "step",
+          "lane": "process",
+          "label": "Track remediation and evidence",
+          "subtitle": "Finance owner (remediation), IT support where technical",
+          "stepIndex": 2,
+          "systems": [
+            "Tracker(s) TBD",
+            "System/process evidence repositories TBD"
+          ],
+          "painPoints": [
+            "Need row-level extraction to see all statuses/gap categories and owners in-app."
+          ]
+        },
+        {
+          "id": "step:ctrl-3",
+          "type": "step",
+          "lane": "process",
+          "label": "Embed control-by-design into ERP implementation",
+          "subtitle": "Finance + IT + implementation partners",
+          "stepIndex": 3,
+          "systems": [
+            "ERP future state",
+            "Integrations",
+            "Approval workflows"
+          ],
+          "painPoints": [
+            "Need mapping from findings to design checkpoints."
+          ]
+        },
+        {
+          "id": "owner:finance",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Finance"
+        },
+        {
+          "id": "owner:it-support",
+          "type": "owner",
+          "lane": "owners",
+          "label": "IT support"
+        },
+        {
+          "id": "owner:finance-owner",
+          "type": "owner",
+          "lane": "owners",
+          "label": "Finance owner"
+        },
+        {
+          "id": "owner:it-support-where-technical",
+          "type": "owner",
+          "lane": "owners",
+          "label": "IT support where technical"
+        },
+        {
+          "id": "owner:it",
+          "type": "owner",
+          "lane": "owners",
+          "label": "IT"
+        },
+        {
+          "id": "owner:implementation-partners",
+          "type": "owner",
+          "lane": "owners",
+          "label": "implementation partners"
+        },
+        {
+          "id": "system:finance-process-controls",
+          "type": "system",
+          "lane": "systems",
+          "label": "Finance process controls"
+        },
+        {
+          "id": "system:it-compliance-framework",
+          "type": "system",
+          "lane": "systems",
+          "label": "IT compliance framework"
+        },
+        {
+          "id": "system:tracker-s-tbd",
+          "type": "system",
+          "lane": "systems",
+          "label": "Tracker(s) TBD"
+        },
+        {
+          "id": "system:system-process-evidence-repositories-tbd",
+          "type": "system",
+          "lane": "systems",
+          "label": "System/process evidence repositories TBD"
+        },
+        {
+          "id": "system:erp-future-state",
+          "type": "system",
+          "lane": "systems",
+          "label": "ERP future state"
+        },
+        {
+          "id": "system:integrations",
+          "type": "system",
+          "lane": "systems",
+          "label": "Integrations"
+        },
+        {
+          "id": "system:approval-workflows",
+          "type": "system",
+          "lane": "systems",
+          "label": "Approval workflows"
+        },
+        {
+          "id": "controls:ctrl-1",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "Findings signals (24)",
+          "subtitle": "Finding coverage | Design 13 | OOS 8",
+          "metrics": {
+            "erpSignals": 0,
+            "trackerDesign": 13,
+            "outOfScope": 8
+          },
+          "sampleControls": [
+            {
+              "controlId": "CTA-05G",
+              "title": "Monthly CRO Meeting (formally documented on Quarter Ending Months)",
+              "trackerGap": "Design",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-TR-12G",
+              "title": "Segregation of Duties",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-TR-13G",
+              "title": "SOC Report Review",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "controls:ctrl-2",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "Remediation signals (61)",
+          "subtitle": "Active remediation | Design 13",
+          "metrics": {
+            "erpSignals": 0,
+            "trackerDesign": 13,
+            "outOfScope": 0
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-TR-12G",
+              "title": "Segregation of Duties",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            },
+            {
+              "controlId": "FR-TR-13G",
+              "title": "SOC Report Review",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            },
+            {
+              "controlId": "TX-01G",
+              "title": "Quarterly Tax Meeting",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false
+            }
+          ]
+        },
+        {
+          "id": "controls:ctrl-3",
+          "type": "control-cluster",
+          "lane": "controls",
+          "label": "ERP checkpoint signals (9)",
+          "subtitle": "ERP-linked controls | ERP 9 | Design 1 | OOS 8",
+          "metrics": {
+            "erpSignals": 9,
+            "trackerDesign": 1,
+            "outOfScope": 8
+          },
+          "sampleControls": [
+            {
+              "controlId": "FR-FSCP-06",
+              "title": "Post period close journal entries",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-FSCP-38",
+              "title": "Quarterly UAR",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            },
+            {
+              "controlId": "FR-PTP-02G",
+              "title": "New Vendor Set-Up",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true
+            }
+          ]
+        },
+        {
+          "id": "future:controls-remediation-current-to-future",
+          "type": "future-target",
+          "lane": "future",
+          "label": "Future State Target",
+          "subtitle": "Target state should map documented deficiencies to owner-dated remediation and clearly show which issues are solved by ERP design, process governance, or later phases.",
+          "targetChanges": [
+            "Documented deficiency inventory and remediation ownership map",
+            "ERP-addressable control gaps identified and tracked to design decisions",
+            "Standardized evidence retention paths for critical flows",
+            "Clear finance/IT accountability boundaries"
+          ],
+          "erpAddressableChanges": [
+            "Workflow approvals and audit trails",
+            "Control traceability in transactions/reporting flows",
+            "Integration monitoring and ownership clarity (where system-supported)"
+          ],
+          "nonErpChanges": [
+            "Policy and remediation governance",
+            "Audit program and testing cadence decisions"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge:step:ctrl-1->ctrl-2",
+          "from": "step:ctrl-1",
+          "to": "step:ctrl-2",
+          "type": "sequence",
+          "label": "next"
+        },
+        {
+          "id": "edge:step:ctrl-2->ctrl-3",
+          "from": "step:ctrl-2",
+          "to": "step:ctrl-3",
+          "type": "sequence",
+          "label": "next"
+        },
+        {
+          "id": "edge:owner:finance->step:ctrl-1",
+          "from": "owner:finance",
+          "to": "step:ctrl-1",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:it-support->step:ctrl-1",
+          "from": "owner:it-support",
+          "to": "step:ctrl-1",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:ctrl-1->system:finance-process-controls",
+          "from": "step:ctrl-1",
+          "to": "system:finance-process-controls",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:ctrl-1->system:it-compliance-framework",
+          "from": "step:ctrl-1",
+          "to": "system:it-compliance-framework",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:ctrl-1->system:tracker-s-tbd",
+          "from": "step:ctrl-1",
+          "to": "system:tracker-s-tbd",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:owner:finance-owner->step:ctrl-2",
+          "from": "owner:finance-owner",
+          "to": "step:ctrl-2",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:it-support-where-technical->step:ctrl-2",
+          "from": "owner:it-support-where-technical",
+          "to": "step:ctrl-2",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:ctrl-2->system:tracker-s-tbd",
+          "from": "step:ctrl-2",
+          "to": "system:tracker-s-tbd",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:ctrl-2->system:system-process-evidence-repositories-tbd",
+          "from": "step:ctrl-2",
+          "to": "system:system-process-evidence-repositories-tbd",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:owner:finance->step:ctrl-3",
+          "from": "owner:finance",
+          "to": "step:ctrl-3",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:it->step:ctrl-3",
+          "from": "owner:it",
+          "to": "step:ctrl-3",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:owner:implementation-partners->step:ctrl-3",
+          "from": "owner:implementation-partners",
+          "to": "step:ctrl-3",
+          "type": "ownership",
+          "label": "owns/supports"
+        },
+        {
+          "id": "edge:step:ctrl-3->system:erp-future-state",
+          "from": "step:ctrl-3",
+          "to": "system:erp-future-state",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:ctrl-3->system:integrations",
+          "from": "step:ctrl-3",
+          "to": "system:integrations",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:step:ctrl-3->system:approval-workflows",
+          "from": "step:ctrl-3",
+          "to": "system:approval-workflows",
+          "type": "uses-system",
+          "label": "uses"
+        },
+        {
+          "id": "edge:controls:ctrl-1->step:ctrl-1",
+          "from": "controls:ctrl-1",
+          "to": "step:ctrl-1",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:controls:ctrl-2->step:ctrl-2",
+          "from": "controls:ctrl-2",
+          "to": "step:ctrl-2",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:controls:ctrl-3->step:ctrl-3",
+          "from": "controls:ctrl-3",
+          "to": "step:ctrl-3",
+          "type": "control-overlay",
+          "label": "control signals"
+        },
+        {
+          "id": "edge:step:ctrl-3->future:controls-remediation-current-to-future",
+          "from": "step:ctrl-3",
+          "to": "future:controls-remediation-current-to-future",
+          "type": "target-state",
+          "label": "future-state transition"
+        }
+      ],
+      "source": {
+        "processFlowLastUpdated": "2026-02-25",
+        "overlayGeneratedAt": "2026-02-26T20:58:28.158Z"
+      }
+    }
+  ]
+}

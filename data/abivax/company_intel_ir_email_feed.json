@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-02-26T20:39:36.507Z",
+  "status": "ok",
+  "source": "abivax-ir-email",
+  "itemCount": 3,
+  "items": [
+    {
+      "id": "ir-email-0-TmV3IEZvcm0gNi",
+      "title": "New Form 6-K for Abivax",
+      "date": "2026-02-23",
+      "publishedAt": "2026-02-23T21:08:45.597Z",
+      "summary": "A Form 6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm",
+      "source": "abivax-ir-email",
+      "senderEmail": "no-reply@notification.gcs-web.com",
+      "senderName": "Abivax",
+      "attachments": []
+    },
+    {
+      "id": "ir-email-1-QWJpdmF4IFByZX",
+      "title": "Abivax Presents First Evidence of Anti-Fibrotic Activity for Obefazimod Alongside New Clinical Efficacy and Safety Analyses in Inflammatory Bowel Disease at ECCO 2026",
+      "date": "2026-02-21",
+      "publishedAt": "2026-02-21T11:01:45.889Z",
+      "summary": "Abivax Presents First Evidence of Anti-Fibr",
+      "url": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm",
+      "source": "abivax-ir-email",
+      "senderEmail": "no-reply@notification.gcs-web.com",
+      "senderName": "Abivax",
+      "attachments": []
+    },
+    {
+      "id": "ir-email-2-V2Vla2x5IFN1bW",
+      "title": "Weekly Summary Alert for Abivax",
+      "date": "2026-02-20",
+      "publishedAt": "2026-02-20T22:49:46.584Z",
+      "summary": "added the following items during the week of February 16, 2026",
+      "url": "https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DuXpN_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr38R86dfe-2Bcl9ku8o1rbrXnyyEdzVpiezORxSWEkFqr0EKxsb1RStSqy8W5VEcxTEashtSOXIxYgS5VALI1EpEN744G-2BqNPTT-2BnT2rcWiTAozMLUgjGoTgreR6u-2Fm3duHkm5-2Bw-2BnBvQVdnqXs0gk3-2BqlXYH-2FtMkEJ1ESi2O1aD8wS7dLKsHsqVyIzlpWwnANkETKsA-2Bxl7OHoWEd92XwRQ10imNJcDbNGtOq4IS2SEUtyj78bIU4qg7GoXBMXgxRQ1q3gniRC65u5o7YN3OxOjz",
+      "source": "abivax-ir-email",
+      "senderEmail": "no-reply@notification.gcs-web.com",
+      "senderName": "Abivax",
+      "attachments": []
+    }
+  ]
+}

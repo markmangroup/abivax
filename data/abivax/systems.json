@@ -1,0 +1,100 @@
+{
+  "systems": [
+    {
+      "id": "sage",
+      "name": "Sage",
+      "category": "ERP/Finance Core",
+      "businessOwner": "Finance (confirm exact owner)",
+      "systemOwner": "Finance Operations (confirm)",
+      "adminOwner": "IT + Finance admin (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "Managed devices and role-based app access",
+      "usage": "General ledger and core finance entries",
+      "notes": "Primary legacy core; limited audit flow per IT call."
+    },
+    {
+      "id": "docushare",
+      "name": "Docushare",
+      "category": "P2P / Document Workflow",
+      "businessOwner": "Finance P2P (confirm)",
+      "systemOwner": "Finance P2P (confirm)",
+      "adminOwner": "IT France (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "On-prem access path",
+      "usage": "Purchase order management before Sage replication",
+      "notes": "On-prem; process details and controls need mapping."
+    },
+    {
+      "id": "trustpair",
+      "name": "Trustpair",
+      "category": "Vendor and Payment Control",
+      "businessOwner": "Finance (confirm)",
+      "systemOwner": "Treasury/Payments (confirm)",
+      "adminOwner": "IT + vendor setup team (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "SFTP feed from Sage",
+      "usage": "Vendor validation and payment checks",
+      "notes": "Implemented last year; key SOX/control relevance."
+    },
+    {
+      "id": "agicap",
+      "name": "Agicap",
+      "category": "Treasury Management",
+      "businessOwner": "Treasury (confirm)",
+      "systemOwner": "Treasury (confirm)",
+      "adminOwner": "IT support minimal per call",
+      "backupOwner": "TBD",
+      "accessModel": "SaaS with banking connections",
+      "usage": "Payments and treasury management",
+      "notes": "Connected to Wells Fargo and SocGen."
+    },
+    {
+      "id": "sap-concur",
+      "name": "SAP Concur",
+      "category": "Expense Management",
+      "businessOwner": "Finance (confirm)",
+      "systemOwner": "Finance (confirm)",
+      "adminOwner": "IT/Finance (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "SaaS with manual entry handoff",
+      "usage": "Expense management with manual downstream entry to Sage",
+      "notes": "Manual bridge to Sage."
+    },
+    {
+      "id": "adp",
+      "name": "ADP",
+      "category": "Payroll",
+      "businessOwner": "HR + Finance (confirm)",
+      "systemOwner": "HRIS/Payroll (confirm)",
+      "adminOwner": "HR + IT (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "Payroll export file",
+      "usage": "Payroll file manually entered in Sage",
+      "notes": "Manual interface and control risk."
+    },
+    {
+      "id": "workday",
+      "name": "Workday",
+      "category": "FP&A / Planning",
+      "businessOwner": "FP&A (confirm with Frederick)",
+      "systemOwner": "FP&A (confirm)",
+      "adminOwner": "IT + Finance (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "SaaS with SSO",
+      "usage": "Limited current usage; not integrated to core systems",
+      "notes": "Need FP&A confirmation of actual scope and ownership."
+    },
+    {
+      "id": "adaptive",
+      "name": "Adaptive Planning",
+      "category": "FP&A / Reporting",
+      "businessOwner": "FP&A (Frederick to confirm)",
+      "systemOwner": "FP&A (confirm)",
+      "adminOwner": "Finance + IT (confirm)",
+      "backupOwner": "TBD",
+      "accessModel": "SaaS with managed access",
+      "usage": "Cost center and planning reporting (needs process confirmation)",
+      "notes": "Referenced as active by finance stakeholders; validate exact outputs and dependencies."
+    }
+  ]
+}

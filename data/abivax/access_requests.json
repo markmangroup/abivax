@@ -1,0 +1,94 @@
+{
+    "requests":  [
+                     {
+                         "id":  "access-mike-sage",
+                         "person":  "Michael Markman",
+                         "system":  "Sage",
+                         "requestedRole":  "Read/analysis access for ERP planning",
+                         "status":  "granted-pending-remote-desktop-setup",
+                         "owner":  "Denis Jankovic / MBVSI Support",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Verify US support prepared remote desktop shortcut and test login to Sage SA and LLC (LLC 3) using provided credentials."
+                     },
+                     {
+                         "id":  "access-mike-docushare",
+                         "person":  "Michael Markman",
+                         "system":  "Docushare",
+                         "requestedRole":  "P2P process visibility access",
+                         "status":  "to-request",
+                         "owner":  "P2P owner + IT (confirm)",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Confirm on-prem access prerequisites and request route."
+                     },
+                     {
+                         "id":  "access-mike-trustpair",
+                         "person":  "Michael Markman",
+                         "system":  "Trustpair",
+                         "requestedRole":  "Control-flow visibility",
+                         "status":  "requested-in-progress",
+                         "owner":  "Denis Jankovic + Treasury (Roxandra/Trinidad confirm)",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Confirm whether Trustpair read-only was provisioned alongside Sage/Agicap; if not, request ETA and owner."
+                     },
+                     {
+                         "id":  "access-mike-agicap",
+                         "person":  "Michael Markman",
+                         "system":  "Agicap",
+                         "requestedRole":  "Payment workflow visibility",
+                         "status":  "granted-pending-invite-acceptance",
+                         "owner":  "Roxandra Sturdza",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Accept Agicap invite email and optionally book Roxandra\u0027s 45-minute treasury walkthrough for end of next week."
+                     },
+                     {
+                         "id":  "access-mike-workday",
+                         "person":  "Michael Markman",
+                         "system":  "Workday",
+                         "requestedRole":  "Planning/reporting visibility",
+                         "status":  "to-confirm-scope",
+                         "owner":  "Frederick (confirm)",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Confirm Workday scope and whether FP\u0026A uses this as system of record."
+                     },
+                     {
+                         "id":  "access-mike-adaptive",
+                         "person":  "Michael Markman",
+                         "system":  "Adaptive Planning",
+                         "requestedRole":  "Read-only FP\u0026A reporting visibility",
+                         "status":  "to-request",
+                         "owner":  "FP\u0026A owner (Frederick/Adrian confirm)",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Confirm actual usage and request read-only access if active."
+                     },
+                     {
+                         "id":  "access-mike-us-shared-drive",
+                         "person":  "Michael Markman",
+                         "system":  "US Finance Shared Drive",
+                         "requestedRole":  "Read access to reporting and close artifacts",
+                         "status":  "requested",
+                         "owner":  "Matt Epley / Kimberly Gordon",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Receive folder path and verify permissions."
+                     },
+                     {
+                         "id":  "access-mike-kpmg-erp-sharepoint",
+                         "person":  "Michael Markman",
+                         "system":  "ERP Choice Project x KPMG SharePoint",
+                         "requestedRole":  "Member access to project files, analyses, demos, and recordings",
+                         "status":  "granted",
+                         "owner":  "Jade Nguyen / KPMG (Camille/Aymen)",
+                         "requestedAt":  "2026-02-19",
+                         "nextStep":  "Open and review key artifacts from Aymen project-update email (RFP analysis, final financial comparison, demo feedback decks/recordings)."
+                     },
+                     {
+                         "id":  "access-mike-ilc-csvlc-tracker",
+                         "person":  "Michael Markman",
+                         "system":  "ABIVAX ILC \u0026 CSVLC Indexes Tracker (SharePoint)",
+                         "requestedRole":  "Read/member access to live owner tracker",
+                         "status":  "granted",
+                         "owner":  "Jade Nguyen",
+                         "requestedAt":  "2026-02-20",
+                         "nextStep":  "Review owner fields relevant to ERP systems (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday) and extract owners/admins/backups into ERP system map."
+                     }
+                 ]
+}

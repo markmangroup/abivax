@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-02-26T20:58:28.146Z",
+  "purpose": "Claude sidecar queue for writing/design critique lane (non-production pipeline)",
+  "summary": {
+    "itemCount": 5,
+    "byLane": {
+      "writing": 2,
+      "design-critique": 3
+    },
+    "waterfallState": {
+      "reviewNowCount": 1,
+      "tuningTargetCount": 3
+    }
+  },
+  "items": [
+    {
+      "id": "claude-writing-stakeholder-briefs-1",
+      "lane": "writing",
+      "priority": "high",
+      "title": "Stakeholder Brief wording/style pass (fact-based operator language)",
+      "why": "Person pages are improving structurally but still sound machine-like and repetitive to Mike.",
+      "targets": [
+        "Hema Kesh",
+        "Trinidad",
+        "Frederick",
+        "Kimberly Gordon",
+        "Matt Epley",
+        "Jade Nguyen"
+      ],
+      "files": [
+        "src/app/abivax/spine/entity/[slug]/page.tsx",
+        "data/abivax/erp_pillar_baselines.json",
+        "data/abivax/entities.json"
+      ],
+      "promptHint": "Rewrite top-of-page stakeholder brief copy style guidelines and example paragraphs for Mike, Trinidad, Hema using factual operator brief language (no ranking/fluff)."
+    },
+    {
+      "id": "claude-design-today-layout-1",
+      "lane": "design-critique",
+      "priority": "high",
+      "title": "Today page post-meeting execution mode readability critique",
+      "why": "Today is more useful now but still needs better visual clarity and lower cognitive load.",
+      "targets": [
+        "Today page top area",
+        "Your Day lane",
+        "Our Work Queue / Change Trace"
+      ],
+      "files": [
+        "src/app/abivax/spine/today/TodayBriefClient.tsx",
+        "src/app/abivax/spine/today/page.tsx"
+      ],
+      "promptHint": "Critique the top 1-2 screens for post-meeting mode and propose a tighter visual hierarchy without adding new workflow mechanics."
+    },
+    {
+      "id": "claude-design-program-layout-1",
+      "lane": "design-critique",
+      "priority": "high",
+      "title": "Program page visual hierarchy critique (status emphasis and pillar readability)",
+      "why": "Program is strategically important, but status pills and dense blocks make it hard for Mike to quickly see what changed (for example, received evidence from Trinidad).",
+      "targets": [
+        "Program page top area",
+        "Pillar workboard",
+        "status pill semantics",
+        "evidence/request visibility"
+      ],
+      "files": [
+        "src/app/abivax/spine/program/page.tsx",
+        "data/abivax/erp_pillar_baselines.json",
+        "collab/claude/MIKE_DESIGN_PREFERENCES.md"
+      ],
+      "promptHint": "Critique Program page visual hierarchy and status styling so received/pending/blocked signals are obvious at a glance without adding new workflow mechanics."
+    },
+    {
+      "id": "claude-design-page-patterns-1",
+      "lane": "design-critique",
+      "priority": "medium",
+      "title": "Cross-page readability pattern proposals (default-view budget + card reduction)",
+      "why": "Mike consistently flags stacked-card layouts and text-heavy scanning across pages.",
+      "targets": [
+        "Company Intel: legacy sections still present in source",
+        "Presentations: legacy sections still present in source",
+        "Program: advanced-only legacy sections retained in source"
+      ],
+      "files": [
+        "data/abivax/page_section_lifecycle.json",
+        "collab/claude/MIKE_DESIGN_PREFERENCES.md",
+        "src/app/abivax/spine/today/TodayBriefClient.tsx",
+        "src/app/abivax/spine/program/page.tsx",
+        "src/app/abivax/spine/presentations/page.tsx"
+      ],
+      "promptHint": "Propose a reusable visual pattern system (not implementation code) for low-noise default views and advanced detail collapses."
+    },
+    {
+      "id": "claude-writing-post-selection-comms-1",
+      "lane": "writing",
+      "priority": "medium",
+      "title": "Post-selection communication templates (Camille/Hema/NetSuite path)",
+      "why": "NetSuite was selected; next phase needs clear communication and timing language.",
+      "targets": [
+        "Camille/Aymen follow-up",
+        "internal status summary",
+        "negotiation path alignment"
+      ],
+      "files": [
+        "data/abivax/timeline.json",
+        "data/abivax/erp_pillar_baselines.json",
+        "data/abivax/presentations.json"
+      ],
+      "promptHint": "Draft concise, factual post-selection comms templates aligned to early April mobilization target and explicit ownership boundaries."
+    }
+  ]
+}

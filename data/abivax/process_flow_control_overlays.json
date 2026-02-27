@@ -1,0 +1,1190 @@
+{
+  "generatedAt": "2026-02-26T20:58:28.158Z",
+  "status": "ok",
+  "source": {
+    "processFlowsUpdatedAt": "2026-02-25",
+    "cftiControlRegisterGeneratedAt": "2026-02-26T20:42:01.728Z"
+  },
+  "overlays": [
+    {
+      "flowId": "p2p-france-current-to-future",
+      "flowTitle": "France P2P (SA) Current vs Future State",
+      "pillarId": "p2p",
+      "generatedFrom": "cfti_control_register",
+      "summary": {
+        "totalFlowPillarRecords": 20,
+        "mappedAcrossSteps": 15,
+        "uniqueMappedControls": 15
+      },
+      "stepOverlays": [
+        {
+          "stepId": "fr-p2p-1",
+          "stepLabel": "Vendor setup / validation",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 3,
+            "erpSignalCount": 1,
+            "trackerDesignCount": 0,
+            "outOfScopeCount": 1,
+            "byTrackerStatus": [
+              {
+                "key": "Ongoing",
+                "count": 2
+              },
+              {
+                "key": "Out-Of-Scope",
+                "count": 1
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "ERP",
+                "count": 1
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Vendor Management",
+                "count": 2
+              },
+              {
+                "key": "Master data",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-PTP-02G",
+            "FR-PTP-03",
+            "FR-PTP-15"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-ptp-02g",
+              "controlId": "FR-PTP-02G",
+              "controlTitle": "New Vendor Set-Up",
+              "process": "PTP",
+              "subProcess": "Vendor Management",
+              "system": "N/A - Gap",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-03",
+              "controlId": "FR-PTP-03",
+              "controlTitle": "Trustpair Vendor Master Data Validation",
+              "process": "PTP",
+              "subProcess": "Vendor Management",
+              "system": "Trustpair Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-ptp-15",
+              "controlId": "FR-PTP-15",
+              "controlTitle": "Vendor Master Data",
+              "process": "PTP",
+              "subProcess": "Master data",
+              "system": "Sage 100 Trustpair",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            }
+          ]
+        },
+        {
+          "stepId": "fr-p2p-2",
+          "stepLabel": "Invoice / coding / approval flow",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 5,
+            "erpSignalCount": 3,
+            "trackerDesignCount": 0,
+            "outOfScopeCount": 4,
+            "byTrackerStatus": [
+              {
+                "key": "Out-Of-Scope",
+                "count": 4
+              },
+              {
+                "key": "Design to complete",
+                "count": 1
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "ERP",
+                "count": 3
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Purchase order",
+                "count": 4
+              },
+              {
+                "key": "Delegation of Authority (DOA) Policy",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-PTP-04G",
+            "FR-PTP-05G",
+            "FR-PTP-06G",
+            "FR-PTP-07G",
+            "FR-PTP-01"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-ptp-04g",
+              "controlId": "FR-PTP-04G",
+              "controlTitle": "Purchase Order approval",
+              "process": "PTP",
+              "subProcess": "Purchase order",
+              "system": "DocuShare",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-05g",
+              "controlId": "FR-PTP-05G",
+              "controlTitle": "Review of open orders",
+              "process": "PTP",
+              "subProcess": "Purchase order",
+              "system": "DocuShare",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-06g",
+              "controlId": "FR-PTP-06G",
+              "controlTitle": "Two-way match",
+              "process": "PTP",
+              "subProcess": "Purchase order",
+              "system": "DocuShare",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-07g",
+              "controlId": "FR-PTP-07G",
+              "controlTitle": "Invoice Approval",
+              "process": "PTP",
+              "subProcess": "Purchase order",
+              "system": "DocuShare Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-01",
+              "controlId": "FR-PTP-01",
+              "controlTitle": "Delegation of Authority (DOA) Policy Approval",
+              "process": "PTP",
+              "subProcess": "Delegation of Authority (DOA) Policy",
+              "system": "N/A",
+              "trackerGap": "",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            }
+          ]
+        },
+        {
+          "stepId": "fr-p2p-3",
+          "stepLabel": "Payment validation and execution",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 7,
+            "erpSignalCount": 1,
+            "trackerDesignCount": 0,
+            "outOfScopeCount": 5,
+            "byTrackerStatus": [
+              {
+                "key": "Out-Of-Scope",
+                "count": 5
+              },
+              {
+                "key": "Ongoing",
+                "count": 2
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "ERP",
+                "count": 1
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Cash Disbursements",
+                "count": 4
+              },
+              {
+                "key": "Cash disbursements",
+                "count": 2
+              },
+              {
+                "key": "Search for Unrecorded Liabilities",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-PTP-14G",
+            "FR-PTP-10",
+            "FR-PTP-11",
+            "FR-PTP-12",
+            "FR-PTP-13",
+            "FR-PTP-08",
+            "FR-PTP-09"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-ptp-14g",
+              "controlId": "FR-PTP-14G",
+              "controlTitle": "Search for Unrecorded Liabilities",
+              "process": "PTP",
+              "subProcess": "Search for Unrecorded Liabilities",
+              "system": "Sage 100",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-10",
+              "controlId": "FR-PTP-10",
+              "controlTitle": "Segregation of Duties in Agicap",
+              "process": "PTP",
+              "subProcess": "Cash disbursements",
+              "system": "Agicap",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-11",
+              "controlId": "FR-PTP-11",
+              "controlTitle": "Cash Disbursement Journal Entry",
+              "process": "PTP",
+              "subProcess": "Cash disbursements",
+              "system": "Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-12",
+              "controlId": "FR-PTP-12",
+              "controlTitle": "Payment Release Prevention for Unapproved Vendors",
+              "process": "PTP",
+              "subProcess": "Cash Disbursements",
+              "system": "Globalcash (bank application)",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-13",
+              "controlId": "FR-PTP-13",
+              "controlTitle": "Payment Release Prevention for Unapproved Vendors",
+              "process": "PTP",
+              "subProcess": "Cash Disbursements",
+              "system": "Globalcash (bank application)",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "flowId": "p2p-us-llc-current-to-future",
+      "flowTitle": "US LLC P2P Current vs Future State",
+      "pillarId": "p2p",
+      "generatedFrom": "cfti_control_register",
+      "summary": {
+        "totalFlowPillarRecords": 20,
+        "mappedAcrossSteps": 0,
+        "uniqueMappedControls": 0
+      },
+      "stepOverlays": [
+        {
+          "stepId": "us-p2p-1",
+          "stepLabel": "Vendor setup / coding coordination",
+          "ruleApplied": "no",
+          "summary": {
+            "mappedControlCount": 0,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 0,
+            "outOfScopeCount": 0,
+            "byTrackerStatus": [],
+            "byTrackerGap": [],
+            "bySubProcess": []
+          },
+          "sampleControlIds": [],
+          "sampleControls": []
+        },
+        {
+          "stepId": "us-p2p-2",
+          "stepLabel": "Payment initiation and execution",
+          "ruleApplied": "no",
+          "summary": {
+            "mappedControlCount": 0,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 0,
+            "outOfScopeCount": 0,
+            "byTrackerStatus": [],
+            "byTrackerGap": [],
+            "bySubProcess": []
+          },
+          "sampleControlIds": [],
+          "sampleControls": []
+        },
+        {
+          "stepId": "us-p2p-3",
+          "stepLabel": "Expense review / department allocation",
+          "ruleApplied": "no",
+          "summary": {
+            "mappedControlCount": 0,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 0,
+            "outOfScopeCount": 0,
+            "byTrackerStatus": [],
+            "byTrackerGap": [],
+            "bySubProcess": []
+          },
+          "sampleControlIds": [],
+          "sampleControls": []
+        }
+      ]
+    },
+    {
+      "flowId": "reporting-fpa-bridge-current-to-future",
+      "flowTitle": "Reporting / FP&A Data Flow Current vs Future State",
+      "pillarId": "reporting-data",
+      "generatedFrom": "cfti_control_register",
+      "summary": {
+        "totalFlowPillarRecords": 39,
+        "mappedAcrossSteps": 31,
+        "uniqueMappedControls": 19
+      },
+      "stepOverlays": [
+        {
+          "stepId": "rep-1",
+          "stepLabel": "Source accounting / exports",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 11,
+            "erpSignalCount": 2,
+            "trackerDesignCount": 2,
+            "outOfScopeCount": 6,
+            "byTrackerStatus": [
+              {
+                "key": "Out-Of-Scope",
+                "count": 6
+              },
+              {
+                "key": "Design to complete",
+                "count": 3
+              },
+              {
+                "key": "Ongoing",
+                "count": 2
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "Design",
+                "count": 2
+              },
+              {
+                "key": "ERP",
+                "count": 1
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Journal Entries",
+                "count": 4
+              },
+              {
+                "key": "Foreign Exchange Rate",
+                "count": 3
+              },
+              {
+                "key": "Close Procedures",
+                "count": 2
+              },
+              {
+                "key": "Chart of Accounts",
+                "count": 2
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-FSCP-06",
+            "FR-FSCP-05G",
+            "FR-FSCP-22G",
+            "FR-FSCP-03",
+            "FR-FSCP-07",
+            "FR-FSCP-08",
+            "FR-FSCP-13E",
+            "FR-FSCP-17"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-fscp-06",
+              "controlId": "FR-FSCP-06",
+              "controlTitle": "Post period close journal entries",
+              "process": "FR-FSCP",
+              "subProcess": "Journal Entries",
+              "system": "Sage 100",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-fscp-05g",
+              "controlId": "FR-FSCP-05G",
+              "controlTitle": "Manual Journal Entries",
+              "process": "FR-FSCP",
+              "subProcess": "Journal Entries",
+              "system": "Sage 100",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": true,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-fr-fscp-22g",
+              "controlId": "FR-FSCP-22G",
+              "controlTitle": "Quarterly Flux Analysis Review",
+              "process": "FR-FSCP",
+              "subProcess": "Close Procedures",
+              "system": "Sage 100 (for consolidation)",
+              "trackerGap": "Design",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-fscp-03",
+              "controlId": "FR-FSCP-03",
+              "controlTitle": "Chart of Accounts Changes",
+              "process": "FR-FSCP",
+              "subProcess": "Chart of Accounts",
+              "system": "Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-fscp-07",
+              "controlId": "FR-FSCP-07",
+              "controlTitle": "Journal entries are recorded to a closed period.",
+              "process": "FR-FSCP",
+              "subProcess": "Journal Entries",
+              "system": "Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            }
+          ]
+        },
+        {
+          "stepId": "rep-2",
+          "stepLabel": "Bridge / consolidation / IFRS & SEC support",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 17,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 8,
+            "outOfScopeCount": 4,
+            "byTrackerStatus": [
+              {
+                "key": "Not started",
+                "count": 6
+              },
+              {
+                "key": "Design to complete",
+                "count": 4
+              },
+              {
+                "key": "Out-Of-Scope",
+                "count": 4
+              },
+              {
+                "key": "Ongoing",
+                "count": 3
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "Design",
+                "count": 8
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Financial Statement Preparation",
+                "count": 8
+              },
+              {
+                "key": "Consolidation Process",
+                "count": 3
+              },
+              {
+                "key": "Related Parties",
+                "count": 3
+              },
+              {
+                "key": "Going Concern",
+                "count": 1
+              },
+              {
+                "key": "ASU Review",
+                "count": 1
+              },
+              {
+                "key": "Consolidation process",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-FSCP-21G",
+            "FR-FSCP-26G",
+            "FR-FSCP-32G",
+            "FR-FSCP-33G",
+            "FR-FSCP-28G",
+            "FR-FSCP-30G",
+            "FR-FSCP-34G",
+            "FR-FSCP-37G"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-fscp-21g",
+              "controlId": "FR-FSCP-21G",
+              "controlTitle": "Consolidation Preparation and Review",
+              "process": "FR-FSCP",
+              "subProcess": "Consolidation Process",
+              "system": "Sage 100 (for SA and LLC B/S)",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "3/20/26"
+            },
+            {
+              "id": "cfti-fr-fscp-26g",
+              "controlId": "FR-FSCP-26G",
+              "controlTitle": "Disclosure Committee Approval of Financials",
+              "process": "FR-FSCP",
+              "subProcess": "Financial Statement Preparation",
+              "system": "Workiva",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-fr-fscp-32g",
+              "controlId": "FR-FSCP-32G",
+              "controlTitle": "D&O Questionnaire Review (Annual)",
+              "process": "FR-FSCP",
+              "subProcess": "Related Parties",
+              "system": "N/A",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-fr-fscp-33g",
+              "controlId": "FR-FSCP-33G",
+              "controlTitle": "Quarterly Related Party Disclosure Review",
+              "process": "FR-FSCP",
+              "subProcess": "Related Parties",
+              "system": "N/A",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-fr-fscp-28g",
+              "controlId": "FR-FSCP-28G",
+              "controlTitle": "Quarterly Financial Statement Tie-Out Review",
+              "process": "FR-FSCP",
+              "subProcess": "Financial Statement Preparation",
+              "system": "Workiva",
+              "trackerGap": "Design",
+              "trackerStatus": "Not started",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "3/20/26"
+            }
+          ]
+        },
+        {
+          "stepId": "rep-3",
+          "stepLabel": "Management / departmental reporting and forecast visibility",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 3,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 1,
+            "outOfScopeCount": 0,
+            "byTrackerStatus": [
+              {
+                "key": "Ongoing",
+                "count": 3
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "Design",
+                "count": 1
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Budgeting & Forecasting",
+                "count": 2
+              },
+              {
+                "key": "Cost Classification",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-FSCP-02G",
+            "FR-FSCP-01",
+            "FR-FSCP-10"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-fscp-02g",
+              "controlId": "FR-FSCP-02G",
+              "controlTitle": "Budget to Actuals Review",
+              "process": "FR-FSCP",
+              "subProcess": "Budgeting & Forecasting",
+              "system": "Sage 100",
+              "trackerGap": "Design",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-fscp-01",
+              "controlId": "FR-FSCP-01",
+              "controlTitle": "Annual Budget and Forecast Approval",
+              "process": "FR-FSCP",
+              "subProcess": "Budgeting & Forecasting",
+              "system": "Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-fscp-10",
+              "controlId": "FR-FSCP-10",
+              "controlTitle": "Cost centre allocation review (G&A and R&D split)",
+              "process": "FR-FSCP",
+              "subProcess": "Cost Classification",
+              "system": "Sage 100",
+              "trackerGap": "",
+              "trackerStatus": "Ongoing",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "flowId": "controls-remediation-current-to-future",
+      "flowTitle": "SOX / Controls / Auditability Current vs Future State",
+      "pillarId": "controls-audit",
+      "generatedFrom": "cfti_control_register",
+      "summary": {
+        "totalFlowPillarRecords": 84,
+        "mappedAcrossSteps": 94,
+        "uniqueMappedControls": 17
+      },
+      "stepOverlays": [
+        {
+          "stepId": "ctrl-1",
+          "stepLabel": "Identify control gaps / findings",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 24,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 13,
+            "outOfScopeCount": 8,
+            "byTrackerStatus": [
+              {
+                "key": "Out-Of-Scope",
+                "count": 8
+              },
+              {
+                "key": "Design to complete",
+                "count": 6
+              },
+              {
+                "key": "Not started",
+                "count": 6
+              },
+              {
+                "key": "Ongoing",
+                "count": 4
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "Design",
+                "count": 13
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "SOD Review",
+                "count": 4
+              },
+              {
+                "key": "SOC-1 Review",
+                "count": 4
+              },
+              {
+                "key": "Access to Programs & Data (APD)",
+                "count": 4
+              },
+              {
+                "key": "Equity Transactions",
+                "count": 2
+              },
+              {
+                "key": "Clinical Accrual",
+                "count": 1
+              },
+              {
+                "key": "Quarterly Tax Provision",
+                "count": 1
+              },
+              {
+                "key": "Equity Grants",
+                "count": 1
+              },
+              {
+                "key": "Option Exercises",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "CTA-05G",
+            "FR-TR-12G",
+            "FR-TR-13G",
+            "TX-01G",
+            "US-HtR-16",
+            "FR-EQ-01G",
+            "FR-EQ-05G",
+            "FR-EQ-07G"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-cta-05g",
+              "controlId": "CTA-05G",
+              "controlTitle": "Monthly CRO Meeting (formally documented on Quarter Ending Months)",
+              "process": "CTA CMC",
+              "subProcess": "Clinical Accrual",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": false,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-tr-12g",
+              "controlId": "FR-TR-12G",
+              "controlTitle": "Segregation of Duties",
+              "process": "Treasury",
+              "subProcess": "SOD Review",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-tr-13g",
+              "controlId": "FR-TR-13G",
+              "controlTitle": "SOC Report Review",
+              "process": "Treasury",
+              "subProcess": "SOC-1 Review",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-tx-01g",
+              "controlId": "TX-01G",
+              "controlTitle": "Quarterly Tax Meeting",
+              "process": "US-Tax",
+              "subProcess": "Quarterly Tax Provision",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-us-htr-16",
+              "controlId": "US-HtR-16",
+              "controlTitle": "ADP SOC Report Review",
+              "process": "US-HR",
+              "subProcess": "SOC-1 Review",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            }
+          ]
+        },
+        {
+          "stepId": "ctrl-2",
+          "stepLabel": "Track remediation and evidence",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 61,
+            "erpSignalCount": 0,
+            "trackerDesignCount": 13,
+            "outOfScopeCount": 0,
+            "byTrackerStatus": [
+              {
+                "key": "Ongoing",
+                "count": 21
+              },
+              {
+                "key": "Design to complete",
+                "count": 17
+              },
+              {
+                "key": "Not started",
+                "count": 14
+              },
+              {
+                "key": "Ready",
+                "count": 9
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "Design",
+                "count": 13
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "SOC-1 Review",
+                "count": 4
+              },
+              {
+                "key": "Equity Grants",
+                "count": 4
+              },
+              {
+                "key": "Access to Programs & Data (APD)",
+                "count": 4
+              },
+              {
+                "key": "Payroll processing",
+                "count": 4
+              },
+              {
+                "key": "Debt",
+                "count": 3
+              },
+              {
+                "key": "Annual Tax Provision",
+                "count": 3
+              },
+              {
+                "key": "Clinical Accrual",
+                "count": 3
+              },
+              {
+                "key": "Accruals",
+                "count": 3
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-TR-12G",
+            "FR-TR-13G",
+            "TX-01G",
+            "US-HtR-16",
+            "FR-EQ-01G",
+            "FR-EQ-05G",
+            "FR-EQ-07G",
+            "FR-EQ-12G"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-tr-12g",
+              "controlId": "FR-TR-12G",
+              "controlTitle": "Segregation of Duties",
+              "process": "Treasury",
+              "subProcess": "SOD Review",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-fr-tr-13g",
+              "controlId": "FR-TR-13G",
+              "controlTitle": "SOC Report Review",
+              "process": "Treasury",
+              "subProcess": "SOC-1 Review",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "2/27/26"
+            },
+            {
+              "id": "cfti-tx-01g",
+              "controlId": "TX-01G",
+              "controlTitle": "Quarterly Tax Meeting",
+              "process": "US-Tax",
+              "subProcess": "Quarterly Tax Provision",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-us-htr-16",
+              "controlId": "US-HtR-16",
+              "controlTitle": "ADP SOC Report Review",
+              "process": "US-HR",
+              "subProcess": "SOC-1 Review",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Design to complete",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "To be determined"
+            },
+            {
+              "id": "cfti-fr-eq-01g",
+              "controlId": "FR-EQ-01G",
+              "controlTitle": "Equity Transaction Approval",
+              "process": "Equity",
+              "subProcess": "Equity Transactions",
+              "system": "",
+              "trackerGap": "Design",
+              "trackerStatus": "Not started",
+              "erpSignal": false,
+              "trackerOutOfScope": false,
+              "expectedValidationDate": "3/20/26"
+            }
+          ]
+        },
+        {
+          "stepId": "ctrl-3",
+          "stepLabel": "Embed control-by-design into ERP implementation",
+          "ruleApplied": "yes",
+          "summary": {
+            "mappedControlCount": 9,
+            "erpSignalCount": 9,
+            "trackerDesignCount": 1,
+            "outOfScopeCount": 8,
+            "byTrackerStatus": [
+              {
+                "key": "Out-Of-Scope",
+                "count": 8
+              },
+              {
+                "key": "Design to complete",
+                "count": 1
+              }
+            ],
+            "byTrackerGap": [
+              {
+                "key": "ERP",
+                "count": 8
+              },
+              {
+                "key": "Design",
+                "count": 1
+              }
+            ],
+            "bySubProcess": [
+              {
+                "key": "Purchase order",
+                "count": 3
+              },
+              {
+                "key": "Journal Entries",
+                "count": 2
+              },
+              {
+                "key": "Access to Programs & Data (APD)",
+                "count": 2
+              },
+              {
+                "key": "Vendor Management",
+                "count": 1
+              },
+              {
+                "key": "Search for Unrecorded Liabilities",
+                "count": 1
+              }
+            ]
+          },
+          "sampleControlIds": [
+            "FR-FSCP-06",
+            "FR-FSCP-38",
+            "FR-PTP-02G",
+            "FR-PTP-04G",
+            "FR-PTP-05G",
+            "FR-PTP-06G",
+            "FR-PTP-14G",
+            "FR-PTP-18G"
+          ],
+          "sampleControls": [
+            {
+              "id": "cfti-fr-fscp-06",
+              "controlId": "FR-FSCP-06",
+              "controlTitle": "Post period close journal entries",
+              "process": "FR-FSCP",
+              "subProcess": "Journal Entries",
+              "system": "Sage 100",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-fscp-38",
+              "controlId": "FR-FSCP-38",
+              "controlTitle": "Quarterly UAR",
+              "process": "FR-FSCP",
+              "subProcess": "Access to Programs & Data (APD)",
+              "system": "Sage 100",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-02g",
+              "controlId": "FR-PTP-02G",
+              "controlTitle": "New Vendor Set-Up",
+              "process": "PTP",
+              "subProcess": "Vendor Management",
+              "system": "N/A - Gap",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-04g",
+              "controlId": "FR-PTP-04G",
+              "controlTitle": "Purchase Order approval",
+              "process": "PTP",
+              "subProcess": "Purchase order",
+              "system": "DocuShare",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            },
+            {
+              "id": "cfti-fr-ptp-05g",
+              "controlId": "FR-PTP-05G",
+              "controlTitle": "Review of open orders",
+              "process": "PTP",
+              "subProcess": "Purchase order",
+              "system": "DocuShare",
+              "trackerGap": "ERP",
+              "trackerStatus": "Out-Of-Scope",
+              "erpSignal": true,
+              "trackerOutOfScope": true,
+              "expectedValidationDate": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-02-26T20:42:05.453Z",
+  "summary": {
+    "artifactsWithLocalFiles": 5,
+    "artifactsWithParsedText": 2,
+    "parseFailures": 1
+  },
+  "items": [
+    {
+      "artifactId": "sp-d477b432f5bc",
+      "title": "Abivax - RFP - Functional & technical requirements.xlsx",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20-%20RFP%20-%20Functional%20%26%20technical%20requirements.xlsx?d=weffc8e3f47644639b10de6105390e58a",
+      "phase": "Phase 2 - Requirements identification and request for proposal",
+      "itemType": "excel",
+      "status": "local-attachment-available",
+      "fileEntries": [
+        {
+          "relPath": "temp/Abivax - RFP - Functional & technical requirements.xlsx",
+          "fileName": "Abivax - RFP - Functional & technical requirements.xlsx",
+          "extension": "xlsx",
+          "sizeBytes": 1305751,
+          "modifiedAt": "2026-02-24T16:11:36.801Z",
+          "parser": "metadata-only:xlsx",
+          "textStatus": "not-parsed",
+          "textChars": 0,
+          "parsedTextPreview": "",
+          "parseError": "",
+          "extra": {}
+        }
+      ],
+      "bestPreview": ""
+    },
+    {
+      "artifactId": "sp-90e5ce9b6d0d",
+      "title": "Abivax - Final Financial comparaison Offer.xlsx",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Final%20Financial%20comparaison%20Offer.xlsx?d=wb36a57ad9abb4af6aa87092fd8476d9b",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "itemType": "excel",
+      "status": "local-attachment-available",
+      "fileEntries": [
+        {
+          "relPath": "temp/Abivax - Final Financial comparaison Offer.xlsx",
+          "fileName": "Abivax - Final Financial comparaison Offer.xlsx",
+          "extension": "xlsx",
+          "sizeBytes": 609234,
+          "modifiedAt": "2026-02-24T16:10:13.018Z",
+          "parser": "metadata-only:xlsx",
+          "textStatus": "not-parsed",
+          "textChars": 0,
+          "parsedTextPreview": "",
+          "parseError": "",
+          "extra": {}
+        }
+      ],
+      "bestPreview": ""
+    },
+    {
+      "artifactId": "sp-f1fc42f8969a",
+      "title": "Abivax - Netsuite Demonstration Feedback.pptx",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Netsuite/Abivax%20-%20Netsuite%20Demonstration%20Feedback.pptx?d=w8783e9d1b2f148e08b0cf8625621a13d",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "itemType": "powerpoint",
+      "status": "local-attachment-available",
+      "fileEntries": [
+        {
+          "relPath": "temp/Abivax - Netsuite Demonstration Feedback.pptx",
+          "fileName": "Abivax - Netsuite Demonstration Feedback.pptx",
+          "extension": "pptx",
+          "sizeBytes": 1339514,
+          "modifiedAt": "2026-02-18T08:45:01.178Z",
+          "parser": "pptx-xml",
+          "textStatus": "ok",
+          "textChars": 4031,
+          "parsedTextPreview": "Netsuite – D emonstration feedback 17/02/2026 KPMG. Make the Difference. || Netsuite - Demonstration Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Description Proposal V2 Technical aspect Trust Pair The demonstration was not clear whether a connection/integration with TrustPair was feasible. Provide proof points of an existing TrustPair integration/co || Netsuite – Financial proposal Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Hypothesis clarification Proposal V2 Financial proposal Project Management A Project Sponsor A Project Manager Solution Architects, Functional, Technical and Education Consultants that work on the proj || Credentials contacts {5940675A-B579-460E-94D1-54222C63F5DA} Credential Contact Ennov TBD ITBMed TBD EFESO TBD || Thank you !",
+          "parseError": "",
+          "extra": {
+            "slideCount": 5
+          }
+        }
+      ],
+      "bestPreview": "Netsuite – D emonstration feedback 17/02/2026 KPMG. Make the Difference. || Netsuite - Demonstration Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Description Proposal V2 Technical aspect Trust Pair The demonstration was not clear whether a connection/integration with TrustPair was feasible. Provide proof points of an existing TrustPair integration/co || Netsuite – Financial proposal Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Hypothesis clarification Proposal V2 Financial proposal Project Management A Project Sponsor A Project Manager Solution Architects, Functional, Technical and Education Consultants that work on the proj || Credentials contacts {5940675A-B579-460E-94D1-54222C63F5DA} Credential Contact Ennov TBD ITBMed TBD EFESO TBD || Thank you !"
+    },
+    {
+      "artifactId": "sp-eae6d3fd3aed",
+      "title": "Abivax - RFP Analysis review_20260205.pdf",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round/Abivax%20-%20RFP%20Analysis%20review_20260205.pdf",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "itemType": "pdf-or-binary",
+      "status": "local-attachment-available",
+      "fileEntries": [
+        {
+          "relPath": "temp/Abivax - RFP Analysis review_20260205.pdf",
+          "fileName": "Abivax - RFP Analysis review_20260205.pdf",
+          "extension": "pdf",
+          "sizeBytes": 1413178,
+          "modifiedAt": "2026-02-24T16:10:38.261Z",
+          "parser": "failed",
+          "textStatus": "error",
+          "textChars": 0,
+          "parsedTextPreview": "",
+          "parseError": "pdf-parse loader unavailable",
+          "extra": {}
+        }
+      ],
+      "bestPreview": ""
+    },
+    {
+      "artifactId": "sp-9ef06282c759",
+      "title": "Abivax - SAP Demonstration Feedback.pptx",
+      "canonicalUrl": "https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/SAP%20-%20KPMG/Abivax%20-%20SAP%20Demonstration%20Feedback.pptx?d=wc4ee4e13d4a44105bd8ce0ab2b20106c",
+      "phase": "Phase 3 - Consultation process and preparation",
+      "itemType": "powerpoint",
+      "status": "local-attachment-available",
+      "fileEntries": [
+        {
+          "relPath": "temp/Abivax - SAP Demonstration Feedback.pptx",
+          "fileName": "Abivax - SAP Demonstration Feedback.pptx",
+          "extension": "pptx",
+          "sizeBytes": 1493054,
+          "modifiedAt": "2026-02-24T16:09:49.068Z",
+          "parser": "pptx-xml",
+          "textStatus": "ok",
+          "textChars": 4308,
+          "parsedTextPreview": "SAP – D emonstration feedback 16/02/2026 KPMG. Make the Difference. || SAP - Demonstration Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Description Proposal V2 Technical aspect Item master data Participants would have liked more detail on how the item/material master data is managed in SAP. Provide a short demo video or a single slide explaining || SAP – Financial proposal Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Hypothesis clarification Proposal V2 (ABIVAX expectations) Financial proposal Project Management Higher risk of delaying planning with insufficient project management (one month of postpone 100K€ of project || Credentials contacts {5940675A-B579-460E-94D1-54222C63F5DA} Credential Contact Doctolib TBD H2air TBD Cerba Research TBD || Thank you !",
+          "parseError": "",
+          "extra": {
+            "slideCount": 5
+          }
+        }
+      ],
+      "bestPreview": "SAP – D emonstration feedback 16/02/2026 KPMG. Make the Difference. || SAP - Demonstration Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Description Proposal V2 Technical aspect Item master data Participants would have liked more detail on how the item/material master data is managed in SAP. Provide a short demo video or a single slide explaining || SAP – Financial proposal Feedback {5940675A-B579-460E-94D1-54222C63F5DA} Point to investigate Hypothesis clarification Proposal V2 (ABIVAX expectations) Financial proposal Project Management Higher risk of delaying planning with insufficient project management (one month of postpone 100K€ of project || Credentials contacts {5940675A-B579-460E-94D1-54222C63F5DA} Credential Contact Doctolib TBD H2air TBD Cerba Research TBD || Thank you !"
+    }
+  ]
+}

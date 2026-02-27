@@ -1,0 +1,112 @@
+{
+  "integrations": [
+    {
+      "id": "concur-to-sage",
+      "sourceSystem": "SAP Concur",
+      "targetSystem": "Sage",
+      "feedType": "manual-entry",
+      "frequency": "batch/as-needed",
+      "owner": "Finance (confirm)",
+      "monitoring": "Manual checks",
+      "failureProcess": "Manual correction and re-entry",
+      "status": "active",
+      "notes": "Expense entries are manually posted in Sage."
+    },
+    {
+      "id": "adp-to-sage",
+      "sourceSystem": "ADP",
+      "targetSystem": "Sage",
+      "feedType": "file-manual",
+      "frequency": "pay-cycle",
+      "owner": "HR + Finance (confirm)",
+      "monitoring": "Manual reconciliation",
+      "failureProcess": "Manual reload and finance correction",
+      "status": "active",
+      "notes": "Payroll file manually entered in Sage."
+    },
+    {
+      "id": "docushare-to-sage",
+      "sourceSystem": "Docushare",
+      "targetSystem": "Sage",
+      "feedType": "manual-replication",
+      "frequency": "transactional",
+      "owner": "P2P team (confirm)",
+      "monitoring": "Manual",
+      "failureProcess": "P2P correction and repost",
+      "status": "active",
+      "notes": "PO process starts in Docushare then replicated in Sage."
+    },
+    {
+      "id": "sage-to-trustpair-vendor",
+      "sourceSystem": "Sage",
+      "targetSystem": "Trustpair",
+      "feedType": "sftp-file",
+      "frequency": "scheduled",
+      "owner": "Finance controls + IT (confirm)",
+      "monitoring": "Low-touch per IT call",
+      "failureProcess": "Escalate to IT + finance controls owner",
+      "status": "active",
+      "notes": "Vendor database feed from Sage to Trustpair."
+    },
+    {
+      "id": "sage-to-trustpair-payment",
+      "sourceSystem": "Sage",
+      "targetSystem": "Trustpair",
+      "feedType": "sftp-file",
+      "frequency": "payment-run",
+      "owner": "Treasury/Payments (confirm)",
+      "monitoring": "Low-touch per IT call",
+      "failureProcess": "Retry/validate feed before payment release",
+      "status": "active",
+      "notes": "Pending payment file sent for Trustpair validation."
+    },
+    {
+      "id": "trustpair-to-agicap",
+      "sourceSystem": "Trustpair",
+      "targetSystem": "Agicap",
+      "feedType": "validated-payment-flow",
+      "frequency": "payment-run",
+      "owner": "Treasury (confirm)",
+      "monitoring": "Operational",
+      "failureProcess": "Payment hold and escalation",
+      "status": "active",
+      "notes": "Validated payments continue through Agicap."
+    },
+    {
+      "id": "agicap-to-banks",
+      "sourceSystem": "Agicap",
+      "targetSystem": "Wells Fargo / SocGen",
+      "feedType": "bank-connection",
+      "frequency": "payment-run",
+      "owner": "Treasury (confirm)",
+      "monitoring": "Treasury + banking confirmations",
+      "failureProcess": "Bank/payment investigation process",
+      "status": "active",
+      "notes": "Agicap connected to Wells Fargo and SocGen."
+    },
+    {
+      "id": "sage-to-trustpair-us",
+      "sourceSystem": "Sage (US LLC)",
+      "targetSystem": "Trustpair",
+      "feedType": "file-upload/manual-trigger",
+      "frequency": "payment-run",
+      "owner": "US Finance + Treasury (confirm)",
+      "monitoring": "Manual reconciliation by finance",
+      "failureProcess": "Manual re-upload and reconciliation review",
+      "status": "active",
+      "notes": "US team uses Trustpair controls but payment execution differs from SA path."
+    },
+    {
+      "id": "us-bank-direct-payments",
+      "sourceSystem": "US Finance workflow",
+      "targetSystem": "Wells Fargo",
+      "feedType": "template-upload/manual",
+      "frequency": "payment-run",
+      "owner": "US Accounting (Matt/Kimberly confirm)",
+      "monitoring": "Manual post-payment checks",
+      "failureProcess": "Manual investigation and reposting entries",
+      "status": "active",
+      "notes": "US side does not use Agicap and runs direct bank templates with manual journals/reconciliations."
+    }
+  ]
+}

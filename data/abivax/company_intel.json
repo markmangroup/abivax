@@ -1,0 +1,397 @@
+{
+  "asOf": "2026-02-25",
+  "sections": [
+    {
+      "id": "executive-context",
+      "title": "Corporate Strategy and Leadership Narrative",
+      "items": [
+        {
+          "id": "exec-1",
+          "summary": "Abivax focuses on developing therapeutics to stabilize immune response in chronic inflammatory diseases, with obefazimod as lead for ulcerative colitis.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-02-18",
+          "evidenceLine": "Develops therapeutics to stabilize immune response in chronic inflammatory diseases.",
+          "sources": [
+            {
+              "title": "Abivax Pipeline",
+              "url": "https://www.abivax.com/pipeline"
+            }
+          ],
+          "implication": "Targeted pipeline reduces ERP execution risk.",
+          "verificationAction": null,
+          "tags": [
+            "strategy"
+          ]
+        },
+        {
+          "id": "exec-2",
+          "summary": "Leadership includes CEO Marc de Garidel, CFO Didier Blondel, CMO Fabio Cataldi, and others with pharma experience.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-02-18",
+          "evidenceLine": "Marc de Garidel CEO, Didier Blondel CFO, Fabio Cataldi CMO.",
+          "sources": [
+            {
+              "title": "Abivax Management",
+              "url": "https://ir.abivax.com/corporate-governance/management"
+            }
+          ],
+          "implication": "Experienced team aids strategic ERP management.",
+          "verificationAction": null,
+          "tags": [
+            "leadership"
+          ]
+        },
+        {
+          "id": "exec-3",
+          "summary": "2026 outlook prioritizes ABTECT-UC Phase 3 maintenance data late Q2 2026 and ENHANCE-CD Phase 2 induction data Q4 2026.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-01-07",
+          "evidenceLine": "Outlook includes ABTECT maintenance late Q2 2026 and ENHANCE-CD induction Q4 2026.",
+          "sources": [
+            {
+              "title": "Abivax Provides 2026 Corporate Outlook",
+              "url": "https://ir.abivax.com/news-releases/news-release-details/abivax-provides-2026-corporate-outlook"
+            }
+          ],
+          "implication": "Milestones guide ERP priorities.",
+          "verificationAction": null,
+          "tags": [
+            "outlook"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pipeline-context",
+      "title": "Clinical Pipeline Status by Indication",
+      "items": [
+        {
+          "id": "pipe-1",
+          "summary": "Obefazimod Phase 3 ABTECT for UC achieved positive induction top-line results on 2025-07-22; maintenance top-line expected Q2 2026.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2025-07-22",
+          "evidenceLine": "Positive topline results from ABTECT induction trials.",
+          "sources": [
+            {
+              "title": "Abivax Announces Positive Phase 3 Results",
+              "url": "https://ir.abivax.com/news-releases/news-release-details/abivax-announces-positive-phase-3-results-both-abtect-8-week"
+            }
+          ],
+          "implication": "Positive induction data lowers ERP clinical risk for UC.",
+          "verificationAction": null,
+          "tags": [
+            "UC",
+            "milestone"
+          ]
+        },
+        {
+          "id": "pipe-2",
+          "summary": "ABTECT Phase 3 DSMB found no new safety signals on 2025-12-18, with over 80% maintenance completion.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2025-12-18",
+          "evidenceLine": "DSMB reported no new safety signals in maintenance trial.",
+          "sources": [
+            {
+              "title": "Abivax Provides 2026 Corporate Outlook",
+              "url": "https://ir.abivax.com/news-releases/news-release-details/abivax-provides-2026-corporate-outlook"
+            }
+          ],
+          "implication": "Safety confirmation reduces ERP execution risk.",
+          "verificationAction": null,
+          "tags": [
+            "safety"
+          ]
+        },
+        {
+          "id": "pipe-3",
+          "summary": "Obefazimod Phase 2b ENHANCE-CD for Crohn's enrolled first patient on 2024-10-03; 12-week induction data expected Q4 2026.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2024-10-03",
+          "evidenceLine": "First patient enrolled in ENHANCE-CD on October 3, 2024.",
+          "sources": [
+            {
+              "title": "Abivax Announces First Patient Enrolled in ENHANCE-CD",
+              "url": "https://ir.abivax.com/news-releases/news-release-details/abivax-announces-first-patient-enrolled-enhance-cd-phase-2b"
+            }
+          ],
+          "implication": "CD program diversifies ERP pipeline.",
+          "verificationAction": null,
+          "tags": [
+            "CD",
+            "milestone"
+          ]
+        },
+        {
+          "id": "pipe-4",
+          "summary": "Completion of ABTECT enrollment announced on 2025-04-29, with induction data Q3 2025 and maintenance Q2 2026.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2025-04-29",
+          "evidenceLine": "Enrollment completion for Phase 3 ABTECT trials.",
+          "sources": [
+            {
+              "title": "Abivax Announces Completion of Enrollment",
+              "url": "https://ir.abivax.com/news-releases/news-release-details/abivax-announces-completion-enrollment-phase-3-abtect-trials"
+            }
+          ],
+          "implication": "Milestone supports ERP stability.",
+          "verificationAction": null,
+          "tags": [
+            "UC",
+            "milestone"
+          ]
+        },
+        {
+          "id": "pipe-5-ecco26-antifibrotic-ir",
+          "summary": "Abivax announced ECCO 2026 data highlighting first evidence of anti-fibrotic activity for obefazimod alongside additional clinical efficacy and safety analyses in IBD.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-02-21",
+          "evidenceLine": "IR email alert plus SEC 6-K filing (2026-02-23) confirm ECCO 2026 anti-fibrotic / efficacy / safety announcement.",
+          "sources": [
+            {
+              "title": "Abivax IR Email Alert (notification.gcs-web.com)",
+              "url": "https://ir.abivax.com/news-releases"
+            },
+            {
+              "title": "SEC 6-K filing (2026-02-23) - Abivax ECCO PR",
+              "url": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm"
+            }
+          ],
+          "implication": "Reinforces clinical momentum and increases executive focus on readiness, controls, and ERP execution discipline ahead of upcoming milestones.",
+          "verificationAction": null,
+          "tags": [
+            "ECCO",
+            "CD",
+            "anti-fibrotic",
+            "clinical-data"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "market-intel",
+      "title": "Financial and Market Context",
+      "items": [
+        {
+          "id": "mkt-2",
+          "summary": "Stock surged on M&A rumors, with speculated $15B valuation.",
+          "confidence": "reported",
+          "sourceStatus": "secondary",
+          "date": "2026-01-12",
+          "evidenceLine": "Shares soar on media report of Eli Lilly bid.",
+          "sources": [
+            {
+              "title": "France denies contact with Eli Lilly",
+              "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-shares-soar-23-media-report-reignites-ma-chatter-2026-01-12"
+            }
+          ],
+          "implication": "Volatility impacts ERP planning.",
+          "verificationAction": "Check latest SEC 6-K for updates.",
+          "tags": [
+            "valuation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mna-intel",
+      "title": "M&A Signals and Buyer Speculation",
+      "items": [
+        {
+          "id": "mna-1",
+          "summary": "Rumors of Eli Lilly �15B bid originated from La Lettre in Dec 2025; French ministry denied contact on 2026-01-12.",
+          "confidence": "rumor",
+          "sourceStatus": "unverified",
+          "date": "2026-01-12",
+          "evidenceLine": "Finance Ministry denies contact with Eli Lilly over Abivax deal.",
+          "sources": [
+            {
+              "title": "France denies contact with Eli Lilly",
+              "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-shares-soar-23-media-report-reignites-ma-chatter-2026-01-12"
+            }
+          ],
+          "implication": "Potential disruption to ERP through acquisition.",
+          "verificationAction": "Monitor for SEC Form 6-K or AMF filings on bids.",
+          "tags": [
+            "rumor"
+          ]
+        },
+        {
+          "id": "mna-2",
+          "summary": "CEO Marc de Garidel dismissed Eli Lilly bid rumors as 'noise' on 2026-01-20, stating there was no discussion on the acquisition and declining comment on informal talks.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-01-20",
+          "evidenceLine": "The noise around this potential acquisition is a distraction, but our duty is not to be distracted.",
+          "sources": [
+            {
+              "title": "Abivax CEO dismisses 'noise' around rumored Eli Lilly bid",
+              "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-ceo-dismisses-noise-around-rumored-eli-lilly-bid-2026-01-20"
+            }
+          ],
+          "implication": "Confirmed leadership messaging lowers rumor-driven distraction but does not prove absence of informal interest.",
+          "verificationAction": null,
+          "tags": [
+            "denial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operator-implications",
+      "title": "Implications for ERP and Operating Model",
+      "items": [
+        {
+          "id": "op-1",
+          "summary": "Monitor ABTECT maintenance data late Q2 2026 for UC approval path.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-01-07",
+          "evidenceLine": "ABTECT maintenance topline late Q2 2026.",
+          "sources": [
+            {
+              "title": "Abivax Provides 2026 Corporate Outlook",
+              "url": "https://ir.abivax.com/news-releases/news-release-details/abivax-provides-2026-corporate-outlook"
+            }
+          ],
+          "implication": "Informs commercialization operating model.",
+          "verificationAction": null,
+          "tags": [
+            "UC"
+          ]
+        },
+        {
+          "id": "op-2",
+          "summary": "Allocate resources for ENHANCE-CD, with data Q4 2026.",
+          "confidence": "confirmed",
+          "sourceStatus": "primary",
+          "date": "2026-01-07",
+          "evidenceLine": "ENHANCE-CD induction data Q4 2026.",
+          "sources": [
+            {
+              "title": "Abivax Pipeline",
+              "url": "https://www.abivax.com/pipeline"
+            }
+          ],
+          "implication": "Expands model beyond UC.",
+          "verificationAction": null,
+          "tags": [
+            "CD"
+          ]
+        },
+        {
+          "id": "op-3",
+          "summary": "Prepare contingencies for M&A amid Lilly rumors.",
+          "confidence": "rumor",
+          "sourceStatus": "unverified",
+          "date": "2026-01-20",
+          "evidenceLine": "CEO dismisses rumored Eli Lilly bid.",
+          "sources": [
+            {
+              "title": "Abivax CEO dismisses 'noise' around rumored Eli Lilly bid",
+              "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/abivax-ceo-dismisses-noise-around-rumored-eli-lilly-bid-2026-01-20"
+            }
+          ],
+          "implication": "May adjust operating model for integration.",
+          "verificationAction": "Await SEC/AMF disclosure filings.",
+          "tags": [
+            "M&A"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceBacklog": [
+    {
+      "id": "src-0",
+      "name": "Abivax Corporate Presentation (January 2026)",
+      "status": "parsed",
+      "owner": "Mike",
+      "nextStep": "Use parsed deck content as baseline for trigger and evidence maintenance."
+    },
+    {
+      "id": "src-1",
+      "name": "Q3 2025 Financial Results",
+      "status": "pending",
+      "owner": "CFO Didier Blondel",
+      "nextStep": "Review cash runway in next IR release"
+    },
+    {
+      "id": "src-2",
+      "name": "ECCO 2026 Abstracts",
+      "status": "partially-confirmed",
+      "owner": "CMO Fabio Cataldi",
+      "nextStep": "IR email alert confirms ECCO 2026 release headline; confirm exact release URL and abstract details when direct detector/web access is stable."
+    }
+  ],
+  "erpTriggers": [
+    {
+      "triggerEvent": "ABTECT maintenance data readout",
+      "whyItMattersToERP": "Confirms efficacy for UC NDA filing.",
+      "owner": "Fabio Cataldi",
+      "dueWindow": "Q2 2026"
+    },
+    {
+      "triggerEvent": "ENHANCE-CD induction data readout",
+      "whyItMattersToERP": "Diversifies indications, reduces risk.",
+      "owner": "Fabio Cataldi",
+      "dueWindow": "Q4 2026"
+    },
+    {
+      "triggerEvent": "Potential M&A announcement",
+      "whyItMattersToERP": "Requires integration and model shifts.",
+      "owner": "Marc de Garidel",
+      "dueWindow": "Ongoing"
+    },
+    {
+      "triggerEvent": "Regulatory feedback on NDA",
+      "whyItMattersToERP": "Guides submission and resources.",
+      "owner": "TBD (confirm owner)",
+      "dueWindow": "H2 2026"
+    },
+    {
+      "triggerEvent": "Combination therapy decision",
+      "whyItMattersToERP": "Affects pipeline allocation.",
+      "owner": "TBD (confirm owner)",
+      "dueWindow": "2026"
+    },
+    {
+      "triggerEvent": "Stock volatility from rumors",
+      "whyItMattersToERP": "Impacts retention and funding narrative.",
+      "owner": "TBD (confirm owner)",
+      "dueWindow": "Ongoing"
+    },
+    {
+      "triggerEvent": "DSMB safety updates",
+      "whyItMattersToERP": "Mitigates clinical risks.",
+      "owner": "Fabio Cataldi",
+      "dueWindow": "Ongoing"
+    }
+  ],
+  "leadershipQuestions": [
+    "Key risks in ABTECT maintenance and mitigations?",
+    "ENHANCE-CD results impact on Crohn's timeline?",
+    "Plans for obefazimod combinations in 2026?",
+    "Cash runway alignment with ERP milestones?",
+    "Contingencies for M&A scenarios?",
+    "Regulatory interactions with FDA/EMA updates?",
+    "Leadership changes for commercialization?",
+    "Addressing IBD competition?",
+    "Institutional interest effects on priorities?",
+    "Safety profile differentiation strategy?"
+  ],
+  "verificationBacklog": [
+    "Confirm Eli Lilly bid via SEC/AMF filings.",
+    "Verify stock price on 2026-02-18 via Nasdaq.",
+    "Review ECCO 2026 abstracts for Abivax post-event.",
+    "Check latest institutional 13F filings.",
+    "Monitor French ministry statements on M&A."
+  ]
+}

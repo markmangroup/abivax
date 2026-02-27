@@ -1,0 +1,550 @@
+{
+  "generatedAt": "2026-02-26T20:42:00.673Z",
+  "status": "ok",
+  "sourceFolder": "C:\\Users\\mmarkman\\abivax\\temp\\recent-email-attachments\\20260225-104256 - RE_ERP_scope_alignment_-_SOX_findings_and_reporting_process_documentation",
+  "summary": {
+    "workbookCount": 3,
+    "hasTracker": true,
+    "hasP2pRcm": true,
+    "hasFscpRcm": true
+  },
+  "tracker": {
+    "fileName": "01 - Abivax x CFGI - Project Plan.xlsx",
+    "sheetName": "02. Micro View",
+    "headerRowIndex": 3,
+    "headers": [
+      "Process",
+      "Sub-process",
+      "Control ID",
+      "Control Title",
+      "Control Description",
+      "Frequency",
+      "Key / Non-Key",
+      "Preparer",
+      "Reviewer",
+      "GAP",
+      "OUT OF SCOPE",
+      "OUT OF SCOPE RATIONALE",
+      "Name of preparer",
+      "Name of reviewer",
+      "Abivax Comment",
+      "CFGI Comment",
+      "Preparer Validation",
+      "Reviewer Validation",
+      "Overall Status",
+      "Expected Validation Date",
+      "Effective Validation Date",
+      "Column 22",
+      "Column 23",
+      "Column 24",
+      "Column 25",
+      "Column 26",
+      "Column 27",
+      "Column 28",
+      "Column 29"
+    ],
+    "summary": {
+      "rowCount": 141,
+      "byProcess": [
+        {
+          "key": "FR-FSCP",
+          "count": 39
+        },
+        {
+          "key": "Equity",
+          "count": 19
+        },
+        {
+          "key": "PTP",
+          "count": 18
+        },
+        {
+          "key": "US-HR",
+          "count": 16
+        },
+        {
+          "key": "Treasury",
+          "count": 14
+        },
+        {
+          "key": "FR-HR",
+          "count": 13
+        },
+        {
+          "key": "CTA CMC",
+          "count": 8
+        },
+        {
+          "key": "FR-Tax",
+          "count": 7
+        },
+        {
+          "key": "US-Tax",
+          "count": 7
+        }
+      ],
+      "byGap": [
+        {
+          "key": "Design",
+          "count": 30
+        },
+        {
+          "key": "ERP",
+          "count": 8
+        }
+      ],
+      "byStatus": [
+        {
+          "key": "Out-Of-Scope",
+          "count": 45
+        },
+        {
+          "key": "Ongoing",
+          "count": 37
+        },
+        {
+          "key": "Design to complete",
+          "count": 27
+        },
+        {
+          "key": "Not started",
+          "count": 23
+        },
+        {
+          "key": "Ready",
+          "count": 9
+        }
+      ],
+      "sampleRows": [
+        {
+          "process": "PTP",
+          "subProcess": "Delegation of Authority (DOA) Policy",
+          "controlId": "FR-PTP-01",
+          "controlTitle": "Delegation of Authority (DOA) Policy Approval",
+          "gap": "",
+          "overallStatus": "Design to complete",
+          "expectedValidationDate": "To be determined"
+        },
+        {
+          "process": "PTP",
+          "subProcess": "Vendor Management",
+          "controlId": "FR-PTP-02G",
+          "controlTitle": "New Vendor Set-Up",
+          "gap": "ERP",
+          "overallStatus": "Out-Of-Scope",
+          "expectedValidationDate": ""
+        },
+        {
+          "process": "PTP",
+          "subProcess": "Vendor Management",
+          "controlId": "FR-PTP-03",
+          "controlTitle": "Trustpair Vendor Master Data Validation",
+          "gap": "",
+          "overallStatus": "Ongoing",
+          "expectedValidationDate": "2/27/26"
+        },
+        {
+          "process": "PTP",
+          "subProcess": "Purchase order",
+          "controlId": "FR-PTP-04G",
+          "controlTitle": "Purchase Order approval",
+          "gap": "ERP",
+          "overallStatus": "Out-Of-Scope",
+          "expectedValidationDate": ""
+        },
+        {
+          "process": "PTP",
+          "subProcess": "Purchase order",
+          "controlId": "FR-PTP-05G",
+          "controlTitle": "Review of open orders",
+          "gap": "ERP",
+          "overallStatus": "Out-Of-Scope",
+          "expectedValidationDate": ""
+        }
+      ]
+    }
+  },
+  "p2pRcm": {
+    "fileName": "Abivax PtP - FINAL_23 December 2025.xlsx",
+    "sheetName": "RCM_Procurement to Pay FINAL",
+    "headerRowIndex": 6,
+    "headers": [
+      "Sub-process",
+      "Risk",
+      "Control Title",
+      "Control ID",
+      "Control Summary",
+      "Frequency",
+      "System",
+      "Automated/Manual / IT-Dependent Manual",
+      "Preventative/Detective",
+      "Title of Preparer",
+      "Reviewer",
+      "Key/Non-Key",
+      "Non-Key Rationale",
+      "Effective date",
+      "Control Gap Remediation Plan",
+      "Column 16",
+      "Column 17",
+      "Column 18",
+      "Column 19",
+      "Column 20",
+      "Column 21"
+    ],
+    "summary": {
+      "kind": "p2p",
+      "rowCount": 20,
+      "gapControlCount": 8,
+      "erpMentionControlCount": 6,
+      "bySubProcess": [
+        {
+          "key": "Purchase order",
+          "count": 4
+        },
+        {
+          "key": "Cash Disbursements",
+          "count": 4
+        },
+        {
+          "key": "Vendor Management",
+          "count": 2
+        },
+        {
+          "key": "Cash disbursements",
+          "count": 2
+        },
+        {
+          "key": "Delegation of Authority (DOA) Policy",
+          "count": 1
+        },
+        {
+          "key": "Search for Unrecorded Liabilities",
+          "count": 1
+        },
+        {
+          "key": "Prepaids",
+          "count": 1
+        },
+        {
+          "key": "Accruals",
+          "count": 1
+        },
+        {
+          "key": "Master data",
+          "count": 1
+        },
+        {
+          "key": "Monthly AP Reconciliation",
+          "count": 1
+        }
+      ],
+      "bySystem": [
+        {
+          "key": "Sage 100",
+          "count": 6
+        },
+        {
+          "key": "DocuShare",
+          "count": 3
+        },
+        {
+          "key": "Agicap",
+          "count": 2
+        },
+        {
+          "key": "Globalcash (bank application)",
+          "count": 2
+        },
+        {
+          "key": "N/A",
+          "count": 1
+        },
+        {
+          "key": "N/A - Gap",
+          "count": 1
+        },
+        {
+          "key": "Trustpair Sage 100",
+          "count": 1
+        },
+        {
+          "key": "DocuShare Sage 100",
+          "count": 1
+        },
+        {
+          "key": "DocuShare Agicap Sage 100",
+          "count": 1
+        },
+        {
+          "key": "Sage 100 Trustpair",
+          "count": 1
+        }
+      ],
+      "byAutomationType": [
+        {
+          "key": "IT-Dependent Manual",
+          "count": 15
+        },
+        {
+          "key": "Automated",
+          "count": 4
+        },
+        {
+          "key": "Manual",
+          "count": 1
+        }
+      ],
+      "byFrequency": [
+        {
+          "key": "Adhoc",
+          "count": 9
+        },
+        {
+          "key": "Quarterly",
+          "count": 5
+        },
+        {
+          "key": "Annually",
+          "count": 2
+        },
+        {
+          "key": "Monthly",
+          "count": 2
+        },
+        {
+          "key": "Semi-Monthly",
+          "count": 1
+        },
+        {
+          "key": "Semi-monthly",
+          "count": 1
+        }
+      ],
+      "sampleGapControls": [
+        {
+          "controlId": "FR-PTP-02G",
+          "subProcess": "Vendor Management",
+          "controlTitle": "New Vendor Set-Up",
+          "system": "N/A - Gap",
+          "automationType": "IT-Dependent Manual",
+          "remediationPlan": "Gap"
+        },
+        {
+          "controlId": "FR-PTP-04G",
+          "subProcess": "Purchase order",
+          "controlTitle": "Purchase Order approval",
+          "system": "DocuShare",
+          "automationType": "IT-Dependent Manual",
+          "remediationPlan": "Gap"
+        },
+        {
+          "controlId": "FR-PTP-05G",
+          "subProcess": "Purchase order",
+          "controlTitle": "Review of open orders",
+          "system": "DocuShare",
+          "automationType": "IT-Dependent Manual",
+          "remediationPlan": "Gap"
+        },
+        {
+          "controlId": "FR-PTP-06G",
+          "subProcess": "Purchase order",
+          "controlTitle": "Two-way match",
+          "system": "DocuShare",
+          "automationType": "IT-Dependent Manual",
+          "remediationPlan": "Gap"
+        },
+        {
+          "controlId": "FR-PTP-07G",
+          "subProcess": "Purchase order",
+          "controlTitle": "Invoice Approval",
+          "system": "DocuShare Sage 100",
+          "automationType": "Automated",
+          "remediationPlan": "Gap"
+        }
+      ]
+    }
+  },
+  "fscpRcm": {
+    "fileName": "Abivax FSCP FINAL RCM 22 December 2025.xlsx",
+    "sheetName": "FSCP RCM_FINAL",
+    "headerRowIndex": 6,
+    "headers": [
+      "Sub-process",
+      "Risk",
+      "Control Title",
+      "Control ID",
+      "Control Summary",
+      "Frequency",
+      "System",
+      "Automated/Manual",
+      "Preventative/Detective",
+      "Title of Preparer",
+      "Reviewer",
+      "Key/Non-Key",
+      "Non-Key Rationale",
+      "Effective date",
+      "Control Gap Remediation Plan",
+      "Column 16",
+      "Column 17",
+      "Column 18",
+      "Column 19",
+      "Column 20"
+    ],
+    "summary": {
+      "kind": "fscp",
+      "rowCount": 39,
+      "gapControlCount": 20,
+      "erpMentionControlCount": 2,
+      "bySubProcess": [
+        {
+          "key": "Financial Statement Preparation",
+          "count": 8
+        },
+        {
+          "key": "Journal Entries",
+          "count": 4
+        },
+        {
+          "key": "Foreign Exchange Rate",
+          "count": 3
+        },
+        {
+          "key": "Consolidation Process",
+          "count": 3
+        },
+        {
+          "key": "Related Parties",
+          "count": 3
+        },
+        {
+          "key": "Budgeting & Forecasting",
+          "count": 2
+        },
+        {
+          "key": "Chart of Accounts",
+          "count": 2
+        },
+        {
+          "key": "Close Procedures",
+          "count": 2
+        },
+        {
+          "key": "Significant, Non-routine Transaction Approval",
+          "count": 2
+        },
+        {
+          "key": "Materiality Memo",
+          "count": 1
+        }
+      ],
+      "bySystem": [
+        {
+          "key": "Sage 100",
+          "count": 24
+        },
+        {
+          "key": "N/A",
+          "count": 7
+        },
+        {
+          "key": "Workiva",
+          "count": 3
+        },
+        {
+          "key": "Sage 100 (for Abivax SA and Abivax LLC B/S)",
+          "count": 1
+        },
+        {
+          "key": "Sage 100 (for Abivax LLC B/S)",
+          "count": 1
+        },
+        {
+          "key": "Sage 100 (for SA and LLC B/S)",
+          "count": 1
+        },
+        {
+          "key": "Sage 100 (for consolidation)",
+          "count": 1
+        },
+        {
+          "key": "Sage 100 Workiva",
+          "count": 1
+        }
+      ],
+      "byAutomationType": [
+        {
+          "key": "IT Dependent Manual",
+          "count": 27
+        },
+        {
+          "key": "Manual",
+          "count": 7
+        },
+        {
+          "key": "Automated",
+          "count": 5
+        }
+      ],
+      "byFrequency": [
+        {
+          "key": "Quarterly",
+          "count": 25
+        },
+        {
+          "key": "Ongoing",
+          "count": 6
+        },
+        {
+          "key": "Annually",
+          "count": 5
+        },
+        {
+          "key": "Ad hoc",
+          "count": 3
+        }
+      ],
+      "sampleGapControls": [
+        {
+          "controlId": "FR-FSCP-02G",
+          "subProcess": "Budgeting & Forecasting",
+          "controlTitle": "Budget to Actuals Review",
+          "system": "Sage 100",
+          "automationType": "IT Dependent Manual",
+          "remediationPlan": "Gap- create a threshold for investigation"
+        },
+        {
+          "controlId": "FR-FSCP-05G",
+          "subProcess": "Journal Entries",
+          "controlTitle": "Manual Journal Entries",
+          "system": "Sage 100",
+          "automationType": "IT Dependent Manual",
+          "remediationPlan": "Material weakness within Sage 100 that does not include a built-in approval workflow to ensure proper segregation of duties between preparers and reviewers."
+        },
+        {
+          "controlId": "FR-FSCP-09G",
+          "subProcess": "Materiality Memo",
+          "controlTitle": "Annual Materiality Memo Review",
+          "system": "N/A",
+          "automationType": "Manual",
+          "remediationPlan": "Gap"
+        },
+        {
+          "controlId": "FR-FSCP-10",
+          "subProcess": "Cost Classification",
+          "controlTitle": "Cost centre allocation review (G&A and R&D split)",
+          "system": "Sage 100",
+          "automationType": "IT Dependent Manual",
+          "remediationPlan": "Gap"
+        },
+        {
+          "controlId": "FR-FSCP-21G",
+          "subProcess": "Consolidation Process",
+          "controlTitle": "Consolidation Preparation and Review",
+          "system": "Sage 100 (for SA and LLC B/S)",
+          "automationType": "IT Dependent Manual",
+          "remediationPlan": "Gap - Formal evidence of review is not retained."
+        }
+      ]
+    }
+  }
+}

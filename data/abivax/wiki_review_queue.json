@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-02-26T20:38:08.427Z",
+  "summary": {
+    "pendingReview": 3,
+    "reviewed": 0,
+    "highPriorityPending": 0,
+    "byCategory": {
+      "redundancy": 3
+    }
+  },
+  "items": [
+    {
+      "queueType": "wiki-quality-review",
+      "source": "person-redundancy",
+      "category": "redundancy",
+      "entityId": "juliette",
+      "relatedEntityId": "philippe",
+      "title": "Person redundancy review: juliette vs philippe",
+      "why": "Similarity 0.333 suggests overlapping page context.",
+      "priority": "medium",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:04.282Z",
+      "reviewHint": "Split shared program context from person-specific facts; move common content to Program/Process Flows.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    },
+    {
+      "queueType": "wiki-quality-review",
+      "source": "person-redundancy",
+      "category": "redundancy",
+      "entityId": "philippe",
+      "relatedEntityId": "fatma-hemdani",
+      "title": "Person redundancy review: philippe vs fatma-hemdani",
+      "why": "Similarity 0.333 suggests overlapping page context.",
+      "priority": "medium",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:04.282Z",
+      "reviewHint": "Split shared program context from person-specific facts; move common content to Program/Process Flows.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    },
+    {
+      "queueType": "wiki-quality-review",
+      "source": "person-redundancy",
+      "category": "redundancy",
+      "entityId": "roxandra-sturdza",
+      "relatedEntityId": "denis-jankovic",
+      "title": "Person redundancy review: roxandra-sturdza vs denis-jankovic",
+      "why": "Similarity 0.333 suggests overlapping page context.",
+      "priority": "medium",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:04.282Z",
+      "reviewHint": "Split shared program context from person-specific facts; move common content to Program/Process Flows.",
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
+    }
+  ]
+}

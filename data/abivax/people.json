@@ -3,10 +3,10 @@
     {
       "id": "didier",
       "name": "Didier",
-      "role": "CEO / Top",
+      "role": "CFO / Executive sponsor",
       "entity": "Global",
       "needThem": "Executive sponsor",
-      "notes": "Sits atop; Hema does anything he doesn't want to do."
+      "notes": "Reinforced ERP/SOX as core finance mandate and emphasized leadership backing."
     },
     {
       "id": "hema",
@@ -59,10 +59,10 @@
     {
       "id": "philippe",
       "name": "Philippe",
-      "role": "Reports to Juliette",
+      "role": "Finance manager (Juliette reports to him)",
       "entity": "France",
       "needThem": "P2P chain",
-      "notes": "Juliette reports to Philippe."
+      "notes": "Present in finance intro call; linked to P2P process ownership chain."
     },
     {
       "id": "matt-epley",
@@ -73,20 +73,68 @@
       "notes": "SEC/NADAQ reporting, financial press, equity (Certent). Activa—US not thrilled; Hema/Matt main updaters. IFRS adjustments quarterly."
     },
     {
-      "id": "kristoph",
-      "name": "Kristoph",
-      "role": "IT",
-      "entity": "France",
-      "needThem": "IT decisions",
-      "notes": "IT mostly France-driven."
-    },
-    {
       "id": "jade",
       "name": "Jade",
-      "role": "IT",
+      "role": "IT lead/contact for ERP integration coordination",
       "entity": "France",
       "needThem": "IT decisions",
-      "notes": "Pronounced Jahd. IT France-driven."
+      "notes": "Pronounced Jahd. Key contact for IT involvement model, architecture, and controls."
+    },
+    {
+      "id": "benjamin-talmant",
+      "name": "Benjamin Talmant",
+      "role": "IT project manager",
+      "entity": "France",
+      "needThem": "IT roadmap and delivery alignment",
+      "notes": "Working with Abivax around 2 years; joined IT landscape walkthrough."
+    },
+    {
+      "id": "christophe-hennequin",
+      "name": "Christophe Hennequin",
+      "role": "IT leadership",
+      "entity": "France",
+      "needThem": "IT org and escalation path",
+      "notes": "Jade/Benjamin/Ewan report under Christophe in IT chain. IT mostly France-driven."
+    },
+    {
+      "id": "adrian-holbrook",
+      "name": "Adrian Holbrook",
+      "role": "FP&A / reporting (reports to Frederick)",
+      "entity": "US/Global finance interface",
+      "needThem": "Cost center and reporting design",
+      "notes": "Raised data-access and export quality pain points."
+    },
+    {
+      "id": "denis-jankovic",
+      "name": "Denis Jankovic",
+      "role": "Finance/operations support",
+      "entity": "France",
+      "needThem": "System access coordination",
+      "notes": "Supported system access routing; leaned NetSuite in finance intro sentiment."
+    },
+    {
+      "id": "roxandra-sturdza",
+      "name": "Roxandra Sturdza",
+      "role": "Finance stakeholder (role details pending)",
+      "entity": "France",
+      "needThem": "Role clarity in ERP operating model",
+      "notes": "Present in finance intro; role scope still needs confirmation."
+    },
+    {
+      "id": "fatma-hemdani",
+      "name": "Fatma Hemdani",
+      "role": "Finance stakeholder",
+      "entity": "France",
+      "needThem": "Selection and process alignment",
+      "notes": "Expressed preference that SAP appears more powerful."
+    },
+    {
+      "id": "ewan",
+      "name": "Ewan",
+      "role": "IT team member",
+      "entity": "France",
+      "needThem": "IT capacity mapping",
+      "notes": "Reported in IT org chart under Christophe."
     },
     {
       "id": "thelma",

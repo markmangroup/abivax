@@ -2,190 +2,491 @@
   "entities": [
     {
       "id": "didier",
-      "name": "Didier",
+      "name": "Didier Blondel",
       "type": "person",
-      "aliases": [],
-      "description": "CEO of Abivax. Executive sponsor for ERP initiative.",
+      "aliases": [
+        "Didier"
+      ],
+      "description": "EVP, Chief Financial Officer & Board Secretary of Abivax. Executive sponsor for finance and ERP decisions.",
       "properties": {
-        "role": "CEO / Top",
-        "entity": "Abivax Global"
+        "role": "CFO / Executive sponsor",
+        "entity": "Abivax Global",
+        "focusHints": [
+          "board decision gate",
+          "executive signoff",
+          "staffing sufficiency",
+          "timeline protection"
+        ],
+        "needLevel": "critical",
+        "team": "Finance",
+        "org": "Global",
+        "mail": "Didier.Blondel@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1f6581bf2e0c43e2b53adf5562a689b8-Didier Blon",
+        "graphJobTitle": "Chief Finance Officer",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Marc de Garidel",
+        "reportsTo": "Marc de Garidel",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax", "hema"],
-      "notes": "Sits atop; Hema does anything he doesn't want to do.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "abivax",
+        "hema",
+        "marc-de-garidel"
+      ],
+      "notes": "Finance executive lead; key stakeholder for board decision framing, budget readiness, and ERP governance.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "hema",
       "name": "Hema Kesh",
       "type": "person",
-      "aliases": ["Hema"],
+      "aliases": [
+        "Hema",
+        "Hema Keshava"
+      ],
       "description": "Finance lead responsible for FP&A, treasury, tax, and accounting. Key stakeholder driving ERP scope.",
       "properties": {
-        "role": "Finance Lead (FP&A, treasury, tax, accounting)",
+        "role": "Finance lead (FP&A, treasury, tax, accounting)",
         "entity": "Abivax Global",
-        "needLevel": "critical"
+        "needLevel": "critical",
+        "focusHints": [
+          "budget approval path",
+          "finance scope lock",
+          "p2p + reporting priority",
+          "board-ready tradeoffs"
+        ],
+        "team": "Finance",
+        "org": "Global",
+        "reportsTo": "Didier Blondel",
+        "mail": "Hema.Keshava@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc",
+        "graphJobTitle": "SVP, Finance",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Didier Blondel",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax", "didier", "trinidad", "frederick", "juliette", "kimberly-gordon", "matt-epley", "camille", "p2p", "financial-reporting", "consolidation", "sage", "sap-s4hana"],
+      "links": [
+        "abivax",
+        "didier",
+        "trinidad",
+        "frederick",
+        "juliette",
+        "kimberly-gordon",
+        "matt-epley",
+        "camille",
+        "p2p",
+        "financial-reporting",
+        "consolidation",
+        "sage",
+        "sap-s4hana"
+      ],
       "notes": "No manufacturing in ERP; external CMOs. P2P + financial reporting critical. \"DO NOT LET SUPPLY CHAIN DERAIL.\" French team \"very prickly.\" Reports directly under Didier.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "pat-maloy",
       "name": "Pat Maloy",
       "type": "person",
-      "aliases": ["Pat"],
+      "aliases": [
+        "Pat"
+      ],
       "description": "Investor relations lead handling fundraising and IR.",
       "properties": {
-        "role": "Investor Relations (fundraising/IR)",
+        "role": "Investor relations (fundraising/IR)",
         "entity": "Abivax Global",
-        "needLevel": "context"
+        "needLevel": "context",
+        "team": "Investor Relations",
+        "org": "Global"
       },
-      "links": ["abivax"],
+      "links": [
+        "abivax"
+      ],
       "notes": "Finance-adjacent, not ERP core.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "trinidad",
       "name": "Trinidad",
       "type": "person",
-      "aliases": [],
+      "aliases": [
+        "Trinidad Mesa"
+      ],
       "description": "Accounting manager who drives the consolidation process.",
       "properties": {
-        "role": "Accounting Manager",
+        "role": "Accounting manager, drives consolidation",
         "entity": "Abivax France",
-        "needLevel": "critical"
+        "needLevel": "critical",
+        "focusHints": [
+          "consolidation ownership",
+          "monthly close coordination",
+          "finance handoff dependencies"
+        ],
+        "team": "Finance",
+        "org": "France",
+        "reportsTo": "Hema Kesh",
+        "mail": "Trinidad.Mesa@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1b4f510fb9ef46fd8460f9495c565a29-Trinidad Me",
+        "graphJobTitle": "Finance & Accounting Director",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Hema Keshava",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-france", "hema", "consolidation", "financial-reporting"],
+      "links": [
+        "abivax-france",
+        "hema",
+        "consolidation",
+        "financial-reporting"
+      ],
       "notes": "French finance. Critical for consolidation.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "frederick",
       "name": "Frederick",
       "type": "person",
-      "aliases": [],
+      "aliases": [
+        "Frederick Golly"
+      ],
       "description": "FP&A lead on the French finance team.",
       "properties": {
-        "role": "FP&A Lead",
+        "role": "FP&A lead",
         "entity": "Abivax France",
-        "needLevel": "engage"
+        "needLevel": "engage",
+        "focusHints": [
+          "budget tracking cadence",
+          "fp&a baseline",
+          "audit committee inputs"
+        ],
+        "team": "FP&A",
+        "org": "France",
+        "reportsTo": "Hema Kesh",
+        "mail": "Frederick.Golly@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f1a873c932554906b296978b01751f2c-e3c941b4-35",
+        "graphJobTitle": "Director FP&A",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Hema Keshava",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-france", "hema", "adaptive"],
+      "links": [
+        "abivax-france",
+        "hema",
+        "adaptive"
+      ],
       "notes": "FP&A scope.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "juliette",
       "name": "Juliette",
       "type": "person",
-      "aliases": [],
+      "aliases": [
+        "Juliette Courtot"
+      ],
       "description": "P2P process owner on the French side. Reports to Philippe and has a staff AP person.",
       "properties": {
-        "role": "P2P (reports to Philippe)",
+        "role": "P2P, reports to Philippe",
         "entity": "Abivax France",
-        "needLevel": "critical"
+        "needLevel": "critical",
+        "focusHints": [
+          "p2p approvals ownership",
+          "ap workflow controls",
+          "budget monitoring handoff"
+        ],
+        "team": "P2P",
+        "reportsTo": "Philippe Has staff AP person. Juliette",
+        "org": "France",
+        "mail": "Juliette.Courtot@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=56aaf871e6b145a4a2a877e59639f184-juliette.co",
+        "graphJobTitle": "Accountant",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Philippe Goncalves",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-france", "philippe", "kimberly-gordon", "p2p", "docushare"],
-      "notes": "Critical — P2P process owner. Juliette + Kimberly = P2P team.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "abivax-france",
+        "philippe",
+        "kimberly-gordon",
+        "p2p",
+        "docushare"
+      ],
+      "notes": "Critical Ã¢â‚¬â€ P2P process owner. Juliette + Kimberly = P2P team.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "kimberly-gordon",
       "name": "Kimberly Gordon",
       "type": "person",
-      "aliases": ["Kimberly"],
+      "aliases": [
+        "Kimberly"
+      ],
       "description": "P2P contractor on the US side.",
       "properties": {
-        "role": "P2P Contractor",
+        "role": "P2P contractor",
         "entity": "Abivax US",
-        "needLevel": "critical"
+        "needLevel": "critical",
+        "focusHints": [
+          "us p2p execution",
+          "invoice process handoff",
+          "us vendor controls"
+        ],
+        "team": "P2P",
+        "org": "US",
+        "reportsTo": "Matt Epley",
+        "mail": "kimberly.gordon-ext@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=7ebccdedabf54c78964e2819e80f4022-7c076ed7-84",
+        "graphJobTitle": "Staff Accountant",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Matt Epley",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-us", "juliette", "p2p"],
-      "notes": "US contractor. Critical — P2P US side.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "abivax-us",
+        "juliette",
+        "p2p"
+      ],
+      "notes": "US contractor. Critical Ã¢â‚¬â€ P2P US side.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "philippe",
       "name": "Philippe",
       "type": "person",
-      "aliases": [],
+      "aliases": [
+        "Philippe Goncalves"
+      ],
       "description": "Manager of Juliette in the P2P chain.",
       "properties": {
-        "role": "Juliette's Manager",
+        "role": "Finance manager (Juliette reports to him)",
         "entity": "Abivax France",
-        "needLevel": "engage"
+        "needLevel": "engage",
+        "focusHints": [
+          "p2p management oversight",
+          "approval governance"
+        ],
+        "team": "P2P",
+        "reportsTo": "him",
+        "org": "France",
+        "mail": "philippe.goncalves@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=591082b8bc6147329258f53a17ef18d3-83a864a9-23",
+        "graphJobTitle": "Senior Accounting Manager",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Trinidad Mesa",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-france", "juliette", "p2p"],
+      "links": [
+        "abivax-france",
+        "juliette",
+        "p2p"
+      ],
       "notes": "Juliette reports to Philippe.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.913Z"
     },
     {
       "id": "matt-epley",
       "name": "Matt Epley",
       "type": "person",
-      "aliases": ["Matt"],
+      "aliases": [
+        "Matt"
+      ],
       "description": "Boots-on-the-ground accountant handling SEC reporting, financial press releases, and equity tracking.",
       "properties": {
-        "role": "Accountant (SEC, equity, reporting)",
+        "role": "Boots-on-ground accountant",
         "entity": "Abivax US",
-        "needLevel": "critical"
+        "needLevel": "critical",
+        "focusHints": [
+          "sec reporting dependencies",
+          "accounting close impacts",
+          "equity integration constraints"
+        ],
+        "team": "Finance",
+        "org": "US",
+        "reportsTo": "Hema Kesh",
+        "mail": "Matt.Epley@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6231154a529a48d3a481b7fdfbfbe95a-3ff36c05-11",
+        "graphJobTitle": "Finance Manager",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Hema Keshava",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-us", "hema", "certent", "activa", "sox-compliance", "ifrs"],
-      "notes": "SEC/NASDAQ reporting, financial press, equity (Certent). Activa—US not thrilled; Hema/Matt main updaters. IFRS adjustments quarterly.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "abivax-us",
+        "hema",
+        "certent",
+        "activa",
+        "sox-compliance",
+        "ifrs"
+      ],
+      "notes": "SEC/NASDAQ reporting, financial press, equity (Certent). ActivaÃ¢â‚¬â€US not thrilled; Hema/Matt main updaters. IFRS adjustments quarterly.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
-    },
-    {
-      "id": "kristoph",
-      "name": "Kristoph",
-      "type": "person",
-      "aliases": [],
-      "description": "IT team member based in France.",
-      "properties": {
-        "role": "IT",
-        "entity": "Abivax France",
-        "needLevel": "engage"
-      },
-      "links": ["abivax-france", "jade"],
-      "notes": "IT mostly France-driven.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
-      "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.914Z"
     },
     {
       "id": "jade",
       "name": "Jade Nguyen",
       "type": "person",
-      "aliases": ["Jade", "Jahd"],
+      "aliases": [
+        "Jade",
+        "Jahd",
+        "Jade Nguyen"
+      ],
       "description": "IT team member based in France.",
       "properties": {
-        "role": "IT",
+        "role": "IT lead/contact for ERP integration coordination",
         "entity": "Abivax France",
         "needLevel": "engage",
-        "pronunciation": "Jahd"
+        "pronunciation": "Jahd",
+        "focusHints": [
+          "it resourcing model",
+          "integration ownership",
+          "sage support boundary",
+          "it involvement session"
+        ],
+        "team": "IT",
+        "org": "France",
+        "reportsTo": "Christophe Hennequin",
+        "mail": "jade.nguyen-ext@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=71d049eef9fb411d8505fef564b72005-9c790acd-07",
+        "graphJobTitle": "IT Consultant",
+        "graphDepartment": "Information Technology",
+        "graphReportsTo": "Christophe Hennequin",
+        "reportsToSource": "Outlook GAL"
       },
-      "links": ["abivax-france", "kristoph", "netsuite-demo-20260212"],
+      "links": [
+        "abivax-france",
+        "christophe-hennequin",
+        "netsuite-demo-20260212"
+      ],
       "notes": "Pronounced Jahd. IT France-driven. Was in Paris conference room for NetSuite demo.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}, {"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260212-netsuite-demo",
+          "date": "2026-02-12"
+        },
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.914Z"
     },
     {
       "id": "thelma",
@@ -194,47 +495,91 @@
       "aliases": [],
       "description": "Meeting organizer at Abivax.",
       "properties": {
-        "role": "Meeting Organizer",
+        "role": "Meeting organizer",
         "entity": "Abivax",
-        "needLevel": "context"
+        "needLevel": "context",
+        "team": "IT",
+        "org": "Abivax"
       },
-      "links": ["abivax", "netsuite-demo-20260212"],
+      "links": [
+        "abivax",
+        "netsuite-demo-20260212"
+      ],
       "notes": "Invited to NetSuite/Oracle demo Feb 12.",
       "mentions": [],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.914Z"
     },
     {
       "id": "camille",
       "name": "Camille Girard",
       "type": "person",
-      "aliases": ["Camille"],
+      "aliases": [
+        "Camille"
+      ],
       "description": "KPMG contractor running the ERP RFP process. Main point of contact for vendor evaluation.",
       "properties": {
-        "role": "RFP Lead / Contractor",
+        "role": "Ariba/Tungsten experience",
         "entity": "KPMG",
-        "needLevel": "critical"
+        "needLevel": "engage",
+        "focusHints": [
+          "rfp process ownership",
+          "vendor comparison assumptions",
+          "implementation estimate inputs"
+        ],
+        "team": "IT",
+        "org": "External or internal"
       },
-      "links": ["kpmg", "sap-s4hana", "netsuite", "hema", "netsuite-demo-20260212"],
+      "links": [
+        "kpmg",
+        "sap-s4hana",
+        "netsuite",
+        "hema",
+        "netsuite-demo-20260212"
+      ],
       "notes": "Main contact managing the RFP process. Meeting with Mike on Friday 2/14 to discuss SAP implementation costs and next steps. Was in Paris conference room for NetSuite demo.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}, {"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260212-netsuite-demo",
+          "date": "2026-02-12"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-12T10:00:00.000Z"
+      "updatedAt": "2026-02-26T20:42:10.914Z"
     },
     {
       "id": "venceslas-dechallens",
       "name": "Venceslas d'Echallens",
       "type": "person",
-      "aliases": ["Venceslas"],
+      "aliases": [
+        "Venceslas"
+      ],
       "description": "NetSuite Customer Success Advisor. Part of NetSuite's delivery team for Abivax evaluation.",
       "properties": {
         "role": "NetSuite CS Advisor",
         "entity": "Oracle NetSuite",
         "appearance": "Bald, glasses, dark blue jacket"
       },
-      "links": ["netsuite", "oracle", "netsuite-demo-20260212"],
+      "links": [
+        "netsuite",
+        "oracle",
+        "netsuite-demo-20260212"
+      ],
       "notes": "Led the NetSuite demo on 2/12. In Paris conference room. Part of the team handling all of Europe.",
-      "mentions": [{"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "mentions": [
+        {
+          "noteId": "20260212-netsuite-demo",
+          "date": "2026-02-12"
+        }
+      ],
       "createdAt": "2026-02-12T10:00:00.000Z",
       "updatedAt": "2026-02-12T10:00:00.000Z"
     },
@@ -247,19 +592,45 @@
       "properties": {
         "status": "current",
         "category": "ERP",
-        "limitations": ["Manual PO entry", "No automation", "SOX material weaknesses"]
+        "limitations": [
+          "Manual PO entry",
+          "No automation",
+          "SOX material weaknesses"
+        ],
+        "focusHints": [
+          "sunset date",
+          "manual controls risk",
+          "interim support model"
+        ]
       },
-      "links": ["abivax", "sage-sunset", "p2p", "matt-epley"],
+      "links": [
+        "abivax",
+        "sage-sunset",
+        "p2p",
+        "matt-epley"
+      ],
       "notes": "~100 vendors, ~20 LLC invoices/month manually keyed. SOX controls not being met.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-17T16:55:00.000Z"
     },
     {
       "id": "sap-s4hana",
       "name": "SAP S/4HANA",
       "type": "system",
-      "aliases": ["SAP", "S/4HANA"],
+      "aliases": [
+        "SAP",
+        "S/4HANA"
+      ],
       "description": "Proposed ERP replacement. Commercial offer presented with Finance, Supply Chain, Ariba, BTPEA modules.",
       "properties": {
         "status": "proposed",
@@ -270,12 +641,38 @@
           "aacv": 110824,
           "validUntil": "2026-Q1"
         },
-        "modules": ["SAP Finance Base", "SAP Finance & Supply Chain", "SAP Ariba Central Invoice Management", "SAP BTPEA Build Automation", "SAP AI Units"],
-        "terms": ["5-year contract, option to extend to 7", "CPI cap 3.3% from 2027", "2026 quantities reduced for cash flow"]
+        "modules": [
+          "SAP Finance Base",
+          "SAP Finance & Supply Chain",
+          "SAP Ariba Central Invoice Management",
+          "SAP BTPEA Build Automation",
+          "SAP AI Units"
+        ],
+        "terms": [
+          "5-year contract, option to extend to 7",
+          "CPI cap 3.3% from 2027",
+          "2026 quantities reduced for cash flow"
+        ],
+        "focusHints": [
+          "offer expiry",
+          "implementation estimate",
+          "scope fit for p2p"
+        ]
       },
-      "links": ["sap-company", "ariba", "sap-offer-expiry", "hema", "erp-go-live"],
+      "links": [
+        "sap-company",
+        "ariba",
+        "sap-offer-expiry",
+        "hema",
+        "erp-go-live"
+      ],
       "notes": "No manufacturing in scope (external CMO model). Offer subject to SAP Finance approval.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -283,7 +680,9 @@
       "id": "netsuite",
       "name": "NetSuite",
       "type": "system",
-      "aliases": ["Oracle NetSuite"],
+      "aliases": [
+        "Oracle NetSuite"
+      ],
       "description": "Alternative ERP being evaluated. Demo completed Feb 12, 2026. In-house implementation by NetSuite Customer Success team.",
       "properties": {
         "status": "evaluating",
@@ -298,19 +697,63 @@
           "kickoffDate": "2026-04-01",
           "goLiveTarget": "2026-12 / 2027-01"
         },
-        "modules": ["SuiteSuccess Financials Premium", "Advanced Electronic Bank Payments", "Advanced Order Management", "CRM", "Core ERP", "Financial Management", "Fixed Asset Management", "OneWorld", "Procurement Mid-Market", "Inventory Management", "Sandbox", "Premium Support"],
+        "modules": [
+          "SuiteSuccess Financials Premium",
+          "Advanced Electronic Bank Payments",
+          "Advanced Order Management",
+          "CRM",
+          "Core ERP",
+          "Financial Management",
+          "Fixed Asset Management",
+          "OneWorld",
+          "Procurement Mid-Market",
+          "Inventory Management",
+          "Sandbox",
+          "Premium Support"
+        ],
         "users": {
           "generalAccess": 42,
           "employeeSelfServ": 17,
           "specializedViewApprove": 2
         },
-        "scope": ["P2P (PO, vendor bills, 3-way matching, approval flows)", "R2R (Global COA, consolidation, journal entries)", "Multi-entity (1 parent, 2 subs: France, USA)", "Multi-GAAP (IFRS, French GAAP, US GAAP)", "French/US localization included"],
-        "outOfScope": ["OCR/Invoice capture (requires ZoneCapture add-on)", "API integration with NSIP platform"],
-        "implementedBy": "NetSuite Customer Success (in-house)"
+        "scope": [
+          "P2P (PO, vendor bills, 3-way matching, approval flows)",
+          "R2R (Global COA, consolidation, journal entries)",
+          "Multi-entity (1 parent, 2 subs: France, USA)",
+          "Multi-GAAP (IFRS, French GAAP, US GAAP)",
+          "French/US localization included"
+        ],
+        "outOfScope": [
+          "OCR/Invoice capture (requires ZoneCapture add-on)",
+          "API integration with NSIP platform"
+        ],
+        "implementedBy": "NetSuite Customer Success (in-house)",
+        "focusHints": [
+          "implementation ownership",
+          "ocr addon gap",
+          "cost transparency"
+        ]
       },
-      "links": ["oracle", "netsuite-demo-20260212", "venceslas-dechallens"],
+      "links": [
+        "oracle",
+        "netsuite-demo-20260212",
+        "venceslas-dechallens"
+      ],
       "notes": "Demo completed 2/12. Total 5-year cost ~1.12M EUR (vs SAP 554k licenses + unknown implementation). OCR not native - red flag for P2P automation. Timeline can hit 1/1/27 with April kickoff. Single vendor accountability (NetSuite implements their own tool).",
-      "mentions": [{"noteId": "20260212-netsuite-demo", "date": "2026-02-12"}],
+      "mentions": [
+        {
+          "noteId": "20260212-netsuite-demo",
+          "date": "2026-02-12"
+        },
+        {
+          "noteId": "20260218-netsuite-feedback-pptx",
+          "date": "2026-02-18"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-02-01T10:00:00.000Z",
       "updatedAt": "2026-02-12T12:00:00.000Z"
     },
@@ -323,11 +766,24 @@
       "properties": {
         "status": "current",
         "category": "Document Management",
-        "limitations": ["No automation", "Basic approver limits", "Manual workflows"]
+        "limitations": [
+          "No automation",
+          "Basic approver limits",
+          "Manual workflows"
+        ]
       },
-      "links": ["p2p", "juliette", "matt-epley"],
+      "links": [
+        "p2p",
+        "juliette",
+        "matt-epley"
+      ],
       "notes": "Some drop-down functionality but no automation. Used in P2P workflow before Sage entry.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -335,15 +791,27 @@
       "id": "ariba",
       "name": "Ariba",
       "type": "system",
-      "aliases": ["SAP Ariba", "Ariba Central Invoice Management"],
+      "aliases": [
+        "SAP Ariba",
+        "Ariba Central Invoice Management"
+      ],
       "description": "SAP's procurement and invoice management solution. Part of SAP offer.",
       "properties": {
         "status": "proposed",
         "category": "Procurement"
       },
-      "links": ["sap-s4hana", "p2p", "camille"],
+      "links": [
+        "sap-s4hana",
+        "p2p",
+        "camille"
+      ],
       "notes": "Camille has experience with Ariba. Compare vs Tungsten.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -351,16 +819,26 @@
       "id": "certent",
       "name": "Certent",
       "type": "system",
-      "aliases": ["Certent Equity Solution"],
+      "aliases": [
+        "Certent Equity Solution"
+      ],
       "description": "Equity tracking system owned by Insightful. Backend tool for equity accounting.",
       "properties": {
         "status": "current",
         "category": "Equity Management",
         "owner": "Insightful"
       },
-      "links": ["matt-epley", "activa"],
+      "links": [
+        "matt-epley",
+        "activa"
+      ],
       "notes": "Not front-facing. Matt does all accounting and setup. IFRS adjustments booked quarterly.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -374,9 +852,18 @@
         "status": "current",
         "category": "Expense Management"
       },
-      "links": ["certent", "matt-epley", "hema"],
-      "notes": "US side not thrilled—not user friendly. Hema/Matt main updaters. Operates like expense program accounting system.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "certent",
+        "matt-epley",
+        "hema"
+      ],
+      "notes": "US side not thrilledÃ¢â‚¬â€not user friendly. Hema/Matt main updaters. Operates like expense program accounting system.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -384,15 +871,25 @@
       "id": "adaptive",
       "name": "Adaptive",
       "type": "system",
-      "aliases": ["Adaptive Insights"],
+      "aliases": [
+        "Adaptive Insights"
+      ],
       "description": "FP&A planning tool currently in use.",
       "properties": {
         "status": "current",
         "category": "FP&A"
       },
-      "links": ["frederick", "hema"],
-      "notes": "Financial reporting currently done via exports—all manual.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "frederick",
+        "hema"
+      ],
+      "notes": "Financial reporting currently done via exportsÃ¢â‚¬â€all manual.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -400,31 +897,69 @@
       "id": "abivax",
       "name": "Abivax",
       "type": "organization",
-      "aliases": ["Abivax Global"],
+      "aliases": [
+        "Abivax Global"
+      ],
       "description": "Biotech company headquartered in France with US operations. Pursuing ERP modernization ahead of US public launch.",
       "properties": {
         "industry": "Biotech",
         "model": "External CMO (no in-house manufacturing)"
       },
-      "links": ["abivax-france", "abivax-us", "didier", "hema"],
+      "links": [
+        "abivax-france",
+        "abivax-us",
+        "didier",
+        "hema",
+        "marc-de-garidel"
+      ],
       "notes": "Launching publicly in US end of 2027. All vendors are GxP compliant. External logistics providers for supply chain.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-netsuite-feedback-pptx",
+          "date": "2026-02-18"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-18T00:00:00.000Z"
     },
     {
       "id": "abivax-france",
       "name": "Abivax France",
       "type": "organization",
-      "aliases": ["French team", "France"],
+      "aliases": [
+        "French team",
+        "France"
+      ],
       "description": "French entity of Abivax. Handles most IT and has finance team including consolidation.",
       "properties": {
         "location": "France",
         "auditor": "PWC"
       },
-      "links": ["abivax", "trinidad", "frederick", "juliette", "philippe", "kristoph", "jade", "pwc"],
+      "links": [
+        "abivax",
+        "trinidad",
+        "frederick",
+        "juliette",
+        "philippe",
+        "christophe-hennequin",
+        "jade",
+        "pwc"
+      ],
       "notes": "French team \"very prickly\" per Hema. May be nervous about increased US hiring. Traditional center of the company.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -432,15 +967,27 @@
       "id": "abivax-us",
       "name": "Abivax US",
       "type": "organization",
-      "aliases": ["US team", "LLC"],
+      "aliases": [
+        "US team",
+        "LLC"
+      ],
       "description": "US entity of Abivax. Growing as company prepares for US public launch.",
       "properties": {
         "location": "US",
         "invoiceVolume": "~20/month (increasing)"
       },
-      "links": ["abivax", "matt-epley", "kimberly-gordon"],
+      "links": [
+        "abivax",
+        "matt-epley",
+        "kimberly-gordon"
+      ],
       "notes": "~20 LLC invoices per month, increasing. US public launch planned for end of 2027.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -448,15 +995,25 @@
       "id": "pwc",
       "name": "PWC",
       "type": "organization",
-      "aliases": ["PricewaterhouseCoopers"],
+      "aliases": [
+        "PricewaterhouseCoopers"
+      ],
       "description": "French auditor for Abivax.",
       "properties": {
         "role": "Auditor",
         "location": "France"
       },
-      "links": ["abivax-france", "sox-compliance"],
+      "links": [
+        "abivax-france",
+        "sox-compliance"
+      ],
       "notes": "French PWC is the auditor.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -464,14 +1021,27 @@
       "id": "kpmg",
       "name": "KPMG",
       "type": "organization",
-      "aliases": ["KPMG Tax"],
+      "aliases": [
+        "KPMG Tax"
+      ],
       "description": "Tax consultant used for 1099 process.",
       "properties": {
         "role": "Tax Consultant"
       },
-      "links": ["abivax-us"],
+      "links": [
+        "abivax-us"
+      ],
       "notes": "Currently consulted for 1099 process workaround.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -479,14 +1049,24 @@
       "id": "sap-company",
       "name": "SAP (Company)",
       "type": "organization",
-      "aliases": ["SAP SE"],
+      "aliases": [
+        "SAP SE"
+      ],
       "description": "Enterprise software vendor. Commercial offer pending approval.",
       "properties": {
         "role": "ERP Vendor"
       },
-      "links": ["sap-s4hana", "ariba"],
+      "links": [
+        "sap-s4hana",
+        "ariba"
+      ],
       "notes": "Offer subject to SAP Finance approval; deadline end Q1 2026.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -499,9 +1079,17 @@
       "properties": {
         "role": "ERP Vendor"
       },
-      "links": ["netsuite", "netsuite-demo-20260212"],
+      "links": [
+        "netsuite",
+        "netsuite-demo-20260212"
+      ],
       "notes": "NetSuite demo scheduled for Feb 12.",
-      "mentions": [],
+      "mentions": [
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-02-01T10:00:00.000Z",
       "updatedAt": "2026-02-01T10:00:00.000Z"
     },
@@ -515,7 +1103,16 @@
         "date": "2026-02-10",
         "attendees": "Hema, Matt Epley, Mike"
       },
-      "links": ["hema", "matt-epley", "p2p", "sage", "sox-compliance", "erp-go-live", "financial-reporting", "consolidation"],
+      "links": [
+        "hema",
+        "matt-epley",
+        "p2p",
+        "sage",
+        "sox-compliance",
+        "erp-go-live",
+        "financial-reporting",
+        "consolidation"
+      ],
       "notes": "First substantive meeting. Established: P2P and Financial Reporting are critical scope, no manufacturing, go-live 1/1/27 non-negotiable, SOX material weaknesses need addressing.",
       "mentions": [],
       "createdAt": "2026-02-10T10:00:00.000Z",
@@ -536,7 +1133,16 @@
         "status": "completed",
         "duration": "~45 minutes"
       },
-      "links": ["netsuite", "oracle", "thelma", "sap-s4hana", "erp-go-live", "camille", "venceslas-dechallens", "jade"],
+      "links": [
+        "netsuite",
+        "oracle",
+        "thelma",
+        "sap-s4hana",
+        "erp-go-live",
+        "camille",
+        "venceslas-dechallens",
+        "jade"
+      ],
       "notes": "Full scope presentation: R2R, P2P, Design to Build. Key numbers: 449k EUR implementation, 134k EUR/year licenses (670k over 5yr), total ~1.12M EUR. Timeline: April kickoff, Dec/Jan go-live (hits 1/1/27). OCR not included (ZoneCapture add-on required) - flagged as concern vs SAP Ariba native. French/US localization included. Multi-GAAP (IFRS, French GAAP, US GAAP) included. Mike asked about OCR - they confirmed it requires separate subscription.",
       "mentions": [],
       "createdAt": "2026-02-01T10:00:00.000Z",
@@ -546,18 +1152,45 @@
       "id": "erp-go-live",
       "name": "ERP Go-Live",
       "type": "milestone",
-      "aliases": ["Go-Live", "January 1 2027"],
+      "aliases": [
+        "Go-Live",
+        "January 1 2027"
+      ],
       "description": "Target date for new ERP system to be live with P2P and Financial Reporting.",
       "properties": {
         "date": "2027-01-01",
         "scope": "P2P + Financial Reporting",
-        "status": "target"
+        "status": "target",
+        "focusHints": [
+          "critical path",
+          "scope by go-live",
+          "readiness risks"
+        ]
       },
-      "links": ["sap-s4hana", "netsuite", "p2p", "financial-reporting", "sage-sunset"],
+      "links": [
+        "sap-s4hana",
+        "netsuite",
+        "p2p",
+        "financial-reporting",
+        "sage-sunset"
+      ],
       "notes": "Non-negotiable. Need P2P and financial reporting live.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-01-12T10:00:00.000Z"
+      "updatedAt": "2026-02-17T16:55:00.000Z"
     },
     {
       "id": "us-public-launch",
@@ -570,9 +1203,17 @@
         "scope": "Commercial",
         "status": "target"
       },
-      "links": ["abivax-us", "erp-go-live"],
+      "links": [
+        "abivax-us",
+        "erp-go-live"
+      ],
       "notes": "ERP must support by go-live.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -580,16 +1221,26 @@
       "id": "sap-offer-expiry",
       "name": "SAP Offer Expiry",
       "type": "milestone",
-      "aliases": ["SAP Deadline"],
+      "aliases": [
+        "SAP Deadline"
+      ],
       "description": "Deadline for SAP commercial offer validity.",
       "properties": {
         "date": "2026-03-31",
         "scope": "Commercial",
         "status": "deadline"
       },
-      "links": ["sap-s4hana", "sap-company"],
+      "links": [
+        "sap-s4hana",
+        "sap-company"
+      ],
       "notes": "Conditions valid until end Q1 2026. Subject to SAP Finance approval.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -604,9 +1255,17 @@
         "scope": "Migration",
         "status": "tbd"
       },
-      "links": ["sage", "erp-go-live"],
+      "links": [
+        "sage",
+        "erp-go-live"
+      ],
       "notes": "Define date; part of quarter leverage.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -614,16 +1273,43 @@
       "id": "p2p",
       "name": "Procure-to-Pay (P2P)",
       "type": "concept",
-      "aliases": ["P2P", "Procurement", "Purchase-to-Pay"],
+      "aliases": [
+        "P2P",
+        "Procurement",
+        "Purchase-to-Pay"
+      ],
       "description": "End-to-end procurement process from purchase requisition through payment. Critical scope for ERP implementation.",
       "properties": {
         "currentState": "Manual (Docushare + Sage)",
         "targetState": "Automated (SAP Ariba or equivalent)",
-        "priority": "critical"
+        "priority": "critical",
+        "focusHints": [
+          "po approvals",
+          "sox controls",
+          "budget monitoring"
+        ]
       },
-      "links": ["juliette", "kimberly-gordon", "philippe", "docushare", "sage", "ariba", "erp-go-live", "sox-compliance"],
+      "links": [
+        "juliette",
+        "kimberly-gordon",
+        "philippe",
+        "docushare",
+        "sage",
+        "ariba",
+        "erp-go-live",
+        "sox-compliance"
+      ],
       "notes": "Current process: Docushare for workflow, manual PO tracking, hand-keyed into Sage. ~100 vendors. SOX controls not being met. Essential to have PO approvals and budget monitoring.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -631,15 +1317,28 @@
       "id": "sox-compliance",
       "name": "SOX Compliance",
       "type": "concept",
-      "aliases": ["SOX", "Sarbanes-Oxley"],
+      "aliases": [
+        "SOX",
+        "Sarbanes-Oxley"
+      ],
       "description": "Financial reporting and internal control requirements. Current P2P process has material weaknesses.",
       "properties": {
         "status": "material weaknesses",
         "auditYear": 2026
       },
-      "links": ["p2p", "pwc", "matt-epley", "erp-go-live"],
+      "links": [
+        "p2p",
+        "pwc",
+        "matt-epley",
+        "erp-go-live"
+      ],
       "notes": "Material weaknesses haven't been addressed. Manual process is unsustainable. Not a material misstatement but audit issue. Investors aren't worried yet.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -647,12 +1346,24 @@
       "id": "ifrs",
       "name": "IFRS",
       "type": "concept",
-      "aliases": ["International Financial Reporting Standards"],
+      "aliases": [
+        "International Financial Reporting Standards"
+      ],
       "description": "International accounting standards used by Abivax (French parent). Requires adjustments for US GAAP.",
       "properties": {},
-      "links": ["gaap", "matt-epley", "certent", "consolidation"],
+      "links": [
+        "gaap",
+        "matt-epley",
+        "certent",
+        "consolidation"
+      ],
       "notes": "French IFRS basis. Adjustments booked quarterly. Hema wants multi-GAAP capability in new ERP.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -660,12 +1371,24 @@
       "id": "gaap",
       "name": "US GAAP",
       "type": "concept",
-      "aliases": ["GAAP", "Generally Accepted Accounting Principles"],
+      "aliases": [
+        "GAAP",
+        "Generally Accepted Accounting Principles"
+      ],
       "description": "US accounting standards. Required for SEC reporting.",
       "properties": {},
-      "links": ["ifrs", "matt-epley", "abivax-us"],
+      "links": [
+        "ifrs",
+        "matt-epley",
+        "abivax-us"
+      ],
       "notes": "Need multi-GAAP support in new ERP for US/French compliance.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -673,14 +1396,26 @@
       "id": "consolidation",
       "name": "Consolidation",
       "type": "concept",
-      "aliases": ["Financial Consolidation"],
+      "aliases": [
+        "Financial Consolidation"
+      ],
       "description": "Process of combining financial statements from multiple entities (US + France).",
       "properties": {
         "priority": "critical"
       },
-      "links": ["trinidad", "hema", "financial-reporting", "ifrs"],
+      "links": [
+        "trinidad",
+        "hema",
+        "financial-reporting",
+        "ifrs"
+      ],
       "notes": "Trinidad drives consolidation process. Critical need in ERP scope.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -688,15 +1423,32 @@
       "id": "financial-reporting",
       "name": "Financial Reporting",
       "type": "concept",
-      "aliases": ["Reporting"],
+      "aliases": [
+        "Reporting"
+      ],
       "description": "Journal entries, park/post, reporting by cost center. Critical ERP scope alongside P2P.",
       "properties": {
         "currentState": "Manual exports",
         "priority": "critical"
       },
-      "links": ["hema", "trinidad", "consolidation", "erp-go-live", "sage"],
+      "links": [
+        "hema",
+        "trinidad",
+        "consolidation",
+        "erp-go-live",
+        "sage"
+      ],
       "notes": "Currently manual exports. Want journal entries park/post, cost center reporting, consolidation.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        },
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -710,9 +1462,18 @@
         "madeBy": "Hema",
         "date": "2026-01-12"
       },
-      "links": ["hema", "sap-s4hana", "external-cmo-model"],
+      "links": [
+        "hema",
+        "sap-s4hana",
+        "external-cmo-model"
+      ],
       "notes": "No in-house manufacturing. All done by Sequence, Thermofisher, and others. Always should be external. \"DO NOT LET SUPPLY CHAIN DERAIL THE IMPLEMENTATION.\"",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
     },
@@ -720,16 +1481,1529 @@
       "id": "external-cmo-model",
       "name": "External CMO Model",
       "type": "decision",
-      "aliases": ["CMO Model"],
+      "aliases": [
+        "CMO Model"
+      ],
       "description": "Business model where all manufacturing is outsourced to Contract Manufacturing Organizations.",
       "properties": {
-        "vendors": ["Sequence", "Thermofisher", "Others"]
+        "vendors": [
+          "Sequence",
+          "Thermofisher",
+          "Others"
+        ]
       },
-      "links": ["no-manufacturing-module", "abivax"],
-      "notes": "All vendors are GxP compliant. When selling, 3rd party logistics provider handles fulfillment and provides reporting that feeds into sales. Customer-level details not needed in ERP—comes from 3PL.",
-      "mentions": [{"noteId": "20260210-hema-matt-intro", "date": "2026-02-10"}],
+      "links": [
+        "no-manufacturing-module",
+        "abivax"
+      ],
+      "notes": "All vendors are GxP compliant. When selling, 3rd party logistics provider handles fulfillment and provides reporting that feeds into sales. Customer-level details not needed in ERPÃ¢â‚¬â€comes from 3PL.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
       "createdAt": "2026-01-12T10:00:00.000Z",
       "updatedAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "board-decision-20260319",
+      "name": "Board Decision Communication",
+      "type": "milestone",
+      "aliases": [
+        "Board Meeting March 19",
+        "March 19 board decision"
+      ],
+      "description": "Board meeting where ERP decision direction is communicated.",
+      "properties": {
+        "date": "2026-03-19",
+        "scope": "Executive decision gate",
+        "status": "deadline",
+        "focusHints": [
+          "decision narrative",
+          "required pre-reads",
+          "owner/date commitments"
+        ]
+      },
+      "links": [
+        "didier",
+        "erp-go-live",
+        "hema",
+        "frederick",
+        "marc-de-garidel"
+      ],
+      "notes": "Decision communication point confirmed on IT welcome call.",
+      "mentions": [
+        {
+          "noteId": "20260217-it-welcome-call",
+          "date": "2026-02-17"
+        }
+      ],
+      "createdAt": "2026-02-17T16:55:00.000Z",
+      "updatedAt": "2026-02-18T00:00:00.000Z"
+    },
+    {
+      "id": "marc-de-garidel",
+      "name": "Marc de Garidel",
+      "type": "person",
+      "aliases": [
+        "Marc"
+      ],
+      "description": "Chief Executive Officer of Abivax.",
+      "properties": {
+        "role": "Chief Executive Officer",
+        "entity": "Abivax Global",
+        "needLevel": "critical",
+        "focusHints": [
+          "board decision gate",
+          "executive signoff",
+          "erp decision direction"
+        ],
+        "mail": "Marc.De.Garidel@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=32d754ed813b484e8e5f82ffb0078950-2c854c6d-78",
+        "graphJobTitle": "CEO",
+        "graphDepartment": "Direction Générale"
+      },
+      "links": [
+        "abivax",
+        "didier",
+        "hema",
+        "board-decision-20260319"
+      ],
+      "notes": "CEO since May 2023 per Abivax leadership pages.",
+      "mentions": [],
+      "createdAt": "2026-02-18T00:00:00.000Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "roxandra-sturdza",
+      "name": "Roxandra Sturdza",
+      "type": "person",
+      "aliases": [],
+      "description": "Finance attendee in 2/18 intro meeting. Exact ownership to confirm.",
+      "properties": {
+        "role": "Finance stakeholder (role details pending)",
+        "entity": "Abivax Finance",
+        "needLevel": "engage",
+        "focusHints": [
+          "finance intro role clarity",
+          "erp ownership boundary"
+        ],
+        "team": "Finance",
+        "org": "France",
+        "mail": "Roxandra.Sturdza@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=2df5016fcc204d93a8cfd4e872429842-Roxandra St",
+        "graphJobTitle": "Group Treasury Director",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Hema Keshava",
+        "reportsTo": "Hema Keshava",
+        "reportsToSource": "Outlook GAL"
+      },
+      "links": [
+        "abivax",
+        "hema",
+        "didier"
+      ],
+      "notes": "Finance attendee in 2/18 intro meeting. Exact ownership to confirm.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T15:00:00.000Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "adrian-holbrook",
+      "name": "Adrian Holbrook",
+      "type": "person",
+      "aliases": [],
+      "description": "FP&A and reporting support; works with Frederick on cost center and reporting topics.",
+      "properties": {
+        "role": "FP&A / reporting (reports to Frederick)",
+        "entity": "Abivax Finance",
+        "needLevel": "engage",
+        "focusHints": [
+          "cost center reporting design",
+          "data quality and extract limitations",
+          "FP&A reporting model clarity"
+        ],
+        "team": "FP&A",
+        "reportsTo": "Frederick",
+        "org": "US/Global finance interface",
+        "mail": "adrian.holbrook@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=58161941cbe64a879014d4a2e8d5220f-ea331a62-88",
+        "graphJobTitle": "Sr Financial Analyst",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Frederick Golly",
+        "reportsToSource": "Outlook GAL"
+      },
+      "links": [
+        "abivax",
+        "hema",
+        "didier",
+        "frederick"
+      ],
+      "notes": "Part of FP&A reporting workflow; raised data access/clean data issues and reporting limitations from Sage exports.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T15:00:00.000Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "fatma-hemdani",
+      "name": "Fatma Hemdani",
+      "type": "person",
+      "aliases": [],
+      "description": "Finance attendee in 2/18 intro meeting. Exact ownership to confirm.",
+      "properties": {
+        "role": "Finance stakeholder",
+        "entity": "Abivax Finance",
+        "needLevel": "engage",
+        "focusHints": [
+          "finance intro role clarity",
+          "erp ownership boundary"
+        ],
+        "team": "P2P",
+        "org": "France",
+        "mail": "fatma.hemdani@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=60230a76732c47adbc10429f73b26bd4-8bb630f2-30",
+        "graphJobTitle": "General Accountant",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Juliette Courtot",
+        "reportsTo": "Juliette Courtot",
+        "reportsToSource": "Outlook GAL"
+      },
+      "links": [
+        "abivax",
+        "hema",
+        "didier"
+      ],
+      "notes": "Finance attendee in 2/18 intro meeting. Exact ownership to confirm.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T15:00:00.000Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "mike-markman",
+      "name": "Michael Markman",
+      "type": "person",
+      "aliases": [
+        "Mike Markman",
+        "Mike"
+      ],
+      "description": "VP, Global ERP Lead at Abivax.",
+      "properties": {
+        "role": "VP, Global ERP Lead",
+        "entity": "Abivax Global",
+        "needLevel": "critical",
+        "focusHints": [
+          "role mandate clarity",
+          "cross-functional alignment",
+          "owner/date follow-through"
+        ],
+        "mail": "mike.markman@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60",
+        "graphJobTitle": "VP, Global ERP Lead",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Didier Blondel",
+        "reportsTo": "Didier Blondel",
+        "reportsToSource": "Outlook GAL"
+      },
+      "links": [
+        "abivax",
+        "hema",
+        "didier",
+        "marc-de-garidel"
+      ],
+      "notes": "Primary operator and project lead for ERP implementation.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-prep",
+          "date": "2026-02-18"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T15:30:00.000Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "aymen-ben-alaya",
+      "name": "Aymen Ben Alaya",
+      "type": "person",
+      "aliases": [
+        "Ben Alaya, Aymen",
+        "Aymen"
+      ],
+      "description": "KPMG consultant/stakeholder involved in NetSuite offer and demonstration feedback coordination.",
+      "properties": {
+        "role": "Consultant (exact title to confirm)",
+        "entity": "KPMG",
+        "needLevel": "engage",
+        "focusHints": [
+          "netsuite offer clarifications",
+          "technical assumption tracking",
+          "vendor feedback consolidation"
+        ]
+      },
+      "links": [
+        "abivax",
+        "netsuite",
+        "camille",
+        "kpmg"
+      ],
+      "notes": "Observed sender domain: kpmg.fr in ABIVAX Offer NetSuite thread.",
+      "mentions": [
+        {
+          "noteId": "20260218-netsuite-feedback-pptx",
+          "date": "2026-02-18"
+        },
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T16:10:00.000Z",
+      "updatedAt": "2026-02-18T16:20:00.000Z"
+    },
+    {
+      "id": "trustpair",
+      "name": "TrustPair",
+      "type": "system",
+      "aliases": [
+        "Trust Pair"
+      ],
+      "description": "Third-party trust/validation platform referenced as integration requirement in NetSuite feedback.",
+      "properties": {
+        "status": "integration-to-validate",
+        "category": "Integration"
+      },
+      "links": [
+        "netsuite",
+        "p2p"
+      ],
+      "notes": "Need proof points for feasible integration in NetSuite proposal.",
+      "mentions": [
+        {
+          "noteId": "20260218-netsuite-feedback-pptx",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T16:10:00.000Z",
+      "updatedAt": "2026-02-18T16:10:00.000Z"
+    },
+    {
+      "id": "jamal-azil",
+      "name": "Jamal Azil",
+      "type": "person",
+      "aliases": [
+        "jamal azil",
+        "Jamal"
+      ],
+      "description": "Oracle/NetSuite contact participating in ABIVAX Offer NetSuite thread.",
+      "properties": {
+        "role": "Oracle/NetSuite contact (exact title to confirm)",
+        "entity": "Oracle",
+        "needLevel": "engage",
+        "focusHints": [
+          "netsuite technical clarifications",
+          "offer response follow-ups"
+        ]
+      },
+      "links": [
+        "oracle",
+        "netsuite",
+        "camille",
+        "aymen-ben-alaya"
+      ],
+      "notes": "Observed sender domain: oracle.com in ABIVAX Offer NetSuite thread.",
+      "mentions": [
+        {
+          "noteId": "20260218-email-thread-netsuite-offer",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T16:20:00.000Z",
+      "updatedAt": "2026-02-18T16:20:00.000Z"
+    },
+    {
+      "id": "denis",
+      "name": "Denis",
+      "type": "person",
+      "aliases": [],
+      "description": "Finance attendee confirmed present in 2/18 finance intro live call. Exact ownership to confirm.",
+      "properties": {
+        "role": "Finance team role (to confirm)",
+        "entity": "Abivax Finance",
+        "needLevel": "engage",
+        "focusHints": [
+          "finance intro role clarity",
+          "erp ownership boundary",
+          "workload feasibility input"
+        ]
+      },
+      "links": [
+        "abivax",
+        "hema",
+        "trinidad",
+        "didier"
+      ],
+      "notes": "Live attendee in 2/18 finance intro. Leaned NetSuite in verbal sentiment check.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-live-outcomes",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T17:50:00.000Z",
+      "updatedAt": "2026-02-18T17:50:00.000Z"
+    },
+    {
+      "id": "france-room-attendee-1",
+      "name": "France Room Attendee 1",
+      "type": "person",
+      "aliases": [
+        "Unknown France attendee 1"
+      ],
+      "description": "Unidentified attendee physically present in the France room during 2/18 finance intro call.",
+      "properties": {
+        "role": "Unknown (to confirm)",
+        "entity": "Abivax France",
+        "needLevel": "engage",
+        "focusHints": [
+          "identity confirmation",
+          "role ownership mapping",
+          "erp/p2p dependency capture"
+        ]
+      },
+      "links": [
+        "abivax-france",
+        "trinidad",
+        "philippe",
+        "hema"
+      ],
+      "notes": "Placeholder person entity to track unresolved participant identity from France-room attendance.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-live-outcomes",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T17:50:00.000Z",
+      "updatedAt": "2026-02-18T17:50:00.000Z"
+    },
+    {
+      "id": "france-room-attendee-2",
+      "name": "France Room Attendee 2",
+      "type": "person",
+      "aliases": [
+        "Unknown France attendee 2"
+      ],
+      "description": "Unidentified attendee physically present in the France room during 2/18 finance intro call.",
+      "properties": {
+        "role": "Unknown (to confirm)",
+        "entity": "Abivax France",
+        "needLevel": "engage",
+        "focusHints": [
+          "identity confirmation",
+          "role ownership mapping",
+          "erp/p2p dependency capture"
+        ]
+      },
+      "links": [
+        "abivax-france",
+        "trinidad",
+        "philippe",
+        "hema"
+      ],
+      "notes": "Placeholder person entity to track unresolved participant identity from France-room attendance.",
+      "mentions": [
+        {
+          "noteId": "20260218-finance-intro-live-outcomes",
+          "date": "2026-02-18"
+        }
+      ],
+      "createdAt": "2026-02-18T17:50:00.000Z",
+      "updatedAt": "2026-02-18T17:50:00.000Z"
+    },
+    {
+      "id": "benjamin-talmant",
+      "name": "Benjamin Talmant",
+      "type": "person",
+      "aliases": [],
+      "description": "Working with Abivax around 2 years; joined IT landscape walkthrough.",
+      "properties": {
+        "role": "IT project manager",
+        "needLevel": "engage",
+        "team": "IT",
+        "org": "France",
+        "reportsTo": "Christophe Hennequin",
+        "mail": "Benjamin.Talmant@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d84320f01e2b471d9760cb1aabddbf98-d0a9279f-da",
+        "graphDepartment": "Information Technology",
+        "graphReportsTo": "Christophe Hennequin",
+        "reportsToSource": "Outlook GAL"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Working with Abivax around 2 years; joined IT landscape walkthrough.",
+      "mentions": [],
+      "createdAt": "2026-02-19T20:10:27.235Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "christophe-hennequin",
+      "name": "Christophe Hennequin",
+      "type": "person",
+      "aliases": [
+        "Kristoph",
+        "Christophe Hennequin",
+        "kristoph"
+      ],
+      "description": "Jade/Benjamin/Ewan report under Christophe in IT chain. IT lead based in France; supports integration coordination and technical changes for ERP-adjacent systems.",
+      "properties": {
+        "role": "IT leadership",
+        "needLevel": "engage",
+        "team": "IT",
+        "org": "France",
+        "mail": "Christophe.Hennequin@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=556dc16111764bf596dff35a6cf45b1a-Christophe",
+        "graphDepartment": "Information Technology",
+        "graphReportsTo": "Didier Blondel",
+        "reportsTo": "Didier Blondel",
+        "reportsToSource": "Outlook GAL",
+        "entity": "Abivax France",
+        "focusHints": [
+          "integration coordination",
+          "technical change ownership",
+          "it resourcing"
+        ]
+      },
+      "links": [
+        "abivax",
+        "abivax-france",
+        "jade"
+      ],
+      "notes": "Jade/Benjamin/Ewan report under Christophe in IT chain. IT mostly France-driven.",
+      "mentions": [
+        {
+          "noteId": "20260210-hema-matt-intro",
+          "date": "2026-02-10"
+        }
+      ],
+      "createdAt": "2026-02-19T20:10:27.235Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "denis-jankovic",
+      "name": "Denis Jankovic",
+      "type": "person",
+      "aliases": [],
+      "description": "Supported system access routing; leaned NetSuite in finance intro sentiment.",
+      "properties": {
+        "role": "Finance/operations support",
+        "needLevel": "engage",
+        "team": "IT",
+        "org": "France",
+        "mail": "Denis.Jankovic@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=a4b2fd1b89f24d009b3b8d3e85419e7e-26484cef-af",
+        "graphJobTitle": "General Accountant Manager",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Trinidad Mesa",
+        "reportsTo": "Trinidad Mesa",
+        "reportsToSource": "Outlook GAL"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Supported system access routing; leaned NetSuite in finance intro sentiment.",
+      "mentions": [],
+      "createdAt": "2026-02-19T20:10:27.235Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "ewan",
+      "name": "Ewan",
+      "type": "person",
+      "aliases": [],
+      "description": "Reported in IT org chart under Christophe.",
+      "properties": {
+        "role": "IT team member",
+        "needLevel": "engage",
+        "team": "IT",
+        "org": "France",
+        "reportsTo": "Christophe Hennequin"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Reported in IT org chart under Christophe.",
+      "mentions": [],
+      "createdAt": "2026-02-19T20:10:27.235Z",
+      "updatedAt": "2026-02-26T20:42:10.914Z"
+    },
+    {
+      "id": "sophie-lacourrege",
+      "name": "Sophie Lacourrege",
+      "type": "person",
+      "aliases": [
+        "Sophie",
+        "sophie.lacourrege@abivax.com"
+      ],
+      "description": "VP, HR Engagement & Culture (Human Resources). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "VP, HR Engagement & Culture",
+        "team": "Human Resources",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Human Resources",
+          "VP, HR Engagement & Culture",
+          "new meeting attendee"
+        ],
+        "mail": "sophie.lacourrege@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=30adcb094aed454894dd399888592afb-cd466dec-fb",
+        "reportsTo": "Ida Hatoum",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "VP, HR Engagement & Culture",
+        "graphDepartment": "Human Resources",
+        "graphReportsTo": "Ida Hatoum"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-24T14:30:42.117Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "ben-alaya",
+      "name": "Ben Alaya",
+      "type": "person",
+      "aliases": [
+        "Ben"
+      ],
+      "description": "Auto-seeded from meeting attendee and pending role confirmation.",
+      "properties": {
+        "role": "Role pending confirmation",
+        "team": "Unknown",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "new meeting attendee"
+        ],
+        "mail": "",
+        "userPrincipalName": "",
+        "reportsTo": "",
+        "reportsToSource": "",
+        "seededFrom": "meeting-attendee-agent"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T15:33:28.467Z"
+    },
+    {
+      "id": "aude-garcel",
+      "name": "Aude Garcel",
+      "type": "person",
+      "aliases": [
+        "Aude",
+        "Aude.Garcel@abivax.com"
+      ],
+      "description": "Director R&D (Research). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Director R&D",
+        "team": "Research",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Research",
+          "Director R&D",
+          "new meeting attendee"
+        ],
+        "mail": "Aude.Garcel@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=fcee385e07944328b8c054946b24161b-Aude.Garcel",
+        "reportsTo": "Didier Scherrer",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Director R&D",
+        "graphDepartment": "Research",
+        "graphReportsTo": "Didier Scherrer"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "laurence-desroys-du-roure",
+      "name": "Laurence Desroys du Roure",
+      "type": "person",
+      "aliases": [
+        "Laurence",
+        "Laurence.DesroysDuRoure@abivax.com"
+      ],
+      "description": "Associate Director, Clin Ops  ABTECT (Clinical Operations). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Associate Director, Clin Ops  ABTECT",
+        "team": "Clinical Operations",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Operations",
+          "Associate Director, Clin Ops  ABTECT",
+          "new meeting attendee"
+        ],
+        "mail": "Laurence.DesroysDuRoure@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0dcf763c4ba44098ba7d890e54369bf5-Laurence De",
+        "reportsTo": "Nadege Briancon-Eris",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Associate Director, Clin Ops  ABTECT",
+        "graphDepartment": "Clinical Operations",
+        "graphReportsTo": "Nadege Briancon-Eris"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "julien-santo",
+      "name": "Julien Santo",
+      "type": "person",
+      "aliases": [
+        "Julien",
+        "Julien.Santo@abivax.com"
+      ],
+      "description": "Director Translational Research (Clinical Development). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Director Translational Research",
+        "team": "Clinical Development",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Development",
+          "Director Translational Research",
+          "new meeting attendee"
+        ],
+        "mail": "Julien.Santo@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=af8fdf634ce943d8924e2ebb7ac12c1d-Julien Sant",
+        "reportsTo": "Doug Jacobstein",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Director Translational Research",
+        "graphDepartment": "Clinical Development",
+        "graphReportsTo": "Doug Jacobstein"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "mary-mantock",
+      "name": "Mary Mantock",
+      "type": "person",
+      "aliases": [
+        "Mary",
+        "Mary.Mantock@abivax.com"
+      ],
+      "description": "SVP Global Head of Regulatory Affairs (Regulatory Affairs). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "SVP Global Head of Regulatory Affairs",
+        "team": "Regulatory Affairs",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Regulatory Affairs",
+          "SVP Global Head of Regulatory Affairs",
+          "new meeting attendee"
+        ],
+        "mail": "Mary.Mantock@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=fefeb761314242459762da91de505903-Mary Mantoc",
+        "reportsTo": "David Zhang",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "SVP Global Head of Regulatory Affairs",
+        "graphDepartment": "Regulatory Affairs",
+        "graphReportsTo": "David Zhang"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "kejia-shan",
+      "name": "Kejia Shan",
+      "type": "person",
+      "aliases": [
+        "Kejia",
+        "Kejia.Shan@abivax.com"
+      ],
+      "description": "VP, Global Head Biometrics (Biometrics). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "VP, Global Head Biometrics",
+        "team": "Biometrics",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Biometrics",
+          "VP, Global Head Biometrics",
+          "new meeting attendee"
+        ],
+        "mail": "Kejia.Shan@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=eeda2772f9b240e6b5e40bb80ab36072-a1e6fcc5-1d",
+        "reportsTo": "David Zhang",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "VP, Global Head Biometrics",
+        "graphDepartment": "Biometrics",
+        "graphReportsTo": "David Zhang"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "jennifer-fine",
+      "name": "Jennifer Fine",
+      "type": "person",
+      "aliases": [
+        "Jennifer",
+        "Jennifer.Fine@abivax.com"
+      ],
+      "description": "Global Head HEOR&RWE (HEOR/RWE). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Global Head HEOR&RWE",
+        "team": "HEOR/RWE",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "HEOR/RWE",
+          "Global Head HEOR&RWE",
+          "new meeting attendee"
+        ],
+        "mail": "Jennifer.Fine@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=c0a3db2274204e9db8ec11a2baffdef5-fe3ead28-fc",
+        "reportsTo": "David Zhang",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Global Head HEOR&RWE",
+        "graphDepartment": "HEOR/RWE",
+        "graphReportsTo": "David Zhang"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "sophie-gibelli",
+      "name": "Sophie Gibelli",
+      "type": "person",
+      "aliases": [
+        "Sophie",
+        "Sophie.Gibelli@abivax.com"
+      ],
+      "description": "Global Quality Assurance Lead (Quality). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Global Quality Assurance Lead",
+        "team": "Quality",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Quality",
+          "Global Quality Assurance Lead",
+          "new meeting attendee"
+        ],
+        "mail": "Sophie.Gibelli@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=de0b14a90bd2427ea457ff7010b983c9-e7ee5aea-18",
+        "reportsTo": "David Zhang",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Global Quality Assurance Lead",
+        "graphDepartment": "Quality",
+        "graphReportsTo": "David Zhang"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "marianne-perdrijat",
+      "name": "Marianne Perdrijat",
+      "type": "person",
+      "aliases": [
+        "Marianne",
+        "Marianne.Perdrijat@abivax.com"
+      ],
+      "description": "Director Clinical Supply (Clinical Trial Supplies). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Director Clinical Supply",
+        "team": "Clinical Trial Supplies",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Trial Supplies",
+          "Director Clinical Supply",
+          "new meeting attendee"
+        ],
+        "mail": "Marianne.Perdrijat@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=886cedb554014341a89f942a33512fd4-da669b2c-f1",
+        "reportsTo": "Jerome Denis",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Director Clinical Supply",
+        "graphDepartment": "Clinical Trial Supplies",
+        "graphReportsTo": "Jerome Denis"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "chris-rabbat",
+      "name": "Chris Rabbat",
+      "type": "person",
+      "aliases": [
+        "Chris",
+        "Chris.Rabbat@abivax.com"
+      ],
+      "description": "VP, Global Head of Medical Affairs (Medical Affairs). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "VP, Global Head of Medical Affairs",
+        "team": "Medical Affairs",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Medical Affairs",
+          "VP, Global Head of Medical Affairs",
+          "new meeting attendee"
+        ],
+        "mail": "Chris.Rabbat@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=3d3d6f7eec58478e857361f4d745a1f7-5a83e272-37",
+        "reportsTo": "Fabio Cataldi",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "VP, Global Head of Medical Affairs",
+        "graphDepartment": "Medical Affairs",
+        "graphReportsTo": "Fabio Cataldi"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "patrick-malloy",
+      "name": "Patrick Malloy",
+      "type": "person",
+      "aliases": [
+        "Patrick",
+        "Patrick.Malloy@abivax.com"
+      ],
+      "description": "SVP, Investor Relations (Finance). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "SVP, Investor Relations",
+        "team": "Finance",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Finance",
+          "SVP, Investor Relations",
+          "new meeting attendee"
+        ],
+        "mail": "Patrick.Malloy@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dda0291b46a04193bc28eb75711070a0-4d2a0b9a-7c",
+        "reportsTo": "Didier Blondel",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "SVP, Investor Relations",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Didier Blondel"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "rebecca-mosig",
+      "name": "Rebecca Mosig",
+      "type": "person",
+      "aliases": [
+        "Rebecca",
+        "rebecca.mosig@abivax.com"
+      ],
+      "description": "SD Clin Dev and Translational Medicine (Clinical Development). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "SD Clin Dev and Translational Medicine",
+        "team": "Clinical Development",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Development",
+          "SD Clin Dev and Translational Medicine",
+          "new meeting attendee"
+        ],
+        "mail": "rebecca.mosig@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=db7c327d12e3408a81cf27a22b18ac87-3678dd50-0d",
+        "reportsTo": "Doug Jacobstein",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "SD Clin Dev and Translational Medicine",
+        "graphDepartment": "Clinical Development",
+        "graphReportsTo": "Doug Jacobstein"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "patricia-fleuranceau-morel",
+      "name": "Patricia Fleuranceau Morel",
+      "type": "person",
+      "aliases": [
+        "Patricia",
+        "patricia.fleuranceaumorel@abivax.com"
+      ],
+      "description": "Vice President, Global Head of Drug Safety and Pharmacovigilance (Drug Safety and Pharmacovigilance (Medical)). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Vice President, Global Head of Drug Safety and Pharmacovigilance",
+        "team": "Drug Safety and Pharmacovigilance (Medical)",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Drug Safety and Pharmacovigilance (Medical)",
+          "Vice President, Global Head of Drug Safety and Pharmacovigilance",
+          "new meeting attendee"
+        ],
+        "mail": "patricia.fleuranceaumorel@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f90dcc1650de49028e06e8a0c73d95f5-7c58aced-5a",
+        "reportsTo": "Fabio Cataldi",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Vice President, Global Head of Drug Safety and Pharmacovigilance",
+        "graphDepartment": "Drug Safety and Pharmacovigilance (Medical)",
+        "graphReportsTo": "Fabio Cataldi"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "murielle-salaun-lancien",
+      "name": "Murielle Salaun Lancien",
+      "type": "person",
+      "aliases": [
+        "Murielle",
+        "Murielle.SalaunLancien@abivax.com"
+      ],
+      "description": "Safety Monitor (Pharmacovigilance). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Safety Monitor",
+        "team": "Pharmacovigilance",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Pharmacovigilance",
+          "Safety Monitor",
+          "new meeting attendee"
+        ],
+        "mail": "Murielle.SalaunLancien@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5ae3007134af4faa831b124fa4c2787a-Murielle Sa",
+        "reportsTo": "",
+        "reportsToSource": "",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Safety Monitor",
+        "graphDepartment": "Pharmacovigilance"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "nakesha-harding-boyce",
+      "name": "Nakesha Harding-Boyce",
+      "type": "person",
+      "aliases": [
+        "Nakesha",
+        "Nakesha.HardingBoyce@abivax.com"
+      ],
+      "description": "Senior Director Safety Ops (Pharmacovigilance). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Senior Director Safety Ops",
+        "team": "Pharmacovigilance",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Pharmacovigilance",
+          "Senior Director Safety Ops",
+          "new meeting attendee"
+        ],
+        "mail": "Nakesha.HardingBoyce@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f258780916d24ef5ab4f4244a11ef3db-2d6fd581-bc",
+        "reportsTo": "",
+        "reportsToSource": "",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Senior Director Safety Ops",
+        "graphDepartment": "Pharmacovigilance"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "maurus-de-la-rosa",
+      "name": "Maurus de la Rosa",
+      "type": "person",
+      "aliases": [
+        "Maurus",
+        "maurus.delarosa-ext@abivax.com"
+      ],
+      "description": "VP R&D contractor (Scientific Affairs). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "VP R&D contractor",
+        "team": "Scientific Affairs",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Scientific Affairs",
+          "VP R&D contractor",
+          "new meeting attendee"
+        ],
+        "mail": "maurus.delarosa-ext@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=687fd9993a744c83bc483eb7c80f85ab-b56a7fae-81",
+        "reportsTo": "Didier Scherrer",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "VP R&D contractor",
+        "graphDepartment": "Scientific Affairs",
+        "graphReportsTo": "Didier Scherrer"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "valerie-contassot",
+      "name": "Valerie Contassot",
+      "type": "person",
+      "aliases": [
+        "Valerie",
+        "Valerie.Contassot-ext@abivax.com"
+      ],
+      "description": "Manufacturing Quality Assurance Associate Director consultant (Assurance Quality Team). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Manufacturing Quality Assurance Associate Director consultant",
+        "team": "Assurance Quality Team",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Assurance Quality Team",
+          "Manufacturing Quality Assurance Associate Director consultant",
+          "new meeting attendee"
+        ],
+        "mail": "Valerie.Contassot-ext@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=286df366560149d3829672afcb189755-0c77c0ed-a6",
+        "reportsTo": "Mark Hronec",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Manufacturing Quality Assurance Associate Director consultant",
+        "graphDepartment": "Assurance Quality Team",
+        "graphReportsTo": "Mark Hronec"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "thomas-descusses",
+      "name": "Thomas Descusses",
+      "type": "person",
+      "aliases": [
+        "Thomas",
+        "Thomas.Descusses@abivax.com"
+      ],
+      "description": "Legal Affairs Manager (Finance). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Legal Affairs Manager",
+        "team": "Finance",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Finance",
+          "Legal Affairs Manager",
+          "new meeting attendee"
+        ],
+        "mail": "Thomas.Descusses@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=822318efb4874984810318a55fd984c7-Thomas Desc",
+        "reportsTo": "Didier Blondel",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Legal Affairs Manager",
+        "graphDepartment": "Finance",
+        "graphReportsTo": "Didier Blondel"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "josianne-nitcheu",
+      "name": "Josianne Nitcheu",
+      "type": "person",
+      "aliases": [
+        "Josianne",
+        "Josianne.Nitcheu@abivax.com"
+      ],
+      "description": "CTM, Phase 1 /Pediatric (Clinical Operations). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "CTM, Phase 1 /Pediatric",
+        "team": "Clinical Operations",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Operations",
+          "CTM, Phase 1 /Pediatric",
+          "new meeting attendee"
+        ],
+        "mail": "Josianne.Nitcheu@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=31fe3a980a684eb4905bd6e6749d03dc-Josianne Ni",
+        "reportsTo": "Nadege Briancon-Eris",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "CTM, Phase 1 /Pediatric",
+        "graphDepartment": "Clinical Operations",
+        "graphReportsTo": "Nadege Briancon-Eris"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "pascaline-ploncard",
+      "name": "Pascaline Ploncard",
+      "type": "person",
+      "aliases": [
+        "Pascaline",
+        "Pascaline.Ploncard@abivax.com"
+      ],
+      "description": "CTM Crohn’s/108 (Clinical Operations). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "CTM Crohn’s/108",
+        "team": "Clinical Operations",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Operations",
+          "CTM Crohn’s/108",
+          "new meeting attendee"
+        ],
+        "mail": "Pascaline.Ploncard@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=66909818d554475ab2bec53a904ff096-Pascaline P",
+        "reportsTo": "Nadege Briancon-Eris",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "CTM Crohn’s/108",
+        "graphDepartment": "Clinical Operations",
+        "graphReportsTo": "Nadege Briancon-Eris"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "bindu-saini",
+      "name": "Bindu Saini",
+      "type": "person",
+      "aliases": [
+        "Bindu",
+        "bindu.saini-ext@abivax.com"
+      ],
+      "description": "Medical Writing (Program Management). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Medical Writing",
+        "team": "Program Management",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Program Management",
+          "Medical Writing",
+          "new meeting attendee"
+        ],
+        "mail": "bindu.saini-ext@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=3f47395fda4740bebc5b3ee643dde104-159e7ccd-ad",
+        "reportsTo": "Nadege Briancon-Eris",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Medical Writing",
+        "graphDepartment": "Program Management",
+        "graphReportsTo": "Nadege Briancon-Eris"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "mark-hronec",
+      "name": "Mark Hronec",
+      "type": "person",
+      "aliases": [
+        "Mark",
+        "mark.hronec@abivax.com"
+      ],
+      "description": "Auto-seeded from meeting attendee and pending role confirmation.",
+      "properties": {
+        "role": "Role pending confirmation",
+        "team": "Quality",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Quality",
+          "new meeting attendee"
+        ],
+        "mail": "mark.hronec@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=bfb30ec7fbd745f3b8a3d1e7d100721d-f502b83d-f7",
+        "reportsTo": "David Zhang",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphDepartment": "Quality",
+        "graphReportsTo": "David Zhang"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "jessica-huskey",
+      "name": "Jessica Huskey",
+      "type": "person",
+      "aliases": [
+        "Jessica",
+        "jessica.huskey@abivax.com"
+      ],
+      "description": "Director Clin Ops, ABTECT + LATAM/NA (Clinical Operations). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "Director Clin Ops, ABTECT + LATAM/NA",
+        "team": "Clinical Operations",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Operations",
+          "Director Clin Ops, ABTECT + LATAM/NA",
+          "new meeting attendee"
+        ],
+        "mail": "jessica.huskey@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e993f5bc3d11483b98003be88e27e9cd-158c23a0-17",
+        "reportsTo": "Nadege Briancon-Eris",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "Director Clin Ops, ABTECT + LATAM/NA",
+        "graphDepartment": "Clinical Operations",
+        "graphReportsTo": "Nadege Briancon-Eris"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "doug-jacobstein",
+      "name": "Doug Jacobstein",
+      "type": "person",
+      "aliases": [
+        "Doug",
+        "Doug.Jacobstein@abivax.com"
+      ],
+      "description": "SVP, Global Head Of Clinical Dev (Clinical Development). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "SVP, Global Head Of Clinical Dev",
+        "team": "Clinical Development",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "Clinical Development",
+          "SVP, Global Head Of Clinical Dev",
+          "new meeting attendee"
+        ],
+        "mail": "Doug.Jacobstein@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=09d3dddefec14fe0a5b1e77f31ec5686-37681b35-f9",
+        "reportsTo": "Fabio Cataldi",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "SVP, Global Head Of Clinical Dev",
+        "graphDepartment": "Clinical Development",
+        "graphReportsTo": "Fabio Cataldi"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "keith-fournier",
+      "name": "Keith Fournier",
+      "type": "person",
+      "aliases": [
+        "Keith",
+        "keith.fournier@abivax.com"
+      ],
+      "description": "SVP Regulatory Affairs (REGULATORY AFFAIRS). Auto-seeded from meeting attendee + org sync.",
+      "properties": {
+        "role": "SVP Regulatory Affairs",
+        "team": "REGULATORY AFFAIRS",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "REGULATORY AFFAIRS",
+          "SVP Regulatory Affairs",
+          "new meeting attendee"
+        ],
+        "mail": "keith.fournier@abivax.com",
+        "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=28641194dce348f3867fdadf8342ae1a-3a5b9608-08",
+        "reportsTo": "Fabio Cataldi",
+        "reportsToSource": "Outlook GAL",
+        "seededFrom": "meeting-attendee-agent",
+        "graphJobTitle": "SVP Regulatory Affairs",
+        "graphDepartment": "REGULATORY AFFAIRS",
+        "graphReportsTo": "Fabio Cataldi"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-02-26T15:33:28.467Z",
+      "updatedAt": "2026-02-26T20:42:07.831Z"
+    },
+    {
+      "id": "girard-camille",
+      "name": "Girard, Camille",
+      "type": "person",
+      "aliases": [],
+      "description": "KPMG email participant from recent inbox context.",
+      "properties": {
+        "role": "Consultant (exact title to confirm)",
+        "entity": "KPMG",
+        "needLevel": "engage",
+        "focusHints": [
+          "email context validation",
+          "role clarification"
+        ]
+      },
+      "links": [
+        "kpmg"
+      ],
+      "notes": "Observed sender domain: camillegirard@kpmg.fr.",
+      "mentions": [],
+      "createdAt": "2026-02-27T16:07:12.603Z",
+      "updatedAt": "2026-02-27T16:07:12.603Z"
     }
   ]
 }

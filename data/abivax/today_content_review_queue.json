@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-02-26T20:38:07.384Z",
+  "summary": {
+    "pendingReview": 1,
+    "reviewed": 0,
+    "highPriorityPending": 0,
+    "byCategory": {
+      "pillar-waiting-overload": 1
+    }
+  },
+  "items": [
+    {
+      "queueType": "today-content-review",
+      "source": "today-content-quality-detector",
+      "category": "pillar-waiting-overload",
+      "title": "Today may need clearer queue separation for waiting-heavy pillar (reporting-data)",
+      "why": "4 waiting item(s) are tracked on the pillar baseline; top Today content should emphasize new evidence arrivals and next decisions, not all waiting items.",
+      "priority": "low",
+      "status": "pending-review",
+      "detectedAt": "2026-02-26T20:38:07.384Z",
+      "reviewHint": "Keep waiting-state detail in Program; Today should surface only newly changed or urgent waiting items."
+    }
+  ]
+}

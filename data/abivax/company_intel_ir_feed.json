@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-02-26T20:38:13.651Z",
+  "status": "degraded-sec-derived",
+  "source": "abivax-ir",
+  "endpointUsed": "sec-edgar-fallback",
+  "itemCount": 3,
+  "items": [
+    {
+      "id": "irsec-MDAwMTk1NjgyNy0yNi0wMDAwMDN8MjAyNi0wMi0y",
+      "title": "Abivax S.A. filed 6-K (2026-02-23)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm",
+      "date": "2026-02-23",
+      "publishedAt": "2026-02-23T00:00:00Z",
+      "summary": "SEC-derived fallback item used while direct Abivax IR website sync is unavailable.",
+      "source": "abivax-ir-sec-derived"
+    },
+    {
+      "id": "irsec-MDAwMTk1NjgyNy0yNS0wMDAwMzV8MjAyNS0xMi0x",
+      "title": "Abivax S.A. filed 6-K (2025-12-15)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1956827/000195682725000035/abvx-20250930.htm",
+      "date": "2025-12-15",
+      "publishedAt": "2025-12-15T00:00:00Z",
+      "summary": "SEC-derived fallback item used while direct Abivax IR website sync is unavailable.",
+      "source": "abivax-ir-sec-derived"
+    },
+    {
+      "id": "irsec-MDAwMTk1NjgyNy0yNS0wMDAwMzF8MjAyNS0wOS0w",
+      "title": "Abivax S.A. filed 6-K (2025-09-08)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1956827/000195682725000031/abvx-20250630.htm",
+      "date": "2025-09-08",
+      "publishedAt": "2025-09-08T00:00:00Z",
+      "summary": "SEC-derived fallback item used while direct Abivax IR website sync is unavailable.",
+      "source": "abivax-ir-sec-derived"
+    }
+  ],
+  "error": "Timeout fetching https://ir.abivax.com/investor-relations/",
+  "insecureTlsUsed": false,
+  "lastSuccessAt": null
+}

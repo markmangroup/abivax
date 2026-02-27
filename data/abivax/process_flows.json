@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "updatedAt": "2026-02-25",
+  "flows": [
+    {
+      "id": "p2p-france-current-to-future",
+      "title": "France P2P (SA) Current vs Future State",
+      "pillarId": "p2p",
+      "scope": "Abivax SA / France finance operations",
+      "owner": "Mike Markman",
+      "status": "source-backed-fact-finding",
+      "audience": ["Finance", "IT", "Executive", "Board (summary visual)"],
+      "currentState": {
+        "summary": "Current-state P2P scaffold is now source-backed by the finalized CFTI P2P RCM workbook, CFTI project tracker structure (macro/micro views), and a parsed Trinidad France P2P document bundle (approval matrices, SOP/procedures, DocuShare guide, payment-process workbook, vendor-master workbook). Workbook-derived signals now confirm payment cadence, lead-time expectations, and Trustpair/Agicap/Sage payment handoff references. Operational step order and exception handling still require final walkthrough validation.",
+        "steps": [
+          {
+            "id": "fr-p2p-1",
+            "label": "Vendor setup / validation",
+            "owner": "Finance + Trustpair validation path (to confirm)",
+            "systems": ["Sage", "Trustpair", "Docushare (to confirm exact role)"],
+            "painPoints": ["Exact current flow and evidence retention path not yet documented end-to-end.", "Sage-based vendor master changes rely on manual/IT-dependent manual controls and email evidence (per P2P RCM gap examples)."],
+            "controlNotes": ["CFTI P2P RCM includes explicit vendor-management controls (e.g., FR-PTP-02G, FR-PTP-03) and remediation-plan column.", "Trinidad supplier-data workbook intake confirms vendor-master cleanup/reference material exists (supplier list and identification/bank/free-field tabs) and should be mapped to vendor setup/validation controls.", "Trustpair validation is explicitly referenced in the P2P RCM and should be mapped to the operational process/evidence path."]
+          },
+          {
+            "id": "fr-p2p-2",
+            "label": "Invoice / coding / approval flow",
+            "owner": "Finance (Trinidad/France team - confirm by step)",
+            "systems": ["Sage", "Docushare"],
+            "painPoints": ["Workflow approvals not currently present in Sage.", "Manual process and timing variability."],
+            "controlNotes": ["Trinidad bundle includes approval matrices for POs and invoices plus signature policy documentation; these are now source artifacts for current-state approval mapping.", "CFTI tracker micro view provides control-level status/gap fields (GAP, Overall Status, Expected/Effective Validation Date) that can anchor approval/audit-trail remediation tracking."]
+          },
+          {
+            "id": "fr-p2p-3",
+            "label": "Payment validation and execution",
+            "owner": "Finance / Treasury (Roxandra + team to confirm)",
+            "systems": ["Sage", "Trustpair", "Agicap", "Banks"],
+            "painPoints": ["Need exact handoffs and exception handling path documented end-to-end despite workbook process clues.", "Need confirmation of current signer/validator roles and where control evidence is retained across Trustpair/Agicap/bank steps."],
+            "controlNotes": ["Trinidad payment-process workbook intake includes sheets referencing Trustpair process points, Agicap steps, and Sage payment-file/historical remittance handling; these should be converted into a source-backed payment swimlane sequence.", "Derived workbook signals indicate two vendor payment campaigns per month (10th and 25th), a payment-file preparation lead-time note (~4 working days before value date), and Juliette/Fatma references in preparation roles.", "Derived workbook signals also show an Agicap sheet and an EBICS signer-key mention, which are useful anchors for payment validation/signature-step mapping.", "CFTI P2P RCM includes system classification and control type fields (Automated/Manual/IT-Dependent Manual; Preventative/Detective), which can be mapped to payment-stage controls once the process flow is confirmed."]
+          }
+        ]
+      },
+      "futureState": {
+        "summary": "Target state should system-enforce approvals, reduce manual handoffs, and make control evidence traceable across vendor setup through payment.",
+        "targetChanges": [
+          "System-enforced approvals and workflow routing",
+          "Clear owner matrix by P2P step",
+          "Standardized exception handling",
+          "Traceable audit evidence retention path"
+        ],
+        "erpAddressableChanges": [
+          "Workflow approvals",
+          "P2P transaction flow standardization",
+          "Integration/hand-off reduction",
+          "Audit trail and reporting visibility"
+        ],
+        "nonErpChanges": [
+          "Owner accountability discipline",
+          "Policy/process decisions outside system configuration"
+        ]
+      },
+      "evidenceNeeded": [
+        "Trinidad process notes/docs/screenshots (bundle received and parsed; payment/vendor workbook signals extracted; PDF deep review pending)",
+        "Updated Sage-centric IT map (Jade)",
+        "Trustpair/Agicap exact flow documentation",
+        "Examples of exceptions/rework points",
+        "Row-level extraction/classification from CFTI P2P RCM and project-plan micro view (headers confirmed; rows pending structured intake)"
+      ],
+      "sourceArtifacts": [
+        "Trinidad P2P bundle intake - data/abivax/trinidad_p2p_bundle_intake.json",
+        "Trinidad attachment - Approval PO matrix.pdf",
+        "Trinidad attachment - Approval Invoices Authorization Matrix.pdf",
+        "Trinidad attachment - SOP - Purchase Order and Contract Process.pdf",
+        "Trinidad attachment - ABIVAX Procedure Achat (steps 1-4).pdf",
+        "Trinidad attachment - REC0234-V03_DocuShare User Guide.pdf",
+        "Trinidad attachment - Saisie en devise.pdf",
+        "Trinidad attachment - Supplier data base cleaning.xlsx",
+        "Trinidad attachment - Moyen de paiement - virements bancaires.xlsx",
+        "CFTI attachment - Abivax PtP - FINAL_23 December 2025.xlsx",
+        "CFTI attachment - 01 - Abivax x CFGI - Project Plan.xlsx (macro/micro tracker)",
+        "Abivax - Netsuite Demonstration Feedback.pptx",
+        "Abivax - SAP Demonstration Feedback.pptx",
+        "IT Landscape Intro Notes (Jade/Benjamin)",
+        "France finance intro notes"
+      ],
+      "nextActions": [
+        "Extract CFTI P2P RCM rows into structured issue/control list (Control ID, gap type, remediation plan, status, expected date).",
+        "Use Trinidad bundle intake derived signals to map initial payment-step current-state sequence (cadence, prep lead time, Trustpair/Agicap/Sage/EBICS references, Juliette/Fatma prep roles) before walkthrough",
+        "Deep-review approval matrices/SOPs/signature/currency PDFs to validate approval routing, signer thresholds, and evidence retention details",
+        "Draft side-by-side current-state France P2P step map",
+        "Tag pain points as ERP-addressable vs governance/process"
+      ],
+      "deckUseCases": [
+        "Board ERP Readout - current vs future operating model visual",
+        "Audit Committee ERP Controls Readout - control/evidence gap visualization",
+        "Living Executive ERP Program Deck - P2P pillar visual"
+      ],
+      "lastUpdated": "2026-02-26"
+    },
+    {
+      "id": "p2p-us-llc-current-to-future",
+      "title": "US LLC P2P Current vs Future State",
+      "pillarId": "p2p",
+      "scope": "Abivax LLC / US finance operations",
+      "owner": "Mike Markman",
+      "status": "source-backed-fact-finding",
+      "audience": ["Finance", "Executive", "Board (summary visual)"],
+      "currentState": {
+        "summary": "US P2P process is smaller-volume but highly manual and differs from France (e.g., bank payment flow, limited Agicap usage). Awaiting Kimberly/Matt materials to confirm exact steps and controls.",
+        "steps": [
+          {
+            "id": "us-p2p-1",
+            "label": "Vendor setup / coding coordination",
+            "owner": "Kimberly + Juliet + Adrian/Frederick (coding inputs)",
+            "systems": ["Docushare", "Sage", "Shared drive / templates (to confirm)"],
+            "painPoints": ["Roles and evidence path need documentation."],
+            "controlNotes": ["Need current review/approval evidence path for vendor setup and coding changes."]
+          },
+          {
+            "id": "us-p2p-2",
+            "label": "Payment initiation and execution",
+            "owner": "US Finance",
+            "systems": ["Bank portals / Wells Fargo", "Sage", "Trustpair (used), no Agicap in LLC flow"],
+            "painPoints": ["Manual upload templates, manual posting and reconciliations."],
+            "controlNotes": ["LLC receives less SOX attention today due size; need practical evidence expectations documented."]
+          },
+          {
+            "id": "us-p2p-3",
+            "label": "Expense review / department allocation",
+            "owner": "Matt / Kimberly",
+            "systems": ["Wells Fargo", "Excel/pivots", "Concur limited role"],
+            "painPoints": ["Manual review/allocation flow and timing dependence."],
+            "controlNotes": ["Manual review process may be a key future control-design target."]
+          }
+        ]
+      },
+      "futureState": {
+        "summary": "Target state should improve US P2P timing, consistency, and evidence while preserving practicality for entity size and growth stage.",
+        "targetChanges": [
+          "Consistent core P2P workflow/control model across entities where practical",
+          "Reduced manual bank upload/posting/reconciliation handoffs",
+          "Cleaner coding and department allocation flow",
+          "Improved evidence retention and review traceability"
+        ],
+        "erpAddressableChanges": [
+          "Workflow standardization",
+          "Posting/reconciliation process improvements",
+          "Reporting-ready coding discipline",
+          "Audit trail improvements"
+        ],
+        "nonErpChanges": [
+          "Review cadence discipline",
+          "Entity-specific operating decisions"
+        ]
+      },
+      "evidenceNeeded": [
+        "Kimberly/Matt process notes or SOPs",
+        "US P2P templates/examples",
+        "Approval/review examples",
+        "Exception/rework examples"
+      ],
+      "sourceArtifacts": [
+        "US Finance Intro Notes (Matt/Kimberly/Adrian)",
+        "US P2P - ERP planning (sent email request)"
+      ],
+      "nextActions": [
+        "Review Kimberly/Matt materials",
+        "Map US flow and compare to France flow",
+        "Identify global-standard vs entity-specific process design choices"
+      ],
+      "deckUseCases": [
+        "Living Executive ERP Program Deck - P2P pillar visual",
+        "Board ERP Readout - operating complexity and de-risking"
+      ],
+      "lastUpdated": "2026-02-24"
+    },
+    {
+      "id": "reporting-fpa-bridge-current-to-future",
+      "title": "Reporting / FP&A Data Flow Current vs Future State",
+      "pillarId": "reporting-data",
+      "scope": "French GAAP -> IFRS / SEC bridge, management reporting, FP&A dimensions",
+      "owner": "Mike Markman",
+      "status": "source-backed-fact-finding",
+      "audience": ["Finance", "FP&A", "Executive", "Audit Committee (controls angle)"],
+      "currentState": {
+        "summary": "Current state is quarterly-oriented and highly manual, with KPMG bridge dependency, Sage export limitations, and underused Adaptive/Interactive capability. Frederick emphasizes better quarterly quality before monthly scaling. The CFTI FSCP RCM now provides a source-backed control lens for reporting/close gaps and remediation plans.",
+        "steps": [
+          {
+            "id": "rep-1",
+            "label": "Source accounting / exports",
+            "owner": "FR Finance + US Finance",
+            "systems": ["Sage", "Excel", "Bank templates", "Workday Adaptive/Interactive (limited use)"],
+            "painPoints": ["Sage exports are limited.", "Missing data dimensions (e.g., country tag) impact reporting and cost center use cases."],
+            "controlNotes": ["Frederick identified missing reporting dimensions (including country tag) as a practical reporting/data-model blocker.", "Manual data manipulation creates traceability and consistency risk."]
+          },
+          {
+            "id": "rep-2",
+            "label": "Bridge / consolidation / IFRS & SEC support",
+            "owner": "KPMG, Internal Finance / FP&A (split to document)",
+            "systems": ["Excel / bridge files", "KPMG workflows", "Sage inputs"],
+            "painPoints": ["Internal vs KPMG ownership not mapped by step.", "Manual bridge dependency."],
+            "controlNotes": ["FSCP RCM includes control-level fields for System, Automated/Manual, Preventative/Detective, and Control Gap Remediation Plan that can anchor handoff/control mapping."]
+          },
+          {
+            "id": "rep-3",
+            "label": "Management / departmental reporting and forecast visibility",
+            "owner": "Frederick + Adrian (FP&A)",
+            "systems": ["Workday Adaptive/Interactive", "Excel", "Sage extracts"],
+            "painPoints": ["Underused tool capacity.", "Department expectations not standardized."],
+            "controlNotes": ["FSCP RCM sample controls explicitly include Budgeting & Forecasting and Budget-to-Actuals Review (quarterly) with remediation-plan language and reviewer roles (Heads of Department/CFO/Board oversight)."]
+          }
+        ]
+      },
+      "futureState": {
+        "summary": "Target state should support a stronger quarterly reporting model immediately, with scalable data design for later monthly/commercial complexity.",
+        "targetChanges": [
+          "Minimum reporting dimension model (entity/country/cost center/etc.) defined",
+          "Cleaner current-state reporting data flows and ownership map",
+          "Reduced manual bridge dependency where practical",
+          "Future-ready architecture for monthly/commercial scaling without forcing it immediately"
+        ],
+        "erpAddressableChanges": [
+          "Data model and tagging support",
+          "Core reporting extract quality",
+          "Entity/currency structure support",
+          "Process/timing improvements from upstream P2P quality"
+        ],
+        "nonErpChanges": [
+          "Cadence decisions (quarterly vs monthly timing by stage)",
+          "Commercial/licensing/royalty operating model governance"
+        ]
+      },
+      "evidenceNeeded": [
+        "Hema reporting process documentation",
+        "Frederick dimensions/output notes",
+        "Matt/Adrian process owner details",
+        "Examples of current bridge/consolidation files",
+        "Row-level extraction/classification from CFTI FSCP RCM and project-plan micro view (headers confirmed; rows pending structured intake)"
+      ],
+      "sourceArtifacts": [
+        "CFTI attachment - Abivax FSCP FINAL RCM 22 December 2025.xlsx",
+        "CFTI attachment - 01 - Abivax x CFGI - Project Plan.xlsx (macro/micro tracker)",
+        "US Finance Intro Notes",
+        "Frederick intro call notes (2026-02-24)",
+        "ERP scope alignment - SOX findings and reporting process documentation (sent)",
+        "Follow-up - FP&A reporting dimensions and core output needs (sent)"
+      ],
+      "nextActions": [
+        "Extract CFTI FSCP RCM rows into structured reporting/close control gap list (Control ID, remediation plan, owner/reviewer, status).",
+        "Capture minimum reporting dimensions from Frederick",
+        "Map current reporting flow and KPMG/internal handoffs",
+        "Tag near-term (quarterly) vs later-phase (monthly/commercial) requirements"
+      ],
+      "deckUseCases": [
+        "Living Executive ERP Program Deck - Reporting/Data pillar visual",
+        "Board ERP Readout - why data model decisions matter now",
+        "Audit Committee ERP Controls Readout - manual bridge/control risk visual"
+      ],
+      "lastUpdated": "2026-02-24"
+    },
+    {
+      "id": "controls-remediation-current-to-future",
+      "title": "SOX / Controls / Auditability Current vs Future State",
+      "pillarId": "controls-audit",
+      "scope": "Finance + IT controls relevant to ERP program and auditability",
+      "owner": "Mike Markman",
+      "status": "source-backed-fact-finding",
+      "audience": ["Finance", "IT", "Audit Committee", "Executive"],
+      "currentState": {
+        "summary": "Manual process dependency and weak audit flow are recognized, and IT roadmap confirms SOX/compliance workstreams. CFTI source files are now received and confirm a macro/micro remediation tracker plus finalized P2P/FSCP RCM structures with control IDs, status, validation dates, and remediation-plan columns. ITGC RCM remains pending final validation.",
+        "steps": [
+          {
+            "id": "ctrl-1",
+            "label": "Identify control gaps / findings",
+            "owner": "Finance (primary), IT support",
+            "systems": ["Finance process controls", "IT compliance framework", "Tracker(s) TBD"],
+            "painPoints": ["ITGC deficiency set is still pending final validation.", "CFTI files are received but not yet fully extracted into a structured app issue list."],
+            "controlNotes": ["CFTI project tracker micro view includes Process, Sub-process, Control ID, GAP, validation fields, Overall Status, Expected/Effective Validation Dates, and comments/validators."]
+          },
+          {
+            "id": "ctrl-2",
+            "label": "Track remediation and evidence",
+            "owner": "Finance owner (remediation), IT support where technical",
+            "systems": ["Tracker(s) TBD", "System/process evidence repositories TBD"],
+            "painPoints": ["Need row-level extraction to see all statuses/gap categories and owners in-app."],
+            "controlNotes": ["CFTI macro/micro tracker structure is now confirmed and should become the app's controls issue-register template.", "ERP should address a subset; not all controls are ERP-addressable."]
+          },
+          {
+            "id": "ctrl-3",
+            "label": "Embed control-by-design into ERP implementation",
+            "owner": "Finance + IT + implementation partners",
+            "systems": ["ERP future state", "Integrations", "Approval workflows"],
+            "painPoints": ["Need mapping from findings to design checkpoints."],
+            "controlNotes": ["P2P and FSCP RCMs both include Control Gap Remediation Plan fields and control metadata (system/manual type, reviewer/preparer roles) that can be mapped into ERP design checkpoints."]
+          }
+        ]
+      },
+      "futureState": {
+        "summary": "Target state should map documented deficiencies to owner-dated remediation and clearly show which issues are solved by ERP design, process governance, or later phases.",
+        "targetChanges": [
+          "Documented deficiency inventory and remediation ownership map",
+          "ERP-addressable control gaps identified and tracked to design decisions",
+          "Standardized evidence retention paths for critical flows",
+          "Clear finance/IT accountability boundaries"
+        ],
+        "erpAddressableChanges": [
+          "Workflow approvals and audit trails",
+          "Control traceability in transactions/reporting flows",
+          "Integration monitoring and ownership clarity (where system-supported)"
+        ],
+        "nonErpChanges": [
+          "Policy and remediation governance",
+          "Audit program and testing cadence decisions"
+        ]
+      },
+      "evidenceNeeded": [
+        "Hema SOX findings/deficiencies (additional context and ownership confirmation)",
+        "CFTI remediation tracker row extraction and owner map",
+        "Jade IT controls/interface monitoring docs",
+        "Examples of current evidence retention paths",
+        "ITGC RCM final file (next week)"
+      ],
+      "sourceArtifacts": [
+        "CFTI attachment - 01 - Abivax x CFGI - Project Plan.xlsx (macro/micro tracker)",
+        "CFTI attachment - Abivax FSCP FINAL RCM 22 December 2025.xlsx",
+        "CFTI attachment - Abivax PtP - FINAL_23 December 2025.xlsx",
+        "Jade IT Master Plan 2026-2027 deck",
+        "IT Landscape Intro Notes",
+        "US/France finance intro notes",
+        "ERP alignment - IT controls / audit evidence inputs (sent)",
+        "ERP scope alignment - SOX findings and reporting process documentation (sent)"
+      ],
+      "nextActions": [
+        "Extract CFTI tracker + RCM rows into structured controls remediation register in the app (control ID, gap type, status, dates, owner/reviewer, remediation plan).",
+        "Ingest findings/remediation documentation once received",
+        "Build deficiency-to-ERP-addressable mapping",
+        "Use current/future controls flow visual in audit committee and executive decks"
+      ],
+      "deckUseCases": [
+        "Audit Committee ERP Controls Readout - core visual backbone",
+        "Living Executive ERP Program Deck - Controls pillar visual",
+        "Board ERP Readout - risk and mitigation visual"
+      ],
+      "lastUpdated": "2026-02-25"
+    }
+  ]
+}

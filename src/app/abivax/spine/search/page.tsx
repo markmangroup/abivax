@@ -157,7 +157,7 @@ export default async function SearchPage({
       {query ? (
         <div className="space-y-3">
           <p className="text-sm text-slate-500">
-            {results.length} result{results.length !== 1 ? "s" : ""} for "{query}"
+            {results.length} result{results.length !== 1 ? "s" : ""} for &quot;{query}&quot;
           </p>
           {results.length > 0 ? (
             <div className="space-y-2">

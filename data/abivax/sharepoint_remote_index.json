@@ -1,0 +1,13 @@
+{
+    "generatedAt":  "2026-02-26T15:33:11.0798538-05:00",
+    "source":  "microsoft-graph",
+    "status":  "not-configured",
+    "summary":  {
+                    "candidateSites":  2,
+                    "resolvedSites":  0,
+                    "failedSites":  0
+                },
+    "sites":  [
+
+              ]
+}

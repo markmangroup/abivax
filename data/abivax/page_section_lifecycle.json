@@ -1,0 +1,51 @@
+{
+  "generatedBy": "codex-manual",
+  "asOf": "2026-02-26",
+  "pages": [
+    {
+      "pageId": "today",
+      "defaultViewBudget": 3,
+      "sections": [
+        { "label": "Morning Brief", "status": "active", "placement": "default" },
+        { "label": "Your Day", "status": "active", "placement": "default" },
+        { "label": "Our Work Queue", "status": "active", "placement": "default" },
+        { "label": "Today At A Glance", "status": "experimental", "placement": "advanced" },
+        { "label": "Immediate Prep", "status": "deprecated-candidate", "placement": "advanced" },
+        { "label": "Cross-Page Handoff", "status": "deprecated-candidate", "placement": "advanced" },
+        { "label": "ERP Pillar Focus", "status": "experimental", "placement": "advanced" },
+        { "label": "Questions For Mike", "status": "experimental", "placement": "advanced" },
+        { "label": "Company Intel Alert", "status": "experimental", "placement": "advanced" }
+      ]
+    },
+    {
+      "pageId": "program",
+      "defaultViewBudget": 3,
+      "sections": [
+        { "label": "Pillar Workboard (This Week)", "status": "active", "placement": "default" },
+        { "label": "Cross-Pillar Queue", "status": "experimental", "placement": "advanced" },
+        { "label": "Operational Detail", "status": "experimental", "placement": "advanced" },
+        { "label": "SharePoint Intake", "status": "active", "placement": "advanced" }
+      ]
+    },
+    {
+      "pageId": "presentations",
+      "defaultViewBudget": 3,
+      "sections": [
+        { "label": "Presentations Workspace", "status": "active", "placement": "default" },
+        { "label": "Process Visual Assets (Reusable)", "status": "active", "placement": "default" },
+        { "label": "Slide Plan", "status": "active", "placement": "advanced" },
+        { "label": "Sources and Audit Trail", "status": "active", "placement": "advanced" }
+      ]
+    },
+    {
+      "pageId": "company",
+      "defaultViewBudget": 3,
+      "sections": [
+        { "label": "Daily Headline Digest (Pilot)", "status": "active", "placement": "default" },
+        { "label": "Review Queue (Codex)", "status": "active", "placement": "default" },
+        { "label": "Agent Improvement Backlog", "status": "active", "placement": "advanced" },
+        { "label": "To-Do / Automation Backlog", "status": "active", "placement": "advanced" }
+      ]
+    }
+  ]
+}

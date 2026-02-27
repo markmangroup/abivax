@@ -1,9 +1,636 @@
 {
   "notes": [
     {
+      "id": "20260226-erp-decision-netsuite-selected",
+      "title": "ERP Decision Forum Outcome - NetSuite Selected",
+      "createdAt": "2026-02-26T15:00:00Z",
+      "source": "operator-note",
+      "tags": [
+        "ERP",
+        "NetSuite",
+        "decision",
+        "program-transition"
+      ],
+      "rawText": "Mike reported that the ERP decision meeting concluded with team alignment to select NetSuite. Camille will run a follow-up call on Monday to close remaining open items. Mike requested the slides after the meeting and plans to align a more structured post-selection next-step/timing note with Camille (cc Hema), including notification to NetSuite and negotiation path. Target remains work beginning in earnest in early April 2026.",
+      "summary": {
+        "truthsNow": [
+          "NetSuite selected on February 26, 2026 (team vote/alignment).",
+          "Selection phase has ended; next phase is post-selection communication, negotiation, and mobilization planning.",
+          "Early April 2026 remains the working target for implementation work start."
+        ],
+        "decisions": [
+          "Proceed with NetSuite path.",
+          "Use Monday follow-up with Camille to close remaining open items and confirm next steps/timing."
+        ],
+        "actions": [
+          "Notify NetSuite of selection and begin negotiation path (Mike/Hema/Camille coordination).",
+          "Get/post the decision meeting slides into the system and presentations evidence library."
+        ],
+        "risks": [
+          "Delay in post-selection communication/ownership alignment could compress April mobilization target.",
+          "Open items not explicitly tracked into negotiation scope may reappear during contracting or kickoff."
+        ],
+        "entityMentions": [
+          "Hema Kesh",
+          "Camille Girard",
+          "NetSuite",
+          "Michael Markman"
+        ],
+        "entityUpdateQueue": []
+      }
+    },
+    {
+      "id": "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
+      "createdAt": "2026-02-25T10:45:00.000-05:00",
+      "title": "CFTI SOX Implementation Call - RCM Status, ERP-Related Gaps, and Remediation Tracker Structure",
+      "rawText": "Call with Walid Bouassida and Youness Tyamaz (CFTI consultants supporting SOX implementation). They helped design SOX RCMs and are now supporting SOX implementation. They know FSCP and P2P processes well and created walkthroughs. ITGCs are covered in the RCMs and gaps have been identified, with expectation some may be remediated by the new ERP. They will send documentation after the call. P2P and FSCP RCMs are finalized and will be sent to auditors; these highlight gaps and important information. They identified ERP-related design gaps, some gaps that may be addressed immediately without ERP, and a third category driven by management decisions / ownership issues. They maintain an issue remediation tracker (Excel, macro + micro tabs) with status, control IDs, titles/descriptions, implemented vs open items. Quick walkthrough showed P2P/FSCP controls and statuses; about 8 controls across those 2 areas are ERP-related. Example: vendor management gap tied to a material weakness on Sage. Functional owners mentioned: FSCP mainly Trinidad and Hema; FP&A Frederick; Treasury Roxandra; HR Sophie. Walid/Youness are the main coordinators. By end of March (Q1 closeout timing) they will go through the list with internal Abivax team. As long as Sage remains in place they expect a material weakness to continue. French market e-invoicing legal change in September will require move to the French standard e-invoicing platform. ITGC RCM is still awaiting final validation and likely available next week.",
+      "summary": {
+        "truthsNow": [
+          "CFTI has finalized P2P and FSCP RCMs and is actively running SOX implementation/remediation coordination.",
+          "ERP-related gaps have already been identified in the SOX work and some non-ERP remediations can be addressed immediately.",
+          "A remediation tracker already exists with macro/micro views, control IDs, statuses, and open vs implemented items.",
+          "CFTI expects material weakness conditions to persist while Sage remains the core system."
+        ],
+        "decisions": [
+          "Use the CFTI RCMs and remediation tracker as primary source evidence for the Controls pillar baseline and audit committee narrative.",
+          "Tag gaps into ERP-addressable vs immediate non-ERP fixes vs management/ownership decisions."
+        ],
+        "risks": [
+          "If RCM/tracker intake is delayed, controls design discussions may stay generic instead of deficiency-driven.",
+          "ITGC RCM delay (awaiting validation) may slow full controls mapping across application + IT controls.",
+          "French e-invoicing legal change in September introduces parallel process/control change pressure."
+        ],
+        "openQuestions": [
+          "Which of the identified ERP-related controls are highest priority for ERP blueprint/design decisions?",
+          "What immediate non-ERP remediations can be executed before ERP implementation starts?",
+          "Who is the internal owner for each management-decision gap category item?"
+        ],
+        "nextConstraints": [
+          "Need CFTI documentation intake now; ITGC RCM expected next week.",
+          "End-of-March working session with internal team is a near-term checkpoint for remediation alignment."
+        ],
+        "entityMentions": [
+          "Hema Kesh",
+          "Trinidad",
+          "Frederick",
+          "Sage",
+          "Abivax",
+          "Procure-to-Pay (P2P)",
+          "SOX Compliance",
+          "Sophie Lacourrege",
+          "Sophie Gibelli"
+        ],
+        "entityUpdateQueue": []
+      }
+    },
+    {
+      "id": "20260223-email-kpmg-next-steps-and-audit-slide-requests",
+      "createdAt": "2026-02-23T10:00:00.000-05:00",
+      "title": "Email Review - KPMG Next-Phase Questions and Audit Committee Slide Request (March 6 deadline)",
+      "rawText": "Adrian requested an Audit Committee PPT finalized by March 6 with three slides: overview (project summary, benefits/rationale, partners), timeline (signing to go-live, key phases/decision points), and financials (NetSuite subscription, implementation cost/hours, contingencies). Mike forwarded the request to Camille. Camille replied with an updated project status link but said it will not cover all requested points, recommended waiting for updated NetSuite and SAP elements before preparing a consolidated package, and asked for the next Audit Committee date. Camille also sent preparation questions for Thursday's call: (1) define ABIVAX final validation process incl. financial negotiation owner and whether board one-pager is needed, (2) choose contract law basis (French vs US), and (3) identify legal review owner; KPMG can help on commercial negotiation/legal review as out-of-scope support.",
+      "summary": {
+        "truthsNow": [
+          "Audit Committee ERP slide package request is explicit and date-bound to March 6, 2026.",
+          "Camille says current status materials do not cover all requested content and need updated vendor elements first.",
+          "KPMG is now pushing ABIVAX to define internal decision/negotiation/legal ownership for post-selection execution."
+        ],
+        "decisions": [
+          "Track March 6 as a hard deliverable date for the audit committee deck (overview/timeline/financials).",
+          "Prepare ABIVAX answers before Thursday on negotiation owner, board one-pager expectation, contract-law preference, and legal review owner."
+        ],
+        "risks": [
+          "Waiting for vendor updates may compress the time available to build a polished audit committee deck by March 6.",
+          "Undefined negotiation/legal ownership can delay post-selection contracting even if vendor selection is made on time."
+        ],
+        "openQuestions": [
+          "What is the exact date/time of the next Audit Committee meeting?",
+          "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
+          "Should the selection package include a board one-pager before the March 19 board meeting?",
+          "French law or US law preference for implementation/licensing contracts, and who approves that choice?"
+        ],
+        "nextConstraints": [
+          "Thursday KPMG call should close ownership decisions so legal/commercial work can start immediately after selection.",
+          "Need updated SAP and NetSuite commercial/timeline elements before finalizing the financial slide."
+        ],
+        "entityMentions": [
+          "Didier Blondel",
+          "Hema Kesh",
+          "Camille Girard",
+          "SAP S/4HANA",
+          "NetSuite",
+          "Abivax",
+          "KPMG",
+          "ERP Go-Live",
+          "Procure-to-Pay (P2P)",
+          "Michael Markman"
+        ],
+        "entityUpdateQueue": []
+      }
+    },
+    {
+      "id": "20260220-jade-it-master-plan-deck-extract",
+      "createdAt": "2026-02-20T12:15:00.000-05:00",
+      "title": "Jade IT Strategic Master Plan Deck - Extracted Slide Facts for ERP Context",
+      "rawText": "Text extraction from Jade attachment \"Abivax IT Master Plan 2026 - 2027 - Part 1.pptx\" confirms deck content: ABIVAX context (~150 users, 50/50 France/US, Euronext 2015 and Nasdaq 2023, ongoing obefazimod phase 3), IT context (mainly cloud hosted, some servers via IT providers, no in-house software development, two support teams, cybersecurity framework), IT org chart (Didier -> Christophe Hennequin -> Jade Nguyen / Benjamin Talmant / Erwan Poulizac; Lionel Lefloch, MBVSI FR support, NEI US support), four IT priority pillars (IT Operations, Cybersecurity, Compliance, Business), 2026-2027 objectives including SOX compliance, ERP/TMS/CRM support, ChatGPT deployment, Freshservice ITSM/ITAM workflows, MBVSI disaster recovery plan, and roadmap references to ERP framing/build aligned with phase 3 study release and compliance/cyber milestones.",
+      "summary": {
+        "truthsNow": [
+          "Jade's deck validates the 4-pillar IT operating model: IT Operations, Cybersecurity, Compliance, Business.",
+          "Deck explicitly places ERP/finance integrations within the Business pillar and 2026-2027 roadmap.",
+          "Org chart in deck confirms Didier > Christophe > Jade/Benjamin/Erwan reporting structure and provider support model (MBVSI/NEI).",
+          "Roadmap references ERP framing/build alongside SOX, cybersecurity, and compliance initiatives, confirming parallel demand on IT capacity."
+        ],
+        "decisions": [
+          "Use the deck as primary evidence for IT roadmap/organization slides in board and audit narratives.",
+          "Use the deck roadmap to anchor IT capacity-risk questions (ERP vs SOX/cyber/compliance concurrent work)."
+        ],
+        "risks": [
+          "Concurrent IT initiatives (SOX, SOC/SIEM, SOC2, DR, Freshservice rollout) may reduce ERP support capacity unless explicitly planned.",
+          "Deck is missing the updated Sage-focused flow slide, so current finance architecture depiction remains incomplete."
+        ],
+        "openQuestions": [
+          "What are the month-by-month IT allocations to ERP versus cybersecurity/compliance objectives in 2026?",
+          "When will the updated Sage-centric architecture slide be issued and version-controlled?"
+        ],
+        "nextConstraints": [
+          "Reference slide labels directly in follow-up questions to Jade/Benjamin to speed alignment and reduce re-explaining context."
+        ],
+        "entityMentions": [
+          "Jade Nguyen",
+          "Benjamin Talmant",
+          "Christophe Hennequin",
+          "Didier Blondel",
+          "Erwan Poulizac",
+          "MBVSI",
+          "NEI",
+          "Freshservice",
+          "Sage",
+          "Trustpair",
+          "Agicap",
+          "ERP"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Jade Nguyen",
+          "Review context for Benjamin Talmant",
+          "Review context for Christophe Hennequin"
+        ]
+      }
+    },
+    {
+      "id": "20260220-email-jade-follow-up-and-access-confirmations",
+      "createdAt": "2026-02-20T12:05:00.000-05:00",
+      "title": "Email Review - Jade IT Follow-Up, SharePoint Tracker Access, and Finance Systems Access Progress",
+      "rawText": "Inbox confirmation from Jade Nguyen (Feb 20): attached IT Master Plan deck; Sage-focused slide intentionally omitted pending Finance process update, expected by Monday; ABIVAX_ILC & CSVLC Indexes Tracker SharePoint link shared with Mike and access granted; interface listing exists but is not centralized and consolidated version expected early next week; Trustpair/Agicap exact flow to be detailed in a Sage-centric IT map; control evidence and SOX deficiency/remediation ownership sits with Finance, not IT. Separate system-access chain confirms Denis provided Sage credentials, escalated remote desktop setup to MBVSI support for Mike's US machine, and MBVSI added Mike to LLC database. Roxandra confirmed Agicap access granted and offered 45-minute treasury walkthrough end of next week.",
+      "summary": {
+        "truthsNow": [
+          "Jade delivered the IT Master Plan deck and a live owner tracker link with access granted.",
+          "The Sage-specific architecture/process slide is still pending Jade/Finance update (target was Monday).",
+          "Interface inventory exists but is not centralized; Jade committed a consolidated version early next week.",
+          "Finance owns SOX/control-gap remediation tracking; IT supports technical enablement.",
+          "Sage access is materially in progress (credentials + remote desktop prep); Agicap invite/access is granted."
+        ],
+        "decisions": [
+          "Use Jade's live ILC/CSVLC tracker as the source to seed system-owner/admin/backup mappings into the ERP system map.",
+          "Route control-deficiency and remediation-tracker requests to Finance (not IT) while keeping Jade in the loop for technical dependencies."
+        ],
+        "risks": [
+          "If the Sage-centric flow slide and consolidated interface list slip, integration/control design may be built on incomplete assumptions.",
+          "Trustpair access status is still ambiguous and could block direct validation of payment-control flow."
+        ],
+        "openQuestions": [
+          "Did Jade deliver the updated Sage-focused slide by Monday, and if not what is the revised ETA?",
+          "Who in Finance owns the SOX deficiency register and remediation tracker (named owner + repository)?",
+          "Was Trustpair read-only access granted alongside Sage and Agicap, or is it still pending?"
+        ],
+        "nextConstraints": [
+          "Review the IT Master Plan deck before next IT follow-up so questions reference the actual roadmap language and architecture slides.",
+          "Use the offered Roxandra treasury walkthrough to validate Agicap flow and evidence retention path."
+        ],
+        "entityMentions": [
+          "Jade Nguyen",
+          "Benjamin Talmant",
+          "Christophe Hennequin",
+          "Denis Jankovic",
+          "Roxandra Sturdza",
+          "MBVSI",
+          "Agicap",
+          "Sage",
+          "Trustpair",
+          "ABIVAX ILC & CSVLC Indexes Tracker",
+          "Michael Markman"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Jade Nguyen",
+          "Review context for Roxandra Sturdza",
+          "Review context for Denis Jankovic",
+          "Review context for Christophe Hennequin"
+        ]
+      }
+    },
+    {
+      "id": "20260219-us-finance-live-outcomes",
+      "createdAt": "2026-02-19T13:20:00.000-05:00",
+      "title": "US Finance Intro Live Outcomes - Manual SEC/IFRS Flow, COA Questions, and US Entity Operating Model",
+      "rawText": "US finance intro with Matt Epley, Kimberly Gordon, Adrian Holbrook, and Hema. Matt oversees US LLC finance, global equity program, and SEC reporting. Key ERP concerns: P2P and reporting. SEC reporting and IFRS bridge are currently manual with KPMG support. Team believes ERP may allow more in-house processing over time. US side processes around 20-25 supplier payments per month, many one-off. US uses Trustpair but not Agicap; payment flow is manual templates and reconciliations. Hema explained USD funding and FX exposure management with significant EUR spend and intercompany transfers/loan structure. Adrian emphasized poor data access and limited Sage export utility. Workday currently underused. COA and cost-center design need future harmonization decisions between French SA and US LLC. Concur usage in LLC is limited because most expenses are direct via Wells Fargo. Monthly close is informal with internal target around the 10th. Annual report timing in March tied to FPI status.",
+      "summary": {
+        "truthsNow": [
+          "US finance reporting, SEC workflow, and IFRS bridge are still highly manual and consultant-dependent.",
+          "US entity operating model is small but growing and will need tighter process design as commercialization approaches.",
+          "Data quality and extract limitations in Sage are a major FP&A and reporting friction point.",
+          "COA and cost-center model decisions are now strategic design choices for future US/France scale."
+        ],
+        "decisions": [
+          "Follow up with Matt/Kimberly on COA, cost-center mappings, and shared drive data sources.",
+          "Run separate FP&A-focused follow-up with Adrian/Frederick to map reporting model and data dependencies."
+        ],
+        "risks": [
+          "Manual SEC/IFRS bridge process creates execution and key-person dependency risk.",
+          "Unclear future-state COA ownership could delay design decisions during ERP blueprint phase.",
+          "Manual bank and expense handling may limit control maturity unless redesigned in ERP scope."
+        ],
+        "openQuestions": [
+          "Which reports and journal entries should be brought in-house versus retained with KPMG support?",
+          "Should SA and LLC maintain separate COAs or a harmonized global model with mapping layers?",
+          "What minimum reporting data model is required for US growth and SEC readiness?"
+        ],
+        "nextConstraints": [
+          "Need COA and cost-center extracts quickly to shape blueprint assumptions.",
+          "Need clarity on FPI-driven reporting calendar milestones and ERP dependencies."
+        ],
+        "entityMentions": [
+          "Matt Epley",
+          "Kimberly Gordon",
+          "Adrian Holbrook",
+          "Hema Kesh",
+          "Frederick",
+          "Didier Blondel",
+          "KPMG",
+          "Sage",
+          "Trustpair",
+          "Wells Fargo",
+          "Concur",
+          "Workday",
+          "IFRS",
+          "US GAAP"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Matt Epley",
+          "Review context for Kimberly Gordon",
+          "Review context for Adrian Holbrook",
+          "Review context for Frederick"
+        ]
+      }
+    },
+    {
+      "id": "20260219-it-landscape-live-outcomes",
+      "createdAt": "2026-02-19T12:05:00.000-05:00",
+      "title": "IT Landscape Live Outcomes - Architecture Reality and ERP Integration Constraints",
+      "rawText": "IT intro with Jade and Benjamin. Org chain: Didier -> Christophe -> Jade/Benjamin/Ewan. IT master plan 2026-27 focuses on IT operations, cybersecurity, compliance, and business support. Environment is Microsoft-first with SaaS apps and no in-house software development. Hosting split across Azure validated cloud and MBV SI. Security stack includes Riot, Zscaler, and Entra ID. Core finance architecture remains manual: Concur manual entries to Sage, ADP payroll file manual to Sage, Docushare on-prem PO process replicated into Sage, and Trustpair/Agicap payment control path. Trustpair validates vendor and payment feeds from Sage; validated payments flow to Agicap and then banks (Wells Fargo, SocGen). Jade flagged weak audit flow in Sage and SOX concern. IT currently leans NetSuite fit for company size and simplicity. IT wants involvement in governance and integration decisions and Jade is key IT contact, but effort has not been capacity-modeled yet.",
+      "summary": {
+        "truthsNow": [
+          "IT environment is SaaS-heavy, Microsoft-first, with limited internal development and external hosting support.",
+          "Current finance stack remains highly manual across P2P, payroll, payments, and reconciliation flows.",
+          "Sage audit flow is seen as weak and linked to SOX concern by IT stakeholders.",
+          "Jade is the key IT interface for ERP and wants stronger governance than past projects."
+        ],
+        "decisions": [
+          "Track detailed system-owner and integration-owner map as a first-class ERP workstream artifact.",
+          "Use Jade as primary IT coordination point for integration and access topics."
+        ],
+        "risks": [
+          "Manual interfaces create control and audit-evidence risk during transition.",
+          "IT capacity requirements for integration/API support are not yet quantified."
+        ],
+        "openQuestions": [
+          "What is the full system-by-system owner/admin/backup map and access model?",
+          "What is the documented failure workflow for each feed when integrations break?",
+          "Where are current SOX control deficiencies logged and who owns remediation?"
+        ],
+        "nextConstraints": [
+          "Need IT slide deck and architecture diagrams for confirmation and dependency mapping.",
+          "Need explicit IT time allocation assumptions before implementation plan lock."
+        ],
+        "entityMentions": [
+          "Jade Nguyen",
+          "Benjamin Talmant",
+          "Didier Blondel",
+          "Christophe Hennequin",
+          "Sage",
+          "Docushare",
+          "Trustpair",
+          "Agicap",
+          "SAP Concur",
+          "ADP",
+          "Workday",
+          "Wells Fargo",
+          "SocGen"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Jade Nguyen",
+          "Review context for Benjamin Talmant",
+          "Review context for Christophe Hennequin"
+        ]
+      }
+    },
+    {
+      "id": "20260218-finance-intro-live-outcomes",
+      "createdAt": "2026-02-18T11:50:00.000-05:00",
+      "title": "Finance Intro Live Outcomes - ERP/SOX Mandate, P2P Gaps, and Capacity Risk",
+      "rawText": "Live call outcomes:\n- Hema opened and positioned Mike as ERP lead; noted planned France travel in March.\n- Didier reiterated ERP/SOX as top finance keywords for 2026, emphasized strong/robust delivery plan, and stated leadership backing and resources (Didier, Marc, Ida).\n- Attendee reality: Hema, Philippe, Trinidad, Adrian, Kimberly, Matt, Frederick, Roxandra, Fatma, Denis, Mike present; Didier joined later; Trinidad confirmed physically in room with additional unnamed France-side attendees.\n- Trinidad: strong SAP and Ariba familiarity; key concerns include currency handling/change management and workload during implementation.\n- Trinidad view: NetSuite appears easier on currency handling and stronger/more out-of-box reporting; SAP P2P demo was thorough but both demos were too short and not deep enough for P2P detail.\n- GAAP reporting comparison: Trinidad indicated both systems looked good.\n- Team concern raised: implementation workload discrepancy between SAP and NetSuite plans, and whether staffing/recruiting can absorb delivery while maintaining current operations.\n- P2P concern surfaced: 1099 reporting is a notable gap/concern for P2P team (details still needed).\n- Sentiment snapshots: Fatma leaned SAP (powerful); Denis leaned NetSuite.\n- Must-haves reiterated by Trinidad: workflow approvals absent in Sage today, multi-GAAP reporting critical, and currency handling remains key.\n- Hema suggested routing questions through Mike to reduce load on team; Mike offered direct follow-up support to lower stress and unblock execution.",
+      "summary": {
+        "truthsNow": [
+          "ERP/SOX is an explicit top finance mandate for 2026 with executive sponsorship and resource commitment.",
+          "Decision momentum is being shaped by implementation workload capacity more than by pure feature parity.",
+          "Trinidad is a central execution voice and highlighted currency handling, workflow approvals, and capacity constraints.",
+          "P2P depth remains under-validated because both demos were too short on practical process detail.",
+          "Mike is now positioned as central intake/filter for questions to reduce finance team load."
+        ],
+        "decisions": [
+          "Treat workload feasibility and staffing coverage as first-order selection criteria in vendor comparison.",
+          "Use Mike as primary coordination point for questions and follow-up requests across finance stakeholders."
+        ],
+        "risks": [
+          "Resourcing mismatch during implementation could break delivery confidence even if product fit is acceptable.",
+          "Unresolved P2P specifics (including 1099 process expectations) can create late scope churn.",
+          "Unidentified in-room France attendees indicate remaining role-map ambiguity."
+        ],
+        "openQuestions": [
+          "What are the top three non-negotiable P2P outcomes for month one after go-live?",
+          "What exact 1099 capability is required (scope, jurisdictions, owners, and timing)?",
+          "What named internal capacity by role is realistically available during implementation by month?",
+          "Who were the unnamed France-room participants and what ERP/P2P responsibilities do they own?",
+          "What objective workload delta exists between SAP and NetSuite plans by phase?"
+        ],
+        "nextConstraints": [
+          "Capture attendee identity and role map for all France-side participants before next checkpoint.",
+          "Require side-by-side implementation workload model (internal effort + external support) before vendor finalization.",
+          "Lock one dated follow-up focused on P2P depth and 1099 requirements."
+        ],
+        "entityMentions": [
+          "Didier Blondel",
+          "Hema Kesh",
+          "Trinidad",
+          "Philippe",
+          "Kimberly Gordon",
+          "Matt Epley",
+          "Frederick",
+          "Roxandra Sturdza",
+          "Adrian Holbrook",
+          "Fatma Hemdani",
+          "Denis",
+          "NetSuite",
+          "SAP S/4HANA",
+          "Ariba",
+          "Sage",
+          "Procure-to-Pay (P2P)"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Trinidad",
+          "Review context for Fatma Hemdani",
+          "Review context for Roxandra Sturdza",
+          "Review context for Adrian Holbrook",
+          "Create/confirm person entity for Denis",
+          "Review context for Didier Blondel",
+          "Review context for Hema Kesh"
+        ]
+      }
+    },
+    {
+      "id": "20260218-netsuite-feedback-pptx",
+      "createdAt": "2026-02-18T10:05:00.000-05:00",
+      "title": "NetSuite Demonstration Feedback Deck (Aymen Ben Alaya email attachment)",
+      "rawText": "Source: PPTX attachment from Ben Alaya, Aymen (Re: ABIVAX Offer - Netsuite, Feb 18, 2026).\n\nMain technical clarifications requested:\n- TrustPair integration feasibility proof points.\n- Detailed interface map: custom development vs free NetSuite app vs paid NetSuite app, and confirm pricing coverage.\n- Clarify e-invoicing model assumptions (tunnel + OCR) and French requirements compatibility.\n- Explain FX rate handling in NetSuite.\n- Treasury/TMS integration clarification (Agicap/Kyriba/FIS), hedge accounting capability, and direct payment ability from NetSuite.\n- Provide clearer VAT declaration explanation (video or slide).\n\nDelivery/proposal clarifications requested:\n- Timeline should start in April (not March) due to Abivax team availability.\n- Dedicated session requested to calibrate Abivax workload assumptions.\n- Change management/hypercare support refinement discussed; noted as not needed immediately but may be revisited.\n- Additional optional assistance for data loading/management requested.\n\nSession outcomes called out in deck:\n- E-invoicing point marked as answered in session.\n- Technical deep-dive call requested (2-hour slot to be sent).\n- Workload alignment session requested (same 2-hour slot, 1 hour on workload).\n- PM effort clarification discussed in session (~20% of build cost, with note on forfeit/excess at NetSuite expense).",
+      "summary": {
+        "truthsNow": [
+          "NetSuite demo feedback highlights unresolved technical assumptions around integrations, treasury interfaces, and e-invoicing model details.",
+          "Abivax requested timeline adjustment to April start to match team availability.",
+          "A dedicated technical deep-dive and workload calibration session was requested from NetSuite.",
+          "Change management/hypercare support was discussed but marked as not immediately needed."
+        ],
+        "decisions": [
+          "Request NetSuite to provide a 2-hour deep-dive slot covering technical assumptions and workload calibration.",
+          "Use April availability as baseline for revised implementation timeline assumptions."
+        ],
+        "risks": [
+          "Integration scope and pricing ambiguity (custom vs free app vs paid app) can distort total cost and schedule confidence.",
+          "Treasury/TMS and payment capability assumptions remain unclear and may affect fit for finance operations.",
+          "If workload assumptions are under-scoped, Abivax capacity risk could impact delivery readiness."
+        ],
+        "openQuestions": [
+          "Can NetSuite provide concrete TrustPair integration references for comparable implementations?",
+          "Which interfaces are included in current pricing and which require paid app/custom build?",
+          "Can NetSuite meet French e-invoicing and VAT declaration requirements without additional scope risk?",
+          "Can NetSuite support treasury integrations (Agicap/Kyriba/FIS), hedge accounting, and direct payment flow as needed?",
+          "What revised timeline (April start) and Abivax workload plan does NetSuite commit to in writing?"
+        ],
+        "nextConstraints": [
+          "Schedule technical deep-dive/workload session before locking vendor fit assumptions.",
+          "Require revised proposal/timeline aligned with April availability before final comparison sign-off."
+        ],
+        "entityMentions": [
+          "NetSuite",
+          "Abivax"
+        ],
+        "entityUpdateQueue": []
+      }
+    },
+    {
+      "id": "20260218-finance-intro-prep",
+      "createdAt": "2026-02-18T09:55:00.000-05:00",
+      "title": "Finance Team Intro (10:30 AM EST) - Alignment Goals and Context Gaps",
+      "rawText": "Goal of meeting is introduction and alignment, not decision-making.\n\nInvite attendees captured: Hema Keshava, Didier Blondel, Trinidad Mesa, Frederick Golly, Roxandra Sturdza, Philippe Goncalves, Matt Epley, Juliette Courtot, Adrian Holbrook, Kimberly Gordon, Fatma Hemdani, Michael Markman.\n\nPrimary objective: establish Mike as ERP lead with finance team, clarify role boundaries, and align follow-up ownership for budget tracking and readiness risks.\n\nContext to capture during meeting:\n- Exact role/ownership for attendees with unclear scope (Roxandra, Adrian, Fatma).\n- Which finance roles own budget tracking cadence and what reporting rhythm is expected before March 19 board communication.\n- Escalation path when staffing or scope constraints threaten 1/1/27 go-live.\n- What inputs finance expects from IT and when they need them.\n\nAfter-meeting note should include: owner/date for each follow-up, confirmed role map, unresolved dependencies, and first next checkpoint date.",
+      "summary": {
+        "truthsNow": [
+          "Today's 10:30 AM EST finance intro is an alignment meeting, not a decision gate.",
+          "Finance attendee set includes FP&A, accounting, P2P, and additional roles requiring ownership clarification.",
+          "Primary outcome is clear role boundaries and follow-up ownership.",
+          "Budget cadence and escalation expectations must be defined before March 19 board communication.",
+          "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
+        ],
+        "decisions": [
+          "Use this meeting to lock role map and follow-up owners rather than forcing a vendor decision."
+        ],
+        "risks": [
+          "Unclear attendee ownership can create hidden execution gaps after the intro.",
+          "Missing budget cadence clarity can weaken board-readiness narrative."
+        ],
+        "openQuestions": [
+          "What is Roxandra's exact role and ERP interface responsibility?",
+          "What is Adrian's exact role and ERP interface responsibility?",
+          "What is Fatma's exact role and ERP interface responsibility?",
+          "Who owns weekly budget tracking and reporting packet preparation before March 19?",
+          "What is the escalation path if staffing pressure increases in finance or IT?",
+          "What exact P2P ownership does Juliette Courtot hold versus Kimberly Gordon?",
+          "What approvals and budget-monitoring handoffs should Juliette own post-intro?"
+        ],
+        "nextConstraints": [
+          "Capture role map and owners in-meeting; do not defer this to email.",
+          "Set first finance follow-up checkpoint date before close of call."
+        ],
+        "entityMentions": [
+          "Didier Blondel",
+          "Hema Kesh",
+          "Trinidad",
+          "Frederick",
+          "Juliette",
+          "Kimberly Gordon",
+          "Philippe",
+          "Matt Epley",
+          "ERP Go-Live",
+          "Procure-to-Pay (P2P)"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Didier Blondel",
+          "Review context for Hema Kesh",
+          "Review context for Kimberly Gordon",
+          "Review context for Matt Epley"
+        ]
+      }
+    },
+    {
+      "id": "20260218-email-thread-netsuite-offer",
+      "createdAt": "2026-02-18T07:10:00.000-05:00",
+      "title": "Email Thread Validation - ABIVAX Offer NetSuite (Aymen/Jamal)",
+      "rawText": "Inbox thread validation: Ben Alaya, Aymen sent NetSuite feedback from abenalaya@kpmg.fr (KPMG domain). Jamal Azil replied from jamal.azil@oracle.com (Oracle domain). Recipients include Camille Girard, Jade Nguyen, Hema Keshava, Michael Markman and NetSuite team contacts.",
+      "summary": {
+        "truthsNow": [
+          "Aymen Ben Alaya appears to be KPMG-side in this thread (abenalaya@kpmg.fr).",
+          "Jamal Azil appears to be Oracle/NetSuite-side in this thread (jamal.azil@oracle.com).",
+          "Thread context belongs to vendor-offer clarification, not finance intro ownership alignment."
+        ],
+        "decisions": [
+          "Classify Aymen as KPMG consultant/stakeholder in entity context.",
+          "Add Jamal as Oracle/NetSuite contact in entity graph."
+        ],
+        "risks": [
+          "Misclassified people/org roles can produce wrong owner/ping recommendations."
+        ],
+        "openQuestions": [
+          "Confirm Aymen's exact KPMG role title in the ERP workstream.",
+          "Confirm Jamal's Oracle/NetSuite role title for technical and offer clarifications."
+        ],
+        "nextConstraints": [
+          "Keep vendor-thread context scoped to NetSuite evaluation, not finance intro priorities."
+        ],
+        "entityMentions": [
+          "Hema Kesh",
+          "Jade Nguyen",
+          "Camille Girard",
+          "NetSuite",
+          "Abivax",
+          "KPMG",
+          "Oracle",
+          "Michael Markman",
+          "Aymen Ben Alaya",
+          "Jamal Azil"
+        ],
+        "entityUpdateQueue": []
+      }
+    },
+    {
+      "id": "20260217-it-welcome-call",
+      "createdAt": "2026-02-17T16:55:00.000-05:00",
+      "title": "IT Welcome Call - Staffing, Board Decision Timing, and IT Role Clarity",
+      "rawText": "Didier: March 19th board meeting and decision will be communicated at that point. Need to present what is needed given the short horizon and go-live of 1/1/27. Budget will be discussed at the audit committee. Proper staffing is important to deliver effectively.\n\nMike notes:\n- Timing and aggressive push confirmed by all.\n- Jade (key point of contact): IT asks for vision of IT involvement and resource model for this project.\n- Mike asked IT: what is IT's role with Sage currently?\n- Jade: IT coordinates with third-party integrators, coordinates technical changes, and currently gives limited Sage support; IT was heavily involved in integrations to Treasury and Security SaaS platform validating third-party integrations.\n- Jade can provide a separate follow-up session with details on IT involvement.\n- Hema: Fred (FP&A) is the right person for budget tracking details.\n- Mike asked whether other IT projects could impact ERP; answer: no major conflicts, only cybersecurity and it should not impact ERP.\n\nOverall: Intro call to establish Mike as ERP lead for IT, align goals, and move execution forward.",
+      "summary": {
+        "truthsNow": [
+          "Board decision communication point is March 19, 2026.",
+          "Go-live target remains January 1, 2027 with aggressive timeline pressure.",
+          "Jade is key IT point of contact for ERP involvement model.",
+          "IT currently has limited Sage support and stronger integration coordination responsibilities.",
+          "No major competing IT projects expected to derail ERP, aside from cybersecurity work that should not conflict."
+        ],
+        "decisions": [
+          "Use a dedicated follow-up session with Jade to define IT involvement and resourcing model.",
+          "Route detailed budget tracking discussion through Fred (FP&A)."
+        ],
+        "risks": [
+          "IT role and resourcing model are not yet explicit, creating execution ambiguity.",
+          "Staffing sufficiency risk could impact delivery confidence for 1/1/27.",
+          "Budget discussion timing at audit committee may delay planning clarity."
+        ],
+        "openQuestions": [
+          "What exact IT capacity (people and time) will be assigned to ERP by function?",
+          "When is the Jade deep-dive session and what decisions must be made in it?",
+          "What budget tracking cadence and ownership does Fred propose before March 19?",
+          "What minimum staffing threshold is required to protect 1/1/27 go-live?"
+        ],
+        "nextConstraints": [
+          "March 19, 2026 board communication is the next executive decision gate.",
+          "Audit committee timing influences budget confirmation and staffing decisions.",
+          "Need explicit IT involvement definition soon to avoid timeline slippage."
+        ],
+        "entityMentions": [
+          "Didier",
+          "Hema Kesh",
+          "Jade Nguyen",
+          "Frederick",
+          "Abivax",
+          "Sage",
+          "ERP Go-Live"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Jade Nguyen",
+          "Review context for Frederick",
+          "Review context for Didier",
+          "Review context for Hema Kesh"
+        ]
+      }
+    },
+    {
+      "id": "20260217-post-11am-review",
+      "createdAt": "2026-02-17T11:00:00.000-05:00",
+      "title": "Post 11:00 AM Meeting - NetSuite Preference, Budget, and Decision Path",
+      "rawText": "Per Camille, Abivax internal team currently prefers NetSuite over SAP because the presentation was more specific to Abivax use cases and internal users preferred ergonomics/UI.\n\nPer Camille (needs breakout in Excel), NetSuite appears significantly cheaper across the board.\n\nBudget still needs confirmation with Hema and Didier. Current assumption: 1-year budget is $1M.\n\n\"DRC\" (French government platform) will be needed. NetSuite can apparently handle this by September 2026. NetSuite uses Avalara with full integration.\n\nFinal decision discussion is scheduled for Thursday, February 26, 2026 with Hema, Trinidad, and KPMG. After that point, Abivax would negotiate directly with the selected vendor. Goal is project start in the first week of April 2026.\n\nQuestion raised: how does KPMG stay involved if NetSuite wins, since NetSuite uses its own implementation team?\n\nCamille's three KPMG involvement paths:\n1. Project management (likely not needed)\n2. Fit and functionality\n3. Change management\n\nRequest made to start proposal work, with focus on option #3 (change management). Camille will send current KPMG contract (deliverables/milestones to ERP selection) and provide a new scope document.\n\nCamille view: Trinidad appears stressed due to staffing and existing finance workload; may need temporary support and dedicated resources. KPMG has previously worked with Abivax and Hema on consolidation over the last couple of years.",
+      "summary": {
+        "truthsNow": [
+          "Internal preference currently leans NetSuite over SAP due to specificity and UX",
+          "Camille states NetSuite is cheaper across the board pending Excel breakout",
+          "Final decision meeting is set for February 26, 2026 with Hema, Trinidad, and KPMG",
+          "Target project start remains first week of April 2026",
+          "KPMG involvement is being reframed toward change management"
+        ],
+        "decisions": [
+          "Request sent to KPMG to prepare a new post-selection scope document",
+          "Recommended KPMG lane to prioritize is change management"
+        ],
+        "risks": [
+          "Budget baseline is not confirmed with Hema and Didier",
+          "Vendor cost comparison may be challenged until Excel breakout is validated",
+          "Trinidad capacity risk could affect timeline and readiness"
+        ],
+        "openQuestions": [
+          "Confirm actual approved 1-year budget with Hema and Didier",
+          "Confirm DRC requirement details and September 2026 readiness assumptions",
+          "Define exact KPMG role if NetSuite implementation is vendor-led"
+        ],
+        "nextConstraints": [
+          "February 26, 2026 decision forum is the immediate decision gate",
+          "Winning-vendor negotiation starts immediately after decision",
+          "Temporary or dedicated finance support may be needed before kickoff"
+        ],
+        "entityMentions": [
+          "Didier",
+          "Hema Kesh",
+          "Trinidad",
+          "Camille Girard",
+          "SAP S/4HANA",
+          "NetSuite",
+          "Abivax",
+          "KPMG",
+          "Consolidation"
+        ],
+        "entityUpdateQueue": [
+          "Review context for Didier",
+          "Review context for Hema Kesh",
+          "Review context for Trinidad",
+          "Review context for Camille Girard"
+        ]
+      }
+    },
+    {
       "id": "20260212-netsuite-demo",
       "createdAt": "2026-02-12T10:30:00.000-05:00",
-      "title": "NetSuite/Oracle Demo — Value Proposition & Scoping",
+      "title": "NetSuite/Oracle Demo Ã¢â‚¬â€ Value Proposition & Scoping",
       "rawText": "NetSuite Customer Success team presentation. Attendees: Mike (remote), Camille Girard, Jade Nguyen, Ben Alaya Aymen from Abivax. Venceslas d'Echallens (NetSuite CS Advisor), Laurent Bailly, Levon, Jamal from NetSuite.\n\nKey Numbers:\n- Implementation: 449,200 EUR (fixed bid)\n- Annual licenses: 134,020 EUR (after 29% discount)\n- 5-year licenses: ~670k EUR\n- Total 5-year: ~1.12M EUR\n\nScope Included:\n- R2R: Global COA, 1 parent + 2 subs (France, USA), multi-GAAP (IFRS, French GAAP, US GAAP), automated consolidation, journal entries\n- P2P: Vendor master, PO, vendor bills, 3-way matching, approval flows (vendors, PO, bills, banks), advanced procurement\n- Design to Build: Item master, inventory management, advanced inventory module\n- French/US localization: Included\n- Users: 42 general access, 17 employee self-serve, 2 specialized view/approve\n\nOut of Scope:\n- OCR/Invoice capture - requires ZoneCapture SuiteApp (separate subscription) - RED FLAG vs SAP Ariba native\n- API integration with NSIP platform\n\nTimeline:\n- Kickoff: April 1, 2026\n- Engage phase: Mar-Apr 26\n- Drive phase: Apr-Aug 26\n- Enable phase (UAT): Aug-Oct 26\n- Convert phase (go-live): Oct-Dec 26\n- Go-live target: Dec 2026 / Jan 2027 - CAN HIT 1/1/27\n\nSupport Hours:\n- Integration bucket: 480 hours\n- Specific development: 1,200 hours\n- PDF printout: 80 hours\n- UAT support: 80 hours\n- Post go-live: 80 hours\n\nMike asked about OCR - they confirmed it's not native, requires separate subscription to ZoneCapture or similar certified SuiteApp.\n\nNext Steps:\n- Friday call with Camille to get SAP/KPMG implementation cost for comparison\n- Discuss Sage sunset timing",
       "summary": {
         "truthsNow": [
@@ -32,15 +659,15 @@
     {
       "id": "20260210-hema-matt-intro",
       "createdAt": "2026-02-10T10:00:00.000-05:00",
-      "title": "Hema/Matt Intro Call — ERP Priorities & P2P Scope",
-      "rawText": "Erp priorities:\n\nLaunching end of 2027 in the US publicly. Need to replace Sage \n\n1. Substituting and replacing core\n2. Sox and speed\n3. Expansion - No procurement system currently - need to expand current core Sage abilities\n4. \n\n\nFly window fix \n\nMatt Epley role:\n- Boots on the ground accountant\n- SEC reporting for NADAQ\n- Financial press release\n- Equity tracking - Certent is owned by Insight \n    - Certant Equity Solution\n    - Matt does all accounting and setup \n    - (IFRS adjustment needing as well booked quarterly)\n    - Certant is a backend tool, not front-facing, used primarily for tracking\n    - Activa (sp?) French company that manages this for users\n        - US side not particular thrilled with it, not the most user friendly\n        - Hema/Matt are basically the only ones that are updating it\n        - Operates like an expense program accounting system for \n        - Audit for sox purposes happening this year\n        - Because these are all French IFRS, they are adjustments and not needed to go into the ERP\n        - Hema thinks that with the new ERP she DOES want it in there because the ERP has to have multi-gap \n\nHema views:\n- No inhouse manufacturing - all done by sequence, thermofisher, and others (Fill gaps)\n- Dont need a manufacturing model right now at all - always should be external\n- When we sell…. Will be a 3rd party logistics provider… and they would give us reporting that feeds into sales. \n- All vendors are GXP compliant\n- Customer level details not needed in ERP either as they can come from the 3rd party logistics provider\n- Need Revenue by product (single journal entry)\n    - Same with AR, aging, etc… \"we are a small biotech and we dont want to take that on\"\n    - \"DO NOT LET SUPPLY CHAIN DERAIL THE IMPLEMENTATION\" \n\nCritical things needed in Hema's view\n    - P2P - feels this is critical\n    - Financial reporting -Journal entries - park/post\n    - Reporting by cost center\n    - Consolidation\n\nchallenge: US and French regulations that we have to deal with.\n\nOverview per Hema:\nDidier sits atop, Hema does \"anything Didier doesn't want to do\", pat maloy - investor relations (fundraising/ir)\n\nUnder Hema - responsible for: FP&A, treasury, tax, accounting \n- Although different entities but look at everything globally\n- French also has finance people (Trinidad - accounting manager that drives consolidation process)\n- Frederick is FP&A lead\n- P2P team - Juliette (reports to Phillipe) and Kimberly Gordon (US contractor). Juliette also has a staff AP person. \n\nP2P Current process:\n- Use docushare - \"glorified Sharepoint\" - Matt\n- Some drop-down currently, but no automation exists \n- Approver limits, etc are basic\n- Need to then go into the SAGE entry module for purchase entries and need to type that in (all hand keyed)\n- ~100 vendors (need to get better volume metrics)\n- LLC ~20 invoices per month but has been increasing\n- Correct sox controls not being met and material weaknesses haven't been addressed - doing it manually is too much (not a material misstatement) - investors aren't worried about it yet so sounds like primarily an audit issue that needs to be cleared. \n- French PWC is the auditor\n- Process right now is initiate a PO (tracked manually)\n- Essential to have PO approvals and monitoring of budgeting.\n- 1099 functionality would be a great benefit - currently doesn't exist for S.A. \n    - Get an extract of all expenses paid to US vendors from France side and then have to do a ton of work \n    - Not a must-have but huge benefit\n    - Currently consult with KPMG Tax for the 1099 process\n  \nHave an IT function mostly driven by France - Kristoph and Jade (pronounced Jahd)\n\nGo live 1/1/27 - need P2P and Financial Reporting\n\nAbout the French team: \n- French team \"very prickly\" -hema. \n- They might be nervous now that Americans are getting hired more and was traditionally a French company\n- Need to be cognizant of the perception\n\nCamille - worth talking about Ariba/Tungsten\n\t- \"spend a lot of time with her\" - Hema \"we did tons of work with her and she has all the stuff you might be looking for like volumes and processes.\" \n\n\nAnother system being used is Adaptive (FP&A tool)\n\nFinancial reporting - exports like my old days and all manual, so want\n\n\nSAP/KPMG discussion:\n\n",
+      "title": "Hema/Matt Intro Call Ã¢â‚¬â€ ERP Priorities & P2P Scope",
+      "rawText": "Erp priorities:\n\nLaunching end of 2027 in the US publicly. Need to replace Sage \n\n1. Substituting and replacing core\n2. Sox and speed\n3. Expansion - No procurement system currently - need to expand current core Sage abilities\n4. \n\n\nFly window fix \n\nMatt Epley role:\n- Boots on the ground accountant\n- SEC reporting for NADAQ\n- Financial press release\n- Equity tracking - Certent is owned by Insight \n    - Certant Equity Solution\n    - Matt does all accounting and setup \n    - (IFRS adjustment needing as well booked quarterly)\n    - Certant is a backend tool, not front-facing, used primarily for tracking\n    - Activa (sp?) French company that manages this for users\n        - US side not particular thrilled with it, not the most user friendly\n        - Hema/Matt are basically the only ones that are updating it\n        - Operates like an expense program accounting system for \n        - Audit for sox purposes happening this year\n        - Because these are all French IFRS, they are adjustments and not needed to go into the ERP\n        - Hema thinks that with the new ERP she DOES want it in there because the ERP has to have multi-gap \n\nHema views:\n- No inhouse manufacturing - all done by sequence, thermofisher, and others (Fill gaps)\n- Dont need a manufacturing model right now at all - always should be external\n- When we sellÃ¢â‚¬Â¦. Will be a 3rd party logistics providerÃ¢â‚¬Â¦ and they would give us reporting that feeds into sales. \n- All vendors are GXP compliant\n- Customer level details not needed in ERP either as they can come from the 3rd party logistics provider\n- Need Revenue by product (single journal entry)\n    - Same with AR, aging, etcÃ¢â‚¬Â¦ \"we are a small biotech and we dont want to take that on\"\n    - \"DO NOT LET SUPPLY CHAIN DERAIL THE IMPLEMENTATION\" \n\nCritical things needed in Hema's view\n    - P2P - feels this is critical\n    - Financial reporting -Journal entries - park/post\n    - Reporting by cost center\n    - Consolidation\n\nchallenge: US and French regulations that we have to deal with.\n\nOverview per Hema:\nDidier sits atop, Hema does \"anything Didier doesn't want to do\", pat maloy - investor relations (fundraising/ir)\n\nUnder Hema - responsible for: FP&A, treasury, tax, accounting \n- Although different entities but look at everything globally\n- French also has finance people (Trinidad - accounting manager that drives consolidation process)\n- Frederick is FP&A lead\n- P2P team - Juliette (reports to Phillipe) and Kimberly Gordon (US contractor). Juliette also has a staff AP person. \n\nP2P Current process:\n- Use docushare - \"glorified Sharepoint\" - Matt\n- Some drop-down currently, but no automation exists \n- Approver limits, etc are basic\n- Need to then go into the SAGE entry module for purchase entries and need to type that in (all hand keyed)\n- ~100 vendors (need to get better volume metrics)\n- LLC ~20 invoices per month but has been increasing\n- Correct sox controls not being met and material weaknesses haven't been addressed - doing it manually is too much (not a material misstatement) - investors aren't worried about it yet so sounds like primarily an audit issue that needs to be cleared. \n- French PWC is the auditor\n- Process right now is initiate a PO (tracked manually)\n- Essential to have PO approvals and monitoring of budgeting.\n- 1099 functionality would be a great benefit - currently doesn't exist for S.A. \n    - Get an extract of all expenses paid to US vendors from France side and then have to do a ton of work \n    - Not a must-have but huge benefit\n    - Currently consult with KPMG Tax for the 1099 process\n  \nHave an IT function mostly driven by France - Kristoph and Jade (pronounced Jahd)\n\nGo live 1/1/27 - need P2P and Financial Reporting\n\nAbout the French team: \n- French team \"very prickly\" -hema. \n- They might be nervous now that Americans are getting hired more and was traditionally a French company\n- Need to be cognizant of the perception\n\nCamille - worth talking about Ariba/Tungsten\n\t- \"spend a lot of time with her\" - Hema \"we did tons of work with her and she has all the stuff you might be looking for like volumes and processes.\" \n\n\nAnother system being used is Adaptive (FP&A tool)\n\nFinancial reporting - exports like my old days and all manual, so want\n\n\nSAP/KPMG discussion:\n\n",
       "summary": {
         "truthsNow": [
           "Go-live 1/1/27; US public launch end of 2027; Sage must be replaced",
-          "ERP priorities: core replacement, SOX/speed, expansion—no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage",
+          "ERP priorities: core replacement, SOX/speed, expansionÃ¢â‚¬â€no P2P today, ~100 vendors, ~20 LLC invoices/mo manual keying into Sage",
           "Hema: no manufacturing module needed; external CMOs only; P2P and financial reporting (park/post, cost center, consolidation) are critical",
           "P2P today: Docushare, manual PO tracking; SOX material weaknesses unaddressed; French PWC auditor",
-          "SAP commercial offer presented: 554k€/5yr, AACV 110.8k€; Finance, Supply Chain, Ariba, BTPEA; valid through end Q1 2026"
+          "SAP commercial offer presented: 554kÃ¢â€šÂ¬/5yr, AACV 110.8kÃ¢â€šÂ¬; Finance, Supply Chain, Ariba, BTPEA; valid through end Q1 2026"
         ],
         "decisions": [
           "Scope excludes manufacturing; external logistics/provider model",
@@ -52,7 +679,7 @@
           "Offer subject to SAP Finance approval; deadline end Q1 2026"
         ],
         "openQuestions": [
-          "Ariba vs Tungsten—Camille has volumes and process data; engage for scoping",
+          "Ariba vs TungstenÃ¢â‚¬â€Camille has volumes and process data; engage for scoping",
           "IFRS adjustments in ERP vs Activa; Hema wants multi-GAAP in new system",
           "1099: must-have or nice-to-have given current KPMG Tax workaround"
         ],

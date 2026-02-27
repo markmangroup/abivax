@@ -31,6 +31,46 @@
       "scope": "Migration",
       "status": "tbd",
       "notes": "Define date; part of quarter leverage."
+    },
+    {
+      "id": "selection-decision-forum",
+      "date": "2026-02-26",
+      "label": "ERP Final Selection Decision Forum",
+      "scope": "Selection",
+      "status": "completed",
+      "notes": "Completed on February 26, 2026. Abivax team aligned on NetSuite as the selected path; post-selection follow-up call with KPMG/Camille planned for Monday to close open items and confirm next steps."
+    },
+    {
+      "id": "audit-committee-erp-slides-due",
+      "date": "2026-03-06",
+      "label": "Audit Committee ERP PPT Requested Finalization",
+      "scope": "Audit Committee",
+      "status": "deadline",
+      "notes": "Adrian requested audit committee slides (overview/timeline/financials) finalized by March 6, 2026."
+    },
+    {
+      "id": "board-meeting",
+      "date": "2026-03-19",
+      "label": "Board Meeting (ERP decision communication checkpoint)",
+      "scope": "Board",
+      "status": "deadline",
+      "notes": "Didier noted March 19 board meeting as ERP decision communication point."
+    },
+    {
+      "id": "netsuite-notify-negotiate",
+      "date": "2026-02-27",
+      "label": "Notify NetSuite and Start Commercial Negotiation Path",
+      "scope": "Post-Selection",
+      "status": "next",
+      "notes": "Mike/Camille to communicate NetSuite selection and align immediate next steps, timing, and negotiation path with early April implementation target."
+    },
+    {
+      "id": "implementation-kickoff-target-apr",
+      "date": "2026-04-01",
+      "label": "ERP Implementation Work Start Target (NetSuite)",
+      "scope": "Implementation",
+      "status": "target",
+      "notes": "Target communicated to Didier and Abivax team: work to begin in earnest in early April 2026."
     }
   ]
 }

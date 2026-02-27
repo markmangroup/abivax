@@ -1,0 +1,629 @@
+{
+  "generatedAt": "2026-02-26T20:51:42.648Z",
+  "status": "ok",
+  "source": {
+    "type": "outlook-email-attachment-export",
+    "folderName": "20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning",
+    "folderPath": "C:\\Users\\mmarkman\\abivax\\temp\\recent-email-attachments\\20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning",
+    "senderHint": "Trinidad Mesa",
+    "subjectHint": "France P2P - Follow-up for ERP planning"
+  },
+  "summary": {
+    "fileCount": 10,
+    "pdfCount": 7,
+    "xlsxCount": 2,
+    "categories": [
+      {
+        "category": "approval-matrix",
+        "count": 2
+      },
+      {
+        "category": "p2p-sop",
+        "count": 2
+      },
+      {
+        "category": "currency-procedure",
+        "count": 1
+      },
+      {
+        "category": "inline-image",
+        "count": 1
+      },
+      {
+        "category": "payment-methods",
+        "count": 1
+      },
+      {
+        "category": "signature-policy",
+        "count": 1
+      },
+      {
+        "category": "system-user-guide",
+        "count": 1
+      },
+      {
+        "category": "vendor-master",
+        "count": 1
+      }
+    ],
+    "categoryHighlights": {
+      "approvalMatrices": [
+        "Approval  Invoices Authorization Matrix.pdf",
+        "Approval PO matrix.pdf"
+      ],
+      "proceduresAndSops": [
+        "ABIVAX_Procédure Achat - étapes 1 à 4 - MAJ 02.2026.pdf",
+        "Saisie en devise.pdf",
+        "Signature policy.pdf",
+        "SOP - Purchase Order and Contract Process.pdf"
+      ],
+      "systemGuides": [
+        "REC0234-V03_DocuShare User Guide.pdf"
+      ],
+      "spreadsheets": [
+        "Moyen de paiement - virements bancaires.xlsx",
+        "Supplier data base cleaning.xlsx"
+      ]
+    },
+    "derivedSignals": {
+      "paymentWorkbook": {
+        "kind": "payment-workbook",
+        "sheetNames": [
+          "Prép écheancier via Sage",
+          "Echéancier au 21-01-2025",
+          "PROCEDURE POINTS GENERAUX",
+          "Prép du fichier CASH-OUT",
+          "Moyen de paiement € - PAS-A-PAS",
+          "Moyen de paiement manuel",
+          "Divers",
+          "AGICAP"
+        ],
+        "manualMentions": 6,
+        "trustpairMentions": 24,
+        "agicapMentions": 19,
+        "sageMentions": 19,
+        "ebicsMentions": 1,
+        "flags": {
+          "cadence10and25": true,
+          "twoCampaignsPerMonth": true,
+          "fourDayLeadTime": true,
+          "preparersJulietteFatma": true,
+          "agicapSheetPresent": true
+        },
+        "clues": [
+          "Vendor payment cadence appears documented as two campaigns per month (10th/25th).",
+          "Workbook references Juliette and Fatma as payment-file preparation roles.",
+          "Workbook references a payment-file preparation lead time (~4 working days before value date).",
+          "Trustpair is explicitly referenced in payment process instructions/workflow points.",
+          "Agicap is explicitly referenced, including a dedicated sheet and signer/validator steps.",
+          "EBICS key/signer workflow is referenced in Agicap-related payment steps.",
+          "Sage payment file / historical remittance handling appears documented in the workbook."
+        ]
+      },
+      "vendorMasterWorkbook": {
+        "kind": "vendor-master-workbook",
+        "sheetNames": [
+          "Supplier list",
+          "STRUCTURE > SP CHART",
+          "IDENTIFICATION TAB",
+          "BANKS TAB",
+          "FREE FIELDS TAB"
+        ],
+        "fields": {
+          "hasCountryField": true,
+          "hasBankField": true,
+          "hasVatField": true,
+          "hasSiretField": true
+        },
+        "tabs": {
+          "supplierList": true,
+          "identification": true,
+          "banks": true,
+          "freeFields": true
+        },
+        "clues": [
+          "Vendor master workbook includes supplier list with country and bank fields.",
+          "Identification tab documents supplier setup field requirements.",
+          "Banks tab documents bank account/bank address completion expectations.",
+          "Free fields tab documents additional supplier metadata guidance."
+        ]
+      }
+    }
+  },
+  "files": [
+    {
+      "fileName": "ABIVAX_Procédure Achat - étapes 1 à 4 - MAJ 02.2026.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/ABIVAX_Procédure Achat - étapes 1 à 4 - MAJ 02.2026.pdf",
+      "ext": "pdf",
+      "sizeBytes": 401825,
+      "modifiedAt": "2026-02-26T09:33:14.039Z",
+      "category": "p2p-sop",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "Approval  Invoices Authorization Matrix.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/Approval  Invoices Authorization Matrix.pdf",
+      "ext": "pdf",
+      "sizeBytes": 40798,
+      "modifiedAt": "2026-02-26T09:33:14.046Z",
+      "category": "approval-matrix",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "Approval PO matrix.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/Approval PO matrix.pdf",
+      "ext": "pdf",
+      "sizeBytes": 31025,
+      "modifiedAt": "2026-02-26T09:33:14.051Z",
+      "category": "approval-matrix",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "image001.png",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/image001.png",
+      "ext": "png",
+      "sizeBytes": 17898,
+      "modifiedAt": "2026-02-26T09:33:14.289Z",
+      "category": "inline-image"
+    },
+    {
+      "fileName": "Moyen de paiement - virements bancaires.xlsx",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/Moyen de paiement - virements bancaires.xlsx",
+      "ext": "xlsx",
+      "sizeBytes": 4677648,
+      "modifiedAt": "2026-02-26T09:33:14.210Z",
+      "category": "payment-methods",
+      "xlsx": {
+        "sheetCount": 8,
+        "sheets": [
+          {
+            "name": "Prép écheancier via Sage",
+            "approxRows": 33,
+            "previewRows": [
+              [
+                "Technique qui ne colle pas avec les besoins d'ABIVAX mais sort du logiciel SAGE comptabilité"
+              ],
+              [
+                "Etat > Echéancier"
+              ]
+            ],
+            "headerCandidates": [
+              "Technique qui ne colle pas avec les besoins d'ABIVAX mais sort du logiciel SAGE comptabilité",
+              "Etat > Echéancier"
+            ]
+          },
+          {
+            "name": "Echéancier au 21-01-2025",
+            "approxRows": 777,
+            "previewRows": [
+              [
+                "Echéancier",
+                "Période du",
+                "01/01/24"
+              ],
+              [
+                "au",
+                "31/12/24"
+              ],
+              [
+                "ABIVAX",
+                "Classé par",
+                "N° compte tiers",
+                "Tenue de compte :"
+              ],
+              [
+                "© Sage - Sage 100 Comptabilité Standard 10.11",
+                "Date de tirage",
+                "21/01/25",
+                "11:29:01",
+                "Page :",
+                "1"
+              ]
+            ],
+            "headerCandidates": [
+              "Echéancier | Période du | 01/01/24",
+              "au | 31/12/24",
+              "ABIVAX | Classé par | N° compte tiers | Tenue de compte :"
+            ]
+          },
+          {
+            "name": "PROCEDURE POINTS GENERAUX",
+            "approxRows": 35,
+            "previewRows": [
+              [
+                "ETAPES",
+                "TIMING",
+                "POINT IT - Trustpair - Process"
+              ],
+              [
+                "1/ Préparation du fichier cash-out",
+                "Manuel",
+                "Etape 1 à 3 : date de valeur - 3 jours"
+              ],
+              [
+                "2/ Envoi du montant Estimatif à la Trésorerie uniquement",
+                "Manuel",
+                "Etape 1 à 3 : date de valeur - 3 jours"
+              ]
+            ],
+            "headerCandidates": [
+              "ETAPES | TIMING | POINT IT - Trustpair - Process",
+              "1/ Préparation du fichier cash-out | Manuel | Etape 1 à 3 : date de valeur - 3 jours",
+              "2/ Envoi du montant Estimatif à la Trésorerie uniquement | Manuel | Etape 1 à 3 : date de valeur - 3 jours"
+            ]
+          },
+          {
+            "name": "Prép du fichier CASH-OUT",
+            "approxRows": 191,
+            "previewRows": [
+              [
+                "A préparer par Juliette et Fatma"
+              ],
+              [
+                "Abivax fait 2 campagnes de règlement par mois : le 10 et le 25"
+              ],
+              [
+                "Le fichier ci-dessous doit être préparé 4 jours ouvrés avant la date de valeur du fichier de paiement"
+              ]
+            ],
+            "headerCandidates": [
+              "A préparer par Juliette et Fatma",
+              "Abivax fait 2 campagnes de règlement par mois : le 10 et le 25",
+              "Le fichier ci-dessous doit être préparé 4 jours ouvrés avant la date de valeur du fichier de paiement"
+            ]
+          },
+          {
+            "name": "Moyen de paiement € - PAS-A-PAS",
+            "approxRows": 147,
+            "previewRows": [
+              [
+                "Importants :"
+              ],
+              [
+                "Les virements en devises sont traités séparément, selon la typologie de la devise."
+              ],
+              [
+                "CONNEXION A MOYEN DE PAIEMENT"
+              ]
+            ],
+            "headerCandidates": [
+              "Importants :",
+              "Les virements en devises sont traités séparément, selon la typologie de la devise.",
+              "CONNEXION A MOYEN DE PAIEMENT"
+            ]
+          },
+          {
+            "name": "Moyen de paiement manuel",
+            "approxRows": 95,
+            "previewRows": [
+              [
+                "Importants :"
+              ],
+              [
+                "Les virements en devises se font à part et par typologie de devise."
+              ],
+              [
+                "CONNEXION A MOYEN DE PAIEMENT"
+              ]
+            ],
+            "headerCandidates": [
+              "Importants :",
+              "Les virements en devises se font à part et par typologie de devise.",
+              "CONNEXION A MOYEN DE PAIEMENT"
+            ]
+          },
+          {
+            "name": "Divers",
+            "approxRows": 135,
+            "previewRows": [
+              [
+                "Chargement des paiements déjà envoyés en banque"
+              ],
+              [
+                "Traitement > Historique des remises > Virements émis ou internationaux"
+              ],
+              [
+                "Double clic sur la ligne à réémettre"
+              ]
+            ],
+            "headerCandidates": [
+              "Chargement des paiements déjà envoyés en banque",
+              "Traitement > Historique des remises > Virements émis ou internationaux",
+              "Double clic sur la ligne à réémettre"
+            ]
+          },
+          {
+            "name": "AGICAP",
+            "approxRows": 11,
+            "previewRows": [
+              [
+                "9/ Signature des virements par le valideur"
+              ],
+              [
+                ">Réception du fichier des virements depuis SAGE MDP",
+                "AGICAP"
+              ],
+              [
+                ">Connexion du valideur avec la clé EBICS",
+                "AGICAP"
+              ]
+            ],
+            "headerCandidates": [
+              "9/ Signature des virements par le valideur",
+              ">Réception du fichier des virements depuis SAGE MDP | AGICAP",
+              ">Connexion du valideur avec la clé EBICS | AGICAP"
+            ]
+          }
+        ]
+      },
+      "derived": {
+        "kind": "payment-workbook",
+        "sheetNames": [
+          "Prép écheancier via Sage",
+          "Echéancier au 21-01-2025",
+          "PROCEDURE POINTS GENERAUX",
+          "Prép du fichier CASH-OUT",
+          "Moyen de paiement € - PAS-A-PAS",
+          "Moyen de paiement manuel",
+          "Divers",
+          "AGICAP"
+        ],
+        "manualMentions": 6,
+        "trustpairMentions": 24,
+        "agicapMentions": 19,
+        "sageMentions": 19,
+        "ebicsMentions": 1,
+        "flags": {
+          "cadence10and25": true,
+          "twoCampaignsPerMonth": true,
+          "fourDayLeadTime": true,
+          "preparersJulietteFatma": true,
+          "agicapSheetPresent": true
+        },
+        "clues": [
+          "Vendor payment cadence appears documented as two campaigns per month (10th/25th).",
+          "Workbook references Juliette and Fatma as payment-file preparation roles.",
+          "Workbook references a payment-file preparation lead time (~4 working days before value date).",
+          "Trustpair is explicitly referenced in payment process instructions/workflow points.",
+          "Agicap is explicitly referenced, including a dedicated sheet and signer/validator steps.",
+          "EBICS key/signer workflow is referenced in Agicap-related payment steps.",
+          "Sage payment file / historical remittance handling appears documented in the workbook."
+        ]
+      }
+    },
+    {
+      "fileName": "REC0234-V03_DocuShare User Guide.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/REC0234-V03_DocuShare User Guide.pdf",
+      "ext": "pdf",
+      "sizeBytes": 1028709,
+      "modifiedAt": "2026-02-26T09:33:14.245Z",
+      "category": "system-user-guide",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "Saisie en devise.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/Saisie en devise.pdf",
+      "ext": "pdf",
+      "sizeBytes": 94777,
+      "modifiedAt": "2026-02-26T09:33:14.253Z",
+      "category": "currency-procedure",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "Signature policy.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/Signature policy.pdf",
+      "ext": "pdf",
+      "sizeBytes": 34737,
+      "modifiedAt": "2026-02-26T09:33:14.260Z",
+      "category": "signature-policy",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "SOP - Purchase Order and Contract Process.pdf",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/SOP - Purchase Order and Contract Process.pdf",
+      "ext": "pdf",
+      "sizeBytes": 647292,
+      "modifiedAt": "2026-02-26T09:33:14.283Z",
+      "category": "p2p-sop",
+      "pdf": {
+        "parser": "pdf-parse-unavailable",
+        "textStatus": "unavailable",
+        "pages": null,
+        "previewText": ""
+      }
+    },
+    {
+      "fileName": "Supplier data base cleaning.xlsx",
+      "relPath": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning/Supplier data base cleaning.xlsx",
+      "ext": "xlsx",
+      "sizeBytes": 466126,
+      "modifiedAt": "2026-02-26T09:33:14.022Z",
+      "category": "vendor-master",
+      "xlsx": {
+        "sheetCount": 5,
+        "sheets": [
+          {
+            "name": "Supplier list",
+            "approxRows": 61,
+            "previewRows": [
+              [
+                "Type",
+                "Country",
+                "Account name",
+                "VAT identifier",
+                "Siret",
+                "Bank"
+              ],
+              [
+                "Supplier",
+                "USA",
+                "ADP"
+              ],
+              [
+                "Supplier",
+                "USA",
+                "American College of Gastrenterology"
+              ],
+              [
+                "Supplier",
+                "USA",
+                "Analysis Group",
+                "Citizens Bank"
+              ],
+              [
+                "Supplier",
+                "USA",
+                "Andrew E. Mulberg, MD, LLC",
+                "TD Bank, NA"
+              ],
+              [
+                "Supplier",
+                "USA",
+                "Aon Consulting, Inc.",
+                "JP Morgan Chase"
+              ]
+            ],
+            "headerCandidates": [
+              "Type | Country | Account name | VAT identifier | Siret | Bank",
+              "Supplier | USA | ADP",
+              "Supplier | USA | American College of Gastrenterology"
+            ]
+          },
+          {
+            "name": "STRUCTURE > SP CHART",
+            "approxRows": 0,
+            "previewRows": [],
+            "headerCandidates": []
+          },
+          {
+            "name": "IDENTIFICATION TAB",
+            "approxRows": 8,
+            "previewRows": [
+              [
+                "Name :",
+                "Supplier name"
+              ],
+              [
+                "Quality:",
+                "Enter a letter to indicate whether it is a legal entity or a natural person.",
+                "Legal Entity",
+                "M",
+                "without spaces or any other character"
+              ],
+              [
+                "Natural Person",
+                "P",
+                "without spaces or any other character"
+              ],
+              [
+                "Group account:",
+                "select the good account if not specified"
+              ],
+              [
+                "Adress details:",
+                "Enter the full supplier's address"
+              ],
+              [
+                "Registration number:"
+              ]
+            ],
+            "headerCandidates": [
+              "Name : | Supplier name",
+              "Quality: | Enter a letter to indicate whether it is a legal entity or a natural person. | Legal Entity | M | without spaces or any other character",
+              "Natural Person | P | without spaces or any other character"
+            ]
+          },
+          {
+            "name": "BANKS TAB",
+            "approxRows": 22,
+            "previewRows": [
+              [
+                "Bank name and Bank account detail need to be completed:",
+                "Bank name and full adress need to be completed:"
+              ]
+            ],
+            "headerCandidates": [
+              "Bank name and Bank account detail need to be completed: | Bank name and full adress need to be completed:"
+            ]
+          },
+          {
+            "name": "FREE FIELDS TAB",
+            "approxRows": 2,
+            "previewRows": [
+              [
+                "First name and Last name:",
+                "used when supplier is a natural person"
+              ],
+              [
+                "DUNS:",
+                "When you have the information, please fill in this field."
+              ]
+            ],
+            "headerCandidates": [
+              "First name and Last name: | used when supplier is a natural person",
+              "DUNS: | When you have the information, please fill in this field."
+            ]
+          }
+        ]
+      },
+      "derived": {
+        "kind": "vendor-master-workbook",
+        "sheetNames": [
+          "Supplier list",
+          "STRUCTURE > SP CHART",
+          "IDENTIFICATION TAB",
+          "BANKS TAB",
+          "FREE FIELDS TAB"
+        ],
+        "fields": {
+          "hasCountryField": true,
+          "hasBankField": true,
+          "hasVatField": true,
+          "hasSiretField": true
+        },
+        "tabs": {
+          "supplierList": true,
+          "identification": true,
+          "banks": true,
+          "freeFields": true
+        },
+        "clues": [
+          "Vendor master workbook includes supplier list with country and bank fields.",
+          "Identification tab documents supplier setup field requirements.",
+          "Banks tab documents bank account/bank address completion expectations.",
+          "Free fields tab documents additional supplier metadata guidance."
+        ]
+      }
+    }
+  ]
+}
