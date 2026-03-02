@@ -12,3 +12,5 @@
 
 ## Suggested Claude Next Step
 - Review the ENGAGE workbook and map any ERP-relevant commitments into `pillar_synthesis.json` / queue items.
+
+- Manual add: \\data/abivax/inbox_assets/2026-03-02-camille-philippe/abivax - audit committee 020326.pptx\\ (from local Downloads, provided by user).
