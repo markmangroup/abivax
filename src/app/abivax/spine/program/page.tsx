@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import { HandoffDraftPanel } from "@/app/abivax/spine/HandoffDraftPanel";
 import {
@@ -90,6 +92,34 @@ function evidenceRequestStatusTone(status: string) {
   return "border-slate-600/40 bg-slate-900/40 text-slate-300";
 }
 
+type SynthesisPillar = {
+  id: string;
+  shortLabel: string;
+  confidenceLevel: string;
+  lastRefreshedAt: string;
+  currentStateSummary: string;
+  keyDecisionsPending: Array<{ decision: string; owner: string }>;
+  nextMoves: string[];
+  waitingOn: string[];
+};
+
+function loadSynthesisPillars(): Map<string, SynthesisPillar> {
+  try {
+    const p = path.join(process.cwd(), "data", "abivax", "pillar_synthesis.json");
+    if (!fs.existsSync(p)) return new Map();
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8")) as { pillars?: SynthesisPillar[] };
+    return new Map((raw.pillars || []).map((sp) => [sp.id, sp]));
+  } catch {
+    return new Map();
+  }
+}
+
+function confidenceTone(level: string) {
+  if (level === "strong") return "border-emerald-700/40 bg-emerald-950/20 text-emerald-300";
+  if (level === "partial") return "border-amber-700/40 bg-amber-950/20 text-amber-300";
+  return "border-slate-600/40 bg-slate-900/30 text-slate-400";
+}
+
 export default async function ProgramPage({
   searchParams,
 }: {
@@ -112,6 +142,7 @@ export default async function ProgramPage({
     loadCftiControlRegister(),
   ]);
 
+  const synthesisPillars = loadSynthesisPillars();
   const milestones = sortMilestones(timeline.milestones);
   const upcoming = milestones.filter((m) => m.date).slice(0, 6);
   const unresolvedAccess = access.requests.filter((r) => !r.status.toLowerCase().includes("granted"));
@@ -303,43 +334,80 @@ export default async function ProgramPage({
               ...bucket.actions.map((a) => ({ key: a.id, lane: a.lane, text: a.item })),
               ...bucket.gaps.map((g) => ({ key: `${g.deckId}-${g.id}`, lane: "Deck Gap", text: g.topic })),
             ].slice(0, 4);
+            const synthesis = synthesisPillars.get(pid);
             return (
-              <article key={pid} className="rounded-lg border border-slate-700/50 bg-slate-900/40 p-3">
+              <article key={pid} className="rounded-lg border border-slate-700/50 bg-slate-900/40 p-3 space-y-3">
+                {/* Header */}
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className={`rounded-full border px-2 py-0.5 text-[11px] ${pillarTone(pid)}`}>
-                    {bucket.shortLabel}
-                  </span>
-                  <div className="flex flex-wrap items-center gap-2 text-[11px]">
-                    {evidenceWaiting > 0 && (
-                      <span className="text-rose-300">{evidenceWaiting} evidence waiting</span>
-                    )}
-                    {summary && (summary.deckGapCount > 0 || summary.accessCount > 0) && (
-                      <span className="text-slate-500">
-                        {summary.deckGapCount > 0 ? `${summary.deckGapCount} gaps` : ""}
-                        {summary.deckGapCount > 0 && summary.accessCount > 0 ? " · " : ""}
-                        {summary.accessCount > 0 ? `${summary.accessCount} access` : ""}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className={`rounded-full border px-2 py-0.5 text-[11px] ${pillarTone(pid)}`}>
+                      {bucket.shortLabel}
+                    </span>
+                    {synthesis && (
+                      <span className={`rounded border px-1.5 py-0.5 text-[10px] uppercase tracking-wide ${confidenceTone(synthesis.confidenceLevel)}`}>
+                        {synthesis.confidenceLevel}
                       </span>
                     )}
                   </div>
+                  <div className="flex flex-wrap items-center gap-2 text-[11px]">
+                    {evidenceWaiting > 0 && (
+                      <span className="text-rose-300">{evidenceWaiting} awaiting</span>
+                    )}
+                    {synthesis && (
+                      <span className="text-slate-600">refreshed {synthesis.lastRefreshedAt}</span>
+                    )}
+                  </div>
                 </div>
-                {bucket.executivePrompt ? (
-                  <p className="mt-2 text-xs text-slate-400 line-clamp-2">{bucket.executivePrompt}</p>
-                ) : null}
-                {baseline?.openItems[0] ? (
-                  <p className="mt-2 text-sm text-slate-200 leading-snug">{baseline.openItems[0]}</p>
-                ) : null}
-                {baseline?.waitingOn[0] ? (
-                  <p className="mt-1.5 text-sm text-amber-300">{baseline.waitingOn[0]}</p>
-                ) : null}
+
+                {/* Synthesis current state — one sentence */}
+                {synthesis?.currentStateSummary && (
+                  <p className="text-xs leading-relaxed text-slate-300">{synthesis.currentStateSummary}</p>
+                )}
+
+                {/* Counts row */}
+                {synthesis && (
+                  <div className="flex flex-wrap gap-3 text-[11px]">
+                    <span className={synthesis.keyDecisionsPending.length > 0 ? "text-amber-300" : "text-slate-500"}>
+                      {synthesis.keyDecisionsPending.length} decision{synthesis.keyDecisionsPending.length !== 1 ? "s" : ""} open
+                    </span>
+                    <span className="text-slate-500">{synthesis.nextMoves.length} next moves</span>
+                    <span className={synthesis.waitingOn.length > 0 ? "text-rose-300/80" : "text-slate-500"}>
+                      {synthesis.waitingOn.length} waiting on
+                    </span>
+                  </div>
+                )}
+
+                {/* Top decision */}
+                {synthesis?.keyDecisionsPending[0] && (
+                  <div className="rounded border border-amber-700/30 bg-amber-950/15 px-2.5 py-2">
+                    <p className="text-[10px] uppercase tracking-wider text-amber-400/70 mb-0.5">Decide</p>
+                    <p className="text-xs text-slate-200 leading-snug">{synthesis.keyDecisionsPending[0].decision}</p>
+                    <p className="mt-0.5 text-[11px] text-slate-500">{synthesis.keyDecisionsPending[0].owner}</p>
+                  </div>
+                )}
+
+                {/* Top waiting on */}
+                {synthesis?.waitingOn[0] && (
+                  <p className="text-xs text-amber-200/70">
+                    <span className="text-slate-600">Waiting: </span>{synthesis.waitingOn[0]}
+                  </p>
+                )}
+
+                {/* Operational signals — collapsed */}
                 {allSignals.length > 0 && (
-                  <ul className="mt-3 space-y-1 border-t border-slate-700/40 pt-2">
-                    {allSignals.map((s) => (
-                      <li key={s.key} className="text-xs">
-                        <span className="text-slate-600">{s.lane}: </span>
-                        <span className="text-slate-300">{s.text}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <details className="border-t border-slate-700/40 pt-2">
+                    <summary className="cursor-pointer text-[10px] uppercase tracking-wider text-slate-600 hover:text-slate-400">
+                      {allSignals.length} queue signal{allSignals.length !== 1 ? "s" : ""}
+                    </summary>
+                    <ul className="mt-2 space-y-1">
+                      {allSignals.map((s) => (
+                        <li key={s.key} className="text-xs">
+                          <span className="text-slate-600">{s.lane}: </span>
+                          <span className="text-slate-300">{s.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
                 )}
               </article>
             );
@@ -601,43 +669,65 @@ export default async function ProgramPage({
                   Budget
                 </Link>
               </div>
-              <div className="mt-3 overflow-x-auto rounded-lg border border-slate-700/40">
-                <table className="w-full min-w-[420px] text-sm">
-                  <tbody>
-                    <tr className="border-b border-slate-700/30">
-                      <td className="px-3 py-2 text-slate-500">SAP 5Y Total</td>
-                      <td className="px-3 py-2 font-medium text-slate-100">{formatEur(budget.sapOffer.total5yr)}</td>
-                    </tr>
-                    <tr className="border-b border-slate-700/30">
-                      <td className="px-3 py-2 text-slate-500">SAP AACV</td>
-                      <td className="px-3 py-2 font-medium text-slate-100">{formatEur(budget.sapOffer.aacv)}</td>
-                    </tr>
-                    <tr>
-                      <td className="px-3 py-2 text-slate-500">SAP Valid Until</td>
-                      <td className="px-3 py-2 font-medium text-amber-300">{budget.sapOffer.validUntil}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <details className="mt-3 rounded border border-slate-700/50 bg-slate-900/20 p-3">
-                <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wider text-slate-500">
-                  Terms and modules
-                </summary>
-                <div className="mt-3 grid gap-3">
-                  <ul className="space-y-1 text-xs text-slate-300">
-                    {budget.sapOffer.terms.map((t) => (
-                      <li key={t}>- {t}</li>
-                    ))}
-                  </ul>
-                  <div className="flex flex-wrap gap-2">
-                    {budget.sapOffer.modules.map((m) => (
-                      <span key={m} className="rounded border border-slate-700/40 bg-slate-900/40 px-2 py-1 text-[11px] text-slate-300">
-                        {m}
-                      </span>
-                    ))}
+              {(() => {
+                const offer = budget.sapOffer ?? budget.sapOfferArchive;
+                const isArchive = !!budget.sapOfferArchive && !budget.sapOffer;
+                if (offer) {
+                  return (
+                    <>
+                      <div className="mt-3 overflow-x-auto rounded-lg border border-slate-700/40">
+                        <table className="w-full min-w-[420px] text-sm">
+                          <tbody>
+                            <tr className="border-b border-slate-700/30">
+                              <td className="px-3 py-2 text-slate-500">{isArchive ? "Archived 5Y Total" : "SAP 5Y Total"}</td>
+                              <td className="px-3 py-2 font-medium text-slate-100">{formatEur(offer.total5yr)}</td>
+                            </tr>
+                            <tr className="border-b border-slate-700/30">
+                              <td className="px-3 py-2 text-slate-500">{isArchive ? "Archived AACV" : "SAP AACV"}</td>
+                              <td className="px-3 py-2 font-medium text-slate-100">{formatEur(offer.aacv)}</td>
+                            </tr>
+                            <tr>
+                              <td className="px-3 py-2 text-slate-500">{isArchive ? "Valid Until" : "SAP Valid Until"}</td>
+                              <td className="px-3 py-2 font-medium text-amber-300">{offer.validUntil}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <details className="mt-3 rounded border border-slate-700/50 bg-slate-900/20 p-3">
+                        <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wider text-slate-500">
+                          Terms and modules
+                        </summary>
+                        <div className="mt-3 grid gap-3">
+                          {(offer.terms ?? []).length > 0 && (
+                            <ul className="space-y-1 text-xs text-slate-300">
+                              {(offer.terms ?? []).map((t) => (
+                                <li key={t}>- {t}</li>
+                              ))}
+                            </ul>
+                          )}
+                          <div className="flex flex-wrap gap-2">
+                            {offer.modules.map((m) => (
+                              <span key={m} className="rounded border border-slate-700/40 bg-slate-900/40 px-2 py-1 text-[11px] text-slate-300">
+                                {m}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </details>
+                    </>
+                  );
+                }
+                return (
+                  <div className="mt-3 space-y-2 text-sm text-slate-300">
+                    {budget.selectionDecision && (
+                      <p><span className="text-slate-500">Selected:</span> {budget.selectionDecision.selectedVendor} ({budget.selectionDecision.decidedOn})</p>
+                    )}
+                    {budget.commercialStatus && (
+                      <p><span className="text-slate-500">Commercial:</span> {budget.commercialStatus.status}{budget.commercialStatus.note ? ` — ${budget.commercialStatus.note}` : ""}</p>
+                    )}
                   </div>
-                </div>
-              </details>
+                );
+              })()}
             </section>
 
             <section className="rounded-xl border border-slate-700/50 bg-slate-900/30 p-4">

@@ -66,6 +66,31 @@ type DeadlineItem = {
   entityId?: string;
 };
 
+type OperatorSummary = {
+  programPhase: string;
+  synthesizedAt: string;
+  nextHardDeadlines: Array<{
+    date: string;
+    event: string;
+    owner: string;
+    daysUntil: number;
+  }>;
+  topDecisions: Array<{
+    decision: string;
+    owner: string;
+    pillar: string;
+    impact: string;
+  }>;
+  topNextMoves: Array<{
+    move: string;
+    pillar: string;
+  }>;
+  topWaitingOn: Array<{
+    item: string;
+    pillar: string;
+  }>;
+};
+
 type TodaySummary = {
   dayLabel: string;
   snapshotLabel: string;
@@ -854,6 +879,73 @@ function buildDeadlineLadder(entities: ReturnType<typeof loadEntities>["entities
   return milestones;
 }
 
+function loadPillarSynthesis(): OperatorSummary | null {
+  try {
+    const filePath = path.join(process.cwd(), "data", "abivax", "pillar_synthesis.json");
+    if (!fs.existsSync(filePath)) return null;
+    const raw = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+    const now = Date.now();
+
+    const nextHardDeadlines = ((raw.programState?.nextHardDeadlines || []) as Array<{ date: string; event: string; owner: string }>)
+      .map((d) => {
+        const ts = Date.parse(d.date);
+        const daysUntil = Number.isNaN(ts) ? 999 : Math.ceil((ts - now) / (24 * 60 * 60 * 1000));
+        return { date: d.date, event: d.event, owner: d.owner, daysUntil };
+      })
+      .sort((a, b) => a.daysUntil - b.daysUntil);
+
+    const pillars: Array<{
+      id: string;
+      shortLabel: string;
+      keyDecisionsPending?: Array<{ decision: string; owner: string; impact: string }>;
+      nextMoves?: string[];
+      waitingOn?: string[];
+    }> = raw.pillars || [];
+
+    const topDecisions: OperatorSummary["topDecisions"] = [];
+    for (const pillar of pillars) {
+      const decisions = pillar.keyDecisionsPending || [];
+      if (decisions.length > 0) {
+        topDecisions.push({
+          decision: decisions[0].decision,
+          owner: decisions[0].owner,
+          pillar: pillar.shortLabel || pillar.id,
+          impact: decisions[0].impact,
+        });
+      }
+      if (topDecisions.length >= 5) break;
+    }
+
+    const topNextMoves: OperatorSummary["topNextMoves"] = [];
+    for (const pillar of pillars) {
+      const moves = pillar.nextMoves || [];
+      if (moves.length > 0) {
+        topNextMoves.push({ move: moves[0], pillar: pillar.shortLabel || pillar.id });
+      }
+      if (topNextMoves.length >= 5) break;
+    }
+
+    const topWaitingOn: OperatorSummary["topWaitingOn"] = [];
+    for (const pillar of pillars) {
+      const waiting = pillar.waitingOn || [];
+      if (waiting.length > 0) {
+        topWaitingOn.push({ item: waiting[0], pillar: pillar.shortLabel || pillar.id });
+      }
+    }
+
+    return {
+      programPhase: (raw.programState?.phase as string) || "",
+      synthesizedAt: (raw._meta?.synthesizedAt as string) || "",
+      nextHardDeadlines,
+      topDecisions,
+      topNextMoves,
+      topWaitingOn,
+    };
+  } catch {
+    return null;
+  }
+}
+
 function buildItLandscapeSnapshot(): ItLandscapeSnapshot {
   const { systems } = loadSystems();
   const { integrations } = loadIntegrations();
@@ -1580,6 +1672,7 @@ export default async function TodayPage() {
   const companyIntelDigest = loadCompanyIntelDigest();
   const workQueue = buildTodayWorkQueueSummary();
   const waterfallUpdate = buildWaterfallUpdateSummary(workQueue);
+  const operatorSummary = loadPillarSynthesis();
   const highPriorityTodayContentActions = (workQueue.todayContentReview.topItems || [])
     .filter((i) => String(i.priority || "").toLowerCase() === "high")
     .slice(0, 2)
@@ -1651,6 +1744,7 @@ export default async function TodayPage() {
         waterfallUpdate,
         rawBody: meeting?.rawBody || meeting?.body || "",
         entityRefs,
+        operatorSummary: operatorSummary ?? undefined,
       }}
     />
   );

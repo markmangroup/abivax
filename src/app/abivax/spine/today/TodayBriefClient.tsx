@@ -202,6 +202,30 @@ type BriefViewModel = {
   };
   rawBody: string;
   entityRefs: EntityRef[];
+  operatorSummary?: {
+    programPhase: string;
+    synthesizedAt: string;
+    nextHardDeadlines: Array<{
+      date: string;
+      event: string;
+      owner: string;
+      daysUntil: number;
+    }>;
+    topDecisions: Array<{
+      decision: string;
+      owner: string;
+      pillar: string;
+      impact: string;
+    }>;
+    topNextMoves: Array<{
+      move: string;
+      pillar: string;
+    }>;
+    topWaitingOn: Array<{
+      item: string;
+      pillar: string;
+    }>;
+  };
 };
 
 type AccomplishmentRecord = {
@@ -1047,6 +1071,124 @@ export default function TodayBriefClient({ brief }: { brief: BriefViewModel }) {
           </p>
         )}
       </section>
+
+      {/* Operator Summary — wired from pillar_synthesis.json */}
+      {brief.operatorSummary && (
+        <section className="rounded-xl border border-violet-700/40 bg-violet-950/15 p-5 text-sm text-slate-200">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-1">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-violet-300">Program Operator Summary</h2>
+            <span className="text-[10px] text-slate-500">
+              {brief.operatorSummary.programPhase} · refreshed {brief.operatorSummary.synthesizedAt}
+            </span>
+          </div>
+
+          {/* Hard Deadlines */}
+          {brief.operatorSummary.nextHardDeadlines.length > 0 && (
+            <div className="mb-4">
+              <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">Hard Deadlines</p>
+              <ul className="space-y-1.5">
+                {brief.operatorSummary.nextHardDeadlines.map((d, i) => (
+                  <li key={i} className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                    <span
+                      className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-medium tabular-nums ${
+                        d.daysUntil <= 0
+                          ? "border-red-500/60 bg-red-950/40 text-red-300"
+                          : d.daysUntil <= 7
+                            ? "border-red-700/50 bg-red-950/30 text-red-300"
+                            : d.daysUntil <= 21
+                              ? "border-amber-700/40 bg-amber-950/25 text-amber-300"
+                              : "border-slate-700/40 bg-slate-900/30 text-slate-400"
+                      }`}
+                    >
+                      {d.daysUntil <= 0 ? "TODAY" : `${d.daysUntil}d`}
+                    </span>
+                    <span className="text-slate-200">{d.event}</span>
+                    <span className="text-[11px] text-slate-500">{d.owner}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Three-column grid: Decisions / Next Moves / Waiting On */}
+          <div className="grid gap-4 sm:grid-cols-3">
+            {brief.operatorSummary.topDecisions.length > 0 && (
+              <div>
+                <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">Decisions Pending</p>
+                <ul className="space-y-2.5">
+                  {brief.operatorSummary.topDecisions.map((d, i) => {
+                    const badgeColors: Record<string, string> = {
+                      P2P: "border-blue-700/40 bg-blue-950/20 text-blue-300",
+                      Reporting: "border-violet-700/40 bg-violet-950/20 text-violet-300",
+                      Controls: "border-amber-700/40 bg-amber-950/20 text-amber-300",
+                      Governance: "border-emerald-700/40 bg-emerald-950/20 text-emerald-300",
+                    };
+                    return (
+                      <li key={i}>
+                        <div className="flex items-start gap-1.5">
+                          <span className={`mt-0.5 shrink-0 rounded border px-1 py-0.5 text-[9px] uppercase tracking-wide ${badgeColors[d.pillar] ?? "border-slate-700/40 text-slate-400"}`}>
+                            {d.pillar}
+                          </span>
+                          <span className="text-xs leading-snug text-slate-200">{d.decision}</span>
+                        </div>
+                        <p className="mt-0.5 pl-7 text-[11px] text-slate-500">{d.owner}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+
+            {brief.operatorSummary.topNextMoves.length > 0 && (
+              <div>
+                <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">Next Moves</p>
+                <ul className="space-y-2.5">
+                  {brief.operatorSummary.topNextMoves.map((m, i) => {
+                    const badgeColors: Record<string, string> = {
+                      P2P: "border-blue-700/40 bg-blue-950/20 text-blue-300",
+                      Reporting: "border-violet-700/40 bg-violet-950/20 text-violet-300",
+                      Controls: "border-amber-700/40 bg-amber-950/20 text-amber-300",
+                      Governance: "border-emerald-700/40 bg-emerald-950/20 text-emerald-300",
+                    };
+                    return (
+                      <li key={i} className="flex items-start gap-1.5">
+                        <span className={`mt-0.5 shrink-0 rounded border px-1 py-0.5 text-[9px] uppercase tracking-wide ${badgeColors[m.pillar] ?? "border-slate-700/40 text-slate-400"}`}>
+                          {m.pillar}
+                        </span>
+                        <span className="text-xs leading-snug text-slate-300">{m.move}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+
+            {brief.operatorSummary.topWaitingOn.length > 0 && (
+              <div>
+                <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500">Waiting On</p>
+                <ul className="space-y-2.5">
+                  {brief.operatorSummary.topWaitingOn.map((w, i) => {
+                    const badgeColors: Record<string, string> = {
+                      P2P: "border-blue-700/40 bg-blue-950/20 text-blue-300",
+                      Reporting: "border-violet-700/40 bg-violet-950/20 text-violet-300",
+                      Controls: "border-amber-700/40 bg-amber-950/20 text-amber-300",
+                      Governance: "border-emerald-700/40 bg-emerald-950/20 text-emerald-300",
+                    };
+                    return (
+                      <li key={i} className="flex items-start gap-1.5">
+                        <span className={`mt-0.5 shrink-0 rounded border px-1 py-0.5 text-[9px] uppercase tracking-wide ${badgeColors[w.pillar] ?? "border-slate-700/40 text-slate-400"}`}>
+                          {w.pillar}
+                        </span>
+                        <span className="text-xs leading-snug text-slate-400">{w.item}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Meetings */}
       {(brief.meetingsToday || []).length > 0 && (

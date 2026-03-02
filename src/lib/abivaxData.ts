@@ -1,4 +1,4 @@
-﻿import { readFileSync } from "fs";
+import { readFileSync } from "fs";
 import path from "path";
 import { z } from "zod";
 
@@ -110,15 +110,36 @@ const TimelineDataSchema = z.object({
   milestones: z.array(MilestoneSchema),
 });
 
+const OfferLikeSchema = z.object({
+  total5yr: z.number(),
+  currency: z.string(),
+  aacv: z.number(),
+  validUntil: z.string(),
+  terms: z.array(z.string()).optional(),
+  modules: z.array(z.string()),
+});
+
 const BudgetDataSchema = z.object({
-  sapOffer: z.object({
-    total5yr: z.number(),
-    currency: z.string(),
-    aacv: z.number(),
-    validUntil: z.string(),
-    terms: z.array(z.string()),
-    modules: z.array(z.string()),
-  }),
+  sapOffer: OfferLikeSchema.optional(),
+  sapOfferArchive: OfferLikeSchema.optional(),
+  selectionDecision: z
+    .object({
+      selectedVendor: z.string(),
+      decidedOn: z.string(),
+      eliminatedVendor: z.string().optional(),
+      eliminationReason: z.string().optional(),
+      selectionAdvisor: z.string().optional(),
+    })
+    .optional(),
+  commercialStatus: z
+    .object({
+      status: z.string(),
+      note: z.string().optional(),
+      openDecisions: z.array(z.string()).optional(),
+      mobilizationTarget: z.string().optional(),
+      goLive: z.string().optional(),
+    })
+    .optional(),
   keyNumbers: z.array(
     z.object({ label: z.string(), value: z.string() })
   ),

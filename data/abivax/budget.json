@@ -1,17 +1,33 @@
 {
-  "sapOffer": {
+  "_note": "Updated 2026-03-01. NetSuite selected 2026-02-26. SAP eliminated. Commercial terms with NetSuite are not yet confirmed — this page will be updated when the contract package arrives.",
+  "selectionDecision": {
+    "selectedVendor": "NetSuite (Oracle)",
+    "decidedOn": "2026-02-26",
+    "eliminatedVendor": "SAP",
+    "eliminationReason": "SAP proposal raised concerns on RACI clarity, governance model, and PMO sufficiency.",
+    "selectionAdvisor": "KPMG (Camille Girard / Aymen)"
+  },
+  "commercialStatus": {
+    "status": "pending",
+    "note": "NetSuite commercial terms package not yet received. Negotiation owner and timeline not confirmed as of 2026-03-01.",
+    "openDecisions": [
+      "Who owns the NetSuite contract negotiation (Hema / Mike)?",
+      "Target contract signing date — must support April mobilization.",
+      "Implementation: NetSuite directly or NetSuite partner?",
+      "KPMG advisory scope for implementation phase vs selection phase."
+    ],
+    "mobilizationTarget": "2026-04-01",
+    "goLive": "2027-01-01"
+  },
+  "sapOfferArchive": {
+    "_note": "SAP offer retained for reference only. SAP was eliminated 2026-02-26.",
     "total5yr": 554119,
     "currency": "EUR",
     "aacv": 110824,
-    "validUntil": "2026-Q1",
-    "terms": [
-      "5-year contract, option to extend to 7",
-      "CPI cap 3.3% from 2027",
-      "2026 quantities reduced for cash flow; adjustable"
-    ],
+    "validUntil": "2026-Q1 (expired / no longer relevant)",
     "modules": [
       "SAP Finance Base",
-      "SAP Finance & Supply Chain (dev, full, light users)",
+      "SAP Finance & Supply Chain",
       "SAP Ariba Central Invoice Management",
       "SAP BTPEA Build Automation",
       "SAP AI Units"
@@ -19,6 +35,9 @@
   },
   "keyNumbers": [
     { "label": "Vendors (current)", "value": "~100" },
-    { "label": "LLC invoices/mo", "value": "~20 (increasing)" }
+    { "label": "France SA invoices/mo", "value": "~est. via P2P RCM" },
+    { "label": "US LLC invoices/mo", "value": "~20 (increasing)" },
+    { "label": "CFTI controls total", "value": "143 (84 Audit, 39 Reporting, 20 P2P)" },
+    { "label": "ERP-signal controls", "value": "9 (must be addressed in blueprint)" }
   ]
 }

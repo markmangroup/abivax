@@ -1,0 +1,391 @@
+{
+  "_meta": {
+    "purpose": "Briefing-quality synthesis of the ERP program. Answers any meeting question in 30 seconds per pillar. Sits above erp_pillar_baselines.json (which holds operational detail) and feeds both live UI pages and PPTX generation.",
+    "version": 1,
+    "synthesizedAt": "2026-02-28",
+    "synthesizedBy": "claude-session",
+    "refreshInstructions": "When new context arrives (emails, meeting notes, vendor decks, SharePoint artifacts, CFTI updates), a Claude session should: (1) read this file + erp_pillar_baselines.json + the new context, (2) update the relevant pillar's currentStateSummary if material facts changed, (3) move items from currentStateUnknown to currentStateKnown if evidence arrived, (4) update keyDecisionsPending and nextMoves, (5) update lastRefreshedAt and synthesizedAt, (6) add a note to changeLog. Do not rewrite everything — only update what actually changed.",
+    "dataRelationships": {
+      "operationalDetail": "data/abivax/erp_pillar_baselines.json",
+      "cftiControls": "data/abivax/cfti_control_register.json",
+      "pillarMetadata": "data/abivax/erp_pillars.json",
+      "processFlows": "data/abivax/process_flow_diagram_payloads.json",
+      "timeline": "data/abivax/timeline.json",
+      "presentations": "data/abivax/presentations.json"
+    }
+  },
+
+  "programState": {
+    "phase": "post-selection / mobilization planning",
+    "currentFocus": "NetSuite selected Feb 26. Program now in the window between selection and implementation kickoff. Priority: lock commercial terms, confirm implementation scope, stand up governance, and close evidence gaps before April mobilization starts.",
+    "goLive": "2026-01-01",
+    "goLiveNote": "Non-negotiable. Tied to US public launch December 2027. Every month of delay compounds risk exponentially.",
+    "nextHardDeadlines": [
+      { "date": "2026-03-06", "event": "Audit Committee ERP Controls Readout", "owner": "Mike / Camille Girard", "deck": "outputs/presentations/Audit Committee ERP Controls Readout.pptx" },
+      { "date": "2026-03-19", "event": "Board Meeting ERP Checkpoint", "owner": "Mike", "deck": "outputs/presentations/Board ERP Readout.pptx" },
+      { "date": "2026-04-01", "event": "Implementation Mobilization Target", "owner": "Mike / Hema / NetSuite", "deck": null }
+    ],
+    "topProgramRisks": [
+      "Commercial negotiation with NetSuite has no confirmed owner or timeline — delays here compress the April mobilization window.",
+      "Implementation scope is not confirmed — no contract, no blueprint start date, no resourcing plan.",
+      "Internal capacity commitments by function are not documented — Finance, IT, and FP&A availability for ERP workstreams unknown.",
+      "ITGC RCM still pending final validation — controls baseline for audit readiness is incomplete.",
+      "Adrian's controls pack not yet received — Audit Committee deck has 3 open data gaps."
+    ],
+    "keyPeople": {
+      "internalSponsors": ["Hema Keshava (CFO / internal ERP sponsor)", "Didier Blondel (CFO / executive sponsor)"],
+      "programOwner": "Mike Markman",
+      "controlsLead": "Adrian Holbrook",
+      "auditLiaison": "Camille Girard",
+      "itLead": "Jade Nguyen",
+      "fpaLead": "Frederick Golly",
+      "kpmgReporting": "Robin Lapous",
+      "cftiContacts": ["Walid Bouassida", "Youness Tyamaz"]
+    }
+  },
+
+  "pillars": [
+    {
+      "id": "p2p",
+      "label": "P2P / Transaction Operations",
+      "shortLabel": "P2P",
+      "programPhase": "active-fact-finding",
+      "confidenceLevel": "partial",
+      "lastRefreshedAt": "2026-02-28",
+
+      "currentStateSummary": "France SA runs a fragmented manual P2P process across Sage 100 (GL/invoicing), Trustpair (vendor validation), Agicap (cash/payments), and DocuShare (documents). No system-enforced approvals. Two vendor payment campaigns per month (10th and 25th). Evidence retention is manual and inconsistent. US LLC P2P baseline not yet documented.",
+      "futureStateSummary": "NetSuite should enforce approval workflows end-to-end (vendor setup through payment), standardize France and US into a common control framework, reduce manual handoffs between Trustpair/Agicap/Sage, and create a traceable audit evidence path by transaction type.",
+      "whyItMatters": "P2P is the highest-density area of ERP-addressable control gaps (5 of 9 ERP-signal controls). It is also where material weakness indicators exist on vendor master and approval workflow. Getting this right is the most direct path from 'manual + risky' to 'system-enforced + auditable'.",
+
+      "cftiControls": {
+        "total": 20,
+        "erpSignal": 5,
+        "outOfScope": 11,
+        "designToComplete": 0,
+        "ongoing": 9,
+        "erpSignalControlIds": ["FR-PTP-04G (PO approval)", "FR-PTP-05G (Review open orders)", "FR-PTP-06G (Two-way match)", "FR-PTP-02G (New vendor setup)", "FR-PTP-14G (Unrecorded liabilities)"]
+      },
+
+      "currentStateKnown": [
+        "France SA payment cycle: two campaigns per month, 10th and 25th. Lead time ~4 working days before value date.",
+        "Juliette and Fatma are named in payment file preparation roles (France).",
+        "Trustpair handles vendor validation. Agicap handles cash disbursement. Sage is the GL. DocuShare holds documents.",
+        "Vendor master data fields documented: country, VAT, Siret, bank fields, identification/free-field tabs.",
+        "Approval workflows are not currently in Sage — manual and outside the system.",
+        "Trinidad P2P bundle received: 10 files including approval matrices, SOPs, payment workbook, DocuShare guide, supplier master cleaning workbook.",
+        "CFTI P2P RCM received and structure confirmed. Control IDs, statuses, and remediation columns exist."
+      ],
+      "currentStateUnknown": [
+        "US LLC P2P current-state flow and evidence practices — Kimberly/Matt responses still pending.",
+        "Exact Trustpair integration requirements for NetSuite — integration feasibility not yet confirmed.",
+        "1099-specific process requirements (US).",
+        "Full end-to-end exception handling path for vendor disputes/holds.",
+        "Where control evidence is retained today across Trustpair / Agicap / bank steps.",
+        "Row-level RCM extraction: which P2P control gaps are ERP-addressable vs. non-ERP remediation vs. management decision."
+      ],
+
+      "erpDesignRequirements": [
+        "System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.",
+        "Two-way and three-way match capability for invoice processing.",
+        "Vendor master with validation integration (Trustpair or equivalent) — confirm if standard app or custom build.",
+        "Role-based access / SOD enforcement on vendor setup and payment authorization.",
+        "Payment run traceable from PO to payment with system-retained evidence (not email-based).",
+        "Entity-level separation: France SA vs US LLC must be independently operable under common framework."
+      ],
+
+      "keyDecisionsPending": [
+        {
+          "decision": "Trustpair integration: standard bundled app vs. custom build vs. paid app in NetSuite",
+          "owner": "NetSuite vendor / Mike",
+          "impact": "Significant scope and cost implications. Flagged in demo feedback. Need vendor response before blueprint."
+        },
+        {
+          "decision": "France vs US P2P: single design vs. intentionally different by entity",
+          "owner": "Mike / Hema / Finance",
+          "impact": "Drives COA design, approval matrix, and reporting rollup approach."
+        },
+        {
+          "decision": "P2P must-have control/workflow list for ERP blueprint",
+          "owner": "Mike (to formalize from RCM)",
+          "impact": "Without this list, implementation scope discussions lack a specific requirements baseline."
+        }
+      ],
+
+      "nextMoves": [
+        "Extract P2P RCM rows and classify into: ERP-addressable / non-ERP remediation / management decision.",
+        "Review Trinidad approval matrix and SOP PDFs — convert to France current-state map with named owners per step.",
+        "Build side-by-side France vs US P2P map once Kimberly/Matt respond.",
+        "Get NetSuite response separating Trustpair integration into custom / standard app / paid app.",
+        "Formalize P2P must-have workflow/control list as ERP design input."
+      ],
+
+      "waitingOn": [
+        "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs",
+        "KPMG: P2P process detail follow-up (Camille / Aymen)",
+        "NetSuite: interface/integration classification response"
+      ],
+
+      "keyPeople": ["Trinidad Mesa (France P2P)", "Juliette (payment prep)", "Fatma (payment prep)", "Kimberly Gordon (US)", "Matt Epley (US)", "Hema Keshava", "KPMG (Camille/Aymen)"],
+      "processVisual": "p2p-france-current-to-future",
+      "relatedDeckSlides": ["audit-committee-erp-controls-202603week", "exec-erp-program-backbone-living"]
+    },
+
+    {
+      "id": "reporting-data",
+      "label": "Reporting / Data Model",
+      "shortLabel": "Reporting",
+      "programPhase": "active-fact-finding",
+      "confidenceLevel": "partial",
+      "lastRefreshedAt": "2026-02-28",
+
+      "currentStateSummary": "French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.",
+      "futureStateSummary": "NetSuite should deliver a stronger quarterly reporting operating model immediately — better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.",
+      "whyItMatters": "Without a reliable reporting data model in NetSuite, Abivax cannot scale toward US public launch reporting requirements. The ERP is the foundation that makes quarterly → monthly → SEC-grade reporting possible without manual bridging and KPMG dependency for every close.",
+
+      "cftiControls": {
+        "total": 39,
+        "erpSignal": 2,
+        "outOfScope": 10,
+        "designToComplete": 11,
+        "ongoing": 18,
+        "erpSignalControlIds": ["FR-FSCP-06 (Post period close journal entries)", "FR-FSCP-05G (Manual journal entries)"]
+      },
+
+      "currentStateKnown": [
+        "KPMG (Robin Lapous) handles consolidation and IFRS adjustments — manual in Excel, no formal documentation.",
+        "Frederick (FP&A): pragmatic target is quarterly reporting quality first; monthly is later-stage.",
+        "Workday Adaptive/Interactive exists but is underused — intended for internal consolidation/intercompany and forecasting/variance visibility.",
+        "Current Sage data model is missing a country tag — impacts reporting dimensions and cost center use cases.",
+        "Milestone billing is not automated — creates reporting/timing visibility limitations.",
+        "CFTI FSCP RCM received and structure confirmed. 39 reporting controls with gap/remediation columns.",
+        "Internal vs KPMG ownership split by reporting step is not yet mapped."
+      ],
+      "currentStateUnknown": [
+        "Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.",
+        "COA / cost center future-state design principles not formalized (global consistency vs entity separation).",
+        "Department reporting expectations not standardized (clinical visibility, G&A/R&D split expectations unclear).",
+        "Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.",
+        "Frederick response on FP&A reporting dimensions and core output needs still awaited.",
+        "Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance."
+      ],
+
+      "erpDesignRequirements": [
+        "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.",
+        "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).",
+        "Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.",
+        "Internal vs KPMG handoff points clearly defined in system design — what NetSuite does vs what KPMG still does.",
+        "Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale."
+      ],
+
+      "keyDecisionsPending": [
+        {
+          "decision": "COA and cost center design: global consistency vs entity-level separation",
+          "owner": "Mike / Frederick / Hema",
+          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test."
+        },
+        {
+          "decision": "Consultant dependency vs in-house scope for bridge and consolidation work",
+          "owner": "Mike / Hema / KPMG",
+          "impact": "Determines how much of the quarterly reporting process gets insourced through ERP vs stays KPMG-managed."
+        },
+        {
+          "decision": "Reporting dimension minimum set (country, entity, cost center, others)",
+          "owner": "Mike / Frederick",
+          "impact": "Must be agreed before ERP data model is designed — cannot be retrofitted post go-live easily."
+        }
+      ],
+
+      "nextMoves": [
+        "Build reporting baseline flow: steps, owners, systems, KPMG handoffs — from Hema/KPMG responses.",
+        "Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.",
+        "Define minimum reporting dimension set with Frederick input.",
+        "Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.",
+        "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs."
+      ],
+
+      "waitingOn": [
+        "Frederick Golly: FP&A reporting dimensions and core output needs response",
+        "Hema: reporting process docs and bridge workflow",
+        "Robin Lapous (KPMG): consolidation/IFRS adjustments process documentation"
+      ],
+
+      "keyPeople": ["Frederick Golly (FP&A)", "Robin Lapous (KPMG)", "Hema Keshava", "Adrian Holbrook", "Matt Epley"],
+      "processVisual": "reporting-fpa-bridge-current-to-future",
+      "relatedDeckSlides": ["audit-committee-erp-controls-202603week", "exec-erp-program-backbone-living"]
+    },
+
+    {
+      "id": "controls-audit",
+      "label": "Controls / Auditability",
+      "shortLabel": "Controls",
+      "programPhase": "active-fact-finding",
+      "confidenceLevel": "partial",
+      "lastRefreshedAt": "2026-02-28",
+
+      "currentStateSummary": "143 CFTI controls reviewed across P2P, FSCP, and IT. 45 out-of-scope for ERP. 9 ERP-signal controls identified. Active remediation tracker exists (CFTI macro/micro views with control IDs and statuses). ITGC RCM is pending final validation. Documented SOX findings and deficiency inventory not yet loaded into program. Evidence retention is fragmented across systems.",
+      "futureStateSummary": "ERP should be governed as a control-remediation program, not just a technology rollout. NetSuite must embed approvals, SOD, and audit evidence retention into system design — not as compensating controls added after go-live. 9 ERP-signal controls are the minimum design checkpoints; all must have named remediation owners before blueprint starts.",
+      "whyItMatters": "Abivax is a US-listed biotech with SOX compliance obligations. The Audit Committee is an active oversight body. If the ERP goes live without addressing documented control deficiencies, the company carries forward known audit risk into a higher-scrutiny environment. This is the pillar where the most reputational and governance risk lives.",
+
+      "cftiControls": {
+        "total": 84,
+        "erpSignal": 9,
+        "outOfScope": 23,
+        "designToComplete": 27,
+        "ongoing": 25,
+        "notStarted": 0,
+        "note": "9 ERP-signal controls span P2P and FSCP. ITGC controls pending final validation from CFTI."
+      },
+
+      "currentStateKnown": [
+        "CFTI FSCP RCM and P2P RCM both received and structure confirmed (control IDs, statuses, remediation columns).",
+        "Remediation tracker exists in CFTI macro/micro views — active tracking of gap categories and owners.",
+        "IT Master Plan (Jade) confirms SOX compliance is an explicit IT workstream for 2026-2027.",
+        "IT org: Didier → Christophe Hennequin → Jade Nguyen / Benjamin / Erwan.",
+        "At least one vendor-management gap is tied to a Sage material weakness finding.",
+        "9 ERP-addressable control gaps identified across P2P and FSCP — these are the minimum ERP blueprint checkpoints."
+      ],
+      "currentStateUnknown": [
+        "Documented SOX findings / deficiency inventory not yet loaded — Hema response still pending.",
+        "Finance vs IT remediation ownership split not confirmed in one place.",
+        "ITGC RCM not yet finalized — expected from CFTI after final validation (was 'next week' as of Feb 25).",
+        "Evidence retention paths for critical flows not mapped.",
+        "Explicit prioritization of 9 ERP-signal controls for blueprint sequencing not yet done.",
+        "Adrian Holbrook's 3-slide controls pack not yet received — open data gap in Audit Committee deck."
+      ],
+
+      "erpDesignRequirements": [
+        "All 9 ERP-signal controls must be assigned a named owner with a dated remediation commitment before ERP blueprint begins.",
+        "Control-by-design: approval workflows, SOD, and audit evidence retention must be designed into ERP configuration — not managed outside the system.",
+        "Each data feed and system integration must have a named owner, monitoring step, and failure escalation path.",
+        "US and France process variants must be rationalized within a common control framework — divergence must be bounded and documented.",
+        "Evidence retention path must be system-retained by transaction type, not manually assembled per audit cycle."
+      ],
+
+      "keyDecisionsPending": [
+        {
+          "decision": "Finance vs IT ownership split on remediation tracking",
+          "owner": "Hema / Jade / Mike",
+          "impact": "Without clear ownership, remediation stalls at the same point it's been stuck. Must be resolved before April mobilization."
+        },
+        {
+          "decision": "Which of the 9 ERP-signal controls are sequenced into Phase 1 blueprint vs later phases",
+          "owner": "Mike / Adrian / Implementation team",
+          "impact": "Determines whether the ERP addresses the audit committee's core concerns at go-live or defers them."
+        },
+        {
+          "decision": "Evidence repository design: where does control evidence live post-ERP (NetSuite native vs separate tool)",
+          "owner": "Mike / Jade / KPMG",
+          "impact": "Audit evidence repository is a pre-condition for audit readiness — must be designed, not assumed."
+        }
+      ],
+
+      "nextMoves": [
+        "Follow up on ITGC RCM from CFTI (was expected 'next week' as of Feb 25).",
+        "Receive Adrian's 3-slide controls pack — this is an open data gap in the Audit Committee deck.",
+        "Extract deficiency inventory from Hema/CFTI responses and classify: ERP-addressable / non-ERP remediation / management decision.",
+        "Map 9 ERP-signal controls to named owners and draft dated remediation commitments.",
+        "Use CFTI tracker structure as baseline format for audit committee reporting."
+      ],
+
+      "waitingOn": [
+        "Hema: SOX findings, remediation tracker location, control narratives",
+        "Jade: IT control gaps, interface monitoring docs, admin ownership matrix",
+        "CFTI (Walid/Youness): ITGC RCM final validation",
+        "Adrian Holbrook: 3-slide controls pack (open data gap — Audit Committee deck)"
+      ],
+
+      "keyPeople": ["Adrian Holbrook (controls lead)", "Camille Girard (Audit Committee liaison)", "Hema Keshava", "Jade Nguyen", "Walid Bouassida (CFTI)", "Youness Tyamaz (CFTI)"],
+      "processVisual": "controls-remediation-current-to-future",
+      "relatedDeckSlides": ["audit-committee-erp-controls-202603week", "exec-erp-program-backbone-living"]
+    },
+
+    {
+      "id": "program-governance",
+      "label": "Program Governance & Mobilization",
+      "shortLabel": "Governance",
+      "programPhase": "post-selection",
+      "confidenceLevel": "strong",
+      "lastRefreshedAt": "2026-02-28",
+
+      "currentStateSummary": "NetSuite selected Feb 26, 2026 following a structured Sep 2025–Feb 2026 selection process with KPMG support and vendor demos. Program is now in the post-selection window. No contract signed, no implementation scope confirmed, no implementation team assembled. April 2026 mobilization is the target.",
+      "futureStateSummary": "By April 2026: commercial terms agreed with NetSuite, implementation scope confirmed, KPMG advisory role defined, internal capacity committed by function, governance cadence established. From April through Jan 1, 2027: blueprint → build → test → go-live with weekly governance and monthly exec/board updates.",
+      "whyItMatters": "The implementation mobilization window is 6–8 weeks. Every week lost between now and April creates timeline compression in the 9-month implementation window. The go-live date is non-negotiable — scope decisions and resourcing commitments are the only variables.",
+
+      "keyMilestones": [
+        { "date": "2026-02-26", "event": "NetSuite selection decision", "status": "completed" },
+        { "date": "2026-03-06", "event": "Audit Committee ERP Controls Readout", "status": "pending", "owner": "Mike / Camille" },
+        { "date": "2026-03-19", "event": "Board Meeting ERP Checkpoint", "status": "pending", "owner": "Mike" },
+        { "date": "2026-04-01", "event": "Implementation Mobilization Start (target)", "status": "pending", "owner": "Mike / Hema / NetSuite" },
+        { "date": "2027-01-01", "event": "Go-Live", "status": "pending", "owner": "Program" }
+      ],
+
+      "currentStateKnown": [
+        "NetSuite selected. Competing vendor was SAP — SAP eliminated due to proposal/RACI concerns and governance/PMO sufficiency questions.",
+        "KPMG played advisory role in selection (Camille Girard / Aymen). Implementation advisory role not yet confirmed.",
+        "IT org confirmed: Didier → Christophe Hennequin → Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP in 2026-2027 framing.",
+        "Implementation vendor: NetSuite directly or NetSuite partner — not yet determined.",
+        "Governance model target: weekly program governance, monthly exec update, board-cycle readout, milestone-triggered escalation."
+      ],
+      "currentStateUnknown": [
+        "Commercial negotiation terms and owner — no confirmed negotiation lead or timeline.",
+        "Implementation scope: not confirmed. No contract, no blueprint start date.",
+        "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team — roles not separated.",
+        "Internal capacity commitments by function — Finance, IT, FP&A availability for ERP workstreams unknown.",
+        "Executive decision rights model — who can approve scope changes, escalate blockers, authorize budget."
+      ],
+
+      "keyDecisionsPending": [
+        {
+          "decision": "Commercial negotiation: who owns the NetSuite contract negotiation and by when",
+          "owner": "Hema / Mike",
+          "blockedSince": "2026-02-26",
+          "impact": "Blocks implementation start. Every week without a signed contract is a week lost from the 9-month window."
+        },
+        {
+          "decision": "Implementation scope confirmation: which modules, which entities, which integrations in Phase 1",
+          "owner": "Mike / Hema / NetSuite",
+          "blockedSince": "2026-02-26",
+          "impact": "Without confirmed scope, resourcing plan, KPMG advisory scope, and internal commitments are all floating."
+        },
+        {
+          "decision": "KPMG implementation advisory engagement: scope and owner",
+          "owner": "Hema / Mike",
+          "blockedSince": "2026-02-26",
+          "impact": "KPMG knows the Abivax control environment. Whether they play an advisory role in implementation affects both quality and timeline."
+        },
+        {
+          "decision": "Executive decision rights model",
+          "owner": "Hema / Didier / Mike",
+          "blockedSince": "2026-02-26",
+          "impact": "Without defined decision rights, governance cadence is performative. Escalation paths must be clear before the first implementation meeting."
+        }
+      ],
+
+      "nextMoves": [
+        "Draft post-selection notification email to Camille (cc Hema): confirm owners, negotiation path, and timing toward April work start.",
+        "Confirm internal capacity commitments by function before April — Finance, IT, FP&A.",
+        "Separate KPMG selection-phase contacts from implementation-phase advisory contacts.",
+        "Establish governance cadence: weekly program, monthly exec, board-cycle readout.",
+        "Present governance model at Board (Mar 19) and Audit Committee (Mar 6) meetings."
+      ],
+
+      "waitingOn": [
+        "NetSuite: commercial terms package",
+        "Hema: internal capacity commitments, KPMG advisory scope decision",
+        "Board / Audit Committee: endorse governance model and control-by-design principle"
+      ],
+
+      "keyPeople": ["Hema Keshava", "Didier Blondel", "Camille Girard (Audit Cmte)", "Jade Nguyen (IT)", "Mike Markman"],
+      "processVisual": null,
+      "relatedDeckSlides": ["board-erp-readout-20260319", "exec-erp-program-backbone-living", "audit-committee-erp-controls-202603week"]
+    }
+  ],
+
+  "changeLog": [
+    {
+      "date": "2026-02-28",
+      "by": "claude-session",
+      "summary": "Initial synthesis created from erp_pillar_baselines.json, cfti_control_register.json, erp_pillars.json, process_flow_diagram_payloads.json, timeline.json, and presentations.json. All four pillars populated. Program governance section added. Confidence levels set to 'partial' across P2P, Reporting, and Controls — all three are in active fact-finding phase. Governance set to 'strong' given selection decision is confirmed."
+    }
+  ]
+}

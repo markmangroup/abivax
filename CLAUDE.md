@@ -55,7 +55,11 @@ Priority surfaces:
 - `Program` (pillar command center)
 - `Presentations` (exec/board/audit outputs)
 
-Person pages are moving away from a generic "wiki" model toward a `Stakeholder Brief / Chief-of-Staff Brief` model.
+Person pages are moving toward a `Stakeholder Brief / Chief-of-Staff Brief` model (away from generic wiki display).
+
+The key strategic gap is **synthesis**: the app excels at displaying data but lacks a canonical "what to do in the next 4 hours" layer. Decision Radar, unified action list, and Deadline Ladder are the missing operator-layer constructs.
+
+See `ARCHITECTURE.md` for a full map of data files → pages → strategic status.
 
 ## Collaboration Protocol (Claude + Codex)
 
@@ -74,11 +78,15 @@ Claude outputs should be:
 
 ## Current Facts (Keep Updated)
 
-- ERP selection decision made on `2026-02-26`: Abivax aligned to proceed with `NetSuite`
-- Program now moves into post-selection communication / negotiation / mobilization planning
-- Target for work to begin in earnest: `early April 2026`
-- Board meeting checkpoint: `2026-03-19`
-- Audit committee ERP slides target: `2026-03-06`
+- ERP selection decision made `2026-02-26`: NetSuite selected. Program now in post-selection / mobilization planning.
+- Implementation mobilization target: `April 2026`; go-live: `Jan 1, 2027` (non-negotiable; tied to US public launch Dec 2027)
+- Board meeting ERP checkpoint: `2026-03-19` — deck at `outputs/Board_ERP_Readout_Mar19_2026.pptx`
+- Audit Committee ERP controls readout: `2026-03-06` — deck at `outputs/Audit_Committee_ERP_Controls_Mar2026.pptx`
+- Living Executive Deck (update weekly): `outputs/ERP_Program_Living_Executive_Deck.pptx`
+- CFTI control register: 143 controls total — 84 Controls/Audit, 39 Reporting/Data, 20 P2P; 45 out-of-scope, 9 ERP-signal
+- Three open data gaps in Audit deck: (1) Audit Cmte meeting date confirmation with Camille, (2) Commercial/timeline package from NetSuite, (3) Adrian's 3-slide controls pack
+- Five open data gaps in Living Exec deck: P2P volume baseline, Reporting bridge detail, Controls deficiency inventory, Governance/resourcing model, Executive visuals
+- Key people: Hema Keshava (CFO / internal ERP sponsor), Didier Blondel (CFO / sponsor), Adrian Holbrook (controls), Camille Girard (Audit Cmte liaison)
 
 ## Mike Preferences (Important)
 
@@ -88,6 +96,17 @@ Claude outputs should be:
 - Fact-based writing over interpretive/fluffy language
 - Wants "what changed / where it landed / what to do next" visibility
 
+## Quick Orientation for New Context Windows
+
+1. Read this file first (~2 min)
+2. Read `ARCHITECTURE.md` for full data/page/strategic map (~5 min)
+3. Read `data/abivax/PLAN.md` for near-term roadmap
+4. Check `data/abivax/claude_lane_queue.json` for active Claude tasks
+5. Check `collab/claude/MIKE_DESIGN_PREFERENCES.md` before writing or designing anything
+
+With those five files, you have complete operating context without re-reading source code.
+
 ## Last Updated
 
 - `2026-02-26` (Codex) - rewritten for current architecture and Claude sidecar role
+- `2026-02-28` (Claude) - added synthesis gap, presentation status, open data gaps, key people, ARCHITECTURE.md reference, quick orientation guide

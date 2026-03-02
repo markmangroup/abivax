@@ -1,18 +1,59 @@
 {
-  "generatedAt": "2026-02-26T20:58:28.146Z",
-  "purpose": "Claude sidecar queue for writing/design critique lane (non-production pipeline)",
+  "generatedAt": "2026-02-28T00:00:00.000Z",
+  "purpose": "Claude sidecar queue — synthesis, writing, and design tasks. Claude sessions ARE the pipeline agents for synthesis work. Read this file at every session start after CLAUDE.md and ARCHITECTURE.md.",
+  "synthesisPrinciple": "Claude sessions do the judgment work that code does badly. When new context arrives (emails, decks, meeting notes), a Claude session reads it, updates pillar_synthesis.json and erp_pillar_baselines.json, and logs what changed. The UI displays those files. No rigid pipeline needed.",
   "summary": {
-    "itemCount": 5,
+    "itemCount": 8,
     "byLane": {
+      "synthesis": 3,
       "writing": 2,
       "design-critique": 3
-    },
-    "waterfallState": {
-      "reviewNowCount": 1,
-      "tuningTargetCount": 3
     }
   },
   "items": [
+    {
+      "id": "claude-synthesis-refresh-p2p-1",
+      "lane": "synthesis",
+      "priority": "high",
+      "title": "Refresh P2P pillar synthesis when new context arrives",
+      "why": "P2P is in active fact-finding. Several open items (US LLC flow, Trustpair integration feasibility, RCM row extraction) are blocking the must-have control/workflow list that feeds ERP blueprint.",
+      "triggerWhen": ["New email from Kimberly Gordon or Matt Epley", "KPMG P2P response received", "Trinidad RCM extraction done", "NetSuite integration classification response received"],
+      "files": [
+        "data/abivax/pillar_synthesis.json",
+        "data/abivax/erp_pillar_baselines.json",
+        "data/abivax/cfti_control_register.json",
+        "data/abivax/process_flow_diagram_payloads.json"
+      ],
+      "promptHint": "Read the P2P entry in pillar_synthesis.json and erp_pillar_baselines.json. Read the new context. Move confirmed items from currentStateUnknown to currentStateKnown. Update nextMoves and waitingOn. Update synthesizedAt. Add a changeLog entry. Do not rewrite fields that didn't change."
+    },
+    {
+      "id": "claude-synthesis-refresh-reporting-1",
+      "lane": "synthesis",
+      "priority": "high",
+      "title": "Refresh Reporting/Data pillar synthesis when new context arrives",
+      "why": "Reporting is blocked on Frederick's dimension response, Hema's process docs, and Robin Lapous (KPMG) consolidation flow. COA design decision is the highest-stakes unresolved item.",
+      "triggerWhen": ["Frederick Golly response on FP&A dimensions received", "Hema provides reporting process docs", "Robin Lapous KPMG contact made", "FSCP RCM row extraction complete"],
+      "files": [
+        "data/abivax/pillar_synthesis.json",
+        "data/abivax/erp_pillar_baselines.json",
+        "data/abivax/cfti_control_register.json"
+      ],
+      "promptHint": "Read the reporting-data entry in pillar_synthesis.json. Read the new context. Update currentStateKnown, currentStateUnknown, keyDecisionsPending, nextMoves. Add a changeLog entry."
+    },
+    {
+      "id": "claude-synthesis-refresh-controls-1",
+      "lane": "synthesis",
+      "priority": "high",
+      "title": "Refresh Controls/Audit pillar synthesis when new context arrives",
+      "why": "Controls is blocked on ITGC RCM, Hema SOX findings, Jade IT gaps, and Adrian's 3-slide pack. The 9 ERP-signal controls need named owners before April mobilization.",
+      "triggerWhen": ["ITGC RCM received from CFTI", "Hema SOX findings received", "Jade IT control docs received", "Adrian 3-slide controls pack received"],
+      "files": [
+        "data/abivax/pillar_synthesis.json",
+        "data/abivax/erp_pillar_baselines.json",
+        "data/abivax/cfti_control_register.json"
+      ],
+      "promptHint": "Read the controls-audit entry in pillar_synthesis.json. Read the new context. Update currentStateKnown, currentStateUnknown. Map any new deficiencies into ERP-addressable / non-ERP / management-decision buckets. Update nextMoves. Add a changeLog entry. Also flag whether the Audit Committee deck open data gaps should be marked closed."
+    },
     {
       "id": "claude-writing-stakeholder-briefs-1",
       "lane": "writing",

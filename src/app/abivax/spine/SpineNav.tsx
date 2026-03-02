@@ -10,20 +10,17 @@ const operateItems: NavItem[] = [
   { href: "/abivax/spine/today", label: "Today", exact: false },
   { href: "/abivax/spine/program", label: "Program", exact: false },
   { href: "/abivax/spine/presentations", label: "Presentations", exact: false },
-  { href: "/abivax/spine/company", label: "Company Intel", exact: false },
-  { href: "/abivax/spine", label: "Overview", exact: true },
 ];
 
 const controlRoomItems: NavItem[] = [
   { href: "/abivax/spine/search", label: "Wiki", exact: false },
-  { href: "/abivax/spine/system-map", label: "System Map", exact: false },
   { href: "/abivax/spine/process-flows", label: "Process Flows", exact: false },
-  { href: "/abivax/spine/agents", label: "Agents", exact: false },
   { href: "/abivax/spine/notes", label: "Notes", exact: false },
-  { href: "/abivax/spine/meetings", label: "Meetings", exact: false },
-  { href: "/abivax/spine/people", label: "People", exact: false },
   { href: "/abivax/spine/timeline", label: "Timeline", exact: false },
-  { href: "/abivax/spine/budget", label: "Budget", exact: false },
+  { href: "/abivax/spine/people", label: "People", exact: false },
+  { href: "/abivax/spine/company", label: "Company Intel", exact: false },
+  { href: "/abivax/spine/system-map", label: "System Map", exact: false },
+  { href: "/abivax/spine/budget", label: "Commercial", exact: false },
 ];
 
 export function SpineNav() {
