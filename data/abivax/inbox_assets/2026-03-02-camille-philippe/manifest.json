@@ -1,0 +1,33 @@
+﻿{
+    "capturedAt":  "2026-03-02T12:32:38.1535604-05:00",
+    "source":  "Outlook inbox pull via scripts/export_recent_emails.ps1",
+    "emails":  [
+                   {
+                       "sender":  "Girard, Camille",
+                       "received":  "2026-03-02T12:26:52.4640000",
+                       "subject":  "RE: ERP Slides -\u003e Request -\u003e Due March 6th ",
+                       "hasAttachments":  false,
+                       "attachments":  [
+
+                                       ],
+                       "note":  "No business document attachment found in this email (image/signature only)."
+                   },
+                   {
+                       "sender":  "Philippe Goncalves",
+                       "received":  "2026-03-02T12:24:20.8550000",
+                       "subject":  "commitment",
+                       "hasAttachments":  true,
+                       "attachments":  [
+                                           "ENGAGE_2025 - 31.12.2025.xlsx",
+                                           "image001.png"
+                                       ],
+                       "savedDocs":  [
+                                         "ENGAGE_2025 - 31.12.2025.xlsx"
+                                     ],
+                       "note":  "XLSX saved for Claude review."
+                   }
+               ],
+    "filesSaved":  [
+                       "ENGAGE_2025 - 31.12.2025.xlsx"
+                   ]
+}
