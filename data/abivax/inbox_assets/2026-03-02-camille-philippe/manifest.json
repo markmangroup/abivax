@@ -28,6 +28,16 @@
                    }
                ],
     "filesSaved":  [
-                       "ENGAGE_2025 - 31.12.2025.xlsx"
-                   ]
+                       "ENGAGE_2025 - 31.12.2025.xlsx",
+                       "abivax - audit committee 020326.pptx"
+                   ],
+    "manualAdditions":  [
+                            {
+                                "file":  "abivax - audit committee 020326.pptx",
+                                "source":  "User-saved local download",
+                                "addedAt":  "2026-03-02T12:35:21.8762435-05:00",
+                                "relatedSender":  "Girard, Camille",
+                                "note":  "User placed file in Downloads and Codex ingested into repo for Claude pickup."
+                            }
+                        ]
 }
