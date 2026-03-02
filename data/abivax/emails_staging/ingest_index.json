@@ -1,0 +1,11 @@
+﻿{
+    "lastRunAt":  "2026-03-02T09:46:13.9843955-05:00",
+    "windowStart":  "2026-02-16T09:46:13.9843955-05:00",
+    "windowEnd":  "2026-03-02T09:46:13.9843955-05:00",
+    "totalEmails":  166,
+    "receivedCount":  124,
+    "sentCount":  42,
+    "files":  [
+                  "emails_2026-03-02.json"
+              ]
+}
