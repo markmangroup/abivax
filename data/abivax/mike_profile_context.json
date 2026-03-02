@@ -1,0 +1,65 @@
+{
+  "asOf": "2026-03-02",
+  "owner": "mike-markman",
+  "purpose": "Reusable profile context for HR bios, stakeholder introductions, and leadership communications.",
+  "sources": [
+    {
+      "path": "collab/external/mike-markman-professional-os/ABIVAX_NetSuite_ERP_Implementation_Writeup.md",
+      "notes": "Primary structured source for Abivax interview-positioning and ERP-relevant career evidence."
+    }
+  ],
+  "profile": {
+    "name": "Mike Markman",
+    "currentRole": "VP, Global ERP Lead",
+    "company": "Abivax",
+    "yearsExperience": "20+",
+    "focusAreas": [
+      "ERP implementation leadership",
+      "Finance transformation",
+      "Global process standardization",
+      "Data and analytics platform architecture",
+      "Controls and governance execution"
+    ],
+    "erpSystems": [
+      "SAP",
+      "NetSuite",
+      "PeopleSoft",
+      "Dynamics GP",
+      "QuickBooks"
+    ],
+    "headlineEvidence": [
+      "Co-designed and implemented SAP as a global financial system of record at KKR (2010-2013).",
+      "Built NetSuite-formatted integration workflows in a production operating platform context (Laurel AG, 2024).",
+      "Architected enterprise cloud data platforms integrating SAP/PeopleSoft/Workday/Salesforce at IQVIA (2022-2024).",
+      "Led a 400-person global financial shared services organization and transformation programs.",
+      "Delivered major close-cycle, reporting, and cost-efficiency improvements across finance operations."
+    ],
+    "industryContext": [
+      "Life sciences and healthcare operating context",
+      "Public-company readiness and controls orientation",
+      "Cross-border finance and operating model alignment"
+    ],
+    "leadershipStyle": [
+      "Operator-focused execution",
+      "Cross-functional alignment across Finance, IT, and Operations",
+      "Measurable outcomes with governance discipline"
+    ]
+  },
+  "hrBioTemplates": {
+    "short": "Mike Markman is Abivax's VP, Global ERP Lead, responsible for leading the end-to-end ERP transformation to a unified NetSuite platform across US and France operations.",
+    "medium": "Mike Markman is Abivax's VP, Global ERP Lead, responsible for the company's ERP transformation from vendor selection through implementation and go-live. He brings 20+ years of experience in ERP, finance operations, and enterprise transformation, including SAP system-of-record implementation, NetSuite integration work, and leadership of global shared-services and analytics programs.",
+    "long": "Mike Markman is Abivax's VP, Global ERP Lead, responsible for the full ERP program lifecycle from selection through go-live and stabilization. He brings 20+ years of experience leading finance and systems transformations, including co-designing SAP as a global financial system of record, building NetSuite integration workflows, and architecting enterprise data platforms that integrate multiple ERP and operational systems. His background combines financial controls rigor, cross-functional program leadership, and practical execution across Finance, IT, and Operations."
+  },
+  "usageGuidance": {
+    "do": [
+      "Use concrete implementation evidence instead of generic leadership claims.",
+      "Anchor bios to Abivax outcomes: unified platform, controls strengthening, operating model readiness.",
+      "Adapt length based on audience: HR announcement, executive agenda, board materials."
+    ],
+    "avoid": [
+      "Inflating unverified metrics not tied to documented source files.",
+      "Over-indexing on non-Abivax examples without explaining relevance.",
+      "Mixing Board and Audit Committee timelines in a single sentence."
+    ]
+  }
+}
