@@ -25,11 +25,26 @@
                                          "ENGAGE_2025 - 31.12.2025.xlsx"
                                      ],
                        "note":  "XLSX saved for Claude review."
+                   },
+                   {
+                       "sender":  "Philippe Goncalves",
+                       "received":  "2026-03-02T12:34:12.2870000",
+                       "subject":  "Trustpair data supplier bases",
+                       "hasAttachments":  true,
+                       "attachments":  [
+                                           "Base supplier Trustpair.xlsx",
+                                           "image001.png"
+                                       ],
+                       "savedDocs":  [
+                                         "Base supplier Trustpair.xlsx"
+                                     ],
+                       "note":  "Trustpair supplier-base workbook saved for Claude review."
                    }
                ],
     "filesSaved":  [
                        "ENGAGE_2025 - 31.12.2025.xlsx",
-                       "abivax - audit committee 020326.pptx"
+                       "abivax - audit committee 020326.pptx",
+                       "Base supplier Trustpair.xlsx"
                    ],
     "manualAdditions":  [
                             {
