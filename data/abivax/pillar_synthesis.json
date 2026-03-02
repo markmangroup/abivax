@@ -55,8 +55,8 @@
       "confidenceLevel": "partial",
       "lastRefreshedAt": "2026-03-02",
 
-      "currentStateSummary": "France SA runs a fragmented manual P2P process across Sage 100 (GL/invoicing), Trustpair (vendor validation), Agicap (cash/payments), and DocuShare (documents). No system-enforced approvals. Two vendor payment campaigns per month (10th and 25th). Evidence retention is manual and inconsistent. US LLC P2P baseline not yet documented.",
-      "futureStateSummary": "NetSuite should enforce approval workflows end-to-end (vendor setup through payment), standardize France and US into a common control framework, reduce manual handoffs between Trustpair/Agicap/Sage, and create a traceable audit evidence path by transaction type.",
+      "currentStateSummary": "France SA processes ~4,000 invoices/year and 650 POs across four disconnected systems (Sage 100, DocuShare, Trustpair, Concur) with zero system-to-system feeds — all handoffs are manual, performed by Juliette and Fatma via a shared invoice inbox. $200M+ in contract commitments with no systematic tracking. No vendor onboarding process. No Delegation of Authority matrix. Approval workflows exist only on paper. Trustpair handles vendor bank validation per wire transfer (<$15K/year) — a load-bearing control that Sage cannot perform. Two payment campaigns/month (10th and 25th). US LLC P2P baseline still pending.",
+      "futureStateSummary": "Phase 1 ERP (SOX-first, per Trinidad): NetSuite closes the 5 ERP-signal P2P control gaps by design — approval workflows, commitment register, vendor setup process, two-way match, audit evidence retention. Automation and efficiency improvements are Phase 2+ scope (post Jan 1, 2027). Trustpair integration is a must-have. DoA matrix is a pre-ERP governance deliverable. Contractor PO policy is a pre-blueprint decision.",
       "whyItMatters": "P2P is the highest-density area of ERP-addressable control gaps (5 of 9 ERP-signal controls). It is also where material weakness indicators exist on vendor master and approval workflow. Getting this right is the most direct path from 'manual + risky' to 'system-enforced + auditable'.",
 
       "cftiControls": {
@@ -69,30 +69,47 @@
       },
 
       "currentStateKnown": [
-        "France SA payment cycle: two campaigns per month, 10th and 25th. Lead time ~4 working days before value date.",
-        "Juliette and Fatma are named in payment file preparation roles (France).",
-        "Trustpair handles vendor validation. Agicap handles cash disbursement. Sage is the GL. DocuShare holds documents.",
-        "Vendor master data fields documented: country, VAT, Siret, bank fields, identification/free-field tabs.",
-        "Approval workflows are not currently in Sage — manual and outside the system.",
+        "Invoice volume: ~4,000/year (France SA). PO volume: 650 raised in 2025.",
+        "Total contract commitments: $200M+ — not tracked in any system; lives in contracts in DocuShare.",
+        "Active vendors: <500. Vendor master cleaned in 2025. Second cleanup scheduled March 2026 (Philippe will provide XLS report).",
+        "France SA payment cycle: two campaigns per month, 10th and 25th.",
+        "System landscape: Sage 100 (GL/invoicing), DocuShare (documents), Trustpair (vendor validation), Concur (expenses). Zero integration feeds between any of them.",
+        "Juliette and Fatma perform all manual handoffs via shared invoice inbox (monitored with Philippe).",
+        "Sage 100 cannot verify vendor banking information — structurally incapable.",
+        "Trustpair handles bank validation AND full vendor audit per wire transfer. Cost <$15K/year. Load-bearing control.",
+        "Approval workflows are not in Sage — entirely manual and paper/email-based.",
+        "No Delegation of Authority (DoA) matrix exists — P2P team cannot identify who authorized an invoice or who a vendor's internal owner is.",
+        "No PO requirement for contractors (high volume, industry-typical in biotech/CRO). No POs for contractors = commitments off the books.",
+        "Some CRO contracts processed without POs — Trinidad views PO coverage for CRO as critical.",
+        "PO process flows through DocuShare with no systematic capture of amounts. Juliette handles manually.",
+        "Cost coding is broken: entire multi-component projects may be booked to single item#. Pass-throughs difficult to track.",
+        "No formal vendor onboarding/selection process — Trustpair validates banking at wire only, not at vendor creation.",
         "Trinidad P2P bundle received: 10 files including approval matrices, SOPs, payment workbook, DocuShare guide, supplier master cleaning workbook.",
-        "CFTI P2P RCM received and structure confirmed. Control IDs, statuses, and remediation columns exist."
+        "CFTI P2P RCM received and structure confirmed. 5 ERP-signal controls confirmed (FR-PTP-02G, 04G, 05G, 06G, 14G).",
+        "Strategic framing confirmed by Trinidad (Mar 2 call): SOX gaps drive Phase 1 ERP design. Automation/efficiency = Phase 2+ post Jan 1, 2027."
       ],
       "currentStateUnknown": [
-        "US LLC P2P current-state flow and evidence practices — Matt Epley confirmed docs in progress as of Feb 25; expected delivery Feb 25-26 (still not received by Mar 2).",
-        "Exact Trustpair integration requirements for NetSuite — integration feasibility not yet confirmed.",
+        "US LLC P2P current-state flow and evidence practices — Matt Epley confirmed docs in progress as of Feb 25; still not received by Mar 2.",
+        "Trustpair integration model for NetSuite: standard bundled app vs. custom build vs. paid app — not yet confirmed with vendor.",
         "1099-specific process requirements (US).",
-        "Full end-to-end exception handling path for vendor disputes/holds.",
-        "Where control evidence is retained today across Trustpair / Agicap / bank steps.",
-        "Row-level RCM extraction: which P2P control gaps are ERP-addressable vs. non-ERP remediation vs. management decision."
+        "Two-way match (FR-PTP-06G): not confirmed in Mar 2 call — process still unknown.",
+        "Where control evidence is retained today for completed wire transfers (Trustpair log? Sage? Email?).",
+        "Contractor volume and spend — no count or $ figure available; not tracked.",
+        "Philippe's Sage XLS report and Trustpair report — expected but not yet received."
       ],
 
       "erpDesignRequirements": [
+        "PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.",
+        "PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.",
         "System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.",
+        "Trustpair integration at vendor onboarding (not just at wire) — integration model to be confirmed with NetSuite (standard app / custom / paid).",
         "Two-way and three-way match capability for invoice processing.",
-        "Vendor master with validation integration (Trustpair or equivalent) — confirm if standard app or custom build.",
+        "Vendor setup workflow with named approver and Trustpair validation gate before vendor is live.",
         "Role-based access / SOD enforcement on vendor setup and payment authorization.",
         "Payment run traceable from PO to payment with system-retained evidence (not email-based).",
-        "Entity-level separation: France SA vs US LLC must be independently operable under common framework."
+        "Commitment register: all PO-backed commitments tracked in NetSuite by go-live — closes $200M+ untracked commitment gap.",
+        "Entity-level separation: France SA vs US LLC must be independently operable under common framework.",
+        "PHASE 2+ (post Jan 1, 2027): CRO pass-through tracking, contractor PO workflows, cost coding optimization — not Phase 1 scope."
       ],
 
       "keyDecisionsPending": [
@@ -114,17 +131,19 @@
       ],
 
       "nextMoves": [
+        "Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.",
+        "Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.",
+        "Get NetSuite response on Trustpair integration model: standard app / custom / paid app.",
+        "Raise contractor PO policy decision with Hema — yes/no before NetSuite configuration.",
         "Extract P2P RCM rows and classify into: ERP-addressable / non-ERP remediation / management decision.",
-        "Review Trinidad approval matrix and SOP PDFs — convert to France current-state map with named owners per step.",
         "Build side-by-side France vs US P2P map once Kimberly/Matt respond.",
-        "Get NetSuite response separating Trustpair integration into custom / standard app / paid app.",
-        "Formalize P2P must-have workflow/control list as ERP design input."
+        "Schedule follow-up with Trinidad on cost coding / CRO pass-through structure (pre-blueprint, not urgent now)."
       ],
 
       "waitingOn": [
+        "Philippe Goncalves: Sage vendor master XLS report + Trustpair report (committed on Mar 2 call)",
         "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs — expected Feb 25-26; overdue as of Mar 2. Chase required.",
-        "KPMG: P2P process detail follow-up (Camille / Aymen)",
-        "NetSuite: interface/integration classification response (Jamal sent Interface Tracker V2.xlsx Feb 23 — retrieve and review)"
+        "NetSuite (Jamal): Trustpair integration model confirmation; also retrieve Interface Tracker V2.xlsx from Feb 23 email"
       ],
 
       "keyPeople": ["Trinidad Mesa (France P2P)", "Juliette (payment prep)", "Fatma (payment prep)", "Kimberly Gordon (US)", "Matt Epley (US)", "Hema Keshava", "KPMG (Camille/Aymen)"],
@@ -397,6 +416,11 @@
       "date": "2026-03-02",
       "by": "claude-session",
       "summary": "Email analysis pass on 166 emails (Feb 16–Mar 2 window). Key updates: (1) P2P — Trinidad's 10-file France P2P bundle confirmed received; US P2P docs still pending from Matt Epley (expected Feb 25-26, not yet arrived). (2) Reporting — Frederick Golly FP&A request has no reply by Mar 2; Robin Lapous confirmed manual Excel, no docs. (3) Controls — CFGI engaged, FSCP + P2P RCM delivered; ITGC pending; Adrian Holbrook clarified as Sr. Financial Analyst (consolidator only) — escalate controls content to Youness Tyamaz. (4) Governance — NetSuite implementation timeline XLSX found in Jamal Azil's Feb 23 email (may close Audit deck Gap #2); Camille OOO March 6 flagged as scheduling risk; contract law options circulated (3 structures, legal review started); Board deck due Mar 13 to Didier. Program-level risks updated."
+    },
+    {
+      "date": "2026-03-02",
+      "by": "claude-session",
+      "summary": "P2P current-state call with Trinidad Mesa + Philippe Goncalves. Major P2P pillar update: volumes now confirmed (4,000 invoices/yr, 650 POs, $200M+ commitments, <500 vendors). System landscape locked: Sage/DocuShare/Trustpair/Concur with zero feeds — all manual. Key gaps surfaced: no DoA (pre-ERP governance deliverable), no PO for contractors, CRO contracts without POs, $200M+ commitments untracked, cost coding broken. Philippe to send Sage XLS + Trustpair report. Strategic framing from Trinidad: SOX-first design in Phase 1; automation/efficiency is Phase 2+ post Jan 1, 2027. currentStateSummary, currentStateKnown, erpDesignRequirements, nextMoves, waitingOn all updated. Meeting notes at collab/claude/outputs/p2p-meeting-notes-2026-03-02.md."
     }
   ]
 }
