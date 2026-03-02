@@ -1,0 +1,15653 @@
+# Complete Email Dataset Extract
+
+**File:** emails_2026-03-02.json  
+**Total Emails:** 166  
+**Extraction Date:** 2026-03-02  
+
+---
+
+## EMAIL #1
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BA50000`
+- **Direction:** received
+- **Date:** 2026-03-02T08:58:12.7280000
+- **Subject:** Poplee Entretiens - Remplissez votre formulaire pour la campagne Objectifs Annuels 2026
+- **From:** Lucca <no-reply@ilucca.net>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** F3666AD79FFD5F43B08F85065D5376D8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://cdn.lucca.fr/notifications/icon-poplee-entretiens.png> 	
+Lucca Performance
+
+
+Formulaire à remplir
+
+Merci de remplir votre formulaire de préparation avant le 17/03/2026.
+
+Accéder au formulaire <https://abivax.ilucca.net/popleetalent/reviews/e3eccb49-ffde-41e4-9c92-10e1d8494961> 	
+ <https://cdn.lucca.fr/notifications/footer-poplee.png>
+```
+
+---
+
+## EMAIL #2
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BA40000`
+- **Direction:** received
+- **Date:** 2026-03-02T06:44:00.2950000
+- **Subject:** Poplee Entretiens - Remplissez votre formulaire pour la campagne Objectifs Annuels 2026
+- **From:** Lucca <no-reply@ilucca.net>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 88DDCC26DA043A4B85D6BF654590DAC0
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://cdn.lucca.fr/notifications/icon-poplee-entretiens.png> 	
+Lucca Performance
+
+
+Formulaire à remplir
+
+Merci de remplir votre formulaire de préparation avant le 17/03/2025.
+
+Accéder au formulaire <https://abivax.ilucca.net/popleetalent/reviews/4581bfcc-c8a8-40ff-8e69-9e20e4cd075a> 	
+ <https://cdn.lucca.fr/notifications/footer-poplee.png>
+```
+
+---
+
+## EMAIL #3
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BA30000`
+- **Direction:** received
+- **Date:** 2026-03-02T05:55:37.1540000
+- **Subject:** V3 Availability Poll – [1/2] Master Data Management Workshop
+- **From:** Ben Alaya, Aymen <abenalaya@kpmg.fr>
+- **To:** ['Girard, Camille', 'Christophe Hennequin', 'Benjamin Talmant', 'Jade Nguyen', 'Trinidad Mesa', 'Michael Markman', 'Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 77F882336BD65C4AA682D838C28B5238
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello,
+
+Following up on the workshop focused on organization and governance for effective Master Data Management (MDM).
+
+We haven’t been able to align on a date for the second time yet. We have therefore launched a new poll to collect everyone’s availability.
+
+To schedule the workshop as soon as possible, could you please complete the new poll below as soon as possible and indicate your availability?
+
+This workshop will be conducted in two sessions of 1 hour each. For now, we are planning the first session.
+
+
+ <https://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Data_Bar.png> 	Scheduling poll
+ <https://ow2.res.office365.com/assets/findtime/images/v2/Icon_Clock.png> 	1 hour duration
+ <https://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Clock.png> 	9 time options
+	Vote <https://outlook.office.com/findtime/vote?getrequesturl=https%3a%2f%2foutlook.office.com%2fows%2fPUID%3a10032003AF8087FC%40deff24bb-2089-4400-8c8e-f71e680378b2%2fbeta%2fOutlookMeetingPolls%2fGetPollForVotingPage%3fid%3dRgAAAABoPA-hEpQWTZFa1LMrDkjNBwDncSPYulLUQpHZKCLpBhJYAAEfgItvAADncSPYulLUQpHZKCLpBhJYAAF57K2sAAAA0%26authtoken%3deyJhbGciOiJSUzI1NiIsImtpZCI6Im1VRWhBM25Jdzc4SDA2S2pZRkNNNXhKQzBnVT0iLCJ0eXAiOiJKV1QiLCJ4NXQiOiJxcHFTbVJDdDNOWXBYRHdwcFFaelBtNXRlR0kifQ.eyJvaWQiOiJmYzE0Yjc2OC0yM2EwLTRmZmUtOGIwMS0wNmJlODQ0M2JiNmYiLCJ2ZXIiOiJSZXNvdXJjZUxvb3BiYWNrLlVzZXIuVjEiLCJzY3AiOiJPdXRsb29rUG9sbC1JbnRlcm5hbC5SZWFkV3JpdGUiLCJyc2NvcGVsZW4iOiIyMzYiLCJyZXNvdXJjZV9zY29wZSI6IntcIlVSTFwiOlwiYkhlMDJUbVBOOU1CNldHdUo1UVUyVXRFV2cwSUZyRDNUdFZKVldHUDlZaz1cIn0iLCJjb3JyaWQiOiIyZDQ0NjM2NC1lNDBmLTQ1NTUtYmNiMS1jYmM0NzA3OGNmNjIiLCJhcHBpZCI6IjE1N2NkZmJmLTczOTgtNGE1Ni05NmMzLWU5M2U5YWIzMDliNSIsImFwcGlkYWNyIjoiMCIsInRpZCI6ImRlZmYyNGJiLTIwODktNDQwMC04YzhlLWY3MWU2ODAzNzhiMiIsImlhdCI6MTc3MjQ0ODg1NywibmJmIjoxNzcyNDQ4ODU3LCJleHAiOjE3ODAyMjQ4NTcsImlzcyI6Imh0dHBzOi8vcmVzb3VyY2Uuc2VsZi8iLCJhdWQiOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSJ9.TzGAQqeWIDHHmUIPax4B1njTZYps0FTbOottuXrtLGuMxNtZxQVqpg3dASGw3TrmfxrQzpCKVTxYG26LxO7e6YTOrWCg2CDqIcpiMw55SBiu0xtSA4Ncy-RbiwM4kMwtTjnOV3SMPTZ7YUppU_jN_HVp_D9A_uylwN1A8W0z2_7HxPPIHPvv4qJSNlGMgi15qyrP0hCqPrvOXYfwedy2nvv1ecr9FYq-htsCYDFty9g_t2GkXfz7o1v7DryPhnZXEabLXyZIoy-MbuOFBcvvQmE3TuWT5uptVONxxYo8IFYlZ4OY0EN47EfGFLD9GGbD2T6g0VoRAguFKK9nxC-BEQ&anonymous> 
+	View all your polls <https://outlook.office.com/findtime/dashboard> 
+	
+
+
+
+
+Aymen Ben Alaya
+
+Consultant
+Tech Strategy and Transformation / Connected Tech​
+
+KPMG ADVISORY​
+Tour Eqho​
+2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​
+
+M. +33 7 78 55 33 58
+abenalaya@kpmg.fr
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.k
+```
+
+---
+
+## EMAIL #4
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BA20000`
+- **Direction:** received
+- **Date:** 2026-03-02T05:52:38.6640000
+- **Subject:** Abivax  Internal Update – Marc de Garidel
+- **From:** Ida Hatoum </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=E2A4A9B6C2F44E529DBABDD2EE2602E5-BCDCE6C0-8F>
+- **To:** ['allabivax', 'ALLABIVAX-E']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** D3743F5698F2BF49824330E9EC758C7A
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Dear Abivax Team,
+
+ 
+
+I hope you are all well. 
+
+ 
+
+I wanted to share a quick update about Marc. While attending an investor conference in Telluride, Colorado last week, the mountains got the better of him and he took a fall on the ski slopes, resulting in a small fracture to his T7 vertebra.
+
+ 
+
+The good news is that Marc is now in Boston with his family, in good spirits, and focused on his recovery. He will remain in the U.S. for a minimum of the next six weeks while he heals. During this time, he’ll pause travel but will stay fully engaged and continue to support Abivax’ s key priorities and meetings remotely. It is very much business as usual.
+
+ 
+
+If you know Marc, it will come as no surprise that he’s already eager to get back to full speed. In the meantime, I know the entire Abivax team joins in wishing him a smooth recovery and a quick return to full strength. 
+
+ 
+
+All my best,
+Ida
+
+
+
+Ida Hatoum
+Abivax
+Chief People Officer
+Chief Compliance Officer
+Ida.hatoum@abivax.com
+Cellular: 419-290-0559
+```
+
+---
+
+## EMAIL #5
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BA00000`
+- **Direction:** received
+- **Date:** 2026-03-02T03:46:52.5020000
+- **Subject:** Re: Legal review
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Girard, Camille', 'Michael Markman', 'Thomas Descusses', 'Olivia Bui', 'Peggy Gambardella']
+- **CC:** ['Hema Keshava', 'Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** C7E5BF5BC1D6434BB746DC3789459842
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Camille, 
+
+Thank you for the elements. 
+
+Looping in the broader team and legal @Thomas Descusses <mailto:Thomas.Descusses@abivax.com> , @Olivia Bui <mailto:Olivia.Bui@abivax.com>  & @Peggy Gambardella <mailto:peggy.gambardella-ext@abivax.com> .
+
+We’re happy to support the review of the more IT related elements. 
+
+Best,
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Girard, Camille <camillegirard@kpmg.fr>
+Date : vendredi, 27 février 2026 à 17:45
+À : Michael Markman <mike.markman@abivax.com>, Jade Nguyen <jade.nguyen-ext@abivax.com>
+Cc : Hema Keshava <Hema.Keshava@abivax.com>
+Objet : Legal review
+
+
+Hello both,
+
+You will find on those links the contract models so you can start the legal review of the models.
+
+Netsuite : Netsuite ContractType <https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Netsuite%20second%20round/Netsuite%20ContractType?csf=1&web=1&e=U1oQq8> 
+SAP : SAP ContractType <https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/SAP%20second%20round/SAP%20ContractType?csf=1&web=1&e=ASVCHa> 
+
+I'll let you transfer to the responsible, thanks.
+
+Best regards,
+
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #6
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B9E0000`
+- **Direction:** received
+- **Date:** 2026-03-02T03:34:49.3080000
+- **Subject:** RE: France P2P - Follow-up for ERP planning
+- **From:** Trinidad Mesa </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=1B4F510FB9EF46FD8460F9495C565A29-TRINIDAD ME>
+- **To:** ['Michael Markman']
+- **CC:** ['Philippe Goncalves']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 809388B22EA449E3938B4602F3F30293
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Matt,
+
+I have set up a call later today at 5 PM CET time.
+
+Best
+
+Trinidad
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com> 
+Envoyé : jeudi 26 février 2026 16:31
+À : Trinidad Mesa <Trinidad.Mesa@abivax.com>
+Cc : Philippe Goncalves <philippe.goncalves@abivax.com>
+Objet : RE: France P2P - Follow-up for ERP planning
+
+ 
+
+Thanks for this Trinidad. Yes, I’m available so please feel free to send through an invite.
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> > 
+Sent: Thursday, February 26, 2026 4:33 AM
+To: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >
+Subject: RE: France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Mike,
+
+ 
+
+As per your request for documentation, you will find enclosed :
+
+- the SOP for PO and contract 
+
+- the approval PO and invoices matrix
+
+- the approval of contract approval (signature policy)
+
+- process flow for invoice recording process (Abivax_Procédure Achat) – in French
+
+-Docushare user guide (for PO)
+
+-Supplier database update and maintenance (called Supplier data base cleaning)
+
+-Recording in currency (saisie en devise) – in French
+
+-Payment process by wire transfer (Moyen de paiement – virements bancaires) – in French
+
+Some description processes are in French, sorry for that…
+
+ 
+
+Concerning the session on PTP, are you free on next Monday from 5 p.m. CET?
+
+If not, can you provide with timeslots?
+
+I copy Philippe, who will attend the session.
+
+ 
+
+Best
+
+ 
+
+
+
+Trinidad Mesa 
+Finance & Accounting Director
+
++33 (0)6 51 81 96 04
+
+www.abivax.com <http://www.abivax.com/> 
+
+trinidad.mesa@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Envoyé : mardi 24 février 2026 16:41
+À : Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >
+Objet : France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.
+
+ 
+
+Would you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?
+
+ 
+
+I’d like to understand, at a practical level:
+
+  - current steps from request/PO through invoice/payment
+
+  - where approvals happen today (and where they do not)
+
+  - key manual workarounds / pain points
+
+  - exceptions or rework points
+
+  - where evidence/audit trail is weak today
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+If you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #7
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B9C0000`
+- **Direction:** received
+- **Date:** 2026-03-01T18:09:31.0400000
+- **Subject:** Touchpoint
+- **From:** Didier Blondel </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=1F6581BF2E0C43E2B53ADF5562A689B8-DIDIER BLON>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 84F856524ABC4E77AA54956F812F1B38
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike,
+
+ 
+
+I hope this e-mail finds you well.
+
+ 
+
+We did not have too much time to exchange together since you joined Abivax, I am sorry for my poor availability, let me share with you a few topics :
+
+ 
+
+*	I will be hitting the road during the next two weeks (Bank conferences in Boston and Miami), with limited options to connect, and be back in Paris when you are coming during the week of March 16. I suggest we can spend time together that week. Let us ideally find and plan 90’ before the A.C. meeting on March 19.
+*	ERP update will be at the agenda of A.C. meeting on March 19, and you would of course be the presenter, most likely for a #15’ time slot. Hema is coordinating the A.C. agenda, she will certainly keep you posted. Slides should be ready to be sent on Friday March 13, feel free to send me your draft version whenever you are ready. Target should be ERP selection, tentative planning, tentative resources, organization, and costs, including IT, Finance, and other teams to mobilize.
+*	Finally, I need your help to write a 5 lines description of your credentials for a HR / Internal Communications announcement ; could you potentially send me something tomorrow (I am leaving Paris on Tuesday) ?
+
+ 
+
+Tell me what you think.
+
+ 
+
+Best regards.
+
+ 
+
+
+
+Didier Blondel
+Chief Financial Officer & Corporate Secretary
+
++33 (0)6 85 81 84 51
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+didier.blondel@abivax.com <mailto:didier.blondel@abivax.com>
+```
+
+---
+
+## EMAIL #8
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B9B0000`
+- **Direction:** received
+- **Date:** 2026-02-28T10:54:42.3650000
+- **Subject:** Reaction Daily Digest - Saturday, February 28, 2026
+- **From:** Outlook <no-reply@outlook.mail.microsoft>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - 3050a6a0-ddd8-4cc9-9757-c1173ce8377c
+  - a177a5ac-77a1-4f7c-9396-a89d0d27067c
+- **Thread ID:** 4DC39AF168F55F458D648F2F7301A658
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Microsoft Outlook
+	 
+ <https://outlook-1.cdn.office.net/assets/reaction/persona.png> 	
+ <https://outlook-1.cdn.office.net/assets/reaction/like.png>   	Girard Camille reacted to your message Fri 2/27/2026 11:44:00 AM 	
+RE: Abivax - ERP decision presentation 
+Hi Camille/Aymen - Thanks again for the support through selection. As we move into implementation preparation, it would be good to shift the vendor communication over to Hema and me so we can own next-step coordination on the Abivax side. Since I have
+Go to message <https://outlook.office365.com/owa/?ItemID=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A9uXfRldzVE66t%2BV0rBXvmAAAELMNCAAA&exvsurl=1&viewmodel=ReadMessageItem&nativeOutlookCommand=openMessage> 
+	
+Unsubscribe <https://outlook.office365.com/mail/deeplink/unsubscribe?feature=ReactionDigestEmailDisabled>  
+
+________________________________
+
+ 	
+Privacy Statement <https://go.microsoft.com/fwlink/?LinkId=521839>  
+
+This email is generated through ABIVAX's use of Microsoft 365 and may contain content that is controlled by ABIVAX.
+
+ <https://r-notifyp.svc.ms:443/api/v2/tracking/method/View?mi=iCCzvANm10eL6YC9L0V2SQ&si=ReactionDigest&ca=OutlookReactionService>
+```
+
+---
+
+## EMAIL #9
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B990000`
+- **Direction:** received
+- **Date:** 2026-02-27T13:42:18.5150000
+- **Subject:** Re: [External] : RE: ABIVAX RFP
+- **From:** jamal azil <jamal.azil@oracle.com>
+- **To:** ['Michael Markman']
+- **CC:** ['Hema Keshava', 'Jade Nguyen', 'Ben Alaya, Aymen', 'Girard, Camille', 'Venceslas dEchallens', 'Vincent Gehanno', 'Laurent Bailly']
+- **Has Attachments:** True
+  - image001.png
+  - img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5
+- **Thread ID:** 38D0365132814B40AE459C72D26F0723
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Confidential - Oracle Restricted \Including External Recipients
+
+
+
+Hello Mike,
+
+Thank you for your message. Monday at 11:00 AM EST (5:00 PM French time) works for me.
+
+Please feel free to send the Teams invitation, and I will forward it internally within the Oracle NetSuite team.
+
+Wishing you a great weekend.
+
+Best regards,
+Jamal
+
+
+ <https://www.netsuite.com/portal/home.shtml> 
+
+
+Jamal AZIL | Sales Representative – NetSuite
+
+Mobile : +33 6 46 54 56 72 – jamal.azil@oracle.com <mailto:jamal.azil@oracle.com> 
+
+Zoom : https://oracle.zoom.us/my/jamal.azil <https://oracle.zoom.us/my/david.naccache> 
+Oracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes
+
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : vendredi, 27 février 2026 à 17:54
+À : Girard, Camille <camillegirard@kpmg.fr>, jamal azil <jamal.azil@oracle.com>, Venceslas dEchallens <venceslas.dechallens@oracle.com>, Vincent Gehanno <vincent.gehanno@oracle.com>, Laurent Bailly <laurent.bailly@oracle.com>
+Cc : Hema Keshava <Hema.Keshava@abivax.com>, Jade Nguyen <jade.nguyen-ext@abivax.com>, Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet : [External] : RE: ABIVAX RFP
+
+
+
+Thanks Camille for the intro.
+
+ 
+
+Oracle Team – I’m located on EST but would like to have a call early next week to discuss potential next steps and how best to move us forward.
+
+ 
+
+Does Monday 11am EST work for the key contacts to have a call? If not, Tuesday after 930am EST works for me as well.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+
+
+
+Confidential - Oracle Restricted \Including External Recipients
+
+
+From: Girard, Camille <camillegirard@kpmg.fr>
+Sent: Friday, February 27, 2026 11:50 AM
+To: jamal azil <jamal.azil@oracle.com>; Venceslas dEchallens <venceslas.dechallens@oracle.com>; Vincent Gehanno <vincent.gehanno@oracle.com>; Laurent Bailly <laurent.bailly@oracle.com>
+Cc: Michael Markman <mike.markman@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: ABIVAX RFP 
+
+ 
+
+Hello Oracle team, 
+
+ 
+
+Hope you're all well. Abivax wishes to continue discussing with you to refine the legal aspects and the financial offer.
+
+ 
+
+Mike will takeover on the discussions with you on the next steps with Hema, coordinating immediate startup planning from here. I'll let Mike contact you Jamal to organize the next steps.
+
+ 
+
+Best regards and have a great weekend
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <https://urldefense.com/v3/__http://kpmg.com/fr/fr__;!!ACWV5N9M2RV99hQ!OtcnWB0yc97JTXWDqN3NcMe5HsGRbxzLdztjkGl4JsIHGh-SmDV1mgukjiglggn414T1fL7WWJtVJQf02sF-V3d-$> 
+
+ <https://urldefense.com/v3/__https://twitter.com/kpmg_france?lang=en__;!!ACWV5N9M2RV99hQ!OtcnWB0yc97JTXWDqN3NcMe5HsGRbxzLdztjkGl4JsIHGh-SmDV1mgukjiglggn414T1fL7WWJtVJQf02hpmgocA$>    <https://urldefense.com/v3/__https://www.linkedin.com/company/kpmg-france__;!!ACWV5N9M2RV99hQ!OtcnWB0yc97JTXWDqN3NcMe5HsGRbxzLdztjkGl4JsIHGh-SmDV1mgukjiglggn414T1fL7WWJtVJQf02r2U76qP$>    <https://urldefense.com/v3/__https://www.facebook.com/KPMGFR__;!!ACWV5N9M2RV99hQ!OtcnWB0yc97JTXWDqN3NcMe5HsGRbxzLdztjkGl4JsIHGh-SmDV1mgukjiglggn414T1fL7WWJtVJQf02giWldxi$>    <https://urldefense.com/v3/__https://www.youtube.com/user/KPMGFrance__;!!ACWV5N9M2RV99hQ!OtcnWB0yc97JTXWDqN3NcMe5HsGRbxzLdztjkGl4JsIHGh-SmDV1mgukjiglggn414T1fL7WWJtVJQf02oduKtpf$>    <https://urldefense.com/v3/__https://www.instagram.com/kpmg_france/__;!!ACWV5N9M2RV99hQ!OtcnWB0yc97JTXWDqN3NcMe5HsGRbxzLdztjkGl4JsIHGh-SmDV1mgukjiglggn414T1fL7WWJtVJQf02uF9dBDN$> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique 
+```
+
+---
+
+## EMAIL #10
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B980000`
+- **Direction:** received
+- **Date:** 2026-02-27T13:37:26.6190000
+- **Subject:** Re: [External] : ABIVAX RFP
+- **From:** jamal azil <jamal.azil@oracle.com>
+- **To:** ['Girard, Camille']
+- **CC:** ['Michael Markman', 'Hema Keshava', 'Jade Nguyen', 'Ben Alaya, Aymen', 'Laurent Bailly', 'Vincent Gehanno', 'Venceslas dEchallens']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+  - img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5
+- **Thread ID:** 38D0365132814B40AE459C72D26F0723
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Confidential - Oracle Restricted \Including External Recipients
+
+
+
+Hello Camille,
+
+I hope you’re doing well. 
+
+Thank you for your message. 
+We remain available to work with Mike on the next steps.
+
+Thank you again for your follow-up and coordination on this matter.
+
+Wishing you a great weekend.
+
+Best regards,
+Jamal
+
+
+
+
+ <https://www.netsuite.com/portal/home.shtml> 
+
+
+Jamal AZIL | Sales Representative – NetSuite
+
+Mobile : +33 6 46 54 56 72 – jamal.azil@oracle.com <mailto:jamal.azil@oracle.com> 
+
+Zoom : https://oracle.zoom.us/my/jamal.azil <https://oracle.zoom.us/my/david.naccache> 
+Oracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes
+
+
+De : Girard, Camille <camillegirard@kpmg.fr>
+Date : vendredi, 27 février 2026 à 17:50
+À : jamal azil <jamal.azil@oracle.com>, Venceslas dEchallens <venceslas.dechallens@oracle.com>, Vincent Gehanno <vincent.gehanno@oracle.com>, Laurent Bailly <laurent.bailly@oracle.com>
+Cc : Michael Markman <mike.markman@abivax.com>, Hema Keshava <Hema.Keshava@abivax.com>, Jade Nguyen <jade.nguyen-ext@abivax.com>, Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet : [External] : ABIVAX RFP
+
+
+Hello Oracle team, 
+
+Hope you're all well. Abivax wishes to continue discussing with you to refine the legal aspects and the financial offer.
+
+Mike will takeover on the discussions with you on the next steps with Hema, coordinating immediate startup planning from here. I'll let Mike contact you Jamal to organize the next steps.
+
+Best regards and have a great weekend
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <https://urldefense.com/v3/__http://kpmg.com/fr/fr__;!!ACWV5N9M2RV99hQ!NlJ0mUeo3ReVcUvXuwj6Pi9cCUqC8pescVZ0MkMblta-CtW6TLNYnggNZBneaNGiz8tVfA9NYK3zoQcQfcZcdxWiHw$> 
+
+ <https://urldefense.com/v3/__https://twitter.com/kpmg_france?lang=en__;!!ACWV5N9M2RV99hQ!NlJ0mUeo3ReVcUvXuwj6Pi9cCUqC8pescVZ0MkMblta-CtW6TLNYnggNZBneaNGiz8tVfA9NYK3zoQcQfcZ2Qg5vEw$>    <https://urldefense.com/v3/__https://www.linkedin.com/company/kpmg-france__;!!ACWV5N9M2RV99hQ!NlJ0mUeo3ReVcUvXuwj6Pi9cCUqC8pescVZ0MkMblta-CtW6TLNYnggNZBneaNGiz8tVfA9NYK3zoQcQfcYpggY3dw$>    <https://urldefense.com/v3/__https://www.facebook.com/KPMGFR__;!!ACWV5N9M2RV99hQ!NlJ0mUeo3ReVcUvXuwj6Pi9cCUqC8pescVZ0MkMblta-CtW6TLNYnggNZBneaNGiz8tVfA9NYK3zoQcQfcZHdjWzqQ$>    <https://urldefense.com/v3/__https://www.youtube.com/user/KPMGFrance__;!!ACWV5N9M2RV99hQ!NlJ0mUeo3ReVcUvXuwj6Pi9cCUqC8pescVZ0MkMblta-CtW6TLNYnggNZBneaNGiz8tVfA9NYK3zoQcQfcaU3pFTQQ$>    <https://urldefense.com/v3/__https://www.instagram.com/kpmg_france/__;!!ACWV5N9M2RV99hQ!NlJ0mUeo3ReVcUvXuwj6Pi9cCUqC8pescVZ0MkMblta-CtW6TLNYnggNZBneaNGiz8tVfA9NYK3zoQcQfcZcKxxciA$> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addre
+```
+
+---
+
+## EMAIL #11
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C5370000`
+- **Direction:** sent
+- **Date:** 2026-02-27T13:07:34.9160000
+- **Subject:** Re: ERP alignment - IT controls / audit evidence inputs
+- **From:** Michael Markman </o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60>
+- **To:** ['Jade Nguyen']
+- **CC:** []
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** C747CB3B82B14B7BA926950FCE84E11C
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks for this Jade. Was referring to finance/erp specifically. I got a bunch of documents from the SOX consultants that I think will fill in tons of gaps for me so can come back to you with any additional questions once I consume all the info. 
+
+Thanks for the follow up!
+
+-Mike
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com>
+Sent: Friday, February 27, 2026 1:02:10 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: Re: ERP alignment - IT controls / audit evidence inputs 
+ 
+Hello Mike,
+
+Sorry for the delay, your message got lost in my inbox. 
+To be honest, I’m a little unclear on the scope of your questions. By IT control gaps & remediation do you mean surrounding Sage/Finance for SOX or as a whole?
+
+I’ll try to answer both : 
+
+  1. Current IT control gaps / audit observations related to finance systems or integrations
+
+
+For SOX
+
+*	
+	We provide monthly evidence
+*	
+	SOX control definition & improvements were done alongside CFGI under Finance sponsorship
+
+      
+      Other IT Controls
+
+*	
+	Beyond the scope of SOX, we also do change control management with relevant risks analysis whenever new system version come up for instance. 
+*	
+	Sage is also a part of our backup and restoration plan which is tested as per our DRP. 
+*	
+	Continuous security scans & controls on logs and machines accessing Sage
+
+
+
+
+  2. Where IT remediation actions are tracked (if separate from Finance)
+
+IT remediation is tracked in these different areas deepening on the the type you’re talking about
+
+*	
+	CAPA tracker with Quality
+*	
+	IT project management board (Notion), managed by us internally
+*	
+	 IT Pentest tracker for any remediation related to the regular penitents we conduct
+
+
+  3. Any existing documentation for interface monitoring / failure handling (owners, escalation, evidence retained)
+
+We have very limited integrations and active flows (they’re also quite recent from 1 to 2 y at most). The ones that are present I’ve shared with you in the following tracker. 
+
+
+As for failure handling, we manage and track them through the IT Support tickets which are opened whenever an incident occurs as well as our own it management board, although to be honest there hasn’t been many issues related to that if any.
+
+
+  4. Any system admin / ownership matrix for the core finance applications and integrations
+
+This is done by the Finance team since they administrate the system. We do provide oversight and push periodic user reviews to enforce proper updates. 
+I’m working with Denis to get you the latest one in an English version. 
+
+Best, 
+Jade
+
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : mardi, 24 février 2026 à 16:28
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>
+Objet : ERP alignment - IT controls / audit evidence inputs
+
+
+
+Hi Jade - As I organize the ERP work around the main priorities (P2P, reporting/data, and SOX/controls), I want to make sure we are using the current IT/control documentation as the baseline.
+
+ 
+
+  Could you please share (or point me to) anything documented today that would help on the IT controls side, especially:
+
+ 
+
+  1. Current IT control gaps / audit observations related to finance systems or integrations
+
+  2. Where IT remediation actions are tracked (if separate from Finance)
+
+  3. Any existing documentation for interface monitoring / failure handling (owners, escalation, evidence retained)
+
+  4. Any system admin / ownership matrix for the core finance applications and integrations
+
+ 
+
+  Even if the documentation is incomplete, whatever exists will help us align the ERP design and implementation plan to the real control and auditability issues.
+
+ 
+
+  Th
+```
+
+---
+
+## EMAIL #12
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B970000`
+- **Direction:** received
+- **Date:** 2026-02-27T13:07:28.8790000
+- **Subject:** 2026 March Madness -> Sign-Up & Key Dates 
+- **From:** Adrian Holbrook </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=58161941CBE64A879014D4A2E8D5220F-EA331A62-88>
+- **To:** ['ALLABIVAXUS']
+- **CC:** []
+- **Has Attachments:** True
+  - Outlook-photo.png
+- **Thread ID:** B37A02E1AEA65945A05656FFC51095B4
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Abivax US Team!
+
+We are kicking off our 1st Annual Abivax LLC March Madness.
+
+The two key dates to keep in mind are Selection Sunday on March 16 when the bracket is announced and our pool officially opens, and Thursday, March 20 before tip off when all brackets must be submitted.
+
+Please take a moment to fill out the short questionnaire so we can gauge interest in a potential buy-in for our 1st, 2nd, and 3rd place prizes: https://forms.office.com/Pages/ResponsePage.aspx?id=c_4jB1kj0kCMNH4qp0FVlGIaM-roiC9IqXehWmExxRdUQTZHSjVPOEhCVUVURkxZT1g0T1dPODhGNC4u <https://forms.office.com/Pages/ResponsePage.aspx?id=c_4jB1kj0kCMNH4qp0FVlGIaM-roiC9IqXehWmExxRdUQTZHSjVPOEhCVUVURkxZT1g0T1dPODhGNC4u> 
+
+We will follow up on Selection Sunday when the pool officially opens and again before the brackets are due. In the meantime, please take a few minutes to get your account set up so you’re ready to submit your picks once the brackets are live.
+
+Sign-Up: https://play.ncaa.com/share/mbcg/group/1942605/token/93c9c3be31b9c96bd96ee6f8?iid=bcg_share_web_other_group_email
+Password: obefazimod
+
+Thanks,
+
+
+Adrian Holbrook
+
+Sr. Financial Analyst
+
+(1)704-929-3383
+
+www.abivax.com <http://www.abivax.com/> 
+
+a <mailto:adrian.holbrook@abivax.com> drian.holbrook <mailto:adrian.holbrook@abivax.com> @abivax.com <mailto:adrian.holbrook@abivax.com>
+```
+
+---
+
+## EMAIL #13
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B960000`
+- **Direction:** received
+- **Date:** 2026-02-27T13:02:13.2120000
+- **Subject:** Re: ERP alignment - IT controls / audit evidence inputs
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** C747CB3B82B14B7BA926950FCE84E11C
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike,
+
+Sorry for the delay, your message got lost in my inbox. 
+To be honest, I’m a little unclear on the scope of your questions. By IT control gaps & remediation do you mean surrounding Sage/Finance for SOX or as a whole?
+
+I’ll try to answer both : 
+
+  1. Current IT control gaps / audit observations related to finance systems or integrations
+
+
+For SOX
+
+*	
+	We provide monthly evidence
+*	
+	SOX control definition & improvements were done alongside CFGI under Finance sponsorship
+
+      
+      Other IT Controls
+
+*	
+	Beyond the scope of SOX, we also do change control management with relevant risks analysis whenever new system version come up for instance. 
+*	
+	Sage is also a part of our backup and restoration plan which is tested as per our DRP. 
+*	
+	Continuous security scans & controls on logs and machines accessing Sage
+
+
+
+
+  2. Where IT remediation actions are tracked (if separate from Finance)
+
+IT remediation is tracked in these different areas deepening on the the type you’re talking about
+
+*	
+	CAPA tracker with Quality
+*	
+	IT project management board (Notion), managed by us internally
+*	
+	 IT Pentest tracker for any remediation related to the regular penitents we conduct
+
+
+  3. Any existing documentation for interface monitoring / failure handling (owners, escalation, evidence retained)
+
+We have very limited integrations and active flows (they’re also quite recent from 1 to 2 y at most). The ones that are present I’ve shared with you in the following tracker. 
+
+
+As for failure handling, we manage and track them through the IT Support tickets which are opened whenever an incident occurs as well as our own it management board, although to be honest there hasn’t been many issues related to that if any.
+
+
+  4. Any system admin / ownership matrix for the core finance applications and integrations
+
+This is done by the Finance team since they administrate the system. We do provide oversight and push periodic user reviews to enforce proper updates. 
+I’m working with Denis to get you the latest one in an English version. 
+
+Best, 
+Jade
+
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : mardi, 24 février 2026 à 16:28
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>
+Objet : ERP alignment - IT controls / audit evidence inputs
+
+
+
+Hi Jade - As I organize the ERP work around the main priorities (P2P, reporting/data, and SOX/controls), I want to make sure we are using the current IT/control documentation as the baseline.
+
+ 
+
+  Could you please share (or point me to) anything documented today that would help on the IT controls side, especially:
+
+ 
+
+  1. Current IT control gaps / audit observations related to finance systems or integrations
+
+  2. Where IT remediation actions are tracked (if separate from Finance)
+
+  3. Any existing documentation for interface monitoring / failure handling (owners, escalation, evidence retained)
+
+  4. Any system admin / ownership matrix for the core finance applications and integrations
+
+ 
+
+  Even if the documentation is incomplete, whatever exists will help us align the ERP design and implementation plan to the real control and auditability issues.
+
+ 
+
+  Thanks again for the walkthrough and support.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #14
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90E10000`
+- **Direction:** sent
+- **Date:** 2026-02-27T11:53:55.5850000
+- **Subject:** RE: ABIVAX RFP
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Girard, Camille', 'jamal azil', 'Venceslas dEchallens', 'Vincent Gehanno', 'Laurent Bailly']
+- **CC:** ['Hema Keshava', 'Jade Nguyen', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 38D0365132814B40AE459C72D26F0723
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks Camille for the intro.
+
+ 
+
+Oracle Team – I’m located on EST but would like to have a call early next week to discuss potential next steps and how best to move us forward.
+
+ 
+
+Does Monday 11am EST work for the key contacts to have a call? If not, Tuesday after 930am EST works for me as well.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Friday, February 27, 2026 11:50 AM
+To: jamal azil <jamal.azil@oracle.com>; Venceslas dEchallens <venceslas.dechallens@oracle.com>; Vincent Gehanno <vincent.gehanno@oracle.com>; Laurent Bailly <laurent.bailly@oracle.com>
+Cc: Michael Markman <mike.markman@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: ABIVAX RFP
+
+ 
+
+Hello Oracle team, 
+
+ 
+
+Hope you're all well. Abivax wishes to continue discussing with you to refine the legal aspects and the financial offer.
+
+ 
+
+Mike will takeover on the discussions with you on the next steps with Hema, coordinating immediate startup planning from here. I'll let Mike contact you Jamal to organize the next steps.
+
+ 
+
+Best regards and have a great weekend
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #15
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B940000`
+- **Direction:** received
+- **Date:** 2026-02-27T11:50:42.8270000
+- **Subject:** ABIVAX RFP
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['jamal azil', 'Venceslas dEchallens', 'Vincent Gehanno', 'Laurent Bailly']
+- **CC:** ['Michael Markman', 'Hema Keshava', 'Jade Nguyen', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+- **Thread ID:** 38D0365132814B40AE459C72D26F0723
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Oracle team, 
+
+Hope you're all well. Abivax wishes to continue discussing with you to refine the legal aspects and the financial offer.
+
+Mike will takeover on the discussions with you on the next steps with Hema, coordinating immediate startup planning from here. I'll let Mike contact you Jamal to organize the next steps.
+
+Best regards and have a great weekend
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #16
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B930000`
+- **Direction:** received
+- **Date:** 2026-02-27T11:43:40.7820000
+- **Subject:** Legal review
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Michael Markman', 'Jade Nguyen']
+- **CC:** ['Hema Keshava']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+- **Thread ID:** C7E5BF5BC1D6434BB746DC3789459842
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello both,
+
+You will find on those links the contract models so you can start the legal review of the models.
+
+Netsuite : Netsuite ContractType <https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Netsuite%20second%20round/Netsuite%20ContractType?csf=1&web=1&e=U1oQq8> 
+SAP : SAP ContractType <https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/SAP%20second%20round/SAP%20ContractType?csf=1&web=1&e=ASVCHa> 
+
+I'll let you transfer to the responsible, thanks.
+
+Best regards,
+
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #17
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B920000`
+- **Direction:** received
+- **Date:** 2026-02-27T11:12:08.2890000
+- **Subject:** Thank You All
+- **From:** Robert Collins </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=CF6BF777D2A74DCAA784A8DBB8B17576-66E7CAE2-DA>
+- **To:** ['allabivax']
+- **CC:** []
+- **Has Attachments:** True
+  - Outlook-photo.png
+- **Thread ID:** 4DDBB80D4D61344DAD8BA7727CB13717
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi everyone,
+
+Today is my last 'official' day at Abivax and I wish to thank everyone for their patience and support when I was getting up to speed and throughout my time with you. I also wish everyone the best of luck and success in getting the NDA complete this year.
+
+I will be doing a handover with Andy over the next couple of weeks if anyone has any requirements / questions that I can help with.
+
+Take care and best wishes for the future,
+Robert.
+
+
+
+
+Robert Collins
+VP of CMC and Process Development
+
++353 (0)87 7826 395
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+robert.collins-ext@abivax.com <mailto:robert.collins-ext@abivax.com>
+```
+
+---
+
+## EMAIL #18
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B910000`
+- **Direction:** received
+- **Date:** 2026-02-27T11:07:58.2410000
+- **Subject:** Re: CFGI/Abivax Coffee Meet Up
+- **From:** Angela DePoy <adepoy@cfgi.com>
+- **To:** ['Hema Keshava', 'Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3D8CE577B637E04ABA738D4CAA296862
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+So long as the people gathering there are the best ;-) the decor can be #2 
+
+I am so excited to see you! And, to meet you MIke.
+
+
+
+
+Angela DePoy | Partner
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 	 
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com>
+Sent: Friday, February 27, 2026 11:06 AM
+To: Angela DePoy <adepoy@cfgi.com>; Michael Markman <mike.markman@abivax.com>
+Subject: [External] RE: CFGI/Abivax Coffee Meet Up 
+ 
+
+This pictures in the website is their Oakwood location 😊 We’ll meet at the sister location on Creedmoor…still nice but different 😊
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com> 
+Sent: Friday, February 27, 2026 9:35 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Subject: Re: CFGI/Abivax Coffee Meet Up
+
+ 
+
+This looks AMAZING - thank you for such a great find!
+
+ 
+
+Would 1:30PM work for both of you (I can update invite)?  I'm very excited to meet you, Mike (and to see you, Hema!)
+
+ 
+
+AMD
+
+ 
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 9:28 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Subject: [External] CFGI/Abivax Coffee Meet Up 
+
+ 
+
+Hi Angela and Mike,
+
+Shall we meet at the  Optimist Raleigh?  Its by Creedmoor and Glenwood Avenue (near Perry’s Steakhouse)
+
+ 
+
+http://www.theoptimistraleigh.com/
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> > 
+Sent: Friday, February 27, 2026 9:06 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Re: Hema Angela Grab Coffee in Raleigh!
+
+ 
+
+Absolutely!  The More the Merrier 🙂  I'm thrilled at such short notice we could make this work.
+
+ 
+
+Greetings from RTP - we are so close.
+
+ 
+
+I have no coffee house preference (and I hate to ask you to pick a spot, I'm here on Page Rd.)   Is there somewhere you like/convenient for you/MIke? Have uber, will travel.  
+
+ 
+
+Personally, my favorite coffee place in all of Raleigh is the North Raleigh Jubala, but I hear they remodeled and it's not as warm/friendly.
+
+ 
+
+I'll be near Page Rd/ Miami Blvd - want to make sure I leave sufficient time for travel.  I don't suspect lunch will run past 1pm, so if you wanted to connect a little earlier as it is Friday, that will work. 
+
+ 
+
+Many cheers,
+
+Angela
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/
+```
+
+---
+
+## EMAIL #19
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90E00000`
+- **Direction:** sent
+- **Date:** 2026-02-27T11:06:13.2690000
+- **Subject:** RE: Abivax - ERP decision presentation 
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Girard, Camille', 'Ben Alaya, Aymen']
+- **CC:** ['Hema Keshava']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 31160B4D2EEBB4418B4C517427616513
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Camille/Aymen - Thanks again for the support through selection.  As we move into implementation preparation, it would be good to shift the vendor communication over to Hema and me so we can own next-step coordination on the Abivax side. 
+
+ 
+
+Since I haven’t spoken with NetSuite directly yet could you please send a short intro email connecting me with the NetSuite implementation lead, and note that I will coordinate immediate startup planning from here?
+
+ 
+
+For SAP, please keep communication in a holding pattern for now (no implementation kickoff actions) while we finalize NetSuite commercial and contract steps. 
+
+ 
+
+Please keep both of you copied on the thread so we can pull KPMG in quickly where needed.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Friday, February 27, 2026 4:08 AM
+To: Ben Alaya, Aymen <abenalaya@kpmg.fr>; Hema Keshava <Hema.Keshava@abivax.com>; Trinidad Mesa <Trinidad.Mesa@abivax.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; michaelkmarkman@gmail.com; Denoual, Sebastien <sdenoual@kpmg.fr>
+Cc: Michael Markman <mike.markman@abivax.com>
+Subject: RE: Abivax - ERP decision presentation 
+
+ 
+
+Hello all,
+
+ 
+
+Hope you're well. We are really happy that you reached to an agreement concerning the choice, with Netsuite.
+
+ 
+
+Please find attached and here the latest version <https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Steering%20Committee%203_20260226.pptx?d=w0787b75511ea487f9f031ec6a461b4d8&csf=1&web=1&e=wpLYSf>  of the presentation shared yesterday slightly modified with the latest numbers received yesterday evening (in the same folder you'll find also the Excel financials file <https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Final%20Financial%20comparaison%20Offer.xlsx?d=w9342bdab9fe741f68ffd2542d2b44b8f&csf=1&web=1&e=4Tcjwq>  with all details).
+
+ 
+
+For your information, SAP has proposed to me to organize a meeting with a COMEX member who wanted to make sure that you had alle elements to take the decision, even if you made your choice, do you want to meet with him?
+
+ 
+
+Also, we did not have enough time to review this slide, let's talk about it on Monday but you'll find below some information to update you:
+
+*	Negotiation phase to be launched by Hema and Mike --> you might want to decide to keep SAP in the loop to move forward negotiations and legal review in case something go wring with Netsuite:
+
+	*	Netsuite contacts : jamal.azil@oracle.com <mailto:jamal.azil@oracle.com>  / laurent.bailly@oracle.com <mailto:laurent.bailly@oracle.com>  / vincent.gehanno@oracle.com <mailto:vincent.gehanno@oracle.com>  / venceslas.dechallens@oracle.com <mailto:venceslas.dechallens@oracle.com> 
+
+	*	SAP contacts: marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> , mcasavecchia@kpmg.fr <mailto:mcasavecchia@kpmg.fr> , benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com> 
+
+*	We will be receiving the contract models today, I will send them to you in a separate email to start the legal review
+
+*	References: we have received one from Netsuite, we expect the second one and will receive the SAP ones today, I will also forward in a separate email
+
+ 
+
+
+
+Have a great day,
+
+ 
+
+Best regards,
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+ 
+
+________________________________
+
+De : Ben Alaya, Aymen
+Envoyé : lundi 9 février 2026 16:43
+À : Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >; Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; Hema Keshava <hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> >; Trinidad Mesa <trinidad.mesa@abivax.com <mailto:trinidad.mesa@abivax.com> >; Ja
+```
+
+---
+
+## EMAIL #20
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B900000`
+- **Direction:** received
+- **Date:** 2026-02-27T11:06:05.8280000
+- **Subject:** RE: CFGI/Abivax Coffee Meet Up
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Angela DePoy', 'Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3D8CE577B637E04ABA738D4CAA296862
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+This pictures in the website is their Oakwood location 😊 We’ll meet at the sister location on Creedmoor…still nice but different 😊
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com> 
+Sent: Friday, February 27, 2026 9:35 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Subject: Re: CFGI/Abivax Coffee Meet Up
+
+ 
+
+This looks AMAZING - thank you for such a great find!
+
+ 
+
+Would 1:30PM work for both of you (I can update invite)?  I'm very excited to meet you, Mike (and to see you, Hema!)
+
+ 
+
+AMD
+
+ 
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 9:28 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Subject: [External] CFGI/Abivax Coffee Meet Up 
+
+ 
+
+Hi Angela and Mike,
+
+Shall we meet at the  Optimist Raleigh?  Its by Creedmoor and Glenwood Avenue (near Perry’s Steakhouse)
+
+ 
+
+http://www.theoptimistraleigh.com/
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> > 
+Sent: Friday, February 27, 2026 9:06 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Re: Hema Angela Grab Coffee in Raleigh!
+
+ 
+
+Absolutely!  The More the Merrier 🙂  I'm thrilled at such short notice we could make this work.
+
+ 
+
+Greetings from RTP - we are so close.
+
+ 
+
+I have no coffee house preference (and I hate to ask you to pick a spot, I'm here on Page Rd.)   Is there somewhere you like/convenient for you/MIke? Have uber, will travel.  
+
+ 
+
+Personally, my favorite coffee place in all of Raleigh is the North Raleigh Jubala, but I hear they remodeled and it's not as warm/friendly.
+
+ 
+
+I'll be near Page Rd/ Miami Blvd - want to make sure I leave sufficient time for travel.  I don't suspect lunch will run past 1pm, so if you wanted to connect a little earlier as it is Friday, that will work. 
+
+ 
+
+Many cheers,
+
+Angela
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 8:04 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Subject: [External] Hema Angela Grab Coffee in Raleigh! 
+
+ 
+
+Hi Angela, 
+
+Hope it’s ok but I’ve invited Mike Markman (ERP Director) to join as well. He is Raleigh based too. 
+
+ 
+
+Do you h
+```
+
+---
+
+## EMAIL #21
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B8F0000`
+- **Direction:** received
+- **Date:** 2026-02-27T10:51:48.9560000
+- **Subject:** OpenAI has invited you to ChatGPT Enterprise
+- **From:** OpenAI <noreply@tm.openai.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 7C4A475FCBD6424F9FCD95F0145AF42B
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+You've been invited to a ChatGPT Enterprise workspace. 
+ <https://cdn.openai.com/API/logo-assets/openai-logo-email-header-1.png> 	
+OpenAI (noreply@tm.openai.com) has invited you to collaborate using ChatGPT Enterprise in the workspace Abivax Enterprise. 
+
+Please click on the link below to accept your invitation and join the workspace using the email address mike.markman@abivax.com. 
+
+Join workspace <https://chatgpt.com/auth/login?inv_ws_name=Abivax+Enterprise&inv_email=mike.markman%40abivax.com&wId=31264489-e562-4497-8d9b-6fbaff1cc187&accept_wId=31264489-e562-4497-8d9b-6fbaff1cc187>  	
+Chats and GPTs in your ChatGPT Enterprise workspace may be subject to your organization's access and controls. 
+
+If you have any questions, please contact us through our help center <https://mandrillapp.com/track/click/31165340/help.openai.com?p=eyJzIjoiaGlJcG85UWk2aGVaTUtQM296eDhNZ0ZZdy1RIiwidiI6MiwicCI6IntcInVcIjozMTE2NTM0MCxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2hlbHAub3BlbmFpLmNvbVxcXC9lblxcXC9cIixcImlkXCI6XCIwODUyMzkyMTIxNmQ0ZDgzOTI1YmQwZjY1ZmE5ZGFlZFwiLFwidXJsX2lkc1wiOltcIjc3NTAwMDcwYzhjNTAzZTc2YTk4MTdmMGRhZjFiNTQ1ZGIyNTE1YThcIl0sXCJtc2dfdHNcIjoxNzcyMjA3NTAyfSJ9> . 
+
+The OpenAI Team 
+
+ <https://mandrillapp.com/track/open.php?u=31165340&id=08523921216d4d83925bd0f65fa9daed>
+```
+
+---
+
+## EMAIL #22
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B8C0000`
+- **Direction:** received
+- **Date:** 2026-02-27T10:01:48.2720000
+- **Subject:** Automatic reply: CFGI/Abivax Coffee Meet Up
+- **From:** Angela DePoy <adepoy@cfgi.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3D8CE577B637E04ABA738D4CAA296862
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+I’m out of office traveling to clients on Thursday and Friday February 26/27th and will be delayed in response as a result.  I will be back in the office on Monday, March 1st.  
+
+
+
+
+Disclaimer
+
+The information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized to receive it. If you are not the recipient, you are hereby notified that any disclosure, copying, distribution or taking action in relation of the contents of this information is strictly prohibited and may be unlawful.
+
+This email has been scanned for viruses and malware, and may have been automatically archived by Mimecast, a leader in email security and cyber resilience. Mimecast integrates email defenses with brand protection, security awareness training, web security, compliance and other essential capabilities. Mimecast helps protect large and small organizations from malicious activity, human error and technology failure; and to lead the movement toward building a more resilient world. To find out more, visit our website.
+```
+
+---
+
+## EMAIL #23
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90DE0000`
+- **Direction:** sent
+- **Date:** 2026-02-27T10:00:54.8450000
+- **Subject:** RE: CFGI/Abivax Coffee Meet Up
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ["'Angela DePoy'", 'Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3D8CE577B637E04ABA738D4CAA296862
+- **Folder:** sent
+
+**Body Text:**
+
+```
+That works for me. Looking forward to meeting Angela!
+
+ 
+
+-Mike
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com> 
+Sent: Friday, February 27, 2026 9:35 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Subject: Re: CFGI/Abivax Coffee Meet Up
+
+ 
+
+This looks AMAZING - thank you for such a great find!
+
+ 
+
+Would 1:30PM work for both of you (I can update invite)?  I'm very excited to meet you, Mike (and to see you, Hema!)
+
+ 
+
+AMD
+
+ 
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 9:28 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Subject: [External] CFGI/Abivax Coffee Meet Up 
+
+ 
+
+Hi Angela and Mike,
+
+Shall we meet at the  Optimist Raleigh?  Its by Creedmoor and Glenwood Avenue (near Perry’s Steakhouse)
+
+ 
+
+http://www.theoptimistraleigh.com/
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> > 
+Sent: Friday, February 27, 2026 9:06 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Re: Hema Angela Grab Coffee in Raleigh!
+
+ 
+
+Absolutely!  The More the Merrier 🙂  I'm thrilled at such short notice we could make this work.
+
+ 
+
+Greetings from RTP - we are so close.
+
+ 
+
+I have no coffee house preference (and I hate to ask you to pick a spot, I'm here on Page Rd.)   Is there somewhere you like/convenient for you/MIke? Have uber, will travel.  
+
+ 
+
+Personally, my favorite coffee place in all of Raleigh is the North Raleigh Jubala, but I hear they remodeled and it's not as warm/friendly.
+
+ 
+
+I'll be near Page Rd/ Miami Blvd - want to make sure I leave sufficient time for travel.  I don't suspect lunch will run past 1pm, so if you wanted to connect a little earlier as it is Friday, that will work. 
+
+ 
+
+Many cheers,
+
+Angela
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 8:04 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Subject: [External] Hema Angela Grab Coffee in Raleigh! 
+
+ 
+
+Hi Angela, 
+
+Hope it’s ok but I’ve invited Mike Markman (ERP Director) to join as well. He is Raleigh based too. 
+
+ 
+
+Do you have a preference on a coffee house? 
+
+ 
+
+Get Outlook for iOS 
+```
+
+---
+
+## EMAIL #24
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B8B0000`
+- **Direction:** received
+- **Date:** 2026-02-27T09:35:43.4200000
+- **Subject:** Re: CFGI/Abivax Coffee Meet Up
+- **From:** Angela DePoy <adepoy@cfgi.com>
+- **To:** ['Hema Keshava', 'Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3D8CE577B637E04ABA738D4CAA296862
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+This looks AMAZING - thank you for such a great find!
+
+Would 1:30PM work for both of you (I can update invite)?  I'm very excited to meet you, Mike (and to see you, Hema!)
+
+AMD
+
+
+
+
+Angela DePoy | Partner
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 	 
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com>
+Sent: Friday, February 27, 2026 9:28 AM
+To: Angela DePoy <adepoy@cfgi.com>; Michael Markman <mike.markman@abivax.com>
+Subject: [External] CFGI/Abivax Coffee Meet Up 
+ 
+
+Hi Angela and Mike,
+
+Shall we meet at the  Optimist Raleigh?  Its by Creedmoor and Glenwood Avenue (near Perry’s Steakhouse)
+
+ 
+
+http://www.theoptimistraleigh.com/
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com> 
+Sent: Friday, February 27, 2026 9:06 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: Re: Hema Angela Grab Coffee in Raleigh!
+
+ 
+
+Absolutely!  The More the Merrier 🙂  I'm thrilled at such short notice we could make this work.
+
+ 
+
+Greetings from RTP - we are so close.
+
+ 
+
+I have no coffee house preference (and I hate to ask you to pick a spot, I'm here on Page Rd.)   Is there somewhere you like/convenient for you/MIke? Have uber, will travel.  
+
+ 
+
+Personally, my favorite coffee place in all of Raleigh is the North Raleigh Jubala, but I hear they remodeled and it's not as warm/friendly.
+
+ 
+
+I'll be near Page Rd/ Miami Blvd - want to make sure I leave sufficient time for travel.  I don't suspect lunch will run past 1pm, so if you wanted to connect a little earlier as it is Friday, that will work. 
+
+ 
+
+Many cheers,
+
+Angela
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 8:04 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Subject: [External] Hema Angela Grab Coffee in Raleigh! 
+
+ 
+
+Hi Angela, 
+
+Hope it’s ok but I’ve invited Mike Markman (ERP Director) to join as well. He is Raleigh based too. 
+
+ 
+
+Do you have a preference on a coffee house? 
+
+ 
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+
+________________________________
+
+From: Angela DePoy
+Sent: Wednesday, February 25, 2026 4:26:48 PM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >; Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Hema Angela Grab Coffee in Raleigh!
+When: Friday, February 27, 2026 2:00 PM-3:00 PM.
+Where: 
+
+ 
+
+ 
+
+Disclaimer
+
+The information contained in this communication from the sender is confidential. It is intended solely for use by the recipient
+```
+
+---
+
+## EMAIL #25
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B8A0000`
+- **Direction:** received
+- **Date:** 2026-02-27T09:28:21.3020000
+- **Subject:** CFGI/Abivax Coffee Meet Up
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Angela DePoy', 'Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3D8CE577B637E04ABA738D4CAA296862
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Angela and Mike,
+
+Shall we meet at the  Optimist Raleigh?  Its by Creedmoor and Glenwood Avenue (near Perry’s Steakhouse)
+
+ 
+
+http://www.theoptimistraleigh.com/
+
+ 
+
+From: Angela DePoy <adepoy@cfgi.com> 
+Sent: Friday, February 27, 2026 9:06 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: Re: Hema Angela Grab Coffee in Raleigh!
+
+ 
+
+Absolutely!  The More the Merrier 🙂  I'm thrilled at such short notice we could make this work.
+
+ 
+
+Greetings from RTP - we are so close.
+
+ 
+
+I have no coffee house preference (and I hate to ask you to pick a spot, I'm here on Page Rd.)   Is there somewhere you like/convenient for you/MIke? Have uber, will travel.  
+
+ 
+
+Personally, my favorite coffee place in all of Raleigh is the North Raleigh Jubala, but I hear they remodeled and it's not as warm/friendly.
+
+ 
+
+I'll be near Page Rd/ Miami Blvd - want to make sure I leave sufficient time for travel.  I don't suspect lunch will run past 1pm, so if you wanted to connect a little earlier as it is Friday, that will work. 
+
+ 
+
+Many cheers,
+
+Angela
+
+ 
+
+ 
+
+ 
+
+Angela DePoy | Partner
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com <mailto:Adepoy@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+ 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Friday, February 27, 2026 8:04 AM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Subject: [External] Hema Angela Grab Coffee in Raleigh! 
+
+ 
+
+Hi Angela, 
+
+Hope it’s ok but I’ve invited Mike Markman (ERP Director) to join as well. He is Raleigh based too. 
+
+ 
+
+Do you have a preference on a coffee house? 
+
+ 
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+
+________________________________
+
+From: Angela DePoy
+Sent: Wednesday, February 25, 2026 4:26:48 PM
+To: Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >; Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Hema Angela Grab Coffee in Raleigh!
+When: Friday, February 27, 2026 2:00 PM-3:00 PM.
+Where: 
+
+ 
+
+ 
+
+Disclaimer
+
+The information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized to receive it. If you are not the recipient, you are hereby notified that any disclosure, copying, distribution or taking action in relation of the contents of this information is strictly prohibited and may be unlawful.
+
+This email has been scanned for viruses and malware, and may have been automatically archived by Mimecast, a leader in email security and cyber resilience. Mimecast integrates email defenses with brand protection, security awareness training, web security, compliance and other essential capabilities. Mimecast helps protect large and small organizations from malicious activity, human error and technology failure; and to lead the movement toward building a more resilient world. To find out more, visit our website.
+
+ 
+
+Disclaimer
+
+The information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized to receive it. If you are not the recipient, you are hereby notified that any disclosure, copying, distribution or taking action in relation of the contents of this information is strictly prohibited and m
+```
+
+---
+
+## EMAIL #26
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B870000`
+- **Direction:** received
+- **Date:** 2026-02-27T04:50:16.4390000
+- **Subject:** 2026 Performance Evaluation Cycle / Cycle d'Evaluation de la Performance 2026
+- **From:** Sophie Lacourrege </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=30ADCB094AED454894DD399888592AFB-CD466DEC-FB>
+- **To:** ['Adrian Holbrook', 'Alexis Gillis', 'Amy Adams', 'Arick Forsyth', 'Ashley Harper', 'Aude Garcel', 'Audrey Abecassis Borgus', 'Audrey Moisan', 'Audrey Vautrin', 'Aurelien Flatres', 'Bailey Hatoum', 'Bhushan Kanumuri', 'Cecile Apolit', 'Cecile Joie', 'Charlene Sanchez', 'Chris Rabbat', 'Christine Cook', 'Ciani Petropoulos', 'Cintia Hernandez Ortega', 'David Deng', 'David Zhang', 'Dawn Dougherty', 'Denis Jankovic', 'Didier Blondel', 'Doug Jacobstein', 'Eleni Panoutsopoulou', 'Eleni Sotirakou', 'Elisabeth Brachet', 'Emilie Leveau', 'Eve Lasserre', 'Fabio Cataldi', 'Fatma Hemdani', 'Frederick Golly', 'Hema Keshava', 'Jackie Mitrano', 'Jade Nguyen', 'Jennifer Fine', 'Jerome Denis', 'Jessica Huskey', 'Johanna Sandri', 'Josianne Nitcheu', 'Julien Santo', 'Juliette Courtot', 'Keith Fournier', 'Kejia Shan', 'Laurence Desroys du Roure', 'Lingesh Hazare', 'Maïwenn Bonnet', 'Malinda Micho', 'Marcus Wilkes', 'Marianne Perdrijat', 'Matt Epley', 'Maxime Thomas', 'Michael Markman', 'Murielle Salaun Lancien', 'Nadege Briancon-Eris', 'Nakesha Harding-Boyce', 'Nemanja Djordjevic', 'Noelie Campos', 'Ouahiba Kaabeche', 'Pascaline Ploncard', 'Patricia Fleuranceau Morel', 'Patrick Malloy', 'Philippe Goncalves', 'Phuong Tran', 'Pierre Courteille', 'Rebecca Mosig', 'Romain Najman', 'Rosie Dawes', 'Roxandra Sturdza', 'Saadia Batiga', 'Sophie Gibelli', 'Sophie Lacourrege', 'Stephane Courric', 'Sunil Sabbani', 'Thanh-Huong Hoang-Thi', 'Trang Nguyen', 'Trinidad Mesa', 'Uday Bhaskar', 'Xiaobo Liu', 'Zineb Kaiss']
+- **CC:** ['Marc de Garidel', 'Ida Hatoum', 'David Zhang', 'Didier Blondel', 'Fabio Cataldi', 'Jerome Denis', 'Nadege Briancon-Eris', 'Pierre Courteille', 'Maurus de la Rosa', 'Emilie Leveau', 'Alexis Gillis']
+- **Has Attachments:** True
+  - image002.jpg
+  - image003.png
+  - image004.jpg
+  - image005.png
+- **Thread ID:** 1755A83AEFFC6943AB7AF611A75CB9EE
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+February 2026
+
+HR 
+
+	
+Internal communication : 2026 Performance Evaluation Cycle
+
+
+
+	
+ 
+
+Dear All,
+
+ 
+
+We are starting the 2026 Performance Evaluation Cycle.
+
+ 
+
+The 3 key stages to remember are:
+
+*	Objectives set up = March 2nd to 31st, 2026 
+*	Mid-year review = June 1st to end of August 2026
+*	End of year review = December 1st , 2026 to January 15th, 2027
+
+ 
+
+The annual campaign to set 2026 objectives will therefore be launched on Monday, March 2nd, 2026.
+
+ 
+
+Please note the following key points :
+
+ 
+
+Schedule and key stages 
+
+*	Opening of the platform: Monday, March 2nd
+*	Deadline for employees to enter objectives: Tuesday, March 17th - EOB
+*	Deadline for managers to validate objectives: Tuesday, March 31st - EOB
+
+ 
+
+Actions expected of you 
+
+*	Propose clear and measurable objectives (SMART) for each member of your team
+*	Limit the number of objectives to a reasonable number: 3 or 4 maximum (which will be broken down into sub-objectives)
+*	Put a weighting on each objective, bearing in mind that the sum of the weightings for each one must equal 100%.
+
+NB = Please note that the available weight scale is as follows: 1 (=10%), 2 (=20%), 3 (=30%), 5 (=50%) and 10 (=100%)
+
+*	Enter the objectives in the dedicated platform before the deadline
+
+ 
+
+We wish you constructive discussions with your manager.
+
+ 
+
+If you have any questions, please do not hesitate to contact us.
+
+ 
+
+Kind regards,
+
+ 
+
+HT Team 
+
+ 
+
+-----------------------------------------
+
+ 
+
+Chers Tous,
+
+ 
+
+Nous rentrons dans le cycle de l’Evaluation de la Performance 2026.
+
+ 
+
+Les 3 étapes clefs à retenir sont :
+
+*	Mise en place des objectifs = 2 au 31 mars 2026 
+*	Performance à mi-année = 1er juin à fin août 2026
+*	Performance de fin d’année = 1er décembre 2026 au 15 janvier 2027
+
+ 
+
+Ainsi, le lancement de la campagne annuelle de définition des objectifs 2026 aura lieu le lundi 2 mars.
+
+ 
+
+Nous attirons votre attention sur les éléments à retenir :
+
+ 
+
+Calendrier et étapes clés 
+
+*	Ouverture de la plateforme : lundi 2 mars 
+*	Date limite de saisie des objectifs: mardi 17 mars fin de journée
+*	Date limite de validation des objectifs: mardi 31 mars fin de journée
+
+ 
+
+Actions attendues de votre part 
+
+*	Proposer des objectifs clairs et mesurables (SMART) pour chaque membre de votre équipe
+*	Limiter le nombre d’objectifs à un chiffre raisonnable : 3 ou 4 maximum (qui seront déclinés en sous-objectifs)
+*	Mettre un poids à chaque objectif sachant que la somme des poids de chacun d’eux devra faire 100% 
+
+NB = Attention l’échelle disponible des poids est la suivante : 1 (=10%), 2 (=20%), 3 (=30%), 5 (=50%) et 10 (=100%)
+
+*	Saisir les objectifs dans la plateforme dédiée avant la date limite
+
+ 
+
+Nous vous souhaitons des discussions constructives avec votre manager.
+
+ 
+
+Pour toute question, n’hésitez pas à nous contacter.
+
+ 
+
+Bien à vous,
+
+ 
+
+HR Team
+```
+
+---
+
+## EMAIL #27
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B860000`
+- **Direction:** received
+- **Date:** 2026-02-27T04:09:01.8830000
+- **Subject:** RE: Abivax - ERP decision presentation 
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Ben Alaya, Aymen', 'Hema Keshava', 'Trinidad Mesa', 'Jade Nguyen', 'michaelkmarkman@gmail.com', 'Denoual, Sebastien']
+- **CC:** ['Michael Markman']
+- **Has Attachments:** True
+  - image.png
+  - Abivax - Steering Committee 3_20260226.pdf
+- **Thread ID:** 31160B4D2EEBB4418B4C517427616513
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello all,
+
+Hope you're well. We are really happy that you reached to an agreement concerning the choice, with Netsuite.
+
+Please find attached and here the latest version <https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Steering%20Committee%203_20260226.pptx?d=w0787b75511ea487f9f031ec6a461b4d8&csf=1&web=1&e=wpLYSf>  of the presentation shared yesterday slightly modified with the latest numbers received yesterday evening (in the same folder you'll find also the Excel financials file <https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Final%20Financial%20comparaison%20Offer.xlsx?d=w9342bdab9fe741f68ffd2542d2b44b8f&csf=1&web=1&e=4Tcjwq>  with all details).
+
+For your information, SAP has proposed to me to organize a meeting with a COMEX member who wanted to make sure that you had alle elements to take the decision, even if you made your choice, do you want to meet with him?
+
+Also, we did not have enough time to review this slide, let's talk about it on Monday but you'll find below some information to update you:
+
+*	
+	Negotiation phase to be launched by Hema and Mike --> you might want to decide to keep SAP in the loop to move forward negotiations and legal review in case something go wring with Netsuite:
+
+	*	
+		Netsuite contacts : jamal.azil@oracle.com / laurent.bailly@oracle.com / vincent.gehanno@oracle.com / venceslas.dechallens@oracle.com
+	*	
+		SAP contacts: marcevrard@kpmg.fr, mcasavecchia@kpmg.fr, benjamin.rebel@sap.com
+
+*	
+	We will be receiving the contract models today, I will send them to you in a separate email to start the legal review
+*	
+	References: we have received one from Netsuite, we expect the second one and will receive the SAP ones today, I will also forward in a separate email
+
+
+
+Have a great day,
+
+Best regards,
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+
+________________________________
+
+De : Ben Alaya, Aymen
+Envoyé : lundi 9 février 2026 16:43
+À : Ben Alaya, Aymen <abenalaya@kpmg.fr>; Girard, Camille <camillegirard@kpmg.fr>; Hema Keshava <hema.keshava@abivax.com>; Trinidad Mesa <trinidad.mesa@abivax.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; michaelkmarkman@gmail.com <michaelkmarkman@gmail.com>; Denoual, Sebastien <sdenoual@kpmg.fr>
+Cc : mike.markman@abivax.com <mike.markman@abivax.com>
+Objet : Abivax - ERP decision presentation
+Quand : jeudi 26 février 2026 15:00-16:00.
+Où : Microsoft Teams Meeting
+ 
+Dear Everyone,
+
+This session aims to review the final analysis of our ERP competitors and to make the final selection ahead of the negotiation session.
+
+Regards, 
+Aymen
+
+________________________________________________________________________________
+Microsoft Teams meeting
+Join: https://teams.microsoft.com/meet/35464535467779?p=llLqsWZefi4vJv272M
+Meeting ID: 354 645 354 677 79
+Passcode: bo3Hn9hd
+________________________________
+
+Need help? <https://aka.ms/JoinTeamsMeeting?omkt=en-US>  | System reference <https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDk2YjUyNzgtNDljOC00NmRiLWFjYWYtZjAyMzVhMzBiZmI4%40thread.v2/0?context=%7b%22Tid%22%3a%22deff24bb-2089-4400-8c8e-f71e680378b2%22%2c%22Oid%22%3a%22fc14b768-23a0-4ffe-8b01-06be8443bb6f%22%7d> 
+Dial in by phone
++33 1 73 24 05 79,,74193083# <tel:+33173240579,,74193083#>  France, All locations
+Find a local number <https://dialin.teams.microsoft.com/acb16c8e-2279-44e6-ae8a-242d612bfe17?id=74193083> 
+Phone conference ID: 741 930 83#
+For organizers: Meeting options <https://teams.microsoft.com/meetingOptions/?organizerId=fc14b768-23a0-4ffe-8b01-06be8443bb6f&tenantId=deff24bb-2089-4400-8c8e-f71e680378b2&threadId=19_meeting_MDk2YjUyNzgtNDljOC00NmRiLWFjYWYtZjAyMzVhMzBiZmI4@thread.v2&messageId
+```
+
+---
+
+## EMAIL #28
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B850000`
+- **Direction:** received
+- **Date:** 2026-02-26T11:40:26.4020000
+- **Subject:** RE: ERP decision follow-up
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Michael Markman']
+- **CC:** ['Ben Alaya, Aymen']
+- **Has Attachments:** False
+- **Thread ID:** 57B67EE3556146FB820FAAFD9A01879C
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike,
+
+Thanks again for your feedback.
+
+Here you'll find the document shared today <https://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Second%20round/Abivax%20-%20Steering%20Committee%203_20260226.pptx?d=w0787b75511ea487f9f031ec6a461b4d8&csf=1&web=1&e=flgEDE> , reviewed with our discussions.
+
+Also, regarding your point on P2P about your email on Monday, please find below all the information you need regarding the detailed P2P process requirements and how NetSuite will address them:
+
+
+*	
+	Abivax - Phase 2 WS Procurement.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Workshops/Abivax%20-%20Phase%202%20WS%20Procurement.pdf?csf=1&web=1&e=yFW7mq> : workshop minutes detailing the processes that had been asked to be covered by the ERP and the specificities of Abivax P2P process identified by the team.
+
+*	
+	Abivax - Oracle RFP - Functional & technical requirements.xlsx <https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round/Netsuite/RFP%20proposal/Abivax%20-%20Oracle%20RFP%20-%20Functional%20%26%20technical%20requirements.xlsx?d=wff70773347f54d65ae491861f15cdb17&csf=1&web=1&e=9Tb55V> : in the Tab "1. Procure to pay" you'll find all the detail requirements + the answer of Netsuite for each with a description on how they will cover each of them
+
+*	
+	 The netsuite Demonstration: 
+
+	*	
+		02 - NetSuiteOracle - Procure to Pay.mp4 <https://abivaxfr.sharepoint.com/:v:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Demonstrations/Recordings/NETSUITE/02%20-%20NetSuiteOracle%20-%20Procure%20to%20Pay.mp4?csf=1&web=1&e=wBVIdI> : The P2P demonstration recording in French
+	*	
+		Abivax_NetSuiteOracle_P2P_EN.docx <https://abivaxfr.sharepoint.com/:w:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Demonstrations/Recordings/NETSUITE/English%20translation/Abivax_NetSuiteOracle_P2P_EN.docx?d=w58bcb574e9024c08a5c1c98b9a95f7e6&csf=1&web=1&e=3XRkL2>  The P2P  demonstration transcription in English 
+
+
+
+Regarding the externalization of the P2P process, we have discussed it with them yesterday afternoon. They have some customers in this model apparently, but they shared with us the following points:
+
+*	
+	You loose some of the interest oh having an ERP system covering both processes and being more integrated
+*	
+	Sometimes customers feel like they are loosing some control over the process
+*	
+	It might be necessary to create interface between the tools, so adding complexity to the Information System
+
+
+They will be able to discuss it further if you want.
+
+I'll come back to you on Monday with the slides requested.
+
+Best regards,
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+
+
+________________________________
+
+De: Michael Markman <mike.markman@abivax.com>
+Envoyé: Jeudi 26 février 2026 16:08
+À: Girard, Camille <camillegirard@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet: ERP decision follow-up 
+
+
+Hi Both – thanks again for all the work up to this point. Can you send those slides through that we went over today?
+
+ 
+
+Looking forward to the next steps together.
+
+ 
+
+Thanks,
+
+Mike
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles 
+```
+
+---
+
+## EMAIL #29
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B840000`
+- **Direction:** received
+- **Date:** 2026-02-26T10:38:21.6930000
+- **Subject:** Follow up on our Managers Forum meeting
+- **From:** Sophie Lacourrege </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=30ADCB094AED454894DD399888592AFB-CD466DEC-FB>
+- **To:** ['Aude Garcel', 'Bindu Saini', 'Chris Rabbat', 'Doug Jacobstein', 'Frederick Golly', 'Hema Keshava', 'Jennifer Fine', 'Jessica Huskey', 'Josianne Nitcheu', 'Julien Santo', 'Keith Fournier', 'Kejia Shan', 'Laurence Desroys du Roure', 'Marcus Wilkes', 'Marianne Perdrijat', 'Mark Hronec', 'Michael Markman', 'Murielle Salaun Lancien', 'Nakesha Harding-Boyce', 'Pascaline Ploncard', 'Patricia Fleuranceau Morel', 'Patrick Malloy', 'Philippe Goncalves', 'Rebecca Mosig', 'Roxandra Sturdza', 'Sophie Gibelli', 'Thomas Descusses', 'Trinidad Mesa', 'Valerie Contassot']
+- **CC:** ['Marc de Garidel', 'Ida Hatoum', 'David Zhang', 'Didier Blondel', 'Fabio Cataldi', 'Jerome Denis', 'Maurus de la Rosa', 'Nadege Briancon-Eris', 'Pierre Courteille', 'Emilie Leveau', 'Alexis Gillis', 'Christine Cook']
+- **Has Attachments:** True
+  - image001.jpg
+  - image003.jpg
+  - image004.png
+  - Outlook-photo.png
+  - image.png
+  - 2026 Objectives and Strech Goals.pdf
+- **Thread ID:** C42FB6588D83AD4CA40EE9DDDE512EEE
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Dear All,
+
+ 
+
+As agreed, please find below the communication I shared with you and that will be sent tomorrow to all Abivax.
+
+ 
+
+You will also find attached the slides on the 2026 goals. It will ease your discussion with your teams.
+
+ 
+
+A last reminder : if some objectives are cross functional, please discuss among the group of leaders involved on how to write a common objective.
+
+ 
+
+Ida and I remain at your disposal if you were needing.
+
+ 
+
+Kind regards,
+
+ 
+
+Sophie
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+	 
+
+ 
+
+February 2026
+
+HR 
+
+	
+Internal communication : 2026 Performance Evaluation Cycle
+
+
+
+	
+ 
+
+Dear All,
+
+ 
+
+We are starting the 2026 Performance Evaluation Cycle again.
+
+ 
+
+The 3 key stages to remember are:
+
+*	Objectives set up = March 2nd to 31st, 2026 
+*	Mid-year review = June 1st to end of August 2026
+*	End of year review = December 1st , 2026 to January 15th, 2027
+
+ 
+
+The annual campaign to set 2026 objectives will therefore be launched on Monday, March 2nd, 2026.
+
+ 
+
+Please note the following key points :
+
+ 
+
+Schedule and key stages 
+
+*	Opening of the platform: Monday, March 2nd
+*	Deadline for employees to enter objectives: Tuesday, March 17th - EOB
+*	Deadline for managers to validate objectives: Tuesday, March 31st - EOB
+
+ 
+
+Actions expected of you 
+
+*	Propose clear and measurable objectives (SMART) for each member of your team
+*	Limit the number of objectives to a reasonable number: 3 or 4 maximum (which will be broken down into sub-objectives)
+*	Put a weighting on each objective, bearing in mind that the sum of the weightings for each one must equal 100%.
+
+NB = Please note that the available weight scale is as follows: 1 (=10%), 2 (=20%), 3 (=30%), 5 (=50%) and 10 (=100%)
+
+*	Enter the objectives in the dedicated platform before the deadline
+
+ 
+
+We wish you constructive discussions with your manager.
+
+ 
+
+If you have any questions, please do not hesitate to contact us.
+
+ 
+
+Kind regards,
+
+ 
+
+HT Team 
+
+ 
+
+-----------------------------------------
+
+ 
+
+Chers Tous,
+
+ 
+
+Comme évoqué par Ida aujourd’hui, nous rentrons dans le cycle de l’Evaluation de la Performance 2025.
+
+ 
+
+Les 3 étapes clefs à retenir sont :
+
+*	Mise en place des objectifs = 2 au 31 mars 2026 
+*	Performance à mi-année = 1er juin à fin août 2026
+*	Performance de fin d’année = 1er décembre 2026 au 15 janvier 2027
+
+ 
+
+Ainsi, le lancement de la campagne annuelle de définition des objectifs 2026 aura lieu le lundi 2 mars.
+
+ 
+
+Nous attirons votre attention sur les éléments à retenir :
+
+ 
+
+Calendrier et étapes clés 
+
+*	Ouverture de la plateforme : lundi 2 mars 
+*	Date limite de saisie des objectifs: mardi 17 mars fin de journée
+*	Date limite de validation des objectifs: mardi 31 mars fin de journée
+
+ 
+
+Actions attendues de votre part 
+
+*	Proposer des objectifs clairs et mesurables (SMART) pour chaque membre de votre équipe
+*	Limiter le nombre d’objectifs à un chiffre raisonnable : 3 ou 4 maximum (qui seront déclinés en sous-objectifs)
+*	Mettre un poids à chaque objectif sachant que la somme des poids de chacun d’eux devra faire 100% 
+
+NB = Attention l’échelle disponible des poids est la suivante : 1 (=10%), 2 (=20%), 3 (=30%), 5 (=50%) et 10 (=100%)
+
+*	Saisir les objectifs dans la plateforme dédiée avant la date limite
+
+ 
+
+Nous vous souhaitons des discussions constructives avec votre manager.
+
+ 
+
+Pour toute question, n’hésitez pas à nous contacter.
+
+ 
+
+Bien à vous,
+
+ 
+
+HR Team
+
+ 
+
+ 
+
+ 
+
+ 
+
+						
+
+ 
+
+ 
+
+
+
+Sophie Lacourrège
+VP HR Business Partner, Engagement & Culture
+
++33 (0)6 03 08 48 03
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+sophie.lacourrege@abivax.com <mailto:sophie.lacourrege@abivax.com> 
+
+ 
+
+ 
+
+OOO :    March 6th
+
+        March 20th  to March 23rd
+```
+
+---
+
+## EMAIL #30
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90DD0000`
+- **Direction:** sent
+- **Date:** 2026-02-26T10:31:04.3620000
+- **Subject:** RE: France P2P - Follow-up for ERP planning
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Trinidad Mesa']
+- **CC:** ['Philippe Goncalves']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 809388B22EA449E3938B4602F3F30293
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks for this Trinidad. Yes, I’m available so please feel free to send through an invite.
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Trinidad Mesa <Trinidad.Mesa@abivax.com> 
+Sent: Thursday, February 26, 2026 4:33 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Philippe Goncalves <philippe.goncalves@abivax.com>
+Subject: RE: France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Mike,
+
+ 
+
+As per your request for documentation, you will find enclosed :
+
+- the SOP for PO and contract 
+
+- the approval PO and invoices matrix
+
+- the approval of contract approval (signature policy)
+
+- process flow for invoice recording process (Abivax_Procédure Achat) – in French
+
+-Docushare user guide (for PO)
+
+-Supplier database update and maintenance (called Supplier data base cleaning)
+
+-Recording in currency (saisie en devise) – in French
+
+-Payment process by wire transfer (Moyen de paiement – virements bancaires) – in French
+
+Some description processes are in French, sorry for that…
+
+ 
+
+Concerning the session on PTP, are you free on next Monday from 5 p.m. CET?
+
+If not, can you provide with timeslots?
+
+I copy Philippe, who will attend the session.
+
+ 
+
+Best
+
+ 
+
+
+
+Trinidad Mesa 
+Finance & Accounting Director
+
++33 (0)6 51 81 96 04
+
+www.abivax.com <http://www.abivax.com/> 
+
+trinidad.mesa@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Envoyé : mardi 24 février 2026 16:41
+À : Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >
+Objet : France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.
+
+ 
+
+Would you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?
+
+ 
+
+I’d like to understand, at a practical level:
+
+  - current steps from request/PO through invoice/payment
+
+  - where approvals happen today (and where they do not)
+
+  - key manual workarounds / pain points
+
+  - exceptions or rework points
+
+  - where evidence/audit trail is weak today
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+If you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #31
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90DC0000`
+- **Direction:** sent
+- **Date:** 2026-02-26T10:08:37.9720000
+- **Subject:** ERP decision follow-up
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Girard, Camille', 'Ben Alaya, Aymen']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 57B67EE3556146FB820FAAFD9A01879C
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Both – thanks again for all the work up to this point. Can you send those slides through that we went over today?
+
+ 
+
+Looking forward to the next steps together.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #32
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B820000`
+- **Direction:** received
+- **Date:** 2026-02-26T08:10:03.9930000
+- **Subject:** Re: IT Landscape Follow-Up
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - image001.png
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** 860B68B669954F9EA2F96EC3B3DCD399
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike,
+
+To answer you last point regarding feeds detail, you will find a consolidated overview here <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE>  in this tracker.
+
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : lundi, 23 février 2026 à 17:52
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>
+Cc : Christophe Hennequin <Christophe.Hennequin@abivax.com>, Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Objet : RE: IT Landscape Follow-Up
+
+
+
+Thanks for this Jade – will come back with any additional questions.
+
+ 
+
+-Mike
+
+ 
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com>
+Sent: Monday, February 23, 2026 11:32 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Subject: Re: IT Landscape Follow-Up
+
+ 
+
+Hi Mike, 
+
+ 
+
+As promised, you’ll find attached an up-to-date Finance centric flowchart. 
+
+ 
+
+The payment flow from Sage to Agicap and passing through Trustpair is detailed as well (not the control elements however, which are with the finance team as mentioned).
+
+ 
+
+Let us know if anything is unclear,
+
+ 
+
+Best, 
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+ 
+
+De : Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+Date : vendredi, 20 février 2026 à 17:59
+À : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc : Christophe Hennequin <Christophe.Hennequin@abivax.com <mailto:Christophe.Hennequin@abivax.com> >, Benjamin Talmant <Benjamin.Talmant@abivax.com <mailto:Benjamin.Talmant@abivax.com> >
+Objet : Re: IT Landscape Follow-Up
+
+Hello Mike, 
+
+ 
+
+Happy to help!
+
+ 
+
+Here are some elements to get you started. I will come back to you once we have been able to properly gather / update the rest. 
+
+ 
+
+       1.    Can you send through the slides you shared today?
+
+Yes. Attached is the presentation I shared with you during the call.
+
+1.	You’ll notice the slide with a focus on Sage is missing. I’m currently working through an update with Finance to get you a most accurate version based on their latests processes. I should have it ready by Monday.
+
+ 
+
+1.	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? Yes, here it is <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE> , I have given you access. It’s a live where all owners are meant to make their updates. We also do periodic reviews to make sure it stays current
+2.	There were several interfaces you mentioned – similar to #1, is there a listing (I can create if not), that details out for the feeds:
+
+	1.	file-based vs API
+	2.	frequency
+	3.	owner(s)
+	4.	process for what happens when a feed fails
+
+We do have the information but not properly centralized, we’ll share consolidated version early next week
+
+ 
+
+3. For Trustpair and Agicap specifically, can you share the exact flow from vendor setup through payment validation and where control evidence is retained today?
+
+The exact flow will be detailed on our Sage centric IT map. As for control evidence,  I’m unsure what you’re referring to. If it’s the evidence related to the controls implemented by Finance they will be better equipped to provide this. I will look into it however.
+
+ 
+
+4. You mentioned SOX/audit flow - where are current control gaps or
+```
+
+---
+
+## EMAIL #33
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B810000`
+- **Direction:** received
+- **Date:** 2026-02-26T04:33:14.6550000
+- **Subject:** RE: France P2P - Follow-up for ERP planning
+- **From:** Trinidad Mesa </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=1B4F510FB9EF46FD8460F9495C565A29-TRINIDAD ME>
+- **To:** ['Michael Markman']
+- **CC:** ['Philippe Goncalves']
+- **Has Attachments:** True
+  - Supplier data base cleaning.xlsx
+  - ABIVAX_Procédure Achat - étapes 1 à 4 - MAJ 02.2026.pdf
+  - Approval  Invoices Authorization Matrix.pdf
+  - Approval PO matrix.pdf
+  - Moyen de paiement - virements bancaires.xlsx
+  - REC0234-V03_DocuShare User Guide.pdf
+  - Saisie en devise.pdf
+  - Signature policy.pdf
+  - SOP - Purchase Order and Contract Process.pdf
+  - image001.png
+- **Thread ID:** 809388B22EA449E3938B4602F3F30293
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+ 
+
+As per your request for documentation, you will find enclosed :
+
+- the SOP for PO and contract 
+
+- the approval PO and invoices matrix
+
+- the approval of contract approval (signature policy)
+
+- process flow for invoice recording process (Abivax_Procédure Achat) – in French
+
+-Docushare user guide (for PO)
+
+-Supplier database update and maintenance (called Supplier data base cleaning)
+
+-Recording in currency (saisie en devise) – in French
+
+-Payment process by wire transfer (Moyen de paiement – virements bancaires) – in French
+
+Some description processes are in French, sorry for that…
+
+ 
+
+Concerning the session on PTP, are you free on next Monday from 5 p.m. CET?
+
+If not, can you provide with timeslots?
+
+I copy Philippe, who will attend the session.
+
+ 
+
+Best
+
+ 
+
+
+
+Trinidad Mesa 
+Finance & Accounting Director
+
++33 (0)6 51 81 96 04
+
+www.abivax.com <http://www.abivax.com/> 
+
+trinidad.mesa@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com> 
+Envoyé : mardi 24 février 2026 16:41
+À : Trinidad Mesa <Trinidad.Mesa@abivax.com>
+Objet : France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.
+
+ 
+
+Would you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?
+
+ 
+
+I’d like to understand, at a practical level:
+
+  - current steps from request/PO through invoice/payment
+
+  - where approvals happen today (and where they do not)
+
+  - key manual workarounds / pain points
+
+  - exceptions or rework points
+
+  - where evidence/audit trail is weak today
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+If you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #34
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B800000`
+- **Direction:** received
+- **Date:** 2026-02-26T04:31:09.5740000
+- **Subject:** RE: Announcement: DDW abstract acceptances 
+- **From:** Amy Place </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=490BCEC3FEEC445A95936DA82BB37757-DF6A1F02-9D>
+- **To:** ['Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - ~WRD0000.jpg
+- **Thread ID:** 2BDF5233DE68374D956840A2DC29ECDA
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Congratulations!  Great news!
+
+ 
+
+Best,
+
+ 
+
+ 
+
+Amy Place, PhD, MBA, MS, RD, LD (She/Hers)
+MSL Team Lead
+
+
+amy.place@amplity.com <mailto:amy.place@amplity.com> 
+
+amy.place-ext@abivax.com <mailto:amy.place-ext@abivax.com> 
+
++1-248-730-8658
+
+
+
+ 
+
+ 
+
+ 
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com> 
+Sent: Wednesday, February 25, 2026 4:15 PM
+To: allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com>
+Subject: Announcement: DDW abstract acceptances 
+
+ 
+
+Dear All,
+
+ 
+
+I’m very pleased to share that Abivax will be presenting 9 abstracts at DDW (1 oral and 8 posters) which is an outstanding outcome.
+
+ 
+
+Unlike ECCO, DDW is an all "digestive disease" conference, meaning it is not solely focused on Chron's and Colitis.  As such, abstracts are much more closely scrutinized since many therapeutic areas are competing for the same timeslots.  
+
+ 
+
+Please note, these abstracts contain the same data presented at ECCO and are being encored for a US focused audience, which makes their acceptance even more impressive. 
+
+ 
+
+I checked our records, and this is by far the greatest number of abstracts Abivax has ever presented at DDW and something we should all be proud of! 
+
+ 
+
+Please find the details below:
+
+ 
+
+Abivax presentations at DDW (May 2-5, 2026, in Chicago, IL, USA)
+
+ 
+
+*	1 oral presentation; 8 poster  presentations
+
+ 
+
+Oral Presentation
+
+ 
+
+May 4th 10 – 10:15 AM - Skyline Ballroom (W375c) (McCormick Place)
+
+1.	Fernando Magro: " Impact of obefazimod treatment on histologic and combined histologic-endoscopic outcomes in patients with moderately to severely active ulcerative colitis: results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials”
+
+ 
+
+Poster Presentations
+
+May 4th 12:30 – 1:30 PM
+
+Session Title: Controlled Clinical Trials of IBD Treatment
+
+ 
+
+2.	Marla Dubinsky: " Early symptomatic improvement with obefazimod in patients with moderately to severely active ulcerative colitis: pooled results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+3.	Andres Yarur: " Efficacy and safety of obefazimod in an elderly population with moderately to severely active ulcerative colitis: week 8 results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+4.	Bruce E Sands: " Efficacy of obefazimod in patients with moderately to severely active ulcerative colitis: results in subgroups of prior inadequate response to advanced therapy (AT-IR) including or excluding patients with prior JAK-IR from ABTECT phase 3 induction trials"
+
+ 
+
+5.	Bruce E Sands: " Integrated summary of safety of obefazimod in phase 3 ABTECT induction trials"
+
+ 
+
+Session Title: Quality of Life and Psychosocial Outcomes
+
+ 
+
+6.	Marla Dubinsky: " Improvements in patient-reported fatigue among patients with moderately to severely active ulcerative colitis (UC) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 double-blind, placebo-controlled induction trials"
+
+ 
+
+7.	Bruce E Sands: " Improvements in patient-reported, disease-specific and overall quality-of-life among patients with moderately to severely active ulcerative colitis (uc) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 induction trials"
+
+ 
+
+May 5th 12:30 – 1:30 PM
+
+Session Title: Mechanisms of IBD Therapeutics 
+
+ 
+
+8.	Silvio Danese: " Obefazimod shows first evidence of dual anti-inflammatory and anti-fibrotic activity in murine in vivo and human in vitro models"
+
+ 
+
+9.	Parambir S Dulai: " Obefazimod enhances mir-124 expression in blood and colon tissue and reduces the key inflammatory cytokines IL-17a and IL-6 in serum of patients with moderate-to-severely active ulcerative colitis: results from the phase 3 ABTECT induction trials"
+
+ 
+
+Best,
+
+C
+```
+
+---
+
+## EMAIL #35
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20B7F0000`
+- **Direction:** received
+- **Date:** 2026-02-26T02:11:36.1410000
+- **Subject:** Re: Announcement: DDW abstract acceptances 
+- **From:** Sophie Lacourrege </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=30ADCB094AED454894DD399888592AFB-CD466DEC-FB>
+- **To:** ['Marc de Garidel', 'Patrick Malloy', 'Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 2BDF5233DE68374D956840A2DC29ECDA
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Dear All,
+It is impressive and I am proud to be part of this journey.
+Kind regards,
+Sophie 
+
+Envoyé à partir de Outlook pour iOS <https://aka.ms/o0ukef> 
+________________________________
+
+De : Marc de Garidel <Marc.de.Garidel@abivax.com>
+Envoyé : Wednesday, February 25, 2026 10:50:50 PM
+À : Patrick Malloy <Patrick.Malloy@abivax.com>; Chris Rabbat <Chris.Rabbat@abivax.com>; allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc : Fabio Cataldi <fabio.cataldi@abivax.com>
+Objet : RE: Announcement: DDW abstract acceptances 
+ 
+
+You are showing the way on the obe science & its potential unique IBD benefit for patients.
+
+Congrats to all involved.
+
+Best,
+
+Marc. 
+
+ 
+
+De : Patrick Malloy <Patrick.Malloy@abivax.com> 
+Envoyé : mercredi 25 février 2026 22:27
+À : Chris Rabbat <Chris.Rabbat@abivax.com>; allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc : Fabio Cataldi <fabio.cataldi@abivax.com>
+Objet : RE: Announcement: DDW abstract acceptances 
+
+ 
+
+Congrats Chris and team!!
+
+ 
+
+
+
+Patrick Malloy 
+SVP, Head of Investor Relations
+
++1.847.987.4878
+
+www.abivax.com <http://www.abivax.com/> 
+
+patrick.malloy@abivax.com <mailto:patrick.malloy@abivax.com> 
+
+	
+
+ 
+
+ 
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com <mailto:Chris.Rabbat@abivax.com> > 
+Sent: Wednesday, February 25, 2026 3:15 PM
+To: allabivax <allabivax@abivax.com <mailto:allabivax@abivax.com> >; ALLABIVAX-E <allabivax-e@abivax.com <mailto:allabivax-e@abivax.com> >
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com <mailto:fabio.cataldi@abivax.com> >
+Subject: Announcement: DDW abstract acceptances 
+
+ 
+
+Dear All,
+
+ 
+
+I’m very pleased to share that Abivax will be presenting 9 abstracts at DDW (1 oral and 8 posters) which is an outstanding outcome.
+
+ 
+
+Unlike ECCO, DDW is an all "digestive disease" conference, meaning it is not solely focused on Chron's and Colitis.  As such, abstracts are much more closely scrutinized since many therapeutic areas are competing for the same timeslots.  
+
+ 
+
+Please note, these abstracts contain the same data presented at ECCO and are being encored for a US focused audience, which makes their acceptance even more impressive. 
+
+ 
+
+I checked our records, and this is by far the greatest number of abstracts Abivax has ever presented at DDW and something we should all be proud of! 
+
+ 
+
+Please find the details below:
+
+ 
+
+Abivax presentations at DDW (May 2-5, 2026, in Chicago, IL, USA)
+
+ 
+
+*	1 oral presentation; 8 poster  presentations
+
+ 
+
+Oral Presentation
+
+ 
+
+May 4th 10 – 10:15 AM - Skyline Ballroom (W375c) (McCormick Place)
+
+1.	Fernando Magro: " Impact of obefazimod treatment on histologic and combined histologic-endoscopic outcomes in patients with moderately to severely active ulcerative colitis: results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials”
+
+ 
+
+Poster Presentations
+
+May 4th 12:30 – 1:30 PM
+
+Session Title: Controlled Clinical Trials of IBD Treatment
+
+ 
+
+2.	Marla Dubinsky: " Early symptomatic improvement with obefazimod in patients with moderately to severely active ulcerative colitis: pooled results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+3.	Andres Yarur: " Efficacy and safety of obefazimod in an elderly population with moderately to severely active ulcerative colitis: week 8 results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+4.	Bruce E Sands: " Efficacy of obefazimod in patients with moderately to severely active ulcerative colitis: results in subgroups of prior inadequate response to advanced therapy (AT-IR) including or excluding patients with prior JAK-IR from ABTECT phase 3 induction trials"
+
+ 
+
+5.	Bruce E Sands: " Integrated summary of safety of obefazimod in phase 3 ABTECT induction trials"
+
+ 
+
+Session Title: Quality of Life and Psychosocial
+```
+
+---
+
+## EMAIL #36
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010A8431E0000`
+- **Direction:** received
+- **Date:** 2026-02-25T16:50:58.5450000
+- **Subject:** RE: Announcement: DDW abstract acceptances 
+- **From:** Marc de Garidel </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=32D754ED813B484E8E5F82FFB0078950-2C854C6D-78>
+- **To:** ['Patrick Malloy', 'Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 2BDF5233DE68374D956840A2DC29ECDA
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+You are showing the way on the obe science & its potential unique IBD benefit for patients.
+
+Congrats to all involved.
+
+Best,
+
+Marc. 
+
+ 
+
+De : Patrick Malloy <Patrick.Malloy@abivax.com> 
+Envoyé : mercredi 25 février 2026 22:27
+À : Chris Rabbat <Chris.Rabbat@abivax.com>; allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc : Fabio Cataldi <fabio.cataldi@abivax.com>
+Objet : RE: Announcement: DDW abstract acceptances 
+
+ 
+
+Congrats Chris and team!!
+
+ 
+
+
+
+Patrick Malloy 
+SVP, Head of Investor Relations
+
++1.847.987.4878
+
+www.abivax.com <http://www.abivax.com/> 
+
+patrick.malloy@abivax.com <mailto:patrick.malloy@abivax.com> 
+
+	
+
+ 
+
+ 
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com <mailto:Chris.Rabbat@abivax.com> > 
+Sent: Wednesday, February 25, 2026 3:15 PM
+To: allabivax <allabivax@abivax.com <mailto:allabivax@abivax.com> >; ALLABIVAX-E <allabivax-e@abivax.com <mailto:allabivax-e@abivax.com> >
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com <mailto:fabio.cataldi@abivax.com> >
+Subject: Announcement: DDW abstract acceptances 
+
+ 
+
+Dear All,
+
+ 
+
+I’m very pleased to share that Abivax will be presenting 9 abstracts at DDW (1 oral and 8 posters) which is an outstanding outcome.
+
+ 
+
+Unlike ECCO, DDW is an all "digestive disease" conference, meaning it is not solely focused on Chron's and Colitis.  As such, abstracts are much more closely scrutinized since many therapeutic areas are competing for the same timeslots.  
+
+ 
+
+Please note, these abstracts contain the same data presented at ECCO and are being encored for a US focused audience, which makes their acceptance even more impressive. 
+
+ 
+
+I checked our records, and this is by far the greatest number of abstracts Abivax has ever presented at DDW and something we should all be proud of! 
+
+ 
+
+Please find the details below:
+
+ 
+
+Abivax presentations at DDW (May 2-5, 2026, in Chicago, IL, USA)
+
+ 
+
+*	1 oral presentation; 8 poster  presentations
+
+ 
+
+Oral Presentation
+
+ 
+
+May 4th 10 – 10:15 AM - Skyline Ballroom (W375c) (McCormick Place)
+
+1.	Fernando Magro: " Impact of obefazimod treatment on histologic and combined histologic-endoscopic outcomes in patients with moderately to severely active ulcerative colitis: results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials”
+
+ 
+
+Poster Presentations
+
+May 4th 12:30 – 1:30 PM
+
+Session Title: Controlled Clinical Trials of IBD Treatment
+
+ 
+
+2.	Marla Dubinsky: " Early symptomatic improvement with obefazimod in patients with moderately to severely active ulcerative colitis: pooled results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+3.	Andres Yarur: " Efficacy and safety of obefazimod in an elderly population with moderately to severely active ulcerative colitis: week 8 results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+4.	Bruce E Sands: " Efficacy of obefazimod in patients with moderately to severely active ulcerative colitis: results in subgroups of prior inadequate response to advanced therapy (AT-IR) including or excluding patients with prior JAK-IR from ABTECT phase 3 induction trials"
+
+ 
+
+5.	Bruce E Sands: " Integrated summary of safety of obefazimod in phase 3 ABTECT induction trials"
+
+ 
+
+Session Title: Quality of Life and Psychosocial Outcomes
+
+ 
+
+6.	Marla Dubinsky: " Improvements in patient-reported fatigue among patients with moderately to severely active ulcerative colitis (UC) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 double-blind, placebo-controlled induction trials"
+
+ 
+
+7.	Bruce E Sands: " Improvements in patient-reported, disease-specific and overall quality-of-life among patients with moderately to severely active ulcerative colitis (uc) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 induc
+```
+
+---
+
+## EMAIL #37
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD12B0000`
+- **Direction:** received
+- **Date:** 2026-02-25T16:36:58.7030000
+- **Subject:** Re: Announcement: DDW abstract acceptances 
+- **From:** Maurus de la Rosa </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=687FD9993A744C83BC483EB7C80F85AB-B56A7FAE-81>
+- **To:** ['Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** False
+- **Thread ID:** 2BDF5233DE68374D956840A2DC29ECDA
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+That's awesome! Good work!
+________________________________
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com>
+Sent: Wednesday, February 25, 2026 22:14
+To: allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com>
+Subject: Announcement: DDW abstract acceptances 
+ 
+
+Dear All,
+
+
+
+
+I’m very pleased to share that Abivax will be presenting 9 abstracts at DDW (1 oral and 8 posters) which is an outstanding outcome.
+
+
+
+
+Unlike ECCO, DDW is an all "digestive disease" conference, meaning it is not solely focused on Chron's and Colitis.  As such, abstracts are much more closely scrutinized since many therapeutic areas are competing for the same timeslots.  
+
+
+
+
+Please note, these abstracts contain the same data presented at ECCO and are being encored for a US focused audience, which makes their acceptance even more impressive. 
+
+
+
+
+I checked our records, and this is by far the greatest number of abstracts Abivax has ever presented at DDW and something we should all be proud of! 
+
+
+Please find the details below:
+
+ 
+
+Abivax presentations at DDW (May 2-5, 2026, in Chicago, IL, USA)
+
+ 
+
+*	1 oral presentation; 8 poster  presentations
+
+ 
+
+Oral Presentation
+
+ 
+
+May 4th 10 – 10:15 AM - Skyline Ballroom (W375c) (McCormick Place)
+
+1.	Fernando Magro: " Impact of obefazimod treatment on histologic and combined histologic-endoscopic outcomes in patients with moderately to severely active ulcerative colitis: results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials”
+
+ 
+
+Poster Presentations
+
+May 4th 12:30 – 1:30 PM
+
+Session Title: Controlled Clinical Trials of IBD Treatment
+
+ 
+
+2.	Marla Dubinsky: " Early symptomatic improvement with obefazimod in patients with moderately to severely active ulcerative colitis: pooled results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+3.	Andres Yarur: " Efficacy and safety of obefazimod in an elderly population with moderately to severely active ulcerative colitis: week 8 results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+4.	Bruce E Sands: " Efficacy of obefazimod in patients with moderately to severely active ulcerative colitis: results in subgroups of prior inadequate response to advanced therapy (AT-IR) including or excluding patients with prior JAK-IR from ABTECT phase 3 induction trials"
+
+ 
+
+5.	Bruce E Sands: " Integrated summary of safety of obefazimod in phase 3 ABTECT induction trials"
+
+ 
+
+Session Title: Quality of Life and Psychosocial Outcomes
+
+ 
+
+6.	Marla Dubinsky: " Improvements in patient-reported fatigue among patients with moderately to severely active ulcerative colitis (UC) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 double-blind, placebo-controlled induction trials"
+
+ 
+
+7.	Bruce E Sands: " Improvements in patient-reported, disease-specific and overall quality-of-life among patients with moderately to severely active ulcerative colitis (uc) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 induction trials"
+
+ 
+
+May 5th 12:30 – 1:30 PM
+
+Session Title: Mechanisms of IBD Therapeutics 
+
+ 
+
+8.	Silvio Danese: " Obefazimod shows first evidence of dual anti-inflammatory and anti-fibrotic activity in murine in vivo and human in vitro models"
+
+ 
+
+9.	Parambir S Dulai: " Obefazimod enhances mir-124 expression in blood and colon tissue and reduces the key inflammatory cytokines IL-17a and IL-6 in serum of patients with moderate-to-severely active ulcerative colitis: results from the phase 3 ABTECT induction trials"
+
+ 
+
+Best,
+Chris 
+
+
+
+Chris Rabbat, PhD
+
+VP, Global Head of Medical Outreach and Engagement
+
++1-310-989-2055
+
+www.abivax.com <http://www.abivax.com/> 
+
+chris.rabbat@abivax.com <mailto:chris.rabbat@abivax.com>
+```
+
+---
+
+## EMAIL #38
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD12A0000`
+- **Direction:** received
+- **Date:** 2026-02-25T16:26:55.6610000
+- **Subject:** RE: Announcement: DDW abstract acceptances 
+- **From:** Patrick Malloy </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=DDA0291B46A04193BC28EB75711070A0-4D2A0B9A-7C>
+- **To:** ['Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 2BDF5233DE68374D956840A2DC29ECDA
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Congrats Chris and team!!
+
+ 
+
+
+
+Patrick Malloy 
+SVP, Head of Investor Relations
+
++1.847.987.4878
+
+www.abivax.com <http://www.abivax.com/> 
+
+patrick.malloy@abivax.com <mailto:patrick.malloy@abivax.com> 
+
+	
+
+ 
+
+ 
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com> 
+Sent: Wednesday, February 25, 2026 3:15 PM
+To: allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com>
+Subject: Announcement: DDW abstract acceptances 
+
+ 
+
+Dear All,
+
+ 
+
+I’m very pleased to share that Abivax will be presenting 9 abstracts at DDW (1 oral and 8 posters) which is an outstanding outcome.
+
+ 
+
+Unlike ECCO, DDW is an all "digestive disease" conference, meaning it is not solely focused on Chron's and Colitis.  As such, abstracts are much more closely scrutinized since many therapeutic areas are competing for the same timeslots.  
+
+ 
+
+Please note, these abstracts contain the same data presented at ECCO and are being encored for a US focused audience, which makes their acceptance even more impressive. 
+
+ 
+
+I checked our records, and this is by far the greatest number of abstracts Abivax has ever presented at DDW and something we should all be proud of! 
+
+ 
+
+Please find the details below:
+
+ 
+
+Abivax presentations at DDW (May 2-5, 2026, in Chicago, IL, USA)
+
+ 
+
+*	1 oral presentation; 8 poster  presentations
+
+ 
+
+Oral Presentation
+
+ 
+
+May 4th 10 – 10:15 AM - Skyline Ballroom (W375c) (McCormick Place)
+
+1.	Fernando Magro: " Impact of obefazimod treatment on histologic and combined histologic-endoscopic outcomes in patients with moderately to severely active ulcerative colitis: results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials”
+
+ 
+
+Poster Presentations
+
+May 4th 12:30 – 1:30 PM
+
+Session Title: Controlled Clinical Trials of IBD Treatment
+
+ 
+
+2.	Marla Dubinsky: " Early symptomatic improvement with obefazimod in patients with moderately to severely active ulcerative colitis: pooled results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+3.	Andres Yarur: " Efficacy and safety of obefazimod in an elderly population with moderately to severely active ulcerative colitis: week 8 results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+4.	Bruce E Sands: " Efficacy of obefazimod in patients with moderately to severely active ulcerative colitis: results in subgroups of prior inadequate response to advanced therapy (AT-IR) including or excluding patients with prior JAK-IR from ABTECT phase 3 induction trials"
+
+ 
+
+5.	Bruce E Sands: " Integrated summary of safety of obefazimod in phase 3 ABTECT induction trials"
+
+ 
+
+Session Title: Quality of Life and Psychosocial Outcomes
+
+ 
+
+6.	Marla Dubinsky: " Improvements in patient-reported fatigue among patients with moderately to severely active ulcerative colitis (UC) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 double-blind, placebo-controlled induction trials"
+
+ 
+
+7.	Bruce E Sands: " Improvements in patient-reported, disease-specific and overall quality-of-life among patients with moderately to severely active ulcerative colitis (uc) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 induction trials"
+
+ 
+
+May 5th 12:30 – 1:30 PM
+
+Session Title: Mechanisms of IBD Therapeutics 
+
+ 
+
+8.	Silvio Danese: " Obefazimod shows first evidence of dual anti-inflammatory and anti-fibrotic activity in murine in vivo and human in vitro models"
+
+ 
+
+9.	Parambir S Dulai: " Obefazimod enhances mir-124 expression in blood and colon tissue and reduces the key inflammatory cytokines IL-17a and IL-6 in serum of patients with moderate-to-severely active ulcerative colitis: results from the phase 3 ABTECT induction trials"
+
+ 
+
+Best,
+
+Chris 
+
+ 
+
+ <ui-copy://image001.png%4001DC
+```
+
+---
+
+## EMAIL #39
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1290000`
+- **Direction:** received
+- **Date:** 2026-02-25T16:15:37.9920000
+- **Subject:** Announcement: DDW abstract acceptances 
+- **From:** Chris Rabbat </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=3D3D6F7EEC58478E857361F4D745A1F7-5A83E272-37>
+- **To:** ['allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** False
+- **Thread ID:** 2BDF5233DE68374D956840A2DC29ECDA
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Dear All,
+
+
+
+
+I’m very pleased to share that Abivax will be presenting 9 abstracts at DDW (1 oral and 8 posters) which is an outstanding outcome.
+
+
+
+
+Unlike ECCO, DDW is an all "digestive disease" conference, meaning it is not solely focused on Chron's and Colitis.  As such, abstracts are much more closely scrutinized since many therapeutic areas are competing for the same timeslots.  
+
+
+
+
+Please note, these abstracts contain the same data presented at ECCO and are being encored for a US focused audience, which makes their acceptance even more impressive. 
+
+
+
+
+I checked our records, and this is by far the greatest number of abstracts Abivax has ever presented at DDW and something we should all be proud of! 
+
+
+Please find the details below:
+
+ 
+
+Abivax presentations at DDW (May 2-5, 2026, in Chicago, IL, USA)
+
+ 
+
+*	1 oral presentation; 8 poster  presentations
+
+ 
+
+Oral Presentation
+
+ 
+
+May 4th 10 – 10:15 AM - Skyline Ballroom (W375c) (McCormick Place)
+
+1.	Fernando Magro: " Impact of obefazimod treatment on histologic and combined histologic-endoscopic outcomes in patients with moderately to severely active ulcerative colitis: results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials”
+
+ 
+
+Poster Presentations
+
+May 4th 12:30 – 1:30 PM
+
+Session Title: Controlled Clinical Trials of IBD Treatment
+
+ 
+
+2.	Marla Dubinsky: " Early symptomatic improvement with obefazimod in patients with moderately to severely active ulcerative colitis: pooled results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+3.	Andres Yarur: " Efficacy and safety of obefazimod in an elderly population with moderately to severely active ulcerative colitis: week 8 results from the ABTECT-1 and ABTECT-2 phase 3, double-blind, placebo-controlled induction trials"
+
+ 
+
+4.	Bruce E Sands: " Efficacy of obefazimod in patients with moderately to severely active ulcerative colitis: results in subgroups of prior inadequate response to advanced therapy (AT-IR) including or excluding patients with prior JAK-IR from ABTECT phase 3 induction trials"
+
+ 
+
+5.	Bruce E Sands: " Integrated summary of safety of obefazimod in phase 3 ABTECT induction trials"
+
+ 
+
+Session Title: Quality of Life and Psychosocial Outcomes
+
+ 
+
+6.	Marla Dubinsky: " Improvements in patient-reported fatigue among patients with moderately to severely active ulcerative colitis (UC) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 double-blind, placebo-controlled induction trials"
+
+ 
+
+7.	Bruce E Sands: " Improvements in patient-reported, disease-specific and overall quality-of-life among patients with moderately to severely active ulcerative colitis (uc) treated with obefazimod: pooled results from the 8-week ABTECT-1 and ABTECT-2 phase 3 induction trials"
+
+ 
+
+May 5th 12:30 – 1:30 PM
+
+Session Title: Mechanisms of IBD Therapeutics 
+
+ 
+
+8.	Silvio Danese: " Obefazimod shows first evidence of dual anti-inflammatory and anti-fibrotic activity in murine in vivo and human in vitro models"
+
+ 
+
+9.	Parambir S Dulai: " Obefazimod enhances mir-124 expression in blood and colon tissue and reduces the key inflammatory cytokines IL-17a and IL-6 in serum of patients with moderate-to-severely active ulcerative colitis: results from the phase 3 ABTECT induction trials"
+
+ 
+
+Best,
+Chris 
+
+ <ui-copy://image001.png%4001DCA63C.56913E00> 
+
+Chris Rabbat, PhD
+
+VP, Global Head of Medical Outreach and Engagement
+
++1-310-989-2055
+
+www.abivax.com <http://www.abivax.com/> 
+
+chris.rabbat@abivax.com <mailto:chris.rabbat@abivax.com>
+```
+
+---
+
+## EMAIL #40
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1280000`
+- **Direction:** received
+- **Date:** 2026-02-25T16:08:22.5210000
+- **Subject:** RE: KPMG contacts for reporting/process
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 73F32B2CE49D4B98ACD4C313DBAE92A4
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+His 😊 and they pronounce to as “Ro-Bahn”
+
+ 
+
+His e mail add is  rlapous@kpmg.fr <mailto:rlapous@kpmg.fr> 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Wednesday, February 25, 2026 4:00 PM
+To: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: Re: KPMG contacts for reporting/process
+
+ 
+
+Would it be ok to reach out to Robin to discuss with them more? I don’t have her email I don’t think. 
+
+ 
+
+Thanks,
+
+Mike 
+
+ 
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Sent: Wednesday, February 25, 2026 3:58:40 PM
+To: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Subject: RE: KPMG contacts for reporting/process 
+
+ 
+
+Hi Mike,
+
+Robin Lapous from KPMG helps us with the consolidation and IFRS adjustments.  Its in a completely manual process on excel, so no documentation or process flows on this.
+
+ 
+
+Best regards,
+
+Hema.
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Wednesday, February 25, 2026 11:56 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: KPMG contacts for reporting/process
+
+ 
+
+Hi Hema – I hope all is well. As I organize the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I’m trying to make sure I’m speaking with the right external teams for each area.
+
+ 
+
+I already have the ERP selection contacts (Camille / Aymen), but I believe there are separate KPMG teams supporting other finance/advisory workstreams (for example reporting / bridge / consolidation support).
+
+ 
+
+Could you please point me to the right KPMG contacts for the reporting/data side, especially for:
+
+  - French GAAP -> IFRS / SEC bridge process
+
+  - consolidation / reporting support
+
+  - any current process documentation or workpapers they maintain that would help us map the current state
+
+ 
+
+My goal is to use what already exists (instead of recreating it) so we can align the ERP design to the real reporting process and dependencies.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #41
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000101B3ECE0000`
+- **Direction:** sent
+- **Date:** 2026-02-25T16:00:01.5260000
+- **Subject:** Re: KPMG contacts for reporting/process
+- **From:** Michael Markman </o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60>
+- **To:** ['Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 73F32B2CE49D4B98ACD4C313DBAE92A4
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Would it be ok to reach out to Robin to discuss with them more? I don’t have her email I don’t think. 
+
+Thanks,
+Mike 
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Hema Keshava <Hema.Keshava@abivax.com>
+Sent: Wednesday, February 25, 2026 3:58:40 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: RE: KPMG contacts for reporting/process 
+ 
+
+Hi Mike,
+
+Robin Lapous from KPMG helps us with the consolidation and IFRS adjustments.  Its in a completely manual process on excel, so no documentation or process flows on this.
+
+ 
+
+Best regards,
+
+Hema.
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Wednesday, February 25, 2026 11:56 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: KPMG contacts for reporting/process
+
+ 
+
+Hi Hema – I hope all is well. As I organize the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I’m trying to make sure I’m speaking with the right external teams for each area.
+
+ 
+
+I already have the ERP selection contacts (Camille / Aymen), but I believe there are separate KPMG teams supporting other finance/advisory workstreams (for example reporting / bridge / consolidation support).
+
+ 
+
+Could you please point me to the right KPMG contacts for the reporting/data side, especially for:
+
+  - French GAAP -> IFRS / SEC bridge process
+
+  - consolidation / reporting support
+
+  - any current process documentation or workpapers they maintain that would help us map the current state
+
+ 
+
+My goal is to use what already exists (instead of recreating it) so we can align the ERP design to the real reporting process and dependencies.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #42
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1270000`
+- **Direction:** received
+- **Date:** 2026-02-25T15:58:43.2570000
+- **Subject:** RE: KPMG contacts for reporting/process
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 73F32B2CE49D4B98ACD4C313DBAE92A4
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+Robin Lapous from KPMG helps us with the consolidation and IFRS adjustments.  Its in a completely manual process on excel, so no documentation or process flows on this.
+
+ 
+
+Best regards,
+
+Hema.
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Wednesday, February 25, 2026 11:56 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: KPMG contacts for reporting/process
+
+ 
+
+Hi Hema – I hope all is well. As I organize the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I’m trying to make sure I’m speaking with the right external teams for each area.
+
+ 
+
+I already have the ERP selection contacts (Camille / Aymen), but I believe there are separate KPMG teams supporting other finance/advisory workstreams (for example reporting / bridge / consolidation support).
+
+ 
+
+Could you please point me to the right KPMG contacts for the reporting/data side, especially for:
+
+  - French GAAP -> IFRS / SEC bridge process
+
+  - consolidation / reporting support
+
+  - any current process documentation or workpapers they maintain that would help us map the current state
+
+ 
+
+My goal is to use what already exists (instead of recreating it) so we can align the ERP design to the real reporting process and dependencies.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #43
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1260000`
+- **Direction:** received
+- **Date:** 2026-02-25T15:18:48.9490000
+- **Subject:** RE: US P2P - ERP planning
+- **From:** Matt Epley </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6231154A529A48D3A481B7FDFBFBE95A-3FF36C05-11>
+- **To:** ['Michael Markman', 'Kimberly Gordon']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 4D944B9401CF401289B01EC951B5F0E3
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hey Mike, 
+
+ 
+
+Meant to respond yesterday – we confirm receipt of this and we are working on compiling some stuff for you. We will get it over to you tomorrow or Friday. 
+
+ 
+
+Matt 
+
+ 
+
+
+
+Matt Epley 
+Senior Finance Manager
+
++1 910-603-9688
+
+www.abivax.com <http://www.abivax.com/> 
+
+matt.epley@abivax.com <mailto:matt.epley@abivax.com> 
+
+	
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Tuesday, February 24, 2026 10:44 AM
+To: Kimberly Gordon <kimberly.gordon-ext@abivax.com>; Matt Epley <Matt.Epley@abivax.com>
+Subject: US P2P - ERP planning
+
+ 
+
+Hi Kimberly / Matt - As I organize the ERP work, I’m building a clear current-state picture of the P2P process by entity so we can make sure the implementation addresses the real operational issues (not just demo-level preferences).
+
+ 
+
+I’ve reached out to Trinidad to for the France-side process and would like to do the same for the US LLC process. Could you please send anything you already have that helps document the current US P2P flow (even if informal), for example:
+
+ 
+
+  - process notes / SOPs
+
+  - screenshots or templates
+
+  - checklists
+
+  - example files used in the process
+
+  - documentation of approvals / reviews
+
+  - notes on exceptions or recurring issues
+
+ 
+
+  In particular, I’m trying to understand:
+
+ 
+
+  - current steps from vendor setup / coding through invoice, payment, and posting
+
+  - where approvals/reviews happen today
+
+  - key manual workarounds
+
+  - where audit trail / evidence is weak
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+I can review what exists first and then set up a focused follow-up discussion, if needed.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #44
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90DB0000`
+- **Direction:** sent
+- **Date:** 2026-02-25T11:56:03.1950000
+- **Subject:**  KPMG contacts for reporting/process
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 73F32B2CE49D4B98ACD4C313DBAE92A4
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Hema – I hope all is well. As I organize the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I’m trying to make sure I’m speaking with the right external teams for each area.
+
+ 
+
+I already have the ERP selection contacts (Camille / Aymen), but I believe there are separate KPMG teams supporting other finance/advisory workstreams (for example reporting / bridge / consolidation support).
+
+ 
+
+Could you please point me to the right KPMG contacts for the reporting/data side, especially for:
+
+  - French GAAP -> IFRS / SEC bridge process
+
+  - consolidation / reporting support
+
+  - any current process documentation or workpapers they maintain that would help us map the current state
+
+ 
+
+My goal is to use what already exists (instead of recreating it) so we can align the ERP design to the real reporting process and dependencies.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #45
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1250000`
+- **Direction:** received
+- **Date:** 2026-02-25T10:42:56.4490000
+- **Subject:** RE: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Youness Tyamaz </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=C6BAA58DC428448F9D555FD4CBB915FC-B2032678-AB>
+- **To:** ['Michael Markman']
+- **CC:** ['Trinidad Mesa', 'Philippe Goncalves', 'Angela DePoy', 'wbouassida', 'Hema Keshava']
+- **Has Attachments:** True
+  - image001.png
+  - 01 - Abivax x CFGI - Project Plan.xlsx
+  - Abivax FSCP FINAL RCM 22 December 2025.xlsx
+  - Abivax PtP - FINAL_23 December 2025.xlsx
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+Please find attached as discussed during today’s intro meeting the following documents :
+
+*	Project plan : our internal SOX implementation tracker where you can find an aggregated list of all RCM controls in the tab « 2. Micro view », as well as control gaps classifications (ERP-dependent / design etc.)
+*	RCMs : FSCP (incl. reporting) & P2P. As discussed, ITGC RCM is awaiting a final validation step from IT team, we will send it to you once it’s definitive.
+
+If you have any questions please don’t hesitate.
+
+BR,
+
+ 
+
+Youness Tyamaz (he/him) | Consultant
+
+Mobile | (+33) 6 34 38 12 78
+
+		
+Email | ytyamaz@cfgi.com <mailto:ytyamaz@cfgi.com> 
+
+			
+LinkedIn <http://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2ws2rv> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/l/176152/2025-12-01/2ws2ry>  | Partnering with you to address your most important accounting and finance needs
+
+ 
+
+ 
+
+ 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com> 
+Envoyé : mardi 24 février 2026 17:45
+À : wbouassida <wbouassida@cfgi.com>; Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Objet : RE: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Does 10am EST work for you tomorrow? If so, feel free to send through an invite and include anybody that you think might be interested.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Walid Bouassida <wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> > 
+Sent: Tuesday, February 24, 2026 11:11 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >; Youness Tyamaz <youness.tyamaz-ext@abivax.com <mailto:youness.tyamaz-ext@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >; Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Subject: RE: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema,
+All good on our side — hope you’re doing well too.
+
+Hi Mike, nice to meet you and welcome.
+We’d be happy to debrief with you and go through the requests listed below.
+What do your availabilities look like over the next few days?
+
+Best,
+
+
+
+ 
+
+Walid Bouassida (he/him) | Director
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | +33 (0)6 47 55 30 52
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/l/176152/2024-10-07/2pxcws>  | Partnering with you to address your most important accounting and finance needs
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Envoyé : mardi 24 février 2026 16:35
+À : Youness Tyamaz <youness.tyamaz-ext@abivax.com <mailto:youness.tyamaz-ext@abivax.com> >; Walid Bouassida <wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> >
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >; Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Objet : [External] FW: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Youness and Walid,
+
+Hope you’re doing well.  I wanted to introduce you to Mike Markam, our new Global ERP Implementation Director.
+
+Can y
+```
+
+---
+
+## EMAIL #46
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1210000`
+- **Direction:** received
+- **Date:** 2026-02-25T04:17:08.9690000
+- **Subject:** RE: References contact
+- **From:** Trinidad Mesa </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=1B4F510FB9EF46FD8460F9495C565A29-TRINIDAD ME>
+- **To:** ['Hema Keshava', 'Girard, Camille', 'Michael Markman']
+- **CC:** ['Jade Nguyen', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+- **Thread ID:** FE4D8C4DAD32CF408AC0C29B711C73E3
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Hema,
+
+ 
+
+I would like to have Philippe to join, I have already discussed with him.
+
+ 
+
+Best regards
+
+ 
+
+
+
+Trinidad Mesa 
+Finance & Accounting Director
+
++33 (0)6 51 81 96 04
+
+www.abivax.com <http://www.abivax.com/> 
+
+trinidad.mesa@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com> 
+Envoyé : mardi 24 février 2026 18:56
+À : Girard, Camille <camillegirard@kpmg.fr>; Trinidad Mesa <Trinidad.Mesa@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc : Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet : Re: References contact
+
+ 
+
+Hi Camille, 
+
+I am happy to have the conversations but need to ensure they are comfortable speaking on English.
+
+ 
+
+@Trinidad Mesa <mailto:Trinidad.Mesa@abivax.com>  - do you want Phillipe to join? Mike and I can help prep him for questions. 
+
+ 
+
+Best regards, 
+
+Hema
+
+ 
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+
+________________________________
+
+From: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Sent: Tuesday, February 24, 2026 9:48:04 AM
+To: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >; Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Subject: References contact 
+
+ 
+
+Hello,
+
+ 
+
+We are starting to receive the contact details of the references presented by the candidates. Could you confirm who will be attending those meetings, the objective being to understand how the project went, the potential red flags etc...
+
+ 
+
+I would suggest to have Jade and someone on the Finance team, what do you think?
+
+ 
+
+Best regards,
+
+ 
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #47
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000101AD1200000`
+- **Direction:** received
+- **Date:** 2026-02-25T04:08:42.4930000
+- **Subject:** RE: References contact
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Hema Keshava', 'Trinidad Mesa', 'Michael Markman']
+- **CC:** ['Jade Nguyen', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+- **Thread ID:** FE4D8C4DAD32CF408AC0C29B711C73E3
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello,
+
+Ok I will check with them, and if they are not, we will adjust the casting. 
+
+We will propose a template of questions to be filled in during session.
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé: Mardi 24 février 2026 18:55
+À: Girard, Camille <camillegirard@kpmg.fr>; Trinidad Mesa <Trinidad.Mesa@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet: Re: References contact 
+
+Hi Camille, 
+I am happy to have the conversations but need to ensure they are comfortable speaking on English.
+
+@Trinidad Mesa <mailto:Trinidad.Mesa@abivax.com>  - do you want Phillipe to join? Mike and I can help prep him for questions. 
+
+Best regards, 
+Hema
+
+Get Outlook for iOS <https://urldefense.com/v3/__https://aka.ms/o0ukef__;!!E1R1dd1bLLODlQ4!BYtQuSZf8iS1d6OvVNwspmQRm56Ch-YIItbvXsRSzxcEcP6RHAL2P3JminZebzkUJzvsQWs5HkCPZSXkuN-I2u6mgvE$> 
+________________________________
+
+From: Girard, Camille <camillegirard@kpmg.fr>
+Sent: Tuesday, February 24, 2026 9:48:04 AM
+To: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: References contact
+ 
+Hello,
+
+We are starting to receive the contact details of the references presented by the candidates. Could you confirm who will be attending those meetings, the objective being to understand how the project went, the potential red flags etc...
+
+I would suggest to have Jade and someone on the Finance team, what do you think?
+
+Best regards,
+
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://urldefense.com/v3/__https://twitter.com/kpmg_france?lang=en__;!!E1R1dd1bLLODlQ4!BYtQuSZf8iS1d6OvVNwspmQRm56Ch-YIItbvXsRSzxcEcP6RHAL2P3JminZebzkUJzvsQWs5HkCPZSXkuN-Ix0tMXAg$>    <https://urldefense.com/v3/__https://www.linkedin.com/company/kpmg-france__;!!E1R1dd1bLLODlQ4!BYtQuSZf8iS1d6OvVNwspmQRm56Ch-YIItbvXsRSzxcEcP6RHAL2P3JminZebzkUJzvsQWs5HkCPZSXkuN-IT1BHVCg$>    <https://urldefense.com/v3/__https://www.facebook.com/KPMGFR__;!!E1R1dd1bLLODlQ4!BYtQuSZf8iS1d6OvVNwspmQRm56Ch-YIItbvXsRSzxcEcP6RHAL2P3JminZebzkUJzvsQWs5HkCPZSXkuN-Io-QMFpQ$>    <https://urldefense.com/v3/__https://www.youtube.com/user/KPMGFrance__;!!E1R1dd1bLLODlQ4!BYtQuSZf8iS1d6OvVNwspmQRm56Ch-YIItbvXsRSzxcEcP6RHAL2P3JminZebzkUJzvsQWs5HkCPZSXkuN-ID0bFCJE$>    <https://urldefense.com/v3/__https://www.instagram.com/kpmg_france/__;!!E1R1dd1bLLODlQ4!BYtQuSZf8iS1d6OvVNwspmQRm56Ch-YIItbvXsRSzxcEcP6RHAL2P3JminZebzkUJzvsQWs5HkCPZSXkuN-IVe8UQf8$> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client 
+```
+
+---
+
+## EMAIL #48
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF9800000F40A3770000`
+- **Direction:** sent
+- **Date:** 2026-02-24T16:37:21.7720000
+- **Subject:** Re: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Michael Markman </o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60>
+- **To:** ['Angela DePoy']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** sent
+
+**Body Text:**
+
+```
+I’m located EST.
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Angela DePoy <adepoy@cfgi.com>
+Sent: Tuesday, February 24, 2026 3:50:28 PM
+To: Michael Markman <mike.markman@abivax.com>; wbouassida <wbouassida@cfgi.com>; Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>
+Subject: Re: ERP scope alignment - SOX findings and reporting process documentation 
+ 
+Hi Michael,
+
+Really nice to meet you!   Apologies  for delay, it's audit committee season for me.
+
+Tomorrow, I'll be at an AC, but unsure if it will have wrapped up by 10AM - that said, I'm happy to put it on the calendar (although I'm not the important driver here).  If Walid/Youness can make it, they're top priority.  I'm sure we will find another time to connect.
+
+Where are you located geographically?  
+
+
+Many cheers,
+Angela
+
+
+Angela DePoy | Partner
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 	 
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+________________________________
+
+From: Michael Markman <mike.markman@abivax.com>
+Sent: Tuesday, February 24, 2026 11:45 AM
+To: Walid Bouassida <wbouassida@cfgi.com>; Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Subject: [External] RE: ERP scope alignment - SOX findings and reporting process documentation 
+ 
+
+Does 10am EST work for you tomorrow? If so, feel free to send through an invite and include anybody that you think might be interested.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Walid Bouassida <wbouassida@cfgi.com> 
+Sent: Tuesday, February 24, 2026 11:11 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Michael Markman <mike.markman@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Subject: RE: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema,
+All good on our side — hope you’re doing well too.
+
+Hi Mike, nice to meet you and welcome.
+We’d be happy to debrief with you and go through the requests listed below.
+What do your availabilities look like over the next few days?
+
+Best,
+
+
+
+
+ 
+
+Walid Bouassida (he/him) | Director
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | +33 (0)6 47 55 30 52
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/l/176152/2024-10-07/2pxcws>  | Partnering with you to address your most important accounting and finance needs
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Envoyé : mardi 24 février 2026 16:35
+À : Youness Tyamaz <youness.tyamaz-ext@abivax.com <mailto:youness.tyamaz-ext@abivax.com> >; Walid Bouassida <wbouassida@cfgi.com <mailto:wbouassida@cfgi.co
+```
+
+---
+
+## EMAIL #49
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81200000`
+- **Direction:** received
+- **Date:** 2026-02-24T16:22:17.1680000
+- **Subject:** Re: Managers Forum - Monthly meeting
+- **From:** Sophie Lacourrege </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=30ADCB094AED454894DD399888592AFB-CD466DEC-FB>
+- **To:** ['Hema Keshava']
+- **CC:** ['Trinidad Mesa', 'Michael Markman']
+- **Has Attachments:** False
+- **Thread ID:** 3A22E50D22014C5C99E915263EC52EF4
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Hema,
+
+Of course no issue.
+
+Kind regards,
+
+Sophie 
+
+Envoyé à partir de Outlook pour iOS <https://aka.ms/o0ukef> 
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé : Tuesday, February 24, 2026 10:16:41 PM
+À : Sophie Lacourrege <sophie.lacourrege@abivax.com>
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Objet : RE: Managers Forum - Monthly meeting 
+ 
+
+HI Sophie,
+
+The ERP team is going to be on an important ERP call at this time (which was scheduled sometime ago).  Can we pls catch up with you after the meeting?
+
+ 
+
+Thank you!
+
+ 
+
+-----Original Appointment-----
+From: Sophie Lacourrege <sophie.lacourrege@abivax.com> 
+Sent: Tuesday, December 16, 2025 8:33 AM
+To: Sophie Lacourrege; Aude Garcel; Laurence Desroys du Roure; Julien Santo; Mary Mantock; Kejia Shan; Jennifer Fine; Sophie Gibelli; Hema Keshava; Trinidad Mesa; Marianne Perdrijat; Chris Rabbat; Patrick Malloy; Roxandra Sturdza; Rebecca Mosig; Patricia Fleuranceau Morel; Murielle Salaun Lancien; Nakesha Harding-Boyce; Maurus de la Rosa; Valerie Contassot; Thomas Descusses; Josianne Nitcheu; Pascaline Ploncard; Christophe Hennequin; Bindu Saini; Mark Hronec; Jessica Huskey; Doug Jacobstein; Frederick Golly; Philippe Goncalves; Keith Fournier; Michael Markman
+Cc: Marc de Garidel; Ida Hatoum; David Zhang; Didier Blondel; Didier Scherrer; Fabio Cataldi; Jerome Denis; Nadege Briancon-Eris; Pierre Courteille; Emilie Leveau; Alexis Gillis
+Subject: Managers Forum - Monthly meeting
+When: Thursday, February 26, 2026 3:00 PM-4:00 PM (UTC+01:00) Brussels, Copenhagen, Madrid, Paris.
+Where: Salle Burrill B. Crohn
+```
+
+---
+
+## EMAIL #50
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F811F0000`
+- **Direction:** received
+- **Date:** 2026-02-24T16:16:43.2600000
+- **Subject:** RE: Managers Forum - Monthly meeting
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Sophie Lacourrege']
+- **CC:** ['Trinidad Mesa', 'Michael Markman']
+- **Has Attachments:** False
+- **Thread ID:** 3A22E50D22014C5C99E915263EC52EF4
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+HI Sophie,
+
+The ERP team is going to be on an important ERP call at this time (which was scheduled sometime ago).  Can we pls catch up with you after the meeting?
+
+ 
+
+Thank you!
+
+ 
+
+-----Original Appointment-----
+From: Sophie Lacourrege <sophie.lacourrege@abivax.com> 
+Sent: Tuesday, December 16, 2025 8:33 AM
+To: Sophie Lacourrege; Aude Garcel; Laurence Desroys du Roure; Julien Santo; Mary Mantock; Kejia Shan; Jennifer Fine; Sophie Gibelli; Hema Keshava; Trinidad Mesa; Marianne Perdrijat; Chris Rabbat; Patrick Malloy; Roxandra Sturdza; Rebecca Mosig; Patricia Fleuranceau Morel; Murielle Salaun Lancien; Nakesha Harding-Boyce; Maurus de la Rosa; Valerie Contassot; Thomas Descusses; Josianne Nitcheu; Pascaline Ploncard; Christophe Hennequin; Bindu Saini; Mark Hronec; Jessica Huskey; Doug Jacobstein; Frederick Golly; Philippe Goncalves; Keith Fournier; Michael Markman
+Cc: Marc de Garidel; Ida Hatoum; David Zhang; Didier Blondel; Didier Scherrer; Fabio Cataldi; Jerome Denis; Nadege Briancon-Eris; Pierre Courteille; Emilie Leveau; Alexis Gillis
+Subject: Managers Forum - Monthly meeting
+When: Thursday, February 26, 2026 3:00 PM-4:00 PM (UTC+01:00) Brussels, Copenhagen, Madrid, Paris.
+Where: Salle Burrill B. Crohn
+```
+
+---
+
+## EMAIL #51
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F811E0000`
+- **Direction:** received
+- **Date:** 2026-02-24T15:51:18.2840000
+- **Subject:** Re: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Angela DePoy <adepoy@cfgi.com>
+- **To:** ['Michael Markman', 'wbouassida', 'Hema Keshava', 'Youness Tyamaz']
+- **CC:** ['Trinidad Mesa', 'Philippe Goncalves']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Michael,
+
+Really nice to meet you!   Apologies  for delay, it's audit committee season for me.
+
+Tomorrow, I'll be at an AC, but unsure if it will have wrapped up by 10AM - that said, I'm happy to put it on the calendar (although I'm not the important driver here).  If Walid/Youness can make it, they're top priority.  I'm sure we will find another time to connect.
+
+Where are you located geographically?  
+
+
+Many cheers,
+Angela
+
+
+Angela DePoy | Partner
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | (202) 412-0175	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | Adepoy@cfgi.com	 
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E> 	 
+CFGI <http://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E>  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED
+
+________________________________
+
+From: Michael Markman <mike.markman@abivax.com>
+Sent: Tuesday, February 24, 2026 11:45 AM
+To: Walid Bouassida <wbouassida@cfgi.com>; Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Subject: [External] RE: ERP scope alignment - SOX findings and reporting process documentation 
+ 
+
+Does 10am EST work for you tomorrow? If so, feel free to send through an invite and include anybody that you think might be interested.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Walid Bouassida <wbouassida@cfgi.com> 
+Sent: Tuesday, February 24, 2026 11:11 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Michael Markman <mike.markman@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Subject: RE: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema,
+All good on our side — hope you’re doing well too.
+
+Hi Mike, nice to meet you and welcome.
+We’d be happy to debrief with you and go through the requests listed below.
+What do your availabilities look like over the next few days?
+
+Best,
+
+
+
+
+ 
+
+Walid Bouassida (he/him) | Director
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | +33 (0)6 47 55 30 52
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/l/176152/2024-10-07/2pxcws>  | Partnering with you to address your most important accounting and finance needs
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Envoyé : mardi 24 février 2026 16:35
+À : Youness Tyamaz <youness.tyamaz-ext@abivax.com <mailto:youness.tyamaz-ext@abivax.com> >; Walid Bouassida <wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> >
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >; Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Objet : [External] FW: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Youness and Walid,
+
+Hope you’re doing well.  I wanted to introduce you to Mike Markam, our new Global ERP Implementatio
+```
+
+---
+
+## EMAIL #52
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF9800000F40A3760000`
+- **Direction:** sent
+- **Date:** 2026-02-24T13:03:33.0560000
+- **Subject:** Re: France P2P - Follow-up for ERP planning
+- **From:** Michael Markman </o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60>
+- **To:** ['Trinidad Mesa']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 809388B22EA449E3938B4602F3F30293
+- **Folder:** sent
+
+**Body Text:**
+
+```
+No problem. Feel free to pick a time that works for you. 
+
+Speak soon,
+Mike
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Trinidad Mesa <Trinidad.Mesa@abivax.com>
+Sent: Tuesday, February 24, 2026 1:02:11 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: RE: France P2P - Follow-up for ERP planning 
+ 
+
+Hi Mike,
+
+ 
+
+I am extremely busy and as I have seen that you have a meeting tomorrow on SOX with CFGI, that will provide you with a flavour of what is missing on the PTP process.
+
+I will try to join the call tomorrow.
+
+ 
+
+I will request the team what is available on the PTP process, which is so excessively (and frightening) manual, and will transfer what exists to you.
+
+Will next week ok for you for to have this session ?
+
+ 
+
+Best
+
+Trinidad
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com> 
+Envoyé : mardi 24 février 2026 16:41
+À : Trinidad Mesa <Trinidad.Mesa@abivax.com>
+Objet : France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.
+
+ 
+
+Would you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?
+
+ 
+
+I’d like to understand, at a practical level:
+
+  - current steps from request/PO through invoice/payment
+
+  - where approvals happen today (and where they do not)
+
+  - key manual workarounds / pain points
+
+  - exceptions or rework points
+
+  - where evidence/audit trail is weak today
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+If you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #53
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F811D0000`
+- **Direction:** received
+- **Date:** 2026-02-24T13:02:14.2710000
+- **Subject:** RE: France P2P - Follow-up for ERP planning
+- **From:** Trinidad Mesa </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=1B4F510FB9EF46FD8460F9495C565A29-TRINIDAD ME>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 809388B22EA449E3938B4602F3F30293
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+ 
+
+I am extremely busy and as I have seen that you have a meeting tomorrow on SOX with CFGI, that will provide you with a flavour of what is missing on the PTP process.
+
+I will try to join the call tomorrow.
+
+ 
+
+I will request the team what is available on the PTP process, which is so excessively (and frightening) manual, and will transfer what exists to you.
+
+Will next week ok for you for to have this session ?
+
+ 
+
+Best
+
+Trinidad
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com> 
+Envoyé : mardi 24 février 2026 16:41
+À : Trinidad Mesa <Trinidad.Mesa@abivax.com>
+Objet : France P2P - Follow-up for ERP planning
+
+ 
+
+Hi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.
+
+ 
+
+Would you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?
+
+ 
+
+I’d like to understand, at a practical level:
+
+  - current steps from request/PO through invoice/payment
+
+  - where approvals happen today (and where they do not)
+
+  - key manual workarounds / pain points
+
+  - exceptions or rework points
+
+  - where evidence/audit trail is weak today
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+If you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #54
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F811C0000`
+- **Direction:** received
+- **Date:** 2026-02-24T12:57:04.1050000
+- **Subject:** TR: Systems Access : SAGE Abivax SA and LLC3
+- **From:** Denis Jankovic </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - Outlook-photo.png
+  - Outlook-photo.png
+  - Outlook-photo.png
+- **Thread ID:** 7F5E2592AF8ACE40B21B426C5C4BF8C4
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike,
+
+Please see your ID below for LLC3 : 
+
+ID :         MIKE US
+PWD :       H2s&f/Hc!*
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+
+
+
+________________________________
+
+De: Denis Jankovic <Denis.Jankovic@abivax.com>
+Envoyé: Jeudi 19 février 2026 18:51
+À: Michael Markman <mike.markman@abivax.com>
+Objet: TR: Systems Access : SAGE Abivax SA 
+
+Hello Michael,
+
+Please find your user ID and temporary password below.
+You will be required to change your password upon logging in :
+
+ID :       MIKE US
+PWD :  W882cx{PE!
+
+If you don't have access to Sage please let me know. I will submit a ticket for you.
+
+Thank you,
+Denis.
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+
+
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé: Jeudi 19 février 2026 17:52
+À: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Objet: RE: Systems Access
+
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well!
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently.
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #55
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F811B0000`
+- **Direction:** received
+- **Date:** 2026-02-24T12:55:43.3130000
+- **Subject:** Re: References contact
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Girard, Camille', 'Trinidad Mesa', 'Michael Markman']
+- **CC:** ['Jade Nguyen', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+- **Thread ID:** FE4D8C4DAD32CF408AC0C29B711C73E3
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Camille, 
+I am happy to have the conversations but need to ensure they are comfortable speaking on English.
+
+@Trinidad Mesa <mailto:Trinidad.Mesa@abivax.com>  - do you want Phillipe to join? Mike and I can help prep him for questions. 
+
+Best regards, 
+Hema
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Girard, Camille <camillegirard@kpmg.fr>
+Sent: Tuesday, February 24, 2026 9:48:04 AM
+To: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: References contact 
+ 
+Hello,
+
+We are starting to receive the contact details of the references presented by the candidates. Could you confirm who will be attending those meetings, the objective being to understand how the project went, the potential red flags etc...
+
+I would suggest to have Jade and someone on the Finance team, what do you think?
+
+Best regards,
+
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #56
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F811A0000`
+- **Direction:** received
+- **Date:** 2026-02-24T12:44:11.6770000
+- **Subject:** RE: Systems Access : SAGE Abivax SA
+- **From:** Denis Jankovic </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+  - image.png
+  - Outlook-photo.png
+- **Thread ID:** 533C21EC6AF4A74FBE8F4D17FBBD802E
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hey Mike,
+
+You have credentials for both LLC3 and ABIVAX.
+Miguel from MBVSI support confirmed me by email today.
+
+You have also access (my email for SAGE france) I was waiting from IT team to give you access to SAGE LLC.
+
+If needed, I can join by Teams.
+
+
+
+
+
+
+
+
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com>
+Envoyé : mardi 24 février 2026 18:39
+À : Denis Jankovic <Denis.Jankovic@abivax.com>
+Objet : RE: Systems Access : SAGE Abivax SA 
+ 
+
+Hi Denis – I’m on with IT and they are saying that these credentials aren’t working for the “ABIVAX” one. Can you check it please?
+
+ 
+
+I think you setup for Abivax LLC3 and they think that the credentials might only work for that one. 
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Denis Jankovic <Denis.Jankovic@abivax.com> 
+Sent: Thursday, February 19, 2026 12:51 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: TR: Systems Access : SAGE Abivax SA
+
+ 
+
+Hello Michael,
+
+ 
+
+Please find your user ID and temporary password below.
+You will be required to change your password upon logging in :
+
+ 
+
+ID :       MIKE US
+
+PWD :  W882cx{PE!
+
+ 
+
+If you don't have access to Sage please let me know. I will submit a ticket for you.
+
+ 
+
+Thank you,
+
+Denis.
+
+ 
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Envoyé: Jeudi 19 février 2026 17:52
+À: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Objet: RE: Systems Access 
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well!
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently.
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #57
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D90000`
+- **Direction:** sent
+- **Date:** 2026-02-24T12:39:38.9940000
+- **Subject:** RE: Systems Access : SAGE Abivax SA
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Denis Jankovic']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 533C21EC6AF4A74FBE8F4D17FBBD802E
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Denis – I’m on with IT and they are saying that these credentials aren’t working for the “ABIVAX” one. Can you check it please?
+
+ 
+
+I think you setup for Abivax LLC3 and they think that the credentials might only work for that one. 
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Denis Jankovic <Denis.Jankovic@abivax.com> 
+Sent: Thursday, February 19, 2026 12:51 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: TR: Systems Access : SAGE Abivax SA
+
+ 
+
+Hello Michael,
+
+ 
+
+Please find your user ID and temporary password below.
+You will be required to change your password upon logging in :
+
+ 
+
+ID :       MIKE US
+
+PWD :  W882cx{PE!
+
+ 
+
+If you don't have access to Sage please let me know. I will submit a ticket for you.
+
+ 
+
+Thank you,
+
+Denis.
+
+ 
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Envoyé: Jeudi 19 février 2026 17:52
+À: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Objet: RE: Systems Access 
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well!
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently.
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #58
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81190000`
+- **Direction:** received
+- **Date:** 2026-02-24T12:11:14.1370000
+- **Subject:** Modification du mot de passe associé à votre Adobe ID
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** C8BB8C3F1B951E4F8A181EF9F7AA13C0
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Si vous n’avez pas demandé ce changement, veuillez contacter l’équipe de l’assistance client.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Modification du mot de passe associé à votre Adobe ID	 
+Bonjour Mike Markman,
+
+Nous vous informons que le mot de passe associé à votre Adobe ID a changé.
+
+Si vous n’avez pas demandé ce changement, veuillez contacter l’ équipe de l’assistance client <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19nZW5lcmFsX3Bhc3N3b3JkX3Jlc2V0X25vdGlmaWNhdGlvbiIsImVtYWlsQWRkcmVzcyI6ImZqenV0VDdBbE9CVWo3V0NwOGZWL0F6c2pYc3BrMmNybFZFMldQUkpWUFB0WDl4cmFmZW13OVp1YTNJZjhsVmYiLCJyZXF1ZXN0SWQiOiJlNjJkNmUzNi00YWE0LTQ1ZjQtOWIyMy00NTFiMTE4YTFjMzIiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2NvbnRhY3RfZnIiLCJsYWJlbCI6IjEiLCJsb2NhbGUiOiJmcl9GUiJ9.m7rcpL9-egKQnG6G9g0JKYkWL_Bn1Ps1YY5Vfp4DCsSsYe_ZsUw_bXL6Z1UNlCBCKdvx4RZsd8rUSMBRUXMLNw> .
+
+L’équipe Adobe	 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Gérer le compte <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19nZW5lcmFsX3Bhc3N3b3JkX3Jlc2V0X25vdGlmaWNhdGlvbiIsImVtYWlsQWRkcmVzcyI6ImZqenV0VDdBbE9CVWo3V0NwOGZWL0F6c2pYc3BrMmNybFZFMldQUkpWUFB0WDl4cmFmZW13OVp1YTNJZjhsVmYiLCJyZXF1ZXN0SWQiOiJlNjJkNmUzNi00YWE0LTQ1ZjQtOWIyMy00NTFiMTE4YTFjMzIiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2FjY291bnRfZnIiLCJsYWJlbCI6IjIiLCJsb2NhbGUiOiJmcl9GUiJ9.cg2d_GZE8I9IZnjX64f4wIz-U7mZxfOi81NHRI77yBoMnelyRNRVsbYb5Me-R4TsURtaNUVfZ_vlkYRz6s6_uQ> 
+Service clientèle <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19nZW5lcmFsX3Bhc3N3b3JkX3Jlc2V0X25vdGlmaWNhdGlvbiIsImVtYWlsQWRkcmVzcyI6ImZqenV0VDdBbE9CVWo3V0NwOGZWL0F6c2pYc3BrMmNybFZFMldQUkpWUFB0WDl4cmFmZW13OVp1YTNJZjhsVmYiLCJyZXF1ZXN0SWQiOiJlNjJkNmUzNi00YWE0LTQ1ZjQtOWIyMy00NTFiMTE4YTFjMzIiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnRfZnIiLCJsYWJlbCI6IjMiLCJsb2NhbGUiOiJmcl9GUiJ9.Rf4FJWvCxCBGN_N5L3LYYUax0FMphIMpyTFgex718xwXy_PRdfhFSUSYW5rJRQOASRNuMix_UHQwaQe0yB2MNA> 
+Forums <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19nZW5lcmFsX3Bhc3N3b3JkX3Jlc2V0X25vdGlmaWNhdGlvbiIsImVtYWlsQWRkcmVzcyI6ImZqenV0VDdBbE9CVWo3V0NwOGZWL0F6c2pYc3BrMmNybFZFMldQUkpWUFB0WDl4cmFmZW13OVp1YTNJZjhsVmYiLCJyZXF1ZXN0SWQiOiJlNjJkNmUzNi00YWE0LTQ1ZjQtOWIyMy00NTFiMTE4YTFjMzIiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2ZvcnVtc19mciIsImxhYmVsIjoiNCIsImxvY2FsZSI6ImZyX0ZSIn0.kfH00UeCURF5LgiRGwJmun_LkuBVdBRGKzCFBaXUzkkD33Q1Wn4CJmdwbIU4k_-sKaaXyL0RfWov_uhqgPYsSw> 	 
+Adobe et le logo Adobe (stylisé), Creative Cloud et le logo Creative Cloud, ainsi que Document Cloud, sont des marques ou des marques déposées d’Adobe aux États-Unis et/ou dans d’autres pays.
+
+Cette liste de marques Adobe n’est pas exhaustive. Pour obtenir la liste compltète, reportez-vous aux Directives sur les marques commerciales d’Adobe <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19nZW5lcmFsX3Bhc3N3b3JkX3Jlc2V0X25vdGlmaWNhdGlvbiIsImVtYWlsQWRkcmVzcyI6ImZqenV0VDdBbE9CVWo3V0NwOGZWL0F6c2pYc3BrMmNybFZFMldQUkpWUFB0WDl4cmFmZW13OVp1YTNJZjhsVmYiLCJyZXF1ZXN0SWQiOiJlNjJkNmUzNi00YWE0LTQ1ZjQtOWIyMy00NTFiMTE4YTFjMzIiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3RyYWRlbWFya3NfZnIiLCJsYWJlbCI6IjUiLCJsb2NhbGUiOiJmcl9GUiJ9.AdADVy24eJYYQGXS3HcFbnjOEO5rUDcUl_N-RHJMhwmT1Yp2MfjUjoMDrUqPv8kBlH4hhQZsCaY8fTNuGEtBJQ> . Toutes les autres marques citées sont la propriété de leurs détenteurs respectifs.
+
+Adobe, 345 Park Avenue, San Jose, CA 95110 USA 	
+ <https://apo-prod.adobe.io/po-server/link/o
+```
+
+---
+
+## EMAIL #59
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81180000`
+- **Direction:** received
+- **Date:** 2026-02-24T12:10:34.9770000
+- **Subject:** Code de confirmation
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 7895EE0F0735E54E903E3D521FEAB4F1
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Votre compte n’est pas accessible sans ce code de vérification, même si vous n’êtes pas à l’origine de cette demande.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Votre code de confirmation est le suivant :	 
+907288	 
+Pour garantir la sécurité de votre compte, nous vous recommandons d’utiliser un mot de passe unique pour votre compte Adobe ou d’utiliser l’application Adobe Account Access pour vous connecter. L’authentification à deux facteurs Adobe Account Access facilite la connexion à votre compte, sans avoir à mémoriser ou à modifier des mots de passe.
+
+En savoir plus <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiIyOTQ0MTA1MS1jYzBhLTQ4ZjUtYjAxMS1lNDA5MDVjNDE3YzkiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3Bhc3N3b3JkbGVzc19mYXFfZnIiLCJsYWJlbCI6IjkiLCJsb2NhbGUiOiJmcl9GUiJ9.xK-rAFUfz2w3s9SaeOEJDp6WakdUOBM_kwb07Hx4yGHhd6hW2T9_TH8jFt3T1_qqOaud_f8tjX6Ncnm7o6YhnA>  et télécharger l’application Adobe Account Access.	 
+ <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiIyOTQ0MTA1MS1jYzBhLTQ4ZjUtYjAxMS1lNDA5MDVjNDE3YzkiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWFwcC1zdG9yZV9mciIsImxhYmVsIjoiMTAiLCJsb2NhbGUiOiJmcl9GUiJ9.grcvArsET_ty3w_ki4JVPfXDNZHW9vbQ-WqcalUcALqHu-bT8fF69h1EdnNYaJnQSzjJt5baftO79M32n9VBpA> 	  	  <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiIyOTQ0MTA1MS1jYzBhLTQ4ZjUtYjAxMS1lNDA5MDVjNDE3YzkiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWdvb2dsZS1wbGF5X2ZyIiwibGFiZWwiOiIxMSIsImxvY2FsZSI6ImZyX0ZSIn0.8Thi6ovICPPE6r3pNyHGRbA52BQiCuRQhVBi6VqVQ8au30QmBOvlKxnbDhba8hAA6OaQNACY0mbBq8DhTBwpLA> 	 
+Pour toute question, contactez le service clientèle <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiIyOTQ0MTA1MS1jYzBhLTQ4ZjUtYjAxMS1lNDA5MDVjNDE3YzkiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnRfZnIiLCJsYWJlbCI6IjEyIiwibG9jYWxlIjoiZnJfRlIifQ.d4ciBEj2mKxsxqAOX2p8WyOJDwIrL1cWwGzkSFHWFgQzXs61IqKyBuDeyupu59-hyReBGm3U0NQlu1oAgltDbQ> .	 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Gérer le compte <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiIyOTQ0MTA1MS1jYzBhLTQ4ZjUtYjAxMS1lNDA5MDVjNDE3YzkiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2FjY291bnRfZnIiLCJsYWJlbCI6IjEzIiwibG9jYWxlIjoiZnJfRlIifQ.6McIjMEbIvgwEzSdIJ2fSGOIHIXzBahiuxcK8N8Kg_pB3ge58mLz7NLdyyh_w30GQq1BdUNj59jut3kUL4i53Q> 
+Service clientèle <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiIyOTQ0MTA1MS1jYzBhLTQ4ZjUtYjAxMS1lNDA5MDVjNDE3YzkiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnRfZnIiLCJsYWJlbCI6IjE0IiwibG9jYWxlIjoiZnJfRlIifQ.18u4Irdv8RNmRxseOjN5Hc6WCjghK4_zvmqjT2YPYbLK3GQ-TLaLgxr7LQkT4mOGnAXTXcvLDkE7N09v-vfCeg> 
+Forums <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.
+```
+
+---
+
+## EMAIL #60
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D80000`
+- **Direction:** sent
+- **Date:** 2026-02-24T11:45:20.6960000
+- **Subject:** RE: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Walid Bouassida', 'Hema Keshava', 'Youness Tyamaz']
+- **CC:** ['Trinidad Mesa', 'Philippe Goncalves', 'Angela DePoy']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Does 10am EST work for you tomorrow? If so, feel free to send through an invite and include anybody that you think might be interested.
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Walid Bouassida <wbouassida@cfgi.com> 
+Sent: Tuesday, February 24, 2026 11:11 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Youness Tyamaz <youness.tyamaz-ext@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Michael Markman <mike.markman@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Subject: RE: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema,
+All good on our side — hope you’re doing well too.
+
+Hi Mike, nice to meet you and welcome.
+We’d be happy to debrief with you and go through the requests listed below.
+What do your availabilities look like over the next few days?
+
+Best,
+
+
+
+
+ 
+
+Walid Bouassida (he/him) | Director
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | +33 (0)6 47 55 30 52
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/l/176152/2024-10-07/2pxcws>  | Partnering with you to address your most important accounting and finance needs
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Envoyé : mardi 24 février 2026 16:35
+À : Youness Tyamaz <youness.tyamaz-ext@abivax.com <mailto:youness.tyamaz-ext@abivax.com> >; Walid Bouassida <wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> >
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >; Angela DePoy <adepoy@cfgi.com <mailto:adepoy@cfgi.com> >
+Objet : [External] FW: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Youness and Walid,
+
+Hope you’re doing well.  I wanted to introduce you to Mike Markam, our new Global ERP Implementation Director.
+
+Can you please set up some time with Mike to through the requests below?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Tuesday, February 24, 2026 10:27 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >; Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Subject: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema / Camille - As I start organizing the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I want to ground the plan in what is already documented rather than broad assumptions.
+
+ 
+
+Could you please point me to (or send) anything currently documented on the controls side, especially:
+
+ 
+
+  1. Any SOX findings, deficiencies, or audit observations relevant to Finance/IT processes
+
+  2. Where remediation items are tracked today (and who owns the tracker)
+
+  3. Any control narratives / process docs that show current approval, evidence, or audit-trail gaps
+
+ 
+
+Also, if available, it would be very helpful to have the current reporting process documentation (even informal), especially:
+
+ 
+
+1.	French GAAP -> IFRS / SEC bridge process
+2.	Key close/reporting steps and owners
+3.	What is currently done internally vs by KPMG
+
+ 
+
+This will help me align the ERP program and future presentations to the real 
+```
+
+---
+
+## EMAIL #61
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D70000`
+- **Direction:** sent
+- **Date:** 2026-02-24T11:44:09.7030000
+- **Subject:** Follow-up - FP&A reporting dimensions and core output needs
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Frederick Golly']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** AE0243A63038450893E9F6AFF4C43B84
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Frederick - Thanks again for the discussion today, very helpful.
+
+ 
+
+A helpful next step for me would be to better understand the reporting dimensions and core output needs you have in mind, so we can make sure the ERP/data design supports what Finance/FP&A actually needs (without over-engineering too early).
+
+ 
+
+If you have anything already documented (even rough notes), could you share it?
+
+ 
+
+In particular, it would be helpful to understand:
+
+*	the key reporting dimensions you need (e.g., entity, country, cost center, department, study, etc.)
+*	which outputs/reports are the most important to produce reliably (especially for quarterly reporting)
+*	where the current process/data structure is limiting visibility today
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #62
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81160000`
+- **Direction:** received
+- **Date:** 2026-02-24T11:12:55.8450000
+- **Subject:** RE: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Michael Markman', 'Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael, 
+
+Not sure to have the requested documents in my possession, let's talk about that on Thursday if you want.
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com>
+Envoyé : mardi 24 février 2026 16:26
+À : Hema Keshava <Hema.Keshava@abivax.com>; Girard, Camille <camillegirard@kpmg.fr>
+Objet : ERP scope alignment - SOX findings and reporting process documentation 
+ 
+
+Hi Hema / Camille - As I start organizing the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I want to ground the plan in what is already documented rather than broad assumptions.
+
+ 
+
+Could you please point me to (or send) anything currently documented on the controls side, especially:
+
+ 
+
+  1. Any SOX findings, deficiencies, or audit observations relevant to Finance/IT processes
+
+  2. Where remediation items are tracked today (and who owns the tracker)
+
+  3. Any control narratives / process docs that show current approval, evidence, or audit-trail gaps
+
+ 
+
+Also, if available, it would be very helpful to have the current reporting process documentation (even informal), especially:
+
+ 
+
+1.	French GAAP -> IFRS / SEC bridge process
+2.	Key close/reporting steps and owners
+3.	What is currently done internally vs by KPMG
+
+ 
+
+This will help me align the ERP program and future presentations to the real issues we need to solve.
+
+ 
+
+Thanks,
+
+Mike
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #63
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81150000`
+- **Direction:** received
+- **Date:** 2026-02-24T11:11:49.8840000
+- **Subject:** RE: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Walid Bouassida <wbouassida@cfgi.com>
+- **To:** ['Hema Keshava', 'Youness Tyamaz']
+- **CC:** ['Trinidad Mesa', 'Philippe Goncalves', 'Michael Markman', 'Angela DePoy']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Hema,
+All good on our side — hope you’re doing well too.
+
+Hi Mike, nice to meet you and welcome.
+We’d be happy to debrief with you and go through the requests listed below.
+What do your availabilities look like over the next few days?
+
+Best,
+
+
+
+ 
+
+Walid Bouassida (he/him) | Director
+
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg>   Mobile | +33 (0)6 47 55 30 52
+
+		
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg>   Email | wbouassida@cfgi.com <mailto:wbouassida@cfgi.com> 
+
+			
+ <https://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png>   LinkedIn <http://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp> 
+
+			
+
+ 
+
+CFGI <http://go.pardot.com/l/176152/2024-10-07/2pxcws>  | Partnering with you to address your most important accounting and finance needs
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com> 
+Envoyé : mardi 24 février 2026 16:35
+À : Youness Tyamaz <youness.tyamaz-ext@abivax.com>; Walid Bouassida <wbouassida@cfgi.com>
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Michael Markman <mike.markman@abivax.com>; Angela DePoy <adepoy@cfgi.com>
+Objet : [External] FW: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Youness and Walid,
+
+Hope you’re doing well.  I wanted to introduce you to Mike Markam, our new Global ERP Implementation Director.
+
+Can you please set up some time with Mike to through the requests below?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Tuesday, February 24, 2026 10:27 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >; Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Subject: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema / Camille - As I start organizing the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I want to ground the plan in what is already documented rather than broad assumptions.
+
+ 
+
+Could you please point me to (or send) anything currently documented on the controls side, especially:
+
+ 
+
+  1. Any SOX findings, deficiencies, or audit observations relevant to Finance/IT processes
+
+  2. Where remediation items are tracked today (and who owns the tracker)
+
+  3. Any control narratives / process docs that show current approval, evidence, or audit-trail gaps
+
+ 
+
+Also, if available, it would be very helpful to have the current reporting process documentation (even informal), especially:
+
+ 
+
+1.	French GAAP -> IFRS / SEC bridge process
+2.	Key close/reporting steps and owners
+3.	What is currently done internally vs by KPMG
+
+ 
+
+This will help me align the ERP program and future presentations to the real issues we need to solve.
+
+ 
+
+Thanks,
+
+Mike
+
+
+
+Disclaimer
+
+The information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized to receive it. If you are not the recipient, you are hereby notified that any disclosure, copying, distribution or taking action in relation of the contents of this information is strictly prohibited and may be unlawful.
+
+This email has been scanned for viruses and malware, and may have been automatically archived by Mimecast, a leader in email security and cyber resilience. Mimecast integrates email defenses with brand protection, security awareness training, web security, compliance and other essential capabilities. Mimecast helps protect large and small organizations from malicious activity, human error and technology fail
+```
+
+---
+
+## EMAIL #64
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81140000`
+- **Direction:** received
+- **Date:** 2026-02-24T10:48:55.1860000
+- **Subject:** RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+- **From:** Anxhela Veruari <anxhela.veruari@newenglandinnovations.com>
+- **To:** ['Michael Markman']
+- **CC:** ['Harry Koka', 'Tana Dapaj']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+  - image006.png
+- **Thread ID:** 92634C0F3B027C45BCB81E2BBB6060DF
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Michael,
+
+ 
+
+I have sent you the Zoom meeting invitation for 12 PM EST today.
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Tuesday, February 24, 2026 10:45 AM
+To: Anxhela Veruari <anxhela.veruari@newenglandinnovations.com>
+Cc: Harry Koka <harry.koka@newenglandinnovations.com>; Tana Dapaj <tana.dapaj@newenglandinnovations.com>
+Subject: RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Does 12pm EST work for you today? 
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Anxhela Veruari <anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> > 
+Sent: Tuesday, February 24, 2026 10:43 AM
+To: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >
+Subject: RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Hello Michael,
+
+ 
+
+I hope you are doing well.
+
+ 
+
+We want to follow up regarding your device setup. Can you please let us know a couple of available times for a Zoom meeting to complete setting up the SAGE shortcut and Adobe on your laptop? 
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Anxhela Veruari 
+Sent: Monday, February 16, 2026 11:42 AM
+To: mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
+Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >
+Subject: RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Hello Michael,
+
+ 
+
+Thank you for letting us know that you have received the laptop.
+
+ 
+
+Regarding Adobe, for sure, we can check whenever you are available during the week.  In addition to Adobe, we also need to set up the Sage RDP connection on your laptop.
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://ne
+```
+
+---
+
+## EMAIL #65
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D50000`
+- **Direction:** sent
+- **Date:** 2026-02-24T10:44:38.2440000
+- **Subject:** RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ["'Anxhela Veruari'"]
+- **CC:** ['Harry Koka', 'Tana Dapaj']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+  - image006.png
+- **Thread ID:** 92634C0F3B027C45BCB81E2BBB6060DF
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Does 12pm EST work for you today? 
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+From: Anxhela Veruari <anxhela.veruari@newenglandinnovations.com> 
+Sent: Tuesday, February 24, 2026 10:43 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Harry Koka <harry.koka@newenglandinnovations.com>; Tana Dapaj <tana.dapaj@newenglandinnovations.com>
+Subject: RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Hello Michael,
+
+ 
+
+I hope you are doing well.
+
+ 
+
+We want to follow up regarding your device setup. Can you please let us know a couple of available times for a Zoom meeting to complete setting up the SAGE shortcut and Adobe on your laptop? 
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Anxhela Veruari 
+Sent: Monday, February 16, 2026 11:42 AM
+To: mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
+Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >
+Subject: RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Hello Michael,
+
+ 
+
+Thank you for letting us know that you have received the laptop.
+
+ 
+
+Regarding Adobe, for sure, we can check whenever you are available during the week.  In addition to Adobe, we also need to set up the Sage RDP connection on your laptop.
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> > 
+Sent: Monday, February 16, 2026 11:29 AM
+To: Anxhela Veruari <anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> >; mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
+Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >; support@newenglandinnovations.zohodesk.com <mailto:support@newenglandinnovations.zohodesk.com> 
+Subject: Re: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Thanks - I received the computer and set everything up with the exception of Adobe as it was saying it required an admin to install it. We can do that at a later time this week perhaps.
+
+ 
+
+I am now setup on mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
+```
+
+---
+
+## EMAIL #66
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D40000`
+- **Direction:** sent
+- **Date:** 2026-02-24T10:44:05.6140000
+- **Subject:** US P2P - ERP planning
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Kimberly Gordon', 'Matt Epley']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 4D944B9401CF401289B01EC951B5F0E3
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Kimberly / Matt - As I organize the ERP work, I’m building a clear current-state picture of the P2P process by entity so we can make sure the implementation addresses the real operational issues (not just demo-level preferences).
+
+ 
+
+I’ve reached out to Trinidad to for the France-side process and would like to do the same for the US LLC process. Could you please send anything you already have that helps document the current US P2P flow (even if informal), for example:
+
+ 
+
+  - process notes / SOPs
+
+  - screenshots or templates
+
+  - checklists
+
+  - example files used in the process
+
+  - documentation of approvals / reviews
+
+  - notes on exceptions or recurring issues
+
+ 
+
+  In particular, I’m trying to understand:
+
+ 
+
+  - current steps from vendor setup / coding through invoice, payment, and posting
+
+  - where approvals/reviews happen today
+
+  - key manual workarounds
+
+  - where audit trail / evidence is weak
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+I can review what exists first and then set up a focused follow-up discussion, if needed.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #67
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81120000`
+- **Direction:** received
+- **Date:** 2026-02-24T10:43:21.9740000
+- **Subject:** RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+- **From:** Anxhela Veruari <anxhela.veruari@newenglandinnovations.com>
+- **To:** ['Michael Markman']
+- **CC:** ['Harry Koka', 'Tana Dapaj']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+  - image006.png
+- **Thread ID:** 92634C0F3B027C45BCB81E2BBB6060DF
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+ 
+
+I hope you are doing well.
+
+ 
+
+We want to follow up regarding your device setup. Can you please let us know a couple of available times for a Zoom meeting to complete setting up the SAGE shortcut and Adobe on your laptop? 
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Anxhela Veruari 
+Sent: Monday, February 16, 2026 11:42 AM
+To: mike.markman@abivax.com
+Cc: Harry Koka <harry.koka@newenglandinnovations.com>; Tana Dapaj <tana.dapaj@newenglandinnovations.com>
+Subject: RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Hello Michael,
+
+ 
+
+Thank you for letting us know that you have received the laptop.
+
+ 
+
+Regarding Adobe, for sure, we can check whenever you are available during the week.  In addition to Adobe, we also need to set up the Sage RDP connection on your laptop.
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> > 
+Sent: Monday, February 16, 2026 11:29 AM
+To: Anxhela Veruari <anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> >; mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
+Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >; support@newenglandinnovations.zohodesk.com <mailto:support@newenglandinnovations.zohodesk.com> 
+Subject: Re: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Thanks - I received the computer and set everything up with the exception of Adobe as it was saying it required an admin to install it. We can do that at a later time this week perhaps.
+
+ 
+
+I am now setup on mike.markman@abivax.com <mailto:mike.markman@abivax.com>  (cc'd) so we can correspond there going forward.
+
+ 
+
+Thanks again,
+
+Mike
+
+ 
+
+On Mon, Feb 16, 2026 at 9:00 AM Anxhela Veruari <anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> > wrote:
+
+	Hello Michael,
+
+	 
+
+	I hope this email finds you well. 
+
+	 
+
+	According to the tracking information, you should have received the Abivax laptop by now.
+
+	 
+
+	Could you please provide us with a couple of available times to have a Zoom meeting and complete the IT onboarding process for your
+```
+
+---
+
+## EMAIL #68
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D30000`
+- **Direction:** sent
+- **Date:** 2026-02-24T10:41:27.2730000
+- **Subject:** France P2P - Follow-up for ERP planning
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Trinidad Mesa']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 809388B22EA449E3938B4602F3F30293
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.
+
+ 
+
+Would you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?
+
+ 
+
+I’d like to understand, at a practical level:
+
+  - current steps from request/PO through invoice/payment
+
+  - where approvals happen today (and where they do not)
+
+  - key manual workarounds / pain points
+
+  - exceptions or rework points
+
+  - where evidence/audit trail is weak today
+
+  - what you consider “must-have” changes in the future ERP process
+
+ 
+
+If you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #69
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81110000`
+- **Direction:** received
+- **Date:** 2026-02-24T10:40:12.0520000
+- **Subject:** RE: Questions - Preparation of next phases
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Girard, Camille', 'Michael Markman']
+- **CC:** ['Denoual, Sebastien', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Thanks Camille.
+
+We will make sure the contract goes through our US legal team as well.
+
+ 
+
+I will leave the decision on the support function set up with Mike.  Whilst LLC is small right it is going to be the same size of bigger than France in the future.  Also I would imagine Mike will be the main contact for system improvements etc and Mike is based in the US.  So that gives us very little overlap in working hours if its only French based, not to mention potentially a language barrier as well.
+
+ 
+
+Best regards,
+
+Hema.
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Tuesday, February 24, 2026 9:33 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: RE: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, 
+
+ 
+
+Thomas said to Jade that he will prefer to stay under French regulation. Netsuite is going to send us their French contract, and we will have the ability to have legal specifications for US if necessary. 
+
+ 
+
+For the support :  we have provided both actors with a volume of support that we think is necessary at least for the first year, and it is inegrated in the financial analysis.
+
+*	For Netsuite : they said that it "followed the sun". Netsuite has planned for support in France and in US. Some part in on a forfait base and another is time-based.
+
+*	For SAP : No US teams planned for now but possible (more expensive in US as daily rates are higher, they explained that sometimes customers decide to centralize topics necessitating support in France and make internal feedbacks (for non urgent topics, for urgent, on time based billing)
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Envoyé : lundi 23 février 2026 16:58
+À : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc : Denoual, Sebastien <sdenoual@kpmg.fr <mailto:sdenoual@kpmg.fr> >; Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Objet : RE: Questions - Preparation of next phases 
+
+ 
+
+Thanks Camille, that will be great and Netsuite/SAP can propose a format.  I think options 1 or 2 will work.
+
+One further question – post implementation, will there be a support group in the US and France should we run in to issues?
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> > 
+Sent: Monday, February 23, 2026 10:46 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr <mailto:sdenoual@kpmg.fr> >; Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Subject: RE: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, 
+
+ 
+
+Thanks for your answer, clear.
+
+ 
+
+Foe the applicable law, I have done my research (to be validated with Netsuite and your legal team of course): a single contract cannot be governed simultaneously by French law and U.S. law. However, there are three commonly used and viable contractual structures that allow us to address both French and U.S. requirements while ensuring legal clarity and risk control.
+
+ 
+
+I will ask Netsuite and SAP what they commonly propose in your context to help you make the decision.
+
+ 
+
+Best regards,
+
+ 
+
+---
+
+Option 1 – One main applicable law with specific U.S.-related clauses
+
+Under this option, the contract is governed by one main law (most commonly French law), while specific clauses explicitly refer to U.S. regulations where relevant.
+
+Typical examples include:
+
+*	Compliance with U.S. regulations (e.g. FCPA, export control, sanctions)
+*	Intellectual property provisions linked to a 
+```
+
+---
+
+## EMAIL #70
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F81100000`
+- **Direction:** received
+- **Date:** 2026-02-24T10:34:45.3390000
+- **Subject:** FW: ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Youness Tyamaz', 'wbouassida']
+- **CC:** ['Trinidad Mesa', 'Philippe Goncalves', 'Michael Markman', 'Angela DePoy']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Youness and Walid,
+
+Hope you’re doing well.  I wanted to introduce you to Mike Markam, our new Global ERP Implementation Director.
+
+Can you please set up some time with Mike to through the requests below?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Tuesday, February 24, 2026 10:27 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Girard, Camille <camillegirard@kpmg.fr>
+Subject: ERP scope alignment - SOX findings and reporting process documentation
+
+ 
+
+Hi Hema / Camille - As I start organizing the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I want to ground the plan in what is already documented rather than broad assumptions.
+
+ 
+
+Could you please point me to (or send) anything currently documented on the controls side, especially:
+
+ 
+
+  1. Any SOX findings, deficiencies, or audit observations relevant to Finance/IT processes
+
+  2. Where remediation items are tracked today (and who owns the tracker)
+
+  3. Any control narratives / process docs that show current approval, evidence, or audit-trail gaps
+
+ 
+
+Also, if available, it would be very helpful to have the current reporting process documentation (even informal), especially:
+
+ 
+
+1.	French GAAP -> IFRS / SEC bridge process
+2.	Key close/reporting steps and owners
+3.	What is currently done internally vs by KPMG
+
+ 
+
+This will help me align the ERP program and future presentations to the real issues we need to solve.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #71
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D20000`
+- **Direction:** sent
+- **Date:** 2026-02-24T10:28:36.8240000
+- **Subject:** ERP alignment - IT controls / audit evidence inputs
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Jade Nguyen']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** C747CB3B82B14B7BA926950FCE84E11C
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Jade - As I organize the ERP work around the main priorities (P2P, reporting/data, and SOX/controls), I want to make sure we are using the current IT/control documentation as the baseline.
+
+ 
+
+  Could you please share (or point me to) anything documented today that would help on the IT controls side, especially:
+
+ 
+
+  1. Current IT control gaps / audit observations related to finance systems or integrations
+
+  2. Where IT remediation actions are tracked (if separate from Finance)
+
+  3. Any existing documentation for interface monitoring / failure handling (owners, escalation, evidence retained)
+
+  4. Any system admin / ownership matrix for the core finance applications and integrations
+
+ 
+
+  Even if the documentation is incomplete, whatever exists will help us align the ERP design and implementation plan to the real control and auditability issues.
+
+ 
+
+  Thanks again for the walkthrough and support.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #72
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D10000`
+- **Direction:** sent
+- **Date:** 2026-02-24T10:26:43.3160000
+- **Subject:** ERP scope alignment - SOX findings and reporting process documentation
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Hema Keshava', 'Girard, Camille']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** CB7FC0F90B5040D3968784D972BF6B08
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Hema / Camille - As I start organizing the ERP work around the three main priorities (P2P, reporting/data, and SOX/controls), I want to ground the plan in what is already documented rather than broad assumptions.
+
+ 
+
+Could you please point me to (or send) anything currently documented on the controls side, especially:
+
+ 
+
+  1. Any SOX findings, deficiencies, or audit observations relevant to Finance/IT processes
+
+  2. Where remediation items are tracked today (and who owns the tracker)
+
+  3. Any control narratives / process docs that show current approval, evidence, or audit-trail gaps
+
+ 
+
+Also, if available, it would be very helpful to have the current reporting process documentation (even informal), especially:
+
+ 
+
+1.	French GAAP -> IFRS / SEC bridge process
+2.	Key close/reporting steps and owners
+3.	What is currently done internally vs by KPMG
+
+ 
+
+This will help me align the ERP program and future presentations to the real issues we need to solve.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #73
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F810F0000`
+- **Direction:** received
+- **Date:** 2026-02-24T10:09:30.2910000
+- **Subject:** Sage access
+- **From:** Denis Jankovic </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - Outlook-photo.png
+- **Thread ID:** 495C93C0710C244996EC963E9A453F65
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike,
+
+Hope you are well.
+
+Can we schedule a quick call ? I need to review the acces you have on your desktop.
+It should take 5 minutes.
+I am available now.
+
+Thank you,
+Denis.
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com>
+```
+
+---
+
+## EMAIL #74
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F810E0000`
+- **Direction:** received
+- **Date:** 2026-02-24T09:48:18.4540000
+- **Subject:** References contact
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Trinidad Mesa', 'Hema Keshava', 'Michael Markman']
+- **CC:** ['Jade Nguyen', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+- **Thread ID:** FE4D8C4DAD32CF408AC0C29B711C73E3
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello,
+
+We are starting to receive the contact details of the references presented by the candidates. Could you confirm who will be attending those meetings, the objective being to understand how the project went, the potential red flags etc...
+
+I would suggest to have Jade and someone on the Finance team, what do you think?
+
+Best regards,
+
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #75
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F810D0000`
+- **Direction:** received
+- **Date:** 2026-02-24T09:33:05.7790000
+- **Subject:** RE: Questions - Preparation of next phases
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Hema Keshava', 'Michael Markman']
+- **CC:** ['Denoual, Sebastien', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Hema, 
+
+Thomas said to Jade that he will prefer to stay under French regulation. Netsuite is going to send us their French contract, and we will have the ability to have legal specifications for US if necessary. 
+
+For the support :  we have provided both actors with a volume of support that we think is necessary at least for the first year, and it is inegrated in the financial analysis.
+
+*	
+	For Netsuite : they said that it "followed the sun". Netsuite has planned for support in France and in US. Some part in on a forfait base and another is time-based.
+*	
+	For SAP : No US teams planned for now but possible (more expensive in US as daily rates are higher, they explained that sometimes customers decide to centralize topics necessitating support in France and make internal feedbacks (for non urgent topics, for urgent, on time based billing)
+
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé : lundi 23 février 2026 16:58
+À : Girard, Camille <camillegirard@kpmg.fr>; Michael Markman <mike.markman@abivax.com>
+Cc : Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet : RE: Questions - Preparation of next phases 
+ 
+
+Thanks Camille, that will be great and Netsuite/SAP can propose a format.  I think options 1 or 2 will work.
+
+One further question – post implementation, will there be a support group in the US and France should we run in to issues?
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 10:46 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: RE: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, 
+
+ 
+
+Thanks for your answer, clear.
+
+ 
+
+Foe the applicable law, I have done my research (to be validated with Netsuite and your legal team of course): a single contract cannot be governed simultaneously by French law and U.S. law. However, there are three commonly used and viable contractual structures that allow us to address both French and U.S. requirements while ensuring legal clarity and risk control.
+
+ 
+
+I will ask Netsuite and SAP what they commonly propose in your context to help you make the decision.
+
+ 
+
+Best regards,
+
+ 
+
+---
+
+Option 1 – One main applicable law with specific U.S.-related clauses
+
+Under this option, the contract is governed by one main law (most commonly French law), while specific clauses explicitly refer to U.S. regulations where relevant.
+
+Typical examples include:
+
+*	Compliance with U.S. regulations (e.g. FCPA, export control, sanctions)
+*	Intellectual property provisions linked to a U.S. software publisher
+*	Data hosting or processing located in the United States
+
+This option offers:
+
+*	A clear and robust legal framework
+*	Limited exposure to legal uncertainty
+*	Easier contract management during the project lifecycle
+
+________________________________
+
+Option 2 – Split contractual structure (most common for international ERP projects)
+
+This approach consists of separating the contractual scope into two distinct agreements, each governed by its own applicable law:
+
+*	A services / implementation agreement (integration, project management, support), typically governed by French law
+*	A software license or publisher agreement, governed by U.S. law
+
+This structure is widely used in ERP projects involving international software vendors and allows:
+
+*	Each party to operate under its familiar legal framework
+*	Clear allocation of responsibilities and risks
+*	Better alignment with market practices
+
+It does, however, require careful coordination between contracts to ensure overall consistency.
+
+________________________________
+
+Option 3 – Single contract governed by U.S. law (with arbitration or foreign jurisdiction)
+
+In some cases,
+```
+
+---
+
+## EMAIL #76
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F810C0000`
+- **Direction:** received
+- **Date:** 2026-02-24T06:59:21.3780000
+- **Subject:** Denis sent a message
+- **From:** Denis Jankovic in Teams <no-reply@teams.mail.microsoft>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - 4d52bb06-ac32-4194-a80e-26a99736d93a
+  - 4f0f1532-828b-4fcf-a3e4-d1e5654e03d6
+  - b90ebdf2-9e3a-4ef9-8f94-8f0cbc62cd2e
+  - 895d843b-39da-40e5-bff2-db89234a633d
+  - 6d9712a6-ea64-43f5-a662-052915774395
+  - a462c73e-090b-4edc-82a7-634030a3844f
+  - 9f09e0df-ab73-4da9-bf45-f269c79d92aa
+- **Thread ID:** 2279E210B0A99349ABB975EF4124268B
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike, do you have news from support IT ? ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  
+Hi, 	
+	 
+	Denis sent a message in chat <https://teams.microsoft.com/l/chat/19:26484cef-af28-4ca8-8297-b3bae72dbf67_3addd22d-6010-46b8-8651-28b62767f916@unq.gbl.spaces/conversations?tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594> 	
+Hi Mike, do you have news from support IT ? 
+	
+	<https://teams.microsoft.com/l/chat/19:26484cef-af28-4ca8-8297-b3bae72dbf67_3addd22d-6010-46b8-8651-28b62767f916@unq.gbl.spaces/conversations?tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594> 
+  Reply in Teams  <https://teams.microsoft.com/l/chat/19:26484cef-af28-4ca8-8297-b3bae72dbf67_3addd22d-6010-46b8-8651-28b62767f916@unq.gbl.spaces/conversations?tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594> 	
+	
+Install Microsoft Teams now	 
+<https://itunes.apple.com/app/microsoft-teams/id1113153706?mt=8> 
+    <https://itunes.apple.com/app/microsoft-teams/id1113153706?mt=8> 	  <https://itunes.apple.com/app/microsoft-teams/id1113153706?mt=8> 	    <https://itunes.apple.com/app/microsoft-teams/id1113153706?mt=8> 	   iOS <https://itunes.apple.com/app/microsoft-teams/id1113153706?mt=8> 	     <https://itunes.apple.com/app/microsoft-teams/id1113153706?mt=8> 	 
+	<https://play.google.com/store/apps/details?id=com.microsoft.teams> 
+   <https://play.google.com/store/apps/details?id=com.microsoft.teams> 	  <https://play.google.com/store/apps/details?id=com.microsoft.teams> 	    <https://play.google.com/store/apps/details?id=com.microsoft.teams> 	 Android <https://play.google.com/store/apps/details?id=com.microsoft.teams> 	    <https://play.google.com/store/apps/details?id=com.microsoft.teams> 	 
+This email was sent from an unmonitored mailbox. Update your email preferences in Teams. Activity > Settings (Gear Icon) > Notifications.	 
+________________________________
+
+ 	
+Privacy Statement <https://go.microsoft.com/fwlink/?LinkId=521839>  
+
+This email is generated through ABIVAX's use of Microsoft 365 and may contain content that is controlled by ABIVAX.
+
+ <https://r-notifyp.svc.ms:443/api/v2/tracking/method/View?mi=1hhj9rpSR0CzNaIzuN2XUA&si=TeamsMissedActivityEmail&ca=TeamsWebhook>
+```
+
+---
+
+## EMAIL #77
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F810B0000`
+- **Direction:** received
+- **Date:** 2026-02-23T16:08:45.5970000
+- **Subject:** New Form 6-K for Abivax
+- **From:** Abivax <no-reply@notification.gcs-web.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 98044F079D5E564485D30C89D0AC7232
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3Dw7gh_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1dSKJ0ZYeU0ooAF60GZKc-2B0Bu0-2BLkLKEknWsMxzZi2Qzq8OwBppMiIXJEr-2BHziLFNcSj6ukb7-2BwkX0A9l0-2FKKyePbNIeqzaqKSkaLLCW1lq7Fz0upwFClYLdy45Q8fmqB-2BBZjAnetOVUVllnERmzdqzUkB5-2FYYJgT-2B64E3JPb67NvSVUmfA63WhrdQ1eZZw0iJlySGOMvKlE1VL-2FPDY-2BHBUNXzah1S97Y09lbtorHSJQd4ICUxiBBWbrLC75dCykTcsD4WL55micdcnAbwv5GW> 
+
+February 23, 2026
+
+A Form 6-K <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVyi30-2FymN9F-2FwMx-2BmNJm8PaGhhJ9tFU9R6HcG465hPahU3e4-2F4mzi8EgewhGpvZo7e3pB3hq2k-2FX78P7h0R1GQ-3DDwih_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1dSKJ0ZYeU0ooAF60GZKc-2B0Bu0-2BLkLKEknWsMxzZi2Qzq8OwBppMiIXJEr-2BHziLFNcSj6ukb7-2BwkX0A9l0-2FKKyePbNIeqzaqKSkaLLCW1lq7Fz0upwFClYLdy45Q8fmqC8CsdS8QgvLLu195a3Q8dhro-2FbBvTAZ1R0hbYxSmqAFe6h1cEf9UfAsFLq34Alprd6t2hSFcxv162fuDyNngCihkLgdE2Rb8rRjLld1HEkFA-2BPiqK1e9ZLORuQDGbT69EmgyEiRmlwQcFdBWvhdBfh>  has been filed with the United States Securities and Exchange Commission.
+
+View this filing <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVyi30-2FymN9F-2FwMx-2BmNJm8PaGhhJ9tFU9R6HcG465hPahU3e4-2F4mzi8EgewhGpvZo7e3pB3hq2k-2FX78P7h0R1GQ-3DokwH_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1dSKJ0ZYeU0ooAF60GZKc-2B0Bu0-2BLkLKEknWsMxzZi2Qzq8OwBppMiIXJEr-2BHziLFNcSj6ukb7-2BwkX0A9l0-2FKKyePbNIeqzaqKSkaLLCW1lq7Fz0upwFClYLdy45Q8fmqBLxpuI6-2FNu7jxhwrYlSB1v-2Ftk1KPDM0ZZnGgt7x-2FszKkWrDw-2BsgLtjWMuofH4V3rUg6ed8jcjBs6aPZ8n-2Fc7i4mxqrHhKCqFxkhLPfelMejWTlIlPqfZdkHCDGl5PPEenbG787cV13dycsNoCNSLR-2F> 	 
+
+You are subscribed to Abivax Investor Relations' email alerts.
+Visit the website <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DZ4zO_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1dSKJ0ZYeU0ooAF60GZKc-2B0Bu0-2BLkLKEknWsMxzZi2Qzq8OwBppMiIXJEr-2BHziLFNcSj6ukb7-2BwkX0A9l0-2FKKyePbNIeqzaqKSkaLLCW1lq7Fz0upwFClYLdy45Q8fmqDIOTh2eHDvVzXPDVmfMxD9Zhf0vKlHqdgTq-2FzG6I5GXXnr5lSvAZBpe58J34p3DhRhGJsOFb31rvG24Poh-2FPsawsjV7jx6ZV-2BfvpCntbUnvMjOguFhnCS63i9k0WmT8hadVh-2FRAL3ORfWx8cv5yEyu>  | View SEC Filings <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FV-2BzNAHr-2FZX0ieqYyCLwRrtw1oj0mpBHX9eOqqjc3emH2GBz-2BKOVieRTvN6XlhDyK0BVh42B2bwT6uKqSi5WsgU-3DKbcj_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1dSKJ0ZYeU0ooAF60GZKc-2B0Bu0-2BLkLKEknWsMxzZi2Qzq8OwBppMiIXJEr-2BHziLFNcSj6ukb7-2BwkX0A9l0-2FKKyePbNIeqzaqKSkaLLCW1lq7Fz0upwFClYLdy45Q8fmqBwHucNvhp4xEpciHENnKD88Xhkdow8ysc1u7lxqkrTcmjdP6xZebc6is4Mw52SBLmzerWg8TrCpSFy2mo7-2Bz-2BHfwVMx5jBbp4NkUwwF9s2JFIbiuny4WvH6NxmJ78oZ3jkah6h7M2P17AO-2FRRBvcsE>  | Unsubscribe <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FRtzeXp6s3URsJ6UuKW5ZG5OTwiqqTxjE4LKGoOSrTPoscsx_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1dSKJ0ZYeU0ooAF60GZKc-2B0Bu0-2BLkLKEknWsMxzZi2Qzq8OwBppMiIXJEr-2BHziLFNcSj6ukb7-2BwkX0A9l0-2FKKyePbNIeqzaqKSkaLLCW1lq7Fz0upwFClYLdy45Q8fmqD4yodMdmtyZV4yDFk2RpBRzWU3LHSfEH7-2BLupvJlmgcU-2B7S-2B8L3T3nkXmDNyK6L1COsJ92hdGWyzPe-2Fc7-2BrWXrpwVOYxcFNkybPCX5xuyUaRE-2Bo6AIITKFDXbl9ginHj8m0iqYz3-2BkAFf67qc5RAVC> 
+
+Abivax
+7-11 Blvd. Haussmann , Paris, 75009, France
+Service provided by Notified
+
+ <https://url9490.notification.gcs-web.com/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRo0LooO4a6bKx74zOKwEJxHc7GizmQFQG6q-2FbN3Czd86EBdRkrZTin45Rlg4Bd1AXZbP7xKwBg8nO4mTQf6HnHYscOiSojKib4wr3cA-2Bl-2BKnRVq-2B53
+```
+
+---
+
+## EMAIL #78
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000F3F810A0000`
+- **Direction:** received
+- **Date:** 2026-02-23T14:45:40.8780000
+- **Subject:** RE: Weekly Summary of QMS Documents Update 23Feb2026
+- **From:** Malinda Micho </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07>
+- **To:** ['allabivax', 'ALLABIVAX-E']
+- **CC:** ['Mark Hronec', 'Katy Vu']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+  - QMS Documents Approved or Effective 26Jan through 23Feb2026.xlsx
+- **Thread ID:** BDBBD5BE01CE00489B8DA3F22D461170
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi everyone,
+
+ 
+
+See attached a summary of controlled QMS documents that were created or revised and were approved or became effective over the last month.
+
+ 
+
+This communication is sent for your awareness only; there are several documents included here – please ensure you take a moment to review and let me know if you have any questions. As well, please ensure that you are proactively completing training assignment tasks associated with these documents within Veeva Vault (Veeva Vault QualityDocs <https://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#t/0TB000000000101/all?fcah=&initSrch=false> ).
+
+ 
+
+Kindly,
+
+ 
+
+
+
+Malinda MICHO
+Manager, Quality Systems
+
+www.abivax.com <http://www.abivax.com/> 
+
+malinda.micho@abivax.com <mailto:malinda.micho@abivax.com> 
+
+	
+
+ 
+
+ 
+
+From: Malinda Micho <malinda.micho@abivax.com> 
+Sent: Monday, January 26, 2026 12:39 PM
+To: allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Mark Hronec <mark.hronec@abivax.com>; Katy Vu <katy.vu-ext@abivax.com>
+Subject: RE: Weekly Summary of QMS Documents Update 26Jan2026
+
+ 
+
+Hi everyone,
+
+ 
+
+Please see below a summary of controlled QMS documents that were created or revised and were approved or became effective in the last week. This communication is sent for your awareness only. 
+
+ 
+
+Please ensure that you are proactively completing training assignment tasks within Veeva Vault (Veeva Vault QualityDocs <https://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#t/0TB000000000101/all?fcah=&initSrch=false> ).
+
+ 
+
+Note: The next weekly update will be during the week of Feb 23 and will contain a summary of all changes between now and then.
+
+ 
+
+Document Name
+
+Document Number
+
+External ID
+
+Subtype
+
+Document Status
+
+Owning Department
+
+Approved Date
+
+Effective Date
+
+Infrastructure Qualification Life Cycle (v2.0) <https://abivax-quality.veevavault.com/ui/#doc_info/873/2/0> 
+
+ABX-QUAL-0709 <https://abivax-quality.veevavault.com/ui/#doc_info/873/2/0> 
+
+SOP0046
+
+Standard Operating Procedure (SOP)
+
+Effective
+
+Information Technology <https://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003010> 
+
+05 Jan 2026
+
+19 Jan 2026
+
+Pharmaceutical Manufacturing Management (v4.0) <https://abivax-quality.veevavault.com/ui/#doc_info/916/4/0> 
+
+ABX-QUAL-0752 <https://abivax-quality.veevavault.com/ui/#doc_info/916/4/0> 
+
+SOP0007
+
+Standard Operating Procedure (SOP)
+
+Issued
+
+Manufacturing <https://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003012> 
+
+23 Jan 2026
+
+ 
+
+CTS Shipment Request Form (v2.0) <https://abivax-quality.veevavault.com/ui/#doc_info/841/2/0> 
+
+ABX-QUAL-0677 <https://abivax-quality.veevavault.com/ui/#doc_info/841/2/0> 
+
+TEM057
+
+Master Form
+
+Approved
+
+Clinical Trial Supplies <https://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003005> 
+
+22 Jan 2026
+
+ 
+
+IMP Acknowledgement of Receipt for Study Sites (v2.0) <https://abivax-quality.veevavault.com/ui/#doc_info/5702/2/0> 
+
+ABX-QUAL-0925 <https://abivax-quality.veevavault.com/ui/#doc_info/5702/2/0> 
+
+ 
+
+Master Form
+
+Approved
+
+Clinical Trial Supplies <https://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003005> 
+
+22 Jan 2026
+
+ 
+
+Executed Batch Record Verification Checklist for Drug Product (DP)/Finished Product (v5.0) <https://abivax-quality.veevavault.com/ui/#doc_info/6601/5/0> 
+
+ABX-QUAL-0942 <https://abivax-quality.veevavault.com/ui/#doc_info/6601/5/0> 
+
+ 
+
+Master Form
+
+Effective
+
+Manufacturing <https://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003012> 
+
+22 Jan 2026
+
+22 Jan 2026
+
+Executed Batch Record Verification Checklist for Drug Product (DP)/Finished Product_TFS TORONTO (v2.0) <https://abivax-quality.veevavault.com/ui/#doc_info/9601/2/0> 
+
+ABX-QUAL-1000 <https://abivax-quality.veevavault.com/ui/#doc_info/9601/2/0> 
+
+ 
+
+Master
+```
+
+---
+
+## EMAIL #79
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E500000`
+- **Direction:** received
+- **Date:** 2026-02-23T12:19:44.3780000
+- **Subject:** RE: ABIVAX - Offer update
+- **From:** Evrard, Marc <marcevrard@kpmg.fr>
+- **To:** ['Michael Markman', 'Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** B5512D06D269274BBD02B0BECF926547
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+Yes I will.
+
+
+Marc
+
+________________________________
+
+De: Michael Markman <michaelkmarkman@gmail.com>
+Envoyé: Lundi 23 février 2026 17:51
+À: Evrard, Marc <marcevrard@kpmg.fr>; mike.markman@abivax.com <mike.markman@abivax.com>
+Objet: Re: ABIVAX - Offer update 
+
+Hi Marc - can you switch my email from Gmail to Mike.markman@abivax.com <mailto:Mike.markman@abivax.com>  please going forward?
+
+Thanks,
+Mike
+
+On Mon, Feb 23, 2026 at 11:19 AM Evrard, Marc <marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> > wrote:
+
+	Hello,
+
+	Please apologize as discounts were not visible in the pdf format.
+
+	Please find  in attachment the ppt format to get SAP subscription with current discounts.
+
+	Regards,
+
+	Marc
+
+________________________________
+
+	De: Evrard, Marc <marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> >
+	Envoyé: Vendredi 20 février 2026 19:29
+	À: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >; Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com>  <benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com> >; Casavecchia, Marco <mcasavecchia@kpmg.fr <mailto:mcasavecchia@kpmg.fr> >; Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+	Cc: Hema Keshava <hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> >; michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com>  <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+	Objet: RE: ABIVAX - Offer update
+
+	Hello everyone,
+
+	Pleas find in attachment :
+
+	*	
+		Our answers regarding the technical aspects
+	*	
+		SAP suscription with current discounts
+
+
+	We will come back to you on next week to complete our answers.
+
+	Have a nice week-end,
+
+
+	Marc EVRARD
+
+	Director Advisory
+	SAP Digital Core Services / Connected Tech
+
+	KPMG ADVISORY
+	Tour Eqho
+	2 Avenue Gambetta <https://urldefense.com/v3/__https://www.google.com/maps/search/2*Avenue*Gambetta?entry=gmail&source=g__;Kys!!E1R1dd1bLLODlQ4!AfKik8OIcVSGfbZ4N5A16N5TLWN9W7dkmuxesNOZGAm2PpFMr1S7cHZKpzvvRn7psjs7cmmk2rPhISCaA4HHzZQgZxQ$> , La Défense | 92066 Paris La Défense Cedex
+
+	M. +33 (0) 6 15 07 66 23
+	marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr>    
+
+	 
+
+	 <https://urldefense.com/v3/__https://twitter.com/kpmg_france__;!!E1R1dd1bLLODlQ4!AfKik8OIcVSGfbZ4N5A16N5TLWN9W7dkmuxesNOZGAm2PpFMr1S7cHZKpzvvRn7psjs7cmmk2rPhISCaA4HHIpnCqQI$>    <https://urldefense.com/v3/__https://www.linkedin.com/company/kpmg-france__;!!E1R1dd1bLLODlQ4!AfKik8OIcVSGfbZ4N5A16N5TLWN9W7dkmuxesNOZGAm2PpFMr1S7cHZKpzvvRn7psjs7cmmk2rPhISCaA4HHDB9KCSw$>    <https://urldefense.com/v3/__https://www.facebook.com/KPMGFR__;!!E1R1dd1bLLODlQ4!AfKik8OIcVSGfbZ4N5A16N5TLWN9W7dkmuxesNOZGAm2PpFMr1S7cHZKpzvvRn7psjs7cmmk2rPhISCaA4HHotk2w9I$>    <https://urldefense.com/v3/__https://www.youtube.com/user/KPMGFrance__;!!E1R1dd1bLLODlQ4!AfKik8OIcVSGfbZ4N5A16N5TLWN9W7dkmuxesNOZGAm2PpFMr1S7cHZKpzvvRn7psjs7cmmk2rPhISCaA4HHbb9Bye4$>    <https://urldefense.com/v3/__https://www.instagram.com/kpmg_france/__;!!E1R1dd1bLLODlQ4!AfKik8OIcVSGfbZ4N5A16N5TLWN9W7dkmuxesNOZGAm2PpFMr1S7cHZKpzvvRn7psjs7cmmk2rPhISCaA4HHaRbSKz8$> 
+
+	 
+
+	 
+
+________________________________
+
+	De: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+	Envoyé: Lundi 16 février 2026 17:04
+	À: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; Evrard, Marc <marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> >; benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com>  <benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com> >; Casavecchia, Marco <mcasavecchia@kpmg.fr <mailto:mcasavecchia@kpmg.fr> >; Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+	Cc: Hema Keshava <hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> >; michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com>  <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+	Objet: Re: ABIVAX - Offer update
+
+
+```
+
+---
+
+## EMAIL #80
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90D00000`
+- **Direction:** sent
+- **Date:** 2026-02-23T11:52:04.3430000
+- **Subject:** RE: IT Landscape Follow-Up
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Jade Nguyen']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 860B68B669954F9EA2F96EC3B3DCD399
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks for this Jade – will come back with any additional questions.
+
+ 
+
+-Mike
+
+ 
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com> 
+Sent: Monday, February 23, 2026 11:32 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Subject: Re: IT Landscape Follow-Up
+
+ 
+
+Hi Mike, 
+
+ 
+
+As promised, you’ll find attached an up-to-date Finance centric flowchart. 
+
+ 
+
+The payment flow from Sage to Agicap and passing through Trustpair is detailed as well (not the control elements however, which are with the finance team as mentioned).
+
+ 
+
+Let us know if anything is unclear,
+
+ 
+
+Best, 
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+ 
+
+De : Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+Date : vendredi, 20 février 2026 à 17:59
+À : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc : Christophe Hennequin <Christophe.Hennequin@abivax.com <mailto:Christophe.Hennequin@abivax.com> >, Benjamin Talmant <Benjamin.Talmant@abivax.com <mailto:Benjamin.Talmant@abivax.com> >
+Objet : Re: IT Landscape Follow-Up
+
+Hello Mike, 
+
+ 
+
+Happy to help!
+
+ 
+
+Here are some elements to get you started. I will come back to you once we have been able to properly gather / update the rest. 
+
+ 
+
+       1.    Can you send through the slides you shared today?
+
+Yes. Attached is the presentation I shared with you during the call.
+
+1.	You’ll notice the slide with a focus on Sage is missing. I’m currently working through an update with Finance to get you a most accurate version based on their latests processes. I should have it ready by Monday.
+
+ 
+
+1.	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? Yes, here it is <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE> , I have given you access. It’s a live where all owners are meant to make their updates. We also do periodic reviews to make sure it stays current
+
+2.	There were several interfaces you mentioned – similar to #1, is there a listing (I can create if not), that details out for the feeds:
+
+	1.	file-based vs API
+	2.	frequency
+	3.	owner(s)
+	4.	process for what happens when a feed fails
+
+We do have the information but not properly centralized, we’ll share consolidated version early next week
+
+ 
+
+3. For Trustpair and Agicap specifically, can you share the exact flow from vendor setup through payment validation and where control evidence is retained today?
+
+The exact flow will be detailed on our Sage centric IT map. As for control evidence,  I’m unsure what you’re referring to. If it’s the evidence related to the controls implemented by Finance they will be better equipped to provide this. I will look into it however.
+
+ 
+
+4. You mentioned SOX/audit flow - where are current control gaps or deficiencies documented and who owns remediation tracking?
+
+This is owned by Finance. We provide the technical abilities and intervene where needed but they own the process and ensuing remediation. 
+
+  
+
+Best, 
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Date : jeudi, 19 février 2026 à 18:59
+À : Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >, Benjamin Talmant <Benjamin.Talmant@abivax.com <mailto:Benjamin.Talmant@abivax.com> >
+Objet : IT Landscape
+```
+
+---
+
+## EMAIL #81
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E4F0000`
+- **Direction:** received
+- **Date:** 2026-02-23T11:51:39.9600000
+- **Subject:** Re: ABIVAX - Offer update
+- **From:** Michael Markman <michaelkmarkman@gmail.com>
+- **To:** ['Evrard, Marc', 'Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** B5512D06D269274BBD02B0BECF926547
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Marc - can you switch my email from Gmail to Mike.markman@abivax.com <mailto:Mike.markman@abivax.com>  please going forward?
+
+Thanks,
+Mike
+
+On Mon, Feb 23, 2026 at 11:19 AM Evrard, Marc <marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> > wrote:
+
+
+	Hello,
+
+	Please apologize as discounts were not visible in the pdf format.
+
+	Please find  in attachment the ppt format to get SAP subscription with current discounts.
+
+	Regards,
+
+	Marc
+
+________________________________
+
+	De: Evrard, Marc <marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> >
+	Envoyé: Vendredi 20 février 2026 19:29
+	À: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >; Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com>  <benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com> >; Casavecchia, Marco <mcasavecchia@kpmg.fr <mailto:mcasavecchia@kpmg.fr> >; Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+	Cc: Hema Keshava <hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> >; michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com>  <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+	Objet: RE: ABIVAX - Offer update 
+
+	Hello everyone,
+
+	Pleas find in attachment :
+
+	*	
+		Our answers regarding the technical aspects
+	*	
+		SAP suscription with current discounts
+
+
+	We will come back to you on next week to complete our answers.
+
+	Have a nice week-end,
+
+
+	Marc EVRARD
+
+	Director Advisory
+	SAP Digital Core Services / Connected Tech
+
+	KPMG ADVISORY
+	Tour Eqho
+	2 Avenue Gambetta <https://www.google.com/maps/search/2+Avenue+Gambetta?entry=gmail&source=g> , La Défense | 92066 Paris La Défense Cedex
+
+	M. +33 (0) 6 15 07 66 23
+	marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr>    
+
+	 
+
+	 <https://twitter.com/kpmg_france>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+	 
+
+	 
+
+________________________________
+
+	De: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+	Envoyé: Lundi 16 février 2026 17:04
+	À: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; Evrard, Marc <marcevrard@kpmg.fr <mailto:marcevrard@kpmg.fr> >; benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com>  <benjamin.rebel@sap.com <mailto:benjamin.rebel@sap.com> >; Casavecchia, Marco <mcasavecchia@kpmg.fr <mailto:mcasavecchia@kpmg.fr> >; Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+	Cc: Hema Keshava <hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> >; michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com>  <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+	Objet: Re: ABIVAX - Offer update
+
+	Hello everyone,
+
+	Please find attached the deck presented during this afternoon’s meeting.
+
+	As agreed during the call, and in order to facilitate Abivax teams’ review, we would need the following items:
+
+	*	An updated proposal and additional supporting information addressing the points presented in the attached PowerPoint and discussed during the call.
+
+	*	
+		Your availability, preferably this week or early next week (one-hour time slots), which we will then share with Abivax to schedule two workshops:
+
+		*	
+			A demonstration of the SAP BI module reporting capabilities applied to the P2P (Procure-to-Pay) and Finance processes.
+		*	
+			A scoping workshop to further detail the needs and the context in terms of Abivax workload.
+
+	*	The contact details for the references presented to Abivax (Doctolib, H2air, Cerba Research).
+
+	Thank you in advance for your feedback, ideally by Monday, 23/02.
+
+
+	Best regards,
+
+
+	Aymen Ben Alaya
+
+	Consultant
+	Tech Strategy and Transformation / Connected Tech​
+
+	KPMG ADVISORY​
+	Tour Eqho​
+	2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​
+
+
+```
+
+---
+
+## EMAIL #82
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E4E0000`
+- **Direction:** received
+- **Date:** 2026-02-23T11:31:53.7820000
+- **Subject:** Re: IT Landscape Follow-Up
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+  - Abivax Finance centric IT flowchart 20260223.pdf
+- **Thread ID:** 860B68B669954F9EA2F96EC3B3DCD399
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike, 
+
+As promised, you’ll find attached an up-to-date Finance centric flowchart. 
+
+The payment flow from Sage to Agicap and passing through Trustpair is detailed as well (not the control elements however, which are with the finance team as mentioned).
+
+Let us know if anything is unclear,
+
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Jade Nguyen <jade.nguyen-ext@abivax.com>
+Date : vendredi, 20 février 2026 à 17:59
+À : Michael Markman <mike.markman@abivax.com>
+Cc : Christophe Hennequin <Christophe.Hennequin@abivax.com>, Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Objet : Re: IT Landscape Follow-Up
+
+
+Hello Mike, 
+
+Happy to help!
+
+Here are some elements to get you started. I will come back to you once we have been able to properly gather / update the rest. 
+
+       1.    Can you send through the slides you shared today?
+Yes. Attached is the presentation I shared with you during the call.
+
+1.	
+	You’ll notice the slide with a focus on Sage is missing. I’m currently working through an update with Finance to get you a most accurate version based on their latests processes. I should have it ready by Monday.
+
+
+1.	
+	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? Yes, here it is <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE> , I have given you access. It’s a live where all owners are meant to make their updates. We also do periodic reviews to make sure it stays current
+2.	
+	There were several interfaces you mentioned – similar to #1, is there a listing (I can create if not), that details out for the feeds:
+
+	1.	file-based vs API
+	2.	frequency
+	3.	owner(s)
+	4.	process for what happens when a feed fails
+
+We do have the information but not properly centralized, we’ll share consolidated version early next week
+
+3. For Trustpair and Agicap specifically, can you share the exact flow from vendor setup through payment validation and where control evidence is retained today?
+The exact flow will be detailed on our Sage centric IT map. As for control evidence,  I’m unsure what you’re referring to. If it’s the evidence related to the controls implemented by Finance they will be better equipped to provide this. I will look into it however.
+
+
+4. You mentioned SOX/audit flow - where are current control gaps or deficiencies documented and who owns remediation tracking?
+This is owned by Finance. We provide the technical abilities and intervene where needed but they own the process and ensuing remediation. 
+  
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : jeudi, 19 février 2026 à 18:59
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>, Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Objet : IT Landscape Follow-Up
+
+
+
+Hi Jade / Benjamin – thanks for the walkthrough today, it was very helpful. 1.    Can you send through the slides you shared today?
+
+ 
+
+Some items we mentioned to follow-up on after the call:
+
+ 
+
+1.	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? I can create it if not, but if you have any of the information it would be super helpful. I can also confirm or follow-up with Finance on the above questions if you are unsure or unable to answer.
+2.	There were several interfaces you mentioned – similar to #1, is there a listing (I can creat
+```
+
+---
+
+## EMAIL #83
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E4D0000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:58:45.3460000
+- **Subject:** RE: Questions - Preparation of next phases
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Girard, Camille', 'Michael Markman']
+- **CC:** ['Denoual, Sebastien', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Thanks Camille, that will be great and Netsuite/SAP can propose a format.  I think options 1 or 2 will work.
+
+One further question – post implementation, will there be a support group in the US and France should we run in to issues?
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 10:46 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: RE: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, 
+
+ 
+
+Thanks for your answer, clear.
+
+ 
+
+Foe the applicable law, I have done my research (to be validated with Netsuite and your legal team of course): a single contract cannot be governed simultaneously by French law and U.S. law. However, there are three commonly used and viable contractual structures that allow us to address both French and U.S. requirements while ensuring legal clarity and risk control.
+
+ 
+
+I will ask Netsuite and SAP what they commonly propose in your context to help you make the decision.
+
+ 
+
+Best regards,
+
+ 
+
+---
+
+Option 1 – One main applicable law with specific U.S.-related clauses
+
+Under this option, the contract is governed by one main law (most commonly French law), while specific clauses explicitly refer to U.S. regulations where relevant.
+
+Typical examples include:
+
+*	Compliance with U.S. regulations (e.g. FCPA, export control, sanctions)
+*	Intellectual property provisions linked to a U.S. software publisher
+*	Data hosting or processing located in the United States
+
+This option offers:
+
+*	A clear and robust legal framework
+*	Limited exposure to legal uncertainty
+*	Easier contract management during the project lifecycle
+
+________________________________
+
+Option 2 – Split contractual structure (most common for international ERP projects)
+
+This approach consists of separating the contractual scope into two distinct agreements, each governed by its own applicable law:
+
+*	A services / implementation agreement (integration, project management, support), typically governed by French law
+*	A software license or publisher agreement, governed by U.S. law
+
+This structure is widely used in ERP projects involving international software vendors and allows:
+
+*	Each party to operate under its familiar legal framework
+*	Clear allocation of responsibilities and risks
+*	Better alignment with market practices
+
+It does, however, require careful coordination between contracts to ensure overall consistency.
+
+________________________________
+
+Option 3 – Single contract governed by U.S. law (with arbitration or foreign jurisdiction)
+
+In some cases, parties may agree on a single contract governed by U.S. law, often combined with international arbitration.
+
+While legally feasible, this option generally:
+
+*	Increases legal and operational complexity
+*	Requires strong internal alignment and legal validation
+*	Is usually reserved for projects with significant U.S. exposure or constraints
+
+As such, it is typically considered only in specific circumstances.
+
+ 
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Envoyé : lundi 23 février 2026 16:16
+À : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc : Denoual, Sebastien <sdenoual@kpmg.fr <mailto:sdenoual@kpmg.fr> >; Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Objet : RE: Questions - Preparation of next phases 
+
+ 
+
+Hi Camille,
+
+ 
+
+The financial negotiations will be done internally by Mike and me.  Whilst we will keep the BoD in the loop, we do not expect them to not agree with our final decision.
+
+ 
+
+Is it possible to have the contract covering both French and US Law?  We will h
+```
+
+---
+
+## EMAIL #84
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E4B0000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:46:38.3890000
+- **Subject:** RE: Questions - Preparation of next phases
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Hema Keshava', 'Michael Markman']
+- **CC:** ['Denoual, Sebastien', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Hema, 
+
+Thanks for your answer, clear.
+
+Foe the applicable law, I have done my research (to be validated with Netsuite and your legal team of course): a single contract cannot be governed simultaneously by French law and U.S. law. However, there are three commonly used and viable contractual structures that allow us to address both French and U.S. requirements while ensuring legal clarity and risk control.
+
+I will ask Netsuite and SAP what they commonly propose in your context to help you make the decision.
+
+Best regards,
+
+---
+Option 1 – One main applicable law with specific U.S.-related clauses
+Under this option, the contract is governed by one main law (most commonly French law), while specific clauses explicitly refer to U.S. regulations where relevant.
+Typical examples include:
+
+*	Compliance with U.S. regulations (e.g. FCPA, export control, sanctions)
+*	Intellectual property provisions linked to a U.S. software publisher
+*	Data hosting or processing located in the United States
+
+This option offers:
+
+*	A clear and robust legal framework
+*	Limited exposure to legal uncertainty
+*	Easier contract management during the project lifecycle
+
+________________________________
+
+Option 2 – Split contractual structure (most common for international ERP projects)
+This approach consists of separating the contractual scope into two distinct agreements, each governed by its own applicable law:
+
+*	A services / implementation agreement (integration, project management, support), typically governed by French law
+*	A software license or publisher agreement, governed by U.S. law
+
+This structure is widely used in ERP projects involving international software vendors and allows:
+
+*	Each party to operate under its familiar legal framework
+*	Clear allocation of responsibilities and risks
+*	Better alignment with market practices
+
+It does, however, require careful coordination between contracts to ensure overall consistency.
+________________________________
+
+Option 3 – Single contract governed by U.S. law (with arbitration or foreign jurisdiction)
+In some cases, parties may agree on a single contract governed by U.S. law, often combined with international arbitration.
+While legally feasible, this option generally:
+
+*	Increases legal and operational complexity
+*	Requires strong internal alignment and legal validation
+*	Is usually reserved for projects with significant U.S. exposure or constraints
+
+As such, it is typically considered only in specific circumstances.
+
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé : lundi 23 février 2026 16:16
+À : Girard, Camille <camillegirard@kpmg.fr>; Michael Markman <mike.markman@abivax.com>
+Cc : Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet : RE: Questions - Preparation of next phases 
+ 
+
+Hi Camille,
+
+ 
+
+The financial negotiations will be done internally by Mike and me.  Whilst we will keep the BoD in the loop, we do not expect them to not agree with our final decision.
+
+ 
+
+Is it possible to have the contract covering both French and US Law?  We will have Thomas Descusses from our legal team review the contract and I 100% agree that we should get started with tis piece soon.
+
+ 
+
+Best regards,
+
+Hema
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 9:51 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, Mike,
+
+ 
+
+Hope you're well. 
+
+ 
+
+3 questions for you in order to prepare ou call Thursday and anticipate next steps:
+
+*	Is the final validation process defined internally at ABIVAX ?
+
+	*	Who will manage the financial negociation?
+
+	*	Will it be necessary for example t
+```
+
+---
+
+## EMAIL #85
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E4A0000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:43:58.2440000
+- **Subject:** Le mot de passe de votre espace Lucca a été modifié
+- **From:** Lucca <no-reply@ilucca.net>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** C95811ABC1605B4C8E33782153130FFB
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://cdn.lucca.fr/notifications/icon-lucca.png> 	
+Lucca
+
+
+Sécurité
+
+Bonjour Mike, 
+Vous avez modifié le mot de passe de votre espace Lucca. 
+Vous n'êtes pas à l'origine de cette action ? Réinitialisez votre compte et informez-en de suite votre administrateur. 
+À bientôt 
+ <https://cdn.lucca.fr/notifications/footer-lucca.png>
+```
+
+---
+
+## EMAIL #86
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E490000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:42:42.6270000
+- **Subject:** Bienvenue chez Lucca
+- **From:** Lucca <no-reply@ilucca.net>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 73A2D6C27FDC5A44BA62213F1C9B1294
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://cdn.lucca.fr/notifications/icon-lucca.png> 	
+Lucca
+
+
+Sécurité
+
+Bonjour Mike, 
+Vous avez demandé l'initialisation de votre mot de passe. Veuillez cliquer sur le lien ci-dessous. 
+Créer mon mot de passe <https://abivax.ilucca.net/identity/password/create/account?requestId=019c8b29-9fa2-7e54-b33c-fca7994d8cc0> 	
+
+Accéder directement à l'application <https://abivax.ilucca.net> 	
+ <https://cdn.lucca.fr/notifications/footer-lucca.png>
+```
+
+---
+
+## EMAIL #87
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90CF0000`
+- **Direction:** sent
+- **Date:** 2026-02-23T10:41:55.5720000
+- **Subject:** RE: Lucca HR tool - Performance management
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Emilie Leveau']
+- **CC:** ['Ida Hatoum', 'Sophie Lacourrege']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** FC5FB8E503A170478411B60565FD5CF9
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks Emilie – much appreciated and looking forward to working together!
+
+ 
+
+-Mike
+
+ 
+
+From: Emilie Leveau <Emilie.Leveau@abivax.com> 
+Sent: Monday, February 23, 2026 10:28 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Ida Hatoum <Ida.Hatoum@abivax.com>; Sophie Lacourrege <sophie.lacourrege@abivax.com>
+Subject: Lucca HR tool - Performance management
+
+ 
+
+Hi Mike,
+
+ 
+
+I work with Ida and Sophie in HR and wanted to say welcome to Abivax! I hope your first days are going well.
+
+ 
+
+You must be receiving a lot of information but I wanted to inform you that I have created your profile in our HR tool (Lucca) and you should have received an email to log in and create your password.
+
+ 
+
+We use Lucca for Performance Management and are currently finalizing the 2025 End of Year campaign which requires no action on your part. However, when we open the 2026 Objectives campaign, the attached guide should be useful to you.
+
+ 
+
+FYI, the tool is also used by French employees (not US employees) for submitting vacation (Timmi Absences) and tracking office presence/remote working (Timmi Office).
+
+ 
+
+We also use Lucca to share the Organization charts and key presentations, such as those presented at Staff Meetings.
+
+ 
+
+Please let me know if you have any issues with your account.
+
+ 
+
+Welcome again!
+
+ 
+
+Kind regards,
+
+ 
+
+Emilie
+
+
+ 
+
+
+
+Emilie Leveau
+HR Administrative & Office Manager
+
+ 
+
+7-11 bld Haussmann 75009 Paris, France
+
+Mobile : +33 (0) 6 73 48 13 38
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+emilie.leveau@abivax.com <mailto:emilie.leveau@abivax.com> 
+
+	
+
+ 
+
+Next OOO :
+
+February 26th & 27th
+```
+
+---
+
+## EMAIL #88
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E480000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:28:36.1040000
+- **Subject:** Lucca HR tool - Performance management
+- **From:** Emilie Leveau </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=C824039C30F84516A5A379B5E74A5E58-4CF185E8-87>
+- **To:** ['Michael Markman']
+- **CC:** ['Ida Hatoum', 'Sophie Lacourrege']
+- **Has Attachments:** True
+  - [EN] Poplee-Performance-User-Guide.pptx
+  - Outlook-photo.png
+- **Thread ID:** FC5FB8E503A170478411B60565FD5CF9
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+
+I work with Ida and Sophie in HR and wanted to say welcome to Abivax! I hope your first days are going well.
+
+ 
+
+You must be receiving a lot of information but I wanted to inform you that I have created your profile in our HR tool (Lucca) and you should have received an email to log in and create your password.
+
+ 
+
+We use Lucca for Performance Management and are currently finalizing the 2025 End of Year campaign which requires no action on your part. However, when we open the 2026 Objectives campaign, the attached guide should be useful to you.
+
+ 
+
+FYI, the tool is also used by French employees (not US employees) for submitting vacation (Timmi Absences) and tracking office presence/remote working (Timmi Office).
+
+
+We also use Lucca to share the Organization charts and key presentations, such as those presented at Staff Meetings.
+
+ 
+
+Please let me know if you have any issues with your account.
+
+ 
+
+Welcome again!
+
+ 
+
+Kind regards,
+
+ 
+
+Emilie
+
+
+ 
+
+
+Emilie Leveau
+HR Administrative & Office Manager
+
+ 
+
+7-11 bld Haussmann 75009 Paris, France
+
+Mobile : +33 (0) 6 73 48 13 38
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+emilie.leveau@abivax.com <mailto:emilie.leveau@abivax.com> 
+
+	
+
+ 
+
+Next OOO :
+
+February 26th & 27th
+```
+
+---
+
+## EMAIL #89
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E470000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:22:34.0880000
+- **Subject:** Bienvenue chez Lucca
+- **From:** Lucca <no-reply@ilucca.net>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 5F0DEB486CC22547AF5607232A44BE54
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://cdn.lucca.fr/notifications/icon-lucca.png> 	
+Lucca
+
+
+Activer votre compte
+
+Bonjour Mike, 
+Votre administrateur vous a inscrit à Lucca, la solution qui simplifie les tâches administratives et RH de votre entreprise. 
+Pour vous connecter, utilisez : mike.markman@abivax.com 
+Activer votre compte <https://abivax.ilucca.net/identity/first-login?email=mike.markman@abivax.com> 	
+Au plaisir de vous retrouver sur Lucca, 
+ <https://cdn.lucca.fr/notifications/footer-lucca.png>
+```
+
+---
+
+## EMAIL #90
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E460000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:16:15.1420000
+- **Subject:** RE: Questions - Preparation of next phases
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Girard, Camille', 'Michael Markman']
+- **CC:** ['Denoual, Sebastien', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Camille,
+
+ 
+
+The financial negotiations will be done internally by Mike and me.  Whilst we will keep the BoD in the loop, we do not expect them to not agree with our final decision.
+
+ 
+
+Is it possible to have the contract covering both French and US Law?  We will have Thomas Descusses from our legal team review the contract and I 100% agree that we should get started with tis piece soon.
+
+ 
+
+Best regards,
+
+Hema
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 9:51 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, Mike,
+
+ 
+
+Hope you're well. 
+
+ 
+
+3 questions for you in order to prepare ou call Thursday and anticipate next steps:
+
+*	Is the final validation process defined internally at ABIVAX ?
+
+	*	Who will manage the financial negociation?
+
+	*	Will it be necessary for example to go to the board with a one pager?
+
+*	Do you wish to have a contract based on French Law or US Law ? (I am going to ask for the contract models to allow you to launch the contract review because legal negociation can take time
+
+*	Who will manage the legal review of the contract?
+
+ 
+
+If necessary, we can discuss about helping you further regarding the commercial negociation or legal aspects review with our lawyers (those aspects were out of scope in our initial proposal).
+
+ 
+
+Best regards,
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #91
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90CE0000`
+- **Direction:** sent
+- **Date:** 2026-02-23T10:13:30.8270000
+- **Subject:** RE: ERP Slides -> Request -> Due March 6th 
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Girard, Camille']
+- **CC:** ['Ben Alaya, Aymen']
+- **Has Attachments:** False
+- **Thread ID:** 432FCC4F6562CD4FB50DF930D1E344A9
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Yes, makes sense. I’m sure there will be many moving parts and changes as we progress in the next couple of weeks.
+
+ 
+
+Thanks again,
+
+Mike
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 10:12 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: RE: ERP Slides -> Request -> Due March 6th 
+
+ 
+
+Ok yes fine for early next week.
+
+ 
+
+Just keep in mind that even if you all agree Thursday on a candidate, I am guessing that you will want to negociate a bit, and review/negociate legal documents before final validation so the presentation of financials might still move during March, until signature.
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+ 
+
+ 
+
+________________________________
+
+De: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Envoyé: Lundi 23 février 2026 16:07
+À: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Cc: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Objet: RE: ERP Slides -> Request -> Due March 6th 
+
+ 
+
+Would be looking to have this done by early March, but understood there are still some huge moving pieces to this that hopefully we will solidify this week with the final decision. Audit committee meeting is week of March 16th, but I will need to submit these much earlier to the centralized finance group for them to incorporate and review.
+
+ 
+
+Does early next week work for you?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Sent: Monday, February 23, 2026 9:55 AM
+To: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Subject: RE: ERP Slides -> Request -> Due March 6th
+
+ 
+
+Hello Mike, 
+
+ 
+
+Thanks for you email.
+
+ 
+
+This is the link to our updated version of the status project but it will not all of your points below.
+
+ 
+
+We can prepare you something to gather required elements, but I would like to wait for updated elements from Netsuite and SAP first.
+
+ 
+
+When is your next audit committee ?
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Envoyé : lundi 23 février 2026 15:47
+À : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Objet : FW: ERP Slides -> Request -> Due March 6th
+
+ 
+
+Hi Camille – I hope all is well. I’m sure you have this in different places, but I’m putting together info/slides for the upcoming audit committee meeting and looking for the following:
+
+ 
+
+1.	High-level summary of the project (objectives, scope, where things stand)
+
+	*	Key benefits or rationale
+
+	*	Partners involved
+
+2.	Timeline slide:
+
+	1.	Gantt chart or timeline showing timing (signing to go-live)
+
+	1.	Key phases or decision points
+
+3.	Financial slide:
+
+	1.	Estimated NetSuite licensing/subscription costs
+
+	1.	Estimated implementation cost (hours if available?)
+
+	1.	Any other meaningful cost (internal resources or contingencies)
+
+Let me know any questions or if you would like to talk through any of these.
+
+ 
+
+Thanks,
+Mike 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet 
+```
+
+---
+
+## EMAIL #92
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E450000`
+- **Direction:** received
+- **Date:** 2026-02-23T10:12:20.5780000
+- **Subject:** RE: ERP Slides -> Request -> Due March 6th 
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Michael Markman']
+- **CC:** ['Ben Alaya, Aymen']
+- **Has Attachments:** False
+- **Thread ID:** 432FCC4F6562CD4FB50DF930D1E344A9
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Ok yes fine for early next week.
+
+Just keep in mind that even if you all agree Thursday on a candidate, I am guessing that you will want to negociate a bit, and review/negociate legal documents before final validation so the presentation of financials might still move during March, until signature.
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+
+
+________________________________
+
+De: Michael Markman <mike.markman@abivax.com>
+Envoyé: Lundi 23 février 2026 16:07
+À: Girard, Camille <camillegirard@kpmg.fr>
+Cc: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Objet: RE: ERP Slides -> Request -> Due March 6th 
+
+
+Would be looking to have this done by early March, but understood there are still some huge moving pieces to this that hopefully we will solidify this week with the final decision. Audit committee meeting is week of March 16th, but I will need to submit these much earlier to the centralized finance group for them to incorporate and review.
+
+ 
+
+Does early next week work for you?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr>
+Sent: Monday, February 23, 2026 9:55 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: RE: ERP Slides -> Request -> Due March 6th
+
+ 
+
+Hello Mike, 
+
+ 
+
+Thanks for you email.
+
+ 
+
+This is the link to our updated version of the status project but it will not all of your points below.
+
+ 
+
+We can prepare you something to gather required elements, but I would like to wait for updated elements from Netsuite and SAP first.
+
+ 
+
+When is your next audit committee ?
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Envoyé : lundi 23 février 2026 15:47
+À : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Objet : FW: ERP Slides -> Request -> Due March 6th
+
+ 
+
+Hi Camille – I hope all is well. I’m sure you have this in different places, but I’m putting together info/slides for the upcoming audit committee meeting and looking for the following:
+
+ 
+
+1.	High-level summary of the project (objectives, scope, where things stand)
+
+	*	Key benefits or rationale
+
+	*	Partners involved
+
+2.	Timeline slide:
+
+	1.	Gantt chart or timeline showing timing (signing to go-live)
+
+	1.	Key phases or decision points
+
+3.	Financial slide:
+
+	1.	Estimated NetSuite licensing/subscription costs
+
+	1.	Estimated implementation cost (hours if available?)
+
+	1.	Any other meaningful cost (internal resources or contingencies)
+
+Let me know any questions or if you would like to talk through any of these.
+
+ 
+
+Thanks,
+Mike 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mista
+```
+
+---
+
+## EMAIL #93
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90CD0000`
+- **Direction:** sent
+- **Date:** 2026-02-23T10:10:54.3260000
+- **Subject:** P2P within Netsuite
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Girard, Camille', 'Ben Alaya, Aymen']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** E9F24488C233453D964F5C9A4F3A5A2D
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi both – are there specific presentations around the P2P process that NetSuite has on offer? After discussing with Hema and others on the finance team, the reporting aspects seem clear to them and they are comfortable with, however on the P2P side they aren’t as comfortable yet with the capabilities and have raised concerns about the additional work potential for the team. 
+
+ 
+
+I’m also looking into potential of a P2P outsourcing model, so would be interested in how NetSuite has dealt with that in the past. I’m happy to speak with the NetSuite team in conjunction with KPMG if that makes sense as well, and we can keep the conversation more focused with a limited team.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #94
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90CC0000`
+- **Direction:** sent
+- **Date:** 2026-02-23T10:06:57.4810000
+- **Subject:** RE: ERP Slides -> Request -> Due March 6th 
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ["'Girard, Camille'"]
+- **CC:** ['Ben Alaya, Aymen']
+- **Has Attachments:** False
+- **Thread ID:** 432FCC4F6562CD4FB50DF930D1E344A9
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Would be looking to have this done by early March, but understood there are still some huge moving pieces to this that hopefully we will solidify this week with the final decision. Audit committee meeting is week of March 16th, but I will need to submit these much earlier to the centralized finance group for them to incorporate and review. 
+
+ 
+
+Does early next week work for you?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 9:55 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: RE: ERP Slides -> Request -> Due March 6th 
+
+ 
+
+Hello Mike, 
+
+ 
+
+Thanks for you email.
+
+ 
+
+This is the link to our updated version of the status project but it will not all of your points below.
+
+ 
+
+We can prepare you something to gather required elements, but I would like to wait for updated elements from Netsuite and SAP first.
+
+ 
+
+When is your next audit committee ?
+
+ 
+
+Camille Girard
+
+Senior Manager KPMG Advisory
+
+06.29.52.57.35
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Envoyé : lundi 23 février 2026 15:47
+À : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Objet : FW: ERP Slides -> Request -> Due March 6th 
+
+ 
+
+Hi Camille – I hope all is well. I’m sure you have this in different places, but I’m putting together info/slides for the upcoming audit committee meeting and looking for the following:
+
+ 
+
+1.	High-level summary of the project (objectives, scope, where things stand)
+
+	*	Key benefits or rationale
+
+	*	Partners involved
+
+2.	Timeline slide:
+
+	a.	Gantt chart or timeline showing timing (signing to go-live)
+
+	b.	Key phases or decision points
+
+3.	Financial slide:
+
+	a.	Estimated NetSuite licensing/subscription costs
+
+	b.	Estimated implementation cost (hours if available?)
+
+	c.	Any other meaningful cost (internal resources or contingencies)
+
+Let me know any questions or if you would like to talk through any of these.
+
+ 
+
+Thanks,
+Mike 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #95
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90CB0000`
+- **Direction:** sent
+- **Date:** 2026-02-23T10:05:10.1700000
+- **Subject:** RE: Questions - Preparation of next phases
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Hema Keshava']
+- **CC:** []
+- **Has Attachments:** True
+  - ~WRD0000.jpg
+  - image001.png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Hema – will defer to you on this one as I’m not sure yet the internal policies/procedures. Happy to discuss any of this though. 
+
+ 
+
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Monday, February 23, 2026 9:51 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Denoual, Sebastien <sdenoual@kpmg.fr>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Subject: Questions - Preparation of next phases
+
+ 
+
+Hello Hema, Mike,
+
+ 
+
+Hope you're well. 
+
+ 
+
+3 questions for you in order to prepare ou call Thursday and anticipate next steps:
+
+*	Is the final validation process defined internally at ABIVAX ?
+
+	*	Who will manage the financial negociation?
+
+	*	Will it be necessary for example to go to the board with a one pager?
+
+*	Do you wish to have a contract based on French Law or US Law ? (I am going to ask for the contract models to allow you to launch the contract review because legal negociation can take time
+
+*	Who will manage the legal review of the contract?
+
+ 
+
+If necessary, we can discuss about helping you further regarding the commercial negociation or legal aspects review with our lawyers (those aspects were out of scope in our initial proposal).
+
+ 
+
+Best regards,
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #96
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90CA0000`
+- **Direction:** sent
+- **Date:** 2026-02-23T09:55:24.7640000
+- **Subject:** RE: Systems Access
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Roxandra Sturdza']
+- **CC:** ['Hema Keshava']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks for this Roxandra. It would be great if you could walk me through this and the Treasury work you are involved in as well. My calendar is up-to-date so let me know which day/time works best for you. 
+
+ 
+
+Speak soon,
+
+Mike
+
+ 
+
+From: Roxandra Sturdza <Roxandra.Sturdza@abivax.com> 
+Sent: Friday, February 20, 2026 5:11 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: RE: Systems Access
+
+ 
+
+Hello Michael,
+
+ 
+
+I have grant you an access to Agicap.
+
+You should have received a mail to accept it.
+
+We can schedule a 45-minute meeting end of next week if you want to go through it and through Treasury organisation.
+
+Best regards
+
+ 
+
+Roxandra
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Envoyé : jeudi 19 février 2026 17:53
+À : Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Objet : RE: Systems Access
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava 
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well! 
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #97
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E440000`
+- **Direction:** received
+- **Date:** 2026-02-23T09:55:04.5200000
+- **Subject:** RE: ERP Slides -> Request -> Due March 6th 
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Michael Markman']
+- **CC:** ['Ben Alaya, Aymen']
+- **Has Attachments:** False
+- **Thread ID:** 432FCC4F6562CD4FB50DF930D1E344A9
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike, 
+
+Thanks for you email.
+
+This is the link to our updated version of the status project but it will not all of your points below.
+
+We can prepare you something to gather required elements, but I would like to wait for updated elements from Netsuite and SAP first.
+
+When is your next audit committee ?
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com>
+Envoyé : lundi 23 février 2026 15:47
+À : Girard, Camille <camillegirard@kpmg.fr>
+Objet : FW: ERP Slides -> Request -> Due March 6th 
+ 
+
+Hi Camille – I hope all is well. I’m sure you have this in different places, but I’m putting together info/slides for the upcoming audit committee meeting and looking for the following:
+
+ 
+
+1.	High-level summary of the project (objectives, scope, where things stand)
+
+	*	Key benefits or rationale
+
+	*	Partners involved
+
+2.	Timeline slide:
+
+	a.	Gantt chart or timeline showing timing (signing to go-live)
+
+	b.	Key phases or decision points
+
+3.	Financial slide:
+
+	a.	Estimated NetSuite licensing/subscription costs
+
+	b.	Estimated implementation cost (hours if available?)
+
+	c.	Any other meaningful cost (internal resources or contingencies)
+
+Let me know any questions or if you would like to talk through any of these.
+
+ 
+
+Thanks,
+Mike 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #98
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E430000`
+- **Direction:** received
+- **Date:** 2026-02-23T09:51:27.5790000
+- **Subject:** Questions - Preparation of next phases
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Hema Keshava', 'Michael Markman']
+- **CC:** ['Denoual, Sebastien', 'Ben Alaya, Aymen']
+- **Has Attachments:** True
+  - Outlook-Une image .png
+- **Thread ID:** 63C3205A67D2BB48A369117E5BFF8F28
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Hema, Mike,
+
+Hope you're well. 
+
+3 questions for you in order to prepare ou call Thursday and anticipate next steps:
+
+*	
+	Is the final validation process defined internally at ABIVAX ?
+
+	*	
+		Who will manage the financial negociation?
+	*	
+		Will it be necessary for example to go to the board with a one pager?
+
+*	
+	Do you wish to have a contract based on French Law or US Law ? (I am going to ask for the contract models to allow you to launch the contract review because legal negociation can take time
+*	
+	Who will manage the legal review of the contract?
+
+
+If necessary, we can discuss about helping you further regarding the commercial negociation or legal aspects review with our lawyers (those aspects were out of scope in our initial proposal).
+
+Best regards,
+
+Camille GIRARD
+
+Senior Manager Advisory / Tech Consulting
+
+KPMG ADVISORY
+Le Mirabeau
+4, quai d’Arenc - Boulevard Jacques Saadé
+F-13002 Marseille
+
+M. +33 (0)6 29 52 57 35
+camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr%20> 
+
+kpmg.fr <http://kpmg.com/fr/fr> 
+
+ <https://twitter.com/kpmg_france?lang=en>    <https://www.linkedin.com/company/kpmg-france>    <https://www.facebook.com/KPMGFR>    <https://www.youtube.com/user/KPMGFrance>    <https://www.instagram.com/kpmg_france/> 
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #99
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C90000`
+- **Direction:** sent
+- **Date:** 2026-02-23T09:50:16.0410000
+- **Subject:** RE: ABIVAX ERP - Project update
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Jade Nguyen', 'Girard, Camille']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 2A737B34C3DB504396996E682BDD1F0F
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks for this!
+
+ 
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com> 
+Sent: Friday, February 20, 2026 4:43 AM
+To: Girard, Camille <camillegirard@kpmg.fr>
+Cc: Michael Markman <mike.markman@abivax.com>
+Subject: Re: ABIVAX ERP - Project update
+
+ 
+
+Hello Camille & Mike,
+
+ 
+
+This is done. Mike you should have received an invite to join as member. 
+
+Let me know if you encounter any issues.
+
+ 
+
+Best,
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+ 
+
+De : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Date : jeudi, 19 février 2026 à 20:25
+À : Jade Nguyen <jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> >
+Cc : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Objet : Fw: ABIVAX ERP - Project update
+
+Hello Jade,
+
+ 
+
+Cours you Grant access to Mike to the folders below ? 
+
+ 
+
+Thank you.
+
+ 
+
+ 
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Envoyé : Thursday, February 19, 2026 8:16:00 PM
+À : Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Cc : Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Objet : RE: ABIVAX ERP - Project update
+
+ 
+
+Thanks for this – do you know how I get access to the sharepoint because I can’t currently see or access any of the hyperlinks in the email below?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Ben Alaya, Aymen <abenalaya@kpmg.fr <mailto:abenalaya@kpmg.fr> >
+Sent: Thursday, February 19, 2026 11:54 AM
+To: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Girard, Camille <camillegirard@kpmg.fr <mailto:camillegirard@kpmg.fr> >
+Subject: ABIVAX ERP - Project update
+
+ 
+
+Hello Michael,
+
+ 
+
+As requested during our onboarding call, please find below a summary of the key activities completed to date, along with the associated deliverables.
+
+The table provides the necessary context to understand the project’s scope and key considerations.
+
+ 
+
+If you have any questions, please don’t hesitate to reach out.
+
+ 
+
+Subject/Phase
+
+Timeline
+
+Key activities & Outcomes
+
+Deliverables/References
+
+Initiate
+
+(23/09/2025 - 13/10/2025) 
+
+*	 Defining the scope of the support proposal.
+
+*	Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf <https://urldefense.com/v3/__https:/abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/Proposal*20KPMG_ABIVAX_ERP*20Choice_V250801.pdf?csf=1&web=1&e=2lQVno__;JSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLkfWfwp0$> : Proposal – Tool Selection Support 
+*	ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf <https://urldefense.com/v3/__https:/abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/ABIVAX*20LoE*20-*20ERP*20Choice*20assistance*20-*20v230925.docx.pdf?csf=1&web=1&e=WFwJJz__;JSUlJSUlJSUlJSU!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLfbmYjxU$> : Engagement Letter – Support for Tool Selection
+
+Diagnostic 
+
+(13/10/2025 – 03/11/2025)
+
+*	Objective: assess ABivax’s current (“as-is”) situation and identify key pain points.
+*	Conducted 3 interviews with IT and Operations to capture and validate the main issues.
+
+*	Abivax - KickOff <https://urldefense.com/v3/__https:/abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Kick-off/Abivax*20-*20KickOff.pdf?csf=1&web=1&e=lZdnmA__;JSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLAt_tee0$> : Kick-off deck presenting the overall project approach and metho
+```
+
+---
+
+## EMAIL #100
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C80000`
+- **Direction:** sent
+- **Date:** 2026-02-23T09:47:13.5650000
+- **Subject:** FW: ERP Slides -> Request -> Due March 6th 
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Girard, Camille']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 432FCC4F6562CD4FB50DF930D1E344A9
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Camille – I hope all is well. I’m sure you have this in different places, but I’m putting together info/slides for the upcoming audit committee meeting and looking for the following:
+
+ 
+
+1.	High-level summary of the project (objectives, scope, where things stand)
+
+	*	Key benefits or rationale
+
+	*	Partners involved
+
+2.	Timeline slide:
+
+	a.	Gantt chart or timeline showing timing (signing to go-live)
+
+	b.	Key phases or decision points
+
+3.	Financial slide:
+
+	a.	Estimated NetSuite licensing/subscription costs
+
+	b.	Estimated implementation cost (hours if available?)
+
+	c.	Any other meaningful cost (internal resources or contingencies)
+
+Let me know any questions or if you would like to talk through any of these.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #101
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E380000`
+- **Direction:** received
+- **Date:** 2026-02-23T09:14:12.3270000
+- **Subject:** V2 Availability Poll – [1/2] Master Data Management Workshop
+- **From:** Ben Alaya, Aymen <abenalaya@kpmg.fr>
+- **To:** ['Girard, Camille', 'Christophe Hennequin', 'Benjamin Talmant', 'Jade Nguyen', 'Trinidad Mesa', 'Michael Markman', 'Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3BF72130E927B049876E514540BDAEFE
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello,
+
+Following up on the workshop focused on organization and governance for effective Master Data Management (MDM).
+
+We haven’t been able to align on a date yet, as we didn’t receive enough availability to confirm the first session. We have therefore launched a new poll to collect everyone’s availability.
+
+To schedule the workshop as soon as possible, could you please complete the new poll below as soon as possible and indicate your availability?
+
+This workshop will be conducted in two sessions of 1 hour each. For now, we are planning the first session.
+
+
+ <https://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Data_Bar.png> 	Scheduling poll
+V2 Availability Poll – [1/2] Master Data Management Workshop
+ <https://ow2.res.office365.com/assets/findtime/images/v2/Icon_Clock.png> 	1 hour duration
+ <https://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Clock.png> 	10 time options
+	Vote <https://outlook.office.com/findtime/vote?getrequesturl=https%3a%2f%2foutlook.office.com%2fows%2fPUID%3a10032003AF8087FC%40deff24bb-2089-4400-8c8e-f71e680378b2%2fbeta%2fOutlookMeetingPolls%2fGetPollForVotingPage%3fid%3dRgAAAABoPA-hEpQWTZFa1LMrDkjNBwDncSPYulLUQpHZKCLpBhJYAAEfgItvAADncSPYulLUQpHZKCLpBhJYAAF07iRcAAAA0%26authtoken%3deyJhbGciOiJSUzI1NiIsImtpZCI6Im1VRWhBM25Jdzc4SDA2S2pZRkNNNXhKQzBnVT0iLCJ0eXAiOiJKV1QiLCJ4NXQiOiJxcHFTbVJDdDNOWXBYRHdwcFFaelBtNXRlR0kifQ.eyJvaWQiOiJmYzE0Yjc2OC0yM2EwLTRmZmUtOGIwMS0wNmJlODQ0M2JiNmYiLCJ2ZXIiOiJSZXNvdXJjZUxvb3BiYWNrLlVzZXIuVjEiLCJzY3AiOiJPdXRsb29rUG9sbC1JbnRlcm5hbC5SZWFkV3JpdGUiLCJyc2NvcGVsZW4iOiIyMzYiLCJyZXNvdXJjZV9zY29wZSI6IntcIlVSTFwiOlwiSUFsSTZCZFJTMnJ5aEtDemQ3V3B6aUZFVGtPelQ0OGhMcG1lZisxaEkyaz1cIn0iLCJjb3JyaWQiOiI5YTQ2ZmEwZS0xZjMyLTQ4NWQtOTVjMS0wOWEzNWY0MzI1ZTMiLCJhcHBpZCI6IjE1N2NkZmJmLTczOTgtNGE1Ni05NmMzLWU5M2U5YWIzMDliNSIsImFwcGlkYWNyIjoiMCIsInRpZCI6ImRlZmYyNGJiLTIwODktNDQwMC04YzhlLWY3MWU2ODAzNzhiMiIsImlhdCI6MTc3MTg1NTY4NiwibmJmIjoxNzcxODU1Njg2LCJleHAiOjE3Nzk2MzE2ODYsImlzcyI6Imh0dHBzOi8vcmVzb3VyY2Uuc2VsZi8iLCJhdWQiOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSJ9.b_Y_eJIfa0hdAbKnrVOs54XYhxZAwPZ5JCi7H1VGL7nnxfmgG2VwlbmiMWkMWkmTv411ZBzn6cksEePufuc2QYdKeIz-EmPfpWTBCeh6eCTezPU_uhfxBdhWnsBu7hYV3-R1VMgccn0ec9nDN0GkUpWBVLV09u2gn_GN5Mj5dpwFD0P-OHJub1TJrUvrxM80fcJbvhulI80mfYgfbd4vdB-dHVqg2FVrmwwzYYemvpx8mVl4_PWB010T89wrAcyaWVzNzuhuZo1ARo7fT57XEp7NUTUe8AsOZ0yPKwrbeZOVsIpLOX1h4vTCYxGRVbvYAVNo3AyAxkUeo0NmqHSsow&anonymous> 
+	View all your polls <https://outlook.office.com/findtime/dashboard> 
+	
+
+
+
+Thank you in advance.
+
+Best regards,
+
+
+Aymen Ben Alaya
+
+Consultant
+Tech Strategy and Transformation / Connected Tech​
+
+KPMG ADVISORY​
+Tour Eqho​
+2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​
+
+M. +33 7 78 55 33 58
+abenalaya@kpmg.fr
+
+ 
+
+ 
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail 
+```
+
+---
+
+## EMAIL #102
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E370000`
+- **Direction:** received
+- **Date:** 2026-02-23T06:03:47.2150000
+- **Subject:** [Not Virus Scanned] Re: ABIVAX Offer - Netsuite
+- **From:** jamal azil <jamal.azil@oracle.com>
+- **To:** ['Girard, Camille', 'Ben Alaya, Aymen']
+- **CC:** ['Laurent Bailly', 'Venceslas dEchallens', 'Hema Keshava', 'Michael Markman', 'Vincent Gehanno', 'Jade Nguyen']
+- **Has Attachments:** True
+  - img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5
+  - Abivax - Netsuite Demonstration Feedback 230226.pptx
+  - Interfaces ABIVAX.xlsx
+  - ABIVAX  - Draft-Implementation Timeline V2.xlsx
+  - FX Rate - Treasury Management - VTA Declaration Clarification.pdf
+- **Thread ID:** 564EB5267A270249995DCCFF6537D724
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Confidential - Oracle Restricted \Including External Recipients
+
+
+
+Hi Camille,
+
+I hope you’re doing well. Following our last meeting, please find attached our responses to the questions, included directly in your PowerPoint document. Our answers are supplemented by the additional appendices attached.
+
+Regarding reference checks, we are currently requesting the necessary approvals so that we can share the contacts for you to reach out to.
+
+We hope this addresses your request, and we remain available should you need anything else.
+
+Best regards,
+
+Jamal.
+
+
+
+
+ <https://www.netsuite.com/portal/home.shtml> 
+
+
+Jamal AZIL | Sales Representative – NetSuite
+
+Mobile : +33 6 46 54 56 72 – jamal.azil@oracle.com <mailto:jamal.azil@oracle.com> 
+
+Zoom : https://oracle.zoom.us/my/jamal.azil <https://oracle.zoom.us/my/david.naccache> 
+Oracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes
+
+
+De : Girard, Camille <camillegirard@kpmg.fr>
+Date : jeudi, 19 février 2026 à 11:25
+À : jamal azil <jamal.azil@oracle.com>, Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc : Laurent Bailly <laurent.bailly@oracle.com>, Venceslas dEchallens <venceslas.dechallens@oracle.com>, Hema Keshava <hema.keshava@abivax.com>, mike.markman@abivax.com <mike.markman@abivax.com>, Vincent Gehanno <vincent.gehanno@oracle.com>, Jade Nguyen <jade.nguyen-ext@abivax.com>
+Objet : RE: ABIVAX Offer - Netsuite
+
+
+Hello Jamal,
+
+We will confirm the timeslot today. 
+
+You can forget e-invoicing, I have removed it from the PPT but we dit not remove it from the email; it was indeed answered during our session.
+
+For the technical aspects, it is what Jade explained during the meeting.
+
+Best regards,
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+
+
+
+
+Confidential - Oracle Restricted \Including External Recipients
+
+
+________________________________
+
+De: jamal azil <jamal.azil@oracle.com>
+Envoyé: Mercredi 18 février 2026 13:07
+À: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc: Laurent Bailly <laurent.bailly@oracle.com>; Venceslas dEchallens <venceslas.dechallens@oracle.com>; Hema Keshava <hema.keshava@abivax.com>; mike.markman@abivax.com <mike.markman@abivax.com>; Vincent Gehanno <vincent.gehanno@oracle.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Girard, Camille <camillegirard@kpmg.fr>
+Objet: Re: ABIVAX Offer - Netsuite
+
+
+Confidential - Oracle Restricted \Including External Recipients
+
+
+Hello Aymen,
+
+I hope you are doing well.
+
+Thank you for your feedback following our meeting yesterday.
+
+We will provide you with a written response regarding the various points raised in the PowerPoint document as soon as possible.
+
+Regarding the additional two-hour meeting, we would like to propose Tuesday, February 24, either from 10:30 am to 12:30 pm or from 2:00 pm to 4:00 pm, depending on your preference.
+
+In addition, concerning the topics you would like to cover during this session, could you please clarify your specific expectations regarding e-invoicing (as it seemed to us that we had addressed the latest questions during yesterday’s meeting) as well as the “day-to-day IT solution capabilities” which is quite a broad scope?
+Based on your feedback, our objective is to ensure that we involve the appropriate stakeholders on our side.
+
+We look forward to your reply.
+Kind regards,
+
+Jamal
+
+
+
+
+ <https://urldefense.com/v3/__https://www.netsuite.com/portal/home.shtml__;!!E1R1dd1bLLODlQ4!AR4XXcIiYzbOIBO4ztIbEtB9swbyMvVJRKA9pgWSMcweUb6iDHpCcDLYDntRyhIMZGC6pkyLgV2_SW8nGvyfQW4$> 
+
+
+Jamal AZIL | Sales Representative – NetSuite
+
+Mobile : +33 6 46 54 56 72 – jamal.azil@oracle.com <mailto:jamal.azil@oracle.com> 
+
+Zoom : https://oracle.zoom.us/my/jamal.azil <https://urldefense.com/v3/__https://oracle.zoom.us/my/david.naccache__;!!E1R1dd1bLLODlQ4!AR4XXcIiYzbOIBO4ztIbEtB9swbyMvVJRKA9pgWSMcweUb6iDHpCcDLYDntRyhIMZGC6pkyLgV2_SW8n50OwauQ$> 
+Oracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes
+
+
+De : Ben Alaya, Aym
+```
+
+---
+
+## EMAIL #103
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E350000`
+- **Direction:** received
+- **Date:** 2026-02-23T05:29:06.4170000
+- **Subject:** Re: ABIVAX STORMS ECCO '26 in Stockholm Through Robust Scientific Presence
+- **From:** Ida Hatoum </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=E2A4A9B6C2F44E529DBABDD2EE2602E5-BCDCE6C0-8F>
+- **To:** ['Marc de Garidel', 'Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - image001.png
+  - image004.png
+  - image003.png
+- **Thread ID:** 592620D8856C4E39AB5C2CE351877664
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Congratulations to the team. This was a huge amount of work going into the event and it's incredible to see the outcome. 
+
+All my best,
+Ida 
+
+Ida Hatoum
+Abivax
+Chief People Officer
+Chief Compliance Officer
+Ida.hatoum@abivax.com
+Cellular: 419-290-0559
+
+________________________________
+
+From: Marc de Garidel <Marc.de.Garidel@abivax.com>
+Sent: Sunday, February 22, 2026 11:43 PM
+To: Chris Rabbat <Chris.Rabbat@abivax.com>; allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com>
+Subject: Re: ABIVAX STORMS ECCO '26 in Stockholm Through Robust Scientific Presence
+ 
+My big congrats to all of you who contributed to this incredible scientific presence at the most attended international gastro congress in the world.
+We can be all proud of our first class team showing that obefazimob with its unique oral , safe & effective profile could change the life of UC patients.
+Huge thanks & more to come at DDW!
+Best,
+Marc
+
+Marc de Garidel
+Abivax CEO
++33679281593
+________________________________
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com>
+Sent: Sunday, February 22, 2026 9:08:52 PM
+To: allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com>
+Subject: ABIVAX STORMS ECCO '26 in Stockholm Through Robust Scientific Presence
+ 
+
+Hello ABIVAX Team,
+
+ 
+
+On behalf of the ECCO 2026 planning team, I’m pleased to share a two-page summary (attached and included below) highlighting ABIVAX’s presence at ECCO 2026 in Stockholm, which concluded yesterday, Feb 21, 2026.
+
+ 
+
+A huge congratulations to every ABIVAX team member for contributing to our presence at ECCO.
+
+ 
+
+Cheers,
+Chris
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+Chris Rabbat, PhD
+
+VP, Global Head of Medical Outreach and Engagement
+
++1-310-989-2055
+
+www.abivax.com <http://www.abivax.com/> 
+
+chris.rabbat@abivax.com <mailto:chris.rabbat@abivax.com>
+```
+
+---
+
+## EMAIL #104
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E330000`
+- **Direction:** received
+- **Date:** 2026-02-23T05:04:06.1380000
+- **Subject:** Agenda of our monthly Managers Forum meeting
+- **From:** Sophie Lacourrege </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=30ADCB094AED454894DD399888592AFB-CD466DEC-FB>
+- **To:** ['Aude Garcel', 'Chris Rabbat', 'Doug Jacobstein', 'Frederick Golly', 'Hema Keshava', 'Jennifer Fine', 'Jessica Huskey', 'Julien Santo', 'Kejia Shan', 'Laurence Desroys du Roure', 'Marcus Wilkes', 'Marianne Perdrijat', 'Mary Mantock', 'Maurus de la Rosa', 'Michael Markman', 'Murielle Salaun Lancien', 'Nakesha Harding-Boyce', 'Patricia Fleuranceau Morel', 'Patrick Malloy', 'Philippe Goncalves', 'Rebecca Mosig', 'Roxandra Sturdza', 'Sophie Gibelli', 'Trinidad Mesa', 'Keith Fournier', 'Bindu Saini', 'Josianne Nitcheu', 'Pascaline Ploncard', 'Thomas Descusses']
+- **CC:** ['Marc de Garidel', 'Ida Hatoum', 'David Zhang', 'Didier Blondel', 'Fabio Cataldi', 'Jerome Denis', 'Nadege Briancon-Eris', 'Pierre Courteille', 'Maurus de la Rosa', 'Emilie Leveau', 'Alexis Gillis', 'Christine Cook']
+- **Has Attachments:** True
+  - image001.png
+  - Managers Forum Meeting_Thursday_February 26th, 2026.ppt
+- **Thread ID:** C5F59E2F913C4E55ACA7AD88AF472BA1
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Dear All,
+
+ 
+
+As agreed during our last meeting and in anticipation to our meeting on Thursday, please find attached the agenda of the meeting.
+
+ 
+
+Kind regards,
+
+ 
+
+Sophie
+
+ 
+
+
+
+Sophie Lacourrège
+VP HR Business Partner, Engagement & Culture
+
++33 (0)6 03 08 48 03
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+sophie.lacourrege@abivax.com <mailto:sophie.lacourrege@abivax.com> 
+
+ 
+
+ 
+
+OOO :    March 6th
+
+        March 20th  to March 23rd
+```
+
+---
+
+## EMAIL #105
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E320000`
+- **Direction:** received
+- **Date:** 2026-02-22T23:43:30.7810000
+- **Subject:** Re: ABIVAX STORMS ECCO '26 in Stockholm Through Robust Scientific Presence
+- **From:** Marc de Garidel </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=32D754ED813B484E8E5F82FFB0078950-2C854C6D-78>
+- **To:** ['Chris Rabbat', 'allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - image001.png
+  - image004.png
+  - image003.png
+- **Thread ID:** 592620D8856C4E39AB5C2CE351877664
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+My big congrats to all of you who contributed to this incredible scientific presence at the most attended international gastro congress in the world.
+We can be all proud of our first class team showing that obefazimob with its unique oral , safe & effective profile could change the life of UC patients.
+Huge thanks & more to come at DDW!
+Best,
+Marc
+
+Marc de Garidel
+Abivax CEO
++33679281593
+________________________________
+
+From: Chris Rabbat <Chris.Rabbat@abivax.com>
+Sent: Sunday, February 22, 2026 9:08:52 PM
+To: allabivax <allabivax@abivax.com>; ALLABIVAX-E <allabivax-e@abivax.com>
+Cc: Fabio Cataldi <fabio.cataldi@abivax.com>
+Subject: ABIVAX STORMS ECCO '26 in Stockholm Through Robust Scientific Presence 
+ 
+
+Hello ABIVAX Team,
+
+ 
+
+On behalf of the ECCO 2026 planning team, I’m pleased to share a two-page summary (attached and included below) highlighting ABIVAX’s presence at ECCO 2026 in Stockholm, which concluded yesterday, Feb 21, 2026.
+
+ 
+
+A huge congratulations to every ABIVAX team member for contributing to our presence at ECCO.
+
+ 
+
+Cheers,
+Chris
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+Chris Rabbat, PhD
+
+VP, Global Head of Medical Outreach and Engagement
+
++1-310-989-2055
+
+www.abivax.com <http://www.abivax.com/> 
+
+chris.rabbat@abivax.com <mailto:chris.rabbat@abivax.com>
+```
+
+---
+
+## EMAIL #106
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E310000`
+- **Direction:** received
+- **Date:** 2026-02-22T23:09:05.3640000
+- **Subject:** ABIVAX STORMS ECCO '26 in Stockholm Through Robust Scientific Presence
+- **From:** Chris Rabbat </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=3D3D6F7EEC58478E857361F4D745A1F7-5A83E272-37>
+- **To:** ['allabivax', 'ALLABIVAX-E']
+- **CC:** ['Fabio Cataldi']
+- **Has Attachments:** True
+  - image001.png
+  - Abivax Presence at ECCO26 EBlast.pptx
+  - image004.png
+  - image003.png
+- **Thread ID:** 592620D8856C4E39AB5C2CE351877664
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello ABIVAX Team,
+
+ 
+
+On behalf of the ECCO 2026 planning team, I’m pleased to share a two-page summary (attached and included below) highlighting ABIVAX’s presence at ECCO 2026 in Stockholm, which concluded yesterday, Feb 21, 2026.
+
+ 
+
+A huge congratulations to every ABIVAX team member for contributing to our presence at ECCO.
+
+ 
+
+Cheers,
+Chris
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+Chris Rabbat, PhD
+
+VP, Global Head of Medical Outreach and Engagement
+
++1-310-989-2055
+
+www.abivax.com <http://www.abivax.com/> 
+
+chris.rabbat@abivax.com <mailto:chris.rabbat@abivax.com>
+```
+
+---
+
+## EMAIL #107
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000E503E300000`
+- **Direction:** received
+- **Date:** 2026-02-22T11:13:56.9650000
+- **Subject:** Reminder: Here’s a timely message from ADP about your paychecks
+- **From:** Wisely® by ADP <wiselydirect@mywisely.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** F07AA063D934A64FA88B11FFAC2D2780
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Get your paychecks early with Wisely
+ <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6ImI2MTZlMTBkLTk3ODMtNDFmMC1hZjE4LTZlOTNhMDg2YTE4ZSIsImRla1ZlcnNpb24iOjEsIml2IjoiS28ra0FhTGhqejZIZUxaN096b0t6QT09IiwiY2lwaGVyVGV4dCI6IlgvYjcxbDI2TjBsdjU4WEFmaE90aFFoaHd2cnBzUHFTYm9PWWFFd1NxZWFySG9QUFJKMDFQMU1NSFJTQTcyaHRUWk9kSEozU2x0bHN5VkxBRXZxcWxWelUzUlNwY3R1WUtvK2tBYUxoano2SGVMWjdPem9LekE9PSIsImF1dGhUYWciOiJiTWxTd0JMNnFwVmMxTjBVcVhMYm1BPT0ifQ%3D%3D> 
+ 
+
+Take control of your 
+money with Wisely®
+
+Get started with Wisely <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6ImRmNGM3MzljLTgyN2ItNDMzNi1iZDJhLWIzZTEyMGMzOTYyYyIsImRla1ZlcnNpb24iOjEsIml2IjoiSGM3ZHlSSElJRUhFL1hyZjc2SmNVZz09IiwiY2lwaGVyVGV4dCI6ImxIWUp4OTk4Ym51alhENUtCZVN3Y0FqS21YRWtsMUFHZjYvSW9OWFB5MWRDM3d3aGRvNThoWVQ3NjNhZUgzUFEyRi83T21aVlZETDFGa3AwbWpBWHBVakprVGVLQjkzNUhjN2R5UkhJSUVIRS9YcmY3NkpjVWc9PSIsImF1dGhUYWciOiI5UlpLZEpvd0Y2Vkl5WkUzaWdmZCtRPT0ifQ%3D%3D> 	
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/499cb7bf-780f-4fd4-bfd9-851a5e3ca363.png> 	
+Hi Michael,
+
+ 
+
+Brought to you by ADP®, a Wisely® card and myWisely mobile app 1 put you in charge of your money and give you more flexibility and control at every step, so you can accomplish your everyday goals and also see way beyond payday.
+
+
+Here’s how. Don’t miss this chance to join Wisely! <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6ImU4YjhmYzZkLWExNzItNGJlNi1iODNhLTE4MDExN2IwNDg3OCIsImRla1ZlcnNpb24iOjEsIml2IjoiYmFrOFo2R09EQ2I0S2t2VFV3bHUzdz09IiwiY2lwaGVyVGV4dCI6Im9SbC9YSnowdjQ5QTVzM1h6MGxRYS9JWGhtVktlaXpTN05BNFlFREk0dUFHeUVqTm1SUlZOaXpHNGlwRVBva1JPMkw3ZGNGam1zb3VNUGNRb1VreEFkSXc4MDh0SXo1a2JhazhaNkdPRENiNEtrdlRVd2x1M3c9PSIsImF1dGhUYWciOiJMakQzRUtGSk1RSFNNUE5QTFNNK1pBPT0ifQ%3D%3D> . 
+
+ <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/1/fbcf3ddf-485a-45ae-9790-abff26e66153.png> 	 	  <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/5bf29df5-a89c-44ce-b98d-15d13972964e.png> 	 	 Get paid up to 2 days earlier2
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/5bf29df5-a89c-44ce-b98d-15d13972964e.png> 	 	 Leave hidden fees3 behind 
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/5bf29df5-a89c-44ce-b98d-15d13972964e.png> 	 	 Shop wherever, however you like
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/5bf29df5-a89c-44ce-b98d-15d13972964e.png> 	 	 Generate savings4 on everyday purchases
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/5bf29df5-a89c-44ce-b98d-15d13972964e.png> 	 	 Pay bills5 from the palm of your hand 
+
+ 	  <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/1/728dc514-c9e9-42fa-ab91-c0fc1ce63608.png> 	
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/f4859e02-aad5-465d-9b04-029593cd5e1a.png> 	
+“Having the money available early is very helpful.”
+- Robert W.
+Wisely member
+
+No credit check8 or sign-up costs.3
+
+Ready to make the most of early direct deposit?1
+
+Learn how to get paid early <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6ImZjYjMzZWU1LWRlODUtNDJmOS04MmM2LTM3NzFjY2NjMzkwZiIsImRla1ZlcnNpb24iOjEsIml2IjoiNjBhaVdadXU2OXNIdzROVGplM1NHUT09IiwiY2lwaGVyVGV4dCI6Im9CS2t6dkE3SmMxNEhDWis4c2liK3V1Ymw4SzlqcGw3b1V1Yjc3SWE4V0R1K1RzN25DVC8rbWRZUjlYNmh0amt0VENjRDJCMC81VFVmTWRxNjQvTzVLTDJXeFVKUWJzRzYwYWlXWnV1NjlzSHc0TlRqZTNTR1E9PSIsImF1dGhUYWciOiIxSHpIYXV1UHp1U2k5bHNWQ1VHN0JnPT0ifQ%3D%3D>  	
+ <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/2/6f5fbce0-309d-4561-b36b-bb504586cc73.png> 	
+Have a question?
+
+Visit our help center <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6ImM1MDFjODAzLWNjNTAtNDEwOC04YWEyLTI4YmM1MzU4NzBmMSIsImRla1ZlcnNpb24iOjEsIml2IjoiSXYyTHUrYWN2SXlhUURMVzNvSTNiQT09IiwiY2lwaGVyVGV4dCI6IkJ1M0xORlJ6VzIrR2ZqcWR6RXMyQURJSGpyV1lyZnpielk0aVR6V3B3N25Bb1dYRVFKY0FWL2dRUmtoY0N6eVJNTCs5TWpvR0d6eGFhb2tUcTZ6WHdOU2drWWxEMXVJZEl2Mkx1K2Fjdkl5YVFETFczb0kzYkE9PSIsImF1dGhUYWciOiJXbXFKRTZ1czE4RFVvSkdKUTliaUhRPT0ifQ%3D%3D> 
+
+› <https://click.m1.mywisely.com/?qs=eyJkZ
+```
+
+---
+
+## EMAIL #108
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D65EB8B0000`
+- **Direction:** received
+- **Date:** 2026-02-21T06:01:45.8890000
+- **Subject:** Abivax Presents First Evidence of Anti-Fibrotic Activity for Obefazimod Alongside New Clinical Efficacy and Safety Analyses in Inflammatory Bowel Disease at ECCO 2026
+- **From:** Abivax <no-reply@notification.gcs-web.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 9DE6A0C158C7D444BA6C80E2E29C4B2F
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DB_FP_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr0Mpg7KpjO3Q3bw6I9fgWesn9VP9Odad0Q8XRxcCjxyEFSCXDbQ2F8QUmUOINRylFWfa06pEtmqe5f1njvleC3iEVhTpDsl-2BfvRiaHwttR4ChYxSO2d3pfLGgj6Kb-2F1iwWvnbLmleLP3wZNfyRXmAEIY3yCPNFXxdrN3u4Auf-2BLj-2FgnP2TqiLYHDOhqB0AgFK-2B-2BRqCO7LI9QMzv3gP0LM0HOvRNX58cJVecmjlNzsItZadkwQjcdecHGBLrKkL0oNZ77zs3oaUMbUfe3CrT2H-2Fk> 
+
+February 21, 2026 6:00 AM EST
+
+Abivax Presents First Evidence of Anti-Fibrotic Activity for Obefazimod Alongside New Clinical Efficacy and Safety Analyses in Inflammatory Bowel Disease at ECCO 2026
+
+View this release <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2Fd7JuKQ0dpMpQUZOarLnL5IFkCG5-2FuEDLdQWBmPjalTjv-2BeXFNoRxW6C9SkYdkmZhOS2p-2F8L4VGQn3H-2B2DTuOP1sbiAOeJvRcjgNjuZ-2BlTGdQ7ZHpQMUZJW-2BrL1TM17G3vlhzHJvDV62AVk8jKY8WQfq24jDBiWRKBz7hYnaKtDgMw2O_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr0Mpg7KpjO3Q3bw6I9fgWesn9VP9Odad0Q8XRxcCjxyEFSCXDbQ2F8QUmUOINRylFWfa06pEtmqe5f1njvleC3iEVhTpDsl-2BfvRiaHwttR4ChYxSO2d3pfLGgj6Kb-2F1iwWOiRVfgPV06rSb34r79cnxT9iMXjhi4lhEHHBulAse48AB-2BTHFnAG2Ep8lfkLAy5bJ2EoAEYMo1keumQGw0mJ4goZa-2FXGNAiVzW1yh8dGNZMBZokCP0PXsIHjPUWIdSANhpv-2FTZ3y-2Bvtng0RN1-2BIKC> 	 
+
+You are subscribed to Abivax Investor Relations' email alerts.
+Visit the website <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DZ2fn_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr0Mpg7KpjO3Q3bw6I9fgWesn9VP9Odad0Q8XRxcCjxyEFSCXDbQ2F8QUmUOINRylFWfa06pEtmqe5f1njvleC3iEVhTpDsl-2BfvRiaHwttR4ChYxSO2d3pfLGgj6Kb-2F1iwVjzEkh01JzZrmojufGEaPdAww-2FQAJrROiY-2FwSVglEar9hxl3W3aj-2Bjy5f3s5uU6ANjmSAxR3Uc9Uf8qOsSr4HLcZLHVswv49a12zvWo1CiWLkg7cLy-2FDbgzamFxd-2FWQDmUo352-2B6q04-2Fkn0kli1tNh>  | View releases <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2Fd7JuKQ0dpMpQUZOarLnL5LQ2ILgpw4QEvYos7695HffTkBl-2F2f5tJgeiv15rN-2BPrA-3D-3DSWva_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr0Mpg7KpjO3Q3bw6I9fgWesn9VP9Odad0Q8XRxcCjxyEFSCXDbQ2F8QUmUOINRylFWfa06pEtmqe5f1njvleC3iEVhTpDsl-2BfvRiaHwttR4ChYxSO2d3pfLGgj6Kb-2F1iwUmIk7ef7lqiDRCplOTVJC6Akjmw-2FxI4Q9gJouOSPp0mCSXAeAu2TxlS4ONnCgOe9UEq825Gqa3CN-2Fjn4hUGAO97WDetXgzT42OjaL1wJ5rzyVpHij-2BYdZoP9eFBlTOqqcUMMMEH-2FL-2F6iA8c4a8xURq>  | Unsubscribe <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FRtzeXp6s3URsJ6UuKW5ZG5OTwiqqTxjE4LKGoOSrTPouKax_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr0Mpg7KpjO3Q3bw6I9fgWesn9VP9Odad0Q8XRxcCjxyEFSCXDbQ2F8QUmUOINRylFWfa06pEtmqe5f1njvleC3iEVhTpDsl-2BfvRiaHwttR4ChYxSO2d3pfLGgj6Kb-2F1iwWA-2F80i9rzu1oj5yvSPvves1dEBFyDD1D2j-2FDEaqqqiGRROakFW4N7euwjGmqsq4E5pR-2FcpzO5GLQ8hP0AUJtLUDtqBxyfKH28TLgIAEUsGTN4l4DjoewMEcVFeefo-2FEhE70Dvdy74tkTMtAKca155I> 
+
+Abivax
+7-11 Blvd. Haussmann , Paris, 75009, France
+Service provided by Notified
+
+ <https://url9490.notification.gcs-web.com/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRo0LooO4a6bKx74zOKwEJxHc7GizmQFQG6q-2FbN3Czd86EBdRkrZTin45Rlg4Bd1AXZA8AbbAvfq-2FDfSe9L2xu2qN8Ms42-2BnhN-2FihwhKpNa4-2ByyqAJ9pLMVcOC9EilTaCDoaaLLxbsE-2F9dUm3i58C3IR36-2FbZT9mwhDe5cpkHqq1ckiCMklTZS87Q3-2FsoXQAnuwtuZ4gRHj3f4V-2BchIeZiW7-2BFLJFSbrzZzlvn4C7SuwBQ8YATqufVzBNI-2BqdegKUpqkQeLzXTdenoeO0HkcurWdMwPx1Hi-2BJbIh1p1MFc1oPaSPNEn6QdUUUDaN7B7JNdDy3AA-2BUUtr-2B-2FN9KZBRavNp>
+```
+
+---
+
+## EMAIL #109
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E570000`
+- **Direction:** received
+- **Date:** 2026-02-20T17:49:46.5840000
+- **Subject:** Weekly Summary Alert for Abivax
+- **From:** Abivax <no-reply@notification.gcs-web.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 34F684EAEA496242BA4B6D65AE8C3263
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DuXpN_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr38R86dfe-2Bcl9ku8o1rbrXnyyEdzVpiezORxSWEkFqr0EKxsb1RStSqy8W5VEcxTEashtSOXIxYgS5VALI1EpEN744G-2BqNPTT-2BnT2rcWiTAozMLUgjGoTgreR6u-2Fm3duHkm5-2Bw-2BnBvQVdnqXs0gk3-2BqlXYH-2FtMkEJ1ESi2O1aD8wS7dLKsHsqVyIzlpWwnANkETKsA-2Bxl7OHoWEd92XwRQ10imNJcDbNGtOq4IS2SEUtyj78bIU4qg7GoXBMXgxRQ1q3gniRC65u5o7YN3OxOjz> 
+
+Abivax added the following items during the week of February 16, 2026
+
+
+
+  
+ABVX.PA	Monday	Tuesday	Wednesday	Thursday	Friday	
+Opening Price	$107.80	$107.00	$108.60	$111.20	$112.60	
+Last Trade	$107.60	$108.00	$110.40	$110.00	$112.40	
+Price Change	+$1.40	+$0.40	+$2.40	-$0.40	+$2.40	
+Percent Change	+1.32%	+0.37%	+2.22%	-0.36%	+2.18%	
+Day High	$107.80	$108.40	$110.40	$112.60	$113.60	
+Day Low	$105.60	$104.80	$107.20	$108.20	$110.40	
+Volume	38,589	102,318	125,514	135,428	113,632	
+
+
+
+You are subscribed to Abivax Investor Relations' email alerts.
+Visit the website <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DPvjh_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr38R86dfe-2Bcl9ku8o1rbrXnyyEdzVpiezORxSWEkFqr0EKxsb1RStSqy8W5VEcxTEashtSOXIxYgS5VALI1EpEN744G-2BqNPTT-2BnT2rcWiTAozMLUgjGoTgreR6u-2Fm3duHnIRNnMa8B-2BsQs6FhUBnXPfMIKNZTWO0nUbSa1nGHiYj6b7Bsxfzwusij2WysI-2FxBZ1PHi-2FZN9rW5aXpfgOHYlaQHz5qmBbTY-2BvTp6G5jTYykBweaZZyUY4lZeATc-2F-2F-2Fdc07raghnd5CYH04rMsY5tE>  | Unsubscribe <https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FRtzeXp6s3URsJ6UuKW5ZG5OTwiqqTxjE4LKGoOSrTPoHow5_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr38R86dfe-2Bcl9ku8o1rbrXnyyEdzVpiezORxSWEkFqr0EKxsb1RStSqy8W5VEcxTEashtSOXIxYgS5VALI1EpEN744G-2BqNPTT-2BnT2rcWiTAozMLUgjGoTgreR6u-2Fm3duHn9AHTp6G2ApzS5t7eZGvKRmsn1xOiJx87LhrqdAxsxyhyBXh2n17aLuy-2BvF0b8VhkWHCXoNgZCaGTUSEvAfvS3h01MRO-2FZLWCQ8HlUr38tKA3Xd3z1sS0TCSNMQbRaft0hs18b099mT8xc5V6GII08> 
+
+Abivax
+7-11 Blvd. Haussmann , Paris, 75009, France
+Service provided by Notified
+
+ <https://url9490.notification.gcs-web.com/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRo0LooO4a6bKx74zOKwEJxHc7GizmQFQG6q-2FbN3Czd86EBdRkrZTin45Rlg4Bd1AXZ6PP4gVtPhOC-2BmhfwNVA-2FcSzAGxJVSgCGJK4s1SgrGGbxxy01V0vvbnLKqQE6xbwvO2U0H1INWduhvUeyR-2FQlsXC938a5z-2Bm6sDVs2eky-2By-2Fj5FhHwD9v-2BgDuLdOQMDNyqbh6Bveadq1lC7SyySBHpPeEcZR8bMqxc4aLIqpA4Ql6Ot983MLuOpVNn3i2o7D1d3lZPDZ4Ab2O5hnO9NliMrd7zKNDMa0Efr1IwHEdMfFem4KcGt2kLl4ZoHtXJr4AiO4PB5S86i4n9v0gzOwRo>
+```
+
+---
+
+## EMAIL #110
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF9800000D55B3170000`
+- **Direction:** sent
+- **Date:** 2026-02-20T16:40:09.9750000
+- **Subject:** Re: Introduction:  VP, Global ERP Lead/Finance Team
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Frederick Golly']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 7070205D8008034D99AE32A5E9B82824
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Frederick - great to meet you as well. Feel free to send me an invite for anytime that works for you early next week. 
+
+Have a great weekend!
+
+-Mike
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Frederick Golly <Frederick.Golly@abivax.com>
+Sent: Friday, February 20, 2026 1:19:40 AM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: RE: Introduction: VP, Global ERP Lead/Finance Team 
+ 
+
+Hi Mike,
+
+ 
+
+Very nice to see you this week, however briefly!
+
+ 
+
+Let me know when you want to chat in the coming days. My calendar is up to date.
+
+One of the topics I have is related to the next phases, in particular the Supply Chain module(s).
+
+ 
+
+KR,
+
+Frederick
+
+ 
+
+ 
+
+ 
+
+
+
+Frederick Golly
+
+Director of Financial Planning & Analysis
+
++33 7 88 73 14 25
+
+www.abivax.com <http://www.abivax.com/> 
+
+frederick.golly@abivax.com <mailto:frederick.golly@abivax.com>  
+
+	
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: mercredi 18 février 2026 17:25
+To: Hema Keshava <Hema.Keshava@abivax.com>; Didier Blondel <Didier.Blondel@abivax.com>; Trinidad Mesa <Trinidad.Mesa@abivax.com>; Frederick Golly <Frederick.Golly@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Matt Epley <Matt.Epley@abivax.com>; Juliette Courtot <Juliette.Courtot@abivax.com>; Adrian Holbrook <adrian.holbrook@abivax.com>; Kimberly Gordon <kimberly.gordon-ext@abivax.com>; Fatma Hemdani <fatma.hemdani-ext@abivax.com>; Michael Markman <michaelkmarkman@gmail.com>
+Cc: Denis Jankovic <Denis.Jankovic@abivax.com>
+Subject: RE: Introduction: VP, Global ERP Lead/Finance Team
+
+ 
+
+Hi All- great meeting everyone virtually today. As I mentioned – reach out at any point to get me involved with any ERP related items that you would like to surface. I’ll reach out separately as well to setup times to have deeper dive sessions as items arise. If you are speaking directly with KPMG, feel free to cc me on any communication so we can start getting more aligned as a Team.
+
+ 
+
+I will be in Paris the week of March 16th and would love to meet with as many of you as possible the first few days. Having said that, please don’t hesitate to reach out prior to that. 
+
+ 
+
+Looking forward to working with you on this exciting project.
+
+ 
+
+Speak soon,
+
+Mike
+
+ 
+
+-----Original Appointment-----
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Sent: Monday, February 16, 2026 11:23 AM
+To: Hema Keshava; Hema Keshava; Didier Blondel; Trinidad Mesa; Frederick Golly; Roxandra Sturdza; Philippe Goncalves; Matt Epley; Juliette Courtot; Adrian Holbrook; Kimberly Gordon; Fatma Hemdani; Michael Markman
+Cc: Michael Markman; Denis Jankovic
+Subject: Introduction: VP, Global ERP Lead/Finance Team
+When: Wednesday, February 18, 2026 10:30 AM-11:00 AM (UTC-05:00) Eastern Time (US & Canada).
+Where: Microsoft Teams Meeting
+
+ 
+
+ 
+
+---------- Forwarded message ---------
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Date: Sun, Feb 15, 2026 at 9:50 PM
+Subject: Introduction: VP, Global ERP Lead/Finance Team
+To: Didier Blondel <Didier.Blondel@abivax.com <mailto:Didier.Blondel@abivax.com> >, Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >, Frederick Golly <Frederick.Golly@abivax.com <mailto:Frederick.Golly@abivax.com> >, Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >, Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >, Matt Epley <Matt.Epley@abivax.com <mailto:Matt.Epley@abivax.com> >, Juliette Courtot <Juliette.Courtot@abivax.com <mailto:Juliette.Courtot@abivax.com> >, Adrian Holbrook <adrian.holbrook@abivax.com <mailto:adrian.holbrook@abivax.com> >, Kimberly Gordon <kimberly.gordon-ext@abivax.com <mailto:kimberly.gordon-ext@abivax.com> >, Fatma Hemdani <fatma.hemdani-ex
+```
+
+---
+
+## EMAIL #111
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E560000`
+- **Direction:** received
+- **Date:** 2026-02-20T11:59:06.6050000
+- **Subject:** Re: IT Landscape Follow-Up
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+  - Abivax IT Master Plan 2026 - 2027 - Part 1.pptx
+- **Thread ID:** 860B68B669954F9EA2F96EC3B3DCD399
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike, 
+
+Happy to help!
+
+Here are some elements to get you started. I will come back to you once we have been able to properly gather / update the rest. 
+
+       1.    Can you send through the slides you shared today?
+Yes. Attached is the presentation I shared with you during the call.
+
+1.	
+	You’ll notice the slide with a focus on Sage is missing. I’m currently working through an update with Finance to get you a most accurate version based on their latests processes. I should have it ready by Monday.
+
+
+1.	
+	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? Yes, here it is <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE> , I have given you access. It’s a live where all owners are meant to make their updates. We also do periodic reviews to make sure it stays current
+2.	
+	There were several interfaces you mentioned – similar to #1, is there a listing (I can create if not), that details out for the feeds:
+
+	1.	file-based vs API
+	2.	frequency
+	3.	owner(s)
+	4.	process for what happens when a feed fails
+
+We do have the information but not properly centralized, we’ll share consolidated version early next week
+
+3. For Trustpair and Agicap specifically, can you share the exact flow from vendor setup through payment validation and where control evidence is retained today?
+The exact flow will be detailed on our Sage centric IT map. As for control evidence,  I’m unsure what you’re referring to. If it’s the evidence related to the controls implemented by Finance they will be better equipped to provide this. I will look into it however.
+
+
+4. You mentioned SOX/audit flow - where are current control gaps or deficiencies documented and who owns remediation tracking?
+This is owned by Finance. We provide the technical abilities and intervene where needed but they own the process and ensuing remediation. 
+  
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : jeudi, 19 février 2026 à 18:59
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>, Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Objet : IT Landscape Follow-Up
+
+
+
+Hi Jade / Benjamin – thanks for the walkthrough today, it was very helpful. 1.    Can you send through the slides you shared today?
+
+ 
+
+Some items we mentioned to follow-up on after the call:
+
+ 
+
+1.	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? I can create it if not, but if you have any of the information it would be super helpful. I can also confirm or follow-up with Finance on the above questions if you are unsure or unable to answer.
+2.	There were several interfaces you mentioned – similar to #1, is there a listing (I can create if not), that details out for the feeds:
+
+	1.	file-based vs API
+	2.	frequency
+	3.	owner(s)
+	4.	process for what happens when a feed fails
+
+ 
+
+3.	For Trustpair and Agicap specifically, can you share the exact flow from vendor setup through payment validation and where control evidence is retained today?
+
+ 
+
+4.	You mentioned SOX/audit flow - where are current control gaps or deficiencies documented and who owns remediation tracking?
+
+ 
+
+  Thanks again for your time and support.
+
+ 
+
+  Looking forward to working together,
+
+  Mike
+```
+
+---
+
+## EMAIL #112
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E550000`
+- **Direction:** received
+- **Date:** 2026-02-20T11:52:03.9560000
+- **Subject:** Jade Nguyen shared "ABIVAX_ILC & CSVLC Indexes Tracker" with you
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - eeaedb6b-f5f1-42de-a5cd-762e08dab812
+  - 8e950508-107b-4690-becd-9304800a554f
+  - f038ecd8-b886-483e-a84d-9764e08cab22
+- **Thread ID:** BEEA7CD144A6C8428B71C4B3E6DF949C
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Jade Nguyen invited you to access a file 
+
+	
+Here's the document that Jade Nguyen shared with you. 
+
+<https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE?email=mike.markman%40abivax.com&e=4%3aP4O2rE&sharingv2=true&fromShare=true&at=9> 
+ 	ABIVAX_ILC & CSVLC Indexes Tracker 	
+ 	This invite will only work for you and people with existing access. 	
+Open <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE?email=mike.markman%40abivax.com&e=4%3aP4O2rE&sharingv2=true&fromShare=true&at=9> 		Share <https://abivaxfr.sharepoint.com/:x:/s/ABIVAX-ComputerizedSystemValidation/IQBbRb-lC3KVRrknRsamHeMSAdfh_r5lqIE6NZiYYqv2ehE?email=mike.markman%40abivax.com&e=4%3aP4O2rE&web=1&openShare=true&fromShare=true&at=9> 	
+This email is generated through ABIVAX's use of Microsoft 365 and may contain content that is controlled by ABIVAX.
+
+ <https://westeuroper-notifyp.svc.ms:443/api/v2/tracking/method/View?mi=GI9yxUhbhEa3Tp9aU0lVgQ&si=Share&ca=SPO>
+```
+
+---
+
+## EMAIL #113
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E530000`
+- **Direction:** received
+- **Date:** 2026-02-20T05:11:11.9750000
+- **Subject:** RE: Systems Access
+- **From:** Roxandra Sturdza </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST>
+- **To:** ['Michael Markman']
+- **CC:** ['Hema Keshava']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+ 
+
+I have grant you an access to Agicap.
+
+You should have received a mail to accept it.
+
+We can schedule a 45-minute meeting end of next week if you want to go through it and through Treasury organisation.
+
+Best regards
+
+ 
+
+Roxandra
+
+ 
+
+ 
+
+De : Hema Keshava <Hema.Keshava@abivax.com> 
+Envoyé : jeudi 19 février 2026 17:53
+À : Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Objet : RE: Systems Access
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava 
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well! 
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #114
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E520000`
+- **Direction:** received
+- **Date:** 2026-02-20T05:07:19.6390000
+- **Subject:** roxandra.sturdza@abivax.com vous a invité à rejoindre Agicap
+- **From:** Agicap <notifications@agicap.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** FAA7A8CE72051247B873A4CC18B9B9E8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<http://cdn.mcauto-images-production.sendgrid.net/86ea21b6f843c36b/087b16e3-93d4-4795-a50b-4f6721f3133f/1800x280.png> 	
+
+Rejoignez roxandra.sturdza@abivax.com sur Agicap
+
+Agicap est la solution tout-en-un pour anticiper votre trésorerie, gérer vos dépenses professionnelles, exécuter vos paiements et structurer votre recouvrement.
+
+Pour commencer, veuillez accepter l'invitation ci-dessous :
+Accepter l'invitation <https://app.agicap.com/app/invitations/c7bdd703-839d-4b92-8724-ffdd8f3be42b/accept?validationCode=ca5a565296bc4a949fd92bb9444dabbc> 	 
+Ce lien ne fonctionnera que pendant 13 jours après son envoi. Si le lien expire, veuillez demander à roxandra.sturdza@abivax.com de le renvoyer.
+roxandra.sturdza@abivax.com vous invite à travailler sur les entités suivantes :
+
+*	Abivax
+
+*	Abivax LLC
+
+*	EUR - Abivax SA - dépenses en EUR
+
+*	USD - Abivax SA - dépenses en USD
+
+Agicap, 57 Rue de St Cyr, Lyon, Auvergne-Rhône-Alpes 69009, France
+ <https://u5115909.ct.sendgrid.net/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRr-2FcIt2zy1Gz8HMnF9kvOoQiTFyy4yvzN4e9iPV9lqr-2BeTYeYt0CUZPmCuCI-2FWYpkfetUN61HVaizzTovoSO3n6fbqXMC7lFz8PqxGxOSs2e12ZH8jetEB84FliKVqA0vnbv5lLBpQeCEWza4KQgMOPPnHNwykeeH9ciuUx9s7plRKL3jwojIE1GEr4wfR0g2MRfBUgQgKnN9P9KeKJs5Dx9-2Bj5ILNZahVL42VrdwHAvIXj9MceicWjYMbQTAlEhnkehR1hrRaAwPfgiONkWxFLtdpollUOeZN1QJ-2BUBvIlEw-3D-3D>
+```
+
+---
+
+## EMAIL #115
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E510000`
+- **Direction:** received
+- **Date:** 2026-02-20T05:07:10.0480000
+- **Subject:** roxandra.sturdza@abivax.com vous a invité à rejoindre Agicap
+- **From:** Agicap <notifications@agicap.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** BEF2A55519E3AE489532BE4EACFB5DAC
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<http://cdn.mcauto-images-production.sendgrid.net/86ea21b6f843c36b/087b16e3-93d4-4795-a50b-4f6721f3133f/1800x280.png> 	
+
+Rejoignez roxandra.sturdza@abivax.com sur Agicap
+
+Agicap est la solution tout-en-un pour anticiper votre trésorerie, gérer vos dépenses professionnelles, exécuter vos paiements et structurer votre recouvrement.
+
+Pour commencer, veuillez accepter l'invitation ci-dessous :
+Accepter l'invitation <https://app.agicap.com/app/invitations/c7bdd703-839d-4b92-8724-ffdd8f3be42b/accept?validationCode=3e6bcdbc5d3d4a92a569314d386389c6> 	 
+Ce lien ne fonctionnera que pendant 13 jours après son envoi. Si le lien expire, veuillez demander à roxandra.sturdza@abivax.com de le renvoyer.
+roxandra.sturdza@abivax.com vous invite à travailler sur les entités suivantes :
+
+*	Abivax
+
+*	Abivax LLC
+
+*	EUR - Abivax SA - dépenses en EUR
+
+*	USD - Abivax SA - dépenses en USD
+
+Agicap, 57 Rue de St Cyr, Lyon, Auvergne-Rhône-Alpes 69009, France
+ <https://u5115909.ct.sendgrid.net/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRr-2FcIt2zy1Gz8HMnF9kvOoQiTFyy4yvzN4e9iPV9lqr-2BeTYeYt0CUZPmCuCI-2FWYpkfetUN61HVaizzTovoSO3n6fbqXMC7lFz8PqxGxOSs2e12ZH8jetEB84FliKVqA0vnsUe9vqQkJ-2B-2Fu8l1D-2B2Fgjukn869bMeI3Cd8RDMWFIwHXSKAj8vtP2DWPCm8SatgGSZdM8hgPPUs2mEtxCcvCy82KvaRXgc53mpbwe8ez-2FKouft6-2FjmFtzuaJuaCEYwnJ5MxEms-2FIuYWSwj7pCKgrq2vK7Um-2BRRcBUjToP8CHK7g-3D-3D>
+```
+
+---
+
+## EMAIL #116
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E500000`
+- **Direction:** received
+- **Date:** 2026-02-20T05:03:06.3610000
+- **Subject:** [Abivax #116237] TR: Systems Access
+- **From:** Miguel GOMES via RT <support.abivax@mbvsi.fr>
+- **To:** []
+- **CC:** ['Christophe Hennequin', 'Jade Nguyen', 'Michael Markman']
+- **Has Attachments:** False
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Bonjour Denis,
+
+Le raccourci pour accéder au serveur Sage a déjà été envoyé au support US pour la préparation du pc.
+
+Je viens de l'ajouter a la base données LLC 3, il faudra peut être lui créer un raccourci lorsqu'il y accédera.
+
+-- 
+
+Regards / Cordialement.
+
+Miguel GOMES
+
+Support MBVsi	
+
+ 
+
+ 
+
+ 
+
+
+​ <https://sl8om.mjt.lu/lnk/AU0AAI-qh-YAAAAAAAAAA-fBhTAAAYCszC0AAAAAACeDxABpmDC2RdyGaJBJTHuqiu2I73d7UgABa1o/0/Li4UpwYG8d65syt0p3v-Mg/aHR0cHM6Ly9zbDhvbS5tanQubHUv?b=1>   <https://sl8om.mjt.lu/lnk/AU0AAI-qh-YAAAAAAAAAA-fBhTAAAYCszC0AAAAAACeDxABpmDC2RdyGaJBJTHuqiu2I73d7UgABa1o/0/Li4UpwYG8d65syt0p3v-Mg/aHR0cHM6Ly9zbDhvbS5tanQubHUv?b=3>
+```
+
+---
+
+## EMAIL #117
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E4F0000`
+- **Direction:** received
+- **Date:** 2026-02-20T04:43:11.1700000
+- **Subject:** Re: ABIVAX ERP - Project update
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Girard, Camille']
+- **CC:** ['Michael Markman']
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** 2A737B34C3DB504396996E682BDD1F0F
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Camille & Mike,
+
+This is done. Mike you should have received an invite to join as member. 
+Let me know if you encounter any issues.
+
+Best,
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Girard, Camille <camillegirard@kpmg.fr>
+Date : jeudi, 19 février 2026 à 20:25
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>
+Cc : Michael Markman <mike.markman@abivax.com>
+Objet : Fw: ABIVAX ERP - Project update
+
+
+Hello Jade,
+
+Cours you Grant access to Mike to the folders below ? 
+
+Thank you.
+
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com>
+Envoyé : Thursday, February 19, 2026 8:16:00 PM
+À : Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc : Girard, Camille <camillegirard@kpmg.fr>
+Objet : RE: ABIVAX ERP - Project update
+ 
+
+Thanks for this – do you know how I get access to the sharepoint because I can’t currently see or access any of the hyperlinks in the email below?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Sent: Thursday, February 19, 2026 11:54 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Girard, Camille <camillegirard@kpmg.fr>
+Subject: ABIVAX ERP - Project update
+
+ 
+
+Hello Michael,
+
+ 
+
+As requested during our onboarding call, please find below a summary of the key activities completed to date, along with the associated deliverables.
+
+The table provides the necessary context to understand the project’s scope and key considerations.
+
+ 
+
+If you have any questions, please don’t hesitate to reach out.
+
+ 
+
+Subject/Phase
+
+Timeline
+
+Key activities & Outcomes
+
+Deliverables/References
+
+Initiate
+
+(23/09/2025 - 13/10/2025) 
+
+*	 Defining the scope of the support proposal.
+
+*	Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/Proposal*20KPMG_ABIVAX_ERP*20Choice_V250801.pdf?csf=1&web=1&e=2lQVno__;JSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLkfWfwp0$> : Proposal – Tool Selection Support 
+*	ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/ABIVAX*20LoE*20-*20ERP*20Choice*20assistance*20-*20v230925.docx.pdf?csf=1&web=1&e=WFwJJz__;JSUlJSUlJSUlJSU!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLfbmYjxU$> : Engagement Letter – Support for Tool Selection
+
+Diagnostic 
+
+(13/10/2025 – 03/11/2025)
+
+*	Objective: assess ABivax’s current (“as-is”) situation and identify key pain points.
+*	Conducted 3 interviews with IT and Operations to capture and validate the main issues.
+
+*	Abivax - KickOff <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Kick-off/Abivax*20-*20KickOff.pdf?csf=1&web=1&e=lZdnmA__;JSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLAt_tee0$> : Kick-off deck presenting the overall project approach and methodology.
+*	Abivax - Analysis report VF.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Analysis*20Report/Abivax*20-*20Analysis*20report*20VF.pdf?csf=1&web=1&e=0eJNJB__;JSUlJSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLQOCBH8k$> : Diagnostic report describing the as-is situation.
+
+RFP Preparation
+
+(10/11/2025 - 16/12/2025)
+
+*	Objective: capture detailed requirements for each process stream.
+*	Delivere
+```
+
+---
+
+## EMAIL #118
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E4E0000`
+- **Direction:** received
+- **Date:** 2026-02-20T04:42:17.1990000
+- **Subject:** You've joined the ERP Choice Project x KPMG (Q42025) group
+- **From:** ERP Choice Project x KPMG (Q42025) </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=D5ADFEB12F3C4E068E6BC43E4A31E62B-ERPCHOICEPR>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - LogoM365.png
+  - welcome_email_v3_conversations.png
+  - welcome_email_v3_calendar.png
+  - welcome_email_v3_files.png
+  - welcome_email_v3_sharing_laptop.png
+  - welcome_email_v3_onenote.png
+  - welcome_email_v3_teamwork_laptop.png
+  - group_photo
+  - microsoft.png
+  - arrow.png
+- **Thread ID:** B5EBBCBC5B07C84AA325C40D9A56B14C
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Work Brilliantly Together 	
+ 	
+Welcome to the 
+ERP Choice Project x KPMG (Q42025) Group 	
+Use the group to share messages and files, and to coordinate group events. 	
+View group in Outlook <https://outlook.office.com/groups/groupsubscription?smtp=ERPChoiceProjectxKPMGQ42025%40abivax.com&action=conversations&subaction=gotogroup&bO>  
+
+Get started
+
+
+You're set to receive only replies and events in your inbox. Change this setting below, or anywhere you see the group in Outlook, to see all of this group's conversations.
+
+Follow in inbox <https://outlook.office.com/groups/groupsubscription?smtp=ERPChoiceProjectxKPMGQ42025%40abivax.com&action=subscribe&bO>  
+ <https://outlook.office.com/groups/groupsubscription?smtp=ERPChoiceProjectxKPMGQ42025%40abivax.com&action=conversations&bO> 
+
+Get the conversation rolling
+Start your own. Or just catch up. All in the group inbox. 
+
+  <https://abivaxfr.sharepoint.com/sites/ERPChoiceProjectxKPMGQ42025/Shared Documents> 
+
+Keep things together
+Now, your documents and attachments in one place. 
+
+ 
+ <https://abivaxfr.sharepoint.com/sites/ERPChoiceProjectxKPMGQ42025/SiteAssets/ERP Choice Project x KPMG (Q42025) Notebook> 
+
+Stay on the same page
+Groups that take notes together, stay together. In the group notebook. 
+
+  <https://outlook.office.com/groups/groupsubscription?smtp=ERPChoiceProjectxKPMGQ42025%40abivax.com&action=calendar&bO> 
+
+Don't miss a thing
+Track milestones (and everything in between) in the group calendar. 
+
+ 
+
+Collaborate with your group
+across Microsoft 365
+
+ 	
+Create content seamlessly
+
+
+The group's SharePoint team site is the place to share news, work on and organize content, manage rich data within lists, and track all site activities across all members.
+
+Check it out <https://abivaxfr.sharepoint.com/sites/ERPChoiceProjectxKPMGQ42025>  
+
+Organize group work with Planner
+
+
+Planner makes it easy for your team to create new plans, organize and assign tasks, share files, chat about what you're working on, and get updates on progress.
+
+Check it out <https://planner.cloud.microsoft/abivaxfr.onmicrosoft.com/en-US/Home/Group/c8dbdd97-45e5-4105-8ecc-ef2c7abc30b5?auth_pvr=OrgId&auth_upn=>  
+ 	
+ 	Microsoft Corporation
+One Microsoft Way
+Redmond, WA 98052 USA 	
+You are receiving this email because you have subscribed to Microsoft 365.
+Copyright 2023 Microsoft Corporation. Privacy Statement <https://go.microsoft.com/fwlink/?LinkId=521839>
+```
+
+---
+
+## EMAIL #119
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E4D0000`
+- **Direction:** received
+- **Date:** 2026-02-20T04:19:45.9640000
+- **Subject:** RE: Introduction:  VP, Global ERP Lead/Finance Team
+- **From:** Frederick Golly </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F1A873C932554906B296978B01751F2C-E3C941B4-35>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 7070205D8008034D99AE32A5E9B82824
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+ 
+
+Very nice to see you this week, however briefly!
+
+ 
+
+Let me know when you want to chat in the coming days. My calendar is up to date.
+
+One of the topics I have is related to the next phases, in particular the Supply Chain module(s).
+
+ 
+
+KR,
+
+Frederick
+
+ 
+
+ 
+
+ 
+
+
+
+Frederick Golly
+
+Director of Financial Planning & Analysis
+
++33 7 88 73 14 25
+
+www.abivax.com <http://www.abivax.com/> 
+
+frederick.golly@abivax.com <mailto:frederick.golly@abivax.com>  
+
+	
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: mercredi 18 février 2026 17:25
+To: Hema Keshava <Hema.Keshava@abivax.com>; Didier Blondel <Didier.Blondel@abivax.com>; Trinidad Mesa <Trinidad.Mesa@abivax.com>; Frederick Golly <Frederick.Golly@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Philippe Goncalves <philippe.goncalves@abivax.com>; Matt Epley <Matt.Epley@abivax.com>; Juliette Courtot <Juliette.Courtot@abivax.com>; Adrian Holbrook <adrian.holbrook@abivax.com>; Kimberly Gordon <kimberly.gordon-ext@abivax.com>; Fatma Hemdani <fatma.hemdani-ext@abivax.com>; Michael Markman <michaelkmarkman@gmail.com>
+Cc: Denis Jankovic <Denis.Jankovic@abivax.com>
+Subject: RE: Introduction: VP, Global ERP Lead/Finance Team
+
+ 
+
+Hi All- great meeting everyone virtually today. As I mentioned – reach out at any point to get me involved with any ERP related items that you would like to surface. I’ll reach out separately as well to setup times to have deeper dive sessions as items arise. If you are speaking directly with KPMG, feel free to cc me on any communication so we can start getting more aligned as a Team.
+
+ 
+
+I will be in Paris the week of March 16th and would love to meet with as many of you as possible the first few days. Having said that, please don’t hesitate to reach out prior to that. 
+
+ 
+
+Looking forward to working with you on this exciting project.
+
+ 
+
+Speak soon,
+
+Mike
+
+ 
+
+-----Original Appointment-----
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+Sent: Monday, February 16, 2026 11:23 AM
+To: Hema Keshava; Hema Keshava; Didier Blondel; Trinidad Mesa; Frederick Golly; Roxandra Sturdza; Philippe Goncalves; Matt Epley; Juliette Courtot; Adrian Holbrook; Kimberly Gordon; Fatma Hemdani; Michael Markman
+Cc: Michael Markman; Denis Jankovic
+Subject: Introduction: VP, Global ERP Lead/Finance Team
+When: Wednesday, February 18, 2026 10:30 AM-11:00 AM (UTC-05:00) Eastern Time (US & Canada).
+Where: Microsoft Teams Meeting
+
+ 
+
+ 
+
+---------- Forwarded message ---------
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Date: Sun, Feb 15, 2026 at 9:50 PM
+Subject: Introduction: VP, Global ERP Lead/Finance Team
+To: Didier Blondel <Didier.Blondel@abivax.com <mailto:Didier.Blondel@abivax.com> >, Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >, Frederick Golly <Frederick.Golly@abivax.com <mailto:Frederick.Golly@abivax.com> >, Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >, Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >, Matt Epley <Matt.Epley@abivax.com <mailto:Matt.Epley@abivax.com> >, Juliette Courtot <Juliette.Courtot@abivax.com <mailto:Juliette.Courtot@abivax.com> >, Adrian Holbrook <adrian.holbrook@abivax.com <mailto:adrian.holbrook@abivax.com> >, Kimberly Gordon <kimberly.gordon-ext@abivax.com <mailto:kimberly.gordon-ext@abivax.com> >, Fatma Hemdani <fatma.hemdani-ext@abivax.com <mailto:fatma.hemdani-ext@abivax.com> >, Michael Markman <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+
+ 
+
+ 
+
+________________________________________________________________________________
+
+Microsoft Teams meeting 
+
+Join: https://teams.microsoft.com/meet/39379841588672?p=9FIpmiC8Cxv5XzHaxr <https://teams.microsoft.com/meet/39379841588672?p=9FIpmiC8Cxv5XzHaxr>  
+
+Meeting ID: 393 798 415 886 72 
+
+Passco
+```
+
+---
+
+## EMAIL #120
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E4C0000`
+- **Direction:** received
+- **Date:** 2026-02-20T03:47:27.4720000
+- **Subject:** Re: ABIVAX ERP - Project update
+- **From:** Ben Alaya, Aymen <abenalaya@kpmg.fr>
+- **To:** ['Michael Markman']
+- **CC:** ['Girard, Camille']
+- **Has Attachments:** False
+- **Thread ID:** 2A737B34C3DB504396996E682BDD1F0F
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+Actually, the link is hosted on Abivax’s internal SharePoint, so you may need to check with Jade Nguyen (jade.nguyen-ext@abivax.com) to get access.
+
+Thanks, 
+
+
+
+Aymen Ben Alaya
+
+Consultant
+Tech Strategy and Transformation / Connected Tech​
+
+KPMG ADVISORY​
+Tour Eqho​
+2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​
+
+M. +33 7 78 55 33 58
+abenalaya@kpmg.fr
+
+
+
+
+________________________________
+
+From: Michael Markman <mike.markman@abivax.com>
+Sent: Thursday, February 19, 2026 20:16
+To: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc: Girard, Camille <camillegirard@kpmg.fr>
+Subject: RE: ABIVAX ERP - Project update 
+
+
+Thanks for this – do you know how I get access to the sharepoint because I can’t currently see or access any of the hyperlinks in the email below?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Sent: Thursday, February 19, 2026 11:54 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Girard, Camille <camillegirard@kpmg.fr>
+Subject: ABIVAX ERP - Project update
+
+ 
+
+Hello Michael,
+
+ 
+
+As requested during our onboarding call, please find below a summary of the key activities completed to date, along with the associated deliverables.
+
+The table provides the necessary context to understand the project’s scope and key considerations.
+
+ 
+
+If you have any questions, please don’t hesitate to reach out.
+
+ 
+
+Subject/Phase
+
+Timeline
+
+Key activities & Outcomes
+
+Deliverables/References
+
+Initiate
+
+(23/09/2025 - 13/10/2025) 
+
+*	 Defining the scope of the support proposal.
+
+*	Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/Proposal*20KPMG_ABIVAX_ERP*20Choice_V250801.pdf?csf=1&web=1&e=2lQVno__;JSUlJSUl!!E1R1dd1bLLODlQ4!Hh4z4sXqxxohQaxklokltPaFaMm2bhjkf8D3NrcKjfuS9OjLCNJ4kKdbFEMMe2MxlqYLtGmVZr7I44z0tfO9H0_A$> : Proposal – Tool Selection Support 
+*	ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/ABIVAX*20LoE*20-*20ERP*20Choice*20assistance*20-*20v230925.docx.pdf?csf=1&web=1&e=WFwJJz__;JSUlJSUlJSUlJSU!!E1R1dd1bLLODlQ4!Hh4z4sXqxxohQaxklokltPaFaMm2bhjkf8D3NrcKjfuS9OjLCNJ4kKdbFEMMe2MxlqYLtGmVZr7I44z0tWPqZQya$> : Engagement Letter – Support for Tool Selection
+
+Diagnostic 
+
+(13/10/2025 – 03/11/2025)
+
+*	Objective: assess ABivax’s current (“as-is”) situation and identify key pain points.
+*	Conducted 3 interviews with IT and Operations to capture and validate the main issues.
+
+*	Abivax - KickOff <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Kick-off/Abivax*20-*20KickOff.pdf?csf=1&web=1&e=lZdnmA__;JSUlJSUl!!E1R1dd1bLLODlQ4!Hh4z4sXqxxohQaxklokltPaFaMm2bhjkf8D3NrcKjfuS9OjLCNJ4kKdbFEMMe2MxlqYLtGmVZr7I44z0tal4l7Ct$> : Kick-off deck presenting the overall project approach and methodology.
+*	Abivax - Analysis report VF.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Analysis*20Report/Abivax*20-*20Analysis*20report*20VF.pdf?csf=1&web=1&e=0eJNJB__;JSUlJSUlJSUl!!E1R1dd1bLLODlQ4!Hh4z4sXqxxohQaxklokltPaFaMm2bhjkf8D3NrcKjfuS9OjLCNJ4kKdbFEMMe2MxlqYLtGmVZr7I44z0tWwsq9gx$> : Diagnostic report describing the as-is situation.
+
+RFP Preparation
+
+(10/11/2025 - 16/12/2025)
+
+*	Objective: capture detailed requirements for each process stream.
+*	Delivered 5 workshops: 2 Finance, 1 Procurement, 1 Treasury (BoB), and 1 IT.
+*	Identified 5 shortlisted bidders to receive the RFP: SAP S/4HANA Public Cloud, NetSuite, Microsoft Dynamics 365 Finance & Operations, Sage X3, Workday.
+
+*	Abivax – RFP - ERP Finance.pdf <https://urldef
+```
+
+---
+
+## EMAIL #121
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E4B0000`
+- **Direction:** received
+- **Date:** 2026-02-19T17:05:05.9390000
+- **Subject:** ERP Slides -> Request -> Due March 6th 
+- **From:** Adrian Holbrook </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=58161941CBE64A879014D4A2E8D5220F-EA331A62-88>
+- **To:** ['Michael Markman']
+- **CC:** ['Hema Keshava', 'Matt Epley']
+- **Has Attachments:** True
+  - Outlook-photo.png
+- **Thread ID:** 432FCC4F6562CD4FB50DF930D1E344A9
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Mike,
+
+It was great meeting you today! Please see the request below for our Audit Committee PPT:
+
+
+1.	
+	Overview slide:
+
+	*	
+		High-level summary of the project (objectives, scope, where things stand)
+	*	
+		Key benefits or rationale
+	*	
+		Partners involved
+
+2.	
+	Timeline slide:
+
+	1.	
+		Either a Gantt chart or timeline showing expected timing (signing to go-live)
+	2.	
+		Key phases or decision points
+
+3.	
+	Financial slide:
+
+	1.	
+		Estimated NetSuite licensing/subscription costs
+	2.	
+		Estimated implementation cost (hours if available?)
+	3.	
+		Any other meaningful cost (internal resources or contingencies)
+
+All of the items above are open to your feedback and what is available from KPMG
+
+It would be great to have this finalized by March 6th. As you mentioned, please feel free to move the KPMG timeline up if needed to make that work. We are happy to help pull the slides together once we have the KPMG data!
+
+Looping in @Hema Keshava <mailto:Hema.Keshava@abivax.com>  in case she would like to add anything or share feedback.
+
+Thanks,
+
+
+Adrian Holbrook
+
+Sr. Financial Analyst
+
+(1)704-929-3383
+
+www.abivax.com <http://www.abivax.com/> 
+
+a <mailto:adrian.holbrook@abivax.com> drian.holbrook <mailto:adrian.holbrook@abivax.com> @abivax.com <mailto:adrian.holbrook@abivax.com>
+```
+
+---
+
+## EMAIL #122
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E4A0000`
+- **Direction:** received
+- **Date:** 2026-02-19T14:39:26.6010000
+- **Subject:** Post by alice alexandra moore on X
+- **From:** Mike <michaelkmarkman@gmail.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 100F2849CDF0EE4FBA1CCFBA29EAEAD1
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://x.com/tempoimmaterial/status/2024536326780178480?s=43> 
+ 	
+ 	 <https://x.com/tempoimmaterial?s=43> 	 <https://ea.twimg.com/email/self_serve/media/spacer.png> 	alice alexandra moore <https://x.com/tempoimmaterial?s=43> 	
+⁦‪@tempoimmaterial‬⁩ <https://x.com/tempoimmaterial?s=43> 	
+ <https://ea.twimg.com/email/self_serve/media/logo_twitter-1497383721365.png> 	
+ <https://ea.twimg.com/self_serve/media/spacer_464x1-1582829598167.png> 	
+	
+ 	
+2/19/26, 9:27 AM <https://x.com/tempoimmaterial/status/2024536326780178480?s=43>
+```
+
+---
+
+## EMAIL #123
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D551E490000`
+- **Direction:** received
+- **Date:** 2026-02-19T14:25:32.3380000
+- **Subject:** Fw: ABIVAX ERP - Project update
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['Jade Nguyen']
+- **CC:** ['Michael Markman']
+- **Has Attachments:** False
+- **Thread ID:** 2A737B34C3DB504396996E682BDD1F0F
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Jade,
+
+Cours you Grant access to Mike to the folders below ? 
+
+Thank you.
+
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com>
+Envoyé : Thursday, February 19, 2026 8:16:00 PM
+À : Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc : Girard, Camille <camillegirard@kpmg.fr>
+Objet : RE: ABIVAX ERP - Project update 
+ 
+
+Thanks for this – do you know how I get access to the sharepoint because I can’t currently see or access any of the hyperlinks in the email below?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Ben Alaya, Aymen <abenalaya@kpmg.fr> 
+Sent: Thursday, February 19, 2026 11:54 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Girard, Camille <camillegirard@kpmg.fr>
+Subject: ABIVAX ERP - Project update
+
+ 
+
+Hello Michael,
+
+ 
+
+As requested during our onboarding call, please find below a summary of the key activities completed to date, along with the associated deliverables.
+
+The table provides the necessary context to understand the project’s scope and key considerations.
+
+ 
+
+If you have any questions, please don’t hesitate to reach out.
+
+ 
+
+Subject/Phase
+
+Timeline
+
+Key activities & Outcomes
+
+Deliverables/References
+
+Initiate
+
+(23/09/2025 - 13/10/2025) 
+
+*	 Defining the scope of the support proposal.
+
+*	Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/Proposal*20KPMG_ABIVAX_ERP*20Choice_V250801.pdf?csf=1&web=1&e=2lQVno__;JSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLkfWfwp0$> : Proposal – Tool Selection Support 
+*	ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*200*20-*20intiate/ABIVAX*20LoE*20-*20ERP*20Choice*20assistance*20-*20v230925.docx.pdf?csf=1&web=1&e=WFwJJz__;JSUlJSUlJSUlJSU!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLfbmYjxU$> : Engagement Letter – Support for Tool Selection
+
+Diagnostic 
+
+(13/10/2025 – 03/11/2025)
+
+*	Objective: assess ABivax’s current (“as-is”) situation and identify key pain points.
+*	Conducted 3 interviews with IT and Operations to capture and validate the main issues.
+
+*	Abivax - KickOff <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Kick-off/Abivax*20-*20KickOff.pdf?csf=1&web=1&e=lZdnmA__;JSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLAt_tee0$> : Kick-off deck presenting the overall project approach and methodology.
+*	Abivax - Analysis report VF.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*201*20-*20Diagnostics/Analysis*20Report/Abivax*20-*20Analysis*20report*20VF.pdf?csf=1&web=1&e=0eJNJB__;JSUlJSUlJSUl!!E1R1dd1bLLODlQ4!BTrd9bRn13RJjJpggSrlbHoPRNmfrDUGM1ec1aT5aXcy5Ice2Q6PzdxW_Dip6Y_TMk85G9RAzaCa2diGZTdLQOCBH8k$> : Diagnostic report describing the as-is situation.
+
+RFP Preparation
+
+(10/11/2025 - 16/12/2025)
+
+*	Objective: capture detailed requirements for each process stream.
+*	Delivered 5 workshops: 2 Finance, 1 Procurement, 1 Treasury (BoB), and 1 IT.
+*	Identified 5 shortlisted bidders to receive the RFP: SAP S/4HANA Public Cloud, NetSuite, Microsoft Dynamics 365 Finance & Operations, Sage X3, Workday.
+
+*	Abivax – RFP - ERP Finance.pdf <https://urldefense.com/v3/__https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared*20Documents/General/Phase*202*20-*20Requirements*20identification*20and*20request*20for*20proposal/Request*20for*20proposal*20(RFP)/Abivax*20**C20RFP*20-*20ERP*20Finance.pdf?csf=1&web=1&e=JKuFaA__;JSUlJSUlJSUl
+```
+
+---
+
+## EMAIL #124
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C70000`
+- **Direction:** sent
+- **Date:** 2026-02-19T14:16:00.9290000
+- **Subject:** RE: ABIVAX ERP - Project update
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Ben Alaya, Aymen']
+- **CC:** ['Girard, Camille']
+- **Has Attachments:** False
+- **Thread ID:** 2A737B34C3DB504396996E682BDD1F0F
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thanks for this – do you know how I get access to the sharepoint because I can’t currently see or access any of the hyperlinks in the email below?
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Ben Alaya, Aymen <abenalaya@kpmg.fr> 
+Sent: Thursday, February 19, 2026 11:54 AM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Girard, Camille <camillegirard@kpmg.fr>
+Subject: ABIVAX ERP - Project update
+
+ 
+
+Hello Michael,
+
+ 
+
+As requested during our onboarding call, please find below a summary of the key activities completed to date, along with the associated deliverables.
+
+The table provides the necessary context to understand the project’s scope and key considerations.
+
+ 
+
+If you have any questions, please don’t hesitate to reach out.
+
+ 
+
+Subject/Phase
+
+Timeline
+
+Key activities & Outcomes
+
+Deliverables/References
+
+Initiate
+
+(23/09/2025 - 13/10/2025) 
+
+*	 Defining the scope of the support proposal.
+
+*	Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/Proposal%20KPMG_ABIVAX_ERP%20Choice_V250801.pdf?csf=1&web=1&e=2lQVno> : Proposal – Tool Selection Support 
+*	ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/ABIVAX%20LoE%20-%20ERP%20Choice%20assistance%20-%20v230925.docx.pdf?csf=1&web=1&e=WFwJJz> : Engagement Letter – Support for Tool Selection
+
+Diagnostic 
+
+(13/10/2025 – 03/11/2025)
+
+*	Objective: assess ABivax’s current (“as-is”) situation and identify key pain points.
+*	Conducted 3 interviews with IT and Operations to capture and validate the main issues.
+
+*	Abivax - KickOff <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Kick-off/Abivax%20-%20KickOff.pdf?csf=1&web=1&e=lZdnmA> : Kick-off deck presenting the overall project approach and methodology.
+*	Abivax - Analysis report VF.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Analysis%20Report/Abivax%20-%20Analysis%20report%20VF.pdf?csf=1&web=1&e=0eJNJB> : Diagnostic report describing the as-is situation.
+
+RFP Preparation
+
+(10/11/2025 - 16/12/2025)
+
+*	Objective: capture detailed requirements for each process stream.
+*	Delivered 5 workshops: 2 Finance, 1 Procurement, 1 Treasury (BoB), and 1 IT.
+*	Identified 5 shortlisted bidders to receive the RFP: SAP S/4HANA Public Cloud, NetSuite, Microsoft Dynamics 365 Finance & Operations, Sage X3, Workday.
+
+*	Abivax – RFP - ERP Finance.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20%E2%80%93%20RFP%20-%20ERP%20Finance.pdf?csf=1&web=1&e=JKuFaA> : Context, objectives, and Abivax-specific needs.
+*	Abivax - RFP - Functional & technical requirements.xlsx <https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20-%20RFP%20-%20Functional%20%26%20technical%20requirements.xlsx?d=weffc8e3f47644639b10de6105390e58a&csf=1&web=1&e=AyBX0F> : Detailed functional and technical requirements.
+
+Bidders proposal analysis 
+
+(19/01/2026 - 05/02/2026)
+
+*	Received 4 bidder responses; Workday declined participation.
+*	Following initial assessment, 2 bidders were shortlisted: NetSuite and SAP.
+
+*	First Round <https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round?csf=1&web=1&e=JezYH9> : File containing each bidder’s responses.
+*	Abivax - Analyse consu
+```
+
+---
+
+## EMAIL #125
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C60000`
+- **Direction:** sent
+- **Date:** 2026-02-19T13:34:04.6500000
+- **Subject:** RE: Systems Access
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Denis Jankovic']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thank you Denis!
+
+ 
+
+From: Denis Jankovic <Denis.Jankovic@abivax.com> 
+Sent: Thursday, February 19, 2026 1:33 PM
+To: Support MBVSI <support.abivax@mbvsi.fr>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Subject: TR: Systems Access
+
+ 
+
+Bonjour,
+
+ 
+
+J'espere que vous allez bien.
+
+ 
+
+Nous avons besoin d'un accès à Sage SA et LLC pour Michael Markman, en copie de cet email.
+
+Mike est basé aux Etats-Unis (ET / EST).
+
+ 
+
+Pouvez-vous lui donner accès au bureau distant, Mike sera disponible le lundi 23 février.
+
+ 
+
+Je reste disponible.
+
+ 
+
+Merci d'avance.
+
+ 
+
+Bien à vous,
+
+Denis.
+
+ 
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+ 
+
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé : jeudi 19 février 2026 17:52
+À : Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Objet : RE: Systems Access 
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava 
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well! 
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #126
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D4C602C0000`
+- **Direction:** received
+- **Date:** 2026-02-19T13:33:22.0010000
+- **Subject:** TR: Systems Access
+- **From:** Denis Jankovic </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF>
+- **To:** ['Support MBVSI']
+- **CC:** ['Christophe Hennequin', 'Jade Nguyen', 'Michael Markman']
+- **Has Attachments:** True
+  - image001.png
+  - Outlook-photo.png
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Bonjour,
+
+J'espere que vous allez bien.
+
+Nous avons besoin d'un accès à Sage SA et LLC pour Michael Markman, en copie de cet email.
+Mike est basé aux Etats-Unis (ET / EST).
+
+Pouvez-vous lui donner accès au bureau distant, Mike sera disponible le lundi 23 février.
+
+Je reste disponible.
+
+Merci d'avance.
+
+Bien à vous,
+Denis.
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+
+________________________________
+
+De : Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé : jeudi 19 février 2026 17:52
+À : Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc : Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Objet : RE: Systems Access 
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava 
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well! 
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #127
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C50000`
+- **Direction:** sent
+- **Date:** 2026-02-19T13:18:29.7580000
+- **Subject:** US Finance Team Follow-Up
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Matt Epley', 'Kimberly Gordon', 'Adrian Holbrook']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 034DF6DD1FF04992858220EE19A14C05
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Matt / Kimberly / Adrian - Thanks again for today. Super helpful. Could you share when convenient:
+
+ 
+
+1.	Current COA + cost center breakout used on the US side (and any current mapping constraints). 
+
+	a.	Adrian – do you have this for the French side? 
+
+2.	The shared drive location for US accounting/reporting files so I can align ERP design to current operations
+
+ 
+
+We discussed different journal entries and reports as well – if there are major ones you think that I should be thinking through or prioritizing, feel free to send those over so I can incorporate them into the future plans. 
+
+  
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #128
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D4C602B0000`
+- **Direction:** received
+- **Date:** 2026-02-19T13:07:47.8050000
+- **Subject:** RE: Systems Access : SAGE Abivax SA
+- **From:** Denis Jankovic </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+  - Outlook-photo.png
+- **Thread ID:** 533C21EC6AF4A74FBE8F4D17FBBD802E
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi,
+I will copy you in the Support email and the IT will join you directly.
+
+Denis.
+
+
+
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+
+________________________________
+
+De : Michael Markman <mike.markman@abivax.com>
+Envoyé : jeudi 19 février 2026 19:02
+À : Denis Jankovic <Denis.Jankovic@abivax.com>
+Objet : RE: Systems Access : SAGE Abivax SA 
+ 
+
+Hi Denis – I don’t think I have access to Sage – or at least I don’t know how to access it currently. 
+
+ 
+
+Any guidance would be appreciated. 
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Denis Jankovic <Denis.Jankovic@abivax.com> 
+Sent: Thursday, February 19, 2026 12:51 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: TR: Systems Access : SAGE Abivax SA
+
+ 
+
+Hello Michael,
+
+ 
+
+Please find your user ID and temporary password below.
+You will be required to change your password upon logging in :
+
+ 
+
+ID :       MIKE US
+
+PWD :  W882cx{PE!
+
+ 
+
+If you don't have access to Sage please let me know. I will submit a ticket for you.
+
+ 
+
+Thank you,
+
+Denis.
+
+ 
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Envoyé: Jeudi 19 février 2026 17:52
+À: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Objet: RE: Systems Access 
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well!
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently.
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #129
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C40000`
+- **Direction:** sent
+- **Date:** 2026-02-19T13:02:36.5420000
+- **Subject:** RE: Systems Access : SAGE Abivax SA
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Denis Jankovic']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 533C21EC6AF4A74FBE8F4D17FBBD802E
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Denis – I don’t think I have access to Sage – or at least I don’t know how to access it currently. 
+
+ 
+
+Any guidance would be appreciated. 
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Denis Jankovic <Denis.Jankovic@abivax.com> 
+Sent: Thursday, February 19, 2026 12:51 PM
+To: Michael Markman <mike.markman@abivax.com>
+Subject: TR: Systems Access : SAGE Abivax SA
+
+ 
+
+Hello Michael,
+
+ 
+
+Please find your user ID and temporary password below.
+You will be required to change your password upon logging in :
+
+ 
+
+ID :       MIKE US
+
+PWD :  W882cx{PE!
+
+ 
+
+If you don't have access to Sage please let me know. I will submit a ticket for you.
+
+ 
+
+Thank you,
+
+Denis.
+
+ 
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+ 
+
+ 
+
+ 
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Envoyé: Jeudi 19 février 2026 17:52
+À: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >; Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Objet: RE: Systems Access 
+
+ 
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com <mailto:Denis.Jankovic@abivax.com> >
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >; Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well!
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently.
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #130
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF9800000D4C602A0000`
+- **Direction:** received
+- **Date:** 2026-02-19T13:02:32.9950000
+- **Subject:** DocuSign Use Reminders
+- **From:** Malinda Micho </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07>
+- **To:** ['allabivax', 'ALLABIVAX-E']
+- **CC:** ['Stephane Courric']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+- **Thread ID:** 1C82D9825EB24ADEB7CE3E150B0799B1
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi everyone,
+
+ 
+
+Please review a few short reminders below regarding the use of DocuSign at Abivax.
+
+ 
+
+*	All fields, particularly signature fields, may be re-sized to fit the allotted space within your template to be signed. Click on the field and resize by dragging the corners in or out with your cursor. For best results, place the field at the top of the open space allotted. It is important to estimate so that all text is visible in the final, signed version without overlap.
+
+
+
+ 
+
+
+
+ 
+
+*	Once a document is fully signed, download it and store it in an appropriate repository (e.g., shared Abivax drive (O: Drive), SharePoint). Note: Your document will remain within the DocuSign platform for the duration of Abivax’s active contract; however, it should not be used as the primary repository for storage.
+
+ 
+
+*	When downloading documents for filing, save/file the certificate summary along with the signed document. This certifies the authenticity of the signature and compliance with US FDA CFR 21 Part 11. It is recommended to utilize the option to “combine all PDFs into a single file” when only one document is signed in an envelope, so they may be stored together automatically.
+
+ 
+
+ 
+
+*	Stephane Courric and I are your designated DocuSign administrators for user access and changes. A Veeva training with an overview of the platform is available for reference here: Abivax Orientation to DocuSign <https://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#doc_info/4101/3/0> . Please feel free to reach out should you run into any questions.
+
+ 
+
+Thank you,
+
+ 
+
+
+
+Malinda MICHO
+Manager, Quality Systems
+
+www.abivax.com <http://www.abivax.com/> 
+
+malinda.micho@abivax.com <mailto:malinda.micho@abivax.com>
+```
+
+---
+
+## EMAIL #131
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C30000`
+- **Direction:** sent
+- **Date:** 2026-02-19T12:59:32.3870000
+- **Subject:** IT Landscape Follow-Up
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Jade Nguyen', 'Benjamin Talmant']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 860B68B669954F9EA2F96EC3B3DCD399
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Jade / Benjamin – thanks for the walkthrough today, it was very helpful. 1.    Can you send through the slides you shared today?
+
+ 
+
+Some items we mentioned to follow-up on after the call:
+
+ 
+
+1.	Is there a document that captures for each key system (Sage, Docushare, Trustpair, Agicap, Concur, ADP, Workday), who is the business owner, system owner, technical/admin owner, backup contact? I can create it if not, but if you have any of the information it would be super helpful. I can also confirm or follow-up with Finance on the above questions if you are unsure or unable to answer. 
+2.	There were several interfaces you mentioned – similar to #1, is there a listing (I can create if not), that details out for the feeds:
+
+	a.	file-based vs API
+	b.	frequency
+	c.	owner(s)
+	d.	process for what happens when a feed fails
+
+ 
+
+3.	For Trustpair and Agicap specifically, can you share the exact flow from vendor setup through payment validation and where control evidence is retained today?
+
+ 
+
+4.	You mentioned SOX/audit flow - where are current control gaps or deficiencies documented and who owns remediation tracking?
+
+ 
+
+  Thanks again for your time and support.
+
+ 
+
+  Looking forward to working together,
+
+  Mike
+```
+
+---
+
+## EMAIL #132
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF70000`
+- **Direction:** received
+- **Date:** 2026-02-19T12:51:04.2450000
+- **Subject:** TR: Systems Access : SAGE Abivax SA
+- **From:** Denis Jankovic </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+  - Outlook-photo.png
+- **Thread ID:** 533C21EC6AF4A74FBE8F4D17FBBD802E
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+Please find your user ID and temporary password below.
+You will be required to change your password upon logging in :
+
+ID :       MIKE US
+PWD :  W882cx{PE!
+
+If you don't have access to Sage please let me know. I will submit a ticket for you.
+
+Thank you,
+Denis.
+
+
+
+Denis JANKOVIC
+Responsable comptable général
+
++33 (0)7 89 53 72 75
+
+www.abivax.com <http://www.abivax.com/> 
+
+denis.jankovic@abivax.com <mailto:trinidad.mesa@abivax.com> 
+
+
+
+
+________________________________
+
+De: Hema Keshava <Hema.Keshava@abivax.com>
+Envoyé: Jeudi 19 février 2026 17:52
+À: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>; Michael Markman <mike.markman@abivax.com>
+Objet: RE: Systems Access 
+
+
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well!
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently.
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #133
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF60000`
+- **Direction:** received
+- **Date:** 2026-02-19T11:55:04.3620000
+- **Subject:** ABIVAX ERP - Project update
+- **From:** Ben Alaya, Aymen <abenalaya@kpmg.fr>
+- **To:** ['Michael Markman']
+- **CC:** ['Girard, Camille']
+- **Has Attachments:** False
+- **Thread ID:** 2A737B34C3DB504396996E682BDD1F0F
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+As requested during our onboarding call, please find below a summary of the key activities completed to date, along with the associated deliverables.
+The table provides the necessary context to understand the project’s scope and key considerations.
+
+If you have any questions, please don’t hesitate to reach out.
+
+Subject/Phase
+Timeline
+Key activities & Outcomes
+Deliverables/References
+Initiate
+(23/09/2025 - 13/10/2025) 
+
+*	
+	 Defining the scope of the support proposal.
+
+*	
+	Proposal KPMG_ABIVAX_ERP Choice_V250801.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/Proposal%20KPMG_ABIVAX_ERP%20Choice_V250801.pdf?csf=1&web=1&e=2lQVno> : Proposal – Tool Selection Support 
+*	
+	ABIVAX LoE - ERP Choice assistance - v230925.docx.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%200%20-%20intiate/ABIVAX%20LoE%20-%20ERP%20Choice%20assistance%20-%20v230925.docx.pdf?csf=1&web=1&e=WFwJJz> : Engagement Letter – Support for Tool Selection
+
+Diagnostic 
+(13/10/2025 – 03/11/2025)
+
+*	
+	Objective: assess ABivax’s current (“as-is”) situation and identify key pain points.
+*	
+	Conducted 3 interviews with IT and Operations to capture and validate the main issues.
+
+*	
+	Abivax - KickOff <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Kick-off/Abivax%20-%20KickOff.pdf?csf=1&web=1&e=lZdnmA> : Kick-off deck presenting the overall project approach and methodology.
+*	
+	Abivax - Analysis report VF.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%201%20-%20Diagnostics/Analysis%20Report/Abivax%20-%20Analysis%20report%20VF.pdf?csf=1&web=1&e=0eJNJB> : Diagnostic report describing the as-is situation.
+
+RFP Preparation
+(10/11/2025 - 16/12/2025)
+
+*	
+	Objective: capture detailed requirements for each process stream.
+*	
+	Delivered 5 workshops: 2 Finance, 1 Procurement, 1 Treasury (BoB), and 1 IT.
+*	
+	Identified 5 shortlisted bidders to receive the RFP: SAP S/4HANA Public Cloud, NetSuite, Microsoft Dynamics 365 Finance & Operations, Sage X3, Workday.
+
+*	
+	Abivax – RFP - ERP Finance.pdf <https://abivaxfr.sharepoint.com/:b:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20%E2%80%93%20RFP%20-%20ERP%20Finance.pdf?csf=1&web=1&e=JKuFaA> : Context, objectives, and Abivax-specific needs.
+*	
+	Abivax - RFP - Functional & technical requirements.xlsx <https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%202%20-%20Requirements%20identification%20and%20request%20for%20proposal/Request%20for%20proposal%20(RFP)/Abivax%20-%20RFP%20-%20Functional%20%26%20technical%20requirements.xlsx?d=weffc8e3f47644639b10de6105390e58a&csf=1&web=1&e=AyBX0F> : Detailed functional and technical requirements.
+
+Bidders proposal analysis 
+(19/01/2026 - 05/02/2026)
+
+*	
+	Received 4 bidder responses; Workday declined participation.
+*	
+	Following initial assessment, 2 bidders were shortlisted: NetSuite and SAP.
+
+*	
+	First Round <https://abivaxfr.sharepoint.com/:f:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/First%20Round?csf=1&web=1&e=JezYH9> : File containing each bidder’s responses.
+*	
+	Abivax - Analyse consultation ERP.xlsx <https://abivaxfr.sharepoint.com/:x:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Abivax%20-%20Analyse%20consultation%20ERP.xlsx?d=wf0455abc2a0c40a19655070315618f0e&csf=1&web=1&e=RR5dW9> : Technical evaluation across all bidders proposal
+*	
+	Abivax - Comparaison Financial Offer.
+```
+
+---
+
+## EMAIL #134
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF50000`
+- **Direction:** received
+- **Date:** 2026-02-19T11:52:55.7580000
+- **Subject:** RE: Systems Access
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Denis Jankovic']
+- **CC:** ['Trinidad Mesa', 'Roxandra Sturdza', 'Michael Markman']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Accidentally left out Mike in the e mail chain…
+
+ 
+
+From: Hema Keshava 
+Sent: Thursday, February 19, 2026 11:51 AM
+To: Denis Jankovic <Denis.Jankovic@abivax.com>
+Cc: Trinidad Mesa <Trinidad.Mesa@abivax.com>; Roxandra Sturdza <Roxandra.Sturdza@abivax.com>
+Subject: FW: Systems Access
+
+ 
+
+Hi Denis,
+
+Hope you’re doing well! 
+
+Could you pls grant Mike with “read only” access to SAGE, Trustpair and Agicap?
+
+ 
+
+Thank you!
+
+ 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com> 
+
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> > 
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #135
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF40000`
+- **Direction:** received
+- **Date:** 2026-02-19T11:52:28.3150000
+- **Subject:** FW: Systems Access
+- **From:** Hema Keshava </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5A51C1ED70D348BFBB5E19F2C4BCA678-88974F20-CC>
+- **To:** ['Matt Epley']
+- **CC:** ['Michael Markman']
+- **Has Attachments:** False
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Matt – would you mind giving Mike “read only” access to the admin functions of Concur.  I’m wondering if that is possible?
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Thursday, February 19, 2026 11:49 AM
+To: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: Systems Access
+
+ 
+
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #136
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C20000`
+- **Direction:** sent
+- **Date:** 2026-02-19T11:48:57.1590000
+- **Subject:** Systems Access
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 6259F773E0964786AE2ABE3324C14AF8
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hey Hema – hope all is well. Not sure the proper process to do this, but I think it would be helpful if I could get read-only access to the main finance systems. The ones that I think would be useful are:
+
+ 
+
+*	SAGE
+*	Concur
+*	Trustpair
+*	Agicap
+
+ 
+
+Not sure if there are user manuals/training for any of them, but if so, might be helpful. I met with the IT team today and they gave me a good overview of the different systems and interactions, and I think these 4 cover the majority of the core functionality. I know Workday is used as well, but mainly for FP&A purposes, so probably not relevant for the ERP transition currently. 
+
+ 
+
+If there are others that you think might be useful for me to access, please let me know.
+
+ 
+
+Thanks,
+Mike
+```
+
+---
+
+## EMAIL #137
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF30000`
+- **Direction:** received
+- **Date:** 2026-02-19T05:25:48.7260000
+- **Subject:** RE: ABIVAX Offer - Netsuite
+- **From:** Girard, Camille <camillegirard@kpmg.fr>
+- **To:** ['jamal azil', 'Ben Alaya, Aymen']
+- **CC:** ['Laurent Bailly', 'Venceslas dEchallens', 'Hema Keshava', 'Michael Markman', 'Vincent Gehanno', 'Jade Nguyen']
+- **Has Attachments:** True
+  - img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5
+- **Thread ID:** 564EB5267A270249995DCCFF6537D724
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Jamal,
+
+We will confirm the timeslot today. 
+
+You can forget e-invoicing, I have removed it from the PPT but we dit not remove it from the email; it was indeed answered during our session.
+
+For the technical aspects, it is what Jade explained during the meeting.
+
+Best regards,
+
+Camille Girard
+Senior Manager KPMG Advisory
+06.29.52.57.35
+
+
+________________________________
+
+De: jamal azil <jamal.azil@oracle.com>
+Envoyé: Mercredi 18 février 2026 13:07
+À: Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc: Laurent Bailly <laurent.bailly@oracle.com>; Venceslas dEchallens <venceslas.dechallens@oracle.com>; Hema Keshava <hema.keshava@abivax.com>; mike.markman@abivax.com <mike.markman@abivax.com>; Vincent Gehanno <vincent.gehanno@oracle.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Girard, Camille <camillegirard@kpmg.fr>
+Objet: Re: ABIVAX Offer - Netsuite 
+
+
+Confidential - Oracle Restricted \Including External Recipients
+
+
+Hello Aymen,
+
+I hope you are doing well.
+
+Thank you for your feedback following our meeting yesterday.
+
+We will provide you with a written response regarding the various points raised in the PowerPoint document as soon as possible.
+
+Regarding the additional two-hour meeting, we would like to propose Tuesday, February 24, either from 10:30 am to 12:30 pm or from 2:00 pm to 4:00 pm, depending on your preference.
+
+In addition, concerning the topics you would like to cover during this session, could you please clarify your specific expectations regarding e-invoicing (as it seemed to us that we had addressed the latest questions during yesterday’s meeting) as well as the “day-to-day IT solution capabilities” which is quite a broad scope?
+Based on your feedback, our objective is to ensure that we involve the appropriate stakeholders on our side.
+
+We look forward to your reply.
+Kind regards,
+
+Jamal
+
+
+
+
+ <https://urldefense.com/v3/__https://www.netsuite.com/portal/home.shtml__;!!E1R1dd1bLLODlQ4!AR4XXcIiYzbOIBO4ztIbEtB9swbyMvVJRKA9pgWSMcweUb6iDHpCcDLYDntRyhIMZGC6pkyLgV2_SW8nGvyfQW4$> 
+
+
+Jamal AZIL | Sales Representative – NetSuite
+
+Mobile : +33 6 46 54 56 72 – jamal.azil@oracle.com <mailto:jamal.azil@oracle.com> 
+
+Zoom : https://oracle.zoom.us/my/jamal.azil <https://urldefense.com/v3/__https://oracle.zoom.us/my/david.naccache__;!!E1R1dd1bLLODlQ4!AR4XXcIiYzbOIBO4ztIbEtB9swbyMvVJRKA9pgWSMcweUb6iDHpCcDLYDntRyhIMZGC6pkyLgV2_SW8n50OwauQ$> 
+Oracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes
+
+
+De : Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Date : mercredi, 18 février 2026 à 09:47
+À : Girard, Camille <camillegirard@kpmg.fr>, jamal azil <jamal.azil@oracle.com>, Jade Nguyen <jade.nguyen-ext@abivax.com>
+Cc : Laurent Bailly <laurent.bailly@oracle.com>, Venceslas dEchallens <venceslas.dechallens@oracle.com>, Hema Keshava <hema.keshava@abivax.com>, mike.markman@abivax.com <mike.markman@abivax.com>
+Objet : Re: ABIVAX Offer - Netsuite
+
+
+Hello everyone,
+Please find attached the deck presented during this afternoon’s meeting.
+As agreed during the call, and in order to facilitate Abivax teams’ review, we would need the following items:
+
+*	
+	Additional supporting information addressing the points presented in the attached PowerPoint and discussed during the call.
+*	
+	Your availability, preferably this week or early next week (two-hour time slots), which we will then share with Abivax to schedule one workshop to:
+
+	*	
+		Give you further detail about the needs and the context in terms of Abivax workload.
+	*	
+		A more detailed presentation of the e-invoicing solution
+	*	
+		A functionnal IT presentation of the solution at destination of the DSI to understand day to day IT solution capabilities.
+
+*	
+	The contact details for references presented to Abivax.
+
+Thank you in advance for your feedback, ideally by Monday, 23/02.
+
+Best regards,
+
+Aymen Ben Alaya
+Consultant
+Tech Strategy and Transformation / Connected Tech​
+KPMG ADVISORY​
+Tour Eqho​
+2 Avenue Gambett
+```
+
+---
+
+## EMAIL #138
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF20000`
+- **Direction:** received
+- **Date:** 2026-02-18T11:52:45.7340000
+- **Subject:** Please confirm your email alert subscriptions for Abivax
+- **From:** Abivax <no-reply@alert.gcs-web.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** D74EA627DFFEAD43AC495FF90FE700F9
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://ir.abivax.com/sites/g/files/knoqqb94191/files/alerts_logos/abivax-logo-small.png> 	
+Thank you for registering. 	
+You have registered to receive email alerts from Abivax. Please confirm your registration below. If you did not intend to register for these alerts, simply discard this email. This link will expire in 7 days. 	
+Confirm your registration → <https://url8935.alert.gcs-web.com/ls/click?upn=u001.JbMg3mD2y4PR8HCQsYxHoxp0GJW4kmOXo26WCal3IDhAZGyFysxfuIVoVKprqlwOJGeFAoOm3miba3wlspVPH9ZX1bFIHuuYEmefV-2BbyZ-2BTmrYid7CDovsAH6HwmzMCwfrzH_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr1btgrDEOZ7Utb7ep48dh4eS7Kdg4IGntCf3H5-2FTTovi4ezFVR9QEoEFS-2BUWyBVgEPEj8w-2FRAJgwUZaZDiOkDiC5bG66-2BeNHRFQ-2BL3jdKBj8PNxKCB7bU-2BKbYFMmxHhDXtAben4sR4flpkiMxzec2JdXJ2UyqxqN3UxYJRhQ-2B3oLSKqH1sxaPyJ6eBfHyoz6OFYzNuGdowFUIPe4pzr6A0BcR52ixQpWJq7JSh4SanPZvWgzCgWKanr1Kmi73aqRuYqkfS-2FaL2G-2BsMC-2BWB6RR-2B0> 	 
+Notified, 11 Farnsworth Street, Boston, MA 02210 | 800/990-6397 	
+ <https://url8935.alert.gcs-web.com/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRo0LooO4a6bKx74zOKwEJxHc7GizmQFQG6q-2FbN3Czd86EBdRkrZTin45Rlg4Bd1AXbzbwh3UcWnant5nMWPdFl5h-2FPh6CgWqZ9vCCLHE3hQLll3ztJNsQZBr1nP1C2Rzg2-2BEyBrXdywvU1G4ydj6-2BaANLsQLZ3W371O6Hsz-2FaVZC0VwW6arSq71RTc8W2oQFnck8-2BJvxy0rB0OBhmFTAd1WAaFDJ4TrOsaqItGpuan8ggs8QX4nxKhMLv4EfcDlvecX8PbE3Z6hO5-2BpkwEa9gn3pRmBDS036I0N3T7yzeKNtMYIJox9GkjtMde7CHCpQ-2Bv5TCXZTS8t-2FG8UtfGnq7t1>
+```
+
+---
+
+## EMAIL #139
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90C00000`
+- **Direction:** sent
+- **Date:** 2026-02-18T11:27:06.8290000
+- **Subject:** RE: Catch Up with Mike (US Team)
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Hema Keshava']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 3056963E275940EC909C4F7961BE15E8
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hey Hema – does 12pm work for you? I’m going to be on the west coast for a couple of days, so that timing would work better for me. 
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+-----Original Appointment-----
+From: Hema Keshava <Hema.Keshava@abivax.com> 
+Sent: Wednesday, February 18, 2026 11:07 AM
+To: Matt Epley; Adrian Holbrook; Kimberly Gordon; Michael Markman
+Subject: Catch Up with Mike (US Team)
+When: Thursday, February 19, 2026 9:30 AM-10:00 AM (UTC-05:00) Eastern Time (US & Canada).
+Where: Microsoft Teams Meeting
+
+ 
+
+ 
+
+________________________________________________________________________________
+
+Microsoft Teams meeting 
+
+Join: https://teams.microsoft.com/meet/34876084422830?p=wqeQORIAbdYT6izotU <https://teams.microsoft.com/meet/34876084422830?p=wqeQORIAbdYT6izotU>  
+
+Meeting ID: 348 760 844 228 30 
+
+Passcode: zx3Wm6Bp 
+
+________________________________
+
+Need help? <https://aka.ms/JoinTeamsMeeting?omkt=en-US>  | System reference <https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTM0Y2NmOGYtZjY4OS00MjRhLTk3YWQtNzA4NWY1YTM1ZDRj%40thread.v2/0?context=%7b%22Tid%22%3a%220723fe73-2359-40d2-8c34-7e2aa7415594%22%2c%22Oid%22%3a%2288974f20-cc1f-48f1-bb14-5e0ffc0b7289%22%7d>  
+
+For organizers: Meeting options <https://teams.microsoft.com/meetingOptions/?organizerId=88974f20-cc1f-48f1-bb14-5e0ffc0b7289&tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594&threadId=19_meeting_NTM0Y2NmOGYtZjY4OS00MjRhLTk3YWQtNzA4NWY1YTM1ZDRj@thread.v2&messageId=0&language=en-US>  
+
+Personal Data Protection Statement: This invitation (including attachments) is intended only for the recipient(s) named above. It may contain confidential or privileged information and should not be read, copied or otherwise used by any other person; for any question on how we process your personal data, or to exercise your rights as per the EU GDPR Regulation (eugdpr.org), please contact us at dpo@abivax.com <mailto:dpo@abivax.com> , or write at PharMarketing, DPO for Abivax, 8 rue Roublot, 94120 Fontenay sous Bois, France. You may also contact your local Data Privacy Authority in your country. Please also note this invitation is using conferencing tool that may record some connection logs (your email address, connection logs and IP address) that will be transferred out of EU in which personal data protection rules are not equivalent to EU GDPR regulation and local privacy laws. By accepting this invitation and joining the conference invitation you do accept those personal data be shared with conferencing tool provider and be transferred outside of EU.
+
+________________________________________________________________________________
+```
+
+---
+
+## EMAIL #140
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90BF0000`
+- **Direction:** sent
+- **Date:** 2026-02-18T11:25:03.6300000
+- **Subject:** RE: Introduction:  VP, Global ERP Lead/Finance Team
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Hema Keshava', 'Didier Blondel', 'Trinidad Mesa', 'Frederick Golly', 'Roxandra Sturdza', 'Philippe Goncalves', 'Matt Epley', 'Juliette Courtot', 'Adrian Holbrook', 'Kimberly Gordon', 'Fatma Hemdani', 'Michael Markman']
+- **CC:** ['Denis Jankovic']
+- **Has Attachments:** False
+- **Thread ID:** 6738637FC94B3749B744B903FAED9FA2
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi All- great meeting everyone virtually today. As I mentioned – reach out at any point to get me involved with any ERP related items that you would like to surface. I’ll reach out separately as well to setup times to have deeper dive sessions as items arise. If you are speaking directly with KPMG, feel free to cc me on any communication so we can start getting more aligned as a Team.
+
+ 
+
+I will be in Paris the week of March 16th and would love to meet with as many of you as possible the first few days. Having said that, please don’t hesitate to reach out prior to that. 
+
+ 
+
+Looking forward to working with you on this exciting project.
+
+ 
+
+Speak soon,
+
+Mike
+
+ 
+
+-----Original Appointment-----
+From: Hema Keshava <Hema.Keshava@abivax.com> 
+Sent: Monday, February 16, 2026 11:23 AM
+To: Hema Keshava; Hema Keshava; Didier Blondel; Trinidad Mesa; Frederick Golly; Roxandra Sturdza; Philippe Goncalves; Matt Epley; Juliette Courtot; Adrian Holbrook; Kimberly Gordon; Fatma Hemdani; Michael Markman
+Cc: Michael Markman; Denis Jankovic
+Subject: Introduction: VP, Global ERP Lead/Finance Team
+When: Wednesday, February 18, 2026 10:30 AM-11:00 AM (UTC-05:00) Eastern Time (US & Canada).
+Where: Microsoft Teams Meeting
+
+ 
+
+ 
+
+---------- Forwarded message ---------
+From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Date: Sun, Feb 15, 2026 at 9:50 PM
+Subject: Introduction: VP, Global ERP Lead/Finance Team
+To: Didier Blondel <Didier.Blondel@abivax.com <mailto:Didier.Blondel@abivax.com> >, Trinidad Mesa <Trinidad.Mesa@abivax.com <mailto:Trinidad.Mesa@abivax.com> >, Frederick Golly <Frederick.Golly@abivax.com <mailto:Frederick.Golly@abivax.com> >, Roxandra Sturdza <Roxandra.Sturdza@abivax.com <mailto:Roxandra.Sturdza@abivax.com> >, Philippe Goncalves <philippe.goncalves@abivax.com <mailto:philippe.goncalves@abivax.com> >, Matt Epley <Matt.Epley@abivax.com <mailto:Matt.Epley@abivax.com> >, Juliette Courtot <Juliette.Courtot@abivax.com <mailto:Juliette.Courtot@abivax.com> >, Adrian Holbrook <adrian.holbrook@abivax.com <mailto:adrian.holbrook@abivax.com> >, Kimberly Gordon <kimberly.gordon-ext@abivax.com <mailto:kimberly.gordon-ext@abivax.com> >, Fatma Hemdani <fatma.hemdani-ext@abivax.com <mailto:fatma.hemdani-ext@abivax.com> >, Michael Markman <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+
+ 
+
+ 
+
+________________________________________________________________________________
+
+Microsoft Teams meeting 
+
+Join: https://teams.microsoft.com/meet/39379841588672?p=9FIpmiC8Cxv5XzHaxr <https://teams.microsoft.com/meet/39379841588672?p=9FIpmiC8Cxv5XzHaxr>  
+
+Meeting ID: 393 798 415 886 72 
+
+Passcode: p6pc9uP2 
+
+________________________________
+
+Need help? <https://aka.ms/JoinTeamsMeeting?omkt=en-US>  | System reference <https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDg5ZjY3YWQtY2ViZS00NzljLWJlODktMjdkNzY1ZGFjM2Jh%40thread.v2/0?context=%7b%22Tid%22%3a%220723fe73-2359-40d2-8c34-7e2aa7415594%22%2c%22Oid%22%3a%2288974f20-cc1f-48f1-bb14-5e0ffc0b7289%22%7d>  
+
+For organizers: Meeting options <https://teams.microsoft.com/meetingOptions/?organizerId=88974f20-cc1f-48f1-bb14-5e0ffc0b7289&tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594&threadId=19_meeting_ZDg5ZjY3YWQtY2ViZS00NzljLWJlODktMjdkNzY1ZGFjM2Jh@thread.v2&messageId=0&language=en-US>  
+
+Personal Data Protection Statement: This invitation (including attachments) is intended only for the recipient(s) named above. It may contain confidential or privileged information and should not be read, copied or otherwise used by any other person; for any question on how we process your personal data, or to exercise your rights as per the EU GDPR Regulation (eugdpr.org <http://eugdpr.org> ), please contact us at dpo@abivax.com <mailto:dpo@abivax.com> , or write at PharMarketing, DPO for Abivax, 8 rue Roublot, 94120 Fontenay sous Bois, France. You may also contact your local Data Privacy Authority in your country. Please also 
+```
+
+---
+
+## EMAIL #141
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEF00000`
+- **Direction:** received
+- **Date:** 2026-02-18T11:13:36.3270000
+- **Subject:** Here’s a timely message from ADP about your paychecks
+- **From:** Wisely® by ADP <wiselydirect@mywisely.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** B21C6215085608469E54CCA8403D3A68
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Don’t miss out: get your pay early.
+ <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6IjgxNzVkN2Y3LWVhOTQtNDAwMS05NzAwLTgxNGNiMjBhMTE0ZCIsImRla1ZlcnNpb24iOjEsIml2IjoiWksyb05pemVxbEc2U3FiS2krUldqZz09IiwiY2lwaGVyVGV4dCI6IlRsZHA3SnJoc0Y0N1VhV1luVTlEWkRyaDdOV1ltQ2pBSyt0Q01SQSs4V3Jnb21tMDFWZnVuQmx6K1pOZ1VLN2ZXSFAvNXJMQVlDR1VvOFROU1hZZzBmUjFObGVtZXRYd1pLMm9OaXplcWxHNlNxYktpK1JXamc9PSIsImF1dGhUYWciOiJsS1BFelVsMklOSDBkVFpYcG5yVjhBPT0ifQ%3D%3D> 
+ <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/2/f78167e3-1051-417f-8c0b-ea6d10665d38.png> 
+
+YOU GOT THE JOB!
+
+
+Get paid early1—and get ahead.
+
+
+Access your pay up to 2 days early with direct deposit.1
+
+Sign Up for Wisely <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6IjFiZGFjZGI1LTI4OWQtNDc1OS1iMDhmLWM2MzI5ZmViM2ZjNSIsImRla1ZlcnNpb24iOjEsIml2IjoibTFESGxlUi9MV2RTYmpRNVhLc0ZXdz09IiwiY2lwaGVyVGV4dCI6InIwUDdkUWJqNHc5TUpMaTJIckQwVnhCT0Q3RGtxNTVwaURvZHdxWXVZOEdtZXRPRGF4eHVTcVJUZ2xqUXIwb0syTW5FVDQ3bmtMdGxTQ1I0SURnNFlFcFo5Y09YRmtZSW0xREhsZVIvTFdkU2JqUTVYS3NGV3c9PSIsImF1dGhUYWciOiJaVWdrZUNBNE9HQktXZlhEbHhaR0NBPT0ifQ%3D%3D>  	
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/10bd1d61-0131-4324-aa88-7199f6492794.jpg> 	
+Hey Michael,
+
+ 
+
+Congrats on your new job! We’re Wisely® by ADP, and we can help you get paid up to 2 days early1 with direct deposit2 at no cost.3 It’s just one of the ways Wisely helps you make the most of your money.
+
+Sign Up for Wisely <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6IjIwNmI5YzhmLWI3ZTEtNDAxOS05NGIxLTcxYzM4ZTQyMGE1MiIsImRla1ZlcnNpb24iOjEsIml2IjoiSXY5TVB0YVpqM3B5V3Nwd2pYSTdvdz09IiwiY2lwaGVyVGV4dCI6InR6Z3lzMU56RWNxenVHTC9WUkNvak9oRi9jd3luWVdnWnBtUTJCckV4Q2pxYXJieXN3UEt3NndTRENHVTRRQWxXM1lhYlM2L3ZwQUVGQ25nL0xJRDc0UExGT1poay9SMEl2OU1QdGFaajNweVdzcHdqWEk3b3c9PSIsImF1dGhUYWciOiJCQlFwNFB5eUErK0R5eFRtWVpQMGRBPT0ifQ%3D%3D>  	
+
+Smart money moves for payday and every day.
+
+ <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/1/592dc7d8-5231-4d12-908c-858e99c95a33.png> 	 	  <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/1/f4b61d11-dad8-4f47-a507-ef4bf516a6e1.png> 	 	 Shop where and when you want.
+
+Use your Wisely card everywhere Debit Mastercard® is accepted—from online to delivery to travel.
+
+ <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/2/b0a149da-50fe-4827-a869-085479526dc3.png> 	 	 Say “see ya never” to hidden fees.4
+
+Plus, there are no minimum balance fees, annual fees, or overdraft fees.5.
+
+ <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/1/cb41ae90-832f-4324-8bff-c085b0138192.png> 	 	 Feel ready for anything
+
+Set up automatic transfers to your savings envelope6 for unexpected expenses..
+
+ 	  <https://image.m1.mywisely.com/lib/fe35117170640478751d71/m/1/9839fa83-96b4-4b1f-800c-c9d22c106c9d.png> 	
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/53624767-a3b2-424e-a2b2-00e0a4b1af8e.png> 	
+
+We protect what you earn, save, and spend.
+
+ 	  	  <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/d5231fb4-08c3-41de-a71a-f248e8cb0e1a.png> 	 	 Keep your information safer with EMV chip card technology.
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/d5231fb4-08c3-41de-a71a-f248e8cb0e1a.png> 	 	 Stay on top of things with real-time alerts and app7 notifications.
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751d73/m/1/d5231fb4-08c3-41de-a71a-f248e8cb0e1a.png> 	 	 Lock your card or block transactions instantly.
+
+Sign Up for Wisely <https://click.m1.mywisely.com/?qs=eyJkZWtJZCI6ImQzY2Y3NDE1LWY1YzYtNDU2OC04NjM4LWE2YjU3ZTUwMDllMiIsImRla1ZlcnNpb24iOjEsIml2IjoiTXVibTFMNWloaFZSd24xWnY1M3RHQT09IiwiY2lwaGVyVGV4dCI6IkE1WWJsaGY1TFlhY0lRWWtyS0pSTUFWR21JdFd2K3FlU0RZTCttOVpoLytSSUJHQ2JUc3Rldkl6Vms3MmZZS3VSajc5clJZSGMzY25uT2xOVlJWakhEMDZxeENYSjc3MU11Ym0xTDVpaGhWUnduMVp2NTN0R0E9PSIsImF1dGhUYWciOiJKNXpwVFZVVll4dzlPcXNRbHllKzlRPT0ifQ%3D%3D>  	
+ 	  	 
+
+Manage your money, your way.
+
+ <https://image.m1.mywisely.com/lib/fe33117170640478751
+```
+
+---
+
+## EMAIL #142
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEEE0000`
+- **Direction:** received
+- **Date:** 2026-02-18T10:22:20.9930000
+- **Subject:** RE: Welcome to Abivax! Quality Systems Training Required
+- **From:** Malinda Micho </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Didier Blondel']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 71568EA37EF74A6EB125588F1C37BCBF
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+ 
+
+Perfect – thank you for your prompt attention to this and quick action, it is much appreciated. All looks good on my end!
+
+ 
+
+Kindly,
+
+ 
+
+
+
+Malinda MICHO
+Manager, Quality Systems
+
+www.abivax.com <http://www.abivax.com/> 
+
+malinda.micho@abivax.com <mailto:malinda.micho@abivax.com> 
+
+	
+
+ 
+
+ 
+
+From: Michael Markman <mike.markman@abivax.com> 
+Sent: Wednesday, February 18, 2026 9:05 AM
+To: Malinda Micho <malinda.micho@abivax.com>
+Cc: Didier Blondel <Didier.Blondel@abivax.com>
+Subject: RE: Welcome to Abivax! Quality Systems Training Required
+
+ 
+
+Hi Melinda – thanks for this. I’ve completed all the required training and reading. Please let me know if you need anything else from me.
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Malinda Micho <malinda.micho@abivax.com <mailto:malinda.micho@abivax.com> > 
+Sent: Tuesday, February 17, 2026 3:22 PM
+To: Michael Markman <mike.markman@abivax.com <mailto:mike.markman@abivax.com> >
+Cc: Didier Blondel <Didier.Blondel@abivax.com <mailto:Didier.Blondel@abivax.com> >
+Subject: Welcome to Abivax! Quality Systems Training Required
+
+ 
+
+Hi Mike,
+
+ 
+
+My name is Malinda and I am a Quality Systems Manager here at Abivax. I hope you find yourself adjusted into your new role.
+
+ 
+
+I would like to let you know that I’ve added access for you to the following systems: Veeva Vault (QualityDocs and Vault Training) and DocuSign.
+
+ 
+
+Veeva Vault is our official Quality Document and training management platform (i.e., where you can access our Standard Operating Procedures, Work Instructions, Templates/Forms and where we assign training on these documents). The URL is here: Veeva Vault QualityDocs/Vault Training <https://abivax-quality.veevavault.com/> .
+
+*	Username: Your Abivax email address.
+*	Password: Not required, access is managed through Abivax Single Sign-On (SSO).
+
+ 
+
+Once logged in, you will see that there are training assignments assigned to you on the home page. These are based on your role at Abivax and have an assigned due date of approximately 1 month from today. Please ensure you take the time to read through and complete these. 
+
+ 
+
+DocuSign is our official signature platform that is compliant with FDA 21 CFR Part 11 to ensure we have controlled and legitimate signatures on documents that require them. The URL is here: Docusign <https://apps.docusign.com/send/home> . Your username/password is the same as Veeva Vault above. Please test logging in to ensure you have access to the platform. In Veeva Vault, one of your training assignments will be for DocuSign, which is an overview presentation of how DocuSign works and requires your acknowledgement.
+
+ 
+
+A meeting may be set up to meet and go over any questions you may have. I am happy to help, please let me know.
+
+ 
+
+Kindly,
+
+ 
+
+
+
+Malinda MICHO
+Manager, Quality Systems
+
+www.abivax.com <http://www.abivax.com/> 
+
+malinda.micho@abivax.com <mailto:malinda.micho@abivax.com>
+```
+
+---
+
+## EMAIL #143
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEED0000`
+- **Direction:** received
+- **Date:** 2026-02-18T10:15:26.5270000
+- **Subject:** Vault Notification Summary (Quality Production)
+- **From:** Vault Quality <vault-emails@veeva.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** A9D01F163DFCE04BA8E3D1A909FD41E3
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/v12-email-header.20b218df313841ed2490.png> 	
+
+You have received the following notifications from Quality Production for 2/18/26 10:15:20 AM EST
+
+Tasks 
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Clinical Trial Documentation Process and Approval <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I036> . 	
+2/18/26 10:01:54 AM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Personal Data Breach Management <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I035> . 	
+2/18/26 10:01:53 AM EST 	
+	
+This message is automatically generated by Veeva Vault and sent from the Quality Production vault abivax-quality.veevavault.com <https://abivax-quality.veevavault.com/ui> . If you think it was sent incorrectly, please contact your Vault administrators. To ensure delivery to your inbox, please add vault-emails@veeva.com to your address book. 
+Veeva Vault Copyright © 2010-2026 Veeva Systems <http://www.veeva.com/> . All rights reserved. | Privacy Policy <https://www.veeva.com/vault-privacy/>
+```
+
+---
+
+## EMAIL #144
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90BE0000`
+- **Direction:** sent
+- **Date:** 2026-02-18T10:05:18.7380000
+- **Subject:** RE: Welcome to Abivax! Quality Systems Training Required
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Malinda Micho']
+- **CC:** ['Didier Blondel']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 71568EA37EF74A6EB125588F1C37BCBF
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Melinda – thanks for this. I’ve completed all the required training and reading. Please let me know if you need anything else from me.
+
+ 
+
+Thanks,
+Mike
+
+ 
+
+From: Malinda Micho <malinda.micho@abivax.com> 
+Sent: Tuesday, February 17, 2026 3:22 PM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Didier Blondel <Didier.Blondel@abivax.com>
+Subject: Welcome to Abivax! Quality Systems Training Required
+
+ 
+
+Hi Mike,
+
+ 
+
+My name is Malinda and I am a Quality Systems Manager here at Abivax. I hope you find yourself adjusted into your new role.
+
+ 
+
+I would like to let you know that I’ve added access for you to the following systems: Veeva Vault (QualityDocs and Vault Training) and DocuSign.
+
+ 
+
+Veeva Vault is our official Quality Document and training management platform (i.e., where you can access our Standard Operating Procedures, Work Instructions, Templates/Forms and where we assign training on these documents). The URL is here: Veeva Vault QualityDocs/Vault Training <https://abivax-quality.veevavault.com/> .
+
+*	Username: Your Abivax email address.
+*	Password: Not required, access is managed through Abivax Single Sign-On (SSO).
+
+ 
+
+Once logged in, you will see that there are training assignments assigned to you on the home page. These are based on your role at Abivax and have an assigned due date of approximately 1 month from today. Please ensure you take the time to read through and complete these. 
+
+ 
+
+DocuSign is our official signature platform that is compliant with FDA 21 CFR Part 11 to ensure we have controlled and legitimate signatures on documents that require them. The URL is here: Docusign <https://apps.docusign.com/send/home> . Your username/password is the same as Veeva Vault above. Please test logging in to ensure you have access to the platform. In Veeva Vault, one of your training assignments will be for DocuSign, which is an overview presentation of how DocuSign works and requires your acknowledgement.
+
+ 
+
+A meeting may be set up to meet and go over any questions you may have. I am happy to help, please let me know.
+
+ 
+
+Kindly,
+
+ 
+
+
+
+Malinda MICHO
+Manager, Quality Systems
+
+www.abivax.com <http://www.abivax.com/> 
+
+malinda.micho@abivax.com <mailto:malinda.micho@abivax.com>
+```
+
+---
+
+## EMAIL #145
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90BD0000`
+- **Direction:** sent
+- **Date:** 2026-02-18T09:48:28.1030000
+- **Subject:** Board Prep Materials
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Didier Blondel']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 8B352BCD075F470A8CFCF1CD34381072
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hi Didier – I hope all is well. Let me know if this is too early to be discussing, but thinking ahead for the upcoming Board meeting – is there a certain format that is used to present? I can start putting together information about the ERP selection process and update as I learn more over the next few weeks.
+
+ 
+
+Thanks,
+
+Mike
+```
+
+---
+
+## EMAIL #146
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEEC0000`
+- **Direction:** received
+- **Date:** 2026-02-18T07:08:34.2640000
+- **Subject:** Re: ABIVAX Offer - Netsuite
+- **From:** jamal azil <jamal.azil@oracle.com>
+- **To:** ['Ben Alaya, Aymen']
+- **CC:** ['Laurent Bailly', 'Venceslas dEchallens', 'Hema Keshava', 'Michael Markman', 'Vincent Gehanno', 'Jade Nguyen', 'Girard, Camille']
+- **Has Attachments:** True
+  - img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5
+- **Thread ID:** 564EB5267A270249995DCCFF6537D724
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Confidential - Oracle Restricted \Including External Recipients
+
+
+
+Hello Aymen,
+
+I hope you are doing well.
+
+Thank you for your feedback following our meeting yesterday.
+
+We will provide you with a written response regarding the various points raised in the PowerPoint document as soon as possible.
+
+Regarding the additional two-hour meeting, we would like to propose Tuesday, February 24, either from 10:30 am to 12:30 pm or from 2:00 pm to 4:00 pm, depending on your preference.
+
+In addition, concerning the topics you would like to cover during this session, could you please clarify your specific expectations regarding e-invoicing (as it seemed to us that we had addressed the latest questions during yesterday’s meeting) as well as the “day-to-day IT solution capabilities” which is quite a broad scope?
+Based on your feedback, our objective is to ensure that we involve the appropriate stakeholders on our side.
+
+We look forward to your reply.
+Kind regards,
+
+Jamal
+
+
+
+
+ <https://www.netsuite.com/portal/home.shtml> 
+
+
+Jamal AZIL | Sales Representative – NetSuite
+
+Mobile : +33 6 46 54 56 72 – jamal.azil@oracle.com <mailto:jamal.azil@oracle.com> 
+
+Zoom : https://oracle.zoom.us/my/jamal.azil <https://oracle.zoom.us/my/david.naccache> 
+Oracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes
+
+
+De : Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Date : mercredi, 18 février 2026 à 09:47
+À : Girard, Camille <camillegirard@kpmg.fr>, jamal azil <jamal.azil@oracle.com>, Jade Nguyen <jade.nguyen-ext@abivax.com>
+Cc : Laurent Bailly <laurent.bailly@oracle.com>, Venceslas dEchallens <venceslas.dechallens@oracle.com>, Hema Keshava <hema.keshava@abivax.com>, mike.markman@abivax.com <mike.markman@abivax.com>
+Objet : Re: ABIVAX Offer - Netsuite
+
+
+Hello everyone,
+Please find attached the deck presented during this afternoon’s meeting.
+As agreed during the call, and in order to facilitate Abivax teams’ review, we would need the following items:
+
+*	
+	Additional supporting information addressing the points presented in the attached PowerPoint and discussed during the call.
+*	
+	Your availability, preferably this week or early next week (two-hour time slots), which we will then share with Abivax to schedule one workshop to:
+
+	*	
+		Give you further detail about the needs and the context in terms of Abivax workload.
+	*	
+		A more detailed presentation of the e-invoicing solution
+	*	
+		A functionnal IT presentation of the solution at destination of the DSI to understand day to day IT solution capabilities.
+
+*	
+	The contact details for references presented to Abivax.
+
+Thank you in advance for your feedback, ideally by Monday, 23/02.
+
+Best regards,
+
+Aymen Ben Alaya
+Consultant
+Tech Strategy and Transformation / Connected Tech​
+KPMG ADVISORY​
+Tour Eqho​
+2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​
+M. +33 7 78 55 33 58
+abenalaya@kpmg.fr
+
+
+
+
+Confidential - Oracle Restricted \Including External Recipients
+
+
+________________________________
+
+From: Girard, Camille
+Sent: Friday, February 13, 2026 13:47
+To: Girard, Camille <camillegirard@kpmg.fr>; jamal azil <jamal.azil@oracle.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc: Laurent Bailly <laurent.bailly@oracle.com>; Venceslas dEchallens <venceslas.dechallens@oracle.com>
+Subject: ABIVAX Offer - Netsuite
+When: Tuesday, February 17, 2026 4:00 PM-5:00 PM.
+Where: Réunion Microsoft Teams
+ 
+
+________________________________________________________________________________
+Réunion Microsoft Teams
+Rejoindre : https://teams.microsoft.com/meet/3581977207127?p=Ug1PfgGGG3KLWsURLl <https://urldefense.com/v3/__https://teams.microsoft.com/meet/3581977207127?p=Ug1PfgGGG3KLWsURLl__;!!ACWV5N9M2RV99hQ!KRofS069CGLuxv6ifcKJb7dGVv2lfw7jUjsekrJ7ESXYoziJJhyHjdgVOHWrPis6eMzaXksTUxhXDqXAXJ1K$> 
+Numéro de réunion : 358 197 720 712 7
+Code secret : yN74Tj6H
+________________________________
+
+Besoin d'aide
+```
+
+---
+
+## EMAIL #147
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEEB0000`
+- **Direction:** received
+- **Date:** 2026-02-18T03:52:47.1200000
+- **Subject:** Request for access to Apple Internet Accounts Denied
+- **From:** Microsoft Security <MSSecurity-noreply@microsoft.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** C24DCBB45165E443B9061CAF1B09264C
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Access request Denied.                                                                                                                                                                                                                                                                                    
+ABIVAX
+
+	
+ <https://images.ecomm.microsoft.com/cdn/mediahandler/azure-emails-templates/production/shared/images/templates/shared/images/icons/status-info-gray.png> 	Azure Active Directory is now Microsoft Entra ID. Learn More. <https://aka.ms/aadrebrandFAQ> 	
+	
+
+Apple Internet Accounts access request Denied
+
+
+Your request has been Denied. Details of your request are below.
+
+	
+Requested app:	Apple Internet Accounts	
+Status:	Denied	
+Reason:	No access	
+Review date:	February 18, 2026	
+	
+Privacy Statement <https://go.microsoft.com/fwlink/?LinkId=521839> 
+
+Microsoft Corporation, One Microsoft Way, Redmond, WA 98052
+
+Facilitated by
+
+ <https://images.ecomm.microsoft.com/cdn/mediahandler/azure-emails-templates/production/shared/images/templates/shared/images/logos/microsoft-logo-2x.png>
+```
+
+---
+
+## EMAIL #148
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEEA0000`
+- **Direction:** received
+- **Date:** 2026-02-18T03:45:01.8260000
+- **Subject:** Re: ABIVAX Offer - Netsuite
+- **From:** Ben Alaya, Aymen <abenalaya@kpmg.fr>
+- **To:** ['Girard, Camille', 'jamal azil', 'Jade Nguyen']
+- **CC:** ['Laurent Bailly', 'Venceslas dEchallens', 'Hema Keshava', 'Michael Markman']
+- **Has Attachments:** True
+  - Abivax - Netsuite Demonstration Feedback.pptx
+- **Thread ID:** 564EB5267A270249995DCCFF6537D724
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello everyone,
+Please find attached the deck presented during this afternoon’s meeting.
+As agreed during the call, and in order to facilitate Abivax teams’ review, we would need the following items:
+
+*	
+	Additional supporting information addressing the points presented in the attached PowerPoint and discussed during the call.
+*	
+	Your availability, preferably this week or early next week (two-hour time slots), which we will then share with Abivax to schedule one workshop to:
+
+	*	
+		Give you further detail about the needs and the context in terms of Abivax workload.
+	*	
+		A more detailed presentation of the e-invoicing solution
+	*	
+		A functionnal IT presentation of the solution at destination of the DSI to understand day to day IT solution capabilities.
+
+*	
+	The contact details for references presented to Abivax.
+
+Thank you in advance for your feedback, ideally by Monday, 23/02.
+
+Best regards,
+
+Aymen Ben Alaya
+Consultant
+Tech Strategy and Transformation / Connected Tech​
+KPMG ADVISORY​
+Tour Eqho​
+2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​
+M. +33 7 78 55 33 58
+abenalaya@kpmg.fr
+
+
+________________________________
+
+From: Girard, Camille
+Sent: Friday, February 13, 2026 13:47
+To: Girard, Camille <camillegirard@kpmg.fr>; jamal azil <jamal.azil@oracle.com>; Jade Nguyen <jade.nguyen-ext@abivax.com>; Ben Alaya, Aymen <abenalaya@kpmg.fr>
+Cc: Laurent Bailly <laurent.bailly@oracle.com>; Venceslas dEchallens <venceslas.dechallens@oracle.com>
+Subject: ABIVAX Offer - Netsuite
+When: Tuesday, February 17, 2026 4:00 PM-5:00 PM.
+Where: Réunion Microsoft Teams
+ 
+
+________________________________________________________________________________
+Réunion Microsoft Teams
+Rejoindre : https://teams.microsoft.com/meet/3581977207127?p=Ug1PfgGGG3KLWsURLl
+Numéro de réunion : 358 197 720 712 7
+Code secret : yN74Tj6H
+________________________________
+
+Besoin d'aide ? <https://aka.ms/JoinTeamsMeeting?omkt=fr-FR>  | Référence système <https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODE3ODFmMzQtMTgwMy00ZWI4LTg4ZDQtZDZlZGE3ZmZlYWJk%40thread.v2/0?context=%7b%22Tid%22%3a%22deff24bb-2089-4400-8c8e-f71e680378b2%22%2c%22Oid%22%3a%2263925eb6-c654-4533-8598-4b02ef07fa65%22%7d> 
+Participer par téléphone
++33 1 73 24 05 79,,154548677# <tel:+33173240579,,154548677#>  France, All locations
+Trouver un numéro local <https://dialin.teams.microsoft.com/acb16c8e-2279-44e6-ae8a-242d612bfe17?id=154548677> 
+Numéro de conférence téléphonique : 154 548 677#
+Pour les organisateurs : Options de réunion <https://teams.microsoft.com/meetingOptions/?organizerId=63925eb6-c654-4533-8598-4b02ef07fa65&tenantId=deff24bb-2089-4400-8c8e-f71e680378b2&threadId=19_meeting_ODE3ODFmMzQtMTgwMy00ZWI4LTg4ZDQtZDZlZGE3ZmZlYWJk@thread.v2&messageId=0&language=fr-FR>  | Réinitialiser le code PIN d'appel <https://dialin.teams.microsoft.com/usp/pstnconferencing> 
+________________________________________________________________________________
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the cli
+```
+
+---
+
+## EMAIL #149
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE90000`
+- **Direction:** received
+- **Date:** 2026-02-17T16:18:08.1520000
+- **Subject:** Vault Notification Summary (Quality Production)
+- **From:** Vault Quality <vault-emails@veeva.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 75DA860352876E4F9BD2E892A0DCDEF0
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/v12-email-header.20b218df313841ed2490.png> 	
+
+You have received the following notifications from Quality Production for 2/17/26 4:18:03 PM EST
+
+Tasks 
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for User Access Management <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I008> . 	
+2/17/26 4:03:20 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Change Control Management <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I009> . 	
+2/17/26 4:03:20 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Educational Grants and Sponsorships <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I032> . 	
+2/17/26 4:03:18 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Review of Externally Facing Program Related Materials for Business Partners and the Public <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I010> . 	
+2/17/26 4:03:18 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Management and Oversight of Safety Information <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I030> . 	
+2/17/26 4:03:18 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Product Acceptance <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I031> . 	
+2/17/26 4:03:18 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Code of Market Conduct <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I017> . 	
+2/17/26 4:03:16 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Anti-Corruption Policy <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I015> . 	
+2/17/26 4:03:16 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Whistleblower Policy <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I016> . 	
+2/17/26 4:03:16 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for IT Charter (EN) <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I018> . 	
+2/17/26 4:03:16 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png> 
+Please read and complete the training task for Equal Opportunity and Salary Policy <https://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004I014> . 	
+2/17/26 4:03:14 PM EST 	
+ <https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/ass
+```
+
+---
+
+## EMAIL #150
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE70000`
+- **Direction:** received
+- **Date:** 2026-02-17T15:21:40.9320000
+- **Subject:** Welcome to Abivax! Quality Systems Training Required
+- **From:** Malinda Micho </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Didier Blondel']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 71568EA37EF74A6EB125588F1C37BCBF
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hi Mike,
+
+ 
+
+My name is Malinda and I am a Quality Systems Manager here at Abivax. I hope you find yourself adjusted into your new role.
+
+ 
+
+I would like to let you know that I’ve added access for you to the following systems: Veeva Vault (QualityDocs and Vault Training) and DocuSign.
+
+ 
+
+Veeva Vault is our official Quality Document and training management platform (i.e., where you can access our Standard Operating Procedures, Work Instructions, Templates/Forms and where we assign training on these documents). The URL is here: Veeva Vault QualityDocs/Vault Training <https://abivax-quality.veevavault.com/> .
+
+*	Username: Your Abivax email address.
+*	Password: Not required, access is managed through Abivax Single Sign-On (SSO).
+
+ 
+
+Once logged in, you will see that there are training assignments assigned to you on the home page. These are based on your role at Abivax and have an assigned due date of approximately 1 month from today. Please ensure you take the time to read through and complete these. 
+
+ 
+
+DocuSign is our official signature platform that is compliant with FDA 21 CFR Part 11 to ensure we have controlled and legitimate signatures on documents that require them. The URL is here: Docusign <https://apps.docusign.com/send/home> . Your username/password is the same as Veeva Vault above. Please test logging in to ensure you have access to the platform. In Veeva Vault, one of your training assignments will be for DocuSign, which is an overview presentation of how DocuSign works and requires your acknowledgement.
+
+ 
+
+A meeting may be set up to meet and go over any questions you may have. I am happy to help, please let me know.
+
+ 
+
+Kindly,
+
+ 
+
+
+
+Malinda MICHO
+Manager, Quality Systems
+
+www.abivax.com <http://www.abivax.com/> 
+
+malinda.micho@abivax.com <mailto:malinda.micho@abivax.com>
+```
+
+---
+
+## EMAIL #151
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE60000`
+- **Direction:** received
+- **Date:** 2026-02-17T15:11:53.0220000
+- **Subject:** Welcome to Veeva Vault!
+- **From:** Vault Quality <vault-emails@veeva.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 7CA12CB7D7E8F74FB8B65A3DAF63F4BE
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+<https://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/v12-email-header.20b218df313841ed2490.png> 	
+
+Welcome to Veeva Vault! Your user name is given below:
+
+User Name: mike.markman@abivax.com
+
+
+Your Vault account has been configured to use your company's Single Sign-On (SSO) solution. 
+
+Click here to go to your SSO login page. <https://launcher.myapps.microsoft.com/api/signin/68ac5361-400d-4b30-857b-ed05fa44e833?tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594&RelayState=>  
+
+Once again, welcome to Veeva Vault! 
+This message is automatically generated by Veeva Vault and sent from the Quality Production vault abivax-quality.veevavault.com <https://abivax-quality.veevavault.com/ui> . If you think it was sent incorrectly, please contact your Vault administrators. To ensure delivery to your inbox, please add vault-emails@veeva.com to your address book. 
+Veeva Vault Copyright © 2010-2026 Veeva Systems <http://www.veeva.com/> . All rights reserved. | Privacy Policy <https://www.veeva.com/vault-privacy/>
+```
+
+---
+
+## EMAIL #152
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094F8AC80000`
+- **Direction:** sent
+- **Date:** 2026-02-17T15:11:30.0180000
+- **Subject:** Re: IT landscape overview - meeting proposal
+- **From:** Michael Markman </o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60>
+- **To:** ['Jade Nguyen']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - image001.png
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** FAD05586D5B1104B8D313FCEB1D7CF5A
+- **Folder:** sent
+
+**Body Text:**
+
+```
+If you have any system diagrams, particularly around Sage with corresponding data feeds would be super helpful. 
+
+Not sure if you have this, but any sort of volume metrics, coa or data structure information would be helpful in any form. 
+
+I can also ask the Finance team as well, just trying to cover my bases 
+
+Thanks in advance!
+
+-Mike
+
+Get Outlook for iOS <https://aka.ms/o0ukef> 
+________________________________
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com>
+Sent: Tuesday, February 17, 2026 1:17:09 PM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Subject: Re: IT landscape overview - meeting proposal 
+ 
+11 EST works just fine, let me send you the invite. No need to prepare anything, except if you have a specific agenda or questions you want covered. 
+
+And completely fine to drop Didier & Hema for these.
+
+Looking forward to Thursday,
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : mardi, 17 février 2026 à 19:11
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>, Christophe Hennequin <Christophe.Hennequin@abivax.com>, Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Objet : RE: IT landscape overview - meeting proposal
+
+
+
+Pleasure meeting you as well Jade/Christophe. Would 11EST work as well for you (30 minutes later than your proposal)?
+
+ 
+
+I dropped Hema/Didier, but if you think it would be beneficial to have them on as well, we can add them back.
+
+ 
+
+Thanks and looking forward to speaking with you more! If you have anything you think would be useful for me to look through or read prior to the meeting, feel free to send that along as well.
+
+ 
+
+-Mike
+
+ 
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com>
+Sent: Tuesday, February 17, 2026 1:08 PM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Benjamin Talmant <Benjamin.Talmant@abivax.com>; Didier Blondel <Didier.Blondel@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>
+Subject: IT landscape overview - meeting proposal
+
+ 
+
+Hello Mike, 
+
+ 
+
+It was a pleasure meeting you today.
+
+ 
+
+As discussed, we would be happy to give you a more in depth overview of the IT landscape and our role at Abivax, as well as answer any questions you may have.
+
+ 
+
+When would be a good time to connect? We have an opening this coming Thursday at 4:30 pm Paris time / 10:30 EST, would that work for you?
+
+ 
+
+Thank you,
+
+Best,
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com>
+```
+
+---
+
+## EMAIL #153
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE40000`
+- **Direction:** received
+- **Date:** 2026-02-17T13:17:12.7560000
+- **Subject:** Re: IT landscape overview - meeting proposal
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant']
+- **Has Attachments:** True
+  - image001.png
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** FAD05586D5B1104B8D313FCEB1D7CF5A
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+11 EST works just fine, let me send you the invite. No need to prepare anything, except if you have a specific agenda or questions you want covered. 
+
+And completely fine to drop Didier & Hema for these.
+
+Looking forward to Thursday,
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Michael Markman <mike.markman@abivax.com>
+Date : mardi, 17 février 2026 à 19:11
+À : Jade Nguyen <jade.nguyen-ext@abivax.com>, Christophe Hennequin <Christophe.Hennequin@abivax.com>, Benjamin Talmant <Benjamin.Talmant@abivax.com>
+Objet : RE: IT landscape overview - meeting proposal
+
+
+
+Pleasure meeting you as well Jade/Christophe. Would 11EST work as well for you (30 minutes later than your proposal)?
+
+ 
+
+I dropped Hema/Didier, but if you think it would be beneficial to have them on as well, we can add them back.
+
+ 
+
+Thanks and looking forward to speaking with you more! If you have anything you think would be useful for me to look through or read prior to the meeting, feel free to send that along as well.
+
+ 
+
+-Mike
+
+ 
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com>
+Sent: Tuesday, February 17, 2026 1:08 PM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Benjamin Talmant <Benjamin.Talmant@abivax.com>; Didier Blondel <Didier.Blondel@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>
+Subject: IT landscape overview - meeting proposal
+
+ 
+
+Hello Mike, 
+
+ 
+
+It was a pleasure meeting you today.
+
+ 
+
+As discussed, we would be happy to give you a more in depth overview of the IT landscape and our role at Abivax, as well as answer any questions you may have.
+
+ 
+
+When would be a good time to connect? We have an opening this coming Thursday at 4:30 pm Paris time / 10:30 EST, would that work for you?
+
+ 
+
+Thank you,
+
+Best,
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com>
+```
+
+---
+
+## EMAIL #154
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90BB0000`
+- **Direction:** sent
+- **Date:** 2026-02-17T13:11:06.0890000
+- **Subject:** RE: IT landscape overview - meeting proposal
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Jade Nguyen', 'Christophe Hennequin', 'Benjamin Talmant']
+- **CC:** []
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** FAD05586D5B1104B8D313FCEB1D7CF5A
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Pleasure meeting you as well Jade/Christophe. Would 11EST work as well for you (30 minutes later than your proposal)?
+
+ 
+
+I dropped Hema/Didier, but if you think it would be beneficial to have them on as well, we can add them back.
+
+ 
+
+Thanks and looking forward to speaking with you more! If you have anything you think would be useful for me to look through or read prior to the meeting, feel free to send that along as well. 
+
+ 
+
+-Mike
+
+ 
+
+From: Jade Nguyen <jade.nguyen-ext@abivax.com> 
+Sent: Tuesday, February 17, 2026 1:08 PM
+To: Michael Markman <mike.markman@abivax.com>
+Cc: Christophe Hennequin <Christophe.Hennequin@abivax.com>; Benjamin Talmant <Benjamin.Talmant@abivax.com>; Didier Blondel <Didier.Blondel@abivax.com>; Hema Keshava <Hema.Keshava@abivax.com>
+Subject: IT landscape overview - meeting proposal
+
+ 
+
+Hello Mike, 
+
+ 
+
+It was a pleasure meeting you today.
+
+ 
+
+As discussed, we would be happy to give you a more in depth overview of the IT landscape and our role at Abivax, as well as answer any questions you may have.
+
+ 
+
+When would be a good time to connect? We have an opening this coming Thursday at 4:30 pm Paris time / 10:30 EST, would that work for you?
+
+ 
+
+Thank you,
+
+Best,
+
+Jade
+
+ 
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com>
+```
+
+---
+
+## EMAIL #155
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE30000`
+- **Direction:** received
+- **Date:** 2026-02-17T13:07:58.5510000
+- **Subject:** IT landscape overview - meeting proposal
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['Michael Markman']
+- **CC:** ['Christophe Hennequin', 'Benjamin Talmant', 'Didier Blondel', 'Hema Keshava']
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+- **Thread ID:** FAD05586D5B1104B8D313FCEB1D7CF5A
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Mike, 
+
+It was a pleasure meeting you today.
+
+As discussed, we would be happy to give you a more in depth overview of the IT landscape and our role at Abivax, as well as answer any questions you may have.
+
+When would be a good time to connect? We have an opening this coming Thursday at 4:30 pm Paris time / 10:30 EST, would that work for you?
+
+Thank you,
+Best,
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com>
+```
+
+---
+
+## EMAIL #156
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE20000`
+- **Direction:** received
+- **Date:** 2026-02-17T11:22:55.8040000
+- **Subject:** Re: ChatGPT Enterprise rollout at Abivax – Global access now avaialble
+- **From:** Jade Nguyen </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07>
+- **To:** ['allabivax', 'ALLABIVAX-E']
+- **CC:** []
+- **Has Attachments:** True
+  - img-da6a72b4-425a-45ec-9750-2a8a4796d2b5
+  - ChatGPT Enterprise - Global Rollout - IT Playbook.pdf
+- **Thread ID:** 33DE932EAA64354A9DB4446B543B1672
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Dear all,
+
+As promised, your access to our Abivax ChatGPT Enterprise is now available!
+
+Please note this is only true for those of you who have signed the ChatGPT Usage Charter <https://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#doc_info/15001/1/0>  in Veeva. Access remains conditional and will not be granted to people without prior completion. 
+
+What you can expect : 
+
+*	
+	You will receive an automated email notification from Open AI (noreply@tm.openai.com <mailto:noreply@tm.openai.com> ) to get access
+
+*	
+	You can log in using you standard Abivax credential (email + Microsoft password)
+
+
+To help you getting started, please find attached a simple IT Playbook we have put together.
+
+To deep dive further, our IT team will host 2 dedicated training sessions at the following dates : 
+
+*	
+	Friday, 27 February: 5:30 pm Paris / 11:30 am EST
+*	
+	Thursday, 5 March: 5:30 pm Paris / 11:30 am EST
+
+
+These sessions are open to all ! Even if you are already familiar with ChatGPT, we encourage you to attend to fully understand the enhanced capabilities of the Enterprise version.
+
+Thank you,
+Best, 
+Jade
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com> 
+
+ 
+
+De : Jade Nguyen <jade.nguyen-ext@abivax.com>
+Date : vendredi, 30 janvier 2026 à 18:31
+À : allabivax <allabivax@abivax.com>, ALLABIVAX-E <allabivax-e@abivax.com>
+Objet : ChatGPT Enterprise rollout at Abivax – Required training
+
+
+Dear all,
+
+
+We are pleased to announce the upcoming rollout of ChatGPT Enterprise across Abivax, with access opening on February 16th.
+
+
+To ensure secure and responsible use, completion of the mandatory training on the Abivax ChatGPT Usage Charter is required prior to access.
+
+
+This training will be assigned to you in Veeva, and access will be conditional and only granted upon its completion. Please note that the training will be provided in English, however a French translation is also available in Veeva for reference here: Abivax ChatGPT Usage Charter (FR) <https://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#doc_info/15101/1/0> .
+
+
+In parallel with this rollout, and in line with Abivax security requirements, non–enterprise-approved generative AI tools will be blocked on Abivax-managed laptops.
+
+
+To support adoption, IT will provide training sessions and supporting materials ahead of and during the rollout.
+
+
+We look forward to enabling this new capability and supporting you through its deployment!
+
+
+
+
+Best,
+
+
+
+Jade Nguyen
+IT Project Manager
+
++33 6 95 56 32 02 <tel:+33695563202> 
+
+www.abivax.com <http://www.abivax.com/> 
+
+jade.nguyen-ext@abivax.com <mailto:jade.nguyen-ext@abivax.com>
+```
+
+---
+
+## EMAIL #157
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90BA0000`
+- **Direction:** sent
+- **Date:** 2026-02-17T11:03:06.3550000
+- **Subject:** RE: Abivaxx KPMG - ERP choix assistance project
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ["'Girard, Camille'", 'Ben Alaya, Aymen']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 54DB6701B4137644B8919992A780BCC7
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Hello – are we still meeting now? 
+
+ 
+
+-----Original Appointment-----
+From: Girard, Camille <camillegirard@kpmg.fr> 
+Sent: Tuesday, February 17, 2026 3:46 AM
+To: Girard, Camille; Michael Markman; Ben Alaya, Aymen
+Subject: Abivaxx KPMG - ERP choix assistance project
+When: Tuesday, February 17, 2026 5:00 PM-6:00 PM (UTC+01:00) Brussels, Copenhagen, Madrid, Paris.
+Where: Réunion Microsoft Teams
+
+ 
+
+ 
+
+________________________________________________________________________________
+
+Réunion Microsoft Teams 
+
+Rejoindre : https://teams.microsoft.com/meet/33467821335474?p=8SDkYcCllmMfZ34jfq <https://teams.microsoft.com/meet/33467821335474?p=8SDkYcCllmMfZ34jfq>  
+
+Numéro de réunion : 334 678 213 354 74 
+
+Code secret : My7Pw7M7 
+
+________________________________
+
+Besoin d'aide ? <https://aka.ms/JoinTeamsMeeting?omkt=fr-FR>  | Référence système <https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjU5YzBmZTUtYWRiOC00OGY5LWJkY2QtOWMyMGUxNDcwZjJl%40thread.v2/0?context=%7b%22Tid%22%3a%22deff24bb-2089-4400-8c8e-f71e680378b2%22%2c%22Oid%22%3a%2263925eb6-c654-4533-8598-4b02ef07fa65%22%7d>  
+
+Participer par téléphone 
+
++33 1 73 24 05 79,,728496827# <tel:+33173240579,,728496827>  France, All locations 
+
+Trouver un numéro local <https://dialin.teams.microsoft.com/acb16c8e-2279-44e6-ae8a-242d612bfe17?id=728496827>  
+
+Numéro de conférence téléphonique : 728 496 827# 
+
+Pour les organisateurs : Options de réunion <https://teams.microsoft.com/meetingOptions/?organizerId=63925eb6-c654-4533-8598-4b02ef07fa65&tenantId=deff24bb-2089-4400-8c8e-f71e680378b2&threadId=19_meeting_ZjU5YzBmZTUtYWRiOC00OGY5LWJkY2QtOWMyMGUxNDcwZjJl@thread.v2&messageId=0&language=fr-FR>  | Réinitialiser le code PIN d'appel <https://dialin.teams.microsoft.com/usp/pstnconferencing>  
+
+________________________________________________________________________________
+
+________________________________
+
+
+L’opinion de KPMG, est que la communication non cryptée par l'intermédiaire de l'Internet ne doit pas être considérée comme sécurisée.
+Pour cette raison, la politique de KPMG est que l'utilisation de l'Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s'expose à leur divulgation.
+Cet e-mail peut contenir des informations confidentielles à l'attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.
+
+In KPMG's opinion, non-encrypted communication via the Internet is not to be considered secure.
+For that reason, it is KPMG's policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.
+When exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.
+
+Mentions légales Article R. 123-237 du Code de commerce : Mentions légales <https://home.kpmg.com/fr/fr/home/misc/legal.html>
+```
+
+---
+
+## EMAIL #158
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEE10000`
+- **Direction:** received
+- **Date:** 2026-02-17T06:27:58.1200000
+- **Subject:** Request for access to Apple Internet Accounts received
+- **From:** Microsoft Security <MSSecurity-noreply@microsoft.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** DFD92D9F37ACB148978158CE102ACF5D
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Access request received.                                                                                                                                                                                                                                                                                    
+ABIVAX
+
+	
+ <https://images.ecomm.microsoft.com/cdn/mediahandler/azure-emails-templates/production/shared/images/templates/shared/images/icons/status-info-gray.png> 	Azure Active Directory is now Microsoft Entra ID. Learn More. <https://aka.ms/aadrebrandFAQ> 	
+	
+
+Apple Internet Accounts access request received
+
+
+Your request has been received. Details of your request are below.
+
+	
+Requested app:	Apple Internet Accounts	
+Status:	submitted	
+Request date:	February 17, 2026	
+Expiration date:	March 19, 2026	
+	
+Privacy Statement <https://go.microsoft.com/fwlink/?LinkId=521839> 
+
+Microsoft Corporation, One Microsoft Way, Redmond, WA 98052
+
+Facilitated by
+
+ <https://images.ecomm.microsoft.com/cdn/mediahandler/azure-emails-templates/production/shared/images/templates/shared/images/logos/microsoft-logo-2x.png>
+```
+
+---
+
+## EMAIL #159
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEDD0000`
+- **Direction:** received
+- **Date:** 2026-02-16T11:42:14.8880000
+- **Subject:** RE: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+- **From:** Anxhela Veruari <anxhela.veruari@newenglandinnovations.com>
+- **To:** ['Michael Markman']
+- **CC:** ['Harry Koka', 'Tana Dapaj']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+  - image006.png
+- **Thread ID:** 92634C0F3B027C45BCB81E2BBB6060DF
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Hello Michael,
+
+ 
+
+Thank you for letting us know that you have received the laptop.
+
+ 
+
+Regarding Adobe, for sure, we can check whenever you are available during the week.  In addition to Adobe, we also need to set up the Sage RDP connection on your laptop.
+
+ 
+
+Best Regards,
+
+Anxhela Veruari
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+ 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+ 
+
+ 
+
+From: Michael Markman <michaelkmarkman@gmail.com> 
+Sent: Monday, February 16, 2026 11:29 AM
+To: Anxhela Veruari <anxhela.veruari@newenglandinnovations.com>; mike.markman@abivax.com
+Cc: Harry Koka <harry.koka@newenglandinnovations.com>; Tana Dapaj <tana.dapaj@newenglandinnovations.com>; support@newenglandinnovations.zohodesk.com
+Subject: Re: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+ 
+
+Thanks - I received the computer and set everything up with the exception of Adobe as it was saying it required an admin to install it. We can do that at a later time this week perhaps.
+
+ 
+
+I am now setup on mike.markman@abivax.com <mailto:mike.markman@abivax.com>  (cc'd) so we can correspond there going forward.
+
+ 
+
+Thanks again,
+
+Mike
+
+ 
+
+On Mon, Feb 16, 2026 at 9:00 AM Anxhela Veruari <anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> > wrote:
+
+	Hello Michael,
+
+	 
+
+	I hope this email finds you well. 
+
+	 
+
+	According to the tracking information, you should have received the Abivax laptop by now.
+
+	 
+
+	Could you please provide us with a couple of available times to have a Zoom meeting and complete the IT onboarding process for your new laptop?
+
+	 
+
+	Best Regards,
+
+	Anxhela Veruari
+
+	 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+	 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+	 
+
+	 
+
+	From: Anxhela Veruari 
+	Sent: Friday, February 13, 2026 3:44 PM
+	To: 'michaelKmarkman@gmail.com <mailto:michaelKmarkman@gmail.com> ' <michaelKmarkman@gmail.com <mailto:michaelKmarkman@gmail.com> >
+	Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >; support@newenglandinnovations.zohodesk.com <mailto:support@newenglandinnovations.zohodesk.com> 
+	Subject: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+	 
+
+	Hello Michael,
+
+	 
+
+	We hope this message finds you well.
+
+	 
+
+	Please find below important details about your new device, and attached, you will find guide documentation to assist you with
+```
+
+---
+
+## EMAIL #160
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFEDC0000`
+- **Direction:** received
+- **Date:** 2026-02-16T11:29:04.0980000
+- **Subject:** Re: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+- **From:** Michael Markman <michaelkmarkman@gmail.com>
+- **To:** ['Anxhela Veruari', 'Michael Markman']
+- **CC:** ['Harry Koka', 'Tana Dapaj', 'support@newenglandinnovations.zohodesk.com']
+- **Has Attachments:** True
+  - image001.png
+  - image002.png
+  - image003.png
+  - image004.png
+  - image005.png
+  - image006.png
+- **Thread ID:** 92634C0F3B027C45BCB81E2BBB6060DF
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Thanks - I received the computer and set everything up with the exception of Adobe as it was saying it required an admin to install it. We can do that at a later time this week perhaps.
+
+I am now setup on mike.markman@abivax.com <mailto:mike.markman@abivax.com>  (cc'd) so we can correspond there going forward.
+
+Thanks again,
+Mike
+
+On Mon, Feb 16, 2026 at 9:00 AM Anxhela Veruari <anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> > wrote:
+
+
+	Hello Michael,
+
+	 
+
+	I hope this email finds you well. 
+
+	 
+
+	According to the tracking information, you should have received the Abivax laptop by now.
+
+	 
+
+	Could you please provide us with a couple of available times to have a Zoom meeting and complete the IT onboarding process for your new laptop?
+
+	 
+
+	Best Regards,
+
+	Anxhela Veruari
+
+	 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+	 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in the future.
+
+ 
+
+	 
+
+	 
+
+	From: Anxhela Veruari 
+	Sent: Friday, February 13, 2026 3:44 PM
+	To: 'michaelKmarkman@gmail.com <mailto:michaelKmarkman@gmail.com> ' <michaelKmarkman@gmail.com <mailto:michaelKmarkman@gmail.com> >
+	Cc: Harry Koka <harry.koka@newenglandinnovations.com <mailto:harry.koka@newenglandinnovations.com> >; Tana Dapaj <tana.dapaj@newenglandinnovations.com <mailto:tana.dapaj@newenglandinnovations.com> >; support@newenglandinnovations.zohodesk.com <mailto:support@newenglandinnovations.zohodesk.com> 
+	Subject: NEI-ABX - Michael Markman - IT Onboarding Initial Communication
+
+	 
+
+	Hello Michael,
+
+	 
+
+	We hope this message finds you well.
+
+	 
+
+	Please find below important details about your new device, and attached, you will find guide documentation to assist you with the initial setup.
+
+	 
+
+	IT Onboarding Package Overview:
+
+	Delivery Address: 4140 Lassiter Mill Road, Raleigh, NC 27609
+
+	Shipment Carrier: UPS
+
+	Tracking Number: 1Z1X425W44759288
+
+	 
+
+	Domain Credentials:
+
+	Email: mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
+
+	Username: csi\mmarkman
+
+	Password: HelloFebruary2267!
+
+	 
+
+	Package Components:
+
+	1.                     Laptop Device
+
+	2.                     Confidentiality Screen
+
+	3.                     Mouse and Keyboard Set
+
+	 
+
+	Upon receiving the device, please notify us and contact the IT support team at support.abivax@mbvsi.fr <http://support.abivax@mbvsi.fr%20>  to complete the onboarding process for your account.
+
+	 
+
+	Best Regards,
+
+	Anxhela Veruari
+
+	 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ <https://newenglandinnovations.com/> 
+
+ 
+
+ANXHELA VERUARI
+
+SYSTEMS SUPPORT IT SPECIALIST
+
+ 
+
+ 617.644.0411
+
+ 617.910.1882
+
+ anxhela.veruari@newenglandinnovations.com <mailto:anxhela.veruari@newenglandinnovations.com> 
+
+ newenglandinnovations.com <https://newenglandinnovations.com/> 
+
+ 265 Franklin Street, Suite 1702,
+
+      Boston, MA 02110
+
+	 
+
+The content of this email is confidential and intended for the recipient specified in the message only. It is strictly forbidden to share any part of this message with any third party without the written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion so that we can ensure such an error does not occur in t
+```
+
+---
+
+## EMAIL #161
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFED90000`
+- **Direction:** received
+- **Date:** 2026-02-16T11:20:19.7570000
+- **Subject:** Vos profils Adobe sont maintenant configurés 
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** E03726BA703D514BB4AB4E50C62DF02A
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Découvrez comment gérer vos profils.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Bonjour Mike,
+
+Vos profils sont maintenant configurés. Lorsque vous vous connecterez, vous verrez un sélecteur qui vous permettra de choisir l’un des profils suivants :
+
+
+• 	 Votre profil professionnel, qui correspond à votre formule d’entreprise et à l’espace de stockage associé (par exemple, Creative Cloud abonnement Équipe, Entreprise ou Éducation, ou encore Acrobat pour les équipes ou les entreprises)	 
+• 	 Votre profil personnel, qui correspond à votre formule individuelle et à l’espace de stockage associé (par exemple, une formule Creative Cloud pour les particuliers ou Acrobat Pro)	 
+
+Votre contenu est désormais disponible dans le profil sélectionné lors de la configuration. Si vous avez choisi de migrer votre contenu vers votre profil professionnel et que certains fichiers n’ont pas pu être déplacés, vous les trouverez dans votre profil personnel.
+
+Si vous souhaitez changer de profil, il vous suffit de vous déconnecter pour avoir à nouveau accès au sélecteur, puis de choisir le profil de votre choix.
+
+Voici un article <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiJrSHE3MjNJNGUzQ2VHeWU2SVdOL3NjN1pzdjgzaElXT1lDdHpDOWhuTUs1VU1ac3pWT2dzUnJaanJVMzVLQVY3IiwicmVxdWVzdElkIjoiMDczNmM5YTQtOWQ1NS00M2RjLTljZTAtOGFjODA5YmI3ZjEwIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby91c2VyLXByb2ZpbGVzX2ZyIiwibGFiZWwiOiIxIiwibG9jYWxlIjoiZnJfRlIifQ.rjvlsx41Ax0iwDg9ZRb7z5uz1joJc1_B-E8C0zJemjS2UPd7YWfkrSB0w5g9fwV0wFOfEYfvOaQ5wO8CQqrLUg>  qui explique comment gérer vos profils. Pour toute question, veuillez contacter l’ assistance clientèle Adobe <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiJrSHE3MjNJNGUzQ2VHeWU2SVdOL3NjN1pzdjgzaElXT1lDdHpDOWhuTUs1VU1ac3pWT2dzUnJaanJVMzVLQVY3IiwicmVxdWVzdElkIjoiMDczNmM5YTQtOWQ1NS00M2RjLTljZTAtOGFjODA5YmI3ZjEwIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9jb250YWN0X2FkbWluX2ZyIiwibGFiZWwiOiIyIiwibG9jYWxlIjoiZnJfRlIifQ.5JntZ6n0c9P43Y7QoC3dSpTeY8HOfB_B3KCAwrQxk1vsE3tL0pKkTFjij87bvy5VeLlKkLoticd99aed4jkn8g> .
+
+Merci,
+L’équipe Adobe 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Gérer le compte <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiJrSHE3MjNJNGUzQ2VHeWU2SVdOL3NjN1pzdjgzaElXT1lDdHpDOWhuTUs1VU1ac3pWT2dzUnJaanJVMzVLQVY3IiwicmVxdWVzdElkIjoiMDczNmM5YTQtOWQ1NS00M2RjLTljZTAtOGFjODA5YmI3ZjEwIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9hY2NvdW50X2ZyIiwibGFiZWwiOiIzIiwibG9jYWxlIjoiZnJfRlIifQ.GzVwTAEv3CQOpLIxNaQFUnthsb4WtEbw8pLhbycYEK_ZmxxxD-E84R8fqDh1t0sQC_4b2G1lrfBEHgkxOP8z0Q> 
+Service client <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiJrSHE3MjNJNGUzQ2VHeWU2SVdOL3NjN1pzdjgzaElXT1lDdHpDOWhuTUs1VU1ac3pWT2dzUnJaanJVMzVLQVY3IiwicmVxdWVzdElkIjoiMDczNmM5YTQtOWQ1NS00M2RjLTljZTAtOGFjODA5YmI3ZjEwIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9zdXBwb3J0X2ZyIiwibGFiZWwiOiI0IiwibG9jYWxlIjoiZnJfRlIifQ.SiPdh6uGKpzXFPpB1i4tGWE01KvkXNAdEX8abQ9HAQWp0_V2ayR6ituG9QJMjAYHbLNHa5tmot4BqGsEqyUSbg> 
+Forums <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiJrSHE3MjNJNGUzQ2VHeWU2SVdOL3NjN1pzdjgzaElXT1lDdHpDOWhuTUs1VU1ac3pWT2dzUnJaanJVMzVLQVY3IiwicmVxdWVzdElkIjoiMDczNmM5YTQtOWQ1NS00M2RjLTljZTAtOGFjODA5YmI3ZjEwIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9mb3J1bXNfZnIiLCJsYWJlbCI6IjUiL
+```
+
+---
+
+## EMAIL #162
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFED80000`
+- **Direction:** received
+- **Date:** 2026-02-16T11:19:58.5170000
+- **Subject:** Vos profils Adobe sont maintenant configurés 
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** FCA5E61141B954498185BE7956A7FEC0
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Découvrez comment gérer vos profils.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Bonjour Michael,
+
+Vos profils sont maintenant configurés. Lorsque vous vous connecterez, vous verrez un sélecteur qui vous permettra de choisir l’un des profils suivants :
+
+
+• 	 Votre profil professionnel, qui correspond à votre formule d’entreprise et à l’espace de stockage associé (par exemple, Creative Cloud abonnement Équipe, Entreprise ou Éducation, ou encore Acrobat pour les équipes ou les entreprises)	 
+• 	 Votre profil personnel, qui correspond à votre formule individuelle et à l’espace de stockage associé (par exemple, une formule Creative Cloud pour les particuliers ou Acrobat Pro)	 
+
+Votre contenu est désormais disponible dans le profil sélectionné lors de la configuration. Si vous avez choisi de migrer votre contenu vers votre profil professionnel et que certains fichiers n’ont pas pu être déplacés, vous les trouverez dans votre profil personnel.
+
+Si vous souhaitez changer de profil, il vous suffit de vous déconnecter pour avoir à nouveau accès au sélecteur, puis de choisir le profil de votre choix.
+
+Voici un article <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiIvRVdZdk9EY1AyeENqRWhvTlF2QW8rUm56Y0JwUFdBTDVNMmd6T3JCeDFKVEltTWhNcVlqV3AxU0J0SFhQVmVSIiwicmVxdWVzdElkIjoiMzI5ZThlYjQtODllNy00MzlkLTk2ZWEtZGI5MTA4ZDcwYjgyIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby91c2VyLXByb2ZpbGVzX2ZyIiwibGFiZWwiOiIxIiwibG9jYWxlIjoiZnJfRlIifQ.Kio9fI8tcF4e2wUBRghCupL-pLy2er5i-MkZ6-rPUAPGikW7ACuoy-_NlMQGuMzdOa4s8S00rTSVnvQVdmsk6g>  qui explique comment gérer vos profils. Pour toute question, veuillez contacter l’ assistance clientèle Adobe <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiIvRVdZdk9EY1AyeENqRWhvTlF2QW8rUm56Y0JwUFdBTDVNMmd6T3JCeDFKVEltTWhNcVlqV3AxU0J0SFhQVmVSIiwicmVxdWVzdElkIjoiMzI5ZThlYjQtODllNy00MzlkLTk2ZWEtZGI5MTA4ZDcwYjgyIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9jb250YWN0X2FkbWluX2ZyIiwibGFiZWwiOiIyIiwibG9jYWxlIjoiZnJfRlIifQ.KX6a_WlQ26E6ok31YwCLBqPyqFkHBtyco3uQTGRCzY-k2OG0w7aipJZZQOaUqA7QH351gwj28SYNd9feSonuvg> .
+
+Merci,
+L’équipe Adobe 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Gérer le compte <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiIvRVdZdk9EY1AyeENqRWhvTlF2QW8rUm56Y0JwUFdBTDVNMmd6T3JCeDFKVEltTWhNcVlqV3AxU0J0SFhQVmVSIiwicmVxdWVzdElkIjoiMzI5ZThlYjQtODllNy00MzlkLTk2ZWEtZGI5MTA4ZDcwYjgyIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9hY2NvdW50X2ZyIiwibGFiZWwiOiIzIiwibG9jYWxlIjoiZnJfRlIifQ.0YhLupMrun7_KheUgOW0of_FxPihUpNV8Ju6VSpBXZDx6danT3kbxLCqj_Yj5vKjt0TUo9Gnr2lMRoCb3wGa9Q> 
+Service client <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiIvRVdZdk9EY1AyeENqRWhvTlF2QW8rUm56Y0JwUFdBTDVNMmd6T3JCeDFKVEltTWhNcVlqV3AxU0J0SFhQVmVSIiwicmVxdWVzdElkIjoiMzI5ZThlYjQtODllNy00MzlkLTk2ZWEtZGI5MTA4ZDcwYjgyIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9zdXBwb3J0X2ZyIiwibGFiZWwiOiI0IiwibG9jYWxlIjoiZnJfRlIifQ.id-YNvsuryqpOH0XGIWtScEfhXUIm_bbfUncRl6p8T5RuUdtjg6dtGeNal8THgKqB1vx_T2IEIluvmz7hw9jSQ> 
+Forums <https://apo-prod.adobe.io/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6ImJsZXRoZXJfZW9hX2Fzc2V0X21pZ3JhdGlvbl9jb21wbGV0ZWQiLCJlbWFpbEFkZHJlc3MiOiIvRVdZdk9EY1AyeENqRWhvTlF2QW8rUm56Y0JwUFdBTDVNMmd6T3JCeDFKVEltTWhNcVlqV3AxU0J0SFhQVmVSIiwicmVxdWVzdElkIjoiMzI5ZThlYjQtODllNy00MzlkLTk2ZWEtZGI5MTA4ZDcwYjgyIiwibGluayI6Imh0dHBzOi8vd3d3LmFkb2JlLmNvbS9nby9mb3J1bXNfZnIiLCJsYWJlbCI6Ij
+```
+
+---
+
+## EMAIL #163
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFED70000`
+- **Direction:** received
+- **Date:** 2026-02-16T11:19:31.1320000
+- **Subject:** Verification code
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** 6ACBFA48EB812E4FA42575874459662B
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Your account can’t be accessed without this verification code, even if you didn’t submit this request.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Your verification code is:	 
+986989	 
+To keep your account secure, we recommend using a unique password for your Adobe account or using the Adobe Account Access app to sign in. Adobe Account Access’ two-factor authentication makes signing in to your account easier, without needing to remember or change passwords.
+
+Learn more <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2QxLTQ0NzItYmQ3Ni02ZWMzNWYwNzI1NmMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3Bhc3N3b3JkbGVzc19mYXEiLCJsYWJlbCI6IjkiLCJsb2NhbGUiOiJlbl9VUyJ9.2xzwSy3e7ZT2dvbhstslTEZ_rgi_k7weaPWO1NWAE-oFZg3CgAlQtT_mXaI21JNrBT70EguFgIQEBRMViPDDEg>  and download the Adobe Account Access app.	 
+ <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2QxLTQ0NzItYmQ3Ni02ZWMzNWYwNzI1NmMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWFwcC1zdG9yZSIsImxhYmVsIjoiMTAiLCJsb2NhbGUiOiJlbl9VUyJ9.6-r9mQ3KB028Mk8gxHPf_mujGRnVpppNu_EsiCTHXyBbH_jzCLeJArvf5RqZlR80-rRbDnxjguQk2f4RybqTgA> 	  	  <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2QxLTQ0NzItYmQ3Ni02ZWMzNWYwNzI1NmMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWdvb2dsZS1wbGF5IiwibGFiZWwiOiIxMSIsImxvY2FsZSI6ImVuX1VTIn0.XBwlZrxzB9aFBXEtDxldc6NE4ULnvy86tHuSRCCFDQY7QaKx_6Sg5fy70S-dK7GbUPD1kCB1Yvz-_y_cRAeCVQ> 	 
+If you have any questions, please contact Support <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2QxLTQ0NzItYmQ3Ni02ZWMzNWYwNzI1NmMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnQiLCJsYWJlbCI6IjEyIiwibG9jYWxlIjoiZW5fVVMifQ.LSFSdizsuid937fvkdz35F99yPQA_NsWhuko4UD3D4qA-jQnMVdGOcNxuBKZ93FQZArXidoCbAnp9aruzkI3rQ> .	 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Manage Account <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2QxLTQ0NzItYmQ3Ni02ZWMzNWYwNzI1NmMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2FjY291bnQiLCJsYWJlbCI6IjEzIiwibG9jYWxlIjoiZW5fVVMifQ.n306fMNBqBJH8G96ZA9m0ew7kYfy4T891pPA4U52oSlOaX9gTboH7JEC3l39tViyq4Jl687XSH1_QEG3sMv0bA> 
+Customer Support <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2QxLTQ0NzItYmQ3Ni02ZWMzNWYwNzI1NmMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnQiLCJsYWJlbCI6IjE0IiwibG9jYWxlIjoiZW5fVVMifQ.SyKGSUN0KK1Mkr-2myTKEQXyZ5fbKs5sPlKOyWxMpjILdpNLWyw3fmYMEYNlx3Sdsp2b6SyL9n20eGTPApgc5Q> 
+Forums <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI5ZDRhNjNlMy05Y2Q
+```
+
+---
+
+## EMAIL #164
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFED60000`
+- **Direction:** received
+- **Date:** 2026-02-16T11:19:17.3250000
+- **Subject:** Verification code
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** FBE2862DA1562E4DB7423E2244F57CE1
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Your account can’t be accessed without this verification code, even if you didn’t submit this request.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Your verification code is:	 
+271501	 
+To keep your account secure, we recommend using a unique password for your Adobe account or using the Adobe Account Access app to sign in. Adobe Account Access’ two-factor authentication makes signing in to your account easier, without needing to remember or change passwords.
+
+Learn more <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWRhLTQxNTktOGFkZC0xMTBjNDc0MjJjMGEiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3Bhc3N3b3JkbGVzc19mYXEiLCJsYWJlbCI6IjkiLCJsb2NhbGUiOiJlbl9VUyJ9.9hw5ZUr92c165_oelITD5nqoc1RBkYLrCEHDREbt_H1oiZTVXu2CpvyeuUfP3TVwMnJSpp44fqhKad72E04XAw>  and download the Adobe Account Access app.	 
+ <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWRhLTQxNTktOGFkZC0xMTBjNDc0MjJjMGEiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWFwcC1zdG9yZSIsImxhYmVsIjoiMTAiLCJsb2NhbGUiOiJlbl9VUyJ9.V_lD_BjhJzDwqA97pVDh4jZJMzFHXbPcZti7GjvKNgbGRG7Da0Z5F5mRa0TkcDxnksj3InuoTY5IkFQHqISbdQ> 	  	  <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWRhLTQxNTktOGFkZC0xMTBjNDc0MjJjMGEiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWdvb2dsZS1wbGF5IiwibGFiZWwiOiIxMSIsImxvY2FsZSI6ImVuX1VTIn0.RuBSHOlBg6gl2x1t6l4oSMBnaHSqy5Pyx6jmultFfIds2nxLNdu_CMoZY3x3ULaCqto3imuiWYEe1zz_KH-zdQ> 	 
+If you have any questions, please contact Support <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWRhLTQxNTktOGFkZC0xMTBjNDc0MjJjMGEiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnQiLCJsYWJlbCI6IjEyIiwibG9jYWxlIjoiZW5fVVMifQ.VlDQkikbHJ5SNfXfAf_P4ihSP9V_qBVOOAioJFhm-Qwkp9fe9RZGSaR4pdPHBAKc3xUaZQ9xluC_62uf7paWmw> .	 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Manage Account <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWRhLTQxNTktOGFkZC0xMTBjNDc0MjJjMGEiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2FjY291bnQiLCJsYWJlbCI6IjEzIiwibG9jYWxlIjoiZW5fVVMifQ.cshBsSiws4OFKYNe93_ImJB7A-rX9e5W47k2I5-zhp8R5yV3xFAefFM1KLFFRPOnxCdaP4AekqylBqMgPMGaGA> 
+Customer Support <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWRhLTQxNTktOGFkZC0xMTBjNDc0MjJjMGEiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnQiLCJsYWJlbCI6IjE0IiwibG9jYWxlIjoiZW5fVVMifQ.tpCgFpK5KuqoZeKfwUCZPOuwpPlGc5-I04AfdmSIcswQha0grZ15VuFmzLaDiUPQDG0qPgbIGBKuU7ccUFi18w> 
+Forums <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiJlYjhjZGZlNi1hMWR
+```
+
+---
+
+## EMAIL #165
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000094EFED50000`
+- **Direction:** received
+- **Date:** 2026-02-16T10:30:13.6480000
+- **Subject:** Verification code
+- **From:** Adobe <message@adobe.com>
+- **To:** ['Michael Markman']
+- **CC:** []
+- **Has Attachments:** False
+- **Thread ID:** CB357FBD6A532B43ACDACB39543695EE
+- **Folder:** inbox
+
+**Body Text:**
+
+```
+Your account can’t be accessed without this verification code, even if you didn’t submit this request.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Your verification code is:	 
+821788	 
+To keep your account secure, we recommend using a unique password for your Adobe account or using the Adobe Account Access app to sign in. Adobe Account Access’ two-factor authentication makes signing in to your account easier, without needing to remember or change passwords.
+
+Learn more <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2RkLTQ4YTctOWQxZC04MjBjNzNmNmY3MGMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3Bhc3N3b3JkbGVzc19mYXEiLCJsYWJlbCI6IjkiLCJsb2NhbGUiOiJlbl9VUyJ9.63HXTNYGIZWVpCkYYVeqZa1PIyhHflfxCKgvTB4EFJeu7CGS18UIp1fDL5kKHwFD1QlhknFjH3EaRjQonLvK0Q>  and download the Adobe Account Access app.	 
+ <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2RkLTQ4YTctOWQxZC04MjBjNzNmNmY3MGMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWFwcC1zdG9yZSIsImxhYmVsIjoiMTAiLCJsb2NhbGUiOiJlbl9VUyJ9.4eLfLDRTzA9lXOL0JNANx93A6pIZVd3GLzG4Tk8iKuYHz3FOhpi9D9Ws1GSABweKfLLGANlzrB3AD6Q0zOeAXA> 	  	  <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2RkLTQ4YTctOWQxZC04MjBjNzNmNmY3MGMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2Fkb2JlLWFjY291bnQtYWNjZXNzLWdvb2dsZS1wbGF5IiwibGFiZWwiOiIxMSIsImxvY2FsZSI6ImVuX1VTIn0.K5vtOs7arvHi-mAFAFbNu5-4r4f2rFOY293Ok_znOfGPqr8KfB6bZARygbqeS_vBGdWJBTFpKRQAa-UyOM7KuQ> 	 
+If you have any questions, please contact Support <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2RkLTQ4YTctOWQxZC04MjBjNzNmNmY3MGMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnQiLCJsYWJlbCI6IjEyIiwibG9jYWxlIjoiZW5fVVMifQ.f5i4s8CZaHT-P4pt62GZIawZRa0hJQ0Np3oXtsQ0CJD55Ko9hi7AMERPlP5PvnTOYX1s7020rovkGeYjEbFU6A> .	 
+ <https://landing.adobe.com/dam/global/images/adobe-logo.320x80.png> 	
+Manage Account <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2RkLTQ4YTctOWQxZC04MjBjNzNmNmY3MGMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL2FjY291bnQiLCJsYWJlbCI6IjEzIiwibG9jYWxlIjoiZW5fVVMifQ.HL97ixLOTA0BXbDieJ3eZ-T_GEnzSbd4V56ekqYcyisUWiI018YB1mvkypS6hksDjLuJ-VPCh3SF83w52YKLFA> 
+Customer Support <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2RkLTQ4YTctOWQxZC04MjBjNzNmNmY3MGMiLCJsaW5rIjoiaHR0cHM6Ly93d3cuYWRvYmUuY29tL2dvL3N1cHBvcnQiLCJsYWJlbCI6IjE0IiwibG9jYWxlIjoiZW5fVVMifQ.e5HDYuw1JAxrlBryinHaDxXtd_yyQnCCXwQKCxkb6GlqfctCNUnwb4TbTX5dnn_DWALVYgC3yUPopRIYpmqWbw> 
+Forums <https://postoffice.adobe.com/po-server/link/redirect?target=eyJhbGciOiJIUzUxMiJ9.eyJ0ZW1wbGF0ZSI6Imltc19zb2NpYWxfbGlua2luZ19jb2RlIiwiZW1haWxBZGRyZXNzIjoibWlrZS5tYXJrbWFuQGFiaXZheC5jb20iLCJyZXF1ZXN0SWQiOiI4OGQ1NjNmNC0zN2R
+```
+
+---
+
+## EMAIL #166
+
+- **ID:** `000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90B70000`
+- **Direction:** sent
+- **Date:** 2026-02-16T10:29:08.9320000
+- **Subject:** RE: Hotel Booking for Michael Markman - booking confirmation M Social (March 2026)
+- **From:** Michael Markman </O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60>
+- **To:** ['Emilie Leveau', 'Michael Markman']
+- **CC:** ['Hema Keshava']
+- **Has Attachments:** True
+  - image001.png
+- **Thread ID:** 7A19E444813D2141B53645C20D0703EB
+- **Folder:** sent
+
+**Body Text:**
+
+```
+Thank you very much Emilie!
+
+ 
+
+-Mike
+
+ 
+
+From: Emilie Leveau <Emilie.Leveau@abivax.com> 
+Sent: Wednesday, February 11, 2026 11:57 AM
+To: Michael Markman <michaelkmarkman@gmail.com>; Michael Markman <mike.markman@abivax.com>
+Cc: Hema Keshava <Hema.Keshava@abivax.com>
+Subject: RE: Hotel Booking for Michael Markman - booking confirmation M Social (March 2026)
+
+ 
+
+Hi Mike,
+
+ 
+
+I’m happy to confirm that the M Social hotel had availability. Please find attached your reservation details. It is guaranteed with my corporate card, but payment will be due at check-out.
+
+ 
+
+I’ve booked you on the same dates as Hema, ie from Saturday, March 14th but with a real arrival on Sunday, March 15th. This enables you to access your room as soon as you arrive on the 15th morning vs early afternoon. Your departure is on Friday, March 20th. If your dates need to be amended, please let me know.
+
+ 
+
+I look forward to meeting you next month.
+
+ 
+
+Best regards,
+
+ 
+
+Emilie
+
+ 
+
+ 
+
+
+
+Emilie Leveau
+HR Administrative & Office Manager
+
+ 
+
+7-11 bld Haussmann 75009 Paris, France 
+
+Mobile : +33 (0) 6 73 48 13 38
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+emilie.leveau@abivax.com <mailto:emilie.leveau@abivax.com> 
+
+	
+
+ 
+
+Next OOO :
+
+February 26th & 27th 
+
+ 
+
+From: Michael Markman <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> > 
+Sent: Wednesday, February 11, 2026 5:28 PM
+To: Emilie Leveau <Emilie.Leveau@abivax.com <mailto:Emilie.Leveau@abivax.com> >
+Cc: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> >
+Subject: Re: Hotel Booking for Michael Markman
+
+ 
+
+Thanks Emilie. Please let me know if you need anything from me. 
+
+ 
+
+Thanks,
+
+Mike
+
+ 
+
+ 
+
+On Wed, Feb 11, 2026 at 10:18 AM Emilie Leveau <Emilie.Leveau@abivax.com <mailto:Emilie.Leveau@abivax.com> > wrote:
+
+	Hi Hema,
+
+	 
+
+	All is well, thanks. Hope for you too.
+
+	 
+
+	Yes, you’re booked at the M Social from March 14th (the room is secured for an early arrival on 15th) to 20th (departure). I will contact the hotel and confirm if there is availability for a room for Mike. I’ll let you know soonest.
+
+	 
+
+	And welcome Mike!
+
+	 
+
+	Best regards,
+
+	 
+
+	Emilie
+
+	 
+
+	 
+
+
+
+Emilie Leveau
+HR Administrative & Office Manager
+
+ 
+
+7-11 bld Haussmann 75009 Paris, France <https://www.google.com/maps/search/7-11+bld+Haussmann+75009+Paris,+France?entry=gmail&source=g>  
+
+Mobile : +33 (0) 6 73 48 13 38
+
+ 
+
+www.abivax.com <http://www.abivax.com/> 
+
+emilie.leveau@abivax.com <mailto:emilie.leveau@abivax.com> 
+
+	
+
+	 
+
+	Next OOO :
+
+	February 26th & 27th 
+
+	 
+
+	From: Hema Keshava <Hema.Keshava@abivax.com <mailto:Hema.Keshava@abivax.com> > 
+	Sent: Wednesday, February 11, 2026 2:31 PM
+	To: Emilie Leveau <Emilie.Leveau@abivax.com <mailto:Emilie.Leveau@abivax.com> >
+	Cc: Michael Markman <michaelkmarkman@gmail.com <mailto:michaelkmarkman@gmail.com> >
+	Subject: Hotel Booking for Michael Markman
+
+	 
+
+	Hi Emilie,
+
+	Hope you’re doing well.  We have a new VP, Global ERP Lead, reporting in to Didier Blondel.  Mike officially starts next Tuesday but has already been joining some of our meetings etc.
+
+	Mike will be coming to Paris at the same time as me (March 15 – March 20).  Would you be able to book him a room at the M Social as well?  I believe my reservation starts on March 14, correct?
+
+	 
+
+	Thank you!
+
+	 
+
+
+
+Hema Keshava 
+SVP, Finance
+
++1 646-479-0069
+
+www.abivax.com <http://www.abivax.com/> 
+
+hema.keshava@abivax.com <mailto:hema.keshava@abivax.com>
+```
+
+---
+

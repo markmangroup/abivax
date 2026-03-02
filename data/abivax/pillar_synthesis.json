@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "Briefing-quality synthesis of the ERP program. Answers any meeting question in 30 seconds per pillar. Sits above erp_pillar_baselines.json (which holds operational detail) and feeds both live UI pages and PPTX generation.",
     "version": 1,
-    "synthesizedAt": "2026-02-28",
+    "synthesizedAt": "2026-03-02",
     "synthesizedBy": "claude-session",
     "refreshInstructions": "When new context arrives (emails, meeting notes, vendor decks, SharePoint artifacts, CFTI updates), a Claude session should: (1) read this file + erp_pillar_baselines.json + the new context, (2) update the relevant pillar's currentStateSummary if material facts changed, (3) move items from currentStateUnknown to currentStateKnown if evidence arrived, (4) update keyDecisionsPending and nextMoves, (5) update lastRefreshedAt and synthesizedAt, (6) add a note to changeLog. Do not rewrite everything — only update what actually changed.",
     "dataRelationships": {
@@ -26,11 +26,13 @@
       { "date": "2026-04-01", "event": "Implementation Mobilization Target", "owner": "Mike / Hema / NetSuite", "deck": null }
     ],
     "topProgramRisks": [
-      "Commercial negotiation with NetSuite has no confirmed owner or timeline — delays here compress the April mobilization window.",
+      "Commercial negotiation owner confirmed: Mike Markman + Hema Keshava. Budget assumption: $1M Year 1. Timeline for signature still not locked — delays compress April mobilization window.",
       "Implementation scope is not confirmed — no contract, no blueprint start date, no resourcing plan.",
       "Internal capacity commitments by function are not documented — Finance, IT, and FP&A availability for ERP workstreams unknown.",
       "ITGC RCM still pending final validation — controls baseline for audit readiness is incomplete.",
-      "Adrian's controls pack not yet received — Audit Committee deck has 3 open data gaps."
+      "Controls slides for Audit Committee: Adrian Holbrook (FP&A) asked Mike to provide slides he will present. Mike is the author — source content from CFGI (Youness Tyamaz). This is an action item for Mike, not a waiting item.",
+      "Camille Girard (KPMG Audit liaison) has OOO on March 6 — if Audit Committee meeting is that date, she may not be available. Confirm with Hema.",
+      "NetSuite implementation timeline XLSX exists: Jamal Azil sent 'ABIVAX - Draft-Implementation Timeline V2.xlsx' Feb 23 — retrieve and assess before declaring Audit deck Gap #2 still open."
     ],
     "keyPeople": {
       "internalSponsors": ["Hema Keshava (CFO / internal ERP sponsor)", "Didier Blondel (CFO / executive sponsor)"],
@@ -51,7 +53,7 @@
       "shortLabel": "P2P",
       "programPhase": "active-fact-finding",
       "confidenceLevel": "partial",
-      "lastRefreshedAt": "2026-02-28",
+      "lastRefreshedAt": "2026-03-02",
 
       "currentStateSummary": "France SA runs a fragmented manual P2P process across Sage 100 (GL/invoicing), Trustpair (vendor validation), Agicap (cash/payments), and DocuShare (documents). No system-enforced approvals. Two vendor payment campaigns per month (10th and 25th). Evidence retention is manual and inconsistent. US LLC P2P baseline not yet documented.",
       "futureStateSummary": "NetSuite should enforce approval workflows end-to-end (vendor setup through payment), standardize France and US into a common control framework, reduce manual handoffs between Trustpair/Agicap/Sage, and create a traceable audit evidence path by transaction type.",
@@ -76,7 +78,7 @@
         "CFTI P2P RCM received and structure confirmed. Control IDs, statuses, and remediation columns exist."
       ],
       "currentStateUnknown": [
-        "US LLC P2P current-state flow and evidence practices — Kimberly/Matt responses still pending.",
+        "US LLC P2P current-state flow and evidence practices — Matt Epley confirmed docs in progress as of Feb 25; expected delivery Feb 25-26 (still not received by Mar 2).",
         "Exact Trustpair integration requirements for NetSuite — integration feasibility not yet confirmed.",
         "1099-specific process requirements (US).",
         "Full end-to-end exception handling path for vendor disputes/holds.",
@@ -120,9 +122,9 @@
       ],
 
       "waitingOn": [
-        "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs",
+        "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs — expected Feb 25-26; overdue as of Mar 2. Chase required.",
         "KPMG: P2P process detail follow-up (Camille / Aymen)",
-        "NetSuite: interface/integration classification response"
+        "NetSuite: interface/integration classification response (Jamal sent Interface Tracker V2.xlsx Feb 23 — retrieve and review)"
       ],
 
       "keyPeople": ["Trinidad Mesa (France P2P)", "Juliette (payment prep)", "Fatma (payment prep)", "Kimberly Gordon (US)", "Matt Epley (US)", "Hema Keshava", "KPMG (Camille/Aymen)"],
@@ -136,7 +138,7 @@
       "shortLabel": "Reporting",
       "programPhase": "active-fact-finding",
       "confidenceLevel": "partial",
-      "lastRefreshedAt": "2026-02-28",
+      "lastRefreshedAt": "2026-03-02",
 
       "currentStateSummary": "French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.",
       "futureStateSummary": "NetSuite should deliver a stronger quarterly reporting operating model immediately — better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.",
@@ -165,7 +167,7 @@
         "COA / cost center future-state design principles not formalized (global consistency vs entity separation).",
         "Department reporting expectations not standardized (clinical visibility, G&A/R&D split expectations unclear).",
         "Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.",
-        "Frederick response on FP&A reporting dimensions and core output needs still awaited.",
+        "Frederick response on FP&A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).",
         "Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance."
       ],
 
@@ -200,7 +202,7 @@
         "Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.",
         "Define minimum reporting dimension set with Frederick input.",
         "Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.",
-        "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs."
+        "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)"
       ],
 
       "waitingOn": [
@@ -220,7 +222,7 @@
       "shortLabel": "Controls",
       "programPhase": "active-fact-finding",
       "confidenceLevel": "partial",
-      "lastRefreshedAt": "2026-02-28",
+      "lastRefreshedAt": "2026-03-02",
 
       "currentStateSummary": "143 CFTI controls reviewed across P2P, FSCP, and IT. 45 out-of-scope for ERP. 9 ERP-signal controls identified. Active remediation tracker exists (CFTI macro/micro views with control IDs and statuses). ITGC RCM is pending final validation. Documented SOX findings and deficiency inventory not yet loaded into program. Evidence retention is fragmented across systems.",
       "futureStateSummary": "ERP should be governed as a control-remediation program, not just a technology rollout. NetSuite must embed approvals, SOD, and audit evidence retention into system design — not as compensating controls added after go-live. 9 ERP-signal controls are the minimum design checkpoints; all must have named remediation owners before blueprint starts.",
@@ -250,7 +252,7 @@
         "ITGC RCM not yet finalized — expected from CFTI after final validation (was 'next week' as of Feb 25).",
         "Evidence retention paths for critical flows not mapped.",
         "Explicit prioritization of 9 ERP-signal controls for blueprint sequencing not yet done.",
-        "Adrian Holbrook's 3-slide controls pack not yet received — open data gap in Audit Committee deck."
+        "Controls slides for Audit Committee: Adrian Holbrook (Sr. Financial Analyst, FP&A) asked Mike to provide the slides. Mike is the author; Adrian will present. Mike should source controls content from CFGI (Youness Tyamaz) to populate the slides."
       ],
 
       "erpDesignRequirements": [
@@ -281,7 +283,7 @@
 
       "nextMoves": [
         "Follow up on ITGC RCM from CFTI (was expected 'next week' as of Feb 25).",
-        "Receive Adrian's 3-slide controls pack — this is an open data gap in the Audit Committee deck.",
+        "Create controls slides for Adrian Holbrook to present at Audit Committee — Mike is author; source narrative from CFGI (Youness Tyamaz) RCM documents.",
         "Extract deficiency inventory from Hema/CFTI responses and classify: ERP-addressable / non-ERP remediation / management decision.",
         "Map 9 ERP-signal controls to named owners and draft dated remediation commitments.",
         "Use CFTI tracker structure as baseline format for audit committee reporting."
@@ -289,9 +291,9 @@
 
       "waitingOn": [
         "Hema: SOX findings, remediation tracker location, control narratives",
-        "Jade: IT control gaps, interface monitoring docs, admin ownership matrix",
-        "CFTI (Walid/Youness): ITGC RCM final validation",
-        "Adrian Holbrook: 3-slide controls pack (open data gap — Audit Committee deck)"
+        "Jade: IT control gaps, interface monitoring docs, admin ownership matrix (English version in progress with Denis)",
+        "CFTI / Youness Tyamaz: ITGC RCM final validation; and source content for Audit Committee controls slides (Mike is building these, not Adrian)",
+        "Robin Lapous (KPMG consolidation): outreach deferred — hold during commercial negotiations; revisit when blueprint work begins"
       ],
 
       "keyPeople": ["Adrian Holbrook (controls lead)", "Camille Girard (Audit Committee liaison)", "Hema Keshava", "Jade Nguyen", "Walid Bouassida (CFTI)", "Youness Tyamaz (CFTI)"],
@@ -305,7 +307,7 @@
       "shortLabel": "Governance",
       "programPhase": "post-selection",
       "confidenceLevel": "strong",
-      "lastRefreshedAt": "2026-02-28",
+      "lastRefreshedAt": "2026-03-02",
 
       "currentStateSummary": "NetSuite selected Feb 26, 2026 following a structured Sep 2025–Feb 2026 selection process with KPMG support and vendor demos. Program is now in the post-selection window. No contract signed, no implementation scope confirmed, no implementation team assembled. April 2026 mobilization is the target.",
       "futureStateSummary": "By April 2026: commercial terms agreed with NetSuite, implementation scope confirmed, KPMG advisory role defined, internal capacity committed by function, governance cadence established. From April through Jan 1, 2027: blueprint → build → test → go-live with weekly governance and monthly exec/board updates.",
@@ -324,10 +326,14 @@
         "KPMG played advisory role in selection (Camille Girard / Aymen). Implementation advisory role not yet confirmed.",
         "IT org confirmed: Didier → Christophe Hennequin → Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP in 2026-2027 framing.",
         "Implementation vendor: NetSuite directly or NetSuite partner — not yet determined.",
-        "Governance model target: weekly program governance, monthly exec update, board-cycle readout, milestone-triggered escalation."
+        "Governance model target: weekly program governance, monthly exec update, board-cycle readout, milestone-triggered escalation.",
+        "NetSuite implementation timeline XLSX exists: Jamal Azil sent 'ABIVAX - Draft-Implementation Timeline V2.xlsx' on Feb 23 (email attachment). Retrieve before declaring Audit deck Gap #2 still open.",
+        "Contract law options shared by Camille (Feb 27): three structures under consideration (French law / US law / split). Legal review initiated with Thomas Descusses, Olivia Bui, Peggy Gambardella.",
+        "Board ERP checkpoint confirmed Mar 19 — Didier requested deck draft by Mar 13. Didier unavailable Feb 26-Mar 16 (US bank conferences).",
+        "Camille Girard OOO on March 6 — if Audit Committee meeting is that date, confirm logistics with Hema."
       ],
       "currentStateUnknown": [
-        "Commercial negotiation terms and owner — no confirmed negotiation lead or timeline.",
+        "Commercial negotiation owner: Mike Markman + Hema Keshava (confirmed Mar 2). Budget assumption: $1M Year 1, scale naturally thereafter. Contract timeline still to be locked with NetSuite.",
         "Implementation scope: not confirmed. No contract, no blueprint start date.",
         "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team — roles not separated.",
         "Internal capacity commitments by function — Finance, IT, FP&A availability for ERP workstreams unknown.",
@@ -386,6 +392,11 @@
       "date": "2026-02-28",
       "by": "claude-session",
       "summary": "Initial synthesis created from erp_pillar_baselines.json, cfti_control_register.json, erp_pillars.json, process_flow_diagram_payloads.json, timeline.json, and presentations.json. All four pillars populated. Program governance section added. Confidence levels set to 'partial' across P2P, Reporting, and Controls — all three are in active fact-finding phase. Governance set to 'strong' given selection decision is confirmed."
+    },
+    {
+      "date": "2026-03-02",
+      "by": "claude-session",
+      "summary": "Email analysis pass on 166 emails (Feb 16–Mar 2 window). Key updates: (1) P2P — Trinidad's 10-file France P2P bundle confirmed received; US P2P docs still pending from Matt Epley (expected Feb 25-26, not yet arrived). (2) Reporting — Frederick Golly FP&A request has no reply by Mar 2; Robin Lapous confirmed manual Excel, no docs. (3) Controls — CFGI engaged, FSCP + P2P RCM delivered; ITGC pending; Adrian Holbrook clarified as Sr. Financial Analyst (consolidator only) — escalate controls content to Youness Tyamaz. (4) Governance — NetSuite implementation timeline XLSX found in Jamal Azil's Feb 23 email (may close Audit deck Gap #2); Camille OOO March 6 flagged as scheduling risk; contract law options circulated (3 structures, legal review started); Board deck due Mar 13 to Didier. Program-level risks updated."
     }
   ]
 }

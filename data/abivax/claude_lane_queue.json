@@ -3,12 +3,14 @@
   "purpose": "Claude sidecar queue — synthesis, writing, and design tasks. Claude sessions ARE the pipeline agents for synthesis work. Read this file at every session start after CLAUDE.md and ARCHITECTURE.md.",
   "synthesisPrinciple": "Claude sessions do the judgment work that code does badly. When new context arrives (emails, decks, meeting notes), a Claude session reads it, updates pillar_synthesis.json and erp_pillar_baselines.json, and logs what changed. The UI displays those files. No rigid pipeline needed.",
   "summary": {
-    "itemCount": 8,
+    "itemCount": 13,
     "byLane": {
-      "synthesis": 3,
-      "writing": 2,
-      "design-critique": 3
-    }
+      "synthesis": 4,
+      "writing": 3,
+      "design-critique": 4,
+      "deferred": 2
+    },
+    "lastUpdated": "2026-03-02"
   },
   "items": [
     {
@@ -148,6 +150,84 @@
         "data/abivax/presentations.json"
       ],
       "promptHint": "Draft concise, factual post-selection comms templates aligned to early April mobilization target and explicit ownership boundaries."
+    },
+
+    {
+      "id": "claude-writing-audit-cmte-controls-slides-1",
+      "lane": "writing",
+      "priority": "urgent",
+      "title": "Create controls slides for Adrian Holbrook to present at Audit Committee (Mar 6)",
+      "why": "Adrian Holbrook (FP&A) asked Mike to provide controls slides that Adrian will present to the Audit Committee. Mike is the author. Source controls narrative from CFGI (Youness Tyamaz) RCM documents. This is an active Mike action item, not a waiting item.",
+      "triggerWhen": ["Mike is ready to draft controls slides for Audit Committee", "CFGI (Youness) content available"],
+      "files": [
+        "data/abivax/cfti_control_register.json",
+        "data/abivax/pillar_synthesis.json",
+        "outputs/Audit_Committee_ERP_Controls_Mar2026.pptx"
+      ],
+      "promptHint": "Help Mike draft 2-3 slides on ERP-addressable control gaps using CFGI RCM structure. Use CFTI control IDs, statuses, and the 9 ERP-signal controls as the backbone. Fact-based, no fluff. Format for an Audit Committee audience (not a controls deep-dive).",
+      "deadline": "2026-03-05"
+    },
+
+    {
+      "id": "claude-synthesis-open-threads-1",
+      "lane": "synthesis",
+      "priority": "medium",
+      "title": "Refresh open thread tracker after Audit Committee meeting (Mar 6)",
+      "why": "Several email threads from the Feb 16-Mar 2 analysis are unanswered or in-flight. These should be reviewed after the Audit Committee meeting to capture any new commitments, closures, or escalations.",
+      "raiseWhen": "After March 6 Audit Committee meeting",
+      "openThreads": [
+        { "item": "US P2P docs from Matt Epley / Kimberly Gordon", "expectedBy": "Mar 2 (overdue)" },
+        { "item": "Frederick Golly FP&A reporting dimensions", "expectedBy": "No deadline set" },
+        { "item": "CFGI debrief outcome (Walid/Youness call Feb 25)", "expectedBy": "Ongoing" },
+        { "item": "Roxandra Sturdza treasury walkthrough", "expectedBy": "Unknown" },
+        { "item": "Jade IT interface monitoring detail", "expectedBy": "Early next week (from Feb 25)" },
+        { "item": "Sage access setup completion (Denis)", "expectedBy": "Unknown" },
+        { "item": "NetSuite vendor references (Camille requesting)", "expectedBy": "TBD" },
+        { "item": "MDM Workshop date confirmation (Aymen poll)", "expectedBy": "TBD" },
+        { "item": "Audit Committee meeting confirmed date/time", "expectedBy": "Mar 2 (urgent)" }
+      ],
+      "promptHint": "Read email-analysis-2026-03-02.md section 5 (Unanswered threads). Cross-reference any new emails in the staging pipeline. Mark threads as closed/updated/still-open. Update pillar_synthesis.json waitingOn fields for affected pillars."
+    },
+
+    {
+      "id": "claude-design-today-program-signals-1",
+      "lane": "design-critique",
+      "priority": "medium",
+      "title": "Today page: add lightweight non-ERP program signal strip",
+      "why": "Broader Abivax context (CEO health, key departures, major events) surfaced in email analysis could be useful on the Today page as a secondary signal layer. This could help Mike stay aware of context that affects ERP conversations without cluttering the operator-first layout.",
+      "raiseWhen": "After Audit Committee and Board meeting sprint (post Mar 19). Lower priority than current pressing ERP deliverables.",
+      "proposal": "A collapsed 'Program Context' or 'Context Flags' section at the bottom of Today, showing 2-3 non-ERP signals (e.g., CEO status, key departures, upcoming scientific events). Read-only. Togglable. Feeds from a new signals layer in the data model.",
+      "files": [
+        "src/app/abivax/spine/today/TodayBriefClient.tsx",
+        "src/app/abivax/spine/today/page.tsx",
+        "collab/claude/MIKE_DESIGN_PREFERENCES.md"
+      ],
+      "promptHint": "Propose a minimal design pattern for a non-ERP context signal strip on the Today page. Should be read-only, low-noise, and collapsed by default. No new workflow mechanics. Output: layout sketch + field names for a new signals JSON file."
+    },
+
+    {
+      "id": "claude-deferred-robin-lapous-reporting-1",
+      "lane": "deferred",
+      "priority": "deferred",
+      "title": "Robin Lapous (KPMG consolidation) outreach and reporting current-state documentation",
+      "why": "Robin Lapous handles KPMG consolidation and IFRS adjustments — entirely manual in Excel, no documentation. This is critical input for the Reporting/Data pillar ERP design. However, this is not needed during commercial negotiations — it becomes critical when blueprint work begins.",
+      "raiseWhen": "After commercial negotiation milestone (contract signed or scope confirmed with NetSuite). Raise at start of blueprint phase.",
+      "triggerWhen": ["NetSuite contract signed", "Blueprint phase kickoff", "Frederick Golly FP&A response received (as companion outreach)"],
+      "files": [
+        "data/abivax/pillar_synthesis.json",
+        "data/abivax/erp_pillar_baselines.json"
+      ],
+      "promptHint": "Draft a short introduction email from Mike to Robin Lapous (rlapous@kpmg.fr). Request a 30-min call to understand current consolidation and IFRS adjustment process as ERP scope input. Reference Hema as the connector."
+    },
+
+    {
+      "id": "claude-deferred-hr-objectives-2026-1",
+      "lane": "deferred",
+      "priority": "deferred",
+      "title": "2026 Performance Objectives (Lucca) — set ERP-related objectives",
+      "why": "2026 objective cycle opened March 2. Deadline for objective setting is March 17. As ERP Program Director, Mike will need to set objectives tied to the ERP program milestones. Not urgent during current Audit Committee/Board sprint.",
+      "raiseWhen": "After Audit Committee (Mar 6) and before March 17 deadline",
+      "promptHint": "Help Mike draft 3-4 SMART objectives for the ERP program for 2026: e.g., contract signed by X, implementation started by X, controls remediation milestones, go-live readiness by Jan 1 2027. Align to program milestones in timeline.json."
     }
   ]
 }
