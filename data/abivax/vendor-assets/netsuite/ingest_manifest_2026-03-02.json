@@ -1,0 +1,14 @@
+﻿{
+    "source":  "Jamal Azil email [Not Virus Scanned] Re: ABIVAX Offer - Netsuite",
+    "sourceDate":  "2026-02-23T06:03:47.2150000",
+    "pulledAt":  "2026-03-02T10:36:41.9794643-05:00",
+    "pulledFiles":  [
+                        "ABIVAX  - Draft-Implementation Timeline V2.xlsx",
+                        "Interfaces ABIVAX.xlsx"
+                    ],
+    "missingRequestedFiles":  [
+                                  "ABIVAX - Interface Tracker V2.xlsx",
+                                  "ABIVAX_NetSuite Demo Feedback_v3.xlsx"
+                              ],
+    "note":  "Only two XLSX attachments were present in the Feb 23 Jamal email; demo feedback attachment was PPTX in the message body context."
+}
