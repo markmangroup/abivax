@@ -1,0 +1,83 @@
+﻿{
+  "id": "incremental-email-review-2026-03-03",
+  "processedAt": "2026-03-03T12:15:00-05:00",
+  "watermarkUsed": "2026-03-02T09:46:13.9843955-05:00",
+  "summary": {
+    "newEmailCount": 17,
+    "highSignalUpdates": 5
+  },
+  "highSignal": [
+    {
+      "received": "2026-03-03T04:58:31.8570000",
+      "sender": "Didier Blondel",
+      "subject": "RE: Touchpoint",
+      "signal": "Board prep guidance",
+      "facts": [
+        "Confirmed prep touchpoint for Tuesday March 17 (afternoon CET).",
+        "Requested explicit 'Risk / Risk mitigation' slide for board narrative; said this will resonate with Marc and Troy.",
+        "Confirmed credentials description is acceptable and forwarded to HR."
+      ],
+      "actions": [
+        "Ensure board/audit deck includes explicit risk/mitigation framing.",
+        "Use March 17 prep as readiness gate before March 19 board checkpoint."
+      ]
+    },
+    {
+      "received": "2026-03-02T15:38:12.4940000",
+      "sender": "Adrian Holbrook",
+      "subject": "Re: ERP Slides -> Request -> Due March 6th",
+      "signal": "Deadline pressure",
+      "facts": [
+        "Adrian sent reminder on March 6 slide deadline and asked for updates."
+      ],
+      "actions": [
+        "Maintain March 6 deadline visibility in board/audit queue and status summaries."
+      ]
+    },
+    {
+      "received": "2026-03-03T11:44:03.6270000",
+      "sender": "Juliette Courtot",
+      "subject": "PTP Process + your trip in Paris",
+      "signal": "PTP scheduling + doc offer",
+      "facts": [
+        "Juliette offered urgent PTP documentation/questions support before Paris week.",
+        "Requested meeting scheduling visibility due telework days (Mon/Thu)."
+      ],
+      "actions": [
+        "Create operator follow-up for Paris scheduling and request targeted PTP pre-read package."
+      ]
+    },
+    {
+      "received": "2026-03-03T05:56:11.7630000",
+      "sender": "Philippe Goncalves",
+      "subject": "Planning Q1 2026",
+      "signal": "Operational planning attachment",
+      "facts": [
+        "Q1 planning draft workbook shared; external partner availability still pending.",
+        "Workbook ingested to inbox assets for synthesis."
+      ],
+      "actions": [
+        "Review workbook for ERP timeline/resource dependencies and merge into governance planning."
+      ],
+      "savedDocument": "data/abivax/inbox_assets/2026-03-03-didier-followups/Abivax planning Q1 2026 social PBC.xlsx"
+    },
+    {
+      "received": "2026-03-02T09:54:41.8520000",
+      "sender": "security@getgitguardian.com",
+      "subject": "[markmangroup/abivax] Company Email Password exposed on GitHub",
+      "signal": "Security incident",
+      "facts": [
+        "GitGuardian flagged a company email password exposure in committed email staging history.",
+        "Repository and leak location links were included in the alert email."
+      ],
+      "actions": [
+        "Treat as immediate governance/security remediation item (credential rotation + repository hygiene)."
+      ]
+    }
+  ],
+  "forClaudeReview": [
+    "Validate board/audit deck includes explicit risk/mitigation framing per Didier guidance.",
+    "Review Q1 planning workbook and extract ERP-relevant dependencies into synthesis queues.",
+    "Ensure /today operator actions include March 17 prep gate, March 19 board readiness, Juliette scheduling follow-up, and security remediation tracking."
+  ]
+}

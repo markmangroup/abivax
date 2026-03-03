@@ -1,0 +1,76 @@
+﻿{
+    "capturedAt":  "2026-03-03T11:57:47.2388202-05:00",
+    "source":  "Outlook inbox incremental pull via scripts/export_recent_emails.ps1",
+    "watermarkUsed":  "2026-03-02T09:46:13.9843955-05:00",
+    "emails":  [
+                   {
+                       "sender":  "Didier Blondel",
+                       "received":  "2026-03-03T04:58:31.8570000",
+                       "subject":  "RE: Touchpoint",
+                       "hasAttachments":  true,
+                       "attachments":  [
+                                           "image001.png"
+                                       ],
+                       "savedDocs":  [
+
+                                     ],
+                       "note":  "Confirmed March 17 prep session and requested explicit Risk/Risk Mitigation slide for Marc/Troy board expectations."
+                   },
+                   {
+                       "sender":  "Adrian Holbrook",
+                       "received":  "2026-03-02T15:38:12.4940000",
+                       "subject":  "Re: ERP Slides -\u003e Request -\u003e Due March 6th ",
+                       "hasAttachments":  true,
+                       "attachments":  [
+                                           "Outlook-photo.png"
+                                       ],
+                       "savedDocs":  [
+
+                                     ],
+                       "note":  "Deadline reminder for March 6 audit slide package."
+                   },
+                   {
+                       "sender":  "Juliette Courtot",
+                       "received":  "2026-03-03T11:44:03.6270000",
+                       "subject":  "PTP Process + your trip in Paris",
+                       "hasAttachments":  true,
+                       "attachments":  [
+                                           "image001.png"
+                                       ],
+                       "savedDocs":  [
+
+                                     ],
+                       "note":  "Requested Paris-week scheduling and offered urgent PTP documentation ahead of in-person session."
+                   },
+                   {
+                       "sender":  "Philippe Goncalves",
+                       "received":  "2026-03-03T05:56:11.7630000",
+                       "subject":  "Planning Q1 2026",
+                       "hasAttachments":  true,
+                       "attachments":  [
+                                           "Abivax planning Q1 2026  social  PBC.xlsx",
+                                           "image001.png"
+                                       ],
+                       "savedDocs":  [
+                                         "Abivax planning Q1 2026 social PBC.xlsx"
+                                     ],
+                       "note":  "Q1 close planning workbook saved for ERP dependency review."
+                   },
+                   {
+                       "sender":  "security@getgitguardian.com",
+                       "received":  "2026-03-02T09:54:41.8520000",
+                       "subject":  "[markmangroup/abivax] Company Email Password exposed on GitHub",
+                       "hasAttachments":  false,
+                       "attachments":  [
+
+                                       ],
+                       "savedDocs":  [
+
+                                     ],
+                       "note":  "Critical security alert: credential exposure in committed email staging file; remediation required."
+                   }
+               ],
+    "filesSaved":  [
+                       "Abivax planning Q1 2026 social PBC.xlsx"
+                   ]
+}
