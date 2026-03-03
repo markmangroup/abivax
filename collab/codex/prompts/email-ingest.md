@@ -86,6 +86,22 @@ After a successful write, update (or create) `data/abivax/email_ingest_state.jso
 
 ---
 
+## Step 4.5: Sanitize staged email artifacts
+
+Before committing or pushing, run:
+
+`npm run email:sanitize-ingest`
+
+This redacts known credential patterns in staged email artifacts and prevents accidental leakage into git history.
+
+Then verify no known literals remain:
+
+`rg -n "[REDACTED]|W882cx\\{PE!|H2s&f/Hc!\\*|csi\\\\mmarkman|Password: [REDACTED]" data/abivax/emails_staging collab/claude/outputs`
+
+Expected result: no matches.
+
+---
+
 ## Step 5: Do not analyze or modify anything else
 
 Do not touch `pillar_synthesis.json`, `erp_pillar_baselines.json`, page components, or any other data files. Do not attempt to categorize or tag emails. The staged files will be handed off to a Claude session for analysis.

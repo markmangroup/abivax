@@ -14,6 +14,7 @@
     "email:scan-context": "powershell -ExecutionPolicy Bypass -File scripts/export_recent_emails.ps1 -DaysBack 2 -MaxItems 300 && node scripts/analyze_email_context.js",
     "email:sync-context": "powershell -ExecutionPolicy Bypass -File scripts/export_recent_emails.ps1 -DaysBack 2 -MaxItems 300 && node scripts/analyze_email_context.js --write-entities",
     "email:export-sent": "powershell -ExecutionPolicy Bypass -File scripts/export_recent_sent_emails.ps1 -DaysBack 5 -MaxItems 300",
+    "email:sanitize-ingest": "node scripts/sanitize_email_ingest_artifacts.js",
     "email:export-cfti-attachments": "powershell -ExecutionPolicy Bypass -File scripts/export_cfti_control_attachments.ps1",
     "agent:pillar-email-sync": "node scripts/reconcile_pillar_email_status.js",
     "agent:cfti-controls-intake": "node scripts/build_cfti_controls_intake.js",
