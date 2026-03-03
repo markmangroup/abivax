@@ -204,6 +204,152 @@
       "lastUpdated": "2026-02-26"
     },
     {
+      "id": "audit-committee-erp-overview-20260306",
+      "title": "Audit Committee ERP Overview",
+      "audience": "Audit Committee / Adrian Holbrook",
+      "meetingDate": "2026-03-06",
+      "owner": "Mike Markman",
+      "status": "ready",
+      "objective": "Introduce the ERP program to the Audit Committee at a high level — NetSuite selection, timeline, and financials. Establish awareness and directional endorsement. Controls deep-dive deferred to a future meeting.",
+      "narrative": [
+        "This is a first introduction to the ERP program for the Audit Committee.",
+        "Content is deliberately high-level: what it is, when, and how much.",
+        "The ask is awareness and endorsement, not detailed control accountability — that comes later.",
+        "A controls-posture deep-dive will be scheduled once the implementation blueprint phase begins."
+      ],
+      "keyMessages": [
+        "NetSuite selected over SAP. April 2026 mobilization. Jan 1, 2027 go-live.",
+        "This is a SOX-remediation program, not only a technology rollout.",
+        "Controls deep-dive briefing to follow at a future meeting."
+      ],
+      "dataRequests": [],
+      "artifacts": [
+        {
+          "id": "aov-art-1",
+          "title": "Camille KPMG Audit Committee Draft (Feb 26, 2026)",
+          "type": "deck",
+          "status": "available",
+          "source": "data/abivax/inbox_assets/2026-03-02-camille-philippe/abivax - audit committee 020326.pptx",
+          "link": "",
+          "owner": "KPMG / Camille Girard",
+          "notes": "KPMG-produced source deck covering overview, timeline, and financial breakdown. Used as fact-check source for this presentation."
+        },
+        {
+          "id": "aov-art-2",
+          "title": "NetSuite Commercial Review Notes (Mar 3, 2026)",
+          "type": "meeting-notes",
+          "status": "available",
+          "source": "collab/claude/outputs/netsuite-commercial-review-notes-2026-03-03.md",
+          "link": "",
+          "owner": "Codex",
+          "notes": "Oracle/NetSuite call findings — confirmed contacts, 5 commercial issues, commercial figures validated."
+        }
+      ],
+      "slidePlan": [
+        {
+          "id": "aov-slide-1",
+          "section": "Title",
+          "title": "ERP Program Overview — Audit Committee Briefing",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "title",
+          "notes": "Dark navy title slide. Mike Markman as author. KPMG credited for selection-phase support.",
+          "content": [
+            "Title slide only."
+          ]
+        },
+        {
+          "id": "aov-slide-2",
+          "section": "Overview",
+          "title": "ERP Program Overview",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "3-column cards",
+          "notes": "Why we're doing this / Why NetSuite / Program ownership. NetSuite selected Feb 26 over SAP.",
+          "content": [
+            "Why: fragmented manual systems, inconsistent controls, not scalable for SEC filing.",
+            "Why NetSuite: 9-month implementation, SaaS-native, multi-GAAP, biotech track record.",
+            "Ownership: Mike Markman (ERP Lead), Hema Keshava (CFO Sponsor), NetSuite delivery team."
+          ]
+        },
+        {
+          "id": "aov-slide-3",
+          "section": "Timeline",
+          "title": "Implementation Timeline",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "phase bar + milestone cards",
+          "notes": "Mar 15 prep → Dec 27 go-live. 5 phases. 4 pre-condition cards.",
+          "content": [
+            "Mar 15 – Apr 2026: Initiate & Design",
+            "May – Aug 2026: Configure & Build",
+            "Sep – Oct 2026: Test & Validate",
+            "Nov – Dec 15: Migration & UAT",
+            "Dec 27: GO-LIVE. Jan 1, 2027 non-negotiable."
+          ]
+        },
+        {
+          "id": "aov-slide-4",
+          "section": "Financials",
+          "title": "Financial Overview",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "3 stat cards + 2 breakdown columns",
+          "notes": "Figures confirmed by KPMG. License/SOW in transit from Oracle.",
+          "content": [
+            "Year 1: €650,129 (€463,120 build + €187,009 run)",
+            "3-year total: €1,023,264",
+            "5-year total: €1,398,163",
+            "142 users, 29% discount, 392 man-days at €1,135.51/day"
+          ]
+        },
+        {
+          "id": "aov-slide-5",
+          "section": "Ask",
+          "title": "What We're Asking the Audit Committee",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "3 ask cards with numbered badges",
+          "notes": "Three asks: acknowledge program, endorse SOX frame, expect future controls deep-dive.",
+          "content": [
+            "01: Acknowledge program direction — NetSuite, April mobilization, Jan 1 go-live.",
+            "02: Endorse SOX/controls as primary program frame — not just a tech rollout.",
+            "03: Expect a controls deep-dive at a future meeting (Q3 2026, after blueprint phase)."
+          ]
+        }
+      ],
+      "actionLog": [
+        {
+          "date": "2026-02-19",
+          "author": "Adrian Holbrook",
+          "action": "Requested 3-slide Audit Committee pack (overview, timeline, financials) from Mike by March 6."
+        },
+        {
+          "date": "2026-03-02",
+          "author": "Camille Girard (KPMG)",
+          "action": "Provided KPMG-produced source deck covering ERP overview, timeline, and financial breakdown."
+        },
+        {
+          "date": "2026-03-03",
+          "author": "Claude",
+          "action": "Built high-level Audit Committee Overview deck (5 slides, light palette). Financials verified against KPMG source. Controls detail intentionally deferred to future meeting."
+        }
+      ],
+      "tags": [
+        "erp",
+        "audit",
+        "overview",
+        "netsuite",
+        "financials"
+      ],
+      "lastUpdated": "2026-03-03"
+    },
+    {
       "id": "audit-committee-erp-controls-202603week",
       "title": "Audit Committee ERP Controls Readout",
       "audience": "Audit Committee",
