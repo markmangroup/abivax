@@ -94,9 +94,9 @@ Before committing or pushing, run:
 
 This redacts known credential patterns in staged email artifacts and prevents accidental leakage into git history.
 
-Then verify no known literals remain:
+Then verify no unredacted credential labels remain:
 
-`rg -n "[REDACTED]|W882cx\\{PE!|H2s&f/Hc!\\*|csi\\\\mmarkman|Password: [REDACTED]" data/abivax/emails_staging collab/claude/outputs`
+`rg -n -P "Password\\s*:\\s*(?!\\[REDACTED\\])|PWD\\s*:\\s*(?!\\[REDACTED\\])|Username\\s*:\\s*(?!\\[REDACTED\\])" data/abivax/emails_staging collab/claude/outputs`
 
 Expected result: no matches.
 

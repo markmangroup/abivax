@@ -28,10 +28,9 @@ Do this only with team coordination because it rewrites `main` history:
 ## Minimal verification commands
 
 ```powershell
-git log --all --oneline -S"[REDACTED]"
-git log --all --oneline -S"[REDACTED]"
-git log --all --oneline -S"[REDACTED]"
-git log --all --oneline -S"[REDACTED]"
+git log --all --oneline -G"Password\\s*:\\s*\\[REDACTED\\]"
+git log --all --oneline -G"PWD\\s*:\\s*\\[REDACTED\\]"
+git log --all --oneline -G"Username\\s*:\\s*\\[REDACTED\\]"
 ```
 
-If rewrite is successful, these should return no legacy commits containing the literals.
+If rewrite is successful, old commits with unredacted credential lines should no longer be reachable on `main`.

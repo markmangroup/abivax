@@ -11,16 +11,11 @@ const TARGET_FILES = [
   "collab/claude/outputs/emails_2026-03-02_extracted.csv",
 ];
 
-const EXACT_REPLACEMENTS = [
-  ["Password: [REDACTED]", "Password: [REDACTED]"],
-  ["Password: [REDACTED]", "Password: [REDACTED]"],
-  ["Username: csi\\\\mmarkman", "Username: [REDACTED]"],
-  ["Username: [REDACTED]", "Username: [REDACTED]"],
-  ["PWD: [REDACTED]
-  ["PWD: [REDACTED]
-];
+const EXACT_REPLACEMENTS = [];
 
 const REGEX_REPLACEMENTS = [
+  [/Password\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "Password: [REDACTED]"],
+  [/Username\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "Username: [REDACTED]"],
   [/PWD\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "PWD: [REDACTED]
 ];
 
