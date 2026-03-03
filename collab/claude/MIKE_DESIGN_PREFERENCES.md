@@ -80,6 +80,28 @@ This is not a style guide yet. It is a practical "what is working vs not working
 - `What Changed` still risks becoming a wall of text; likely needs content compression and stronger visual hierarchy.
 - Program page status pills/colors need stronger semantic differentiation (received / waiting / blocked / active).
 
+## Color Palette Standard (as of 2026-03-02)
+
+**Light palette is the default for all new pages.** Dark palette is retired.
+
+- Background: white (`#FFFFFF`) or light gray (`#F8F9FA`, `#F1F5F9`)
+- Primary text: near-black (`#111827`, `#1E293B`)
+- Borders/dividers: `#E2E8F0` or `#E5E7EB`
+- Accent/highlight: use restrained color for status signals only — green for favorable, amber for at-risk, red for blocked
+- Section headers: medium gray (`#64748B`, `#6B7280`)
+- Cards: white with light border and subtle shadow (`box-shadow: 0 1px 3px rgba(0,0,0,0.08)`)
+- No dark backgrounds, no gold-on-navy, no high-contrast dark theme
+
+This was changed from dark (navy `#080E1C` / gold `#C9A44B`) to light on 2026-03-02 based on Mike's explicit preference.
+
+## Patterns That Worked Best (Observed 2026-03-02)
+
+- HTML-first briefing pages in light palette rendered clearly in one pass — no Tailwind JIT issues
+- Donut charts + horizontal bar charts for vendor/commitment data read well at a glance
+- Deadline strip (linear row of dated milestones with days-out counts) for deadline visibility
+- 4-pillar grid with confidence badge + next moves per pillar for program state
+- Key people grid with name / role / action-status flags
+
 ## Update Rule
 
 When Mike gives strong UX/readability feedback, append concise bullets here and use it to shape future Claude critique prompts and Codex UI passes.
