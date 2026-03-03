@@ -928,7 +928,7 @@ Please take a moment to fill out the short questionnaire so we can gauge interes
 We will follow up on Selection Sunday when the pool officially opens and again before the brackets are due. In the meantime, please take a few minutes to get your account set up so you’re ready to submit your picks once the brackets are live.
 
 Sign-Up: https://play.ncaa.com/share/mbcg/group/1942605/token/93c9c3be31b9c96bd96ee6f8?iid=bcg_share_web_other_group_email
-Password: obefazimod
+Password: [REDACTED]
 
 Thanks,
 
@@ -5399,7 +5399,7 @@ Hello Mike,
 Please see your ID below for LLC3 : 
 
 ID :         MIKE US
-PWD :       H2s&f/Hc!*
+PWD: [REDACTED]
 
 
 
@@ -5428,7 +5428,7 @@ Please find your user ID and temporary password below.
 You will be required to change your password upon logging in :
 
 ID :       MIKE US
-PWD :  W882cx{PE!
+PWD: [REDACTED]
 
 If you don't have access to Sage please let me know. I will submit a ticket for you.
 
@@ -5702,7 +5702,7 @@ You will be required to change your password upon logging in :
 
 ID :       MIKE US
 
-PWD :  W882cx{PE!
+PWD: [REDACTED]
 
  
 
@@ -5869,7 +5869,7 @@ You will be required to change your password upon logging in :
 
 ID :       MIKE US
 
-PWD :  W882cx{PE!
+PWD: [REDACTED]
 
  
 
@@ -12480,7 +12480,7 @@ You will be required to change your password upon logging in :
 
 ID :       MIKE US
 
-PWD :  W882cx{PE!
+PWD: [REDACTED]
 
  
 
@@ -12646,7 +12646,7 @@ You will be required to change your password upon logging in :
 
 ID :       MIKE US
 
-PWD :  W882cx{PE!
+PWD: [REDACTED]
 
  
 
@@ -12910,7 +12910,7 @@ Please find your user ID and temporary password below.
 You will be required to change your password upon logging in :
 
 ID :       MIKE US
-PWD :  W882cx{PE!
+PWD: [REDACTED]
 
 If you don't have access to Sage please let me know. I will submit a ticket for you.
 
@@ -15210,9 +15210,9 @@ The content of this email is confidential and intended for the recipient specifi
 
 	Email: mike.markman@abivax.com <mailto:mike.markman@abivax.com> 
 
-	Username: csi\mmarkman
+	Username: [REDACTED]
 
-	Password: HelloFebruary2267!
+	Password: [REDACTED]
 
 	 
 
