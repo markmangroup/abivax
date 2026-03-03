@@ -64,6 +64,7 @@ See `ARCHITECTURE.md` for a full map of data files → pages → strategic statu
 ## Collaboration Protocol (Claude + Codex)
 
 Claude should read:
+- `collab/claude/MIKE_NORTH_STAR.md` — strategic lens; read before framing any deliverable
 - `collab/claude/WORKFLOW.md`
 - `data/abivax/claude_lane_queue.json`
 
@@ -84,9 +85,9 @@ Claude outputs should be:
 - Audit Committee ERP controls readout: `2026-03-06` — deck at `outputs/Audit_Committee_ERP_Controls_Mar2026.pptx`
 - Living Executive Deck (update weekly): `outputs/ERP_Program_Living_Executive_Deck.pptx`
 - CFTI control register: 143 controls total — 84 Controls/Audit, 39 Reporting/Data, 20 P2P; 45 out-of-scope, 9 ERP-signal
-- Three open data gaps in Audit deck: (1) Audit Cmte meeting date confirmation with Camille, (2) Commercial/timeline package from NetSuite, (3) Adrian's 3-slide controls pack
+- Audit Committee deck for Mar 6: **new high-level Overview deck created** (`outputs/presentations/Audit Committee ERP Overview.pptx`) — 5 slides, light palette. Mike action: send to Adrian Holbrook (Sr. Financial Analyst / FP&A) by Mar 6. Adrian emailed Feb 19 requesting slides; he presents, Mike authors.
 - Five open data gaps in Living Exec deck: P2P volume baseline, Reporting bridge detail, Controls deficiency inventory, Governance/resourcing model, Executive visuals
-- Key people: Hema Keshava (CFO / internal ERP sponsor), Didier Blondel (CFO / sponsor), Adrian Holbrook (controls), Camille Girard (Audit Cmte liaison)
+- Key people: Hema Keshava (CFO / internal ERP sponsor), Didier Blondel (CEO / sponsor), Adrian Holbrook (Sr. Financial Analyst / FP&A, Audit Cmte slide recipient), Camille Girard (KPMG, implementation advisory — awaiting scope proposal on ongoing KPMG role)
 
 ## Mike Preferences (Important)
 
@@ -99,20 +100,25 @@ Claude outputs should be:
 ## Quick Orientation for New Context Windows
 
 1. Read this file first (~2 min)
-2. Read `ARCHITECTURE.md` for full data/page/strategic map (~5 min)
-3. Read `data/abivax/PLAN.md` for near-term roadmap
-4. Check `data/abivax/claude_lane_queue.json` for active Claude tasks
-5. Check `collab/claude/MIKE_DESIGN_PREFERENCES.md` before writing or designing anything
+2. Read `collab/claude/MIKE_NORTH_STAR.md` — strategic lens for all framing decisions (~2 min)
+3. Read `ARCHITECTURE.md` for full data/page/strategic map (~5 min)
+4. Read `data/abivax/PLAN.md` for near-term roadmap
+5. Check `data/abivax/claude_lane_queue.json` for active Claude tasks
+6. Check `collab/claude/MIKE_DESIGN_PREFERENCES.md` before writing or designing anything
 
 With those five files, you have complete operating context without re-reading source code.
 
 ## Current Sprint (update each session)
 
-Active work streams as of `2026-03-02`:
+Active work streams as of `2026-03-03`:
 
-1. **Audit Committee deck** (`outputs/Audit_Committee_ERP_Controls_Mar2026.pptx`) — due Mar 6. Open gap: Slide 9 Commercials needs real KPMG figures (€650K Year 1, €1.02M 3-year) — still using placeholder "~$1M assumption".
-2. **HTML briefing pages** — P2P Intelligence Brief and Program Command Center built and live. Light palette now the design standard. Today page and Stakeholder Briefs are next HTML candidates.
-3. **pillar_synthesis.json** — Updated with Trustpair vendor data (P2P pillar) and KPMG commercials (Governance pillar). Five data gaps in Living Exec deck still open.
+1. **Audit Committee ERP Overview deck** (`outputs/presentations/Audit Committee ERP Overview.pptx`) — NEW. 5-slide high-level deck built for Adrian Holbrook / Mar 6 Audit Committee. Light palette. Slides: Title, ERP Program Overview, Implementation Timeline, Financial Overview, Ask. **Mike action: send to Adrian Holbrook by Mar 6.** (Adrian emailed Feb 19 requesting; he presents, Mike authors.) Registered in `presentations.json` as `audit-committee-erp-overview-20260306`.
+2. **Controls deck repositioned** — `outputs/Audit_Committee_ERP_Controls_Mar2026.pptx` renamed in `presentations.json` to "ERP Controls Posture & Remediation Roadmap." Status: draft. Meeting date: TBD (est. Q3 2026 — post-blueprint phase). Not for Mar 6.
+3. **NetSuite vendor brief** — Page live at `/abivax/spine/netsuite` (`public/netsuite-vendor-brief.html`). Mar 3 call findings: confirmed Oracle contacts (Jamal/Venceslas/Ali), 5 commercial issues under negotiation, 2 docs in transit.
+4. **Board deck** (`outputs/Board_ERP_Readout_Mar19_2026.pptx`) — due to Didier by Mar 13. First draft not yet started. Content largely available in system.
+5. **HTML briefing pages** — P2P, Program Command Center, NetSuite live. Today page and Stakeholder Briefs are next HTML candidates.
+
+**Blocked/Waiting:** Oracle license breakdown + SOW (Jamal to send). KPMG implementation scope proposal (Camille to send). **Mike action due Mar 6:** send Audit Committee ERP Overview deck to Adrian Holbrook.
 
 ## Design Standard (as of 2026-03-02)
 
@@ -126,3 +132,4 @@ Active work streams as of `2026-03-02`:
 - `2026-02-26` (Codex) - rewritten for current architecture and Claude sidecar role
 - `2026-02-28` (Claude) - added synthesis gap, presentation status, open data gaps, key people, ARCHITECTURE.md reference, quick orientation guide
 - `2026-03-02` (Claude) - added Current Sprint block, light palette design standard
+- `2026-03-03` (Claude) - updated Current Sprint with NetSuite page, governance pillar update, Audit deck commercials complete, Board deck pending; created Audit Committee ERP Overview deck; repositioned controls deck to Q3; fixed Camille/Adrian characterizations throughout codebase

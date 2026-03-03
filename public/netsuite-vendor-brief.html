@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NetSuite Vendor Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #F8F9FA;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .page { max-width: 1200px; margin: 0 auto; padding: 28px 32px 48px; }
+
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 14px;
+    margin-bottom: 24px;
+  }
+  .page-title { font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.3px; }
+  .page-subtitle { font-size: 13px; color: #6B7280; margin-top: 2px; }
+  .page-meta { font-size: 12px; color: #6B7280; text-align: right; }
+
+  .status-banner {
+    background: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    border-left: 4px solid #16A34A;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .warn-banner {
+    background: #FFF7ED;
+    border: 1px solid #FED7AA;
+    border-left: 4px solid #F97316;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .banner-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+  .banner-title { font-weight: 600; font-size: 13px; }
+  .banner-title.green { color: #15803D; }
+  .banner-title.amber { color: #9A3412; }
+  .banner-body { font-size: 13px; margin-top: 2px; }
+  .banner-body.green { color: #166534; }
+  .banner-body.amber { color: #7C2D12; }
+
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+  .stat-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .stat-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6B7280; margin-bottom: 6px; }
+  .stat-value { font-size: 20px; font-weight: 700; color: #111827; line-height: 1.2; }
+  .stat-sub { font-size: 12px; margin-top: 4px; }
+  .stat-sub.green { color: #16A34A; font-weight: 500; }
+  .stat-sub.amber { color: #D97706; font-weight: 500; }
+  .stat-sub.red { color: #DC2626; font-weight: 500; }
+  .stat-sub.gray { color: #6B7280; }
+
+  .section-header {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; color: #6B7280;
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .card-title { font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 12px; }
+
+  .status-row { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid #F1F5F9; }
+  .status-row:last-child { border-bottom: none; }
+  .status-key { font-size: 12px; font-weight: 600; color: #374151; min-width: 150px; flex-shrink: 0; }
+  .status-val { font-size: 12px; color: #111827; flex: 1; }
+  .status-val.muted { color: #9CA3AF; font-style: italic; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge-green  { background: #DCFCE7; color: #15803D; }
+  .badge-amber  { background: #FEF3C7; color: #B45309; }
+  .badge-red    { background: #FEE2E2; color: #B91C1C; }
+  .badge-gray   { background: #F3F4F6; color: #374151; }
+  .badge-blue   { background: #EFF6FF; color: #1D4ED8; }
+  .badge-purple { background: #F5F3FF; color: #6D28D9; }
+
+  /* Contacts */
+  .contact-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .contact-org { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9CA3AF; margin-bottom: 6px; }
+  .contact-name { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 2px; }
+  .contact-role { font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 4px; }
+  .contact-remit { font-size: 12px; color: #6B7280; margin-bottom: 10px; line-height: 1.4; }
+  .contact-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+
+  /* Commercial risk findings */
+  .finding-list { display: flex; flex-direction: column; gap: 10px; }
+  .finding {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .finding-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 5px; }
+  .finding-title { font-size: 13px; font-weight: 600; color: #111827; flex: 1; }
+  .finding-body { font-size: 12px; color: #4B5563; line-height: 1.45; margin-bottom: 6px; }
+  .finding-action { font-size: 11px; color: #1D4ED8; font-weight: 500; }
+  .finding-action::before { content: "→ "; }
+
+  /* Documents awaited */
+  .doc-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .doc-row:last-child { margin-bottom: 0; }
+  .doc-icon { font-size: 18px; flex-shrink: 0; }
+  .doc-name { font-size: 13px; font-weight: 600; color: #111827; }
+  .doc-desc { font-size: 12px; color: #6B7280; margin-top: 1px; }
+  .doc-status { margin-left: auto; flex-shrink: 0; }
+
+  /* Open items */
+  .open-items { display: flex; flex-direction: column; gap: 8px; }
+  .open-item {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 11px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .open-item-badge { flex-shrink: 0; margin-top: 1px; }
+  .open-item-text { font-size: 13px; color: #374151; flex: 1; }
+  .open-item-text strong { color: #111827; }
+  .open-item-owner { font-size: 11px; color: #9CA3AF; margin-top: 3px; }
+
+  /* Activity log */
+  .log-entry { display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px solid #F1F5F9; }
+  .log-entry:last-child { border-bottom: none; }
+  .log-date { font-size: 11px; font-weight: 600; color: #9CA3AF; min-width: 80px; flex-shrink: 0; padding-top: 2px; }
+  .log-text { font-size: 13px; color: #374151; }
+  .log-text strong { color: #111827; }
+
+  /* Next moves */
+  .next-moves {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #3B82F6;
+    border-radius: 6px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .next-moves-title { font-size: 13px; font-weight: 700; color: #1D4ED8; margin-bottom: 12px; }
+  .next-move { display: flex; gap: 12px; margin-bottom: 9px; font-size: 13px; color: #374151; }
+  .next-move-num { color: #93C5FD; font-weight: 700; flex-shrink: 0; min-width: 16px; }
+  .next-move:last-child { margin-bottom: 0; }
+  .next-move-label { font-size: 11px; font-weight: 700; color: #6B7280; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="page-header">
+    <div>
+      <div class="page-title">NetSuite — Vendor Brief</div>
+      <div class="page-subtitle">Oracle NetSuite · ERP Platform &amp; Implementation</div>
+    </div>
+    <div class="page-meta">Updated 2026-03-03 &middot; Post-kickoff call</div>
+  </div>
+
+  <!-- Go-ahead banner -->
+  <div class="status-banner">
+    <div class="banner-icon">✓</div>
+    <div>
+      <div class="banner-title green">Verbal Go-Ahead Issued — 2026-03-03</div>
+      <div class="banner-body green">Mike confirmed move-forward to Jamal, Venceslas, and Ali on the Mar 3 kickoff call. License agreement and SOW in transit from Oracle.</div>
+    </div>
+  </div>
+
+  <!-- Commercial risk banner -->
+  <div class="warn-banner">
+    <div class="banner-icon">⚠</div>
+    <div>
+      <div class="banner-title amber">Commercial Review Required Before Signing</div>
+      <div class="banner-body amber">Initial license scope appears over-sized. Add-ons (NSAW, NSIP, ACS, Zone apps) need validation before acceptance. Do not sign until role-based license matrix and add-on justifications are received.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Contract Status</div>
+      <div class="stat-value">Docs In Transit</div>
+      <div class="stat-sub amber">License + SOW from Jamal</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Kickoff Target</div>
+      <div class="stat-value">Apr 2026</div>
+      <div class="stat-sub amber">~30 days — pending sign</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Go-Live</div>
+      <div class="stat-value">Jan 1, 2027</div>
+      <div class="stat-sub red">Non-negotiable</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">License Model Risk</div>
+      <div class="stat-value">Over-scoped</div>
+      <div class="stat-sub red">Challenge before signing</div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="section-header">Oracle NetSuite Contacts — Confirmed Mar 3</div>
+  <div class="three-col">
+    <div class="contact-card">
+      <div class="contact-org">Oracle NetSuite · Licensing</div>
+      <div class="contact-name">Jamal Azil</div>
+      <div class="contact-role">Licensing Lead</div>
+      <div class="contact-remit">Owns license structure and commercial terms. Primary contact for license breakdown, user counts, and contract documents. Will resend detailed license breakdown and legal agreements.</div>
+      <div class="contact-tags">
+        <span class="badge badge-blue">Licensing</span>
+        <span class="badge badge-amber">Send docs</span>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-org">Oracle NetSuite · Pre-Sales</div>
+      <div class="contact-name">Venceslas Dechallens</div>
+      <div class="contact-role">Pre-Sales Lead</div>
+      <div class="contact-remit">Validates scope planning and budget for the whole project. Key counterpart for scope negotiation, add-on justification, and keeping the engagement right-sized before SOW signature.</div>
+      <div class="contact-tags">
+        <span class="badge badge-purple">Scope &amp; Budget</span>
+        <span class="badge badge-amber">Negotiate scope</span>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-org">Oracle NetSuite · Delivery</div>
+      <div class="contact-name">Ali Brahmi</div>
+      <div class="contact-role">Lead Consultant — Delivery</div>
+      <div class="contact-remit">Leads implementation delivery. Primary day-to-day counterpart once SOW is signed and kickoff is confirmed. Owns project execution on the NetSuite side.</div>
+      <div class="contact-tags">
+        <span class="badge badge-green">Implementation</span>
+        <span class="badge badge-gray">Post-sign primary</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Documents awaited -->
+  <div style="margin-bottom:24px;">
+    <div class="section-header">Documents In Transit — Do Not Sign Until Reviewed</div>
+    <div class="doc-row">
+      <div class="doc-icon">📄</div>
+      <div>
+        <div class="doc-name">License Agreement</div>
+        <div class="doc-desc">Platform licensing terms, user counts, and SKU breakdown. Sent by Jamal Azil. Requires role-based challenge before acceptance.</div>
+      </div>
+      <div class="doc-status"><span class="badge badge-amber">Awaited from Jamal</span></div>
+    </div>
+    <div class="doc-row">
+      <div class="doc-icon">📋</div>
+      <div>
+        <div class="doc-name">Statement of Work (SOW)</div>
+        <div class="doc-desc">Implementation scope, timeline, milestones, and delivery team structure. Validate Jan 1, 2027 go-live is explicitly in scope.</div>
+      </div>
+      <div class="doc-status"><span class="badge badge-amber">Awaited from Oracle</span></div>
+    </div>
+  </div>
+
+  <!-- Commercial findings -->
+  <div style="margin-bottom:24px;">
+    <div class="section-header">Commercial Review Findings — 5 Issues to Challenge</div>
+    <div class="finding-list">
+
+      <div class="finding">
+        <div class="finding-header">
+          <span class="badge badge-red">Overscope Risk</span>
+          <div class="finding-title">License counts appear too broad — 42 general + 17 procurement + 2 specialized users</div>
+        </div>
+        <div class="finding-body">PO/procurement licensing is close to "license almost everyone." Likely misaligned with actual process roles and current volume. No named-user mapping provided.</div>
+        <div class="finding-action">Require role-based license matrix — named role, required capability, proposed SKU, qty rationale, keep/remove/defer per user type.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-header">
+          <span class="badge badge-amber">Validate Need</span>
+          <div class="finding-title">NSAW + NSIP add-ons require architecture justification</div>
+        </div>
+        <div class="finding-body">NetSuite Analytics Warehouse (NSAW) and Oracle Integration Cloud / NSIP presented as dedicated real-time middleware. No architecture proof provided. Simpler integration options may exist for phase 1.</div>
+        <div class="finding-action">Request architecture note: data flows, latency assumptions, ownership, support boundaries. Confirm NSIP is actually required for phase-1 scope before accepting.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-header">
+          <span class="badge badge-amber">Challenge Value</span>
+          <div class="finding-title">Customer Success Support package may overlap with delivery coverage</div>
+        </div>
+        <div class="finding-body">ACS (Additional Customer Support) positioned outside Ali's delivery team as de-risking support (~36 hrs/quarter). Risk of paying twice for implementation coverage already in the SOW.</div>
+        <div class="finding-action">Challenge overlap with delivery team scope and tie any support package to measurable outcomes, or cut entirely.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-header">
+          <span class="badge badge-gray">Defer</span>
+          <div class="finding-title">E-invoicing module — not phase-1 critical</div>
+        </div>
+        <div class="finding-body">Abivax has no/limited revenue-side invoicing urgency in phase 1. Module was included in pricing without scope confirmation.</div>
+        <div class="finding-action">Mark as defer or optional. Confirm with Hema/Didier before accepting in contract.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-header">
+          <span class="badge badge-red">Legal Flag</span>
+          <div class="finding-title">ZoneCapture + ZoneReconcile are third-party vendors, not Oracle</div>
+        </div>
+        <div class="finding-body">OCR (ZoneCapture) and bank reconciliation (ZoneReconcile) presented as prebuilt NetSuite modules but provided by a separate company. Jurisdiction, data processing, and contractual model need legal confirmation — especially France/EU applicability.</div>
+        <div class="finding-action">Route to legal when documents arrive. Confirm vendor-of-record, contract model (reseller vs. direct), and GDPR/French law coverage.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Implementation model -->
+  <div style="margin-bottom:24px;">
+    <div class="section-header">Implementation Model — Decision Pending</div>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Team Structure</div>
+        <div class="status-row">
+          <div class="status-key">NetSuite delivery (Ali)</div>
+          <div class="status-val"><span class="badge badge-blue">In scope</span> Platform config, deployment, training</div>
+        </div>
+        <div class="status-row">
+          <div class="status-key">KPMG (confirmed)</div>
+          <div class="status-val"><span class="badge badge-green">Engaged</span> Controls, audit, program governance · €650K Yr1</div>
+        </div>
+        <div class="status-row">
+          <div class="status-key">3rd-party implementers</div>
+          <div class="status-val"><span class="badge badge-amber">Offers pending</span> Risk: overlap with Ali's team and KPMG</div>
+        </div>
+        <div class="status-row">
+          <div class="status-key">French finance team</div>
+          <div class="status-val"><span class="badge badge-red">Capacity risk</span> Already flagging workload pressure</div>
+        </div>
+        <div class="status-row">
+          <div class="status-key">Mike / Abivax</div>
+          <div class="status-val">Senior, solo. RACI must bound scope before kickoff.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Open Decision: 3rd-Party Implementer</div>
+        <div class="status-row">
+          <div class="status-key">Option A</div>
+          <div class="status-val">NetSuite (Ali) + KPMG only. Cleaner RACI. Avoid adding a third firm unless there is a non-overlapping remit.</div>
+        </div>
+        <div class="status-row">
+          <div class="status-key">Option B</div>
+          <div class="status-val">Add 3rd-party implementer for PM capacity. Risk: Ali's team + KPMG + external PM = three cooks on project governance.</div>
+        </div>
+        <div class="status-row">
+          <div class="status-key">Recommendation</div>
+          <div class="status-val"><span class="badge badge-amber">Decide before SOW sign</span> Lock RACI explicitly. French finance capacity constraint must be reflected in scope.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Open items -->
+  <div style="margin-bottom:24px;">
+    <div class="section-header">Open Items</div>
+    <div class="open-items">
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-red">Blocking</span></div>
+        <div>
+          <div class="open-item-text"><strong>License breakdown not received.</strong> Jamal to resend detailed role-by-role breakdown. Required before any commercial acceptance.</div>
+          <div class="open-item-owner">Owner: Jamal Azil (Oracle) · Due: ASAP</div>
+        </div>
+      </div>
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-red">Blocking</span></div>
+        <div>
+          <div class="open-item-text"><strong>SOW and legal agreements not received.</strong> Full contract package from Oracle required before kickoff can be confirmed or April target locked.</div>
+          <div class="open-item-owner">Owner: Oracle / Jamal · Due: ASAP</div>
+        </div>
+      </div>
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-red">Urgent</span></div>
+        <div>
+          <div class="open-item-text"><strong>Build commercial negotiation pack.</strong> Role-based license challenge table (named role, SKU, qty rationale, keep/remove/defer) plus add-on split (mandatory core vs. optional). Do before responding to Jamal's docs.</div>
+          <div class="open-item-owner">Owner: Mike · Scope: respond to Venceslas with challenge</div>
+        </div>
+      </div>
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-amber">Urgent</span></div>
+        <div>
+          <div class="open-item-text"><strong>NSIP architecture validation.</strong> Request architecture note from Oracle: data flows, necessity for phase 1, ownership, support boundaries. May be removable from phase-1 scope.</div>
+          <div class="open-item-owner">Owner: Mike (request from Venceslas) · Counterpart: Ali for technical detail</div>
+        </div>
+      </div>
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-amber">Urgent</span></div>
+        <div>
+          <div class="open-item-text"><strong>Zone apps legal review.</strong> ZoneCapture and ZoneReconcile are third-party, not Oracle. Route to legal once docs arrive — confirm vendor-of-record, GDPR coverage, French jurisdiction applicability.</div>
+          <div class="open-item-owner">Owner: Mike → legal team · Trigger: on document receipt</div>
+        </div>
+      </div>
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-amber">Pending</span></div>
+        <div>
+          <div class="open-item-text"><strong>3rd-party implementer decision.</strong> Accept one of the external PM offers, or run with NetSuite + KPMG only. Must be decided before SOW is signed and RACI is set.</div>
+          <div class="open-item-owner">Owner: Mike · Deadline: before SOW signature</div>
+        </div>
+      </div>
+      <div class="open-item">
+        <div class="open-item-badge"><span class="badge badge-gray">Pending</span></div>
+        <div>
+          <div class="open-item-text"><strong>E-invoicing scope confirmation.</strong> Defer or include in phase 1. Confirm with Hema/Didier before accepting in contract. Current position: likely defer.</div>
+          <div class="open-item-owner">Owner: Mike → Hema / Didier</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activity log -->
+  <div style="margin-bottom:24px;">
+    <div class="section-header">Activity Log</div>
+    <div class="card" style="padding:14px 18px;">
+      <div class="log-entry">
+        <div class="log-date">2026-03-03</div>
+        <div class="log-text"><strong>Kickoff call held.</strong> Mike confirmed go-ahead to Jamal Azil, Venceslas Dechallens, Ali Brahmi. Roles confirmed. Commercial proposal reviewed — 5 issues flagged. Oracle to send license breakdown, SOW, and legal agreements. Notes captured by Codex.</div>
+      </div>
+      <div class="log-entry">
+        <div class="log-date">2026-02-26</div>
+        <div class="log-text"><strong>NetSuite selected as ERP platform.</strong> Program enters post-selection / mobilization phase.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next moves -->
+  <div class="next-moves">
+    <div class="next-moves-title">Next Moves — NetSuite</div>
+    <div class="next-move">
+      <span class="next-move-num">1</span>
+      <div>
+        <div class="next-move-label">When docs arrive from Jamal</div>
+        Build the license challenge table before responding — named role, required capability, proposed SKU, qty rationale, keep / remove / defer. Route Zone apps to legal immediately.
+      </div>
+    </div>
+    <div class="next-move">
+      <span class="next-move-num">2</span>
+      <div>
+        <div class="next-move-label">Scope negotiation (Venceslas)</div>
+        Challenge: ACS support package overlap, NSIP phase-1 necessity, e-invoicing deferral. Venceslas owns scope/budget validation — he's the right counterpart for this.
+      </div>
+    </div>
+    <div class="next-move">
+      <span class="next-move-num">3</span>
+      <div>
+        <div class="next-move-label">Implementation model decision</div>
+        Decide before SOW sign: NetSuite + KPMG only, or add a 3rd-party PM firm. If adding external PM, define a non-overlapping remit explicitly in the SOW.
+      </div>
+    </div>
+    <div class="next-move">
+      <span class="next-move-num">4</span>
+      <div>
+        <div class="next-move-label">SOW review</div>
+        Confirm Jan 1, 2027 go-live is in scope. Confirm French finance team's bounded involvement. Confirm Ali's team owns delivery PM (not ACS).
+      </div>
+    </div>
+    <div class="next-move">
+      <span class="next-move-num">5</span>
+      <div>
+        <div class="next-move-label">Board / Audit Cmte</div>
+        Update Board deck (Mar 19) and Living Exec deck with confirmed NetSuite commercials once contract is signed. Replace placeholder figures.
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

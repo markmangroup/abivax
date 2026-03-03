@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "Briefing-quality synthesis of the ERP program. Answers any meeting question in 30 seconds per pillar. Sits above erp_pillar_baselines.json (which holds operational detail) and feeds both live UI pages and PPTX generation.",
     "version": 1,
-    "synthesizedAt": "2026-03-02",
+    "synthesizedAt": "2026-03-03",
     "synthesizedBy": "claude-session",
     "refreshInstructions": "When new context arrives (emails, meeting notes, vendor decks, SharePoint artifacts, CFTI updates), a Claude session should: (1) read this file + erp_pillar_baselines.json + the new context, (2) update the relevant pillar's currentStateSummary if material facts changed, (3) move items from currentStateUnknown to currentStateKnown if evidence arrived, (4) update keyDecisionsPending and nextMoves, (5) update lastRefreshedAt and synthesizedAt, (6) add a note to changeLog. Do not rewrite everything — only update what actually changed.",
     "dataRelationships": {
@@ -16,7 +16,7 @@
   },
   "programState": {
     "phase": "post-selection / mobilization planning",
-    "currentFocus": "NetSuite selected Feb 26. Program now in the window between selection and implementation kickoff. Priority: lock commercial terms, confirm implementation scope, stand up governance, and close evidence gaps before April mobilization starts.",
+    "currentFocus": "Verbal go-ahead issued to NetSuite Mar 3. Oracle contacts confirmed: Jamal Azil (licensing), Venceslas Dechallens (pre-sales / scope + budget), Ali Brahmi (lead delivery consultant). License agreement and SOW in transit. Commercial review required before signing — initial license scope appears over-sized and add-ons need validation. April 2026 mobilization target at risk until contract is signed.",
     "goLive": "2026-01-01",
     "goLiveNote": "Non-negotiable. Tied to US public launch December 2027. Every month of delay compounds risk exponentially.",
     "nextHardDeadlines": [
@@ -401,34 +401,45 @@
         }
       ],
       "currentStateKnown": [
-        "NetSuite commercials confirmed via Camille Girard KPMG deck (Feb 26 2026 Audit Committee meeting): Build (one-off) €463,120 | Run (annual SaaS) €187,009/year | Year 1 total ≈ €650,128 | 3-year total €1,024,145.80. Implementation: 392 man-days at €1,135.51/day. Replaces $1M Year 1 budget assumption used in prior planning.",
-        "NetSuite selected. Competing vendor was SAP — SAP eliminated due to proposal/RACI concerns and governance/PMO sufficiency questions.",
-        "KPMG played advisory role in selection (Camille Girard / Aymen). Implementation advisory role not yet confirmed.",
-        "IT org confirmed: Didier → Christophe Hennequin → Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP in 2026-2027 framing.",
-        "Implementation vendor: NetSuite directly or NetSuite partner — not yet determined.",
-        "Governance model target: weekly program governance, monthly exec update, board-cycle readout, milestone-triggered escalation.",
-        "NetSuite implementation timeline XLSX exists: Jamal Azil sent 'ABIVAX - Draft-Implementation Timeline V2.xlsx' on Feb 23 (email attachment). Retrieve before declaring Audit deck Gap #2 still open.",
-        "Contract law options shared by Camille (Feb 27): three structures under consideration (French law / US law / split). Legal review initiated with Thomas Descusses, Olivia Bui, Peggy Gambardella.",
-        "Board ERP checkpoint confirmed Mar 19 — Didier requested deck draft by Mar 13. Didier unavailable Feb 26-Mar 16 (US bank conferences).",
-        "Camille Girard OOO on March 6 — if Audit Committee meeting is that date, confirm logistics with Hema."
+        "KPMG commercials confirmed via Camille Girard KPMG deck (Feb 26 2026): Build (one-off) €463,120 | Run (annual SaaS) €187,009/year | Year 1 total ≈ €650,128 | 3-year total €1,024,145.80. 392 man-days at €1,135.51/day.",
+        "NetSuite selected Feb 26. Competing vendor was SAP — SAP eliminated due to proposal/RACI concerns.",
+        "Verbal go-ahead issued Mar 3. Mike confirmed move-forward to Jamal Azil (licensing), Venceslas Dechallens (pre-sales / scope + budget validation), Ali Brahmi (lead delivery consultant).",
+        "Venceslas Dechallens is the key scope/budget counterpart — he validates scope planning and budget for the whole project. Right person to push back on add-on scope and license counts.",
+        "Ali Brahmi leads delivery. He is the primary day-to-day counterpart once SOW is signed.",
+        "Jamal Azil owns licensing. Will resend detailed license breakdown, SOW, and legal agreements.",
+        "Commercial review — 5 issues flagged from Mar 3 call: (1) License counts over-scoped (42 general + 17 procurement + 2 specialized users — need named role-to-license mapping); (2) NSAW + NSIP add-ons need architecture justification — NSIP may not be phase-1 necessary; (3) ACS customer success package (~36 hrs/quarter) potentially overlaps with Ali delivery coverage; (4) E-invoicing module — defer, not phase-1 critical for Abivax; (5) ZoneCapture + ZoneReconcile are third-party (Zone, not Oracle) — route to legal for GDPR/French law review when docs arrive.",
+        "Two documents in transit from Jamal: License Agreement and Statement of Work (SOW). Do not sign until role-based license challenge and Zone apps legal review are complete.",
+        "NetSuite own implementation team (Ali) is included in contract — not a separate partner firm.",
+        "Implementation model open: NetSuite (Ali) + KPMG only, or add a third-party PM firm. Offers from external implementers received but not accepted. Decision required before SOW signature.",
+        "IT org confirmed: Didier → Christophe Hennequin → Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP 2026-2027.",
+        "Contract law options: three structures under consideration (French / US / split). Legal review with Thomas Descusses, Olivia Bui, Peggy Gambardella.",
+        "Board ERP checkpoint Mar 19 — Didier requested deck draft by Mar 13. Didier unavailable Feb 26-Mar 16.",
+        "Camille Girard (KPMG): awaiting KPMG implementation scope proposal — KPMG ongoing role (change management, fit/functionality) not yet contracted. Camille OOO March 6."
       ],
       "currentStateUnknown": [
-        "Commercial negotiation owner: Mike Markman + Hema Keshava (confirmed Mar 2). Budget assumption: $1M Year 1, scale naturally thereafter. Contract timeline still to be locked with NetSuite.",
-        "Implementation scope: not confirmed. No contract, no blueprint start date.",
-        "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team — roles not separated.",
+        "NetSuite platform + implementation pricing not yet received — blocks contract and April kickoff confirmation.",
+        "Implementation scope not confirmed — no signed contract, no blueprint start date.",
+        "KPMG implementation advisory scope: Camille to send proposal for KPMG ongoing role (change management / fit-and-functionality). Selection-phase engagement is closing; new scope not yet defined.",
         "Internal capacity commitments by function — Finance, IT, FP&A availability for ERP workstreams unknown.",
-        "Executive decision rights model — who can approve scope changes, escalate blockers, authorize budget."
+        "Executive decision rights model — scope change approval, escalation paths, budget authority not defined.",
+        "French finance team bounded scope — they are signaling workload pressure; their ERP involvement needs explicit limits before kickoff."
       ],
       "keyDecisionsPending": [
         {
-          "decision": "Commercial negotiation: who owns the NetSuite contract negotiation and by when",
-          "owner": "Hema / Mike",
-          "blockedSince": "2026-02-26",
-          "impact": "Blocks implementation start. Every week without a signed contract is a week lost from the 9-month window."
+          "decision": "Implementation model: NetSuite (Ali) + KPMG only, or add a third-party PM/implementation firm",
+          "owner": "Mike",
+          "blockedSince": "2026-03-03",
+          "impact": "Adding a third firm without a non-overlapping remit risks three-way governance overhead. Decision needed before SOW is signed to ensure RACI is clean."
+        },
+        {
+          "decision": "Commercial challenge response: license rationalization and add-on scope before signing",
+          "owner": "Mike / Venceslas Dechallens",
+          "blockedSince": "2026-03-03",
+          "impact": "License over-scoping and unvalidated add-ons could add material cost. Challenge must be formalized before accepting commercial terms."
         },
         {
           "decision": "Implementation scope confirmation: which modules, which entities, which integrations in Phase 1",
-          "owner": "Mike / Hema / NetSuite",
+          "owner": "Mike / Hema / NetSuite (Venceslas)",
           "blockedSince": "2026-02-26",
           "impact": "Without confirmed scope, resourcing plan, KPMG advisory scope, and internal commitments are all floating."
         },
@@ -436,25 +447,26 @@
           "decision": "KPMG implementation advisory engagement: scope and owner",
           "owner": "Hema / Mike",
           "blockedSince": "2026-02-26",
-          "impact": "KPMG knows the Abivax control environment. Whether they play an advisory role in implementation affects both quality and timeline."
+          "impact": "KPMG knows the Abivax control environment. Advisory role in implementation directly affects controls quality and timeline."
         },
         {
           "decision": "Executive decision rights model",
           "owner": "Hema / Didier / Mike",
           "blockedSince": "2026-02-26",
-          "impact": "Without defined decision rights, governance cadence is performative. Escalation paths must be clear before the first implementation meeting."
+          "impact": "Without defined decision rights, governance cadence is performative. Must be clear before first implementation meeting."
         }
       ],
       "nextMoves": [
-        "Draft post-selection notification email to Camille (cc Hema): confirm owners, negotiation path, and timing toward April work start.",
-        "Confirm internal capacity commitments by function before April — Finance, IT, FP&A.",
-        "Separate KPMG selection-phase contacts from implementation-phase advisory contacts.",
+        "When license docs arrive from Jamal: build role-based challenge table (named role, capability, proposed SKU, keep/remove/defer) before responding. Route ZoneCapture/ZoneReconcile to legal immediately.",
+        "Engage Venceslas on scope challenge: ACS overlap, NSIP phase-1 necessity, e-invoicing deferral. He owns scope/budget validation — right counterpart for this.",
+        "Decide on 3rd-party implementation firm before SOW signature. If adding one, define a non-overlapping remit explicitly in the SOW.",
+        "Confirm internal capacity commitments by function before April — Finance, IT, FP&A. French finance scope must be bounded explicitly.",
         "Establish governance cadence: weekly program, monthly exec, board-cycle readout.",
-        "Present governance model at Board (Mar 19) and Audit Committee (Mar 6) meetings."
+        "Update Board deck (Mar 19) and Living Exec deck with confirmed NetSuite commercials once contract is signed."
       ],
       "waitingOn": [
-        "NetSuite: commercial terms package",
-        "Hema: internal capacity commitments, KPMG advisory scope decision",
+        "Jamal Azil (Oracle): license breakdown, SOW, legal agreements",
+        "Hema: internal capacity commitments, KPMG implementation advisory scope decision",
         "Board / Audit Committee: endorse governance model and control-by-design principle"
       ],
       "keyPeople": [
@@ -492,6 +504,11 @@
       "date": "2026-03-02",
       "by": "claude-session",
       "summary": "Philippe Goncalves workbooks analyzed (received Mar 2). (1) P2P: vendor master confirmed 497 vendors; Trustpair validation results mapped — 475 Favorable, 22 couple-Défavorable (pre-migration SOX gate), 10 Défavorable/Anomalie. FR-PTP-02G evidence confirmed. ENGAGE: €165M EUR active commitments, 2,888 lines, 187 vendors. confidenceLevel upgraded to 'established'. 3 migration-readiness nextMoves added. (2) Governance: KPMG commercials confirmed (€650K Year 1, €1.02M 3-year, 392 man-days). $1M Year 1 assumption retired. currentStateKnown updated in program-governance pillar and topProgramRisks."
+    },
+    {
+      "date": "2026-03-03",
+      "by": "claude-session",
+      "summary": "NetSuite kickoff call Mar 3. Verbal go-ahead issued. Oracle contacts confirmed: Jamal Azil (licensing), Venceslas Dechallens (pre-sales/scope+budget), Ali Brahmi (lead delivery). 5 commercial issues flagged: license over-scope, NSAW/NSIP add-on validation needed, ACS support overlap, e-invoicing deferral, Zone apps (ZoneCapture/ZoneReconcile) are third-party requiring legal review. Two docs in transit: License Agreement and SOW. Implementation model decision (NetSuite+KPMG only vs adding 3rd-party PM firm) flagged as open. Governance pillar updated: currentStateKnown, currentStateUnknown, keyDecisionsPending, nextMoves, waitingOn. programState.currentFocus updated. Source: collab/claude/outputs/netsuite-commercial-review-notes-2026-03-03.md."
     }
   ]
 }
