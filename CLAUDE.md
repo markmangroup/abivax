@@ -106,7 +106,23 @@ Claude outputs should be:
 
 With those five files, you have complete operating context without re-reading source code.
 
+## Current Sprint (update each session)
+
+Active work streams as of `2026-03-02`:
+
+1. **Audit Committee deck** (`outputs/Audit_Committee_ERP_Controls_Mar2026.pptx`) — due Mar 6. Open gap: Slide 9 Commercials needs real KPMG figures (€650K Year 1, €1.02M 3-year) — still using placeholder "~$1M assumption".
+2. **HTML briefing pages** — P2P Intelligence Brief and Program Command Center built and live. Light palette now the design standard. Today page and Stakeholder Briefs are next HTML candidates.
+3. **pillar_synthesis.json** — Updated with Trustpair vendor data (P2P pillar) and KPMG commercials (Governance pillar). Five data gaps in Living Exec deck still open.
+
+## Design Standard (as of 2026-03-02)
+
+- **Light palette** — white/light gray backgrounds, dark text, high contrast accents
+- No dark backgrounds on new pages
+- HTML-first for read-only briefing surfaces; React/Next.js only when interaction or data-binding needed
+- See `collab/claude/MIKE_DESIGN_PREFERENCES.md` for full design compass
+
 ## Last Updated
 
 - `2026-02-26` (Codex) - rewritten for current architecture and Claude sidecar role
 - `2026-02-28` (Claude) - added synthesis gap, presentation status, open data gaps, key people, ARCHITECTURE.md reference, quick orientation guide
+- `2026-03-02` (Claude) - added Current Sprint block, light palette design standard

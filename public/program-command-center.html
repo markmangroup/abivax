@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Program Command Center</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #F8F9FA;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .page { max-width: 1200px; margin: 0 auto; padding: 28px 32px 48px; }
+
+  /* ── Header ── */
+  .page-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 14px;
+    margin-bottom: 24px;
+  }
+  .page-title { font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.3px; }
+  .page-meta { font-size: 12px; color: #6B7280; }
+
+  /* ── Deadline strip ── */
+  .deadline-strip {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+  }
+  .deadline-item {
+    flex: 1;
+    min-width: 160px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .deadline-item.urgent { border-left: 4px solid #EF4444; }
+  .deadline-item.soon   { border-left: 4px solid #F97316; }
+  .deadline-item.far    { border-left: 4px solid #3B82F6; }
+  .deadline-item.anchor { border-left: 4px solid #7C3AED; }
+  .deadline-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #6B7280; margin-bottom: 4px; }
+  .deadline-date { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 2px; }
+  .deadline-days { font-size: 12px; }
+  .deadline-days.urgent { color: #DC2626; font-weight: 600; }
+  .deadline-days.soon   { color: #D97706; font-weight: 600; }
+  .deadline-days.far    { color: #2563EB; }
+  .deadline-days.anchor { color: #7C3AED; }
+  .deadline-desc { font-size: 11px; color: #6B7280; margin-top: 2px; }
+
+  /* ── Status bar ── */
+  .status-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .status-item {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 12px 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .status-name { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6B7280; margin-bottom: 5px; }
+  .status-val { font-size: 13px; font-weight: 500; color: #111827; display: flex; align-items: center; gap: 6px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .dot-green  { background: #16A34A; }
+  .dot-amber  { background: #D97706; }
+  .dot-red    { background: #DC2626; }
+  .dot-blue   { background: #2563EB; }
+
+  /* ── Section header ── */
+  .section-header {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; color: #6B7280;
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  /* ── Pillar grid ── */
+  .pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 24px; }
+  .pillar-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .pillar-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .pillar-name { font-size: 14px; font-weight: 700; color: #111827; }
+  .confidence-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .conf-established { background: #DCFCE7; color: #15803D; }
+  .conf-partial      { background: #FEF3C7; color: #B45309; }
+  .conf-emerging     { background: #FEE2E2; color: #B91C1C; }
+  .conf-strong       { background: #EFF6FF; color: #1D4ED8; }
+
+  .pillar-summary { font-size: 12px; color: #4B5563; margin-bottom: 10px; line-height: 1.45; }
+  .pillar-counts { display: flex; gap: 16px; margin-bottom: 12px; }
+  .pillar-count { font-size: 12px; color: #6B7280; }
+  .pillar-count strong { color: #111827; }
+
+  .pillar-section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9CA3AF; margin-bottom: 5px; margin-top: 10px; }
+  .move-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .move-item { display: flex; gap: 8px; font-size: 12px; color: #374151; }
+  .move-arrow { color: #3B82F6; flex-shrink: 0; }
+  .waiting-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .waiting-item { display: flex; gap: 8px; font-size: 12px; color: #6B7280; font-style: italic; }
+  .waiting-dot { color: #D1D5DB; flex-shrink: 0; }
+
+  /* ── Risks ── */
+  .risks-section { margin-bottom: 24px; }
+  .risk-list { display: flex; flex-direction: column; gap: 8px; }
+  .risk-row {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .risk-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .risk-high   { background: #FEE2E2; color: #B91C1C; }
+  .risk-medium { background: #FEF3C7; color: #B45309; }
+  .risk-low    { background: #F3F4F6; color: #374151; }
+  .risk-text { font-size: 13px; color: #374151; flex: 1; }
+  .risk-text strong { color: #111827; }
+
+  /* ── People grid ── */
+  .people-section { margin-bottom: 0; }
+  .people-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .person-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .person-name { font-size: 13px; font-weight: 600; color: #111827; margin-bottom: 2px; }
+  .person-role { font-size: 11px; color: #6B7280; margin-bottom: 8px; }
+  .person-action {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-block;
+  }
+  .action-needed   { background: #FEE2E2; color: #B91C1C; }
+  .action-waiting  { background: #FEF3C7; color: #B45309; }
+  .action-ok       { background: #DCFCE7; color: #15803D; }
+  .action-tbd      { background: #F3F4F6; color: #374151; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="page-header">
+    <div class="page-title">Program Command Center</div>
+    <div class="page-meta">ERP Mobilization &middot; NetSuite &middot; Updated 2026-03-02</div>
+  </div>
+
+  <!-- Deadline strip -->
+  <div class="deadline-strip">
+    <div class="deadline-item urgent">
+      <div class="deadline-label">Audit Committee</div>
+      <div class="deadline-date">Mar 6, 2026</div>
+      <div class="deadline-days urgent">4 days out</div>
+      <div class="deadline-desc">ERP Controls Readout</div>
+    </div>
+    <div class="deadline-item soon">
+      <div class="deadline-label">Board Checkpoint</div>
+      <div class="deadline-date">Mar 19, 2026</div>
+      <div class="deadline-days soon">17 days out</div>
+      <div class="deadline-desc">ERP Program Update</div>
+    </div>
+    <div class="deadline-item far">
+      <div class="deadline-label">Mobilization Target</div>
+      <div class="deadline-date">Apr 1, 2026</div>
+      <div class="deadline-days far">30 days out</div>
+      <div class="deadline-desc">NetSuite kickoff</div>
+    </div>
+    <div class="deadline-item anchor">
+      <div class="deadline-label">Go-Live</div>
+      <div class="deadline-date">Jan 1, 2027</div>
+      <div class="deadline-days anchor">~305 days out</div>
+      <div class="deadline-desc">Non-negotiable</div>
+    </div>
+  </div>
+
+  <!-- Program status bar -->
+  <div class="status-bar">
+    <div class="status-item">
+      <div class="status-name">Vendor Selection</div>
+      <div class="status-val"><span class="dot dot-green"></span>NetSuite selected</div>
+    </div>
+    <div class="status-item">
+      <div class="status-name">Contract</div>
+      <div class="status-val"><span class="dot dot-amber"></span>Awaiting commercials</div>
+    </div>
+    <div class="status-item">
+      <div class="status-name">Scope / Blueprint</div>
+      <div class="status-val"><span class="dot dot-amber"></span>In design</div>
+    </div>
+    <div class="status-item">
+      <div class="status-name">Capacity / Resourcing</div>
+      <div class="status-val"><span class="dot dot-amber"></span>Model not set</div>
+    </div>
+  </div>
+
+  <!-- 4-Pillar grid -->
+  <div class="section-header">Program Pillars</div>
+  <div class="pillars-grid">
+
+    <!-- P2P -->
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <div class="pillar-name">P2P — Procure to Pay</div>
+        <div class="confidence-badge conf-established">Established</div>
+      </div>
+      <div class="pillar-summary">497 vendors validated (Trustpair); 22 couple-défavorable are a hard migration gate. €165M active commitment exposure across 187 vendors. All 20 P2P controls in scope.</div>
+      <div class="pillar-counts">
+        <div class="pillar-count"><strong>20</strong> controls in scope</div>
+        <div class="pillar-count"><strong>22</strong> vendors to remediate</div>
+        <div class="pillar-count"><strong>€165M</strong> exposure</div>
+      </div>
+      <div class="pillar-section-label">Next Moves</div>
+      <ul class="move-list">
+        <li class="move-item"><span class="move-arrow">→</span>Assign P2P process owner</li>
+        <li class="move-item"><span class="move-arrow">→</span>Get AP remediation timeline for 22 vendors</li>
+        <li class="move-item"><span class="move-arrow">→</span>Decide Trustpair integration scope (ongoing vs. one-time)</li>
+      </ul>
+      <div class="pillar-section-label">Waiting On</div>
+      <ul class="waiting-list">
+        <li class="waiting-item"><span class="waiting-dot">·</span>P2P process owner nomination</li>
+        <li class="waiting-item"><span class="waiting-dot">·</span>DoA → NetSuite approval workflow design</li>
+      </ul>
+    </div>
+
+    <!-- Reporting -->
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <div class="pillar-name">Reporting &amp; Data</div>
+        <div class="confidence-badge conf-partial">Partial</div>
+      </div>
+      <div class="pillar-summary">39 CFTI reporting controls identified. Current ERP (Cegid/other) produces fragmented outputs. NetSuite consolidation is the reporting foundation. Bridge from current to target state not yet mapped.</div>
+      <div class="pillar-counts">
+        <div class="pillar-count"><strong>39</strong> controls in scope</div>
+        <div class="pillar-count"><strong>0</strong> bridge mapped</div>
+      </div>
+      <div class="pillar-section-label">Next Moves</div>
+      <ul class="move-list">
+        <li class="move-item"><span class="move-arrow">→</span>Map current → target reporting state</li>
+        <li class="move-item"><span class="move-arrow">→</span>Identify data owners per reporting domain</li>
+      </ul>
+      <div class="pillar-section-label">Waiting On</div>
+      <ul class="waiting-list">
+        <li class="waiting-item"><span class="waiting-dot">·</span>Reporting bridge detail (open data gap)</li>
+        <li class="waiting-item"><span class="waiting-dot">·</span>NetSuite reporting module scope confirmation</li>
+      </ul>
+    </div>
+
+    <!-- Controls -->
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <div class="pillar-name">Controls &amp; Audit</div>
+        <div class="confidence-badge conf-partial">Partial</div>
+      </div>
+      <div class="pillar-summary">84 controls/audit CFTI in scope. Adrian Holbrook owns controls pack (3 slides pending). No deficiency inventory yet. Audit Committee readout is Mar 6 — deck near-final pending KPMG commercials on Slide 9.</div>
+      <div class="pillar-counts">
+        <div class="pillar-count"><strong>84</strong> controls in scope</div>
+        <div class="pillar-count"><strong>45</strong> out of scope</div>
+        <div class="pillar-count"><strong>9</strong> ERP-signal</div>
+      </div>
+      <div class="pillar-section-label">Next Moves</div>
+      <ul class="move-list">
+        <li class="move-item"><span class="move-arrow">→</span>Update Slide 9 with real KPMG figures (€650K / €1.02M 3yr)</li>
+        <li class="move-item"><span class="move-arrow">→</span>Receive Adrian's 3-slide controls pack</li>
+        <li class="move-item"><span class="move-arrow">→</span>Build deficiency inventory</li>
+      </ul>
+      <div class="pillar-section-label">Waiting On</div>
+      <ul class="waiting-list">
+        <li class="waiting-item"><span class="waiting-dot">·</span>Adrian's controls pack</li>
+        <li class="waiting-item"><span class="waiting-dot">·</span>Camille — Audit Cmte date confirmation</li>
+      </ul>
+    </div>
+
+    <!-- Governance -->
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <div class="pillar-name">Governance &amp; Program</div>
+        <div class="confidence-badge conf-emerging">Emerging</div>
+      </div>
+      <div class="pillar-summary">KPMG commercials confirmed: €650K Year 1, €1.02M 3-year, 392 man-days at €1,135.51/day. Governance model and resourcing plan not yet defined. Mobilization target April 2026.</div>
+      <div class="pillar-counts">
+        <div class="pillar-count"><strong>€650K</strong> Year 1 (KPMG)</div>
+        <div class="pillar-count"><strong>€1.02M</strong> 3-year</div>
+        <div class="pillar-count"><strong>392</strong> man-days</div>
+      </div>
+      <div class="pillar-section-label">Next Moves</div>
+      <ul class="move-list">
+        <li class="move-item"><span class="move-arrow">→</span>Define governance / resourcing model</li>
+        <li class="move-item"><span class="move-arrow">→</span>Get NetSuite commercial + timeline package</li>
+        <li class="move-item"><span class="move-arrow">→</span>Lock mobilization kickoff date</li>
+      </ul>
+      <div class="pillar-section-label">Waiting On</div>
+      <ul class="waiting-list">
+        <li class="waiting-item"><span class="waiting-dot">·</span>NetSuite commercials / timeline package</li>
+        <li class="waiting-item"><span class="waiting-dot">·</span>Governance/resourcing model (open data gap)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Risks -->
+  <div class="risks-section" style="margin-top:24px;">
+    <div class="section-header">Top Program Risks</div>
+    <div class="risk-list">
+      <div class="risk-row">
+        <div class="risk-badge risk-high">High</div>
+        <div class="risk-text"><strong>Mobilization delay</strong> — No signed contract or scoped implementation plan as of Mar 2. April kickoff target at risk.</div>
+      </div>
+      <div class="risk-row">
+        <div class="risk-badge risk-high">High</div>
+        <div class="risk-text"><strong>Controls testing capacity</strong> — 84 audit + 39 reporting controls require resourcing that hasn't been modeled. Deficiency inventory doesn't exist yet.</div>
+      </div>
+      <div class="risk-row">
+        <div class="risk-badge risk-medium">Medium</div>
+        <div class="risk-text"><strong>P2P migration gate</strong> — 22 couple-défavorable vendors block NetSuite vendor master migration. No remediation timeline from AP team.</div>
+      </div>
+      <div class="risk-row">
+        <div class="risk-badge risk-medium">Medium</div>
+        <div class="risk-text"><strong>Go-live date pressure</strong> — Jan 1, 2027 is non-negotiable. Every week of mobilization delay compresses implementation runway.</div>
+      </div>
+      <div class="risk-row">
+        <div class="risk-badge risk-low">Low</div>
+        <div class="risk-text"><strong>KPMG commercial assumption retired</strong> — Real figures now in deck (€650K Year 1). Previous ~$1M assumption removed.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key People -->
+  <div class="people-section" style="margin-top:24px;">
+    <div class="section-header">Key People</div>
+    <div class="people-grid">
+      <div class="person-card">
+        <div class="person-name">Hema Keshava</div>
+        <div class="person-role">CFO · Internal ERP Sponsor</div>
+        <span class="person-action action-ok">Engaged</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">Didier Blondel</div>
+        <div class="person-role">CFO · Program Sponsor</div>
+        <span class="person-action action-ok">Engaged</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">Adrian Holbrook</div>
+        <div class="person-role">Controls Lead</div>
+        <span class="person-action action-waiting">Awaiting 3-slide pack</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">Camille Girard</div>
+        <div class="person-role">Audit Cmte Liaison</div>
+        <span class="person-action action-waiting">Date TBC</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">NetSuite Team</div>
+        <div class="person-role">Vendor / Implementer</div>
+        <span class="person-action action-needed">Commercials pending</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">KPMG</div>
+        <div class="person-role">Controls Advisor</div>
+        <span class="person-action action-ok">€650K contracted</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">AP Team</div>
+        <div class="person-role">P2P / Vendor Master</div>
+        <span class="person-action action-needed">Remediation TL needed</span>
+      </div>
+      <div class="person-card">
+        <div class="person-name">P2P Process Owner</div>
+        <div class="person-role">To be assigned</div>
+        <span class="person-action action-tbd">Not nominated</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

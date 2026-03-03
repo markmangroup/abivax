@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2P Intelligence Brief — Abivax ERP Program</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #080E1C;
+    color: #F1F5F9;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    background: #0D1B30;
+    border-bottom: 2px solid #C9A44B;
+    padding: 18px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-header .left { display: flex; align-items: center; gap: 16px; }
+  .page-header .badge {
+    background: #C9A44B;
+    color: #080E1C;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .page-header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #F1F5F9;
+    letter-spacing: 0.01em;
+  }
+  .page-header .sub {
+    font-size: 12px;
+    color: #64748B;
+    margin-top: 2px;
+  }
+  .page-header .meta {
+    text-align: right;
+    font-size: 11px;
+    color: #64748B;
+    line-height: 1.7;
+  }
+  .page-header .meta span { color: #94A3B8; }
+
+  /* ── Layout ── */
+  .page-body {
+    padding: 24px 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: #0E1E38;
+    border: 1px solid #1E3560;
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #1E3560;
+  }
+  .card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #CBD5E1;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+  .card-stamp {
+    font-size: 10px;
+    color: #475569;
+    background: #142238;
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid #1E3560;
+  }
+
+  /* ── Vendor Health Card ── */
+  .vendor-health { grid-column: 1; grid-row: 1; }
+  .vendor-health-inner {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  .donut-wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  .donut-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .donut-center .big { font-size: 36px; font-weight: 800; color: #F1F5F9; }
+  .donut-center .label { font-size: 11px; color: #64748B; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+
+  .vendor-stats { display: flex; flex-direction: column; gap: 10px; }
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border-left: 3px solid transparent;
+  }
+  .stat-row.favorable { background: #0a2a1a; border-color: #10B981; }
+  .stat-row.flagged { background: #2a1c08; border-color: #F59E0B; }
+  .stat-row.critical { background: #2a0e0e; border-color: #EF4444; }
+  .stat-row.blocklist { background: #142238; border-color: #38BDF8; }
+
+  .stat-icon { font-size: 18px; width: 24px; text-align: center; flex-shrink: 0; }
+  .stat-content { flex: 1; }
+  .stat-label { font-size: 11px; color: #94A3B8; }
+  .stat-value { font-size: 20px; font-weight: 800; color: #F1F5F9; line-height: 1.2; }
+  .stat-value span { font-size: 12px; font-weight: 500; color: #64748B; }
+  .stat-note { font-size: 10px; color: #64748B; margin-top: 1px; }
+  .stat-note.warn { color: #F59E0B; }
+  .stat-note.alert { color: #EF4444; }
+  .stat-note.ok { color: #10B981; }
+
+  /* ── Country Strip ── */
+  .country-strip {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #1E3560;
+  }
+  .country-strip-label {
+    font-size: 10px;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 10px;
+  }
+  .country-bars { display: flex; flex-direction: column; gap: 5px; }
+  .country-row { display: flex; align-items: center; gap: 8px; }
+  .country-name { font-size: 11px; color: #94A3B8; width: 28px; flex-shrink: 0; }
+  .country-bar-wrap { flex: 1; background: #142238; border-radius: 2px; height: 8px; }
+  .country-bar-fill { height: 8px; border-radius: 2px; background: #38BDF8; }
+  .country-count { font-size: 11px; color: #64748B; width: 30px; text-align: right; flex-shrink: 0; }
+
+  /* ── SOX Control Grid ── */
+  .sox-grid-card { grid-column: 2; grid-row: 1; }
+  .sox-grid { display: flex; flex-direction: column; gap: 8px; }
+  .sox-row {
+    display: grid;
+    grid-template-columns: 100px 80px 1fr 90px;
+    gap: 10px;
+    align-items: start;
+    padding: 12px 14px;
+    border-radius: 6px;
+    background: #142238;
+    border: 1px solid #1E3560;
+  }
+  .sox-id { font-size: 11px; font-weight: 700; color: #C9A44B; font-family: 'Courier New', monospace; }
+  .sox-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .sox-status.confirmed { background: #0a2a1a; color: #10B981; border: 1px solid #10B981; }
+  .sox-status.gap { background: #2a1c08; color: #F59E0B; border: 1px solid #F59E0B; }
+  .sox-status.unknown { background: #1a1a2a; color: #64748B; border: 1px solid #334155; }
+  .sox-desc { font-size: 11px; color: #94A3B8; }
+  .sox-desc strong { color: #CBD5E1; display: block; margin-bottom: 2px; font-size: 11px; }
+  .sox-evidence { font-size: 10px; color: #475569; text-align: right; }
+  .sox-evidence.has { color: #38BDF8; }
+
+  .sox-summary {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: #0a1a30;
+    border: 1px solid #C9A44B44;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #94A3B8;
+    line-height: 1.6;
+  }
+  .sox-summary strong { color: #C9A44B; }
+
+  /* ── Commitment Exposure ── */
+  .commitment-card { grid-column: 1; grid-row: 2; }
+  .commitment-totals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .kpi {
+    background: #142238;
+    border: 1px solid #1E3560;
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .kpi-label { font-size: 10px; color: #64748B; text-transform: uppercase; letter-spacing: 0.07em; }
+  .kpi-value { font-size: 22px; font-weight: 800; color: #F1F5F9; margin-top: 2px; line-height: 1.1; }
+  .kpi-value.gold { color: #C9A44B; }
+  .kpi-value.teal { color: #38BDF8; }
+  .kpi-sub { font-size: 10px; color: #475569; margin-top: 3px; }
+
+  .chart-wrap { height: 220px; position: relative; }
+
+  /* ── Remediation Card ── */
+  .remediation-card { grid-column: 2; grid-row: 2; }
+  .remediation-intro {
+    margin-bottom: 12px;
+    font-size: 11px;
+    color: #64748B;
+    line-height: 1.6;
+    padding: 10px 12px;
+    background: #2a1c0844;
+    border: 1px solid #F59E0B33;
+    border-radius: 5px;
+  }
+  .remediation-intro .highlight { color: #F59E0B; font-weight: 700; }
+  .remediation-intro .critical { color: #EF4444; font-weight: 700; }
+
+  .rem-table { width: 100%; border-collapse: collapse; }
+  .rem-table th {
+    font-size: 10px;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #1E3560;
+  }
+  .rem-table td {
+    padding: 8px 8px;
+    font-size: 11px;
+    color: #94A3B8;
+    border-bottom: 1px solid #1A2D4A;
+    vertical-align: top;
+  }
+  .rem-table tr:last-child td { border-bottom: none; }
+  .rem-table .vendor-name { color: #CBD5E1; font-weight: 600; }
+  .rem-table .country-tag {
+    display: inline-block;
+    background: #1E3560;
+    color: #64748B;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-family: monospace;
+    margin-left: 4px;
+  }
+  .tag-closed { background: #2a0e0e; color: #EF4444; }
+  .tag-mismatch { background: #2a1c08; color: #F59E0B; }
+  .tag-missing { background: #1a1a2a; color: #64748B; }
+  .rem-tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .action-required {
+    font-size: 10px;
+    color: #F59E0B;
+    font-style: italic;
+  }
+
+  /* ── Migration Gate Banner ── */
+  .gate-banner {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background: #0D1B30;
+    border: 1px solid #1E3560;
+    border-left: 4px solid #C9A44B;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .gate-section h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #C9A44B;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+  }
+  .gate-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    color: #94A3B8;
+    line-height: 1.5;
+  }
+  .gate-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .dot-amber { background: #F59E0B; }
+  .dot-red { background: #EF4444; }
+  .dot-teal { background: #38BDF8; }
+  .dot-green { background: #10B981; }
+
+  /* ── Footer ── */
+  .page-footer {
+    max-width: 1400px;
+    margin: 4px auto 24px;
+    padding: 0 36px;
+    font-size: 10px;
+    color: #334155;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="page-header">
+  <div class="left">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:3px;">
+        <span class="badge">P2P Intelligence</span>
+        <h1>Vendor Master &amp; Commitment Exposure Brief</h1>
+      </div>
+      <div class="sub">Abivax ERP Program · NetSuite Phase 1 Readiness · France SA</div>
+    </div>
+  </div>
+  <div class="meta">
+    <div>Source: Trustpair export · ENGAGE 2025 register</div>
+    <div>Data as of: <span>31-Dec-2025 / 02-Mar-2026</span></div>
+    <div>Program owner: <span>Mike Markman</span></div>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <!-- ── VENDOR MASTER HEALTH ── -->
+  <div class="card vendor-health">
+    <div class="card-header">
+      <span class="card-title">Vendor Master Health</span>
+      <span class="card-stamp">Trustpair · 497 vendors · 02-Mar-2026</span>
+    </div>
+    <div class="vendor-health-inner">
+      <div class="donut-wrap">
+        <canvas id="donutChart"></canvas>
+        <div class="donut-center">
+          <div class="big">497</div>
+          <div class="label">Total Vendors</div>
+        </div>
+      </div>
+      <div class="vendor-stats">
+        <div class="stat-row favorable">
+          <div class="stat-icon">✓</div>
+          <div class="stat-content">
+            <div class="stat-label">Globally Favorable</div>
+            <div class="stat-value">475 <span>95.6%</span></div>
+            <div class="stat-note ok">Bank valid · Company active · Ownership confirmed</div>
+          </div>
+        </div>
+        <div class="stat-row flagged">
+          <div class="stat-icon">⚠</div>
+          <div class="stat-content">
+            <div class="stat-label">Couple Défavorable</div>
+            <div class="stat-value">22 <span>4.4%</span></div>
+            <div class="stat-note warn">Bank account exists but supplier ownership not confirmed — pre-migration SOX gate</div>
+          </div>
+        </div>
+        <div class="stat-row critical">
+          <div class="stat-icon">✕</div>
+          <div class="stat-content">
+            <div class="stat-label">Défavorable / Anomalie (global)</div>
+            <div class="stat-value">10 <span>2.0%</span></div>
+            <div class="stat-note alert">2 closed accounts · 4 invalid IBAN · 4 missing entity ID</div>
+          </div>
+        </div>
+        <div class="stat-row blocklist">
+          <div class="stat-icon">🛡</div>
+          <div class="stat-content">
+            <div class="stat-label">On Blocklist</div>
+            <div class="stat-value">0 <span>—</span></div>
+            <div class="stat-note ok">No vendors flagged on refusal list</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Country breakdown -->
+    <div class="country-strip">
+      <div class="country-strip-label">Vendor geography (top 6)</div>
+      <div class="country-bars">
+        <div class="country-row">
+          <div class="country-name">FR</div>
+          <div class="country-bar-wrap"><div class="country-bar-fill" style="width:49%;background:#38BDF8;"></div></div>
+          <div class="country-count">245</div>
+        </div>
+        <div class="country-row">
+          <div class="country-name">US</div>
+          <div class="country-bar-wrap"><div class="country-bar-fill" style="width:20%;background:#C9A44B;"></div></div>
+          <div class="country-count">99</div>
+        </div>
+        <div class="country-row">
+          <div class="country-name">GB</div>
+          <div class="country-bar-wrap"><div class="country-bar-fill" style="width:7%;background:#94A3B8;"></div></div>
+          <div class="country-count">33</div>
+        </div>
+        <div class="country-row">
+          <div class="country-name">DE</div>
+          <div class="country-bar-wrap"><div class="country-bar-fill" style="width:5%;background:#94A3B8;"></div></div>
+          <div class="country-count">27</div>
+        </div>
+        <div class="country-row">
+          <div class="country-name">SE</div>
+          <div class="country-bar-wrap"><div class="country-bar-fill" style="width:2%;background:#94A3B8;"></div></div>
+          <div class="country-count">10</div>
+        </div>
+        <div class="country-row">
+          <div class="country-name">Other</div>
+          <div class="country-bar-wrap"><div class="country-bar-fill" style="width:17%;background:#475569;"></div></div>
+          <div class="country-count">83</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SOX CONTROL STATUS ── -->
+  <div class="card sox-grid-card">
+    <div class="card-header">
+      <span class="card-title">SOX P2P Controls — ERP Signal</span>
+      <span class="card-stamp">5 ERP-addressable · CFTI register</span>
+    </div>
+    <div class="sox-grid">
+
+      <div class="sox-row">
+        <div>
+          <div class="sox-id">FR-PTP-02G</div>
+        </div>
+        <div><span class="sox-status confirmed">✓ Confirmed</span></div>
+        <div class="sox-desc">
+          <strong>New vendor setup &amp; bank validation</strong>
+          Trustpair validates all 497 vendors. Audit log exportable. Control is live and producing evidence.
+        </div>
+        <div class="sox-evidence has">Evidence confirmed<br>Trustpair export</div>
+      </div>
+
+      <div class="sox-row">
+        <div>
+          <div class="sox-id">FR-PTP-04G</div>
+        </div>
+        <div><span class="sox-status gap">⚠ Gap</span></div>
+        <div class="sox-desc">
+          <strong>PO approval workflow</strong>
+          Approvals are manual / email-based. No system-enforced workflow in Sage 100. NetSuite closes by design.
+        </div>
+        <div class="sox-evidence">ERP will close</div>
+      </div>
+
+      <div class="sox-row">
+        <div>
+          <div class="sox-id">FR-PTP-05G</div>
+        </div>
+        <div><span class="sox-status gap">⚠ Gap</span></div>
+        <div class="sox-desc">
+          <strong>Review of open orders</strong>
+          No systematic open PO review in Sage. €165M ENGAGE commitments not visible in GL. ERP closes by design.
+        </div>
+        <div class="sox-evidence">ERP will close</div>
+      </div>
+
+      <div class="sox-row">
+        <div>
+          <div class="sox-id">FR-PTP-06G</div>
+        </div>
+        <div><span class="sox-status gap">⚠ Gap</span></div>
+        <div class="sox-desc">
+          <strong>Two-way match (PO ↔ Invoice)</strong>
+          Sage 100 structurally incapable of two-way match. Process is fully manual via Juliette/Fatma inbox.
+        </div>
+        <div class="sox-evidence">ERP will close</div>
+      </div>
+
+      <div class="sox-row">
+        <div>
+          <div class="sox-id">FR-PTP-14G</div>
+        </div>
+        <div><span class="sox-status gap">⚠ Gap</span></div>
+        <div class="sox-desc">
+          <strong>Unrecorded liabilities</strong>
+          €165M in commitments not captured in Sage. Accruals rely on manual ENGAGE extracts. ERP closes by design.
+        </div>
+        <div class="sox-evidence">ERP will close</div>
+      </div>
+
+    </div>
+    <div class="sox-summary">
+      <strong>Read:</strong> 1 of 5 ERP-signal P2P controls has confirmed audit evidence today (FR-PTP-02G via Trustpair). The remaining 4 are open gaps that NetSuite closes by architecture — not by process change. This is the core argument for the April mobilization deadline.
+    </div>
+  </div>
+
+  <!-- ── COMMITMENT EXPOSURE ── -->
+  <div class="card commitment-card">
+    <div class="card-header">
+      <span class="card-title">Contract Commitment Exposure</span>
+      <span class="card-stamp">ENGAGE 2025 · 31-Dec-2025</span>
+    </div>
+    <div class="commitment-totals">
+      <div class="kpi">
+        <div class="kpi-label">EUR Forward Exposure</div>
+        <div class="kpi-value gold">€165M</div>
+        <div class="kpi-sub">Active uncommitted balance</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Already Invoiced</div>
+        <div class="kpi-value teal">€7.5M</div>
+        <div class="kpi-sub">Booked against active lines</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Active Lines · Vendors</div>
+        <div class="kpi-value">2,888</div>
+        <div class="kpi-sub">187 unique vendors · 3,042 closed</div>
+      </div>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="deptChart"></canvas>
+    </div>
+  </div>
+
+  <!-- ── REMEDIATION LIST ── -->
+  <div class="card remediation-card">
+    <div class="card-header">
+      <span class="card-title">Vendor Remediation — Pre-Migration</span>
+      <span class="card-stamp">10 flagged · Owner: Philippe / Juliette</span>
+    </div>
+    <div class="remediation-intro">
+      <span class="critical">10 vendors</span> require resolution before NetSuite vendor master load. An additional <span class="highlight">22 couple-Défavorable</span> vendors require bank ownership confirmation — this is a hard pre-blueprint gate for FR-PTP-02G compliance.
+    </div>
+    <table class="rem-table">
+      <thead>
+        <tr>
+          <th>Vendor</th>
+          <th>Issue</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="vendor-name">Securities &amp; Exchange Commission</span><span class="country-tag">US</span></td>
+          <td><span class="rem-tag tag-closed">Closed acct</span></td>
+          <td class="action-required">Deactivate or update banking</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">BINCY ABRAHAM</span><span class="country-tag">—</span></td>
+          <td><span class="rem-tag tag-closed">Closed acct</span></td>
+          <td class="action-required">Deactivate — no country, personal name</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">LATHAM &amp; WATKINS</span><span class="country-tag">US</span></td>
+          <td><span class="rem-tag tag-mismatch">Mismatch</span></td>
+          <td class="action-required">Confirm bank ownership with vendor</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">ADN AMENAGEMENTS</span><span class="country-tag">FR</span></td>
+          <td><span class="rem-tag tag-mismatch">Mismatch</span></td>
+          <td class="action-required">Confirm bank ownership with vendor</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">Q2 SOLUTIONS</span><span class="country-tag">US</span></td>
+          <td><span class="rem-tag tag-missing">Legal unconf.</span></td>
+          <td class="action-required">Verify company legal status</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">MILAN LUKAS</span><span class="country-tag">CZ</span></td>
+          <td><span class="rem-tag tag-mismatch">Mismatch</span></td>
+          <td class="action-required">Confirm bank ownership</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">HAREL</span><span class="country-tag">IL</span></td>
+          <td><span class="rem-tag tag-missing">No entity ID</span></td>
+          <td class="action-required">Provide registration number</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">HDI Global SE Japan Branch</span><span class="country-tag">JP</span></td>
+          <td><span class="rem-tag tag-missing">No entity ID</span></td>
+          <td class="action-required">Provide registration number</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">ALLIANZ JINGDONG</span><span class="country-tag">CN</span></td>
+          <td><span class="rem-tag tag-missing">No entity ID</span></td>
+          <td class="action-required">Provide registration number</td>
+        </tr>
+        <tr>
+          <td><span class="vendor-name">(Unnamed vendor)</span><span class="country-tag">BR</span></td>
+          <td><span class="rem-tag tag-missing">Invalid IBAN</span></td>
+          <td class="action-required">Obtain correct banking details</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── MIGRATION GATE BANNER ── -->
+  <div class="gate-banner">
+    <div class="gate-section">
+      <h4>Pre-Blueprint Gates (P2P)</h4>
+      <div class="gate-item">
+        <div class="dot dot-red"></div>
+        <div>Resolve 10 Défavorable/Anomalie vendors — deactivate or update banking before master data load</div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-amber"></div>
+        <div>Confirm bank ownership for 22 couple-Défavorable vendors — required for FR-PTP-02G carry-forward into NetSuite</div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-amber"></div>
+        <div>Decide: does €165M ENGAGE register migrate as open POs or reference data only? (Trinidad to advise)</div>
+      </div>
+    </div>
+    <div class="gate-section">
+      <h4>What NetSuite Closes</h4>
+      <div class="gate-item">
+        <div class="dot dot-teal"></div>
+        <div>FR-PTP-04G: system-enforced PO approval workflow replaces email/paper sign-off</div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-teal"></div>
+        <div>FR-PTP-05G: live open PO register — €165M in commitments visible in GL for first time</div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-teal"></div>
+        <div>FR-PTP-06G: two-way PO-invoice match automated — eliminates Juliette/Fatma manual reconciliation</div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-teal"></div>
+        <div>FR-PTP-14G: accruals driven by system data, not manual ENGAGE extracts</div>
+      </div>
+    </div>
+    <div class="gate-section">
+      <h4>Program Commercials (Confirmed)</h4>
+      <div class="gate-item">
+        <div class="dot dot-amber"></div>
+        <div>Build (one-off): <strong style="color:#F1F5F9">€463,120</strong></div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-amber"></div>
+        <div>Run (annual SaaS): <strong style="color:#F1F5F9">€187,009/year</strong></div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-green"></div>
+        <div>Year 1 total: <strong style="color:#C9A44B">~€650K</strong> · 3-year: <strong style="color:#C9A44B">€1.02M</strong></div>
+      </div>
+      <div class="gate-item">
+        <div class="dot dot-teal"></div>
+        <div>Implementation: <strong style="color:#F1F5F9">392 man-days</strong> at €1,136/day · Trustpair integration in scope</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="page-footer">
+  <div>Abivax ERP Program · P2P Intelligence Brief · Generated 2026-03-02 · Not for external distribution</div>
+  <div>Sources: Trustpair export (Philippe Goncalves, Mar 2) · ENGAGE_2025 (Philippe Goncalves, Mar 2) · KPMG Audit Committee deck (Camille Girard, Feb 26)</div>
+</div>
+
+<script>
+// ── Donut Chart: Vendor Master Health ──
+const donutCtx = document.getElementById('donutChart').getContext('2d');
+new Chart(donutCtx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Favorable', 'Couple Défavorable', 'Défavorable/Anomalie'],
+    datasets: [{
+      data: [475, 22, 10],
+      backgroundColor: ['#10B981', '#F59E0B', '#EF4444'],
+      borderColor: '#0E1E38',
+      borderWidth: 3,
+      hoverOffset: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: true,
+    cutout: '70%',
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#0D1B30',
+        borderColor: '#1E3560',
+        borderWidth: 1,
+        titleColor: '#F1F5F9',
+        bodyColor: '#94A3B8',
+        callbacks: {
+          label: (ctx) => ` ${ctx.label}: ${ctx.parsed} vendors (${((ctx.parsed/497)*100).toFixed(1)}%)`
+        }
+      }
+    }
+  }
+});
+
+// ── Horizontal Bar: Commitment by Dept ──
+const deptCtx = document.getElementById('deptChart').getContext('2d');
+new Chart(deptCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Clinical (CLI)', 'CMC', 'Lab (LAB)', 'QA', 'Data (DAT)', 'Regulatory', 'Other'],
+    datasets: [{
+      label: 'Commitment lines',
+      data: [1265, 1014, 334, 111, 65, 34, 65],
+      backgroundColor: [
+        '#38BDF8cc',
+        '#C9A44Bcc',
+        '#10B981cc',
+        '#8B5CF6cc',
+        '#F59E0Bcc',
+        '#64748Bcc',
+        '#334155cc'
+      ],
+      borderRadius: 4,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#0D1B30',
+        borderColor: '#1E3560',
+        borderWidth: 1,
+        titleColor: '#F1F5F9',
+        bodyColor: '#94A3B8',
+        callbacks: {
+          label: (ctx) => ` ${ctx.parsed.x.toLocaleString()} active commitment lines`
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: '#1E3560', drawBorder: false },
+        ticks: { color: '#64748B', font: { size: 10 } },
+        border: { color: '#1E3560' }
+      },
+      y: {
+        grid: { display: false },
+        ticks: { color: '#94A3B8', font: { size: 11 } },
+        border: { color: '#1E3560' }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
