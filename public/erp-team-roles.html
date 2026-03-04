@@ -357,28 +357,15 @@
       <div class="ws-body">
         <div class="person bpo">
           <div class="person-left">
-            <div class="avatar" style="background:#B58728;">YO</div>
+            <div class="avatar" style="background:#B58728;">CF</div>
             <div>
-              <div class="person-name">Youness</div>
-              <div class="person-role">CFGI — controls implementation lead</div>
+              <div class="person-name">CFGI</div>
+              <div class="person-role">Controls consulting group — SOX implementation lead</div>
             </div>
           </div>
           <div class="person-right">
             <span class="pill-bpo">BPO</span>
-            <span class="pill-ext">CFGI</span>
-          </div>
-        </div>
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#D97706;">WA</div>
-            <div>
-              <div class="person-name">Walid</div>
-              <div class="person-role">CFGI — controls implementation</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-            <span class="pill-ext">CFGI</span>
+            <span class="pill-ext">External</span>
           </div>
         </div>
         <div class="ws-divider"></div>
@@ -398,13 +385,51 @@
       </div>
     </div>
 
-    <!-- Data Migration -->
+    <!-- Supplier Master Data -->
     <div class="ws-card">
       <div class="ws-header">
-        <div class="ws-icon" style="background:#FCE7F3;">🗄️</div>
+        <div class="ws-icon" style="background:#FCE7F3;">🏭</div>
         <div>
-          <div class="ws-title">Data Migration and Master Data</div>
-          <div class="ws-sub">Chart of accounts, vendor master, open items, history</div>
+          <div class="ws-title">Supplier Master Data</div>
+          <div class="ws-sub">Vendor master, supplier onboarding, Trustpair data</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person bpo">
+          <div class="person-left">
+            <div class="avatar" style="background:#2D7DD2;">JC</div>
+            <div>
+              <div class="person-name">Juliette Courtot</div>
+              <div class="person-role">P2P — supplier master owner</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="pill-bpo">BPO</span>
+          </div>
+        </div>
+        <div class="person support">
+          <div class="person-left">
+            <div class="avatar" style="background:#2D7DD2;">JN</div>
+            <div>
+              <div class="person-name">Jade Nguyen</div>
+              <div class="person-role">IT Lead — technical extraction and load</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="pill-support">Technical</span>
+          </div>
+        </div>
+        <div class="ws-note">Juliette owns supplier data quality and cleanup. Closely tied to P2P workstream — vendor master feeds AP workflow from day one.</div>
+      </div>
+    </div>
+
+    <!-- GL / Chart of Accounts -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#EDE9FE;">📂</div>
+        <div>
+          <div class="ws-title">GL and Chart of Accounts</div>
+          <div class="ws-sub">CoA design, opening balances, historical data migration</div>
         </div>
       </div>
       <div class="ws-body">
@@ -413,7 +438,7 @@
             <div class="avatar" style="background:#7C3AED;">DJ</div>
             <div>
               <div class="person-name">Denis Jankovic</div>
-              <div class="person-role">Finance/Ops — data migration BPO</div>
+              <div class="person-role">Finance/Ops — GL and CoA BPO</div>
             </div>
           </div>
           <div class="person-right">
@@ -432,7 +457,47 @@
             <span class="pill-support">Technical</span>
           </div>
         </div>
-        <div class="ws-note">Denis owns source data quality, chart of accounts sign-off, and opening balances. Jade handles technical extraction and load.</div>
+        <div class="ws-note">Denis owns CoA design, opening balances, and historical data sign-off. Jade handles technical extraction and load into NetSuite.</div>
+      </div>
+    </div>
+
+    <!-- Treasury -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#ECFDF5;">🏦</div>
+        <div>
+          <div class="ws-title">Treasury</div>
+          <div class="ws-sub">Cash management, bank connectivity, commitments visibility</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person bpo">
+          <div class="person-left">
+            <div class="avatar" style="background:#60A5FA;">KG</div>
+            <div>
+              <div class="person-name">Kimberly Gordon</div>
+              <div class="person-role">P2P Contractor — US treasury BPO</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="pill-bpo">BPO</span>
+            <span class="pill-us">US</span>
+          </div>
+        </div>
+        <div class="ws-divider"></div>
+        <div class="person sa">
+          <div class="person-left">
+            <div class="avatar" style="background:#94A3B8;">RS</div>
+            <div>
+              <div class="person-name">Roxandra Sturdza</div>
+              <div class="person-role">Finance — treasury steering and advisory</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="pill-sa">SA</span>
+          </div>
+        </div>
+        <div class="ws-note">Kim owns treasury process design and US bank connectivity. Roxandra provides steering-level input on treasury requirements and sign-off.</div>
       </div>
     </div>
 
@@ -483,11 +548,15 @@
     <div style="padding:12px 16px; display:flex; flex-direction:column; gap:8px;">
       <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
         <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
-        <span><strong>CFGI (Youness and Walid)</strong> confirmed as BPO for controls workstream. Hema in oversight role only.</span>
+        <span><strong>CFGI</strong> confirmed as BPO for controls and compliance workstream. Hema in oversight role only, not day-to-day.</span>
       </div>
       <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
         <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
-        <span><strong>Denis Jankovic</strong> assigned as Data Migration BPO. Removes single-person dependency previously sitting in Finance.</span>
+        <span><strong>Master data split:</strong> Juliette owns Supplier Master, Denis Jankovic owns GL and Chart of Accounts. Clear accountability, no shared ownership.</span>
+      </div>
+      <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
+        <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
+        <span><strong>Treasury</strong> added as a named workstream. Kimberly Gordon as US BPO, Roxandra Sturdza in SA role.</span>
       </div>
       <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
         <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
