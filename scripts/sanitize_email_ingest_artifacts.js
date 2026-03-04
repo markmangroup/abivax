@@ -4,8 +4,7 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
 
-const TARGET_FILES = [
-  "data/abivax/emails_staging/emails_2026-03-02.json",
+const STATIC_TARGET_FILES = [
   "collab/claude/outputs/emails_2026-03-02_extracted.json",
   "collab/claude/outputs/emails_2026-03-02_complete.md",
   "collab/claude/outputs/emails_2026-03-02_extracted.csv",
@@ -16,8 +15,21 @@ const EXACT_REPLACEMENTS = [];
 const REGEX_REPLACEMENTS = [
   [/Password\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "Password: [REDACTED]"],
   [/Username\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "Username: [REDACTED]"],
-  [/PWD\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "PWD: [REDACTED]
+  [/PWD\s*:\s*(?!\[REDACTED\])[^\r\n]+/g, "PWD: [REDACTED]"],
 ];
+
+function getTargetFiles() {
+  const targets = [...STATIC_TARGET_FILES];
+  const stagingDir = path.join(ROOT, "data", "abivax", "emails_staging");
+  if (fs.existsSync(stagingDir)) {
+    for (const name of fs.readdirSync(stagingDir)) {
+      if (/^emails_\d{4}-\d{2}-\d{2}\.json$/.test(name)) {
+        targets.push(path.join("data/abivax/emails_staging", name));
+      }
+    }
+  }
+  return targets;
+}
 
 function countOccurrences(haystack, needle) {
   if (!needle) return 0;
@@ -51,7 +63,7 @@ function main() {
   let changedFiles = 0;
   let totalReplacements = 0;
 
-  for (const relPath of TARGET_FILES) {
+  for (const relPath of getTargetFiles()) {
     const filePath = path.join(ROOT, relPath);
     if (!fs.existsSync(filePath)) continue;
     const before = fs.readFileSync(filePath, "utf8");

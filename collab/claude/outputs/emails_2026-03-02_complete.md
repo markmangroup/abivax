@@ -13725,8 +13725,8 @@ I would like to let you know that I’ve added access for you to the following s
 
 Veeva Vault is our official Quality Document and training management platform (i.e., where you can access our Standard Operating Procedures, Work Instructions, Templates/Forms and where we assign training on these documents). The URL is here: Veeva Vault QualityDocs/Vault Training <https://abivax-quality.veevavault.com/> .
 
-*	Username: Your Abivax email address.
-*	Password: Not required, access is managed through Abivax Single Sign-On (SSO).
+*	Username: [REDACTED]
+*	Password: [REDACTED]
 
  
 
@@ -13840,8 +13840,8 @@ I would like to let you know that I’ve added access for you to the following s
 
 Veeva Vault is our official Quality Document and training management platform (i.e., where you can access our Standard Operating Procedures, Work Instructions, Templates/Forms and where we assign training on these documents). The URL is here: Veeva Vault QualityDocs/Vault Training <https://abivax-quality.veevavault.com/> .
 
-*	Username: Your Abivax email address.
-*	Password: Not required, access is managed through Abivax Single Sign-On (SSO).
+*	Username: [REDACTED]
+*	Password: [REDACTED]
 
  
 
@@ -14245,8 +14245,8 @@ I would like to let you know that I’ve added access for you to the following s
 
 Veeva Vault is our official Quality Document and training management platform (i.e., where you can access our Standard Operating Procedures, Work Instructions, Templates/Forms and where we assign training on these documents). The URL is here: Veeva Vault QualityDocs/Vault Training <https://abivax-quality.veevavault.com/> .
 
-*	Username: Your Abivax email address.
-*	Password: Not required, access is managed through Abivax Single Sign-On (SSO).
+*	Username: [REDACTED]
+*	Password: [REDACTED]
 
  
 

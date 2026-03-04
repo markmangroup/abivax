@@ -1,0 +1,784 @@
+{
+  "generatedAt": "2026-03-04T15:40:50.128Z",
+  "sourceFile": "emails_2026-03-04.json",
+  "totalEmails": 22,
+  "byType": {
+    "action-required": 2,
+    "external-request": 0,
+    "internal-update": 0,
+    "deliverable-received": 3,
+    "thread-reply": 0,
+    "scheduling": 15,
+    "noise": 2
+  },
+  "flagCounts": {
+    "deadline": 21,
+    "financial": 5,
+    "decision": 7,
+    "data-gap-fill": 0,
+    "risk": 8,
+    "urgent": 14
+  },
+  "noiseCount": 2,
+  "triageErrors": [],
+  "emails": [
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD10000",
+      "date": "2026-03-04T04:24:11.8640000",
+      "direction": "received",
+      "subject": "RE: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Walid Bouassida",
+      "to": [
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "urgent"
+      ],
+      "oneSentenceSummary": "RE: Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [
+        "Date mentioned: mardi 3",
+        "Date mentioned: mars 20",
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "hema",
+        "netsuite",
+        "abivax",
+        "marc-de-garidel",
+        "thomas-descusses",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD00000",
+      "date": "2026-03-04T03:59:06.7900000",
+      "direction": "received",
+      "subject": "Reference contact & template",
+      "from": "Ben Alaya, Aymen",
+      "to": [
+        "Hema Keshava",
+        "Jade Nguyen",
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "financial",
+        "urgent",
+        "risk"
+      ],
+      "oneSentenceSummary": "Reference contact & template",
+      "keyFacts": [],
+      "linkedPillars": [
+        "reporting"
+      ],
+      "linkedEntities": [
+        "aymen-ben-alaya",
+        "hema",
+        "jade",
+        "mike-markman",
+        "girard-camille",
+        "netsuite",
+        "abivax",
+        "kpmg",
+        "ben-alaya"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BCF0000",
+      "date": "2026-03-03T17:13:56.2910000",
+      "direction": "received",
+      "subject": "Re: Audit committee slides ",
+      "from": "Adrian Holbrook",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "decision",
+        "urgent"
+      ],
+      "oneSentenceSummary": "Re: Audit committee slides",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Decision language present."
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "adrian-holbrook",
+        "mike-markman",
+        "hema",
+        "matt-epley",
+        "netsuite",
+        "abivax",
+        "kpmg",
+        "marc-de-garidel",
+        "mark-hronec"
+      ],
+      "attachments": [
+        "Q4 2025 Financial Results ERP - Mike.pptx",
+        "Outlook-photo.png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BCD0000",
+      "date": "2026-03-03T15:19:34.1590000",
+      "direction": "received",
+      "subject": "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Angela DePoy",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "urgent"
+      ],
+      "oneSentenceSummary": "Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "finance-close",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "hema",
+        "trinidad",
+        "netsuite",
+        "abivax",
+        "abivax-us",
+        "marc-de-garidel",
+        "thomas-descusses",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BCC0000",
+      "date": "2026-03-03T15:14:38.7830000",
+      "direction": "received",
+      "subject": "RE: Weekly Summary of QMS Documents Update 03Mar2026",
+      "from": "Malinda Micho",
+      "to": [
+        "allabivax",
+        "ALLABIVAX-E"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "deadline",
+        "decision",
+        "risk"
+      ],
+      "oneSentenceSummary": "RE: Weekly Summary of QMS Documents Update 03Mar2026",
+      "keyFacts": [
+        "Date mentioned: Feb 20",
+        "Date mentioned: Feb 20",
+        "Date mentioned: Feb 20",
+        "Decision language present."
+      ],
+      "linkedPillars": [
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mark-hronec",
+        "abivax",
+        "mary-mantock"
+      ],
+      "attachments": [
+        "image001.png",
+        "image002.png",
+        "image003.png",
+        "image004.png",
+        "image005.png",
+        "QMS Index_03Mar2026.pdf"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C53D0000",
+      "date": "2026-03-03T15:08:09.6080000",
+      "direction": "sent",
+      "subject": "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Michael Markman",
+      "to": [
+        "Angela DePoy"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "urgent",
+        "risk"
+      ],
+      "oneSentenceSummary": "Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "hema",
+        "netsuite",
+        "abivax",
+        "abivax-us",
+        "financial-reporting",
+        "marc-de-garidel",
+        "thomas-descusses",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BCB0000",
+      "date": "2026-03-03T15:02:27.5630000",
+      "direction": "received",
+      "subject": "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Angela DePoy",
+      "to": [
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "urgent",
+        "risk"
+      ],
+      "oneSentenceSummary": "Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "hema",
+        "netsuite",
+        "abivax",
+        "abivax-us",
+        "financial-reporting",
+        "marc-de-garidel",
+        "thomas-descusses",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BCA0000",
+      "date": "2026-03-03T14:55:34.9510000",
+      "direction": "received",
+      "subject": "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Angela DePoy",
+      "to": [
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "decision",
+        "urgent",
+        "risk"
+      ],
+      "oneSentenceSummary": "Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "hema",
+        "netsuite",
+        "abivax",
+        "abivax-us",
+        "financial-reporting",
+        "marc-de-garidel",
+        "thomas-descusses",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C53C0000",
+      "date": "2026-03-03T14:32:30.7320000",
+      "direction": "sent",
+      "subject": "Re: Audit committee slides ",
+      "from": "Michael Markman",
+      "to": [
+        "Adrian Holbrook"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "decision",
+        "urgent"
+      ],
+      "oneSentenceSummary": "Re: Audit committee slides",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Date mentioned: March 3, 2026",
+        "Decision language present."
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "adrian-holbrook",
+        "netsuite",
+        "abivax",
+        "kpmg",
+        "marc-de-garidel",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C53B0000",
+      "date": "2026-03-03T14:31:54.7600000",
+      "direction": "sent",
+      "subject": "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Michael Markman",
+      "to": [
+        "Angela DePoy",
+        "Hema Keshava"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "decision",
+        "urgent"
+      ],
+      "oneSentenceSummary": "Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "hema",
+        "netsuite",
+        "abivax",
+        "abivax-france",
+        "kpmg",
+        "sox-compliance",
+        "ifrs",
+        "gaap",
+        "financial-reporting",
+        "marc-de-garidel",
+        "mary-mantock",
+        "thomas-descusses",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC70000",
+      "date": "2026-03-03T14:24:03.8500000",
+      "direction": "received",
+      "subject": "Subject: Smartsheet Access – Temporary Access Requests",
+      "from": "Jim Huebner",
+      "to": [
+        "allabivax",
+        "ALLABIVAX-E"
+      ],
+      "primaryType": "action-required",
+      "flags": [
+        "deadline"
+      ],
+      "oneSentenceSummary": "Subject: Smartsheet Access – Temporary Access Requests",
+      "keyFacts": [],
+      "linkedPillars": [
+        "reporting"
+      ],
+      "linkedEntities": [
+        "abivax"
+      ],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "draft-reply"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC60000",
+      "date": "2026-03-03T14:23:08.5190000",
+      "direction": "received",
+      "subject": "Re: Audit committee slides ",
+      "from": "Adrian Holbrook",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "decision",
+        "urgent"
+      ],
+      "oneSentenceSummary": "Re: Audit committee slides",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Decision language present."
+      ],
+      "linkedPillars": [
+        "governance",
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "adrian-holbrook",
+        "mike-markman",
+        "netsuite",
+        "abivax",
+        "kpmg",
+        "marc-de-garidel",
+        "mark-hronec"
+      ],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C53A0000",
+      "date": "2026-03-03T14:07:54.8060000",
+      "direction": "sent",
+      "subject": "Audit committee slides ",
+      "from": "Michael Markman",
+      "to": [
+        "Adrian Holbrook"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "decision",
+        "urgent"
+      ],
+      "oneSentenceSummary": "Audit committee slides",
+      "keyFacts": [
+        "Decision language present."
+      ],
+      "linkedPillars": [
+        "governance",
+        "controls"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "adrian-holbrook",
+        "netsuite",
+        "kpmg"
+      ],
+      "attachments": [
+        "Abivax - Audit Committee 020326.pptx"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC50000",
+      "date": "2026-03-03T12:53:39.4590000",
+      "direction": "received",
+      "subject": "Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Angela DePoy",
+      "to": [
+        "Hema Keshava",
+        "Michael Markman"
+      ],
+      "primaryType": "action-required",
+      "flags": [
+        "deadline"
+      ],
+      "oneSentenceSummary": "Abivax ERP - NetSuite Biotech Expert Implementors Introduction",
+      "keyFacts": [],
+      "linkedPillars": [
+        "reporting",
+        "controls"
+      ],
+      "linkedEntities": [
+        "hema",
+        "mike-markman",
+        "netsuite",
+        "abivax",
+        "abivax-france",
+        "kpmg",
+        "sox-compliance",
+        "ifrs",
+        "gaap",
+        "financial-reporting",
+        "mary-mantock",
+        "thomas-descusses"
+      ],
+      "attachments": [],
+      "suggestedAction": "draft-reply"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC40000",
+      "date": "2026-03-03T12:45:15.7290000",
+      "direction": "received",
+      "subject": "RE: Concur Access for Reimbursements ",
+      "from": "Kimberly Gordon",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "risk"
+      ],
+      "oneSentenceSummary": "RE: Concur Access for Reimbursements",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026",
+        "Date mentioned: March 2, 2026",
+        "Date mentioned: March 2, 2026"
+      ],
+      "linkedPillars": [
+        "reporting",
+        "finance-close"
+      ],
+      "linkedEntities": [
+        "kimberly-gordon",
+        "mike-markman",
+        "matt-epley",
+        "abivax",
+        "marc-de-garidel",
+        "aymen-ben-alaya",
+        "mark-hronec"
+      ],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC20000",
+      "date": "2026-03-03T12:31:27.2360000",
+      "direction": "received",
+      "subject": "RE: Discussion with Netsuite",
+      "from": "Girard, Camille",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "financial"
+      ],
+      "oneSentenceSummary": "RE: Discussion with Netsuite",
+      "keyFacts": [
+        "Date mentioned: mardi 3",
+        "Date mentioned: mars 20",
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "reporting"
+      ],
+      "linkedEntities": [
+        "girard-camille",
+        "mike-markman",
+        "aymen-ben-alaya",
+        "camille",
+        "netsuite",
+        "abivax",
+        "abivax-france",
+        "kpmg",
+        "marc-de-garidel",
+        "ben-alaya",
+        "mark-hronec"
+      ],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90F10000",
+      "date": "2026-03-03T12:02:46.8740000",
+      "direction": "sent",
+      "subject": "RE: Discussion with Netsuite",
+      "from": "Michael Markman",
+      "to": [
+        "'Girard, Camille'"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "financial",
+        "urgent",
+        "risk"
+      ],
+      "oneSentenceSummary": "RE: Discussion with Netsuite",
+      "keyFacts": [
+        "Date mentioned: March 3, 2026"
+      ],
+      "linkedPillars": [
+        "reporting"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "girard-camille",
+        "aymen-ben-alaya",
+        "camille",
+        "netsuite",
+        "abivax",
+        "abivax-france",
+        "kpmg",
+        "marc-de-garidel",
+        "ben-alaya",
+        "mark-hronec"
+      ],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC10000",
+      "date": "2026-03-03T12:00:34.9580000",
+      "direction": "received",
+      "subject": "Discussion with Netsuite",
+      "from": "Girard, Camille",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "financial",
+        "urgent",
+        "risk"
+      ],
+      "oneSentenceSummary": "Discussion with Netsuite",
+      "keyFacts": [],
+      "linkedPillars": [
+        "reporting"
+      ],
+      "linkedEntities": [
+        "girard-camille",
+        "mike-markman",
+        "aymen-ben-alaya",
+        "camille",
+        "netsuite",
+        "abivax",
+        "abivax-france",
+        "kpmg"
+      ],
+      "attachments": [
+        "Outlook-Une image .png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90F00000",
+      "date": "2026-03-03T11:54:16.5290000",
+      "direction": "sent",
+      "subject": "RE: Concur Access for Reimbursements ",
+      "from": "Michael Markman",
+      "to": [
+        "Kimberly Gordon"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline"
+      ],
+      "oneSentenceSummary": "RE: Concur Access for Reimbursements",
+      "keyFacts": [
+        "Date mentioned: March 2, 2026",
+        "Date mentioned: March 2, 2026"
+      ],
+      "linkedPillars": [
+        "reporting",
+        "finance-close"
+      ],
+      "linkedEntities": [
+        "mike-markman",
+        "kimberly-gordon",
+        "matt-epley",
+        "abivax",
+        "marc-de-garidel",
+        "aymen-ben-alaya",
+        "mark-hronec"
+      ],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BC00000",
+      "date": "2026-03-03T11:44:03.6270000",
+      "direction": "received",
+      "subject": "PTP Process + your trip in Paris",
+      "from": "Juliette Courtot",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "deadline",
+        "financial",
+        "urgent"
+      ],
+      "oneSentenceSummary": "PTP Process + your trip in Paris",
+      "keyFacts": [
+        "Date mentioned: March 16"
+      ],
+      "linkedPillars": [
+        "p2p",
+        "reporting"
+      ],
+      "linkedEntities": [
+        "juliette",
+        "mike-markman",
+        "abivax",
+        "marc-de-garidel"
+      ],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "update-data"
+    }
+  ]
+}
