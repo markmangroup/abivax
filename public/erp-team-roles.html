@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERP Roles and Responsibilities — Meeting Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --purple:   #614DD2;
+    --purple-d: #3D2E9B;
+    --purple-l: #EEECFA;
+    --navy:     #0F2A4A;
+    --slate:    #475569;
+    --muted:    #94A3B8;
+    --gold:     #B58728;
+    --green:    #109960;
+    --blue:     #2D7DD2;
+    --red:      #DC2626;
+    --amber:    #D97706;
+    --bg:       #F7F8FC;
+    --border:   #E2E8F0;
+  }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #e8eaf0;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .page { width: 100%; max-width: 980px; display: flex; flex-direction: column; gap: 16px; }
+
+  /* Top bar */
+  .top-bar {
+    background: var(--navy);
+    border-radius: 8px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar .left h1 { color: white; font-size: 17px; font-weight: 700; }
+  .top-bar .left p { color: rgba(255,255,255,0.55); font-size: 12px; margin-top: 2px; }
+  .top-bar .right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* Alert strip */
+  .alert {
+    background: #FEF3C7;
+    border: 1px solid #F59E0B;
+    border-left: 4px solid var(--amber);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    color: #92400E;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .alert-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  /* Section label */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* Workstream grid */
+  .ws-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .ws-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .ws-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ws-icon {
+    width: 32px; height: 32px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .ws-title { font-size: 13px; font-weight: 700; color: var(--navy); }
+  .ws-sub { font-size: 10.5px; color: var(--muted); margin-top: 1px; }
+
+  .ws-body { padding: 10px 14px; display: flex; flex-direction: column; gap: 7px; }
+
+  /* Person row */
+  .person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    background: var(--bg);
+    border-radius: 5px;
+    gap: 8px;
+  }
+  .person-left { display: flex; align-items: center; gap: 8px; }
+  .avatar {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+  }
+  .person-name { font-size: 12px; font-weight: 600; color: var(--navy); }
+  .person-role { font-size: 10.5px; color: var(--muted); }
+  .person-right { display: flex; align-items: center; gap: 6px; }
+
+  .capacity-pill {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 99px;
+  }
+  .flag-pill {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 99px;
+    background: #FEE2E2;
+    color: var(--red);
+  }
+
+  /* Notes */
+  .ws-note {
+    font-size: 11px;
+    color: var(--slate);
+    padding: 5px 8px;
+    background: var(--purple-l);
+    border-radius: 4px;
+    font-style: italic;
+  }
+
+  /* Open questions */
+  .questions {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .questions-header {
+    background: var(--purple-d);
+    padding: 10px 16px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .questions-body { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .q-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 12.5px;
+    color: var(--slate);
+  }
+  .q-num {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--purple-l);
+    color: var(--purple-d);
+    font-size: 10px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="left">
+      <h1>ERP Roles and Responsibilities</h1>
+      <p>Meeting prep — Hema Keshava &nbsp;·&nbsp; March 4, 2026 &nbsp;·&nbsp; Pre-contract / mobilization planning</p>
+    </div>
+    <div class="right">
+      <span class="badge" style="background:#EEECFA; color:#3D2E9B;">NetSuite selected Feb 26</span>
+      <span class="badge" style="background:#D1FAE5; color:#065F46;">Go-live Jan 1, 2027</span>
+    </div>
+  </div>
+
+  <!-- Alert -->
+  <div class="alert">
+    <span class="alert-icon">⚠️</span>
+    <span>
+      <strong>Heads up before this meeting:</strong>
+      Trinidad has already flagged time constraints. The ask today is directional only — which areas require which people from Finance. Capacity negotiations and formal commitments come after contract signing.
+    </span>
+  </div>
+
+  <!-- Workstreams -->
+  <div class="section-label">Finance workstreams needing named owners</div>
+
+  <div class="ws-grid">
+
+    <!-- Record to Report -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#EEE8FF;">📒</div>
+        <div>
+          <div class="ws-title">Record to Report (R2R)</div>
+          <div class="ws-sub">Close process, consolidation, financial statements</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#3D2E9B;">TM</div>
+            <div>
+              <div class="person-name">Trinidad Mesa</div>
+              <div class="person-role">Accounting Manager — consolidation lead</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#FEF3C7; color:#92400E;">4-6 hrs/wk</span>
+            <span class="flag-pill">Flagged</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#614DD2;">ME</div>
+            <div>
+              <div class="person-name">Matt Epley</div>
+              <div class="person-role">Accountant (US) — US entity close</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">US lead</span>
+          </div>
+        </div>
+        <div class="ws-note">Core workstream. Trinidad is the only person who can drive France consolidation. This needs to be a formal protected allocation.</div>
+      </div>
+    </div>
+
+    <!-- Purchase to Pay -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#DBEAFE;">🧾</div>
+        <div>
+          <div class="ws-title">Purchase to Pay (P2P)</div>
+          <div class="ws-sub">PO workflow, vendor master, AP, Trustpair</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#2D7DD2;">PH</div>
+            <div>
+              <div class="person-name">Philippe</div>
+              <div class="person-role">Finance Manager — P2P process owner</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#FEF3C7; color:#92400E;">3-4 hrs/wk</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#60A5FA;">JC</div>
+            <div>
+              <div class="person-name">Juliette Courtot</div>
+              <div class="person-role">P2P — day-to-day process, reports to Philippe</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">Primary</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#2D7DD2;">KG</div>
+            <div>
+              <div class="person-name">Kimberly Gordon</div>
+              <div class="person-role">P2P Contractor (US)</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">US lead</span>
+          </div>
+        </div>
+        <div class="ws-note">Philippe owns the design decisions. Juliette drives UAT and data cleanup. Kim covers US P2P.</div>
+      </div>
+    </div>
+
+    <!-- FP&A / Reporting -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#D1FAE5;">📊</div>
+        <div>
+          <div class="ws-title">FP&amp;A and Management Reporting</div>
+          <div class="ws-sub">Budgeting, forecasting, decision-grade reporting</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#109960;">FR</div>
+            <div>
+              <div class="person-name">Frederick</div>
+              <div class="person-role">FP&A Lead — reporting design owner</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#FEF3C7; color:#92400E;">3-4 hrs/wk</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#059669;">AH</div>
+            <div>
+              <div class="person-name">Adrian Holbrook</div>
+              <div class="person-role">FP&A / Reporting — controls interface</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">Support</span>
+          </div>
+        </div>
+        <div class="ws-note">Frederick owns the reporting blueprint. Adrian's controls work overlaps here — coordinate to avoid duplication.</div>
+      </div>
+    </div>
+
+    <!-- Controls and Compliance -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#FEF3C7;">🔒</div>
+        <div>
+          <div class="ws-title">Controls and Compliance (SOX)</div>
+          <div class="ws-sub">Segregation of duties, audit trail, CFTI register</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#B58728;">HK</div>
+            <div>
+              <div class="person-name">Hema Keshava</div>
+              <div class="person-role">Finance Lead — controls sign-off authority</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#EEECFA; color:#3D2E9B;">Oversight</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#059669;">AH</div>
+            <div>
+              <div class="person-name">Adrian Holbrook</div>
+              <div class="person-role">Controls lead — 84 Audit-relevant controls</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">Primary</span>
+          </div>
+        </div>
+        <div class="ws-note">143 controls total. 84 are Audit-relevant. Adrian drives the register. Hema approves design decisions that touch financial authority.</div>
+      </div>
+    </div>
+
+    <!-- Data Migration -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#FCE7F3;">🗄️</div>
+        <div>
+          <div class="ws-title">Data Migration and Master Data</div>
+          <div class="ws-sub">Chart of accounts, vendor master, open items, history</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#3D2E9B;">TM</div>
+            <div>
+              <div class="person-name">Trinidad Mesa</div>
+              <div class="person-role">Owns source data quality for France</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#FEF3C7; color:#92400E;">High load</span>
+            <span class="flag-pill">Flagged</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#2D7DD2;">JN</div>
+            <div>
+              <div class="person-name">Jade Nguyen</div>
+              <div class="person-role">IT Lead — data extract and migration execution</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">Technical</span>
+          </div>
+        </div>
+        <div class="ws-note">Trinidad's sign-off is required on chart of accounts and opening balances. This is the workstream most at risk if her capacity is not protected.</div>
+      </div>
+    </div>
+
+    <!-- IT and Integration -->
+    <div class="ws-card">
+      <div class="ws-header">
+        <div class="ws-icon" style="background:#E0E7FF;">⚙️</div>
+        <div>
+          <div class="ws-title">IT and System Integration</div>
+          <div class="ws-sub">Infrastructure, integrations, system admin</div>
+        </div>
+      </div>
+      <div class="ws-body">
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#4338CA;">JN</div>
+            <div>
+              <div class="person-name">Jade Nguyen</div>
+              <div class="person-role">IT Lead — integration coordination</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">Primary</span>
+          </div>
+        </div>
+        <div class="person">
+          <div class="person-left">
+            <div class="avatar" style="background:#6366F1;">BT</div>
+            <div>
+              <div class="person-name">Benjamin Talmant</div>
+              <div class="person-role">IT Project Manager</div>
+            </div>
+          </div>
+          <div class="person-right">
+            <span class="capacity-pill" style="background:#D1FAE5; color:#065F46;">Support</span>
+          </div>
+        </div>
+        <div class="ws-note">IT owns technical delivery. Finance provides data specs and sign-off. Trustpair integration (P2P) is a separate track but Jade coordinates.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Open questions for Hema meeting -->
+  <div class="section-label">Questions for Hema today</div>
+  <div class="questions">
+    <div class="questions-header">Talking points — keep directional, no formal commitments until after contract</div>
+    <div class="questions-body">
+      <div class="q-row">
+        <div class="q-num">1</div>
+        <span><strong>Trinidad's capacity:</strong> R2R and data migration both require her. She has flagged time constraints already. What does protected allocation look like — can she have dedicated ERP hours during configure and test phases?</span>
+      </div>
+      <div class="q-row">
+        <div class="q-num">2</div>
+        <span><strong>Frederick vs Adrian on reporting:</strong> Frederick owns FP&A, Adrian owns controls. There is likely overlap on the reporting module design. Who has the final call when they conflict?</span>
+      </div>
+      <div class="q-row">
+        <div class="q-num">3</div>
+        <span><strong>Hema's own role:</strong> Is she a steering-level sponsor who approves key design decisions, or does she expect to be in working sessions? Needs to be clear before the NetSuite team kicks off.</span>
+      </div>
+      <div class="q-row">
+        <div class="q-num">4</div>
+        <span><strong>Roxandra Sturdza:</strong> Finance stakeholder in our data with no confirmed role. Is she a potential backup or additional resource for R2R or reporting?</span>
+      </div>
+      <div class="q-row">
+        <div class="q-num">5</div>
+        <span><strong>Timing of formal RACI:</strong> Today is directional. After contract sign-off (target March), this becomes a formal RACI with named owners and time commitments. Align on that expectation now.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

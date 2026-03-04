@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide 2 Mockup: Program at a Glance</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --purple:   #614DD2;
+    --purple-d: #3D2E9B;
+    --purple-l: #EEECFA;
+    --navy:     #0F2A4A;
+    --slate:    #475569;
+    --muted:    #94A3B8;
+    --gold:     #B58728;
+    --green:    #109960;
+    --blue:     #2D7DD2;
+    --bg:       #F7F8FC;
+    --white:    #FFFFFF;
+    --border:   #E2E8F0;
+  }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #e8eaf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .meta {
+    color: var(--slate);
+    font-size: 13px;
+    text-align: center;
+    max-width: 860px;
+  }
+  .meta strong { color: var(--purple-d); }
+
+  /* ── Slide wrapper ── */
+  .slide {
+    width: 100%;
+    max-width: 960px;
+    background: var(--bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+
+  /* ── Header bar ── */
+  .slide-header {
+    background: var(--purple-d);
+    padding: 0;
+  }
+  .slide-header .top-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+  }
+  .slide-header .top-band .left {
+    color: rgba(255,255,255,0.5);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .slide-header .top-band .right {
+    color: rgba(255,255,255,0.85);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+  .slide-header .title-band {
+    background: var(--navy);
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slide-header .title-band h1 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .slide-header .title-band .slide-num {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  /* ── Body ── */
+  .slide-body {
+    padding: 20px 24px 16px;
+  }
+
+  .page-title {
+    margin-bottom: 4px;
+  }
+  .page-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--purple-d);
+  }
+  .page-title .rule {
+    width: 48px;
+    height: 3px;
+    background: var(--purple);
+    margin-top: 6px;
+  }
+  .page-title .subtitle {
+    color: var(--slate);
+    font-size: 12.5px;
+    margin-top: 6px;
+  }
+
+  /* ── 3-column card grid ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-header {
+    padding: 12px 14px 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .card-header .num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .card-header .title-wrap .card-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.3;
+  }
+  .card-header .title-wrap .card-sub {
+    font-size: 10.5px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 2px;
+  }
+
+  .card-body {
+    padding: 12px 14px 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  /* ── Bullet variants ── */
+  .bullet {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 12px;
+    color: var(--slate);
+    line-height: 1.4;
+  }
+  .bullet .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  /* ── Highlighted stat bullets ── */
+  .stat-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 6px 10px;
+    background: var(--bg);
+    border-radius: 4px;
+    border-left: 3px solid;
+  }
+  .stat-row .stat-val {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .stat-row .stat-label {
+    font-size: 11px;
+    color: var(--slate);
+  }
+
+  /* ── Role rows ── */
+  .role-row {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 10px;
+    background: var(--bg);
+    border-radius: 4px;
+    border-left: 3px solid;
+    gap: 1px;
+  }
+  .role-row .role-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .role-row .role-name {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .role-row .role-note {
+    font-size: 10.5px;
+    color: var(--slate);
+  }
+
+  /* ── Divider ── */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 4px 0;
+  }
+
+  /* ── Tag pills ── */
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Footer ── */
+  .slide-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    background: var(--purple-l);
+    border-top: 2px solid var(--purple);
+  }
+  .slide-footer .footer-left {
+    font-size: 11px;
+    color: var(--slate);
+  }
+  .slide-footer .footer-right {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* ── Flag box ── */
+  .flag-box {
+    background: #FEF9E7;
+    border: 1px solid #F0C040;
+    border-left: 4px solid #E0A020;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #7A5800;
+    max-width: 960px;
+    width: 100%;
+  }
+  .flag-box strong { color: #5A3F00; }
+</style>
+</head>
+<body>
+
+<div class="meta">
+  <strong>Slide 2 Mockup</strong><br>
+  Redesigned layout: stat callouts, role rows, and structured bullets in place of pure text walls.<br>
+  Titles revised · Hema title corrected · SAP claim removed · Consultant names removed
+</div>
+
+<div class="flag-box">
+  <strong>One open item:</strong>
+  Hema's title shown as "Head of Finance." Source data says "Finance lead (FP&A, treasury, tax, accounting)" — not a formal title. Confirm when ready and I will lock it. All other content sourced from Camille's KPMG deck (Feb 26, 2026).
+</div>
+
+<!-- ═══════════════════════════ SLIDE ═══════════════════════════ -->
+<div class="slide">
+
+  <!-- Header -->
+  <div class="slide-header">
+    <div class="top-band">
+      <span class="left">ABIVAX &nbsp;·&nbsp; AUDIT COMMITTEE &nbsp;·&nbsp; CONFIDENTIAL</span>
+      <span class="right">Program at a Glance &nbsp;·&nbsp; 1 of 4</span>
+    </div>
+    <div class="title-band">
+      <h1>Program at a Glance</h1>
+      <span class="slide-num">Slide 2</span>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="slide-body">
+
+    <div class="page-title">
+      <h2>ERP Program Overview</h2>
+      <div class="rule"></div>
+      <p class="subtitle">NetSuite selected February 26, 2026 &nbsp;·&nbsp; Implementation mobilization: April 2026 &nbsp;·&nbsp; Go-live: January 1, 2027</p>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- Card 1: Business Rationale -->
+      <div class="card">
+        <div class="card-header" style="background: #3D2E9B;">
+          <div class="num" style="background: rgba(255,255,255,0.18);">01</div>
+          <div class="title-wrap">
+            <div class="card-title">Business Rationale</div>
+            <div class="card-sub">Why this program exists</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="bullet">
+            <div class="dot" style="background:#3D2E9B;"></div>
+            <span>Current systems (Sage 100, legacy tools) are fragmented and highly manual across P2P, close, and reporting.</span>
+          </div>
+          <div class="bullet">
+            <div class="dot" style="background:#3D2E9B;"></div>
+            <span>Controls environment is inconsistent and not adequate for SEC filing scrutiny or public-company audit standards.</span>
+          </div>
+          <div class="bullet">
+            <div class="dot" style="background:#3D2E9B;"></div>
+            <span>US public market launch targeted December 2027. ERP go-live by January 2027 is a hard dependency.</span>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-row" style="border-color:#3D2E9B;">
+            <span class="stat-val" style="color:#3D2E9B;">SOX-readiness</span>
+            <span class="stat-label">is the primary driver, not a technology swap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Selection Rationale -->
+      <div class="card">
+        <div class="card-header" style="background: #614DD2;">
+          <div class="num" style="background: rgba(255,255,255,0.18);">02</div>
+          <div class="title-wrap">
+            <div class="card-title">Selection Rationale</div>
+            <div class="card-sub">Why NetSuite was chosen</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="bullet">
+            <div class="dot" style="background:#614DD2;"></div>
+            <span>Multi-currency, multi-GAAP, bilingual (FR/EN) architecture built to scale with Abivax's France and US footprint.</span>
+          </div>
+          <div class="bullet">
+            <div class="dot" style="background:#614DD2;"></div>
+            <span>Stronger controls environment from day one: segregation of duties, audit trail, and SOX-ready approval workflows.</span>
+          </div>
+          <div class="bullet">
+            <div class="dot" style="background:#614DD2;"></div>
+            <span>Vendor-led delivery by NetSuite's own implementation team, ensuring product expertise and faster issue resolution.</span>
+          </div>
+          <div class="bullet">
+            <div class="dot" style="background:#614DD2;"></div>
+            <span>KPMG led requirements definition and solution selection, confirming NetSuite as the best fit for Abivax's size and context.</span>
+          </div>
+          <div class="divider"></div>
+          <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:2px;">
+            <span class="tag" style="background:#EEECFA; color:#3D2E9B;">KPMG-validated</span>
+            <span class="tag" style="background:#EEECFA; color:#3D2E9B;">Selected Feb 26, 2026</span>
+          </div>
+          <p style="font-size:11px; color:#94A3B8; margin-top:6px; font-style:italic;">Commercial and license negotiations began the week of Feb 26. Final package from NetSuite pending before Board readout.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Program Ownership -->
+      <div class="card">
+        <div class="card-header" style="background: #2D7DD2;">
+          <div class="num" style="background: rgba(255,255,255,0.18);">03</div>
+          <div class="title-wrap">
+            <div class="card-title">Program Ownership</div>
+            <div class="card-sub">Accountable roles</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="role-row" style="border-color:#2D7DD2;">
+            <span class="role-title">ERP Program Lead</span>
+            <span class="role-name">Mike Markman</span>
+            <span class="role-note">VP, Global ERP</span>
+          </div>
+          <div class="role-row" style="border-color:#3D2E9B;">
+            <span class="role-title">Executive Sponsor</span>
+            <span class="role-name">Didier Blondel</span>
+            <span class="role-note">CFO</span>
+          </div>
+          <div class="role-row" style="border-color:#614DD2;">
+            <span class="role-title">Finance Lead</span>
+            <span class="role-name">Hema Keshava</span>
+            <span class="role-note">Head of Finance</span>
+          </div>
+          <div class="role-row" style="border-color:#94A3B8;">
+            <span class="role-title">Finance Process Lead</span>
+            <span class="role-name">Trinidad Mesa</span>
+            <span class="role-note">France Operations</span>
+          </div>
+          <div class="role-row" style="border-color:#94A3B8;">
+            <span class="role-title">Implementation Advisory</span>
+            <span class="role-name">KPMG</span>
+            <span class="role-note">Selection phase support</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="slide-footer">
+    <span class="footer-left">Abivax | ERP Program | Confidential</span>
+    <span class="footer-right">1</span>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -10,6 +10,7 @@ const operateItems: NavItem[] = [
   { href: "/abivax/spine/today", label: "Today", exact: false },
   { href: "/abivax/spine/program-overview", label: "Program Overview", exact: false },
   { href: "/abivax/spine/program", label: "Program Detail", exact: false },
+  { href: "/abivax/spine/team", label: "ERP Team", exact: false },
   { href: "/abivax/spine/p2p", label: "P2P Intelligence", exact: false },
   { href: "/abivax/spine/presentations", label: "Presentations", exact: false },
 ];
