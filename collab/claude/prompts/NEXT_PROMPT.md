@@ -41,6 +41,15 @@
 
 ---
 
+## Email analysis — 2026-03-04
+- Ran against triage_2026-03-04.json (22 emails, 20 non-noise)
+- 7 action items identified for Mike
+- 2 draft replies saved (Angela DePoy re: CFGI call, Juliette Courtot re: P2P + Paris)
+- 5 data updates queued for Codex (Adrian controls gap closed, Camille negotiation guidance, new CFGI contacts, Juliette P2P availability, CLAUDE.md gap update)
+- Key items: Adrian delivered his controls deck (closes a major open data gap for Audit Committee). CFGI is pitching a NetSuite implementation/PMO overlay with a French-speaking IT SOX Manager. Camille provided concrete negotiation guidance on NetSuite commercials. GitGuardian flagged an exposed password in the repo that needs immediate rotation.
+
+---
+
 ## How to use this file
 
 Paste the contents of this file as your first message when starting a new Claude session. Claude will orient immediately without re-reading all source files.

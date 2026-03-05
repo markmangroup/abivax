@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERP Operator Notes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F2A4A; --purple: #614DD2; --purple-d: #3D2E9B;
+    --purple-l: #EEECFA; --slate: #475569; --muted: #94A3B8;
+    --bg: #F7F8FC; --border: #E2E8F0;
+  }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #EEF0F5 0%, #E2E6EE 100%);
+    padding: 28px 24px; display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
+  }
+  .shell { width: 100%; max-width: 900px; }
+  .title-bar {
+    background: linear-gradient(135deg, var(--navy) 0%, #162D4D 100%);
+    border-radius: 12px; padding: 18px 24px; margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(15,42,74,0.15);
+  }
+  .title-bar h1 { color: white; font-size: 18px; font-weight: 700; }
+  .title-bar p { color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 3px; }
+  .card {
+    background: white; border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.03); margin-bottom: 14px;
+  }
+  .card-header {
+    padding: 12px 16px; background: var(--bg); border-bottom: 1px solid var(--border);
+    font-size: 13px; font-weight: 700; color: var(--navy);
+  }
+  .card-body { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .risk {
+    font-size: 12px; padding: 8px 12px; background: #FEF3C7;
+    border-radius: 6px; color: #92400E; line-height: 1.5;
+  }
+  .row {
+    display: flex; align-items: flex-start; gap: 8px;
+    font-size: 12px; color: var(--slate); line-height: 1.5;
+  }
+  .row .bullet {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--purple); margin-top: 6px; flex-shrink: 0;
+  }
+  .note {
+    font-size: 12px; padding: 8px 12px; background: var(--purple-l);
+    border-radius: 6px; color: var(--slate); line-height: 1.5;
+  }
+  .prep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .prep-item {
+    background: white; border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .prep-item .q-num {
+    font-size: 10px; font-weight: 700; color: var(--purple);
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .prep-item .q-text {
+    font-size: 13px; font-weight: 600; color: var(--navy);
+    margin-top: 4px; line-height: 1.4;
+  }
+  .prep-item .q-why {
+    font-size: 11px; color: var(--slate); margin-top: 4px; line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="title-bar">
+    <h1>ERP Program: Operator Notes</h1>
+    <p>Internal only &middot; Updated March 4, 2026</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">&#9888;&#65039; Partner Risks and Notes</div>
+    <div class="card-body">
+      <div class="risk"><strong>NetSuite PS:</strong> Same company as the software. Incentive to expand scope and licensing. Hold to fixed-fee exit conditions. Camille's guidance: daily rate already low at 960 EUR, watch fixed-fee exit clauses.</div>
+      <div class="risk"><strong>KPMG:</strong> Camille is expecting. Maternity timing unknown. If she leaves mid-blueprint, Aymen runs solo. Need backup plan confirmed Friday.</div>
+      <div class="risk"><strong>CFGI:</strong> Angela is aggressive on selling. Already pitched NetSuite implementation team and French-speaking PMO. Keep scoped to SOX only. Do not give a seat at the implementation table.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">&#128197; KPMG Meeting Prep (Friday Mar 7)</div>
+    <div class="card-body">
+      <div class="prep-grid">
+        <div class="prep-item"><div class="q-num">Q1</div><div class="q-text">What does KPMG PMO look like post-selection?</div><div class="q-why">Scope, cost, headcount, weekly deliverables.</div></div>
+        <div class="prep-item"><div class="q-num">Q2</div><div class="q-text">Camille's maternity timeline? Aymen solo capability?</div><div class="q-why">If Camille leaves May/June, that's mid-blueprint.</div></div>
+        <div class="prep-item"><div class="q-num">Q3</div><div class="q-text">Can Aymen be primary France-based PMO?</div><div class="q-why">80%+ touches SA team. Need boots on the ground in Paris.</div></div>
+        <div class="prep-item"><div class="q-num">Q4</div><div class="q-text">Commercial negotiation support through signing?</div><div class="q-why">License discounts, e-invoicing perimeter, exit conditions.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">&#9989; Decisions Log</div>
+    <div class="card-body">
+      <div class="row"><div class="bullet"></div><span>CFGI scoped to SOX/controls advisory only. No implementation role.</span></div>
+      <div class="row"><div class="bullet"></div><span>Master data split: Juliette (Supplier), Denis Jankovic (GL/CoA).</span></div>
+      <div class="row"><div class="bullet"></div><span>Treasury: Roxandra Sturdza (FR), Kimberly Gordon (US).</span></div>
+      <div class="row"><div class="bullet"></div><span>Juliette leads P2P as BPO. Philippe is sounding board only.</span></div>
+      <div class="note">Camille negotiation guidance: license 29% on 3yr (explore longer), daily rate 960 EUR (don't push), clarify e-invoicing perimeter, watch fixed-fee exit conditions.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

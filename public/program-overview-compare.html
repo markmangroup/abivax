@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program Overview — Layout Comparison</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:   #0F2A4A;
+    --navy-l: #162D4D;
+    --purple: #614DD2;
+    --purp-d: #3D2E9B;
+    --slate:  #475569;
+    --muted:  #94A3B8;
+    --bg:     #F7F8FC;
+    --border: #E2E8F0;
+    --white:  #FFFFFF;
+    /* location */
+    --us-bg:#EFF6FF; --us-ring:#BFDBFE; --us-pill:#DBEAFE; --us-txt:#1E40AF;
+    --fr-bg:#FEF2F2; --fr-ring:#FECACA; --fr-pill:#FEE2E2; --fr-txt:#991B1B;
+    --ex-bg:#FEFCE8; --ex-ring:#FDE68A; --ex-pill:#FEF9C3; --ex-txt:#713F12;
+    /* status */
+    --green:#16A34A; --g-bg:#DCFCE7; --g-txt:#15803D;
+    --amber:#D97706; --a-bg:#FEF3C7; --a-txt:#B45309;
+    --red:  #DC2626; --r-bg:#FEE2E2; --r-txt:#B91C1C;
+    --blue: #2563EB; --b-bg:#EFF6FF; --b-txt:#1D4ED8;
+    --viol: #7C3AED; --v-bg:#F5F3FF; --v-txt:#6D28D9;
+  }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg,#EEF0F5 0%,#E2E6EE 100%);
+    padding: 12px 16px 20px;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
+  }
+  .shell { width: 100%; max-width: 1120px; }
+
+  /* ── Tab bar ── */
+  .tabs {
+    display: flex; gap: 4px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px; padding: 4px;
+    border: 1px solid var(--border);
+  }
+  .tab-btn {
+    flex: 1; padding: 9px 14px;
+    border: none; background: transparent;
+    cursor: pointer; font-size: 12px; font-weight: 600;
+    color: var(--slate); border-radius: 5px;
+    transition: all 0.15s; font-family: inherit;
+  }
+  .tab-btn:hover { background: rgba(0,0,0,0.04); }
+  .tab-btn.active { background: var(--navy); color: white; box-shadow: 0 1px 4px rgba(15,42,74,.18); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── Shared: Title bar ── */
+  .tbar {
+    background: linear-gradient(135deg,var(--navy) 0%,var(--navy-l) 100%);
+    border-radius: 10px; padding: 10px 18px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 10px rgba(15,42,74,.14);
+  }
+  .tbar h1 { color: white; font-size: 15px; font-weight: 700; letter-spacing: -.01em; }
+  .tbar p  { color: rgba(255,255,255,.5); font-size: 10px; margin-top: 2px; }
+  .badges { display: flex; gap: 5px; align-items: center; }
+  .badge {
+    padding: 3px 9px; border-radius: 99px;
+    font-size: 10px; font-weight: 600; display: inline-block;
+  }
+
+  /* ── Shared: Deadline strip ── */
+  .dl-strip { display: flex; gap: 5px; margin-bottom: 8px; }
+  .dl-item {
+    flex: 1; background: var(--white);
+    border: 1px solid var(--border); border-radius: 7px;
+    padding: 6px 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    position: relative; overflow: hidden;
+  }
+  .dl-item::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; }
+  .dl-item.ur::before  { background: var(--red); }
+  .dl-item.so::before  { background: var(--amber); }
+  .dl-item.fa::before  { background: var(--blue); }
+  .dl-item.an::before  { background: var(--viol); }
+  .dl-lbl  { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .dl-date { font-size:12px; font-weight:700; color:var(--navy); margin-top:1px; }
+  .dl-days { font-size:10px; margin-top:0; }
+  .dl-days.ur  { color:var(--red);  font-weight:600; }
+  .dl-days.so  { color:var(--amber);font-weight:600; }
+  .dl-days.fa  { color:var(--blue); }
+  .dl-days.an  { color:var(--viol); }
+
+  /* ── Shared: Status chips ── */
+  .status-strip { display:flex; gap:5px; margin-bottom:8px; }
+  .st-chip {
+    flex:1; background:var(--white);
+    border:1px solid var(--border); border-radius:6px;
+    padding:5px 10px;
+    display:flex; align-items:center; gap:5px;
+    font-size:11px; font-weight:500; color:var(--navy);
+  }
+  .st-lbl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); display:block; }
+  .st-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+  .st-g { background:var(--green); }
+  .st-a { background:var(--amber); }
+  .st-r { background:var(--red); }
+
+  /* ── Shared: Grid wrapper ── */
+  .grid {
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:10px; overflow:hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  }
+  .g-hdr {
+    padding:5px 14px;
+    background:var(--bg);
+    border-bottom:1px solid var(--border);
+    font-size:9px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.09em; color:var(--muted);
+    display:flex; align-items:center; gap:8px;
+  }
+  .g-hdr::after { content:''; flex:1; height:1px; background:var(--border); }
+
+  /* ── Shared: chips ── */
+  .chip {
+    display:inline-flex; align-items:center; gap:4px;
+    padding:2px 7px 2px 3px; border-radius:99px;
+    font-size:10px; font-weight:600; color:var(--navy);
+    border:1.5px solid;
+    transition: box-shadow .12s, transform .12s;
+  }
+  .chip:hover { transform:translateY(-1px); box-shadow:0 2px 6px rgba(0,0,0,.07); }
+  .chip-us  { background:var(--us-bg);  border-color:var(--us-ring); }
+  .chip-fr  { background:var(--fr-bg);  border-color:var(--fr-ring); }
+  .chip-ext { background:var(--ex-bg);  border-color:var(--ex-ring); }
+  .av {
+    width:17px; height:17px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:6px; font-weight:700; color:white; flex-shrink:0;
+  }
+  .pill { font-size:8px; font-weight:700; padding:1px 4px; border-radius:99px; text-transform:uppercase; letter-spacing:.04em; }
+  .pill-us  { background:var(--us-pill); color:var(--us-txt); }
+  .pill-fr  { background:var(--fr-pill); color:var(--fr-txt); }
+  .pill-ext { background:var(--ex-pill); color:var(--ex-txt); }
+
+  /* ── Shared: Risk rows ── */
+  .risk-row {
+    display:flex; align-items:center; gap:8px;
+    padding:6px 14px; border-bottom:1px solid var(--border);
+    font-size:11px; color:#374151;
+  }
+  .risk-row:last-child { border-bottom:none; }
+  .risk-row strong { color:var(--navy); }
+  .rbadge { font-size:9px; font-weight:700; padding:2px 7px; border-radius:99px; text-transform:uppercase; flex-shrink:0; }
+  .rh { background:var(--r-bg); color:var(--r-txt); }
+  .rm { background:var(--a-bg); color:var(--a-txt); }
+  .rl { background:#F3F4F6; color:#374151; }
+
+  /* ============================================================ */
+  /* VAR A — KPI BAND                                             */
+  /* Confidence = colored left-edge stripe. Big number tiles.     */
+  /* ============================================================ */
+  /* row: stripe | icon | name (120px) | kpis (200px) | action (1fr) | owners (140px) */
+  .va-row {
+    display:grid;
+    grid-template-columns: 4px 38px 128px 200px 1fr 148px;
+    align-items:stretch;
+    border-bottom:1px solid var(--border);
+    min-height: 62px;
+    transition: background .1s;
+  }
+  .va-row:last-child { border-bottom:none; }
+  .va-row:hover { background:#FAFBFE; }
+  .va-stripe { width:4px; }
+  .va-stripe.est { background:var(--green); }
+  .va-stripe.par { background:var(--amber); }
+  .va-stripe.str { background:var(--blue); }
+  .va-stripe.emg { background:var(--red); }
+
+  .va-icon {
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px; border-right:1px solid var(--border);
+    background:var(--bg);
+  }
+  .va-name {
+    display:flex; flex-direction:column; justify-content:center;
+    padding:6px 12px; border-right:1px solid var(--border);
+  }
+  .va-n  { font-size:13px; font-weight:700; color:var(--navy); line-height:1.2; }
+  .va-sc { font-size:9px; color:var(--muted); margin-top:2px; }
+
+  .va-kpis {
+    display:flex; align-items:center; gap:0;
+    padding:6px 8px; border-right:1px solid var(--border);
+  }
+  .va-kpi {
+    flex:1; text-align:center; padding:0 6px;
+    border-right:1px solid var(--border);
+  }
+  .va-kpi:last-child { border-right:none; }
+  .va-num { font-size:20px; font-weight:800; color:var(--navy); line-height:1.1; }
+  .va-num.red   { color:var(--red); }
+  .va-num.amber { color:var(--amber); }
+  .va-num.green { color:var(--green); }
+  .va-lbl { font-size:9px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em; margin-top:2px; }
+
+  .va-action {
+    display:flex; flex-direction:column; justify-content:center;
+    padding:6px 12px; border-right:1px solid var(--border);
+    gap:3px;
+  }
+  .va-act-lbl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); margin-bottom:2px; }
+  .va-act-item { font-size:11px; color:#374151; display:flex; gap:5px; align-items:flex-start; }
+  .va-arr { color:var(--blue); font-weight:700; flex-shrink:0; }
+  .va-wait { font-size:10px; color:#9CA3AF; font-style:italic; display:flex; gap:4px; align-items:flex-start; }
+  .va-wdot { color:#D1D5DB; flex-shrink:0; }
+
+  .va-owners {
+    display:flex; flex-wrap:wrap; align-items:center; gap:4px;
+    padding:6px 10px;
+  }
+
+  /* ============================================================ */
+  /* VAR B — SIGNAL BOARD                                         */
+  /* Status as pill row. 5-col. Compact, generous whitespace.     */
+  /* ============================================================ */
+  /* row: icon | name+scope (140px) | signal (80px) | content (1fr) | owners (160px) */
+  .vb-row {
+    display:grid;
+    grid-template-columns: 38px 148px 88px 1fr 168px;
+    align-items:stretch;
+    border-bottom:1px solid var(--border);
+    min-height: 62px;
+    transition: background .1s;
+  }
+  .vb-row:last-child { border-bottom:none; }
+  .vb-row:hover { background:#FAFBFE; }
+
+  .vb-icon {
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px; border-right:1px solid var(--border);
+    background:var(--bg);
+  }
+  .vb-name {
+    display:flex; flex-direction:column; justify-content:center;
+    padding:6px 12px; border-right:1px solid var(--border);
+  }
+  .vb-n  { font-size:13px; font-weight:700; color:var(--navy); line-height:1.2; }
+  .vb-sc { font-size:9px; color:var(--muted); margin-top:2px; }
+
+  .vb-signal {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:6px 8px; border-right:1px solid var(--border);
+    gap:4px;
+  }
+  .vb-conf {
+    font-size:10px; font-weight:700; padding:3px 8px; border-radius:99px;
+    text-transform:uppercase; letter-spacing:.04em; white-space:nowrap;
+  }
+  .vb-conf.est { background:var(--g-bg); color:var(--g-txt); }
+  .vb-conf.par { background:var(--a-bg); color:var(--a-txt); }
+  .vb-conf.str { background:var(--b-bg); color:var(--b-txt); }
+  .vb-conf.emg { background:var(--r-bg); color:var(--r-txt); }
+  /* small signal bar under the badge */
+  .vb-bar { width:44px; height:4px; border-radius:2px; }
+  .vb-bar.est { background:var(--green); }
+  .vb-bar.par { background:linear-gradient(90deg,var(--amber) 50%,#E5E7EB 50%); }
+  .vb-bar.str { background:var(--blue); }
+  .vb-bar.emg { background:linear-gradient(90deg,var(--red) 25%,#E5E7EB 25%); }
+
+  .vb-content {
+    display:flex; align-items:stretch;
+    border-right:1px solid var(--border);
+  }
+  .vb-stats {
+    display:flex; flex-direction:column; justify-content:center;
+    gap:6px; padding:6px 10px;
+    border-right:1px solid var(--border);
+    min-width:130px;
+  }
+  .vb-kpi-row { display:flex; gap:10px; }
+  .vb-kpi { text-align:center; }
+  .vb-kn { font-size:18px; font-weight:800; color:var(--navy); line-height:1; }
+  .vb-kn.red   { color:var(--red); }
+  .vb-kn.amber { color:var(--amber); }
+  .vb-kl { font-size:8px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; font-weight:600; }
+
+  .vb-actions {
+    display:flex; flex-direction:column; justify-content:center;
+    padding:6px 12px; gap:3px; flex:1;
+  }
+  .vb-act { font-size:11px; color:#374151; display:flex; gap:5px; }
+  .vb-arr { color:var(--blue); font-weight:700; flex-shrink:0; }
+  .vb-wait { font-size:10px; color:#9CA3AF; font-style:italic; display:flex; gap:4px; }
+  .vb-wdot { color:#D1D5DB; }
+
+  .vb-owners {
+    display:flex; flex-wrap:wrap; align-items:center; gap:4px;
+    padding:6px 10px;
+  }
+
+  /* ============================================================ */
+  /* VAR C — OPERATOR BOARD                                       */
+  /* Most minimal. 3 columns only. Giant leading number.          */
+  /* ============================================================ */
+  .vc-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px; }
+  .vc-card {
+    background:var(--white);
+    border:1px solid var(--border); border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    transition: box-shadow .15s;
+  }
+  .vc-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.07); }
+  .vc-card-hdr {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:8px 14px;
+    border-bottom:1px solid var(--border);
+  }
+  .vc-hdr-left { display:flex; align-items:center; gap:8px; }
+  .vc-icon { font-size:14px; }
+  .vc-title { font-size:13px; font-weight:700; color:var(--navy); }
+  .vc-conf {
+    font-size:9px; font-weight:700; padding:2px 8px; border-radius:99px;
+    text-transform:uppercase; letter-spacing:.04em;
+  }
+  .vc-conf.est { background:var(--g-bg); color:var(--g-txt); }
+  .vc-conf.par { background:var(--a-bg); color:var(--a-txt); }
+  .vc-conf.str { background:var(--b-bg); color:var(--b-txt); }
+  .vc-conf.emg { background:var(--r-bg); color:var(--r-txt); }
+
+  .vc-body {
+    display:grid; grid-template-columns:120px 1fr;
+    align-items:stretch;
+  }
+  .vc-kpis {
+    display:flex; flex-direction:column; justify-content:center;
+    gap:4px; padding:8px 10px;
+    background:var(--bg);
+    border-right:1px solid var(--border);
+  }
+  .vc-kpi { text-align:center; padding:4px 0; border-bottom:1px solid var(--border); }
+  .vc-kpi:last-child { border-bottom:none; padding-bottom:0; }
+  .vc-kn { font-size:22px; font-weight:800; color:var(--navy); line-height:1; }
+  .vc-kn.red   { color:var(--red); }
+  .vc-kn.amber { color:var(--amber); }
+  .vc-kl { font-size:8px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em; margin-top:2px; }
+
+  .vc-right { display:flex; flex-direction:column; padding:8px 12px; gap:6px; }
+  .vc-sec-lbl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+  .vc-act { font-size:11px; color:#374151; display:flex; gap:5px; line-height:1.35; }
+  .vc-arr { color:var(--blue); font-weight:700; flex-shrink:0; }
+  .vc-wait { font-size:10px; color:#9CA3AF; font-style:italic; display:flex; gap:4px; }
+  .vc-wdot { color:#D1D5DB; }
+  .vc-owners { display:flex; flex-wrap:wrap; gap:3px; margin-top:2px; }
+
+  /* ── Footer ── */
+  .footer { display:flex; justify-content:space-between; padding:6px 0; margin-top:6px; font-size:10px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="sw('a')">A · KPI Band</button>
+    <button class="tab-btn"         onclick="sw('b')">B · Signal Board</button>
+    <button class="tab-btn"         onclick="sw('c')">C · Operator Cards</button>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- VAR A — KPI BAND                                             -->
+  <!-- ============================================================ -->
+  <div id="tab-a" class="tab-panel active">
+    <div class="tbar">
+      <div><h1>Program Command Center</h1><p>ERP Mobilization &middot; NetSuite &middot; Mar 4, 2026</p></div>
+      <div class="badges">
+        <span class="badge" style="background:rgba(209,250,229,.9);color:#065F46;">Go-live Jan 1, 2027</span>
+        <span class="badge" style="background:rgba(238,236,250,.9);color:#3D2E9B;">Mobilization Apr 2026</span>
+      </div>
+    </div>
+
+    <div class="dl-strip">
+      <div class="dl-item ur"><div class="dl-lbl">Audit Committee</div><div class="dl-date">Mar 6</div><div class="dl-days ur">2 days</div></div>
+      <div class="dl-item so"><div class="dl-lbl">Board Checkpoint</div><div class="dl-date">Mar 19</div><div class="dl-days so">15 days</div></div>
+      <div class="dl-item fa"><div class="dl-lbl">Mobilization</div><div class="dl-date">Apr 1</div><div class="dl-days fa">28 days</div></div>
+      <div class="dl-item an"><div class="dl-lbl">Go-Live</div><div class="dl-date">Jan 1, 2027</div><div class="dl-days an">~303 days</div></div>
+    </div>
+
+    <div class="status-strip">
+      <div class="st-chip"><span class="st-dot st-g"></span><div><span class="st-lbl">Vendor</span>NetSuite selected</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Contract</span>Awaiting commercials</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Scope</span>In design</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Resourcing</span>Model not set</div></div>
+    </div>
+
+    <div class="grid" style="margin-bottom:8px;">
+      <div class="g-hdr">Program Pillars — color bar = confidence level&nbsp;&nbsp;<span style="display:inline-flex;gap:8px;align-items:center;font-size:9px;font-weight:600;text-transform:none;letter-spacing:0;"><span style="width:10px;height:10px;border-radius:2px;background:var(--green);display:inline-block;"></span>Established&nbsp;<span style="width:10px;height:10px;border-radius:2px;background:var(--blue);display:inline-block;"></span>Strong&nbsp;<span style="width:10px;height:10px;border-radius:2px;background:var(--amber);display:inline-block;"></span>Partial</span></div>
+
+      <!-- P2P -->
+      <div class="va-row">
+        <div class="va-stripe est"></div>
+        <div class="va-icon">&#9679;</div>
+        <div class="va-name"><div class="va-n">P2P</div><div class="va-sc">Procure to Pay</div></div>
+        <div class="va-kpis">
+          <div class="va-kpi"><div class="va-num">20</div><div class="va-lbl">Controls</div></div>
+          <div class="va-kpi"><div class="va-num amber">22</div><div class="va-lbl">Remediate</div></div>
+          <div class="va-kpi"><div class="va-num">€165M</div><div class="va-lbl">Exposure</div></div>
+        </div>
+        <div class="va-action">
+          <div class="va-act-lbl">Top Actions</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Assign P2P process owner</div>
+          <div class="va-act-item"><span class="va-arr">→</span>AP remediation timeline: 22 vendors</div>
+          <div class="va-wait" style="margin-top:2px;"><span class="va-wdot">·</span>Waiting: P2P process owner nomination</div>
+        </div>
+        <div class="va-owners">
+          <div class="chip chip-fr"><div class="av" style="background:#2D7DD2;">JC</div> Juliette C. <span class="pill pill-fr">FR</span></div>
+          <div class="chip chip-us"><div class="av" style="background:#60A5FA;">KG</div> Kimberly G. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">PG</div> Philippe G. <span class="pill pill-fr">FR</span></div>
+        </div>
+      </div>
+
+      <!-- Reporting -->
+      <div class="va-row">
+        <div class="va-stripe par"></div>
+        <div class="va-icon">&#9679;</div>
+        <div class="va-name"><div class="va-n">Reporting</div><div class="va-sc">Data &amp; FP&amp;A</div></div>
+        <div class="va-kpis">
+          <div class="va-kpi"><div class="va-num">39</div><div class="va-lbl">Controls</div></div>
+          <div class="va-kpi"><div class="va-num red">0</div><div class="va-lbl">Bridge</div></div>
+          <div class="va-kpi"><div class="va-num amber">3</div><div class="va-lbl">Waiting On</div></div>
+        </div>
+        <div class="va-action">
+          <div class="va-act-lbl">Top Actions</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Map current → target reporting state</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Define minimum reporting dimensions</div>
+          <div class="va-wait" style="margin-top:2px;"><span class="va-wdot">·</span>Waiting: Frederick FP&amp;A dimensions</div>
+        </div>
+        <div class="va-owners">
+          <div class="chip chip-fr"><div class="av" style="background:#109960;">FG</div> Frederick G. <span class="pill pill-fr">FR</span></div>
+          <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt E. <span class="pill pill-us">US</span></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="va-row">
+        <div class="va-stripe par"></div>
+        <div class="va-icon">&#9679;</div>
+        <div class="va-name"><div class="va-n">Controls</div><div class="va-sc">Audit &amp; SOX</div></div>
+        <div class="va-kpis">
+          <div class="va-kpi"><div class="va-num">84</div><div class="va-lbl">In Scope</div></div>
+          <div class="va-kpi"><div class="va-num amber">9</div><div class="va-lbl">ERP-Signal</div></div>
+          <div class="va-kpi"><div class="va-num">45</div><div class="va-lbl">Out of Scope</div></div>
+        </div>
+        <div class="va-action">
+          <div class="va-act-lbl">Top Actions</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Receive Adrian's 3-slide controls pack</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Build deficiency inventory</div>
+          <div class="va-wait" style="margin-top:2px;"><span class="va-wdot">·</span>Waiting: Adrian's pack; Camille date</div>
+        </div>
+        <div class="va-owners">
+          <div class="chip chip-fr"><div class="av" style="background:#7C3AED;">DJ</div> Denis J. <span class="pill pill-fr">FR</span></div>
+          <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt E. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-ext"><div class="av" style="background:#B58728;">CF</div> CFGI <span class="pill pill-ext">Ext</span></div>
+        </div>
+      </div>
+
+      <!-- Governance -->
+      <div class="va-row">
+        <div class="va-stripe str"></div>
+        <div class="va-icon">&#9679;</div>
+        <div class="va-name"><div class="va-n">Governance</div><div class="va-sc">Program &amp; Mobilization</div></div>
+        <div class="va-kpis">
+          <div class="va-kpi"><div class="va-num">€650K</div><div class="va-lbl">Year 1</div></div>
+          <div class="va-kpi"><div class="va-num">392</div><div class="va-lbl">Man-days</div></div>
+          <div class="va-kpi"><div class="va-num amber">Apr</div><div class="va-lbl">Kick-off</div></div>
+        </div>
+        <div class="va-action">
+          <div class="va-act-lbl">Top Actions</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Define governance / resourcing model</div>
+          <div class="va-act-item"><span class="va-arr">→</span>Get NetSuite commercial package</div>
+          <div class="va-wait" style="margin-top:2px;"><span class="va-wdot">·</span>Waiting: NetSuite commercials / timeline</div>
+        </div>
+        <div class="va-owners">
+          <div class="chip chip-us"><div class="av" style="background:#475569;">HK</div> Hema K. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-us"><div class="av" style="background:var(--purp-d);">MM</div> Mike M. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">CG</div> Camille G. <span class="pill pill-fr">FR</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="g-hdr">Top Risks</div>
+      <div class="risk-row"><span class="rbadge rh">High</span><strong>Mobilization delay</strong>&ensp;No signed contract. April kickoff at risk.</div>
+      <div class="risk-row"><span class="rbadge rh">High</span><strong>Controls capacity</strong>&ensp;123 controls; resourcing not modeled.</div>
+      <div class="risk-row"><span class="rbadge rm">Med</span><strong>P2P migration gate</strong>&ensp;22 vendors block vendor master migration.</div>
+      <div class="risk-row"><span class="rbadge rm">Med</span><strong>Go-live pressure</strong>&ensp;Jan 1, 2027 non-negotiable.</div>
+    </div>
+
+    <div class="footer"><span>Abivax ERP &middot; Confidential</span><span>Mar 4, 2026</span></div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- VAR B — SIGNAL BOARD                                         -->
+  <!-- ============================================================ -->
+  <div id="tab-b" class="tab-panel">
+    <div class="tbar">
+      <div><h1>Program Command Center</h1><p>ERP Mobilization &middot; NetSuite &middot; Mar 4, 2026</p></div>
+      <div class="badges">
+        <span class="badge" style="background:rgba(209,250,229,.9);color:#065F46;">Go-live Jan 1, 2027</span>
+        <span class="badge" style="background:rgba(238,236,250,.9);color:#3D2E9B;">Mobilization Apr 2026</span>
+      </div>
+    </div>
+
+    <div class="dl-strip">
+      <div class="dl-item ur"><div class="dl-lbl">Audit Committee</div><div class="dl-date">Mar 6</div><div class="dl-days ur">2 days</div></div>
+      <div class="dl-item so"><div class="dl-lbl">Board Checkpoint</div><div class="dl-date">Mar 19</div><div class="dl-days so">15 days</div></div>
+      <div class="dl-item fa"><div class="dl-lbl">Mobilization</div><div class="dl-date">Apr 1</div><div class="dl-days fa">28 days</div></div>
+      <div class="dl-item an"><div class="dl-lbl">Go-Live</div><div class="dl-date">Jan 1, 2027</div><div class="dl-days an">~303 days</div></div>
+    </div>
+
+    <div class="status-strip">
+      <div class="st-chip"><span class="st-dot st-g"></span><div><span class="st-lbl">Vendor</span>NetSuite selected</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Contract</span>Awaiting commercials</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Scope</span>In design</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Resourcing</span>Model not set</div></div>
+    </div>
+
+    <div class="grid" style="margin-bottom:8px;">
+      <div class="g-hdr">Program Pillars</div>
+
+      <!-- P2P -->
+      <div class="vb-row">
+        <div class="vb-icon">&#9679;</div>
+        <div class="vb-name"><div class="vb-n">P2P</div><div class="vb-sc">Procure to Pay</div></div>
+        <div class="vb-signal">
+          <div class="vb-conf est">Established</div>
+          <div class="vb-bar est"></div>
+        </div>
+        <div class="vb-content">
+          <div class="vb-stats">
+            <div class="vb-kpi-row">
+              <div class="vb-kpi"><div class="vb-kn">20</div><div class="vb-kl">Controls</div></div>
+              <div class="vb-kpi"><div class="vb-kn amber">22</div><div class="vb-kl">Remediate</div></div>
+              <div class="vb-kpi"><div class="vb-kn">€165M</div><div class="vb-kl">Exposure</div></div>
+            </div>
+          </div>
+          <div class="vb-actions">
+            <div class="vb-act"><span class="vb-arr">→</span>Assign P2P process owner</div>
+            <div class="vb-act"><span class="vb-arr">→</span>AP remediation timeline: 22 vendors</div>
+            <div class="vb-wait"><span class="vb-wdot">·</span>P2P process owner nomination</div>
+          </div>
+        </div>
+        <div class="vb-owners">
+          <div class="chip chip-fr"><div class="av" style="background:#2D7DD2;">JC</div> Juliette C. <span class="pill pill-fr">FR</span></div>
+          <div class="chip chip-us"><div class="av" style="background:#60A5FA;">KG</div> Kimberly G. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">PG</div> Philippe G. <span class="pill pill-fr">FR</span></div>
+        </div>
+      </div>
+
+      <!-- Reporting -->
+      <div class="vb-row">
+        <div class="vb-icon">&#9679;</div>
+        <div class="vb-name"><div class="vb-n">Reporting</div><div class="vb-sc">Data &amp; FP&amp;A</div></div>
+        <div class="vb-signal">
+          <div class="vb-conf par">Partial</div>
+          <div class="vb-bar par"></div>
+        </div>
+        <div class="vb-content">
+          <div class="vb-stats">
+            <div class="vb-kpi-row">
+              <div class="vb-kpi"><div class="vb-kn">39</div><div class="vb-kl">Controls</div></div>
+              <div class="vb-kpi"><div class="vb-kn red">0</div><div class="vb-kl">Bridge</div></div>
+              <div class="vb-kpi"><div class="vb-kn amber">3</div><div class="vb-kl">Waiting</div></div>
+            </div>
+          </div>
+          <div class="vb-actions">
+            <div class="vb-act"><span class="vb-arr">→</span>Map current → target reporting state</div>
+            <div class="vb-act"><span class="vb-arr">→</span>Define minimum reporting dimensions</div>
+            <div class="vb-wait"><span class="vb-wdot">·</span>Frederick: FP&amp;A dimensions response</div>
+          </div>
+        </div>
+        <div class="vb-owners">
+          <div class="chip chip-fr"><div class="av" style="background:#109960;">FG</div> Frederick G. <span class="pill pill-fr">FR</span></div>
+          <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt E. <span class="pill pill-us">US</span></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="vb-row">
+        <div class="vb-icon">&#9679;</div>
+        <div class="vb-name"><div class="vb-n">Controls</div><div class="vb-sc">Audit &amp; SOX</div></div>
+        <div class="vb-signal">
+          <div class="vb-conf par">Partial</div>
+          <div class="vb-bar par"></div>
+        </div>
+        <div class="vb-content">
+          <div class="vb-stats">
+            <div class="vb-kpi-row">
+              <div class="vb-kpi"><div class="vb-kn">84</div><div class="vb-kl">In Scope</div></div>
+              <div class="vb-kpi"><div class="vb-kn amber">9</div><div class="vb-kl">ERP-Signal</div></div>
+              <div class="vb-kpi"><div class="vb-kn">45</div><div class="vb-kl">Out</div></div>
+            </div>
+          </div>
+          <div class="vb-actions">
+            <div class="vb-act"><span class="vb-arr">→</span>Receive Adrian's 3-slide controls pack</div>
+            <div class="vb-act"><span class="vb-arr">→</span>Build deficiency inventory</div>
+            <div class="vb-wait"><span class="vb-wdot">·</span>Adrian's pack; Camille date confirm</div>
+          </div>
+        </div>
+        <div class="vb-owners">
+          <div class="chip chip-fr"><div class="av" style="background:#7C3AED;">DJ</div> Denis J. <span class="pill pill-fr">FR</span></div>
+          <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt E. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-ext"><div class="av" style="background:#B58728;">CF</div> CFGI <span class="pill pill-ext">Ext</span></div>
+        </div>
+      </div>
+
+      <!-- Governance -->
+      <div class="vb-row">
+        <div class="vb-icon">&#9679;</div>
+        <div class="vb-name"><div class="vb-n">Governance</div><div class="vb-sc">Program &amp; Mobilization</div></div>
+        <div class="vb-signal">
+          <div class="vb-conf str">Strong</div>
+          <div class="vb-bar str"></div>
+        </div>
+        <div class="vb-content">
+          <div class="vb-stats">
+            <div class="vb-kpi-row">
+              <div class="vb-kpi"><div class="vb-kn">€650K</div><div class="vb-kl">Year 1</div></div>
+              <div class="vb-kpi"><div class="vb-kn">392</div><div class="vb-kl">Man-days</div></div>
+              <div class="vb-kpi"><div class="vb-kn amber">Apr</div><div class="vb-kl">Kick-off</div></div>
+            </div>
+          </div>
+          <div class="vb-actions">
+            <div class="vb-act"><span class="vb-arr">→</span>Define governance / resourcing model</div>
+            <div class="vb-act"><span class="vb-arr">→</span>Get NetSuite commercial package</div>
+            <div class="vb-wait"><span class="vb-wdot">·</span>NetSuite commercials / timeline package</div>
+          </div>
+        </div>
+        <div class="vb-owners">
+          <div class="chip chip-us"><div class="av" style="background:#475569;">HK</div> Hema K. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-us"><div class="av" style="background:var(--purp-d);">MM</div> Mike M. <span class="pill pill-us">US</span></div>
+          <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">CG</div> Camille G. <span class="pill pill-fr">FR</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="g-hdr">Top Risks</div>
+      <div class="risk-row"><span class="rbadge rh">High</span><strong>Mobilization delay</strong>&ensp;No signed contract. April kickoff at risk.</div>
+      <div class="risk-row"><span class="rbadge rh">High</span><strong>Controls capacity</strong>&ensp;123 controls require resourcing not yet modeled.</div>
+      <div class="risk-row"><span class="rbadge rm">Med</span><strong>P2P migration gate</strong>&ensp;22 vendors block vendor master migration.</div>
+      <div class="risk-row"><span class="rbadge rm">Med</span><strong>Go-live pressure</strong>&ensp;Jan 1, 2027 non-negotiable.</div>
+    </div>
+
+    <div class="footer"><span>Abivax ERP &middot; Confidential</span><span>Mar 4, 2026</span></div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- VAR C — OPERATOR CARDS                                       -->
+  <!-- ============================================================ -->
+  <div id="tab-c" class="tab-panel">
+    <div class="tbar">
+      <div><h1>Program Command Center</h1><p>ERP Mobilization &middot; NetSuite &middot; Mar 4, 2026</p></div>
+      <div class="badges">
+        <span class="badge" style="background:rgba(209,250,229,.9);color:#065F46;">Go-live Jan 1, 2027</span>
+        <span class="badge" style="background:rgba(238,236,250,.9);color:#3D2E9B;">Mobilization Apr 2026</span>
+      </div>
+    </div>
+
+    <div class="dl-strip">
+      <div class="dl-item ur"><div class="dl-lbl">Audit Committee</div><div class="dl-date">Mar 6</div><div class="dl-days ur">2 days</div></div>
+      <div class="dl-item so"><div class="dl-lbl">Board Checkpoint</div><div class="dl-date">Mar 19</div><div class="dl-days so">15 days</div></div>
+      <div class="dl-item fa"><div class="dl-lbl">Mobilization</div><div class="dl-date">Apr 1</div><div class="dl-days fa">28 days</div></div>
+      <div class="dl-item an"><div class="dl-lbl">Go-Live</div><div class="dl-date">Jan 1, 2027</div><div class="dl-days an">~303 days</div></div>
+    </div>
+
+    <div class="status-strip">
+      <div class="st-chip"><span class="st-dot st-g"></span><div><span class="st-lbl">Vendor</span>NetSuite selected</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Contract</span>Awaiting commercials</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Scope</span>In design</div></div>
+      <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Resourcing</span>Model not set</div></div>
+    </div>
+
+    <!-- 2x2 pillar cards -->
+    <div class="vc-grid">
+
+      <!-- P2P -->
+      <div class="vc-card">
+        <div class="vc-card-hdr">
+          <div class="vc-hdr-left"><span class="vc-icon">&#9679;</span><span class="vc-title">P2P — Procure to Pay</span></div>
+          <span class="vc-conf est">Established</span>
+        </div>
+        <div class="vc-body">
+          <div class="vc-kpis">
+            <div class="vc-kpi"><div class="vc-kn">20</div><div class="vc-kl">Controls in scope</div></div>
+            <div class="vc-kpi"><div class="vc-kn amber">22</div><div class="vc-kl">Vendors to remediate</div></div>
+            <div class="vc-kpi"><div class="vc-kn">€165M</div><div class="vc-kl">Commitment exposure</div></div>
+          </div>
+          <div class="vc-right">
+            <div>
+              <div class="vc-sec-lbl">Top Actions</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Assign P2P process owner</div>
+              <div class="vc-act"><span class="vc-arr">→</span>AP remediation timeline: 22 vendors</div>
+              <div class="vc-wait" style="margin-top:3px;"><span class="vc-wdot">·</span>P2P owner nomination pending</div>
+            </div>
+            <div class="vc-owners">
+              <div class="chip chip-fr"><div class="av" style="background:#2D7DD2;">JC</div> Juliette <span class="pill pill-fr">FR</span></div>
+              <div class="chip chip-us"><div class="av" style="background:#60A5FA;">KG</div> Kimberly <span class="pill pill-us">US</span></div>
+              <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">PG</div> Philippe <span class="pill pill-fr">FR</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reporting -->
+      <div class="vc-card">
+        <div class="vc-card-hdr">
+          <div class="vc-hdr-left"><span class="vc-icon">&#9679;</span><span class="vc-title">Reporting &amp; Data</span></div>
+          <span class="vc-conf par">Partial</span>
+        </div>
+        <div class="vc-body">
+          <div class="vc-kpis">
+            <div class="vc-kpi"><div class="vc-kn">39</div><div class="vc-kl">Controls in scope</div></div>
+            <div class="vc-kpi"><div class="vc-kn red">0</div><div class="vc-kl">State bridge mapped</div></div>
+            <div class="vc-kpi"><div class="vc-kn amber">3</div><div class="vc-kl">Items waiting on</div></div>
+          </div>
+          <div class="vc-right">
+            <div>
+              <div class="vc-sec-lbl">Top Actions</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Map current → target reporting state</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Define minimum reporting dimensions</div>
+              <div class="vc-wait" style="margin-top:3px;"><span class="vc-wdot">·</span>Frederick: FP&amp;A dimensions pending</div>
+            </div>
+            <div class="vc-owners">
+              <div class="chip chip-fr"><div class="av" style="background:#109960;">FG</div> Frederick <span class="pill pill-fr">FR</span></div>
+              <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt <span class="pill pill-us">US</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="vc-card">
+        <div class="vc-card-hdr">
+          <div class="vc-hdr-left"><span class="vc-icon">&#9679;</span><span class="vc-title">Controls &amp; Audit</span></div>
+          <span class="vc-conf par">Partial</span>
+        </div>
+        <div class="vc-body">
+          <div class="vc-kpis">
+            <div class="vc-kpi"><div class="vc-kn">84</div><div class="vc-kl">Controls in scope</div></div>
+            <div class="vc-kpi"><div class="vc-kn amber">9</div><div class="vc-kl">ERP-signal</div></div>
+            <div class="vc-kpi"><div class="vc-kn">45</div><div class="vc-kl">Out of scope</div></div>
+          </div>
+          <div class="vc-right">
+            <div>
+              <div class="vc-sec-lbl">Top Actions</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Receive Adrian's 3-slide controls pack</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Build deficiency inventory</div>
+              <div class="vc-wait" style="margin-top:3px;"><span class="vc-wdot">·</span>Adrian's pack; Camille date pending</div>
+            </div>
+            <div class="vc-owners">
+              <div class="chip chip-fr"><div class="av" style="background:#7C3AED;">DJ</div> Denis <span class="pill pill-fr">FR</span></div>
+              <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt <span class="pill pill-us">US</span></div>
+              <div class="chip chip-ext"><div class="av" style="background:#B58728;">CF</div> CFGI <span class="pill pill-ext">Ext</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Governance -->
+      <div class="vc-card">
+        <div class="vc-card-hdr">
+          <div class="vc-hdr-left"><span class="vc-icon">&#9679;</span><span class="vc-title">Governance &amp; Program</span></div>
+          <span class="vc-conf str">Strong</span>
+        </div>
+        <div class="vc-body">
+          <div class="vc-kpis">
+            <div class="vc-kpi"><div class="vc-kn">€650K</div><div class="vc-kl">KPMG Year 1</div></div>
+            <div class="vc-kpi"><div class="vc-kn">392</div><div class="vc-kl">Man-days</div></div>
+            <div class="vc-kpi"><div class="vc-kn amber">Apr</div><div class="vc-kl">Mobilization</div></div>
+          </div>
+          <div class="vc-right">
+            <div>
+              <div class="vc-sec-lbl">Top Actions</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Define governance / resourcing model</div>
+              <div class="vc-act"><span class="vc-arr">→</span>Get NetSuite commercial package</div>
+              <div class="vc-wait" style="margin-top:3px;"><span class="vc-wdot">·</span>NetSuite commercials / timeline</div>
+            </div>
+            <div class="vc-owners">
+              <div class="chip chip-us"><div class="av" style="background:#475569;">HK</div> Hema <span class="pill pill-us">US</span></div>
+              <div class="chip chip-us"><div class="av" style="background:var(--purp-d);">MM</div> Mike <span class="pill pill-us">US</span></div>
+              <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">CG</div> Camille <span class="pill pill-fr">FR</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Risks -->
+    <div class="grid">
+      <div class="g-hdr">Top Risks</div>
+      <div class="risk-row"><span class="rbadge rh">High</span><strong>Mobilization delay</strong>&ensp;No signed contract. April kickoff at risk.</div>
+      <div class="risk-row"><span class="rbadge rh">High</span><strong>Controls capacity</strong>&ensp;123 controls require resourcing not yet modeled.</div>
+      <div class="risk-row"><span class="rbadge rm">Med</span><strong>P2P migration gate</strong>&ensp;22 vendors block vendor master migration.</div>
+      <div class="risk-row"><span class="rbadge rm">Med</span><strong>Go-live pressure</strong>&ensp;Jan 1, 2027 non-negotiable.</div>
+    </div>
+
+    <div class="footer"><span>Abivax ERP &middot; Confidential</span><span>Mar 4, 2026</span></div>
+  </div>
+
+</div>
+
+<script>
+function sw(id){
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>{ b.classList.toggle('active', ['a','b','c'][i]===id); });
+  document.getElementById('tab-'+id).classList.add('active');
+}
+</script>
+</body>
+</html>

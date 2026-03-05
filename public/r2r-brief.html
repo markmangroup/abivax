@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Record to Report — Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #F8F9FA;
+    color: #111827;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .page { max-width: 1100px; margin: 0 auto; padding: 20px 32px 48px; }
+
+  /* ── Breadcrumb ── */
+  .breadcrumb {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 12px; color: #6B7280;
+    margin-bottom: 18px;
+  }
+  .breadcrumb a {
+    color: #2563EB; text-decoration: none; font-weight: 500;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb-sep { color: #D1D5DB; }
+
+  /* ── Page header ── */
+  .page-header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 14px; margin-bottom: 24px;
+    gap: 16px;
+  }
+  .page-title { font-size: 22px; font-weight: 700; color: #111827; letter-spacing: -0.3px; }
+  .page-sub { font-size: 13px; color: #6B7280; margin-top: 3px; }
+  .header-badges { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; padding-top: 4px; }
+  .hbadge {
+    padding: 3px 10px; border-radius: 99px; font-size: 11px; font-weight: 600;
+  }
+  .hbadge-amber { background: #FEF3C7; color: #B45309; }
+  .hbadge-red   { background: #FEE2E2; color: #B91C1C; }
+  .hbadge-blue  { background: #EFF6FF; color: #1D4ED8; }
+
+  /* ── Alert banner ── */
+  .alert-banner {
+    border-radius: 7px; padding: 13px 16px;
+    margin-bottom: 22px;
+    display: flex; align-items: flex-start; gap: 10px;
+  }
+  .alert-banner.red {
+    background: #FFF1F0; border: 1px solid #FECACA; border-left: 4px solid #DC2626;
+  }
+  .alert-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+  .alert-title { font-weight: 700; font-size: 13px; color: #991B1B; }
+  .alert-body  { font-size: 13px; color: #7F1D1D; margin-top: 2px; line-height: 1.45; }
+
+  /* ── Stats row ── */
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+  .stat-card {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px;
+    padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  }
+  .stat-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #6B7280; margin-bottom: 6px; }
+  .stat-value { font-size: 30px; font-weight: 800; color: #111827; line-height: 1; }
+  .stat-value.red   { color: #DC2626; }
+  .stat-value.amber { color: #D97706; }
+  .stat-value.blue  { color: #2563EB; }
+  .stat-sub { font-size: 12px; color: #6B7280; margin-top: 5px; }
+
+  /* ── Section headers ── */
+  .section-hdr {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .07em; color: #6B7280;
+    margin-bottom: 12px; padding-bottom: 7px;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  /* ── Workstream cards ── */
+  .ws-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+  .ws-card {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 8px;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  }
+  .ws-card-hdr {
+    padding: 10px 14px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  .ws-card-hdr.red    { background: #FFF1F0; }
+  .ws-card-hdr.amber  { background: #FFFBEB; }
+  .ws-card-hdr.blue   { background: #EFF6FF; }
+  .ws-name { font-size: 13px; font-weight: 700; color: #111827; }
+  .ws-badge {
+    font-size: 10px; font-weight: 700; padding: 2px 8px;
+    border-radius: 99px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap;
+  }
+  .ws-badge.not-started { background: #FEE2E2; color: #B91C1C; }
+  .ws-badge.in-progress { background: #FEF3C7; color: #B45309; }
+  .ws-badge.scoped      { background: #EFF6FF; color: #1D4ED8; }
+
+  .ws-body { padding: 12px 14px; }
+  .ws-row { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; font-size: 13px; }
+  .ws-row:last-child { margin-bottom: 0; }
+  .ws-key { color: #6B7280; font-size: 12px; min-width: 70px; }
+  .ws-val { color: #111827; font-weight: 500; text-align: right; font-size: 12px; }
+  .ws-val.red   { color: #DC2626; font-weight: 700; }
+  .ws-val.amber { color: #D97706; font-weight: 700; }
+
+  .ws-insight {
+    margin-top: 10px; padding-top: 10px; border-top: 1px solid #F1F5F9;
+    font-size: 12px; color: #374151; line-height: 1.45;
+  }
+  .ws-insight strong { color: #111827; }
+
+  .ws-controls-row {
+    margin-top: 10px; padding: 8px 10px;
+    background: #F8F9FA; border-radius: 5px;
+    display: flex; gap: 16px; font-size: 11px;
+  }
+  .wsc-stat { display: flex; flex-direction: column; gap: 1px; }
+  .wsc-n { font-size: 16px; font-weight: 800; color: #111827; line-height: 1; }
+  .wsc-n.signal { color: #2563EB; }
+  .wsc-l { font-size: 10px; color: #6B7280; text-transform: uppercase; letter-spacing: .04em; }
+
+  /* ── Controls breakdown ── */
+  .controls-section { margin-bottom: 24px; }
+  .controls-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .ctrl-card {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 6px;
+    padding: 14px 16px; box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  .ctrl-name  { font-size: 12px; font-weight: 600; color: #111827; margin-bottom: 4px; }
+  .ctrl-count { font-size: 24px; font-weight: 800; color: #111827; line-height: 1; margin-bottom: 5px; }
+  .ctrl-count.blue  { color: #2563EB; }
+  .ctrl-count.amber { color: #D97706; }
+  .ctrl-count.muted { color: #9CA3AF; }
+  .ctrl-desc  { font-size: 11px; color: #6B7280; line-height: 1.4; }
+  .ctrl-ids   { margin-top: 8px; display: flex; flex-direction: column; gap: 3px; }
+  .ctrl-id    { font-size: 10px; font-family: monospace; background: #F3F4F6; color: #374151; padding: 2px 6px; border-radius: 3px; }
+
+  /* ── Waiting on ── */
+  .waiting-section { margin-bottom: 24px; }
+  .wait-list { display: flex; flex-direction: column; gap: 8px; }
+  .wait-item {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 6px;
+    padding: 11px 14px; display: flex; align-items: flex-start; gap: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  }
+  .wait-person { font-size: 12px; font-weight: 700; color: #111827; min-width: 140px; flex-shrink: 0; }
+  .wait-detail { font-size: 12px; color: #374151; line-height: 1.4; }
+  .wait-tag {
+    font-size: 10px; font-weight: 600; padding: 1px 7px; border-radius: 99px;
+    text-transform: uppercase; letter-spacing: .04em; flex-shrink: 0; margin-top: 1px;
+  }
+  .wait-tag.overdue { background: #FEE2E2; color: #B91C1C; }
+  .wait-tag.pending { background: #FEF3C7; color: #B45309; }
+  .wait-tag.ext     { background: #FEF9C3; color: #713F12; }
+
+  /* ── Next moves ── */
+  .next-moves {
+    background: #FFFFFF; border: 1px solid #E2E8F0; border-left: 4px solid #2563EB;
+    border-radius: 7px; padding: 16px 20px; box-shadow: 0 1px 3px rgba(0,0,0,.05);
+    margin-bottom: 24px;
+  }
+  .next-moves-title { font-size: 13px; font-weight: 700; color: #1D4ED8; margin-bottom: 12px; }
+  .next-move { display: flex; gap: 12px; margin-bottom: 9px; font-size: 13px; color: #374151; }
+  .next-move-num { color: #93C5FD; font-weight: 700; flex-shrink: 0; min-width: 18px; }
+  .next-move:last-child { margin-bottom: 0; }
+  .next-move strong { color: #111827; }
+
+  /* ── Footer nav ── */
+  .page-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 20px; border-top: 1px solid #E2E8F0;
+    font-size: 12px; color: #9CA3AF;
+  }
+  .page-footer a { color: #2563EB; text-decoration: none; font-weight: 500; }
+  .page-footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="/abivax/spine/program-overview" target="_parent">Program Overview</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>Record to Report</span>
+  </div>
+
+  <!-- Page header -->
+  <div class="page-header">
+    <div>
+      <div class="page-title">Record to Report</div>
+      <div class="page-sub">ERP Workstream Brief &middot; Abivax &middot; Mar 4, 2026</div>
+    </div>
+    <div class="header-badges">
+      <span class="hbadge hbadge-red">GL/CoA Not Started</span>
+      <span class="hbadge hbadge-amber">Partial Coverage</span>
+      <span class="hbadge hbadge-blue">3 Sub-Workstreams</span>
+    </div>
+  </div>
+
+  <!-- Critical alert -->
+  <div class="alert-banner red">
+    <div class="alert-icon">🔴</div>
+    <div>
+      <div class="alert-title">Critical: GL / Chart of Accounts design not started</div>
+      <div class="alert-body">The Chart of Accounts is the most consequential pre-blueprint decision in the entire program. Every downstream NetSuite module — AP, AR, Financial Close, Reporting — depends on the CoA structure being resolved first. Denis Jankovic and Hema must initiate design immediately. No blueprint session can be productive without this foundation.</div>
+    </div>
+  </div>
+
+  <!-- Stats row -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Sub-Workstreams</div>
+      <div class="stat-value">3</div>
+      <div class="stat-sub">GL/CoA · Close · Treasury</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">CoA Designed</div>
+      <div class="stat-value red">0</div>
+      <div class="stat-sub">Not started — highest priority</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Controls in Scope</div>
+      <div class="stat-value">84</div>
+      <div class="stat-sub">23 out of scope · 4 ERP-signal</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">ERP-Signal Controls</div>
+      <div class="stat-value blue">4</div>
+      <div class="stat-sub">Must be built into NetSuite config</div>
+    </div>
+  </div>
+
+  <!-- Sub-workstreams -->
+  <div class="section-hdr">Sub-Workstreams</div>
+  <div class="ws-grid">
+
+    <!-- GL / CoA -->
+    <div class="ws-card">
+      <div class="ws-card-hdr red">
+        <span class="ws-name">GL / Chart of Accounts</span>
+        <span class="ws-badge not-started">Not Started</span>
+      </div>
+      <div class="ws-body">
+        <div class="ws-row">
+          <span class="ws-key">FR Lead</span>
+          <span class="ws-val">Denis Jankovic</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">US Lead</span>
+          <span class="ws-val">Matt Epley</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">Entities</span>
+          <span class="ws-val">FR + US</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">Blocker</span>
+          <span class="ws-val red">Blocks all design</span>
+        </div>
+        <div class="ws-insight">
+          <strong>Why this matters first:</strong> NetSuite account segments, dimensions, and intercompany structure must be defined before any module can be configured. A deferred CoA decision compresses every phase downstream.
+        </div>
+        <div class="ws-controls-row">
+          <div class="wsc-stat">
+            <span class="wsc-n signal">4</span>
+            <span class="wsc-l">ERP-signal</span>
+          </div>
+          <div class="wsc-stat">
+            <span class="wsc-n">84</span>
+            <span class="wsc-l">Controls total</span>
+          </div>
+          <div class="wsc-stat">
+            <span class="wsc-n">23</span>
+            <span class="wsc-l">Out of scope</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Financial Close -->
+    <div class="ws-card">
+      <div class="ws-card-hdr amber">
+        <span class="ws-name">Financial Close</span>
+        <span class="ws-badge in-progress">In Progress</span>
+      </div>
+      <div class="ws-body">
+        <div class="ws-row">
+          <span class="ws-key">FR Lead</span>
+          <span class="ws-val">Philippe Goncalves</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">US Lead</span>
+          <span class="ws-val">Matt Epley</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">Entities</span>
+          <span class="ws-val">FR + US</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">KPMG role</span>
+          <span class="ws-val amber">IFRS bridge</span>
+        </div>
+        <div class="ws-insight">
+          Current close is quarterly-oriented and manual, with a KPMG bridge dependency for IFRS/SEC adjustments. Close process documentation is in progress. KPMG consolidation inputs must be captured before NetSuite close design.
+        </div>
+        <div class="ws-controls-row">
+          <div class="wsc-stat">
+            <span class="wsc-n signal">2</span>
+            <span class="wsc-l">Key controls</span>
+          </div>
+          <div class="wsc-stat" style="flex:1">
+            <span class="wsc-n" style="font-size:11px;font-weight:600;color:#374151;margin-top:2px;">FR-FSCP-05G · FR-FSCP-06</span>
+            <span class="wsc-l">Manual journals · Post-period close</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Treasury -->
+    <div class="ws-card">
+      <div class="ws-card-hdr blue">
+        <span class="ws-name">Treasury / Cash</span>
+        <span class="ws-badge scoped">Scoped</span>
+      </div>
+      <div class="ws-body">
+        <div class="ws-row">
+          <span class="ws-key">FR Lead</span>
+          <span class="ws-val">Roxandra Sturdza</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">US Lead</span>
+          <span class="ws-val">Kimberly Gordon</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">FR scope</span>
+          <span class="ws-val">Cash management</span>
+        </div>
+        <div class="ws-row">
+          <span class="ws-key">US scope</span>
+          <span class="ws-val amber">TBD</span>
+        </div>
+        <div class="ws-insight">
+          Scoped but not yet baselined. FR cash management is in scope; US banking integration scope is pending confirmation. NetSuite bank feed / reconciliation model to be confirmed alongside AP module design.
+        </div>
+        <div class="ws-controls-row">
+          <div class="wsc-stat">
+            <span class="wsc-n">2</span>
+            <span class="wsc-l">Entities</span>
+          </div>
+          <div class="wsc-stat">
+            <span class="wsc-n" style="color:#9CA3AF;">—</span>
+            <span class="wsc-l">Baseline pending</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls breakdown -->
+  <div class="controls-section">
+    <div class="section-hdr">Controls / CFTI Coverage</div>
+    <div class="controls-grid">
+      <div class="ctrl-card">
+        <div class="ctrl-name">Total In Scope</div>
+        <div class="ctrl-count">84</div>
+        <div class="ctrl-desc">CFTI controls spanning ITGC, SOD, SDLC, and financial close. Largest footprint across all three ERP workstreams.</div>
+      </div>
+      <div class="ctrl-card">
+        <div class="ctrl-name">ERP-Signal Controls</div>
+        <div class="ctrl-count blue">4</div>
+        <div class="ctrl-desc">Must be built into NetSuite configuration — not compensating controls added post go-live.</div>
+        <div class="ctrl-ids">
+          <span class="ctrl-id">FR-FSCP-05G — Manual journal entries</span>
+          <span class="ctrl-id">FR-FSCP-06 — Post period close journals</span>
+        </div>
+      </div>
+      <div class="ctrl-card">
+        <div class="ctrl-name">Out of Scope</div>
+        <div class="ctrl-count muted">23</div>
+        <div class="ctrl-desc">Controls confirmed out of ERP scope. Includes compensating manual controls and KPMG-managed items that don't require NetSuite config.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Waiting on -->
+  <div class="waiting-section">
+    <div class="section-hdr">Waiting On</div>
+    <div class="wait-list">
+      <div class="wait-item">
+        <span class="wait-tag overdue">Overdue</span>
+        <div>
+          <div class="wait-person">Denis Jankovic</div>
+          <div class="wait-detail">Availability and initial GL/CoA design input. No CoA structure started. First session with Denis + Hema to be scheduled immediately — this unblocks all downstream blueprint work.</div>
+        </div>
+      </div>
+      <div class="wait-item">
+        <span class="wait-tag pending">Pending</span>
+        <div>
+          <div class="wait-person">Hema Keshava</div>
+          <div class="wait-detail">Reporting process docs, SOX findings summary, and bridge workflow documentation. Required for both Financial Close and Reporting & Planning workstream design.</div>
+        </div>
+      </div>
+      <div class="wait-item">
+        <span class="wait-tag ext">External</span>
+        <div>
+          <div class="wait-person">KPMG</div>
+          <div class="wait-detail">Consolidation and IFRS adjustments current-state documentation. Required before Financial Close sub-workstream can be baselined in NetSuite close design sessions.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next moves -->
+  <div class="next-moves">
+    <div class="next-moves-title">Next Moves</div>
+    <div class="next-move"><span class="next-move-num">1</span><div><strong>Schedule GL/CoA design session with Denis + Hema.</strong> No other R2R work can be sequenced until CoA structure decisions are made. Treat as a blocker for all blueprint sessions.</div></div>
+    <div class="next-move"><span class="next-move-num">2</span><div><strong>Document current-state close process (FR).</strong> Philippe to capture quarterly close steps, KPMG touchpoints, and IFRS adjustment inputs. This is the baseline for NetSuite close module design.</div></div>
+    <div class="next-move"><span class="next-move-num">3</span><div><strong>Confirm US close process owner and scope.</strong> Matt Epley to document US LLC close steps. Determine whether FR and US close runs are consolidated or parallel in NetSuite.</div></div>
+    <div class="next-move"><span class="next-move-num">4</span><div><strong>Confirm Treasury scope: US banking integration.</strong> Roxandra confirmed for FR cash. Kimberly to confirm US banking/reconciliation scope before Treasury sub-workstream can be baselined.</div></div>
+    <div class="next-move"><span class="next-move-num">5</span><div><strong>Request KPMG consolidation documentation.</strong> IFRS bridge inputs and consolidation adjustments workflow required before Financial Close design. Chase Robin Lapous / KPMG engagement team.</div></div>
+  </div>
+
+  <!-- Footer -->
+  <div class="page-footer">
+    <div>
+      <a href="/abivax/spine/program-overview" target="_parent">← Program Overview</a>
+      &ensp;·&ensp;
+      <a href="/abivax/spine/process-flows" target="_parent">Process Flows</a>
+    </div>
+    <span>Abivax ERP Program &middot; Confidential &middot; Mar 4, 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Process Flows Explorer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #FFFFFF;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+
+        .header p {
+            color: #64748B;
+            font-size: 14px;
+        }
+
+        .about-layouts {
+            background-color: #F8F9FA;
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            padding: 12px 14px;
+            margin-bottom: 24px;
+            font-size: 13px;
+            color: #475569;
+        }
+
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #E2E8F0;
+        }
+
+        .tab-button {
+            padding: 12px 16px;
+            background: none;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #6B7280;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            margin-bottom: -2px;
+        }
+
+        .tab-button:hover {
+            color: #111827;
+            background-color: #F8F9FA;
+        }
+
+        .tab-button.active {
+            color: #111827;
+            border-bottom-color: #111827;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* ========== VARIANT A: SWIMLANE ========== */
+
+        .swimlane-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .lane {
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .lane-header {
+            background-color: #F8F9FA;
+            padding: 16px;
+            border-bottom: 1px solid #E2E8F0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lane-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .lane-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+        }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .badge-status {
+            background-color: #F0FDF4;
+            color: #166534;
+            border: 1px solid #DCFCE7;
+        }
+
+        .badge-controls {
+            background-color: #F1F5F9;
+            color: #1E293B;
+            border: 1px solid #E2E8F0;
+        }
+
+        .badge-erp {
+            background-color: #FEF3C7;
+            color: #92400E;
+            border: 1px solid #FCD34D;
+        }
+
+        .lane-content {
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            align-items: flex-start;
+        }
+
+        .step-card {
+            flex: 0 0 280px;
+            background-color: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            border-radius: 6px;
+            padding: 14px;
+            position: relative;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .step-card.ongoing {
+            border-left: 3px solid #10B981;
+            background-color: #F0FDF4;
+        }
+
+        .step-card.amber {
+            border-left: 3px solid #F59E0B;
+            background-color: #FFFBEB;
+        }
+
+        .step-card.red {
+            border-left: 3px solid #EF4444;
+            background-color: #FEF2F2;
+        }
+
+        .step-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .systems-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 10px;
+        }
+
+        .pill {
+            background-color: #E2E8F0;
+            color: #475569;
+            font-size: 11px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        .step-metrics {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        .metric-badge {
+            background-color: #E2E8F0;
+            color: #475569;
+            padding: 4px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .pain-point {
+            font-size: 12px;
+            color: #64748B;
+            padding: 8px;
+            background-color: #F8F9FA;
+            border-left: 2px solid #E2E8F0;
+            margin-top: auto;
+            border-radius: 3px;
+        }
+
+        .step-arrow {
+            flex: 0 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #E2E8F0;
+            font-weight: bold;
+        }
+
+        .collapsible-header {
+            cursor: pointer;
+            padding: 10px 14px;
+            background-color: #F8F9FA;
+            border-top: 1px solid #E2E8F0;
+            font-size: 12px;
+            font-weight: 500;
+            color: #475569;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .collapsible-header:hover {
+            background-color: #F1F5F9;
+        }
+
+        .collapsible-content {
+            display: none;
+            padding: 12px 14px;
+            background-color: #FAFBFC;
+            border-top: 1px solid #E2E8F0;
+            font-size: 12px;
+        }
+
+        .collapsible-content.open {
+            display: block;
+        }
+
+        .control-list {
+            list-style: none;
+        }
+
+        .control-list li {
+            padding: 4px 0;
+            color: #475569;
+            font-size: 12px;
+        }
+
+        .control-list li span {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .control-erp { background-color: #F59E0B; }
+        .control-design { background-color: #EF4444; }
+        .control-ongoing { background-color: #10B981; }
+
+        /* ========== VARIANT B: STACKED DETAIL CARDS ========== */
+
+        .detail-cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .flow-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .flow-card-header {
+            background-color: #F8F9FA;
+            padding: 16px;
+            border-bottom: 1px solid #E2E8F0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flow-card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .flow-card-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .step-column {
+            background-color: #F8F9FA;
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            padding: 14px;
+        }
+
+        .step-column-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .step-column-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .systems-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .pain-points-section {
+            font-size: 12px;
+            color: #475569;
+            margin-bottom: 8px;
+        }
+
+        .pain-points-section ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .pain-points-section li {
+            padding: 3px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .pain-points-section li:before {
+            content: "•";
+            position: absolute;
+            left: 6px;
+            color: #E2E8F0;
+        }
+
+        .subprocess-group {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .subprocess-name {
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 4px;
+        }
+
+        .control-dots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 4px;
+        }
+
+        .control-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 600;
+            color: #FFFFFF;
+            title: attr(title);
+        }
+
+        .control-dot.erp {
+            background-color: #F59E0B;
+        }
+
+        .control-dot.design {
+            background-color: #EF4444;
+        }
+
+        .control-dot.ongoing {
+            background-color: #10B981;
+        }
+
+        /* ========== VARIANT C: DASHBOARD ========== */
+
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .needs-attention {
+            background-color: #FEF2F2;
+            border: 1px solid #FECACA;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .needs-attention h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #991B1B;
+            margin-bottom: 8px;
+        }
+
+        .needs-attention-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .need-item {
+            background-color: #FFFFFF;
+            border: 1px solid #FECACA;
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-size: 13px;
+        }
+
+        .need-label {
+            color: #7F1D1D;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .need-value {
+            color: #991B1B;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            background-color: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background-color: #F8F9FA;
+        }
+
+        .comparison-table th {
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: #475569;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .comparison-table td {
+            padding: 12px 14px;
+            font-size: 13px;
+            color: #475569;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .comparison-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tbody tr:hover {
+            background-color: #F8F9FA;
+        }
+
+        .flow-bar-section {
+            margin-bottom: 20px;
+        }
+
+        .flow-bar-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background-color: #F8F9FA;
+            border-radius: 4px;
+        }
+
+        .flow-bar-title:hover {
+            background-color: #F1F5F9;
+        }
+
+        .flow-bar-title-toggle {
+            font-size: 12px;
+            color: #6B7280;
+        }
+
+        .flow-bar {
+            display: flex;
+            height: 32px;
+            border-radius: 4px;
+            overflow: hidden;
+            gap: 1px;
+            background-color: #E2E8F0;
+            margin-bottom: 8px;
+        }
+
+        .flow-segment {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .flow-segment:hover {
+            opacity: 0.85;
+        }
+
+        .flow-segment.step-ongoing {
+            background-color: #10B981;
+        }
+
+        .flow-segment.step-amber {
+            background-color: #F59E0B;
+        }
+
+        .flow-segment.step-red {
+            background-color: #EF4444;
+        }
+
+        .step-detail-panel {
+            display: none;
+            background-color: #F8F9FA;
+            border: 1px solid #E2E8F0;
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #475569;
+        }
+
+        .step-detail-panel.open {
+            display: block;
+        }
+
+        .step-detail-close {
+            cursor: pointer;
+            float: right;
+            color: #6B7280;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lane-content {
+                flex-direction: column;
+            }
+
+            .step-arrow {
+                display: none;
+            }
+
+            .comparison-table {
+                font-size: 11px;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>ERP Process Flows Explorer</h1>
+            <p>Visualizing current-state process flows with control mapping and future ERP signal identification.</p>
+            <div class="about-layouts">
+                <strong>About these layouts:</strong> Three different UI/UX approaches for displaying process flow complexity. Each variant emphasizes different aspects of the same underlying data: swimlane focuses on flow sequence, detail cards on information density, and dashboard on scanability. Choose the view that best matches your workflow.
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-button active" data-tab="swimlane">A: Swimlane</button>
+            <button class="tab-button" data-tab="detail">B: Detail Cards</button>
+            <button class="tab-button" data-tab="dashboard">C: Dashboard</button>
+        </div>
+
+        <!-- ========== VARIANT A: SWIMLANE ========== -->
+        <div id="swimlane" class="tab-content active">
+            <div class="swimlane-container">
+                <!-- France P2P Lane -->
+                <div class="lane">
+                    <div class="lane-header">
+                        <div>
+                            <div class="lane-title">France P2P (SA)</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 4px;">Current-state → Future-state mapping</div>
+                        </div>
+                        <div class="lane-meta">
+                            <span class="badge badge-status">Source-backed fact-finding</span>
+                            <span class="badge badge-controls">15 controls</span>
+                            <span class="badge badge-erp">4 ERP-signal</span>
+                        </div>
+                    </div>
+                    <div class="lane-content">
+                        <!-- Step 1 -->
+                        <div class="step-card red">
+                            <div class="step-name">Vendor Setup / Validation</div>
+                            <div class="systems-pills">
+                                <span class="pill">Sage</span>
+                                <span class="pill">Trustpair</span>
+                                <span class="pill">DocuShare</span>
+                            </div>
+                            <div class="step-metrics">
+                                <span class="metric-badge">3 controls</span>
+                                <span class="metric-badge" style="background-color: #FEE2E2; color: #991B1B;">1 ERP-gap</span>
+                            </div>
+                            <div class="pain-point">Key: FR-PTP-02G (New Vendor Set-Up). Exact flow not documented end-to-end.</div>
+                            <div class="collapsible-header" onclick="toggleCollapsible(this)">View controls ▾</div>
+                            <div class="collapsible-content">
+                                <ul class="control-list">
+                                    <li><span class="control-erp"></span>FR-PTP-01A: Vendor Approval (ERP-signal)</li>
+                                    <li><span class="control-ongoing"></span>FR-PTP-02A: Vendor Data Validation</li>
+                                    <li><span class="control-design"></span>FR-PTP-02G: New Vendor Set-Up (ERP-gap)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-arrow">→</div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card red">
+                            <div class="step-name">Invoice / Coding / Approval</div>
+                            <div class="systems-pills">
+                                <span class="pill">Sage</span>
+                                <span class="pill">DocuShare</span>
+                            </div>
+                            <div class="step-metrics">
+                                <span class="metric-badge">5 controls</span>
+                                <span class="metric-badge" style="background-color: #FEE2E2; color: #991B1B;">3 ERP-gap</span>
+                            </div>
+                            <div class="pain-point">No system approvals; manual workflow. Key gaps: FR-PTP-04G, FR-PTP-05G, FR-PTP-06G.</div>
+                            <div class="collapsible-header" onclick="toggleCollapsible(this)">View controls ▾</div>
+                            <div class="collapsible-content">
+                                <ul class="control-list">
+                                    <li><span class="control-erp"></span>FR-PTP-03A: Invoice Receipt (ERP-signal)</li>
+                                    <li><span class="control-erp"></span>FR-PTP-04A: PO Approval (ERP-signal)</li>
+                                    <li><span class="control-erp"></span>FR-PTP-05A: Open Orders Review (ERP-signal)</li>
+                                    <li><span class="control-design"></span>FR-PTP-04G: Manual PO Approval (gap)</li>
+                                    <li><span class="control-design"></span>FR-PTP-05G: Open Orders Tracking (gap)</li>
+                                    <li><span class="control-design"></span>FR-PTP-06G: Two-way Match (gap)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-arrow">→</div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card amber">
+                            <div class="step-name">Payment Validation & Execution</div>
+                            <div class="systems-pills">
+                                <span class="pill">Sage</span>
+                                <span class="pill">Trustpair</span>
+                                <span class="pill">Agicap</span>
+                                <span class="pill">Banks</span>
+                            </div>
+                            <div class="step-metrics">
+                                <span class="metric-badge">7 controls</span>
+                                <span class="metric-badge" style="background-color: #FEF3C7; color: #92400E;">1 ERP-signal</span>
+                            </div>
+                            <div class="pain-point">Handoff documentation needed. Cash Disbursements (6), Unrecorded Liabilities (1).</div>
+                            <div class="collapsible-header" onclick="toggleCollapsible(this)">View controls ▾</div>
+                            <div class="collapsible-content">
+                                <ul class="control-list">
+                                    <li><span class="control-erp"></span>FR-PTP-07A: Payment Execution (ERP-signal)</li>
+                                    <li><span class="control-ongoing"></span>FR-PTP-08A: Reconciliation</li>
+                                    <li><span class="control-ongoing"></span>FR-PTP-13A: Unrecorded Liabilities</li>
+                                    <li><span class="control-ongoing"></span>FR-PTP-14A: Cutoff Testing</li>
+                                    <li><span class="control-ongoing"></span>FR-PTP-15A: Bank Reconciliation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reporting / FP&A Lane -->
+                <div class="lane">
+                    <div class="lane-header">
+                        <div>
+                            <div class="lane-title">Reporting / FP&A Data Flow</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 4px;">Source export → Consolidation → Management reporting</div>
+                        </div>
+                        <div class="lane-meta">
+                            <span class="badge badge-status">Source-backed fact-finding</span>
+                            <span class="badge badge-controls">31 controls</span>
+                            <span class="badge badge-erp">2 ERP-signal</span>
+                        </div>
+                    </div>
+                    <div class="lane-content">
+                        <!-- Step 1 -->
+                        <div class="step-card amber">
+                            <div class="step-name">Source Accounting Exports</div>
+                            <div class="systems-pills">
+                                <span class="pill">Sage</span>
+                                <span class="pill">Excel</span>
+                                <span class="pill">Workday Adaptive</span>
+                            </div>
+                            <div class="step-metrics">
+                                <span class="metric-badge">11 controls</span>
+                                <span class="metric-badge" style="background-color: #FEF3C7; color: #92400E;">2 ERP-signal</span>
+                            </div>
+                            <div class="pain-point">Sage exports limited, missing dimensions. Subs: Journal Entries (4), FX Rate (3), Close (2), COA (2).</div>
+                            <div class="collapsible-header" onclick="toggleCollapsible(this)">View controls ▾</div>
+                            <div class="collapsible-content">
+                                <ul class="control-list">
+                                    <li><span class="control-erp"></span>REP-01A: Journal Entry Export (ERP-signal)</li>
+                                    <li><span class="control-erp"></span>REP-02A: GL Export (ERP-signal)</li>
+                                    <li><span class="control-ongoing"></span>REP-03A: FX Rate Feed</li>
+                                    <li><span class="control-ongoing"></span>REP-04A: Close Procedures</li>
+                                    <li><span class="control-ongoing"></span>REP-05A: COA Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-arrow">→</div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card red">
+                            <div class="step-name">Bridge / Consolidation / IFRS & SEC</div>
+                            <div class="systems-pills">
+                                <span class="pill">Excel</span>
+                                <span class="pill">KPMG Workflows</span>
+                                <span class="pill">Sage</span>
+                            </div>
+                            <div class="step-metrics">
+                                <span class="metric-badge">17 controls</span>
+                                <span class="metric-badge" style="background-color: #FEE2E2; color: #991B1B;">8 Design-gap</span>
+                            </div>
+                            <div class="pain-point">Internal vs. KPMG workflows not mapped. Largest gap: financial statement prep (8), consolidation (3), related parties (3).</div>
+                            <div class="collapsible-header" onclick="toggleCollapsible(this)">View controls ▾</div>
+                            <div class="collapsible-content">
+                                <ul class="control-list">
+                                    <li><span class="control-design"></span>REP-06G: Consolidation Model (Design-gap)</li>
+                                    <li><span class="control-design"></span>REP-07G: IFRS Bridge (Design-gap)</li>
+                                    <li><span class="control-design"></span>REP-08G: SEC Reconciliation (Design-gap)</li>
+                                    <li><span class="control-ongoing"></span>REP-09A: Related Party Control</li>
+                                    <li><span class="control-ongoing"></span>REP-10A: Intercompany Elimination</li>
+                                    <li><span class="control-design"></span>REP-11G: Entity Reconciliation (Design-gap)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step-arrow">→</div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card ongoing">
+                            <div class="step-name">Management / Dept. Reporting</div>
+                            <div class="systems-pills">
+                                <span class="pill">Workday Adaptive</span>
+                                <span class="pill">Excel</span>
+                                <span class="pill">Sage</span>
+                            </div>
+                            <div class="step-metrics">
+                                <span class="metric-badge">3 controls</span>
+                                <span class="metric-badge" style="background-color: #FEE2E2; color: #991B1B;">1 Design-gap</span>
+                            </div>
+                            <div class="pain-point">Budgeting & Forecasting (2), Cost Classification (1). Relatively mature, one gap in cost allocation.</div>
+                            <div class="collapsible-header" onclick="toggleCollapsible(this)">View controls ▾</div>
+                            <div class="collapsible-content">
+                                <ul class="control-list">
+                                    <li><span class="control-ongoing"></span>REP-12A: Budget Variance</li>
+                                    <li><span class="control-ongoing"></span>REP-13A: Cost Center Reporting</li>
+                                    <li><span class="control-design"></span>REP-14G: Cost Allocation (Design-gap)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== VARIANT B: DETAIL CARDS ========== -->
+        <div id="detail" class="tab-content">
+            <div class="detail-cards-container">
+                <!-- France P2P Card -->
+                <div class="flow-card">
+                    <div class="flow-card-header">
+                        <div>
+                            <div class="flow-card-title">France P2P (SA)</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 4px;">Current-state → Future-state mapping</div>
+                        </div>
+                        <div class="flow-card-meta">
+                            <span class="badge badge-status">Source-backed fact-finding</span>
+                            <span class="badge badge-controls">15 controls</span>
+                            <span class="badge badge-erp">4 ERP-signal</span>
+                        </div>
+                    </div>
+                    <div class="steps-grid">
+                        <!-- Step 1 -->
+                        <div class="step-column">
+                            <div class="step-column-title">Vendor Setup / Validation</div>
+                            <div class="step-column-content">
+                                <div class="systems-section">
+                                    <span class="pill">Sage</span>
+                                    <span class="pill">Trustpair</span>
+                                    <span class="pill">DocuShare</span>
+                                </div>
+                                <div class="pain-points-section">
+                                    <strong>Pain points:</strong>
+                                    <ul>
+                                        <li>Exact flow not documented end-to-end</li>
+                                        <li>Lack of audit trail for approvals</li>
+                                    </ul>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Vendor Onboarding</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot erp" title="ERP-signal">E</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-column">
+                            <div class="step-column-title">Invoice / Coding / Approval</div>
+                            <div class="step-column-content">
+                                <div class="systems-section">
+                                    <span class="pill">Sage</span>
+                                    <span class="pill">DocuShare</span>
+                                </div>
+                                <div class="pain-points-section">
+                                    <strong>Pain points:</strong>
+                                    <ul>
+                                        <li>No system-enforced approvals</li>
+                                        <li>Manual coding and validation</li>
+                                        <li>Missing three-way match controls</li>
+                                    </ul>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Approval Workflow</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot erp" title="ERP-signal">E</span>
+                                        <span class="control-dot erp" title="ERP-signal">E</span>
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Matching</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-column">
+                            <div class="step-column-title">Payment Validation & Execution</div>
+                            <div class="step-column-content">
+                                <div class="systems-section">
+                                    <span class="pill">Sage</span>
+                                    <span class="pill">Trustpair</span>
+                                    <span class="pill">Agicap</span>
+                                    <span class="pill">Banks</span>
+                                </div>
+                                <div class="pain-points-section">
+                                    <strong>Pain points:</strong>
+                                    <ul>
+                                        <li>System handoff documentation incomplete</li>
+                                        <li>Reconciliation timing gaps</li>
+                                    </ul>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Cash Disbursements</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot erp" title="ERP-signal">E</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Liabilities & Reconciliation</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reporting / FP&A Card -->
+                <div class="flow-card">
+                    <div class="flow-card-header">
+                        <div>
+                            <div class="flow-card-title">Reporting / FP&A Data Flow</div>
+                            <div style="font-size: 11px; color: #6B7280; margin-top: 4px;">Source export → Consolidation → Management reporting</div>
+                        </div>
+                        <div class="flow-card-meta">
+                            <span class="badge badge-status">Source-backed fact-finding</span>
+                            <span class="badge badge-controls">31 controls</span>
+                            <span class="badge badge-erp">2 ERP-signal</span>
+                        </div>
+                    </div>
+                    <div class="steps-grid">
+                        <!-- Step 1 -->
+                        <div class="step-column">
+                            <div class="step-column-title">Source Accounting Exports</div>
+                            <div class="step-column-content">
+                                <div class="systems-section">
+                                    <span class="pill">Sage</span>
+                                    <span class="pill">Excel</span>
+                                    <span class="pill">Workday Adaptive</span>
+                                </div>
+                                <div class="pain-points-section">
+                                    <strong>Pain points:</strong>
+                                    <ul>
+                                        <li>Sage export capability limited</li>
+                                        <li>Missing dimension hierarchy</li>
+                                    </ul>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Journal Entries (4)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot erp" title="ERP-signal">E</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">FX Rate (3)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Close & COA (4)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot erp" title="ERP-signal">E</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-column">
+                            <div class="step-column-title">Bridge / Consolidation / IFRS & SEC</div>
+                            <div class="step-column-content">
+                                <div class="systems-section">
+                                    <span class="pill">Excel</span>
+                                    <span class="pill">KPMG Workflows</span>
+                                    <span class="pill">Sage</span>
+                                </div>
+                                <div class="pain-points-section">
+                                    <strong>Pain points:</strong>
+                                    <ul>
+                                        <li>Internal vs. KPMG workflows not reconciled</li>
+                                        <li>8 major design gaps in FP consolidation</li>
+                                    </ul>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Financial Stmt Prep (8)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Consolidation (3)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Related Parties (3)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-column">
+                            <div class="step-column-title">Management / Dept. Reporting</div>
+                            <div class="step-column-content">
+                                <div class="systems-section">
+                                    <span class="pill">Workday Adaptive</span>
+                                    <span class="pill">Excel</span>
+                                    <span class="pill">Sage</span>
+                                </div>
+                                <div class="pain-points-section">
+                                    <strong>Pain points:</strong>
+                                    <ul>
+                                        <li>Cost allocation not systematized</li>
+                                    </ul>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Budgeting & Forecasting (2)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                        <span class="control-dot ongoing" title="Ongoing">O</span>
+                                    </div>
+                                </div>
+                                <div class="subprocess-group">
+                                    <div class="subprocess-name">Cost Classification (1)</div>
+                                    <div class="control-dots">
+                                        <span class="control-dot design" title="Design-gap">D</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== VARIANT C: DASHBOARD ========== -->
+        <div id="dashboard" class="tab-content">
+            <!-- Needs Attention Box -->
+            <div class="needs-attention">
+                <h3>Needs Attention</h3>
+                <div class="needs-attention-grid">
+                    <div class="need-item">
+                        <span class="need-label">ERP-Signal Controls</span>
+                        <span class="need-value">6</span>
+                    </div>
+                    <div class="need-item">
+                        <span class="need-label">Design Gap Controls</span>
+                        <span class="need-value">9</span>
+                    </div>
+                    <div class="need-item">
+                        <span class="need-label">Mapped but Unmapped</span>
+                        <span class="need-value">3</span>
+                    </div>
+                    <div class="need-item">
+                        <span class="need-label">High-Risk Flows</span>
+                        <span class="need-value">2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Process Flow</th>
+                        <th>Steps</th>
+                        <th>Total Controls</th>
+                        <th>ERP-Signal</th>
+                        <th>Design Gaps</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>France P2P (SA)</strong></td>
+                        <td>3</td>
+                        <td>15</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td><span class="badge badge-status">Source-backed</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reporting / FP&A</strong></td>
+                        <td>3</td>
+                        <td>31</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td><span class="badge badge-status">Source-backed</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>US LLC P2P</strong></td>
+                        <td>—</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><span class="badge" style="background-color: #F1F5F9; color: #475569; border: 1px solid #E2E8F0;">Awaiting docs</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SOX / Controls Remediation</strong></td>
+                        <td>3 meta-steps</td>
+                        <td>94</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><span class="badge" style="background-color: #F1F5F9; color: #475569; border: 1px solid #E2E8F0;">Cross-cutting</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Flow Progression Bars -->
+            <div class="dashboard-container">
+                <!-- France P2P Bar -->
+                <div class="flow-bar-section">
+                    <div class="flow-bar-title" onclick="toggleFlowDetail(this)">
+                        <span>France P2P (SA) — 15 total controls</span>
+                        <span class="flow-bar-title-toggle">Click to expand ▼</span>
+                    </div>
+                    <div class="flow-bar">
+                        <div class="flow-segment step-red" onclick="stopPropagation(event)">Vendor Setup</div>
+                        <div class="flow-segment step-red" onclick="stopPropagation(event)">Invoice / Approval</div>
+                        <div class="flow-segment step-amber" onclick="stopPropagation(event)">Payment</div>
+                    </div>
+                    <div class="step-detail-panel">
+                        <span class="step-detail-close" onclick="toggleFlowDetail(this.closest('.flow-bar-section'))">×</span>
+                        <div style="padding-right: 20px;">
+                            <strong>Vendor Setup / Validation:</strong> 3 controls (1 ERP-signal). Key gap: FR-PTP-02G (New Vendor Set-Up). Exact flow not documented end-to-end.
+                            <br><br>
+                            <strong>Invoice / Coding / Approval:</strong> 5 controls (3 ERP-signal). No system approvals; manual workflow. Gaps: FR-PTP-04G, FR-PTP-05G, FR-PTP-06G (three-way match).
+                            <br><br>
+                            <strong>Payment Validation & Execution:</strong> 7 controls (1 ERP-signal). Handoff documentation needed. Cash Disbursements (6), Unrecorded Liabilities (1).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reporting / FP&A Bar -->
+                <div class="flow-bar-section">
+                    <div class="flow-bar-title" onclick="toggleFlowDetail(this)">
+                        <span>Reporting / FP&A Data Flow — 31 total controls</span>
+                        <span class="flow-bar-title-toggle">Click to expand ▼</span>
+                    </div>
+                    <div class="flow-bar">
+                        <div class="flow-segment step-amber" style="flex: 0.35;">Source Export</div>
+                        <div class="flow-segment step-red" style="flex: 0.55;">Consolidation</div>
+                        <div class="flow-segment step-ongoing" style="flex: 0.1;">Management</div>
+                    </div>
+                    <div class="step-detail-panel">
+                        <span class="step-detail-close" onclick="toggleFlowDetail(this.closest('.flow-bar-section'))">×</span>
+                        <div style="padding-right: 20px;">
+                            <strong>Source Accounting Exports:</strong> 11 controls (2 ERP-signal). Sage exports limited, missing dimensions. Subs: Journal Entries (4), FX Rate (3), Close (2), COA (2).
+                            <br><br>
+                            <strong>Bridge / Consolidation / IFRS & SEC:</strong> 17 controls (0 ERP-signal, 8 Design-gaps). Internal vs KPMG workflows not mapped. Largest gaps: Financial Statement Prep (8), Consolidation (3), Related Parties (3).
+                            <br><br>
+                            <strong>Management / Dept. Reporting:</strong> 3 controls (0 ERP-signal, 1 Design-gap). Budgeting & Forecasting (2), Cost Classification (1).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabName = button.dataset.tab;
+
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+
+        // Collapsible controls in swimlane view
+        function toggleCollapsible(header) {
+            const content = header.nextElementSibling;
+            content.classList.toggle('open');
+            header.textContent = content.classList.contains('open') 
+                ? 'Hide controls ▴' 
+                : 'View controls ▾';
+        }
+
+        // Flow detail panel in dashboard view
+        function toggleFlowDetail(element) {
+            const section = element.closest('.flow-bar-section');
+            const panel = section.querySelector('.step-detail-panel');
+            panel.classList.toggle('open');
+            
+            const toggle = element.querySelector('.flow-bar-title-toggle');
+            if (toggle) {
+                toggle.textContent = panel.classList.contains('open') ? 'Click to collapse ▲' : 'Click to expand ▼';
+            }
+        }
+
+        function stopPropagation(event) {
+            event.stopPropagation();
+        }
+    </script>
+</body>
+</html>

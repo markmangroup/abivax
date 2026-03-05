@@ -1,0 +1,146 @@
+═══════════════════════════════════════════════════════════════════════════════
+  TREASURY WORKSTREAM BRIEFING - MEETING GUIDE FOR MIKE MARKMAN
+  Meeting with: Roxandra Sturdza (FR Treasury Owner)
+  Date: March 5, 2026
+  Duration: ~20-30 minutes
+═══════════════════════════════════════════════════════════════════════════════
+
+DECK STRUCTURE & TALKING POINTS
+
+Slide 1: TITLE SLIDE (30 seconds)
+─────────────────────────────────
+"I've put together a Treasury briefing to align on the ERP workstream scope.
+We need to lock down banking integrations for Phase 1 before the Blueprint work."
+
+Slide 2: TREASURY IN THE ERP PROGRAM (1 min)
+───────────────────────────────────────────
+Key Points:
+  • Treasury is part of Record-to-Report (R2R) pillar
+  • Go-live is January 1, 2027 (non-negotiable for US launch)
+  • Mobilization starts April 2026 — very soon
+  • You own France treasury, Kimberly owns US
+  → This sets the scope and timeline context
+
+Slide 3: CURRENT STATE — WHAT WE KNOW (2 min)
+─────────────────────────────────────────────
+Key Points:
+  • Payment flow: Sage 100 → Trustpair validation → Agicap → Globalcash/EBICS
+  • France operates with 2 payment campaigns/month (10th & 25th)
+  • 497 active vendors, 22 with unconfirmed bank-company relationship
+  • 4 working days lead time (Juliette & Fatma handle file prep)
+  • Trustpair is a load-bearing SOX control (<$15K/year)
+  → Show this demonstrates we've done our homework on current state
+
+Slide 4: CURRENT SYSTEMS LANDSCAPE (2 min)
+──────────────────────────────────────────
+Walk through the 5 systems:
+  1. Sage 100: GL & invoicing (cannot validate vendor banking — structural gap)
+  2. Trustpair: Vendor bank validation (SOX control for vendor master)
+  3. Agicap: Cash mgmt (forecasting & execution) 
+  4. Globalcash: Bank payment app (initiates payments via EBICS)
+  5. EBICS: Secure bank connectivity (requires authorized signers)
+
+Key Question: "We need to understand which of these stay, which get replaced by
+NetSuite, and which require custom integration. That's what I want to explore."
+
+Slide 5: CONTROLS & COMPLIANCE (1.5 min)
+────────────────────────────────────────
+Show the control register status:
+  • FR-TR-12G, FR-TR-13G: Treasury-specific SoD & SOC review (DESIGN TO COMPLETE)
+  • FR-PTP-08, 09: Bank reconciliation ongoing controls (ONGOING)
+  • FR-PTP-10 to 13: Payment release preventions (OUT-OF-SCOPE)
+  • FR-PTP-14G: Search for unrecorded liabilities (ERP SIGNAL)
+
+Interpretation: "Two treasury controls need to be designed. We need to understand
+how these controls will operate post-ERP, which drives the module scope."
+
+Slide 6: OPEN QUESTIONS FOR ROXANDRA (3-4 min) — **KEY DISCUSSION SLIDE**
+──────────────────────────────────────────────────────────────────────────
+Go through each question, listen to Roxandra's answers. Take notes.
+
+1. End-to-end process: Walk me through from invoice approval to payment hitting bank
+2. Bank account structure: How many accounts? Which banks? Any FR/US consolidation?
+3. Agicap usage: Is it forecasting, execution, or both? Does it stay or get replaced?
+4. Globalcash scope: Just payment initiation or also approval/authorization?
+5. EBICS signers: Who signs? What are the authorization thresholds?
+6. Reconciliation: Daily? Monthly? Where's evidence stored (Sage, manual log)?
+7. Intercompany moves: Do you sweep cash between FR and US? Process & frequency?
+8. Cash forecasting: Who does this? Tools? Still Agicap post-ERP or NetSuite?
+9. Pain points: What's working? What's painful? Where do you lose time/visibility?
+
+→ These answers feed directly into the Treasury Requirements & Design doc
+→ They determine Phase 1 scope for banking integrations
+
+Slide 7: KEY DECISION & NEXT STEPS (2 min)
+──────────────────────────────────────────
+State the decision:
+"The big question is: Treasury module scope. Specifically, which banking integrations
+are in Phase 1? Bank connectivity requires IT integration work. That has to be
+scoped in the implementation contract with KPMG/NetSuite."
+
+Decision Owners: You (Mike), Roxandra, Jade (IT)
+Deadline: Input needed before Blueprint phase (mid-April at latest)
+Impact: Gets locked into implementation contract → affects go-live readiness
+
+Next Steps to commit on:
+  1. Confirm bank account structure & connectivity
+  2. Map end-to-end process (FR & US)
+  3. Define scope for Phase 1 banking integrations
+  4. Bring in Jade (IT) for integration feasibility
+  5. Write findings into Treasury Requirements doc
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PREPARATION & LOGISTICS
+
+Before the meeting:
+  ✓ Open Treasury_Briefing_Roxandra_Mar5_2026.pptx
+  ✓ Have pen & paper to note answers to the 9 questions
+  ✓ Have Roxandra's calendar for 30-min follow-up if needed
+
+During the meeting:
+  ✓ Stick to slides 2-5 as context (5-6 min total)
+  ✓ Spend 80% of time on Slide 6 (the questions)
+  ✓ Use Slide 7 to confirm next steps and deadlines
+  ✓ Don't get bogged down in "why" treasury is complex — focus on scope decision
+
+Red flags to listen for:
+  ✗ "We need Agicap to stay" → Drives NetSuite cash mgmt scope decision
+  ✗ "Multiple signers with different thresholds" → Defines EBICS integration complexity
+  ✗ "Reconciliation is manual" → Suggests automated posting to GL is needed in Phase 1
+  ✗ "US sweeps cash from FR" → Drives intercompany feature in NetSuite
+
+After the meeting:
+  → Send Roxandra a summary of answers (in email, not a new deck)
+  → Brief Jade on banking integration questions
+  → Schedule Roxandra + Kimberly + Jade for 1-hour requirements workshop
+  → Draft Treasury scope statement for Blueprint kickoff
+
+═══════════════════════════════════════════════════════════════════════════════
+
+QUICK FACT SHEET
+
+France Treasury Current State:
+  • Systems: Sage 100 (GL), Trustpair (vendor bank validation), Agicap (cash mgmt),
+           Globalcash (bank initiation), EBICS (signing)
+  • Payment Cadence: 2x/month (10th, 25th value date)
+  • Lead Time: 4 working days (Juliette & Fatma prep)
+  • Vendor Base: 497 active, 22 unconfirmed banking relationships
+  • Key Control: Trustpair (SOX-relevant, <$15K/year, prevents payment to wrong bank)
+
+Abivax ERP Program Timeline:
+  • Go-live: January 1, 2027 (tied to US public launch Dec 2027)
+  • Mobilization: April 2026 (contracts signed, teams ramped)
+  • Blueprint Phase: April-June 2026 (scope is locked in April)
+  • Build Phase: June 2026 - August 2026
+  • Test Phase: August-October 2026
+  • Deployment: November-December 2026
+
+CFTI Controls Relevant to Treasury:
+  • FR-TR-12G: Segregation of Duties (Treasury) — Design to complete
+  • FR-TR-13G: SOC Report Review — Design to complete
+  • FR-PTP-08, 09: Bank Reconciliation (Sage) — Ongoing
+  • FR-PTP-10-13: Payment Release Prevention (Agicap/Globalcash) — Out-of-Scope
+  • FR-PTP-14G: Unrecorded Liabilities Search — ERP Signal
+
+═══════════════════════════════════════════════════════════════════════════════

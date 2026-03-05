@@ -1,416 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Program Command Center</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:   #0F2A4A;
+    --navy-l: #162D4D;
+    --purple: #614DD2;
+    --purp-d: #3D2E9B;
+    --slate:  #475569;
+    --muted:  #94A3B8;
+    --bg:     #F7F8FC;
+    --border: #E2E8F0;
+    --white:  #FFFFFF;
+    --us-bg:#EFF6FF; --us-ring:#BFDBFE; --us-pill:#DBEAFE; --us-txt:#1E40AF;
+    --fr-bg:#FEF2F2; --fr-ring:#FECACA; --fr-pill:#FEE2E2; --fr-txt:#991B1B;
+    --ex-bg:#FEFCE8; --ex-ring:#FDE68A; --ex-pill:#FEF9C3; --ex-txt:#713F12;
+    --green:#16A34A; --g-bg:#DCFCE7; --g-txt:#15803D;
+    --amber:#D97706; --a-bg:#FEF3C7; --a-txt:#B45309;
+    --red:  #DC2626; --r-bg:#FEE2E2; --r-txt:#B91C1C;
+    --blue: #2563EB; --b-bg:#EFF6FF; --b-txt:#1D4ED8;
+    --viol: #7C3AED; --v-bg:#F5F3FF; --v-txt:#6D28D9;
+  }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #F8F9FA;
-    color: #111827;
-    font-size: 14px;
-    line-height: 1.5;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg,#EEF0F5 0%,#E2E6EE 100%);
+    padding: 12px 16px 20px;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
   }
+  .shell { width: 100%; max-width: 1120px; }
 
-  .page { max-width: 1200px; margin: 0 auto; padding: 28px 32px 48px; }
+  /* ── Title bar ── */
+  .tbar {
+    background: linear-gradient(135deg,var(--navy) 0%,var(--navy-l) 100%);
+    border-radius: 10px; padding: 10px 18px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 10px rgba(15,42,74,.14);
+  }
+  .tbar h1 { color: white; font-size: 15px; font-weight: 700; letter-spacing: -.01em; }
+  .tbar p  { color: rgba(255,255,255,.5); font-size: 10px; margin-top: 2px; }
+  .badges { display: flex; gap: 5px; }
+  .badge { padding: 3px 9px; border-radius: 99px; font-size: 10px; font-weight: 600; }
 
-  /* ── Header ── */
-  .page-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    border-bottom: 2px solid #E2E8F0;
-    padding-bottom: 14px;
-    margin-bottom: 24px;
-  }
-  .page-title { font-size: 20px; font-weight: 700; color: #111827; letter-spacing: -0.3px; }
-  .page-meta { font-size: 12px; color: #6B7280; }
-
-  /* ── Deadline strip ── */
-  .deadline-strip {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 24px;
-    overflow-x: auto;
-  }
-  .deadline-item {
-    flex: 1;
-    min-width: 160px;
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
-    padding: 12px 16px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  }
-  .deadline-item.urgent { border-left: 4px solid #EF4444; }
-  .deadline-item.soon   { border-left: 4px solid #F97316; }
-  .deadline-item.far    { border-left: 4px solid #3B82F6; }
-  .deadline-item.anchor { border-left: 4px solid #7C3AED; }
-  .deadline-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #6B7280; margin-bottom: 4px; }
-  .deadline-date { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 2px; }
-  .deadline-days { font-size: 12px; }
-  .deadline-days.urgent { color: #DC2626; font-weight: 600; }
-  .deadline-days.soon   { color: #D97706; font-weight: 600; }
-  .deadline-days.far    { color: #2563EB; }
-  .deadline-days.anchor { color: #7C3AED; }
-  .deadline-desc { font-size: 11px; color: #6B7280; margin-top: 2px; }
-
-  /* ── Status bar ── */
-  .status-bar {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 24px;
-  }
-  .status-item {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 6px;
-    padding: 12px 14px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-  }
-  .status-name { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6B7280; margin-bottom: 5px; }
-  .status-val { font-size: 13px; font-weight: 500; color: #111827; display: flex; align-items: center; gap: 6px; }
-  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-  .dot-green  { background: #16A34A; }
-  .dot-amber  { background: #D97706; }
-  .dot-red    { background: #DC2626; }
-  .dot-blue   { background: #2563EB; }
-
-  /* ── Section header ── */
-  .section-header {
-    font-size: 11px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.07em; color: #6B7280;
+  /* ── Status panel (combined deadlines + status, horizontal) ── */
+  .status-panel {
+    background: var(--white);
+    border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
     margin-bottom: 12px;
-    padding-bottom: 7px;
-    border-bottom: 1px solid #E2E8F0;
+  }
+  .status-inner {
+    display: flex;
+  }
+  .status-left {
+    flex: 3; display: flex; border-right: 1px solid var(--border);
+  }
+  .status-right {
+    flex: 2; display: flex; flex-direction: column;
+  }
+  .status-section-label {
+    font-size: 9px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .08em; color: var(--muted);
+    padding: 6px 14px 4px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
   }
 
-  /* ── Pillar grid ── */
-  .pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 24px; }
+  /* Deadline items */
+  .dl-item {
+    flex:1; padding: 10px 14px; position:relative; overflow:hidden;
+    border-right:1px solid var(--border);
+  }
+  .dl-item:last-child { border-right:none; }
+  .dl-item::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; }
+  .dl-item.ur::before { background:var(--red); }
+  .dl-item.so::before { background:var(--amber); }
+  .dl-item.fa::before { background:var(--blue); }
+  .dl-item.an::before { background:var(--viol); }
+  .dl-lbl  { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .dl-date { font-size:18px; font-weight:800; color:var(--navy); margin-top:2px; line-height:1.1; }
+  .dl-days { font-size:11px; margin-top:3px; }
+  .dl-days.ur { color:var(--red);  font-weight:700; }
+  .dl-days.so { color:var(--amber);font-weight:700; }
+  .dl-days.fa { color:var(--blue); font-weight:600; }
+  .dl-days.an { color:var(--viol); font-weight:600; }
+
+  /* Status items */
+  .st-list {
+    flex: 1; display: flex; flex-direction: column; justify-content: center;
+  }
+  .st-chip {
+    padding: 5px 14px; display:flex; align-items:center; gap:7px;
+    border-bottom: 1px solid var(--border);
+  }
+  .st-chip:last-child { border-bottom:none; }
+  .st-lbl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); display:block; margin-bottom:1px; }
+  .st-val { font-size:12px; font-weight:600; color:var(--navy); }
+  .st-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; margin-top:1px; }
+  .st-g { background:var(--green); }
+  .st-a { background:var(--amber); }
+
+  /* ── Pillar cards (stacked) ── */
+  .pillars { display:flex; flex-direction:column; gap:10px; margin-bottom:12px; }
   .pillar-card {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
-    padding: 18px 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    background: var(--white);
+    border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    transition: box-shadow .15s;
   }
-  .pillar-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-  .pillar-name { font-size: 14px; font-weight: 700; color: #111827; }
-  .confidence-badge {
-    font-size: 10px;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+  .pillar-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,.07); }
+
+  .card-hdr {
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 8px 14px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
   }
-  .conf-established { background: #DCFCE7; color: #15803D; }
-  .conf-partial      { background: #FEF3C7; color: #B45309; }
-  .conf-emerging     { background: #FEE2E2; color: #B91C1C; }
-  .conf-strong       { background: #EFF6FF; color: #1D4ED8; }
+  .card-hdr-left { display:flex; align-items:center; gap:7px; }
+  .card-dot { width:8px; height:8px; border-radius:50%; }
+  .dot-est  { background:var(--green); }
+  .dot-par  { background:var(--amber); }
+  .dot-str  { background:var(--blue);  }
+  .card-name { font-size:13px; font-weight:700; color:var(--navy); }
+  .conf {
+    font-size:9px; font-weight:700; padding:2px 8px; border-radius:99px;
+    text-transform:uppercase; letter-spacing:.04em;
+  }
+  .conf-est { background:var(--g-bg); color:var(--g-txt); }
+  .conf-par { background:var(--a-bg); color:var(--a-txt); }
+  .conf-str { background:var(--b-bg); color:var(--b-txt); }
 
-  .pillar-summary { font-size: 12px; color: #4B5563; margin-bottom: 10px; line-height: 1.45; }
-  .pillar-counts { display: flex; gap: 16px; margin-bottom: 12px; }
-  .pillar-count { font-size: 12px; color: #6B7280; }
-  .pillar-count strong { color: #111827; }
+  /* ── Card owner row (below header) ── */
+  .card-owners {
+    display:flex; flex-wrap:wrap; align-items:center; gap:4px;
+    padding: 5px 12px;
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+  }
+  .owners-lbl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); margin-right:2px; }
 
-  .pillar-section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9CA3AF; margin-bottom: 5px; margin-top: 10px; }
-  .move-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
-  .move-item { display: flex; gap: 8px; font-size: 12px; color: #374151; }
-  .move-arrow { color: #3B82F6; flex-shrink: 0; }
-  .waiting-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
-  .waiting-item { display: flex; gap: 8px; font-size: 12px; color: #6B7280; font-style: italic; }
-  .waiting-dot { color: #D1D5DB; flex-shrink: 0; }
+  /* ── Topic tile row ── */
+  .topic-row { display:flex; }
+  .topic-tile {
+    flex:1; padding: 10px 12px;
+    border-right: 1px solid var(--border);
+    display:flex; flex-direction:column; gap:3px;
+  }
+  .topic-tile:last-child { border-right:none; }
+
+  .t-lbl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .t-stat { display:flex; align-items:baseline; gap:4px; margin-top:2px; }
+  .t-n { font-size:18px; font-weight:800; color:var(--navy); line-height:1; }
+  .t-n.amber { color:var(--amber); }
+  .t-n.red   { color:var(--red); }
+  .t-n.blue  { color:var(--blue); }
+  .t-nl { font-size:9px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.03em; }
+  .t-meta { font-size:11px; font-weight:600; color:var(--navy); margin-top:1px; }
+  .t-sub  { font-size:11px; color:var(--slate); line-height:1.3; flex:1; }
+  .t-link {
+    margin-top:6px; font-size:10px; font-weight:700; text-decoration:none;
+    color:var(--blue); letter-spacing:.02em;
+  }
+  .t-link:hover { text-decoration:underline; }
+  .t-coming { margin-top:6px; font-size:10px; color:var(--muted); font-style:italic; }
+
+  /* ── Pillar risk row ── */
+  .card-risk {
+    padding: 6px 14px;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: flex-start; gap: 8px;
+    font-size: 11px; color: var(--slate); line-height: 1.35;
+  }
+  .card-risk strong { color: var(--navy); font-weight: 700; }
+
+  /* ── Chips ── */
+  .chip {
+    display:inline-flex; align-items:center; gap:4px;
+    padding:2px 7px 2px 3px; border-radius:99px;
+    font-size:10px; font-weight:600; color:var(--navy);
+    border:1.5px solid;
+    transition: box-shadow .12s, transform .12s;
+  }
+  .chip:hover { transform:translateY(-1px); box-shadow:0 2px 6px rgba(0,0,0,.07); }
+  .chip-us  { background:var(--us-bg);  border-color:var(--us-ring); }
+  .chip-fr  { background:var(--fr-bg);  border-color:var(--fr-ring); }
+  .chip-ext { background:var(--ex-bg);  border-color:var(--ex-ring); }
+  .av {
+    width:17px; height:17px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:6px; font-weight:700; color:white; flex-shrink:0;
+  }
+  .pill { font-size:8px; font-weight:700; padding:1px 4px; border-radius:99px; text-transform:uppercase; letter-spacing:.04em; }
+  .pill-us  { background:var(--us-pill); color:var(--us-txt); }
+  .pill-fr  { background:var(--fr-pill); color:var(--fr-txt); }
+  .pill-ext { background:var(--ex-pill); color:var(--ex-txt); }
+
+  /* ── Card nav footer ── */
+  .card-nav {
+    padding: 6px 12px;
+    border-top: 1px solid var(--border);
+    display: flex; justify-content: flex-end; align-items: center;
+    background: var(--bg);
+  }
+  .nav-link {
+    font-size: 10px; font-weight: 700; text-decoration: none;
+    color: var(--blue); letter-spacing: .02em;
+  }
+  .nav-link:hover { text-decoration: underline; }
+  .nav-link.soon { color: var(--muted); pointer-events: none; font-style: italic; }
 
   /* ── Risks ── */
-  .risks-section { margin-bottom: 24px; }
-  .risk-list { display: flex; flex-direction: column; gap: 8px; }
+  .risks {
+    background:var(--white);
+    border:1px solid var(--border); border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  }
+  .risks-hdr {
+    padding:5px 14px;
+    background:var(--bg); border-bottom:1px solid var(--border);
+    font-size:9px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.09em; color:var(--muted);
+    display:flex; align-items:center; gap:8px;
+  }
+  .risks-hdr::after { content:''; flex:1; height:1px; background:var(--border); }
   .risk-row {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 6px;
-    padding: 12px 16px;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    display:flex; align-items:center; gap:8px;
+    padding:6px 14px; border-bottom:1px solid var(--border);
+    font-size:11px; color:#374151;
   }
-  .risk-badge {
-    font-size: 10px;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 12px;
-    text-transform: uppercase;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-  .risk-high   { background: #FEE2E2; color: #B91C1C; }
-  .risk-medium { background: #FEF3C7; color: #B45309; }
-  .risk-low    { background: #F3F4F6; color: #374151; }
-  .risk-text { font-size: 13px; color: #374151; flex: 1; }
-  .risk-text strong { color: #111827; }
+  .risk-row:last-child { border-bottom:none; }
+  .risk-row strong { color:var(--navy); }
+  .rbadge { font-size:9px; font-weight:700; padding:2px 7px; border-radius:99px; text-transform:uppercase; flex-shrink:0; }
+  .rh { background:var(--r-bg); color:var(--r-txt); }
+  .rm { background:var(--a-bg); color:var(--a-txt); }
 
-  /* ── People grid ── */
-  .people-section { margin-bottom: 0; }
-  .people-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .person-card {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 6px;
-    padding: 14px 16px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-  }
-  .person-name { font-size: 13px; font-weight: 600; color: #111827; margin-bottom: 2px; }
-  .person-role { font-size: 11px; color: #6B7280; margin-bottom: 8px; }
-  .person-action {
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 10px;
-    font-weight: 600;
-    display: inline-block;
-  }
-  .action-needed   { background: #FEE2E2; color: #B91C1C; }
-  .action-waiting  { background: #FEF3C7; color: #B45309; }
-  .action-ok       { background: #DCFCE7; color: #15803D; }
-  .action-tbd      { background: #F3F4F6; color: #374151; }
+  /* ── Footer ── */
+  .footer { display:flex; justify-content:space-between; padding:6px 0; margin-top:6px; font-size:10px; color:var(--muted); }
 </style>
 </head>
 <body>
-<div class="page">
+<div class="shell">
 
-  <!-- Header -->
-  <div class="page-header">
-    <div class="page-title">Program Command Center</div>
-    <div class="page-meta">ERP Mobilization &middot; NetSuite &middot; Updated 2026-03-02</div>
-  </div>
-
-  <!-- Deadline strip -->
-  <div class="deadline-strip">
-    <div class="deadline-item urgent">
-      <div class="deadline-label">Audit Committee</div>
-      <div class="deadline-date">Mar 6, 2026</div>
-      <div class="deadline-days urgent">4 days out</div>
-      <div class="deadline-desc">ERP Controls Readout</div>
+  <!-- Title bar -->
+  <div class="tbar">
+    <div>
+      <h1>Program Command Center</h1>
+      <p>ERP Mobilization &middot; NetSuite &middot; Mar 5, 2026</p>
     </div>
-    <div class="deadline-item soon">
-      <div class="deadline-label">Board Checkpoint</div>
-      <div class="deadline-date">Mar 19, 2026</div>
-      <div class="deadline-days soon">17 days out</div>
-      <div class="deadline-desc">ERP Program Update</div>
-    </div>
-    <div class="deadline-item far">
-      <div class="deadline-label">Mobilization Target</div>
-      <div class="deadline-date">Apr 1, 2026</div>
-      <div class="deadline-days far">30 days out</div>
-      <div class="deadline-desc">NetSuite kickoff</div>
-    </div>
-    <div class="deadline-item anchor">
-      <div class="deadline-label">Go-Live</div>
-      <div class="deadline-date">Jan 1, 2027</div>
-      <div class="deadline-days anchor">~305 days out</div>
-      <div class="deadline-desc">Non-negotiable</div>
+    <div class="badges">
+      <span class="badge" style="background:rgba(209,250,229,.9);color:#065F46;">Go-live Jan 1, 2027</span>
+      <span class="badge" style="background:rgba(238,236,250,.9);color:#3D2E9B;">Mobilization Apr 2026</span>
     </div>
   </div>
 
-  <!-- Program status bar -->
-  <div class="status-bar">
-    <div class="status-item">
-      <div class="status-name">Vendor Selection</div>
-      <div class="status-val"><span class="dot dot-green"></span>NetSuite selected</div>
-    </div>
-    <div class="status-item">
-      <div class="status-name">Contract</div>
-      <div class="status-val"><span class="dot dot-amber"></span>Awaiting commercials</div>
-    </div>
-    <div class="status-item">
-      <div class="status-name">Scope / Blueprint</div>
-      <div class="status-val"><span class="dot dot-amber"></span>In design</div>
-    </div>
-    <div class="status-item">
-      <div class="status-name">Capacity / Resourcing</div>
-      <div class="status-val"><span class="dot dot-amber"></span>Model not set</div>
+  <!-- Combined deadlines + status panel -->
+  <div class="status-panel">
+    <div class="status-inner">
+      <div class="status-left">
+        <div style="flex:1; display:flex; flex-direction:column;">
+          <div class="status-section-label">Key Deadlines</div>
+          <div style="display:flex; flex:1;">
+            <div class="dl-item so"><div class="dl-lbl">Audit Committee</div><div class="dl-date">Mar 19</div><div class="dl-days so">14 days</div></div>
+            <div class="dl-item so"><div class="dl-lbl">Board Checkpoint</div><div class="dl-date">Mar 19</div><div class="dl-days so">14 days</div></div>
+            <div class="dl-item fa"><div class="dl-lbl">Mobilization Start</div><div class="dl-date">Apr 1</div><div class="dl-days fa">27 days</div></div>
+            <div class="dl-item an"><div class="dl-lbl">Go-Live</div><div class="dl-date">Jan 1, 2027</div><div class="dl-days an">~302 days</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="status-right">
+        <div class="status-section-label">Program Status</div>
+        <div class="st-list">
+          <div class="st-chip"><span class="st-dot st-g"></span><div><span class="st-lbl">Vendor</span><span class="st-val">NetSuite selected</span></div></div>
+          <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Contract</span><span class="st-val">Awaiting commercials</span></div></div>
+          <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Scope</span><span class="st-val">In design</span></div></div>
+          <div class="st-chip"><span class="st-dot st-a"></span><div><span class="st-lbl">Resourcing</span><span class="st-val">Model not set</span></div></div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- 4-Pillar grid -->
-  <div class="section-header">Program Pillars</div>
-  <div class="pillars-grid">
+  <!-- 3-pillar grid -->
+  <div class="pillars">
 
     <!-- P2P -->
     <div class="pillar-card">
-      <div class="pillar-header">
-        <div class="pillar-name">P2P — Procure to Pay</div>
-        <div class="confidence-badge conf-established">Established</div>
+      <div class="card-hdr">
+        <div class="card-hdr-left"><div class="card-dot dot-est"></div><span class="card-name">Procure to Pay</span></div>
+        <span class="conf conf-est">Established</span>
       </div>
-      <div class="pillar-summary">497 vendors validated (Trustpair); 22 couple-défavorable are a hard migration gate. €165M active commitment exposure across 187 vendors. All 20 P2P controls in scope.</div>
-      <div class="pillar-counts">
-        <div class="pillar-count"><strong>20</strong> controls in scope</div>
-        <div class="pillar-count"><strong>22</strong> vendors to remediate</div>
-        <div class="pillar-count"><strong>€165M</strong> exposure</div>
+      <div class="card-owners">
+        <span class="owners-lbl">Owners</span>
+        <div class="chip chip-fr"><div class="av" style="background:#2D7DD2;">JC</div> Juliette <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#60A5FA;">KG</div> Kimberly <span class="pill pill-us">US</span></div>
+        <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">PG</div> Philippe <span class="pill pill-fr">FR</span></div>
       </div>
-      <div class="pillar-section-label">Next Moves</div>
-      <ul class="move-list">
-        <li class="move-item"><span class="move-arrow">→</span>Assign P2P process owner</li>
-        <li class="move-item"><span class="move-arrow">→</span>Get AP remediation timeline for 22 vendors</li>
-        <li class="move-item"><span class="move-arrow">→</span>Decide Trustpair integration scope (ongoing vs. one-time)</li>
-      </ul>
-      <div class="pillar-section-label">Waiting On</div>
-      <ul class="waiting-list">
-        <li class="waiting-item"><span class="waiting-dot">·</span>P2P process owner nomination</li>
-        <li class="waiting-item"><span class="waiting-dot">·</span>DoA → NetSuite approval workflow design</li>
-      </ul>
+      <div class="topic-row">
+        <div class="topic-tile">
+          <div class="t-lbl">Vendor Remediation</div>
+          <div class="t-stat"><span class="t-n amber">22</span><span class="t-nl">couple-défavorable</span></div>
+          <div class="t-meta">€165M commitment exposure</div>
+          <div class="t-sub">AP remediation must clear before vendor master migration.</div>
+          <a href="/abivax/spine/p2p" target="_parent" class="t-link">P2P Brief →</a>
+        </div>
+        <div class="topic-tile">
+          <div class="t-lbl">Process Blueprint</div>
+          <div class="t-stat"><span class="t-n">3</span><span class="t-nl">flow scaffolds</span></div>
+          <div class="t-meta">Current-state mapping in progress</div>
+          <div class="t-sub">FR/US flows required before NetSuite blueprint sessions.</div>
+          <a href="/abivax/spine/process-flows" target="_parent" class="t-link">Process Flows →</a>
+        </div>
+        <div class="topic-tile">
+          <div class="t-lbl">Controls / CFTI</div>
+          <div class="t-stat"><span class="t-n">20</span><span class="t-nl">in scope</span></div>
+          <div class="t-meta">8 ERP-signal controls</div>
+          <div class="t-sub">Vendor master, AP automation, 3-way match design gaps.</div>
+          <a href="/abivax/spine/p2p" target="_parent" class="t-link">P2P Brief →</a>
+        </div>
+      </div>
+      <div class="card-risk">
+        <span class="rbadge rm">Med</span>
+        <div><strong>Migration gate</strong>&ensp;22 couple-défavorable vendors must resolve before vendor master migration can proceed.</div>
+      </div>
+      <div class="card-nav">
+        <a href="/abivax/spine/p2p" target="_parent" class="nav-link">Full P2P Intelligence Brief →</a>
+      </div>
     </div>
 
-    <!-- Reporting -->
+    <!-- Record to Report -->
     <div class="pillar-card">
-      <div class="pillar-header">
-        <div class="pillar-name">Reporting &amp; Data</div>
-        <div class="confidence-badge conf-partial">Partial</div>
+      <div class="card-hdr">
+        <div class="card-hdr-left"><div class="card-dot dot-par"></div><span class="card-name">Record to Report</span></div>
+        <span class="conf conf-par">Partial</span>
       </div>
-      <div class="pillar-summary">39 CFTI reporting controls identified. Current ERP (Cegid/other) produces fragmented outputs. NetSuite consolidation is the reporting foundation. Bridge from current to target state not yet mapped.</div>
-      <div class="pillar-counts">
-        <div class="pillar-count"><strong>39</strong> controls in scope</div>
-        <div class="pillar-count"><strong>0</strong> bridge mapped</div>
+      <div class="card-owners">
+        <span class="owners-lbl">Owners</span>
+        <div class="chip chip-fr"><div class="av" style="background:var(--purp-d);">PG</div> Philippe <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-fr"><div class="av" style="background:#7C3AED;">DJ</div> Denis <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt <span class="pill pill-us">US</span></div>
+        <div class="chip chip-fr"><div class="av" style="background:#8B5CF6;">RS</div> Roxandra <span class="pill pill-fr">FR</span></div>
       </div>
-      <div class="pillar-section-label">Next Moves</div>
-      <ul class="move-list">
-        <li class="move-item"><span class="move-arrow">→</span>Map current → target reporting state</li>
-        <li class="move-item"><span class="move-arrow">→</span>Identify data owners per reporting domain</li>
-      </ul>
-      <div class="pillar-section-label">Waiting On</div>
-      <ul class="waiting-list">
-        <li class="waiting-item"><span class="waiting-dot">·</span>Reporting bridge detail (open data gap)</li>
-        <li class="waiting-item"><span class="waiting-dot">·</span>NetSuite reporting module scope confirmation</li>
-      </ul>
+      <div class="topic-row">
+        <div class="topic-tile">
+          <div class="t-lbl">GL / Chart of Accounts</div>
+          <div class="t-stat"><span class="t-n red">0</span><span class="t-nl">CoA designed</span></div>
+          <div class="t-meta">Most critical pre-blueprint decision</div>
+          <div class="t-sub">No structure started. Denis + Hema to initiate design.</div>
+          <a href="/abivax/spine/r2r" target="_parent" class="t-link">R2R Brief →</a>
+        </div>
+        <div class="topic-tile">
+          <div class="t-lbl">Financial Close</div>
+          <div class="t-stat"><span class="t-n">2</span><span class="t-nl">entities (FR + US)</span></div>
+          <div class="t-meta">Close process not documented</div>
+          <div class="t-sub">Current-state close steps needed before NetSuite design.</div>
+          <a href="/abivax/spine/r2r" target="_parent" class="t-link">R2R Brief →</a>
+        </div>
+        <div class="topic-tile">
+          <div class="t-lbl">Treasury</div>
+          <div class="t-stat"><span class="t-n amber">2</span><span class="t-nl">entities in scope</span></div>
+          <div class="t-meta">FR cash + US banking</div>
+          <div class="t-sub">Roxandra (FR) + Kimberly (US). Bank integration scope to confirm.</div>
+          <a href="/abivax/spine/r2r" target="_parent" class="t-link">R2R Brief →</a>
+        </div>
+      </div>
+      <div class="card-risk">
+        <span class="rbadge rh">High</span>
+        <div><strong>GL/CoA design not started</strong>&ensp;Blocks all downstream NetSuite module design. Most consequential pre-blueprint decision.</div>
+      </div>
+      <div class="card-nav">
+        <a href="/abivax/spine/r2r" target="_parent" class="nav-link">Full R2R Brief →</a>
+      </div>
     </div>
 
-    <!-- Controls -->
+    <!-- Reporting & Planning -->
     <div class="pillar-card">
-      <div class="pillar-header">
-        <div class="pillar-name">Controls &amp; Audit</div>
-        <div class="confidence-badge conf-partial">Partial</div>
+      <div class="card-hdr">
+        <div class="card-hdr-left"><div class="card-dot dot-par"></div><span class="card-name">Reporting &amp; Planning</span></div>
+        <span class="conf conf-par">Partial</span>
       </div>
-      <div class="pillar-summary">84 controls/audit CFTI in scope. Adrian Holbrook owns controls pack (3 slides pending). No deficiency inventory yet. Audit Committee readout is Mar 6 — deck near-final pending KPMG commercials on Slide 9.</div>
-      <div class="pillar-counts">
-        <div class="pillar-count"><strong>84</strong> controls in scope</div>
-        <div class="pillar-count"><strong>45</strong> out of scope</div>
-        <div class="pillar-count"><strong>9</strong> ERP-signal</div>
+      <div class="card-owners">
+        <span class="owners-lbl">Owners</span>
+        <div class="chip chip-fr"><div class="av" style="background:#109960;">FG</div> Frederick <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt <span class="pill pill-us">US</span></div>
       </div>
-      <div class="pillar-section-label">Next Moves</div>
-      <ul class="move-list">
-        <li class="move-item"><span class="move-arrow">→</span>Update Slide 9 with real KPMG figures (€650K / €1.02M 3yr)</li>
-        <li class="move-item"><span class="move-arrow">→</span>Receive Adrian's 3-slide controls pack</li>
-        <li class="move-item"><span class="move-arrow">→</span>Build deficiency inventory</li>
-      </ul>
-      <div class="pillar-section-label">Waiting On</div>
-      <ul class="waiting-list">
-        <li class="waiting-item"><span class="waiting-dot">·</span>Adrian's controls pack</li>
-        <li class="waiting-item"><span class="waiting-dot">·</span>Camille — Audit Cmte date confirmation</li>
-      </ul>
-    </div>
-
-    <!-- Governance -->
-    <div class="pillar-card">
-      <div class="pillar-header">
-        <div class="pillar-name">Governance &amp; Program</div>
-        <div class="confidence-badge conf-emerging">Emerging</div>
+      <div class="topic-row">
+        <div class="topic-tile">
+          <div class="t-lbl">Reporting Bridge</div>
+          <div class="t-stat"><span class="t-n red">0</span><span class="t-nl">state mapped</span></div>
+          <div class="t-meta">Current → target gap undefined</div>
+          <div class="t-sub">Minimum dimensions not set. Frederick + Hema alignment needed.</div>
+          <span class="t-coming">Reporting Brief — coming</span>
+        </div>
+        <div class="topic-tile">
+          <div class="t-lbl">Commercial Reporting</div>
+          <div class="t-stat"><span class="t-n amber">3</span><span class="t-nl">items waiting</span></div>
+          <div class="t-meta">Q1 vs monthly/commercial v2 split</div>
+          <div class="t-sub">Q1 go-live scope must separate from commercial reporting v2.</div>
+          <span class="t-coming">Reporting Brief — coming</span>
+        </div>
+        <div class="topic-tile">
+          <div class="t-lbl">Controls / CFTI</div>
+          <div class="t-stat"><span class="t-n">39</span><span class="t-nl">in scope</span></div>
+          <div class="t-meta">Largest controls footprint</div>
+          <div class="t-sub">FSCP RCM controls overlap with R2R CoA design.</div>
+          <span class="t-coming">Reporting Brief — coming</span>
+        </div>
       </div>
-      <div class="pillar-summary">KPMG commercials confirmed: €650K Year 1, €1.02M 3-year, 392 man-days at €1,135.51/day. Governance model and resourcing plan not yet defined. Mobilization target April 2026.</div>
-      <div class="pillar-counts">
-        <div class="pillar-count"><strong>€650K</strong> Year 1 (KPMG)</div>
-        <div class="pillar-count"><strong>€1.02M</strong> 3-year</div>
-        <div class="pillar-count"><strong>392</strong> man-days</div>
+      <div class="card-risk">
+        <span class="rbadge rm">Med</span>
+        <div><strong>Reporting bridge undefined</strong>&ensp;No current→target state map or minimum dimensions defined before design start.</div>
       </div>
-      <div class="pillar-section-label">Next Moves</div>
-      <ul class="move-list">
-        <li class="move-item"><span class="move-arrow">→</span>Define governance / resourcing model</li>
-        <li class="move-item"><span class="move-arrow">→</span>Get NetSuite commercial + timeline package</li>
-        <li class="move-item"><span class="move-arrow">→</span>Lock mobilization kickoff date</li>
-      </ul>
-      <div class="pillar-section-label">Waiting On</div>
-      <ul class="waiting-list">
-        <li class="waiting-item"><span class="waiting-dot">·</span>NetSuite commercials / timeline package</li>
-        <li class="waiting-item"><span class="waiting-dot">·</span>Governance/resourcing model (open data gap)</li>
-      </ul>
+      <div class="card-nav">
+        <span class="nav-link soon">Reporting Brief — coming</span>
+      </div>
     </div>
 
   </div>
 
-  <!-- Risks -->
-  <div class="risks-section" style="margin-top:24px;">
-    <div class="section-header">Top Program Risks</div>
-    <div class="risk-list">
-      <div class="risk-row">
-        <div class="risk-badge risk-high">High</div>
-        <div class="risk-text"><strong>Mobilization delay</strong> — No signed contract or scoped implementation plan as of Mar 2. April kickoff target at risk.</div>
-      </div>
-      <div class="risk-row">
-        <div class="risk-badge risk-high">High</div>
-        <div class="risk-text"><strong>Controls testing capacity</strong> — 84 audit + 39 reporting controls require resourcing that hasn't been modeled. Deficiency inventory doesn't exist yet.</div>
-      </div>
-      <div class="risk-row">
-        <div class="risk-badge risk-medium">Medium</div>
-        <div class="risk-text"><strong>P2P migration gate</strong> — 22 couple-défavorable vendors block NetSuite vendor master migration. No remediation timeline from AP team.</div>
-      </div>
-      <div class="risk-row">
-        <div class="risk-badge risk-medium">Medium</div>
-        <div class="risk-text"><strong>Go-live date pressure</strong> — Jan 1, 2027 is non-negotiable. Every week of mobilization delay compresses implementation runway.</div>
-      </div>
-      <div class="risk-row">
-        <div class="risk-badge risk-low">Low</div>
-        <div class="risk-text"><strong>KPMG commercial assumption retired</strong> — Real figures now in deck (€650K Year 1). Previous ~$1M assumption removed.</div>
-      </div>
-    </div>
+  <!-- Program-level risks -->
+  <div class="risks">
+    <div class="risks-hdr">Program-Level Risks</div>
+    <div class="risk-row"><span class="rbadge rh">High</span><strong>Mobilization delay</strong>&ensp;No signed contract or scoped plan. April kickoff at risk.</div>
+    <div class="risk-row"><span class="rbadge rm">Med</span><strong>Go-live pressure</strong>&ensp;Jan 1, 2027 non-negotiable. Every week of delay compresses implementation runway.</div>
   </div>
 
-  <!-- Key People -->
-  <div class="people-section" style="margin-top:24px;">
-    <div class="section-header">Key People</div>
-    <div class="people-grid">
-      <div class="person-card">
-        <div class="person-name">Hema Keshava</div>
-        <div class="person-role">CFO · Internal ERP Sponsor</div>
-        <span class="person-action action-ok">Engaged</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">Didier Blondel</div>
-        <div class="person-role">CFO · Program Sponsor</div>
-        <span class="person-action action-ok">Engaged</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">Adrian Holbrook</div>
-        <div class="person-role">Controls Lead</div>
-        <span class="person-action action-waiting">Awaiting 3-slide pack</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">Camille Girard</div>
-        <div class="person-role">Audit Cmte Liaison</div>
-        <span class="person-action action-waiting">Date TBC</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">NetSuite Team</div>
-        <div class="person-role">Vendor / Implementer</div>
-        <span class="person-action action-needed">Commercials pending</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">KPMG</div>
-        <div class="person-role">Controls Advisor</div>
-        <span class="person-action action-ok">€650K contracted</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">AP Team</div>
-        <div class="person-role">P2P / Vendor Master</div>
-        <span class="person-action action-needed">Remediation TL needed</span>
-      </div>
-      <div class="person-card">
-        <div class="person-name">P2P Process Owner</div>
-        <div class="person-role">To be assigned</div>
-        <span class="person-action action-tbd">Not nominated</span>
-      </div>
-    </div>
+  <div class="footer">
+    <span>Abivax ERP Program &middot; Confidential</span>
+    <span>Mar 5, 2026</span>
   </div>
 
 </div>

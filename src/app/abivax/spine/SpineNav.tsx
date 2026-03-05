@@ -9,15 +9,18 @@ type NavItem = { href: string; label: string; exact: boolean };
 const operateItems: NavItem[] = [
   { href: "/abivax/spine/today", label: "Today", exact: false },
   { href: "/abivax/spine/program-overview", label: "Program Overview", exact: false },
-  { href: "/abivax/spine/program", label: "Program Detail", exact: false },
   { href: "/abivax/spine/team", label: "ERP Team", exact: false },
   { href: "/abivax/spine/p2p", label: "P2P Intelligence", exact: false },
+  { href: "/abivax/spine/r2r", label: "R2R Brief", exact: false },
+  { href: "/abivax/spine/treasury", label: "Treasury", exact: false },
+  // { href: "/abivax/spine/reporting", label: "Reporting Brief", exact: false }, // coming
   { href: "/abivax/spine/presentations", label: "Presentations", exact: false },
 ];
 
 const controlRoomItems: NavItem[] = [
   { href: "/abivax/spine/search", label: "Wiki", exact: false },
   { href: "/abivax/spine/process-flows", label: "Process Flows", exact: false },
+  { href: "/abivax/spine/program", label: "Program Ops", exact: false },
   { href: "/abivax/spine/notes", label: "Notes", exact: false },
   { href: "/abivax/spine/timeline", label: "Timeline", exact: false },
   { href: "/abivax/spine/people", label: "People", exact: false },

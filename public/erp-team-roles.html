@@ -3,571 +3,297 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ERP Roles and Responsibilities</title>
+<title>ERP Team — Roles and Responsibilities</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
+    --navy:     #0F2A4A;
+    --navy-l:   #1A3A5C;
     --purple:   #614DD2;
     --purple-d: #3D2E9B;
     --purple-l: #EEECFA;
-    --navy:     #0F2A4A;
     --slate:    #475569;
     --muted:    #94A3B8;
-    --gold:     #B58728;
-    --green:    #109960;
-    --blue:     #2D7DD2;
     --bg:       #F7F8FC;
     --border:   #E2E8F0;
+    /* Location palette */
+    --us-bg:    #EFF6FF;
+    --us-ring:  #BFDBFE;
+    --us-pill:  #DBEAFE;
+    --us-text:  #1E40AF;
+    --fr-bg:    #FEF2F2;
+    --fr-ring:  #FECACA;
+    --fr-pill:  #FEE2E2;
+    --fr-text:  #991B1B;
+    --ext-bg:   #FEFCE8;
+    --ext-ring: #FDE68A;
+    --ext-pill: #FEF9C3;
+    --ext-text: #713F12;
   }
   body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: #e8eaf0;
-    padding: 32px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #EEF0F5 0%, #E2E6EE 100%);
+    padding: 14px 18px 16px;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
   }
-  .page { width: 100%; max-width: 980px; display: flex; flex-direction: column; gap: 16px; }
+  .shell { width: 100%; max-width: 1060px; }
 
-  /* Top bar */
-  .top-bar {
-    background: var(--navy);
-    border-radius: 8px;
-    padding: 14px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* ── Title bar ── */
+  .title-bar {
+    background: linear-gradient(135deg, var(--navy) 0%, #162D4D 100%);
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(15,42,74,0.14);
   }
-  .top-bar .left h1 { color: white; font-size: 17px; font-weight: 700; }
-  .top-bar .left p { color: rgba(255,255,255,0.55); font-size: 12px; margin-top: 2px; }
-  .top-bar .right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+  .title-bar h1 { color: white; font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+  .title-bar p { color: rgba(255,255,255,0.5); font-size: 11px; margin-top: 2px; }
+  .title-bar .badges { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
   .badge {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 99px;
-    font-size: 11px;
-    font-weight: 600;
+    display: inline-block; padding: 3px 10px; border-radius: 99px;
+    font-size: 11px; font-weight: 600;
   }
 
-  /* Legend */
+  /* ── Legend ── */
   .legend {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    display: flex; gap: 14px; align-items: center;
+    padding: 6px 14px; margin-bottom: 10px;
+  }
+  .legend-label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.09em; }
+  .legend-swatch {
+    display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--slate); font-weight: 500;
+  }
+  .legend-swatch .dot {
+    width: 16px; height: 16px; border-radius: 4px; border: 1.5px solid;
+  }
+  .dot-us  { background: var(--us-bg);  border-color: var(--us-ring); }
+  .dot-fr  { background: var(--fr-bg);  border-color: var(--fr-ring); }
+  .dot-ext { background: var(--ext-bg); border-color: var(--ext-ring); }
+
+  /* ── Grid container ── */
+  .grid {
+    display: flex; flex-direction: column; gap: 0;
     background: white;
     border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 8px 14px;
-    flex-wrap: wrap;
-  }
-  .legend-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 4px; }
-  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--slate); }
-  .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
-
-  /* Section label */
-  .section-label {
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    padding: 0 2px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
-  /* Workstream grid */
-  .ws-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .ws-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
   }
-  .ws-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
+
+  /* ── Group header row ── */
+  .group-hdr {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 14px;
+    background: var(--bg);
     border-bottom: 1px solid var(--border);
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--muted);
   }
-  .ws-icon {
-    width: 32px; height: 32px;
-    border-radius: 6px;
+  .group-hdr::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* ── Data row ── */
+  .row {
+    display: grid;
+    grid-template-columns: 44px 190px 1fr;
+    align-items: stretch;
+    border-bottom: 1px solid var(--border);
+    min-height: 46px;
+    transition: background 0.1s;
+  }
+  .row:last-child { border-bottom: none; }
+  .row:hover { background: #FAFBFE; }
+
+  .row-icon {
     display: flex; align-items: center; justify-content: center;
-    font-size: 15px;
-    flex-shrink: 0;
+    font-size: 16px;
+    border-right: 1px solid var(--border);
+    background: var(--bg);
   }
-  .ws-title { font-size: 13px; font-weight: 700; color: var(--navy); }
-  .ws-sub { font-size: 10.5px; color: var(--muted); margin-top: 1px; }
-  .ws-body { padding: 10px 14px; display: flex; flex-direction: column; gap: 6px; }
-
-  /* Person row */
-  .person {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px 8px;
-    border-radius: 5px;
-    gap: 8px;
+  .row-label {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 7px 14px;
+    border-right: 1px solid var(--border);
   }
-  .person.bpo { background: #F0EDFC; border-left: 3px solid var(--purple-d); }
-  .person.sa  { background: var(--bg); border-left: 3px solid var(--border); }
-  .person.support { background: var(--bg); border-left: 3px solid #CBD5E1; }
+  .row-name { font-size: 13px; font-weight: 700; color: var(--navy); line-height: 1.25; }
+  .row-scope { font-size: 10px; color: var(--muted); margin-top: 2px; line-height: 1.2; }
 
-  .person-left { display: flex; align-items: center; gap: 8px; }
-  .avatar {
-    width: 28px; height: 28px;
-    border-radius: 50%;
+  .row-people {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    padding: 6px 14px;
+  }
+
+  /* ── Person chip (color-coded by location) ── */
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 4px 10px 4px 4px;
+    border-radius: 99px;
+    font-size: 11px; font-weight: 600;
+    color: var(--navy);
+    border: 1.5px solid;
+    transition: box-shadow 0.12s, transform 0.12s;
+  }
+  .chip:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+  /* Location-based chip colors */
+  .chip-us  { background: var(--us-bg);  border-color: var(--us-ring); }
+  .chip-fr  { background: var(--fr-bg);  border-color: var(--fr-ring); }
+  .chip-ext { background: var(--ext-bg); border-color: var(--ext-ring); }
+
+  .chip .av {
+    width: 22px; height: 22px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: white;
-    flex-shrink: 0;
+    font-size: 8px; font-weight: 700; color: white; flex-shrink: 0;
   }
-  .person-name { font-size: 12px; font-weight: 600; color: var(--navy); }
-  .person-role { font-size: 10.5px; color: var(--muted); }
-  .person-right { display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
+  .chip .pill {
+    font-size: 9px; font-weight: 700; padding: 1px 5px;
+    border-radius: 99px; margin-left: 2px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .pill-us  { background: var(--us-pill);  color: var(--us-text); }
+  .pill-fr  { background: var(--fr-pill);  color: var(--fr-text); }
+  .pill-ext { background: var(--ext-pill); color: var(--ext-text); }
 
-  /* Role type pill */
-  .pill-bpo {
-    font-size: 10px; font-weight: 700;
-    padding: 2px 8px; border-radius: 99px;
-    background: var(--purple-d); color: white;
-    letter-spacing: 0.03em;
-  }
-  .pill-sa {
-    font-size: 10px; font-weight: 700;
-    padding: 2px 8px; border-radius: 99px;
-    background: #E2E8F0; color: var(--slate);
-    letter-spacing: 0.03em;
-  }
-  .pill-oversight {
-    font-size: 10px; font-weight: 700;
-    padding: 2px 8px; border-radius: 99px;
-    background: #FEF3C7; color: #92400E;
-    letter-spacing: 0.03em;
-  }
-  .pill-support {
-    font-size: 10px; font-weight: 700;
-    padding: 2px 8px; border-radius: 99px;
-    background: #D1FAE5; color: #065F46;
-    letter-spacing: 0.03em;
-  }
-  .pill-us {
-    font-size: 10px; font-weight: 600;
-    padding: 2px 8px; border-radius: 99px;
-    background: #DBEAFE; color: #1E40AF;
-  }
-  .pill-ext {
-    font-size: 10px; font-weight: 600;
-    padding: 2px 8px; border-radius: 99px;
-    background: #FEF9C3; color: #713F12;
-  }
-
-  /* Notes */
-  .ws-note {
-    font-size: 11px;
-    color: var(--slate);
-    padding: 5px 8px;
-    background: var(--purple-l);
-    border-radius: 4px;
-    margin-top: 2px;
-  }
-
-  /* Divider within card */
-  .ws-divider { height: 1px; background: var(--border); margin: 2px 0; }
 </style>
 </head>
 <body>
-<div class="page">
+<div class="shell">
 
-  <!-- Top bar -->
-  <div class="top-bar">
-    <div class="left">
-      <h1>ERP Roles and Responsibilities</h1>
-      <p>Updated post-meeting with Hema &nbsp;·&nbsp; March 4, 2026 &nbsp;·&nbsp; Directional — formal RACI after contract signing</p>
+  <!-- Title bar -->
+  <div class="title-bar">
+    <div>
+      <h1>ERP Implementation: Roles and Responsibilities</h1>
+      <p>March 4, 2026 &middot; Directional, pre-contract &middot; Formal RACI after signing</p>
     </div>
-    <div class="right">
-      <span class="badge" style="background:#EEECFA; color:#3D2E9B;">NetSuite selected Feb 26</span>
-      <span class="badge" style="background:#D1FAE5; color:#065F46;">Go-live Jan 1, 2027</span>
+    <div class="badges">
+      <span class="badge" style="background:rgba(209,250,229,0.9); color:#065F46;">Go-live Jan 1, 2027</span>
+      <span class="badge" style="background:rgba(238,236,250,0.9); color:#3D2E9B;">Impl. start April 2026</span>
     </div>
   </div>
 
   <!-- Legend -->
   <div class="legend">
-    <span class="legend-label">Key</span>
-    <div class="legend-item"><div class="legend-dot" style="background:#3D2E9B;"></div> BPO — Business Process Owner (accountable, drives workstream)</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#94A3B8;"></div> SA — Steering &amp; Advisory (sounding board, escalation)</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#D97706;"></div> Oversight (approves, not day-to-day)</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#059669;"></div> Support (contributing, not accountable)</div>
+    <span class="legend-label">Location</span>
+    <div class="legend-swatch"><div class="dot dot-us"></div> US</div>
+    <div class="legend-swatch"><div class="dot dot-fr"></div> France</div>
+    <div class="legend-swatch"><div class="dot dot-ext"></div> External</div>
   </div>
 
-  <div class="section-label">Workstream owners</div>
+  <!-- Unified grid -->
+  <div class="grid">
 
-  <div class="ws-grid">
+    <!-- ── Program Leadership ── -->
+    <div class="group-hdr">Program Leadership</div>
 
-    <!-- Record to Report -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#EEE8FF;">📒</div>
-        <div>
-          <div class="ws-title">Record to Report (R2R)</div>
-          <div class="ws-sub">Close process, consolidation, financial statements</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#3D2E9B;">PH</div>
-            <div>
-              <div class="person-name">Philippe</div>
-              <div class="person-role">Finance Manager — France SA lead</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-            <span class="pill-sa">France</span>
-          </div>
-        </div>
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#614DD2;">ME</div>
-            <div>
-              <div class="person-name">Matt Epley</div>
-              <div class="person-role">Accountant — US entity close</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-            <span class="pill-us">US</span>
-          </div>
-        </div>
-        <div class="ws-note">Philippe owns France consolidation design and sign-off. Matt owns US entity. Clear split — no single-person dependency risk.</div>
+    <div class="row">
+      <div class="row-icon">&#9733;</div>
+      <div class="row-label"><div class="row-name">Executive Sponsor</div><div class="row-scope">Strategic oversight, board</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:var(--navy);">DB</div> Didier Blondel <span class="pill pill-fr">FR</span></div>
       </div>
     </div>
 
-    <!-- Purchase to Pay -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#DBEAFE;">🧾</div>
-        <div>
-          <div class="ws-title">Purchase to Pay (P2P)</div>
-          <div class="ws-sub">PO workflow, vendor master, AP, Trustpair</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#2D7DD2;">JC</div>
-            <div>
-              <div class="person-name">Juliette Courtot</div>
-              <div class="person-role">P2P — day-to-day process lead</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-          </div>
-        </div>
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#60A5FA;">KG</div>
-            <div>
-              <div class="person-name">Kimberly Gordon</div>
-              <div class="person-role">P2P Contractor — US</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-            <span class="pill-us">US</span>
-          </div>
-        </div>
-        <div class="ws-divider"></div>
-        <div class="person sa">
-          <div class="person-left">
-            <div class="avatar" style="background:#94A3B8;">PH</div>
-            <div>
-              <div class="person-name">Philippe</div>
-              <div class="person-role">Finance Manager — sounding board</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-sa">SA</span>
-          </div>
-        </div>
-        <div class="ws-note">Juliette drives UAT, vendor master cleanup, and day-to-day design. Philippe available as escalation point. Kim owns US P2P track.</div>
+    <div class="row">
+      <div class="row-icon">&#9733;</div>
+      <div class="row-label"><div class="row-name">Program Director</div><div class="row-scope">Day-to-day program ownership</div></div>
+      <div class="row-people">
+        <div class="chip chip-us"><div class="av" style="background:var(--purple-d);">MM</div> Mike Markman <span class="pill pill-us">US</span></div>
       </div>
     </div>
 
-    <!-- FP&A / Reporting -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#D1FAE5;">📊</div>
-        <div>
-          <div class="ws-title">FP&amp;A and Management Reporting</div>
-          <div class="ws-sub">Budgeting, forecasting, decision-grade reporting</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#109960;">FR</div>
-            <div>
-              <div class="person-name">Frederick</div>
-              <div class="person-role">FP&A Lead — reporting design owner</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-          </div>
-        </div>
-        <div class="person support">
-          <div class="person-left">
-            <div class="avatar" style="background:#059669;">AH</div>
-            <div>
-              <div class="person-name">Adrian Holbrook</div>
-              <div class="person-role">FP&A — controls interface, supports Frederick</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-support">Support</span>
-          </div>
-        </div>
-        <div class="ws-note">Frederick owns the reporting blueprint and module decisions. Adrian feeds in controls requirements but does not own this workstream.</div>
+    <div class="row">
+      <div class="row-icon">&#9733;</div>
+      <div class="row-label"><div class="row-name">Finance Lead</div><div class="row-scope">Finance process ownership</div></div>
+      <div class="row-people">
+        <div class="chip chip-us"><div class="av" style="background:#475569;">HK</div> Hema Keshava <span class="pill pill-us">US</span></div>
       </div>
     </div>
 
-    <!-- Controls and Compliance -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#FEF3C7;">🔒</div>
-        <div>
-          <div class="ws-title">Controls and Compliance (SOX)</div>
-          <div class="ws-sub">Segregation of duties, audit trail, CFTI register</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#B58728;">CF</div>
-            <div>
-              <div class="person-name">CFGI</div>
-              <div class="person-role">Controls consulting group — SOX implementation lead</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-            <span class="pill-ext">External</span>
-          </div>
-        </div>
-        <div class="ws-divider"></div>
-        <div class="person sa">
-          <div class="person-left">
-            <div class="avatar" style="background:#94A3B8;">HK</div>
-            <div>
-              <div class="person-name">Hema Keshava</div>
-              <div class="person-role">Head of Finance — oversight and sign-off</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-oversight">Oversight</span>
-          </div>
-        </div>
-        <div class="ws-note">CFGI owns the 143-control CFTI register and SOD design. Hema approves key financial authority decisions. 84 controls are Audit-relevant.</div>
+    <!-- ── External Partners ── -->
+    <div class="group-hdr">External Partners</div>
+
+    <div class="row">
+      <div class="row-icon">&#127760;</div>
+      <div class="row-label"><div class="row-name">System Implementor</div><div class="row-scope">Technical delivery, migration</div></div>
+      <div class="row-people">
+        <div class="chip chip-ext"><div class="av" style="background:#6366F1;">NS</div> NetSuite PS <span class="pill pill-ext">Ext</span></div>
       </div>
     </div>
 
-    <!-- Supplier Master Data -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#FCE7F3;">🏭</div>
-        <div>
-          <div class="ws-title">Supplier Master Data</div>
-          <div class="ws-sub">Vendor master, supplier onboarding, Trustpair data</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#2D7DD2;">JC</div>
-            <div>
-              <div class="person-name">Juliette Courtot</div>
-              <div class="person-role">P2P — supplier master owner</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-          </div>
-        </div>
-        <div class="person support">
-          <div class="person-left">
-            <div class="avatar" style="background:#2D7DD2;">JN</div>
-            <div>
-              <div class="person-name">Jade Nguyen</div>
-              <div class="person-role">IT Lead — technical extraction and load</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-support">Technical</span>
-          </div>
-        </div>
-        <div class="ws-note">Juliette owns supplier data quality and cleanup. Closely tied to P2P workstream — vendor master feeds AP workflow from day one.</div>
+    <div class="row">
+      <div class="row-icon">&#127760;</div>
+      <div class="row-label"><div class="row-name">PMO / Advisory</div><div class="row-scope">Governance, selection/implementation advisory</div></div>
+      <div class="row-people">
+        <div class="chip chip-ext"><div class="av" style="background:#3D2E9B;">KP</div> KPMG <span class="pill pill-ext">Ext</span></div>
       </div>
     </div>
 
-    <!-- GL / Chart of Accounts -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#EDE9FE;">📂</div>
-        <div>
-          <div class="ws-title">GL and Chart of Accounts</div>
-          <div class="ws-sub">CoA design, opening balances, historical data migration</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#7C3AED;">DJ</div>
-            <div>
-              <div class="person-name">Denis Jankovic</div>
-              <div class="person-role">Finance/Ops — GL and CoA BPO</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-          </div>
-        </div>
-        <div class="person support">
-          <div class="person-left">
-            <div class="avatar" style="background:#2D7DD2;">JN</div>
-            <div>
-              <div class="person-name">Jade Nguyen</div>
-              <div class="person-role">IT Lead — data extract and migration execution</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-support">Technical</span>
-          </div>
-        </div>
-        <div class="ws-note">Denis owns CoA design, opening balances, and historical data sign-off. Jade handles technical extraction and load into NetSuite.</div>
+    <div class="row">
+      <div class="row-icon">&#127760;</div>
+      <div class="row-label"><div class="row-name">SOX / Controls</div><div class="row-scope">SOD, SDLC, ITGC, CFTI</div></div>
+      <div class="row-people">
+        <div class="chip chip-ext"><div class="av" style="background:#B58728;">CF</div> CFGI <span class="pill pill-ext">Ext</span></div>
       </div>
     </div>
 
-    <!-- Treasury -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#ECFDF5;">🏦</div>
-        <div>
-          <div class="ws-title">Treasury</div>
-          <div class="ws-sub">Cash management, bank connectivity, commitments visibility</div>
-        </div>
-      </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#60A5FA;">KG</div>
-            <div>
-              <div class="person-name">Kimberly Gordon</div>
-              <div class="person-role">P2P Contractor — US treasury BPO</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-            <span class="pill-us">US</span>
-          </div>
-        </div>
-        <div class="ws-divider"></div>
-        <div class="person sa">
-          <div class="person-left">
-            <div class="avatar" style="background:#94A3B8;">RS</div>
-            <div>
-              <div class="person-name">Roxandra Sturdza</div>
-              <div class="person-role">Finance — treasury steering and advisory</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-sa">SA</span>
-          </div>
-        </div>
-        <div class="ws-note">Kim owns treasury process design and US bank connectivity. Roxandra provides steering-level input on treasury requirements and sign-off.</div>
+    <!-- ── Workstream Owners ── -->
+    <div class="group-hdr">Workstream Owners</div>
+
+    <div class="row">
+      <div class="row-icon">&#128210;</div>
+      <div class="row-label"><div class="row-name">Record to Report</div><div class="row-scope">Close, consolidation, financials</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:#3D2E9B;">PG</div> Philippe Goncalves <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt Epley <span class="pill pill-us">US</span></div>
       </div>
     </div>
 
-    <!-- IT and Integration -->
-    <div class="ws-card">
-      <div class="ws-header">
-        <div class="ws-icon" style="background:#E0E7FF;">⚙️</div>
-        <div>
-          <div class="ws-title">IT and System Integration</div>
-          <div class="ws-sub">Infrastructure, integrations, system admin</div>
-        </div>
+    <div class="row">
+      <div class="row-icon">&#129534;</div>
+      <div class="row-label"><div class="row-name">Purchase to Pay</div><div class="row-scope">PO, vendor master / onboarding, AP, Trustpair</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:#2D7DD2;">JC</div> Juliette Courtot <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#60A5FA;">KG</div> Kimberly Gordon <span class="pill pill-us">US</span></div>
       </div>
-      <div class="ws-body">
-        <div class="person bpo">
-          <div class="person-left">
-            <div class="avatar" style="background:#4338CA;">JN</div>
-            <div>
-              <div class="person-name">Jade Nguyen</div>
-              <div class="person-role">IT Lead — integration coordination</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-bpo">BPO</span>
-          </div>
-        </div>
-        <div class="person support">
-          <div class="person-left">
-            <div class="avatar" style="background:#6366F1;">BT</div>
-            <div>
-              <div class="person-name">Benjamin Talmant</div>
-              <div class="person-role">IT Project Manager</div>
-            </div>
-          </div>
-          <div class="person-right">
-            <span class="pill-support">Support</span>
-          </div>
-        </div>
-        <div class="ws-note">Jade owns technical delivery and Trustpair integration coordination. Benjamin supports project management cadence on the IT side.</div>
+    </div>
+
+    <div class="row">
+      <div class="row-icon">&#128202;</div>
+      <div class="row-label"><div class="row-name">FP&amp;A / Reporting</div><div class="row-scope">Budget, forecast, mgmt reporting</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:#109960;">FG</div> Frederick Golly <span class="pill pill-fr">FR</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-icon">&#128194;</div>
+      <div class="row-label"><div class="row-name">GL / Chart of Accounts</div><div class="row-scope">CoA design, balances, migration</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:#7C3AED;">DJ</div> Denis Jankovic <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#614DD2;">ME</div> Matt Epley <span class="pill pill-us">US</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-icon">&#127974;</div>
+      <div class="row-label"><div class="row-name">Treasury</div><div class="row-scope">Cash, bank connectivity</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:#8B5CF6;">RS</div> Roxandra Sturdza <span class="pill pill-fr">FR</span></div>
+        <div class="chip chip-us"><div class="av" style="background:#60A5FA;">KG</div> Kimberly Gordon <span class="pill pill-us">US</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-icon">&#9881;&#65039;</div>
+      <div class="row-label"><div class="row-name">IT / Integration</div><div class="row-scope">Infra, integrations, admin</div></div>
+      <div class="row-people">
+        <div class="chip chip-fr"><div class="av" style="background:#4338CA;">JN</div> Jade Nguyen <span class="pill pill-fr">FR</span></div>
       </div>
     </div>
 
   </div>
 
-  <!-- Notes -->
-  <div class="section-label">Notes from Hema meeting</div>
-  <div style="background:white; border:1px solid var(--border); border-radius:8px; overflow:hidden;">
-    <div style="background:var(--purple-d); padding:10px 16px; color:white; font-size:13px; font-weight:700;">Decisions and open items — March 4, 2026</div>
-    <div style="padding:12px 16px; display:flex; flex-direction:column; gap:8px;">
-      <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
-        <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
-        <span><strong>CFGI</strong> confirmed as BPO for controls and compliance workstream. Hema in oversight role only, not day-to-day.</span>
-      </div>
-      <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
-        <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
-        <span><strong>Master data split:</strong> Juliette owns Supplier Master, Denis Jankovic owns GL and Chart of Accounts. Clear accountability, no shared ownership.</span>
-      </div>
-      <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
-        <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
-        <span><strong>Treasury</strong> added as a named workstream. Kimberly Gordon as US BPO, Roxandra Sturdza in SA role.</span>
-      </div>
-      <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
-        <div style="width:20px;height:20px;border-radius:50%;background:var(--green);color:white;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">✓</div>
-        <span><strong>Juliette</strong> leads P2P as BPO. Philippe available as sounding board on SA side, not as day-to-day owner.</span>
-      </div>
-      <div style="display:flex; gap:10px; align-items:flex-start; font-size:12.5px; color:var(--slate);">
-        <div style="width:20px;height:20px;border-radius:50%;background:#E2E8F0;color:var(--slate);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">→</div>
-        <span><strong>Formal RACI</strong> to be produced after contract signing (target March 2026). This is directional only.</span>
-      </div>
-    </div>
-  </div>
 
 </div>
 </body>

@@ -4,11 +4,14 @@ import { useEffect, useMemo, useState } from "react";
 
 export default function SpineShell({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   useEffect(() => {
     try {
       const saved = window.localStorage.getItem("spine-theme");
       if (saved === "light" || saved === "dark") setTheme(saved);
+      const sb = window.localStorage.getItem("spine-sidebar");
+      if (sb === "false") setSidebarOpen(false);
     } catch {
       // ignore
     }
@@ -28,22 +31,43 @@ export default function SpineShell({ children }: { children: React.ReactNode }) 
     });
   };
 
+  const toggleSidebar = () => {
+    setSidebarOpen((prev) => {
+      const next = !prev;
+      try { window.localStorage.setItem("spine-sidebar", String(next)); } catch {}
+      return next;
+    });
+  };
+
   return (
-    <div data-spine-theme={theme} className="min-h-screen">
+    <div data-spine-theme={theme} data-sidebar={sidebarOpen ? "open" : "closed"} className="min-h-screen">
       <div className="mx-auto flex max-w-[1500px] gap-8 px-6 py-8">
         {children}
       </div>
 
-      <button
-        type="button"
-        onClick={toggleTheme}
-        className="fixed bottom-5 right-5 z-50 rounded-full border border-slate-700/70 bg-slate-900/90 px-4 py-2 text-xs font-medium text-slate-100 shadow-lg backdrop-blur hover:bg-slate-800"
-        title={`Switch to ${nextThemeLabel.toLowerCase()} theme`}
-      >
-        {nextThemeLabel} Theme
-      </button>
+      <div className="fixed bottom-5 right-5 z-50 flex gap-2">
+        <button
+          type="button"
+          onClick={toggleSidebar}
+          className="rounded-full border border-slate-700/70 bg-slate-900/90 px-4 py-2 text-xs font-medium text-slate-100 shadow-lg backdrop-blur hover:bg-slate-800"
+          title={sidebarOpen ? "Hide sidebar" : "Show sidebar"}
+        >
+          {sidebarOpen ? "Hide Nav" : "Show Nav"}
+        </button>
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="rounded-full border border-slate-700/70 bg-slate-900/90 px-4 py-2 text-xs font-medium text-slate-100 shadow-lg backdrop-blur hover:bg-slate-800"
+          title={`Switch to ${nextThemeLabel.toLowerCase()} theme`}
+        >
+          {nextThemeLabel} Theme
+        </button>
+      </div>
 
       <style jsx global>{`
+        [data-sidebar='closed'] aside {
+          display: none;
+        }
         [data-spine-theme='light'] {
           background: #f4f6fb;
           color: #0f172a !important;

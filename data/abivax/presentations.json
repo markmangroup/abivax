@@ -837,6 +837,182 @@
         "pillars"
       ],
       "lastUpdated": "2026-02-26"
+    },
+    {
+      "id": "treasury-briefing-roxandra-20260305",
+      "title": "Treasury Workstream Briefing",
+      "audience": "Roxandra Sturdza / Treasury Team",
+      "meetingDate": "2026-03-05",
+      "owner": "Mike Markman",
+      "status": "ready",
+      "objective": "Baseline treasury current state with Roxandra, identify open gaps in bank connectivity and cash management, and scope treasury module requirements for Phase 1 ERP.",
+      "narrative": [
+        "Treasury is a sub-workstream under Record to Report, owned by Roxandra (FR) and Kimberly (US).",
+        "Current payment flow runs through four disconnected systems with manual handoffs.",
+        "Key decision: which banking integrations are in Phase 1 ERP scope — must be in contract before April mobilization."
+      ],
+      "keyMessages": [
+        "Treasury scope must be defined before NetSuite contract is signed.",
+        "Bank connectivity requires IT integration work (Jade) that must be planned now.",
+        "Agicap future and EBICS authorization structure are the two biggest open questions."
+      ],
+      "dataRequests": [
+        {
+          "id": "trs-dr-1",
+          "topic": "End-to-end payment process walkthrough",
+          "priority": "high",
+          "owner": "Roxandra Sturdza",
+          "due": "2026-03-05",
+          "status": "open",
+          "ask": "Step-by-step payment process from invoice approval through bank execution — who touches what, where."
+        },
+        {
+          "id": "trs-dr-2",
+          "topic": "Bank account structure",
+          "priority": "high",
+          "owner": "Roxandra Sturdza",
+          "due": "2026-03-05",
+          "status": "open",
+          "ask": "How many accounts, which banks, FR vs US structure."
+        },
+        {
+          "id": "trs-dr-3",
+          "topic": "Agicap role and future",
+          "priority": "high",
+          "owner": "Roxandra Sturdza",
+          "due": "2026-03-05",
+          "status": "open",
+          "ask": "Is Agicap used for forecasting or just execution? Stays post-ERP or replaced by NetSuite?"
+        },
+        {
+          "id": "trs-dr-4",
+          "topic": "EBICS authorization levels and signers",
+          "priority": "medium",
+          "owner": "Roxandra Sturdza",
+          "due": "2026-03-05",
+          "status": "open",
+          "ask": "Who are the authorized EBICS signers? What are the authorization thresholds?"
+        },
+        {
+          "id": "trs-dr-5",
+          "topic": "Reconciliation process and evidence",
+          "priority": "medium",
+          "owner": "Roxandra Sturdza",
+          "due": "2026-03-05",
+          "status": "open",
+          "ask": "How often are bank reconciliations performed? Where is evidence retained?"
+        }
+      ],
+      "artifacts": [
+        {
+          "id": "trs-art-1",
+          "title": "Treasury Briefing PPTX (Mar 5, 2026)",
+          "type": "deck",
+          "status": "available",
+          "source": "outputs/Treasury_Briefing_Roxandra_Mar5_2026.pptx",
+          "link": "",
+          "owner": "Claude",
+          "notes": "7-slide briefing deck covering treasury context, payment flow, systems, controls, discussion questions, and key decision."
+        },
+        {
+          "id": "trs-art-2",
+          "title": "Treasury Workstream Briefing Page",
+          "type": "html-page",
+          "status": "available",
+          "source": "Operator Spine",
+          "link": "/abivax/spine/treasury",
+          "owner": "Claude",
+          "notes": "Interactive HTML briefing with 3 layout variants for meeting follow-along."
+        }
+      ],
+      "slidePlan": [
+        {
+          "id": "trs-slide-1",
+          "section": "Title",
+          "title": "Treasury Workstream Briefing",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "title",
+          "notes": "",
+          "content": ["Title slide with Roxandra Sturdza, ERP Program, March 5, 2026."]
+        },
+        {
+          "id": "trs-slide-2",
+          "section": "Context",
+          "title": "Treasury in the ERP Program",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "icon + text",
+          "notes": "",
+          "content": ["R2R sub-workstream. Roxandra (FR), Kimberly (US). Go-live Jan 1, 2027. Mobilization Apr 2026."]
+        },
+        {
+          "id": "trs-slide-3",
+          "section": "Current State",
+          "title": "Current State — What We Know",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "flow + stats",
+          "notes": "",
+          "content": ["Sage → Trustpair → Agicap → Bank. 2 campaigns/month. 497 vendors. 4-day lead time."]
+        },
+        {
+          "id": "trs-slide-4",
+          "section": "Systems",
+          "title": "Current Systems Landscape",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "table",
+          "notes": "",
+          "content": ["Sage 100, Trustpair, Agicap, Globalcash, EBICS — functions and SOX relevance."]
+        },
+        {
+          "id": "trs-slide-5",
+          "section": "Controls",
+          "title": "Controls & Compliance",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "control table",
+          "notes": "",
+          "content": ["FR-TR-12G (SoD), FR-TR-13G (SOC Review), plus payment-stage controls with status badges."]
+        },
+        {
+          "id": "trs-slide-6",
+          "section": "Discussion",
+          "title": "Open Questions for Roxandra",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "numbered list",
+          "notes": "",
+          "content": ["9 discussion questions covering process, banks, Agicap, EBICS, reconciliation, intercompany, forecasting."]
+        },
+        {
+          "id": "trs-slide-7",
+          "section": "Decision",
+          "title": "Key Decision & Next Steps",
+          "status": "ready",
+          "owner": "Mike",
+          "evidenceStatus": "confirmed",
+          "visual": "decision card",
+          "notes": "",
+          "content": ["Treasury module scope for Phase 1. Owners: Mike, Roxandra, Jade. Deadline: before blueprint."]
+        }
+      ],
+      "actionLog": [
+        {
+          "date": "2026-03-05",
+          "author": "Claude",
+          "action": "Created Treasury briefing PPTX (7 slides) and interactive HTML briefing page with 3 layout variants for Roxandra meeting."
+        }
+      ],
+      "tags": ["erp", "treasury", "r2r", "roxandra", "banking"],
+      "lastUpdated": "2026-03-05"
     }
   ]
 }
