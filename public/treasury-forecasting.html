@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasury - Forecasting Model</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+  .shell { max-width: 1080px; margin: 0 auto; padding: 16px; }
+  .top { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .top a { text-decoration: none; font-size: 12px; font-weight: 600; color: #0f2a4a; background: #e2e8f0; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 10px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+  .hdr { background: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: 10px 14px; font-weight: 700; color: #0f2a4a; font-size: 13px; }
+  .body { padding: 12px 14px; font-size: 12px; color: #334155; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <a target="_parent" href="/abivax/spine/treasury">Back to Treasury Brief</a>
+    <a target="_parent" href="/abivax/spine/treasury/connectivity">Connectivity</a>
+    <a target="_parent" href="/abivax/spine/treasury/investments">Investments</a>
+    <a target="_parent" href="/abivax/spine/treasury/controls">Controls</a>
+    <a target="_parent" href="/abivax/spine/r2r">R2R</a>
+    <a target="_parent" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call">Notes</a>
+    <a target="_parent" href="/abivax/spine/program">Program</a>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Current Forecasting Process</div>
+    <div class="body">
+      <div>- Monthly manual process in Excel.</div>
+      <div>- Input comes from prior-month accounting cash-out extracts.</div>
+      <div>- Treasury reconciles and builds a rolling 12-month view.</div>
+      <div>- Planning files include daily/monthly treasury movement views.</div>
+      <div style="margin-top:8px;"><strong>Parsed data points (Mar 5 refresh):</strong> Jan opening 530,158 kEUR; Jan ending 497,677 kEUR; Jan variance -16,566 kEUR.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Known Pain Points</div>
+    <div class="body">
+      <div>- Sage extracts are painful and manual.</div>
+      <div>- Reconciliation and forecast preparation are spreadsheet-heavy.</div>
+      <div>- FX outcomes can change based on date selection.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Automation Scope Candidates</div>
+    <div class="body">
+      <div>- Standardize monthly input template from accounting.</div>
+      <div>- Automate recurring forecast roll-forward mechanics.</div>
+      <div>- Add controlled FX-rate date/source lock with audit trail.</div>
+      <div>- Define signed handoff from treasury forecast to GL/reporting consumers.</div>
+      <div style="margin-top:8px;">Data source: <code>data/abivax/treasury/forecast_snapshot.json</code> (generated 2026-03-05 16:57 UTC).</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-03-06T01:06:06.421Z",
+  "issueCount": 3,
+  "issues": [
+    {
+      "severity": "medium",
+      "area": "placements",
+      "issue": "Invalid or suspicious date format in placement snapshot row",
+      "value": "2/28/00",
+      "sheet": "Placement USD"
+    },
+    {
+      "severity": "medium",
+      "area": "placements",
+      "issue": "Invalid or suspicious date format in placement snapshot row",
+      "value": "04/03/23026",
+      "sheet": "Placement USD"
+    },
+    {
+      "severity": "high",
+      "area": "fx",
+      "issue": "Exposition FX tab is empty",
+      "value": "No data rows",
+      "sheet": "Exposition FX"
+    }
+  ]
+}

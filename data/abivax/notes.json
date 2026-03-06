@@ -1,6 +1,58 @@
 {
   "notes": [
     {
+      "id": "20260305-treasury-roxandra-workstream-call",
+      "title": "Treasury Working Session with Roxandra - Operating Model, Tooling, and Control Gaps",
+      "createdAt": "2026-03-05T16:30:00Z",
+      "source": "live-call",
+      "tags": [
+        "treasury",
+        "agicap",
+        "controls",
+        "forecasting",
+        "investments"
+      ],
+      "rawText": "Roxandra confirmed treasury target architecture is ERP to TMS to banks, with the priority to make TMS-bank connectivity ready before ERP implementation. Current direct bank connectivity is SocGen only; Citi and Wells are not connected yet. Treasury keeps approximately EUR 70K and USD 30K in treasury accounts and sweeps excess to operations/investment accounts. Reconciliation is not daily and is treasury-focused in Excel (cash position/positive balances), not full GL-side reconciliation. Cash forecasting is monthly and manual: upload prior-month accounting cash-out data, reconcile in treasury, then build a rolling 12-month forecast in Excel. Investments process is also manual in Excel at month-end (money market, structured notes, other investments). Valuations are received from SocGen traders and other firms/managers (including Wells Fargo) and entered manually; no Bloomberg is used. Intercompany activity is mostly accountant-owned; Roxandra mainly reviews whether intercompany interest charged is correct. Key pain points are manual reconciliation effort, painful Sage extracts, and FX rate/date sensitivity. Agicap currently has no SOC/SOX report, creating a control concern and a potential keep-vs-replace decision, potentially with Mazars supporting an RFP.",
+      "summary": {
+        "truthsNow": [
+          "Treasury target sequence is TMS-bank readiness first, then ERP-to-TMS integration.",
+          "SocGen is connected; Citi and Wells are not yet connected.",
+          "Treasury operates with minimum balances around EUR 70K and USD 30K and sweeps excess cash.",
+          "Reconciliation, forecasting, and investment valuation workflows are heavily manual in Excel.",
+          "Intercompany execution is accounting-led; Roxandra's role is mainly interest review."
+        ],
+        "decisions": [
+          "Primary decision is whether to retain Agicap with remediation or replace it via a TMS RFP.",
+          "Mazars may support a formal RFP if replacement path is chosen."
+        ],
+        "risks": [
+          "Agicap lacks SOC/SOX reporting support today, creating a controls/compliance risk.",
+          "Manual Sage extract and Excel-heavy workflows create operational burden and evidence risk.",
+          "FX outcomes vary by date choice without a formalized valuation-date governance rule."
+        ],
+        "openQuestions": [
+          "What are the confirmed milestone dates and owners for Citi and Wells connectivity?",
+          "What is the decision date for Agicap keep-vs-replace and any RFP launch?",
+          "What formal control bridge will connect treasury Excel outputs to GL/audit evidence?"
+        ],
+        "nextConstraints": [
+          "Treasury Excel handoff is received and ingested in data/abivax/inbox_assets/2026-03-05-roxandra-treasury; next step is structured extraction/mapping.",
+          "Need treasury-specific control design finalized before ERP blueprint decisions lock in."
+        ],
+        "entityMentions": [
+          "Roxandra Sturdza",
+          "Agicap",
+          "Societe Generale",
+          "Citibank",
+          "Wells Fargo",
+          "Mazars",
+          "Sage",
+          "Michael Markman"
+        ],
+        "entityUpdateQueue": []
+      }
+    },
+    {
       "id": "20260226-erp-decision-netsuite-selected",
       "title": "ERP Decision Forum Outcome - NetSuite Selected",
       "createdAt": "2026-02-26T15:00:00Z",

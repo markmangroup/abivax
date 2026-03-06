@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-03-06T01:06:06.419Z",
+  "source": "Forecast12m 20260305.xlsx",
+  "rowsParsed": 12,
+  "forecast": [
+    {
+      "month": "Jan",
+      "beginKEur": 530158,
+      "endKEur": 497677,
+      "varianceKEur": -32481
+    },
+    {
+      "month": "Feb",
+      "beginKEur": 506191,
+      "endKEur": 484977,
+      "varianceKEur": -21214
+    },
+    {
+      "month": "Mar",
+      "beginKEur": 484977,
+      "endKEur": 472101,
+      "varianceKEur": -12875
+    },
+    {
+      "month": "Apr",
+      "beginKEur": 472101,
+      "endKEur": 439112,
+      "varianceKEur": -32989
+    },
+    {
+      "month": "May",
+      "beginKEur": 439112,
+      "endKEur": 414726,
+      "varianceKEur": -24386
+    },
+    {
+      "month": "Jun",
+      "beginKEur": 414726,
+      "endKEur": 402406,
+      "varianceKEur": -12321
+    },
+    {
+      "month": "Jul",
+      "beginKEur": 402406,
+      "endKEur": 383235,
+      "varianceKEur": -19171
+    },
+    {
+      "month": "Aug",
+      "beginKEur": 383235,
+      "endKEur": 355081,
+      "varianceKEur": -28154
+    },
+    {
+      "month": "Sep",
+      "beginKEur": 355081,
+      "endKEur": 343133,
+      "varianceKEur": -11947
+    },
+    {
+      "month": "Oct",
+      "beginKEur": 343133,
+      "endKEur": 328673,
+      "varianceKEur": -14460
+    },
+    {
+      "month": "Nov",
+      "beginKEur": 328673,
+      "endKEur": 301229,
+      "varianceKEur": -27445
+    },
+    {
+      "month": "Dec",
+      "beginKEur": 301229,
+      "endKEur": 296496,
+      "varianceKEur": -4733
+    }
+  ]
+}

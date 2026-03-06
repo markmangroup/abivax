@@ -121,6 +121,25 @@
     background: #F8F9FA; border-radius: 5px;
     display: flex; gap: 16px; font-size: 11px;
   }
+  .ws-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .ws-link {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 99px;
+    text-decoration: none;
+    background: #EFF6FF;
+    color: #1D4ED8;
+    border: 1px solid #BFDBFE;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+  .ws-link:hover { background: #DBEAFE; }
   .wsc-stat { display: flex; flex-direction: column; gap: 1px; }
   .wsc-n { font-size: 16px; font-weight: 800; color: #111827; line-height: 1; }
   .wsc-n.signal { color: #2563EB; }
@@ -348,7 +367,16 @@
           <span class="ws-val amber">TBD</span>
         </div>
         <div class="ws-insight">
-          Scoped but not yet baselined. FR cash management is in scope; US banking integration scope is pending confirmation. NetSuite bank feed / reconciliation model to be confirmed alongside AP module design.
+          Treasury now has a dedicated briefing and deep dives. FR treasury operating model is baselined; US banking and full connectivity sequencing still require owner/date lock.
+        </div>
+        <div class="ws-links">
+          <a class="ws-link" href="/abivax/spine/treasury" target="_parent">Treasury Brief</a>
+          <a class="ws-link" href="/abivax/spine/treasury/connectivity" target="_parent">Connectivity</a>
+          <a class="ws-link" href="/abivax/spine/treasury/forecasting" target="_parent">Forecasting</a>
+          <a class="ws-link" href="/abivax/spine/treasury/investments" target="_parent">Investments</a>
+          <a class="ws-link" href="/abivax/spine/treasury/controls" target="_parent">Controls</a>
+          <a class="ws-link" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call" target="_parent">Roxandra Note</a>
+          <a class="ws-link" href="/abivax/spine/program" target="_parent">Program</a>
         </div>
         <div class="ws-controls-row">
           <div class="wsc-stat">

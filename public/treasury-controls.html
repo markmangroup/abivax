@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasury - Controls and Auditability</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+  .shell { max-width: 1080px; margin: 0 auto; padding: 16px; }
+  .top { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .top a { text-decoration: none; font-size: 12px; font-weight: 600; color: #0f2a4a; background: #e2e8f0; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 10px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+  .hdr { background: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: 10px 14px; font-weight: 700; color: #0f2a4a; font-size: 13px; }
+  .body { padding: 12px 14px; font-size: 12px; color: #334155; line-height: 1.45; }
+  .row { display: flex; gap: 8px; padding: 7px 0; border-bottom: 1px solid #e2e8f0; }
+  .row:last-child { border-bottom: none; }
+  .id { min-width: 90px; font-weight: 700; color: #0f2a4a; }
+  .pill { font-size: 10px; font-weight: 700; text-transform: uppercase; border-radius: 99px; padding: 2px 8px; }
+  .a { background: #fef3c7; color: #92400e; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <a target="_parent" href="/abivax/spine/treasury">Back to Treasury Brief</a>
+    <a target="_parent" href="/abivax/spine/treasury/connectivity">Connectivity</a>
+    <a target="_parent" href="/abivax/spine/treasury/forecasting">Forecasting</a>
+    <a target="_parent" href="/abivax/spine/treasury/investments">Investments</a>
+    <a target="_parent" href="/abivax/spine/r2r">R2R</a>
+    <a target="_parent" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call">Notes</a>
+    <a target="_parent" href="/abivax/spine/program">Program</a>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Core Treasury Controls in Scope</div>
+    <div class="body">
+      <div class="row"><div class="id">FR-TR-12G</div><div>Segregation of duties in treasury process (authorization, execution, processing, review split).</div><span class="pill a">Design gap</span></div>
+      <div class="row"><div class="id">FR-TR-13G</div><div>SOC report review coverage for service providers and sub-service providers.</div><span class="pill a">Design gap</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Operating Risks To Design Down</div>
+    <div class="body">
+      <div class="row"><div class="id">TRE-01</div><div>Manual non-daily treasury reconciliations need formal prep/review evidence model.</div><span class="pill a">Open</span></div>
+      <div class="row"><div class="id">TRE-02</div><div>Bridge from treasury Excel outputs to GL/audit evidence not formally defined.</div><span class="pill a">Open</span></div>
+      <div class="row"><div class="id">TRE-03</div><div>FX valuation-date governance lacks standardized source/cutoff/review rules.</div><span class="pill a">Open</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Data Quality Exceptions (Workbook Parse)</div>
+    <div class="body">
+      <div>- Current issue count: <strong>3</strong> (generated 2026-03-06 01:06 UTC).</div>
+      <div>- Placement USD date anomaly: <code>2/28/00</code>.</div>
+      <div>- Placement USD date anomaly: <code>04/03/23026</code>.</div>
+      <div>- Exposition FX sheet currently contains no data rows.</div>
+      <div style="margin-top:8px;">Source: <code>data/abivax/treasury/data_quality_exceptions.json</code>.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Design Decisions Needed</div>
+    <div class="body">
+      <div>- Keep Agicap with remediation or replace with new TMS via RFP.</div>
+      <div>- Confirm how evidence is retained for treasury recon, forecasts, and investment valuations.</div>
+      <div>- Define control boundary with accounting for intercompany interest review.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

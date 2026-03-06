@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-03-06T01:06:04.923Z",
+  "sourceDir": "data\\abivax\\inbox_assets\\2026-03-05-roxandra-treasury",
+  "inventory": [
+    {
+      "file": "2025-2026 Treasury Management Report v11.xlsx",
+      "sizeBytes": 1402936,
+      "modifiedAt": "2026-03-05T15:45:03.573Z",
+      "sheets": [
+        "2026-1",
+        "2026-2",
+        "Monthly Report 2026 €",
+        "Monthly Report 2025 €",
+        "OverNight €",
+        "codeis €",
+        "CT- € Ellipsis BNP",
+        "Préparation paiements",
+        "mouvement tréso & change",
+        "Monthly Report 2026 $",
+        "OverNight $",
+        "codeis $",
+        "MM $"
+      ]
+    },
+    {
+      "file": "Cash Forecast Monthly Planning 2026.xlsx",
+      "sizeBytes": 79477,
+      "modifiedAt": "2026-03-05T15:45:03.500Z",
+      "sheets": [
+        "Janvier",
+        "février",
+        "mars",
+        "dec",
+        "dec (2)",
+        "dette",
+        "planning"
+      ]
+    },
+    {
+      "file": "Forecast12m 20260305.xlsx",
+      "sizeBytes": 186812,
+      "modifiedAt": "2026-03-05T15:45:03.586Z",
+      "sheets": [
+        "To do",
+        "Forecast    ->",
+        "Consolidated Forecast in €",
+        "SA Reforecast",
+        "LLC Reforecast",
+        "Data Reforecast",
+        "Risk & Opp- diff budget-to do ",
+        "Actual   ->",
+        "SA Actual",
+        "LLC actual",
+        "Budget   ->",
+        "Consolidated Budget",
+        "SA budget",
+        "LLC Budget",
+        "Data Budget",
+        "Copie gardée ->",
+        "Copie Abivax LLC reforecast ",
+        "Copie -Abivax SA Reforecast"
+      ]
+    },
+    {
+      "file": "Management placements  et Exposition FX 20251112.xlsx",
+      "sizeBytes": 30485,
+      "modifiedAt": "2026-03-05T15:45:03.513Z",
+      "sheets": [
+        "Placement EUR",
+        "Placement USD",
+        "Exposition FX"
+      ]
+    }
+  ]
+}

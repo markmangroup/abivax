@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasury - Investments and Non-Operating Cash</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+  .shell { max-width: 1080px; margin: 0 auto; padding: 16px; }
+  .top { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .top a { text-decoration: none; font-size: 12px; font-weight: 600; color: #0f2a4a; background: #e2e8f0; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 10px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+  .hdr { background: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: 10px 14px; font-weight: 700; color: #0f2a4a; font-size: 13px; }
+  .body { padding: 12px 14px; font-size: 12px; color: #334155; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <a target="_parent" href="/abivax/spine/treasury">Back to Treasury Brief</a>
+    <a target="_parent" href="/abivax/spine/treasury/connectivity">Connectivity</a>
+    <a target="_parent" href="/abivax/spine/treasury/forecasting">Forecasting</a>
+    <a target="_parent" href="/abivax/spine/treasury/controls">Controls</a>
+    <a target="_parent" href="/abivax/spine/r2r">R2R</a>
+    <a target="_parent" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call">Notes</a>
+    <a target="_parent" href="/abivax/spine/program">Program</a>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Non-Operating Cash and Investments</div>
+    <div class="body">
+      <div>- Treasury keeps floor balances in operating treasury accounts (EUR 70K / USD 30K).</div>
+      <div>- Excess funds are moved to operations/investment accounts.</div>
+      <div>- Coverage includes money market, structured notes, and other placements.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Current Valuation Workflow</div>
+    <div class="body">
+      <div>- Month-end valuation updates are manual in Excel.</div>
+      <div>- Inputs come from SocGen traders and other firms/managers (including Wells Fargo).</div>
+      <div>- No Bloomberg feed in place; external reports are the primary valuation source.</div>
+      <div style="margin-top:8px;"><strong>Parsed data points (Mar 5 refresh):</strong> SG USD NCA 2026 rows parsed: 12 months; baseline rate shown as 3.15%; Jan amount 190,000 USD and Feb-Dec at 1,450,000 USD target profile.</div>
+      <div style="margin-top:6px;"><strong>Placement snapshot:</strong> latest parsed cash-balance row is dated 3/31/26 at 139,851,667 (sheet: Placement USD).</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Data Assets Ingested (Mar 5, 2026)</div>
+    <div class="body">
+      <div>- 2025-2026 Treasury Management Report v11.xlsx</div>
+      <div>- Management placements et Exposition FX 20251112.xlsx</div>
+      <div>- Cash Forecast Monthly Planning 2026.xlsx</div>
+      <div>- Forecast12m 20260305.xlsx</div>
+      <div style="margin-top:8px;">Stored under <code>data/abivax/inbox_assets/2026-03-05-roxandra-treasury</code>.</div>
+      <div style="margin-top:6px;">Structured snapshots at <code>data/abivax/treasury/investment_snapshot.json</code> and <code>data/abivax/treasury/treasury_metrics.json</code>.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Follow-ups To Confirm</div>
+    <div class="body">
+      <div>- Month-end control owner and review evidence for investment valuations.</div>
+      <div>- Standard threshold/rules for non-operating cash transfers.</div>
+      <div>- Tie-out control from investment workbook outputs to GL/reporting pack.</div>
+      <div>- Validate workbook date quality for outlier rows (examples observed: 2/28/00 and 04/03/23026 in placement table).</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

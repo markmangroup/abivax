@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-03-06T01:06:06.420Z",
+  "source": "Cash Forecast Monthly Planning 2026.xlsx",
+  "movementEventsParsed": 4,
+  "movementEventsSample": [
+    {
+      "sheet": "mars",
+      "day": "4",
+      "description": "change",
+      "eurMove": 15000000,
+      "usdMove": -17550000
+    },
+    {
+      "sheet": "mars",
+      "day": "4",
+      "description": "NCA",
+      "eurMove": -30000000,
+      "usdMove": 35349941
+    },
+    {
+      "sheet": "mars",
+      "day": "23",
+      "description": "DGFIP",
+      "eurMove": 337596,
+      "usdMove": null
+    },
+    {
+      "sheet": "mars",
+      "day": "27",
+      "description": "paie",
+      "eurMove": 310000,
+      "usdMove": null
+    }
+  ]
+}

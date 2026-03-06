@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-03-06T01:06:06.420Z",
+  "source": "2025-2026 Treasury Management Report v11.xlsx",
+  "sgNca2026Usd": [
+    {
+      "month": "Jan-26",
+      "rate": "3.15%",
+      "amountUSD": 190000
+    },
+    {
+      "month": "Feb-26",
+      "rate": "3.15%",
+      "amountUSD": 1280000
+    },
+    {
+      "month": "Mar-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Apr-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "May-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Jun-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Jul-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Aug-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Sep-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Oct-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Nov-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    },
+    {
+      "month": "Dec-26",
+      "rate": "3.15%",
+      "amountUSD": 1450000
+    }
+  ],
+  "jan2026InterestSummary": {
+    "KEUR": {
+      "rate": "2.20%",
+      "eomAmount": "€ 187,938",
+      "interestDue": "€ 384",
+      "interestPaid": "€ 150"
+    },
+    "K$": {
+      "rate": "3.68%",
+      "eomAmount": "$369,433",
+      "interestDue": "$1,183",
+      "interestPaid": "$1,095"
+    }
+  }
+}

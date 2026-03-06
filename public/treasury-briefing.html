@@ -20,7 +20,6 @@
     --red: #DC2626; --r-bg: #FEE2E2; --r-txt: #991B1B;
     --blue: #2563EB; --b-bg: #EFF6FF; --b-txt: #1E40AF;
     --teal: #0D9488; --t-bg: #CCFBF1; --t-txt: #115E59;
-    --purple: #7C3AED; --p-bg: #F5F3FF; --p-txt: #5B21B6;
   }
   body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -31,7 +30,6 @@
   }
   .shell { width: 100%; max-width: 1100px; }
 
-  /* Title bar */
   .tbar {
     background: linear-gradient(135deg, #065A82 0%, #1C7293 100%);
     border-radius: 10px; padding: 12px 20px;
@@ -46,28 +44,26 @@
     padding: 3px 10px; border-radius: 99px; font-size: 10px; font-weight: 600;
     background: rgba(255,255,255,.15); color: white;
   }
+  .jump-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .jump-link {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .jump-link:hover { background: #E2E8F0; }
+  .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .macro-box {
+    padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg2);
+    font-size: 11px; color: var(--slate); line-height: 1.45;
+  }
+  .macro-title { font-size: 11px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
 
-  /* Layout tabs */
-  .tab-bar {
-    display: flex; gap: 4px; margin-bottom: 12px;
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 8px; padding: 4px; width: fit-content;
-  }
-  .tab-btn {
-    padding: 6px 16px; border-radius: 6px; border: none;
-    font-size: 12px; font-weight: 600; cursor: pointer;
-    background: transparent; color: var(--muted);
-    transition: all .15s;
-  }
-  .tab-btn.active {
-    background: #065A82; color: white;
-    box-shadow: 0 1px 3px rgba(6,90,130,.2);
-  }
-  .tab-btn:hover:not(.active) { background: var(--bg2); color: var(--text); }
-  .tab-panel { display: none; }
-  .tab-panel.active { display: block; }
-
-  /* Shared card styles */
   .card {
     background: var(--white); border: 1px solid var(--border);
     border-radius: 10px; overflow: hidden;
@@ -86,7 +82,6 @@
     letter-spacing: .08em; color: var(--muted); margin-bottom: 8px;
   }
 
-  /* Stat callout */
   .stats-row { display: flex; gap: 10px; margin-bottom: 10px; }
   .stat-box {
     flex: 1; padding: 12px 14px; background: var(--bg2);
@@ -94,24 +89,17 @@
   }
   .stat-n { font-size: 22px; font-weight: 800; color: var(--navy); line-height: 1; }
   .stat-n.amber { color: var(--amber); }
-  .stat-n.red { color: var(--red); }
   .stat-n.teal { color: var(--teal); }
   .stat-lbl { font-size: 10px; color: var(--muted); font-weight: 600; margin-top: 3px; }
 
-  /* Badge / pill */
   .badge-sm {
     display: inline-block; font-size: 9px; font-weight: 700;
     padding: 2px 7px; border-radius: 99px; text-transform: uppercase;
   }
-  .badge-green { background: var(--g-bg); color: var(--g-txt); }
   .badge-amber { background: var(--a-bg); color: var(--a-txt); }
-  .badge-red { background: var(--r-bg); color: var(--r-txt); }
   .badge-blue { background: var(--b-bg); color: var(--b-txt); }
-  .badge-gray { background: #F1F5F9; color: #64748B; }
   .badge-teal { background: var(--t-bg); color: var(--t-txt); }
-  .badge-purple { background: var(--p-bg); color: var(--p-txt); }
 
-  /* Flow arrow chain */
   .flow-chain {
     display: flex; align-items: center; gap: 0;
     margin: 12px 0;
@@ -128,7 +116,6 @@
     font-size: 14px; flex-shrink: 0;
   }
 
-  /* System table */
   .sys-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .sys-card {
     padding: 10px 12px; background: var(--bg2);
@@ -137,7 +124,6 @@
   .sys-name { font-size: 12px; font-weight: 700; color: var(--navy); }
   .sys-desc { font-size: 11px; color: var(--slate); margin-top: 2px; line-height: 1.35; }
 
-  /* Control row */
   .ctrl-row {
     display: flex; align-items: center; gap: 8px;
     padding: 6px 0; border-bottom: 1px solid var(--border);
@@ -146,10 +132,8 @@
   .ctrl-row:last-child { border-bottom: none; }
   .ctrl-id { font-weight: 700; color: var(--navy); min-width: 90px; font-size: 11px; }
   .ctrl-title { flex: 1; }
-  .ctrl-status { flex-shrink: 0; }
 
-  /* Question list */
-  .q-list { list-style: none; counter-reset: q; }
+  .q-list { list-style: none; }
   .q-item {
     display: flex; gap: 10px; padding: 8px 0;
     border-bottom: 1px solid var(--border);
@@ -163,31 +147,6 @@
     margin-top: 1px;
   }
 
-  /* Layout B: two-col */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .two-col .card { margin-bottom: 0; }
-
-  /* Layout C: compact rows */
-  .compact-row {
-    display: flex; gap: 10px; margin-bottom: 10px;
-  }
-  .compact-row > .card { flex: 1; margin-bottom: 0; }
-
-  /* People chips */
-  .people-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-  .person-chip {
-    display: inline-flex; align-items: center; gap: 5px;
-    padding: 3px 8px 3px 3px; border-radius: 99px;
-    border: 1.5px solid var(--border); font-size: 10px; font-weight: 600;
-  }
-  .person-av {
-    width: 18px; height: 18px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 7px; font-weight: 700; color: white;
-  }
-  .person-role { font-size: 9px; color: var(--muted); font-weight: 500; }
-
-  /* Decision box */
   .decision-box {
     background: #FFF7ED; border: 1px solid #FED7AA; border-radius: 8px;
     padding: 12px 14px; margin-top: 8px;
@@ -195,464 +154,249 @@
   .decision-title { font-size: 12px; font-weight: 700; color: #9A3412; }
   .decision-desc { font-size: 11px; color: #78350F; margin-top: 4px; line-height: 1.4; }
 
-  /* Footer */
   .footer { display: flex; justify-content: space-between; margin-top: 8px; font-size: 10px; color: var(--muted); }
-
-  /* Known/Unknown split */
-  .known-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .known-col h4 { font-size: 11px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-  .known-item { font-size: 11px; color: var(--slate); line-height: 1.4; padding: 4px 0; border-bottom: 1px solid var(--border); }
-  .known-item:last-child { border-bottom: none; }
-  .unknown-col h4 { font-size: 11px; font-weight: 700; color: var(--amber); margin-bottom: 6px; }
 </style>
 </head>
 <body>
 <div class="shell">
 
-  <!-- Title bar -->
   <div class="tbar">
     <div>
       <h1>Treasury Workstream Briefing</h1>
-      <p>Roxandra Sturdza &middot; Record to Report &middot; Mar 5, 2026</p>
+      <p>Roxandra Sturdza · Treasury Workstream · Mar 5, 2026</p>
     </div>
     <div class="tbar-badges">
-      <span class="tbar-badge">R2R Sub-workstream</span>
+      <span class="tbar-badge">Treasury Focus</span>
       <span class="tbar-badge">Go-live Jan 1, 2027</span>
     </div>
   </div>
 
-  <!-- Layout tabs -->
-  <div class="tab-bar">
-    <button class="tab-btn active" onclick="switchTab('a')">A: Briefing Flow</button>
-    <button class="tab-btn" onclick="switchTab('b')">B: Two-Column</button>
-    <button class="tab-btn" onclick="switchTab('c')">C: Compact Dashboard</button>
+  <div class="card">
+    <div class="card-hdr"><span class="card-title">Treasury Navigation</span></div>
+    <div class="card-body">
+      <div class="section-label">Deep dives</div>
+      <div class="jump-row">
+        <a class="jump-link" target="_parent" href="/abivax/spine/treasury/connectivity">Bank Connectivity Plan</a>
+        <a class="jump-link" target="_parent" href="/abivax/spine/treasury/forecasting">Forecasting Model</a>
+        <a class="jump-link" target="_parent" href="/abivax/spine/treasury/investments">Investments & Non-Operating Cash</a>
+        <a class="jump-link" target="_parent" href="/abivax/spine/treasury/controls">Controls & Auditability</a>
+      </div>
+      <div class="section-label" style="margin-top:10px;">Cross-workstream links</div>
+      <div class="jump-row">
+        <a class="jump-link" target="_parent" href="/abivax/spine/r2r">R2R Brief (Treasury Card)</a>
+        <a class="jump-link" target="_parent" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call">Roxandra Meeting Note</a>
+        <a class="jump-link" target="_parent" href="/abivax/spine/program">Program Command Center</a>
+        <a class="jump-link" target="_parent" href="/abivax/spine/system-map">System Map</a>
+      </div>
+      <div style="margin-top:10px; font-size:11px; color:var(--muted);">
+        Data refresh: 2026-03-06 01:06 UTC from 4 treasury workbooks (<code>data/abivax/treasury/*.json</code>). Current parser quality issues: 3 (see Controls deep dive).
+      </div>
+    </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- LAYOUT A: Briefing Flow (linear, storytelling) -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div id="tab-a" class="tab-panel active">
-
-    <!-- Context -->
-    <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Treasury in the ERP Program</span>
-        <span class="badge-sm badge-teal">R2R Pillar</span>
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Treasury Scope and Current State</span>
+      <span class="badge-sm badge-teal">Briefing Flow</span>
+    </div>
+    <div class="card-body">
+      <div class="stats-row">
+        <div class="stat-box"><div class="stat-n teal">2</div><div class="stat-lbl">Entities in scope (FR + US)</div></div>
+        <div class="stat-box"><div class="stat-n">12</div><div class="stat-lbl">Cash forecast horizon (months)</div></div>
+        <div class="stat-box"><div class="stat-n amber">2</div><div class="stat-lbl">FX-sensitive currencies (EUR, USD)</div></div>
+        <div class="stat-box"><div class="stat-n">1</div><div class="stat-lbl">Bank connected now (SocGen)</div></div>
       </div>
-      <div class="card-body">
-        <div class="people-row">
-          <div class="person-chip">
-            <div class="person-av" style="background:#8B5CF6;">RS</div>
-            Roxandra Sturdza <span class="person-role">FR Treasury</span>
-          </div>
-          <div class="person-chip">
-            <div class="person-av" style="background:#60A5FA;">KG</div>
-            Kimberly Gordon <span class="person-role">US Treasury</span>
-          </div>
-          <div class="person-chip">
-            <div class="person-av" style="background:#0D9488;">JN</div>
-            Jade Nguyen <span class="person-role">IT / Integrations</span>
-          </div>
-        </div>
-        <div class="stats-row">
-          <div class="stat-box"><div class="stat-n teal">2</div><div class="stat-lbl">Entities in scope (FR + US)</div></div>
-          <div class="stat-box"><div class="stat-n">497</div><div class="stat-lbl">Active vendors (Trustpair)</div></div>
-          <div class="stat-box"><div class="stat-n amber">22</div><div class="stat-lbl">Défavorable couple (SOX gate)</div></div>
-          <div class="stat-box"><div class="stat-n">2</div><div class="stat-lbl">Payment campaigns / month</div></div>
-        </div>
-        <div style="font-size:11px; color:var(--slate); line-height:1.4;">
-          Treasury is a sub-workstream under Record to Report. Scope: bank connectivity, cash management, payment validation, and reconciliation for France SA and US LLC. Bank integrations require IT involvement and must be scoped in the NetSuite implementation contract before April mobilization.
-        </div>
+      <div style="font-size:11px; color:var(--slate); line-height:1.4;">
+        Treasury target architecture is ERP to TMS to banks. Priority sequence is TMS-bank connectivity first, then ERP-to-TMS integration.
+        Current treasury operations rely heavily on Excel for reconciliation, forecasting, and non-operating cash movement tracking.
       </div>
     </div>
+  </div>
 
-    <!-- Payment Flow -->
-    <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Current Payment Flow — France SA</span>
-        <span class="badge-sm badge-amber">Manual handoffs</span>
-      </div>
-      <div class="card-body">
-        <div class="flow-chain">
-          <div class="flow-step" style="border-left: 3px solid var(--blue);">
-            <div class="flow-step-name">Sage 100</div>
-            <div class="flow-step-role">GL / Invoicing</div>
-          </div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step" style="border-left: 3px solid var(--green);">
-            <div class="flow-step-name">Trustpair</div>
-            <div class="flow-step-role">Vendor bank validation</div>
-          </div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step" style="border-left: 3px solid var(--teal);">
-            <div class="flow-step-name">Agicap</div>
-            <div class="flow-step-role">Cash management</div>
-          </div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step" style="border-left: 3px solid var(--purple);">
-            <div class="flow-step-name">Globalcash</div>
-            <div class="flow-step-role">Bank payments / EBICS</div>
-          </div>
-        </div>
-        <div class="stats-row">
-          <div class="stat-box"><div class="stat-lbl">Payment cadence</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">10th & 25th of month</div></div>
-          <div class="stat-box"><div class="stat-lbl">Lead time</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">~4 working days</div></div>
-          <div class="stat-box"><div class="stat-lbl">Prep team</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">Juliette & Fatma</div></div>
-          <div class="stat-box"><div class="stat-lbl">Trustpair cost</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">&lt;$15K/yr (SOX control)</div></div>
-        </div>
-      </div>
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Program Fit: Focus Now vs Defer</span>
+      <span class="badge-sm badge-blue">Macro lens</span>
     </div>
-
-    <!-- Systems -->
-    <div class="card">
-      <div class="card-hdr"><span class="card-title">Current Systems Landscape</span></div>
-      <div class="card-body">
-        <div class="sys-grid">
-          <div class="sys-card">
-            <div class="sys-name">Sage 100</div>
-            <div class="sys-desc">General ledger, invoicing, payment file generation. Cannot verify vendor banking info. Cash disbursement journal entries.</div>
-          </div>
-          <div class="sys-card">
-            <div class="sys-name">Trustpair</div>
-            <div class="sys-desc">Vendor bank validation per wire transfer. Load-bearing SOX control. Confirmed for NetSuite integration. Validates all 497 vendors.</div>
-          </div>
-          <div class="sys-card">
-            <div class="sys-name">Agicap</div>
-            <div class="sys-desc">Cash management. Role unclear — execution only or also forecasting? Future unclear post-ERP (stays or replaced by NetSuite?).</div>
-          </div>
-          <div class="sys-card">
-            <div class="sys-name">Globalcash + EBICS</div>
-            <div class="sys-desc">Bank payment application. EBICS signer keys referenced. Authorization levels and signer structure not documented.</div>
-          </div>
+    <div class="card-body">
+      <div class="macro-grid">
+        <div class="macro-box">
+          <div class="macro-title">Decision-critical now (program-moving)</div>
+          <div>1) TMS strategy gate (Agicap remediation vs replacement path).</div>
+          <div>2) Citi and Wells connectivity owners + target dates.</div>
+          <div>3) Treasury-to-GL evidence bridge (minimum viable control design).</div>
+          <div>4) FX rate source/date governance standard for consistent reporting.</div>
         </div>
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Treasury Controls & Compliance</span>
-        <span class="badge-sm badge-blue">CFTI Register</span>
-      </div>
-      <div class="card-body">
-        <div class="section-label">Treasury-Specific Controls</div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-TR-12G</span><span class="ctrl-title">Segregation of Duties</span><span class="ctrl-status badge-sm badge-amber">Design to complete</span></div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-TR-13G</span><span class="ctrl-title">SOC Report Review</span><span class="ctrl-status badge-sm badge-amber">Design to complete</span></div>
-        <div class="section-label" style="margin-top:10px;">Payment-Stage Controls (P2P Pillar)</div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-PTP-08</span><span class="ctrl-title">Bank Reconciliation (Sage)</span><span class="ctrl-status badge-sm badge-green">Ongoing</span></div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-PTP-09</span><span class="ctrl-title">Bank Reconciliation Review (Sage)</span><span class="ctrl-status badge-sm badge-green">Ongoing</span></div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-PTP-10</span><span class="ctrl-title">Segregation of Duties in Agicap</span><span class="ctrl-status badge-sm badge-gray">Out-of-Scope</span></div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-PTP-11</span><span class="ctrl-title">Cash Disbursement Journal Entry</span><span class="ctrl-status badge-sm badge-gray">Out-of-Scope</span></div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-PTP-12</span><span class="ctrl-title">Payment Release Prevention — Unapproved Vendors (Globalcash)</span><span class="ctrl-status badge-sm badge-gray">Out-of-Scope</span></div>
-        <div class="ctrl-row"><span class="ctrl-id">FR-PTP-14G</span><span class="ctrl-title">Search for Unrecorded Liabilities</span><span class="ctrl-status badge-sm badge-purple">ERP Signal</span></div>
-      </div>
-    </div>
-
-    <!-- Open Questions -->
-    <div class="card">
-      <div class="card-hdr">
-        <span class="card-title">Open Questions for Roxandra</span>
-        <span class="badge-sm badge-red">Discussion items</span>
-      </div>
-      <div class="card-body">
-        <ul class="q-list">
-          <li class="q-item"><span class="q-num">1</span><span>Can you walk through the end-to-end payment process step by step? From invoice approval to bank execution — who touches what, and where?</span></li>
-          <li class="q-item"><span class="q-num">2</span><span>Bank account structure — how many accounts, which banks (France and US)? Any shared treasury processes across entities?</span></li>
-          <li class="q-item"><span class="q-num">3</span><span>Agicap — is it used for cash forecasting or just payment execution? Does it stay post-ERP, or does NetSuite replace it?</span></li>
-          <li class="q-item"><span class="q-num">4</span><span>Globalcash — payment initiation only, or also approval/authorization? What's the relationship with EBICS?</span></li>
-          <li class="q-item"><span class="q-num">5</span><span>EBICS signer keys — who are the authorized signers? What are the authorization thresholds?</span></li>
-          <li class="q-item"><span class="q-num">6</span><span>Bank reconciliation — how often? Daily, weekly, monthly? Where is evidence retained today?</span></li>
-          <li class="q-item"><span class="q-num">7</span><span>Intercompany cash movements — is there a formal process between France SA and US LLC?</span></li>
-          <li class="q-item"><span class="q-num">8</span><span>Cash forecasting — current approach and tools? Any visibility gaps you'd want the ERP to solve?</span></li>
-          <li class="q-item"><span class="q-num">9</span><span>What's working well today vs what's painful? Where are the manual bottlenecks?</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Decision -->
-    <div class="card">
-      <div class="card-hdr"><span class="card-title">Key Decision & Next Steps</span></div>
-      <div class="card-body">
-        <div class="decision-box">
-          <div class="decision-title">Decision needed: Treasury module scope for Phase 1</div>
-          <div class="decision-desc">Which banking integrations are in Phase 1 ERP scope? Bank connectivity requires IT integration work and must be included in the NetSuite implementation contract. Input needed from Roxandra, Jade (IT), and Mike before April mobilization.</div>
-        </div>
-        <div style="margin-top:10px; font-size:11px; color:var(--slate); line-height:1.5;">
-          <strong style="color:var(--navy);">Next steps:</strong> (1) Roxandra to provide end-to-end payment process map. (2) Confirm bank account structure and Agicap future. (3) Document EBICS authorization levels. (4) Align with Jade on integration feasibility. (5) Feed treasury scope into NetSuite contract before commercial sign-off.
+        <div class="macro-box">
+          <div class="macro-title">Reference depth (can be phased)</div>
+          <div>1) Full historical workbook normalization and model cleanup.</div>
+          <div>2) Rich analytics on non-operating cash movements.</div>
+          <div>3) Expanded dashboarding beyond decision tracker and control gates.</div>
+          <div>4) Lower-priority process detail that does not change architecture or control decisions.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- LAYOUT B: Two-Column (reference + action split) -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div id="tab-b" class="tab-panel">
-
-    <div class="two-col">
-      <!-- Left column: What we know -->
-      <div>
-        <div class="card">
-          <div class="card-hdr"><span class="card-title">People & Scope</span></div>
-          <div class="card-body">
-            <div class="people-row">
-              <div class="person-chip">
-                <div class="person-av" style="background:#8B5CF6;">RS</div>
-                Roxandra Sturdza <span class="person-role">FR Treasury</span>
-              </div>
-              <div class="person-chip">
-                <div class="person-av" style="background:#60A5FA;">KG</div>
-                Kimberly Gordon <span class="person-role">US Treasury</span>
-              </div>
-              <div class="person-chip">
-                <div class="person-av" style="background:#0D9488;">JN</div>
-                Jade Nguyen <span class="person-role">IT</span>
-              </div>
-            </div>
-            <div style="font-size:11px; color:var(--slate); line-height:1.4;">
-              Treasury is a sub-workstream under R2R. Scope: bank connectivity, cash management, payment validation, and reconciliation for France SA and US LLC.
-            </div>
-          </div>
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Treasury Operating Flow</span>
+      <span class="badge-sm badge-amber">Manual-heavy</span>
+    </div>
+    <div class="card-body">
+      <div class="flow-chain">
+        <div class="flow-step" style="border-left: 3px solid var(--blue);">
+          <div class="flow-step-name">Sage Inputs</div>
+          <div class="flow-step-role">Prior-month accounting exports</div>
         </div>
-
-        <div class="card">
-          <div class="card-hdr"><span class="card-title">Payment Flow</span></div>
-          <div class="card-body">
-            <div class="flow-chain">
-              <div class="flow-step" style="border-left: 3px solid var(--blue);"><div class="flow-step-name">Sage</div><div class="flow-step-role">GL</div></div>
-              <div class="flow-arrow">→</div>
-              <div class="flow-step" style="border-left: 3px solid var(--green);"><div class="flow-step-name">Trustpair</div><div class="flow-step-role">Validation</div></div>
-              <div class="flow-arrow">→</div>
-              <div class="flow-step" style="border-left: 3px solid var(--teal);"><div class="flow-step-name">Agicap</div><div class="flow-step-role">Cash</div></div>
-              <div class="flow-arrow">→</div>
-              <div class="flow-step" style="border-left: 3px solid var(--purple);"><div class="flow-step-name">Bank</div><div class="flow-step-role">EBICS</div></div>
-            </div>
-            <div style="font-size:11px; color:var(--slate); line-height:1.5;">
-              Two campaigns/month (10th & 25th). ~4 working days lead time. Juliette & Fatma prepare payment files. Trustpair validates all 497 vendors — load-bearing SOX control (&lt;$15K/yr).
-            </div>
-          </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step" style="border-left: 3px solid var(--teal);">
+          <div class="flow-step-name">Agicap + Excel</div>
+          <div class="flow-step-role">Cash, recon, forecasts, investments</div>
         </div>
-
-        <div class="card">
-          <div class="card-hdr"><span class="card-title">Controls Status</span></div>
-          <div class="card-body">
-            <div class="ctrl-row"><span class="ctrl-id">FR-TR-12G</span><span class="ctrl-title">Segregation of Duties</span><span class="ctrl-status badge-sm badge-amber">Design</span></div>
-            <div class="ctrl-row"><span class="ctrl-id">FR-TR-13G</span><span class="ctrl-title">SOC Report Review</span><span class="ctrl-status badge-sm badge-amber">Design</span></div>
-            <div class="ctrl-row"><span class="ctrl-id">FR-PTP-08</span><span class="ctrl-title">Bank Reconciliation</span><span class="ctrl-status badge-sm badge-green">Ongoing</span></div>
-            <div class="ctrl-row"><span class="ctrl-id">FR-PTP-09</span><span class="ctrl-title">Recon Review</span><span class="ctrl-status badge-sm badge-green">Ongoing</span></div>
-            <div class="ctrl-row"><span class="ctrl-id">FR-PTP-10</span><span class="ctrl-title">Agicap SoD</span><span class="ctrl-status badge-sm badge-gray">Out-of-Scope</span></div>
-            <div class="ctrl-row"><span class="ctrl-id">FR-PTP-12</span><span class="ctrl-title">Payment Release Prevention</span><span class="ctrl-status badge-sm badge-gray">Out-of-Scope</span></div>
-            <div class="ctrl-row"><span class="ctrl-id">FR-PTP-14G</span><span class="ctrl-title">Unrecorded Liabilities</span><span class="ctrl-status badge-sm badge-purple">ERP Signal</span></div>
-          </div>
+        <div class="flow-arrow">?</div>
+        <div class="flow-step" style="border-left: 3px solid var(--green);">
+          <div class="flow-step-name">Banks + Firms</div>
+          <div class="flow-step-role">SocGen live; Citi/Wells pending; valuation feeds</div>
         </div>
       </div>
-
-      <!-- Right column: What we need -->
-      <div>
-        <div class="card">
-          <div class="card-hdr">
-            <span class="card-title">What We Know vs Don't Know</span>
-          </div>
-          <div class="card-body">
-            <div class="known-grid">
-              <div class="known-col">
-                <h4 style="color:var(--green);">Confirmed</h4>
-                <div class="known-item">Roxandra owns FR treasury, Kimberly owns US</div>
-                <div class="known-item">Payment cadence: 10th & 25th</div>
-                <div class="known-item">Trustpair validates all 497 vendors</div>
-                <div class="known-item">Sage cannot verify banking info</div>
-                <div class="known-item">EBICS signer keys exist</div>
-                <div class="known-item">Trustpair NetSuite integration confirmed in scope</div>
-              </div>
-              <div class="unknown-col">
-                <h4>Gaps</h4>
-                <div class="known-item">Bank account structure unknown</div>
-                <div class="known-item">Agicap future unclear (stays or goes?)</div>
-                <div class="known-item">Globalcash role not fully mapped</div>
-                <div class="known-item">EBICS authorization levels unknown</div>
-                <div class="known-item">Reconciliation process not documented</div>
-                <div class="known-item">Intercompany cash flows unmapped</div>
-                <div class="known-item">US banking setup not baselined</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-hdr"><span class="card-title">Questions for Roxandra</span><span class="badge-sm badge-red">9 items</span></div>
-          <div class="card-body">
-            <ul class="q-list">
-              <li class="q-item"><span class="q-num">1</span><span>Walk through end-to-end payment process</span></li>
-              <li class="q-item"><span class="q-num">2</span><span>Bank accounts: how many, which banks?</span></li>
-              <li class="q-item"><span class="q-num">3</span><span>Agicap: forecasting or execution? Stays post-ERP?</span></li>
-              <li class="q-item"><span class="q-num">4</span><span>Globalcash: initiation only or also authorization?</span></li>
-              <li class="q-item"><span class="q-num">5</span><span>EBICS signers and thresholds?</span></li>
-              <li class="q-item"><span class="q-num">6</span><span>Reconciliation frequency and evidence?</span></li>
-              <li class="q-item"><span class="q-num">7</span><span>Intercompany cash movement process?</span></li>
-              <li class="q-item"><span class="q-num">8</span><span>Cash forecasting approach and tools?</span></li>
-              <li class="q-item"><span class="q-num">9</span><span>What's working vs what's painful?</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="decision-box">
-          <div class="decision-title">Key Decision: Treasury Phase 1 scope</div>
-          <div class="decision-desc">Which banking integrations ship in Phase 1? Must be in NetSuite contract before April mobilization. Owners: Mike, Roxandra, Jade.</div>
-        </div>
+      <div class="stats-row">
+        <div class="stat-box"><div class="stat-lbl">Treasury floor</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">EUR 70K / USD 30K</div></div>
+        <div class="stat-box"><div class="stat-lbl">Excess cash</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">Swept to ops/investment</div></div>
+        <div class="stat-box"><div class="stat-lbl">Forecasting</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">12 months parsed (Jan-Dec)</div></div>
+        <div class="stat-box"><div class="stat-lbl">Reconciliation</div><div style="font-size:12px; font-weight:700; color:var(--navy); margin-top:2px;">Non-daily, treasury-side</div></div>
+      </div>
+      <div style="font-size:11px; color:var(--slate); line-height:1.4;">
+        Parsed snapshot (Consolidated Forecast in EUR): Jan opening 530,158 kEUR; Jan ending 497,677 kEUR; Jan delta -16,566 kEUR.
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- LAYOUT C: Compact Dashboard (dense, at-a-glance) -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div id="tab-c" class="tab-panel">
-
-    <!-- Top stats bar -->
-    <div class="stats-row">
-      <div class="stat-box"><div class="stat-n teal">2</div><div class="stat-lbl">Entities (FR + US)</div></div>
-      <div class="stat-box"><div class="stat-n">497</div><div class="stat-lbl">Active vendors</div></div>
-      <div class="stat-box"><div class="stat-n amber">22</div><div class="stat-lbl">Défavorable couple</div></div>
-      <div class="stat-box"><div class="stat-n">2</div><div class="stat-lbl">Campaigns / month</div></div>
-      <div class="stat-box"><div class="stat-n amber">2</div><div class="stat-lbl">Controls: Design needed</div></div>
-      <div class="stat-box"><div class="stat-n green" style="color:var(--green)">2</div><div class="stat-lbl">Controls: Ongoing</div></div>
-    </div>
-
-    <div class="compact-row">
-      <!-- Systems + Flow -->
-      <div class="card" style="flex:3;">
-        <div class="card-hdr"><span class="card-title">Systems & Payment Flow</span></div>
-        <div class="card-body">
-          <div class="flow-chain">
-            <div class="flow-step" style="border-left: 3px solid var(--blue);"><div class="flow-step-name">Sage 100</div><div class="flow-step-role">GL / Invoicing</div></div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step" style="border-left: 3px solid var(--green);"><div class="flow-step-name">Trustpair</div><div class="flow-step-role">Bank validation</div></div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step" style="border-left: 3px solid var(--teal);"><div class="flow-step-name">Agicap</div><div class="flow-step-role">Cash mgmt (?)</div></div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step" style="border-left: 3px solid var(--purple);"><div class="flow-step-name">Globalcash</div><div class="flow-step-role">EBICS / Bank</div></div>
-          </div>
-          <div style="display:flex; gap:8px; margin-top:8px;">
-            <div style="flex:1; font-size:10px; color:var(--slate); padding:6px 8px; background:var(--bg2); border-radius:6px;">
-              <strong style="color:var(--navy);">Cadence:</strong> 10th & 25th &middot; ~4 day lead time &middot; Juliette & Fatma prep
-            </div>
-            <div style="flex:1; font-size:10px; color:var(--slate); padding:6px 8px; background:var(--bg2); border-radius:6px;">
-              <strong style="color:var(--navy);">Trustpair:</strong> &lt;$15K/yr &middot; Load-bearing SOX control &middot; NetSuite integration confirmed
-            </div>
-          </div>
+  <div class="card">
+    <div class="card-hdr"><span class="card-title">Systems and Tooling</span></div>
+    <div class="card-body">
+      <div class="sys-grid">
+        <div class="sys-card">
+          <div class="sys-name">Agicap (current TMS)</div>
+          <div class="sys-desc">Actively used in treasury operations. Keep-vs-replace decision is open due to capability and controls concerns.</div>
+        </div>
+        <div class="sys-card">
+          <div class="sys-name">Kyriba / FIS / Diapason (references)</div>
+          <div class="sys-desc">Discussed as TMS references/benchmarks, but not current operating systems in this workflow.</div>
+        </div>
+        <div class="sys-card">
+          <div class="sys-name">Excel workbooks (core execution)</div>
+          <div class="sys-desc">Cash forecast, daily/monthly planning, investment tracking, and valuation loading are currently spreadsheet-driven.</div>
+        </div>
+        <div class="sys-card">
+          <div class="sys-name">External valuation inputs</div>
+          <div class="sys-desc">Valuations received from SocGen and other management/investment firms (including Wells Fargo); no Bloomberg in place.</div>
         </div>
       </div>
-
-      <!-- People -->
-      <div class="card" style="flex:1;">
-        <div class="card-hdr"><span class="card-title">Owners</span></div>
-        <div class="card-body">
-          <div style="display:flex; flex-direction:column; gap:8px;">
-            <div class="person-chip" style="border:none; padding:0;">
-              <div class="person-av" style="background:#8B5CF6;">RS</div>
-              <div><div style="font-size:11px; font-weight:700;">Roxandra Sturdza</div><div class="person-role">FR Treasury</div></div>
-            </div>
-            <div class="person-chip" style="border:none; padding:0;">
-              <div class="person-av" style="background:#60A5FA;">KG</div>
-              <div><div style="font-size:11px; font-weight:700;">Kimberly Gordon</div><div class="person-role">US Treasury</div></div>
-            </div>
-            <div class="person-chip" style="border:none; padding:0;">
-              <div class="person-av" style="background:#0D9488;">JN</div>
-              <div><div style="font-size:11px; font-weight:700;">Jade Nguyen</div><div class="person-role">IT / Integrations</div></div>
-            </div>
-          </div>
-        </div>
+      <div style="margin-top:10px; font-size:11px; color:var(--slate); line-height:1.5;">
+        <strong style="color:var(--navy);">Artifacts received (Mar 5, 2026):</strong> cash forecast workbook, monthly planning workbook,
+        treasury management report, and FX/investment exposure workbook.
       </div>
     </div>
+  </div>
 
-    <div class="compact-row">
-      <!-- Known vs Unknown -->
-      <div class="card" style="flex:1;">
-        <div class="card-hdr"><span class="card-title">Confirmed Facts</span><span class="badge-sm badge-green">6 items</span></div>
-        <div class="card-body" style="font-size:11px; color:var(--slate); line-height:1.5;">
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Roxandra = FR, Kimberly = US</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Two campaigns/month: 10th & 25th</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Trustpair validates all 497 vendors</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Sage cannot verify banking info</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">EBICS signer keys referenced</div>
-          <div style="padding:3px 0;">Trustpair → NetSuite integration in scope</div>
-        </div>
-      </div>
-
-      <!-- Gaps -->
-      <div class="card" style="flex:1;">
-        <div class="card-hdr"><span class="card-title">Gaps to Close</span><span class="badge-sm badge-amber">7 items</span></div>
-        <div class="card-body" style="font-size:11px; color:var(--slate); line-height:1.5;">
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Bank account structure unknown</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Agicap future: stays or replaced?</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Globalcash role not mapped</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">EBICS authorization levels unknown</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Reconciliation process undocumented</div>
-          <div style="padding:3px 0; border-bottom:1px solid var(--border);">Intercompany cash flows unmapped</div>
-          <div style="padding:3px 0;">US banking not baselined</div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <div class="card" style="flex:1;">
-        <div class="card-hdr"><span class="card-title">Controls</span></div>
-        <div class="card-body">
-          <div class="ctrl-row"><span class="ctrl-id">FR-TR-12G</span><span class="ctrl-title">SoD</span><span class="ctrl-status badge-sm badge-amber">Design</span></div>
-          <div class="ctrl-row"><span class="ctrl-id">FR-TR-13G</span><span class="ctrl-title">SOC Review</span><span class="ctrl-status badge-sm badge-amber">Design</span></div>
-          <div class="ctrl-row"><span class="ctrl-id">FR-PTP-08</span><span class="ctrl-title">Bank Recon</span><span class="ctrl-status badge-sm badge-green">OK</span></div>
-          <div class="ctrl-row"><span class="ctrl-id">FR-PTP-09</span><span class="ctrl-title">Recon Review</span><span class="ctrl-status badge-sm badge-green">OK</span></div>
-          <div class="ctrl-row"><span class="ctrl-id">FR-PTP-14G</span><span class="ctrl-title">Unrecorded Liab.</span><span class="ctrl-status badge-sm badge-purple">ERP</span></div>
-        </div>
-      </div>
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Interconnectivity and Handoffs</span>
+      <span class="badge-sm badge-teal">Spine linkage</span>
     </div>
+    <div class="card-body">
+      <div class="ctrl-row"><span class="ctrl-id">R2R</span><span class="ctrl-title">Consumes treasury evidence and balances for close/reporting; treasury card now links to all deep dives.</span><a class="jump-link" target="_parent" href="/abivax/spine/r2r">Open R2R</a></div>
+      <div class="ctrl-row"><span class="ctrl-id">Notes</span><span class="ctrl-title">Call notes moved out of briefing into note reference to keep briefing decision-focused.</span><a class="jump-link" target="_parent" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call">Open Note</a></div>
+      <div class="ctrl-row"><span class="ctrl-id">System Map</span><span class="ctrl-title">Treasury pattern to enforce: ERP -> TMS -> Banks, with exception handling and evidence capture.</span><a class="jump-link" target="_parent" href="/abivax/spine/system-map">Open Map</a></div>
+      <div class="ctrl-row"><span class="ctrl-id">Program</span><span class="ctrl-title">Decision tracker items should be mirrored into weekly program decisions for owner/date accountability.</span><a class="jump-link" target="_parent" href="/abivax/spine/program">Open Program</a></div>
+    </div>
+  </div>
 
-    <!-- Questions + Decision -->
-    <div class="compact-row">
-      <div class="card" style="flex:2;">
-        <div class="card-hdr"><span class="card-title">Discussion Questions</span><span class="badge-sm badge-red">9 items</span></div>
-        <div class="card-body">
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0;">
-            <div class="q-item"><span class="q-num">1</span><span>End-to-end payment walkthrough</span></div>
-            <div class="q-item"><span class="q-num">2</span><span>Bank accounts: count & banks</span></div>
-            <div class="q-item"><span class="q-num">3</span><span>Agicap: forecasting or execution?</span></div>
-            <div class="q-item"><span class="q-num">4</span><span>Globalcash: initiation or auth?</span></div>
-            <div class="q-item"><span class="q-num">5</span><span>EBICS signers & thresholds</span></div>
-            <div class="q-item"><span class="q-num">6</span><span>Reconciliation freq & evidence</span></div>
-            <div class="q-item"><span class="q-num">7</span><span>Intercompany cash process</span></div>
-            <div class="q-item"><span class="q-num">8</span><span>Cash forecasting tools</span></div>
-            <div class="q-item" style="grid-column:span 2;"><span class="q-num">9</span><span>What's working well vs what's painful?</span></div>
-          </div>
-        </div>
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Cleanup Backlog (Macro)</span>
+      <span class="badge-sm badge-amber">Execution queue</span>
+    </div>
+    <div class="card-body">
+      <div class="ctrl-row"><span class="ctrl-id">CLN-01</span><span class="ctrl-title">Normalize treasury workbook fields and date formats in parser outputs.</span><span class="badge-sm badge-amber">Owner: Data/Pipeline · Target: Week 1</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">CLN-02</span><span class="ctrl-title">Convert DEC-01..DEC-05 into program-level decision log entries with real dates.</span><span class="badge-sm badge-amber">Owner: Program PMO · Target: Week 1</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">CLN-03</span><span class="ctrl-title">Define minimal treasury-to-R2R handoff artifact set (monthly and close cadence).</span><span class="badge-sm badge-amber">Owner: Treasury + R2R · Target: Week 1</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">CLN-04</span><span class="ctrl-title">Add system-map node detail for ERP -> TMS -> Banks error handling and acknowledgements.</span><span class="badge-sm badge-amber">Owner: Integration · Target: Week 2</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">CLN-05</span><span class="ctrl-title">Lock US treasury scope boundary and whether it follows FR template or separate design.</span><span class="badge-sm badge-amber">Owner: Kimberly + Roxandra · Target: Week 2</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Treasury Controls and Risks</span>
+      <span class="badge-sm badge-blue">CFTI + operating risks</span>
+    </div>
+    <div class="card-body">
+      <div class="section-label">Control status</div>
+      <div class="ctrl-row"><span class="ctrl-id">FR-TR-12G</span><span class="ctrl-title">Segregation of Duties</span><span class="badge-sm badge-amber">Design to complete</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">FR-TR-13G</span><span class="ctrl-title">SOC Report Review</span><span class="badge-sm badge-amber">Design to complete</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">TRE-01</span><span class="ctrl-title">Treasury recon design and review evidence</span><span class="badge-sm badge-amber">Needs formal design</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">TRE-02</span><span class="ctrl-title">Bridge from treasury outputs to GL/audit evidence</span><span class="badge-sm badge-amber">Needs formal design</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">TRE-03</span><span class="ctrl-title">FX valuation date governance</span><span class="badge-sm badge-amber">Needs standardization</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Treasury-Specific Open Questions</span>
+      <span class="badge-sm badge-amber">7 items</span>
+    </div>
+    <div class="card-body">
+      <ul class="q-list">
+        <li class="q-item"><span class="q-num">1</span><span>Agicap decision timing: keep-with-remediation or replace-via-RFP (with Mazars support)?</span></li>
+        <li class="q-item"><span class="q-num">2</span><span>Connectivity plan: exact dates and owners for Citibank and Wells Fargo onboarding.</span></li>
+        <li class="q-item"><span class="q-num">3</span><span>SOX/SOC remediation path and timeline for the selected TMS path.</span></li>
+        <li class="q-item"><span class="q-num">4</span><span>Formal GL and audit evidence bridge for treasury-side recon and forecasting outputs.</span></li>
+        <li class="q-item"><span class="q-num">5</span><span>FX valuation-date rule: authoritative source, cutoff, and consistency checks.</span></li>
+        <li class="q-item"><span class="q-num">6</span><span>Non-operating cash movement controls for investments, structured notes, and month-end valuation updates.</span></li>
+        <li class="q-item"><span class="q-num">7</span><span>Formalize Roxandra's intercompany interest-review control boundary (accounting executes, treasury reviews).</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-hdr">
+      <span class="card-title">Treasury Decision Tracker</span>
+      <span class="badge-sm badge-blue">Owner + Date discipline</span>
+    </div>
+    <div class="card-body">
+      <div class="ctrl-row"><span class="ctrl-id">DEC-01</span><span class="ctrl-title">Agicap keep vs replace (Mazars RFP decision gate)</span><span class="badge-sm badge-amber">Owner: Mike/Roxandra · Date: TBD</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">DEC-02</span><span class="ctrl-title">Citibank connectivity milestone plan</span><span class="badge-sm badge-amber">Owner: Roxandra/Jade · Date: TBD</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">DEC-03</span><span class="ctrl-title">Wells Fargo connectivity milestone plan</span><span class="badge-sm badge-amber">Owner: Roxandra/Jade · Date: TBD</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">DEC-04</span><span class="ctrl-title">FX valuation date governance rule</span><span class="badge-sm badge-amber">Owner: Treasury + Accounting · Date: TBD</span></div>
+      <div class="ctrl-row"><span class="ctrl-id">DEC-05</span><span class="ctrl-title">Treasury-to-GL evidence bridge model</span><span class="badge-sm badge-amber">Owner: Treasury + GL · Date: TBD</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-hdr"><span class="card-title">Key Decision and Next Steps</span></div>
+    <div class="card-body">
+      <div class="decision-box">
+        <div class="decision-title">Decision needed: Keep or replace Agicap</div>
+        <div class="decision-desc">Agicap currently lacks SOC/SOX reporting coverage and treasury operations remain manual-heavy. Decide remediation-in-place versus replacement via Mazars-supported RFP before locking long-term TMS architecture.</div>
       </div>
-      <div class="card" style="flex:1;">
-        <div class="card-hdr"><span class="card-title">Key Decision</span></div>
-        <div class="card-body">
-          <div class="decision-box" style="margin-top:0;">
-            <div class="decision-title">Treasury Phase 1 Scope</div>
-            <div class="decision-desc">Which banking integrations are in Phase 1? Must be in NetSuite contract before April mobilization.</div>
-          </div>
-          <div style="margin-top:8px; font-size:10px; color:var(--muted);">
-            <strong>Owners:</strong> Mike, Roxandra, Jade<br>
-            <strong>Deadline:</strong> Before blueprint (mid-April)
-          </div>
-        </div>
+      <div style="margin-top:10px; font-size:11px; color:var(--slate); line-height:1.5;">
+        <strong style="color:var(--navy);">Next steps:</strong>
+        (1) Confirm Agicap decision path and target date.
+        (2) Lock Citi/Wells connectivity milestones.
+        (3) Define GL/audit evidence bridge for treasury outputs.
+        (4) Standardize FX valuation-date governance.
+        (5) Prioritize automation scope for forecast and investment workflows.
       </div>
     </div>
   </div>
 
   <div class="footer">
-    <span>Abivax ERP Program &middot; Treasury Workstream &middot; Confidential</span>
+    <span>Abivax ERP Program · Treasury Workstream · Confidential</span>
     <span>Mar 5, 2026</span>
   </div>
 </div>
-
-<script>
-function switchTab(id) {
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('tab-' + id).classList.add('active');
-  event.target.classList.add('active');
-}
-</script>
 </body>
 </html>
+

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-03-06T01:06:06.422Z",
+  "filesIngested": 4,
+  "forecastMonthsParsed": 12,
+  "janOpeningKEur": 530158,
+  "janEndingKEur": 497677,
+  "janVarianceKEur": -32481,
+  "usdNcaRowsParsed": 12,
+  "planningEventsParsed": 4,
+  "placementRowsParsed": 6,
+  "latestPlacementDate": "3/31/26",
+  "latestPlacementAmount": 139851667,
+  "dataQualityIssues": 3
+}

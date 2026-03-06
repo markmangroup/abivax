@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasury - Bank Connectivity Plan</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+  .shell { max-width: 1080px; margin: 0 auto; padding: 16px; }
+  .top { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .top a { text-decoration: none; font-size: 12px; font-weight: 600; color: #0f2a4a; background: #e2e8f0; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 10px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+  .hdr { background: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: 10px 14px; font-weight: 700; color: #0f2a4a; font-size: 13px; }
+  .body { padding: 12px 14px; font-size: 12px; color: #334155; line-height: 1.45; }
+  .row { display: flex; gap: 8px; padding: 7px 0; border-bottom: 1px solid #e2e8f0; }
+  .row:last-child { border-bottom: none; }
+  .id { min-width: 120px; font-weight: 700; color: #0f2a4a; }
+  .pill { font-size: 10px; font-weight: 700; text-transform: uppercase; border-radius: 99px; padding: 2px 8px; }
+  .g { background: #dcfce7; color: #166534; }
+  .a { background: #fef3c7; color: #92400e; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <a target="_parent" href="/abivax/spine/treasury">Back to Treasury Brief</a>
+    <a target="_parent" href="/abivax/spine/treasury/forecasting">Forecasting</a>
+    <a target="_parent" href="/abivax/spine/treasury/investments">Investments</a>
+    <a target="_parent" href="/abivax/spine/treasury/controls">Controls</a>
+    <a target="_parent" href="/abivax/spine/r2r">R2R</a>
+    <a target="_parent" href="/abivax/spine/notes#20260305-treasury-roxandra-workstream-call">Notes</a>
+    <a target="_parent" href="/abivax/spine/program">Program</a>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Bank Connectivity Baseline (Mar 5, 2026)</div>
+    <div class="body">
+      <div class="row"><div class="id">SocGen</div><div>Connected directly today through current treasury tooling.</div><span class="pill g">Live</span></div>
+      <div class="row"><div class="id">Citibank</div><div>Target connection pending. Owner/date to be confirmed in plan.</div><span class="pill a">Pending</span></div>
+      <div class="row"><div class="id">Wells Fargo</div><div>Target connection pending. Owner/date to be confirmed in plan.</div><span class="pill a">Pending</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Target Sequence</div>
+    <div class="body">
+      <div>1) Stand up TMS-to-bank connectivity.</div>
+      <div>2) Keep this stable before ERP cutover.</div>
+      <div>3) Connect ERP payment interface into TMS once ERP is ready.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="hdr">Open Items To Close</div>
+    <div class="body">
+      <div>- Citibank onboarding owner and target date.</div>
+      <div>- Wells Fargo onboarding owner and target date.</div>
+      <div>- Interface protocol and failure-handling/evidence path for bank acknowledgements.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

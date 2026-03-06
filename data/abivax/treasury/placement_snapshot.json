@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-03-06T01:06:06.421Z",
+  "source": "Management placements  et Exposition FX 20251112.xlsx",
+  "placementSnapshots": [
+    {
+      "sheet": "Placement USD",
+      "date": "11/30/25",
+      "amount": 255781107,
+      "rawRow": [
+        "Cash Balance",
+        "11/30/25",
+        "",
+        "255,781,107",
+        "",
+        "",
+        "",
+        "64,751"
+      ]
+    },
+    {
+      "sheet": "Placement USD",
+      "date": "12/31/25",
+      "amount": 184360000,
+      "rawRow": [
+        "Cash Balance",
+        "12/31/25",
+        "",
+        "184,360,000",
+        "",
+        "",
+        "",
+        "240,000"
+      ]
+    },
+    {
+      "sheet": "Placement USD",
+      "date": "1/31/26",
+      "amount": 182360000,
+      "rawRow": [
+        "Cash Balance",
+        "1/31/26",
+        "",
+        "182,360,000",
+        "",
+        "",
+        "",
+        "240,000"
+      ]
+    },
+    {
+      "sheet": "Placement USD",
+      "date": "2/28/00",
+      "amount": 178693333,
+      "rawRow": [
+        "Cash Balance",
+        "2/28/00",
+        "",
+        "178,693,333",
+        "",
+        "",
+        "",
+        "240,000"
+      ]
+    },
+    {
+      "sheet": "Placement USD",
+      "date": "04/03/23026",
+      "amount": 143518333,
+      "rawRow": [
+        "Cash Balance",
+        "04/03/23026",
+        "",
+        "143,518,333",
+        "",
+        "",
+        "",
+        "240,000"
+      ]
+    },
+    {
+      "sheet": "Placement USD",
+      "date": "3/31/26",
+      "amount": 139851667,
+      "rawRow": [
+        "Cash Balance",
+        "3/31/26",
+        "",
+        "139,851,667",
+        "",
+        "",
+        "",
+        "240,000"
+      ]
+    }
+  ]
+}
