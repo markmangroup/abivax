@@ -6,19 +6,58 @@
       "audience": "Board",
       "meetingDate": "2026-03-19",
       "owner": "Mike Markman",
-      "status": "in-review-exec",
-      "objective": "Secure board alignment on ERP selection direction, implementation risk controls, and the first 90-day execution posture to protect Jan 1, 2027 go-live.",
+      "status": "active-redesign",
+      "objective": "Secure board alignment on the recommended NetSuite implementation posture, the operating model to run the program, and the first 90-day mobilization plan required to protect the Jan 1, 2027 go-live.",
       "narrative": [
-        "Abivax ran a structured selection process with documented outputs across all phases.",
-        "Decision quality now depends on delivery model realism and internal capacity, not feature marketing.",
-        "Board decision this cycle should lock direction, owners, and governance rhythm."
+        "Platform selection is no longer the hard part; execution model quality now determines whether Abivax gets a controlled implementation or a noisy one.",
+        "The proposed posture is NetSuite as platform and likely builder, with KPMG running day-to-day PMO and local coordination in France.",
+        "CFGI was considered for implementation and PMO support, but the current working recommendation is KPMG for PMO and related governance support.",
+        "The board discussion should lock operating model, resource posture, governance rhythm, risk guardrails, and the boundary between Phase 1 core ERP scope and broader transformation work."
       ],
       "keyMessages": [
-        "Selection process is rigorous and source-backed.",
-        "Primary risk is execution capacity and governance discipline.",
-        "A focused 90-day plan de-risks Jan 1, 2027 readiness."
+        "Recommend NetSuite delivery with KPMG PMO oversight and France-based coordination.",
+        "Main board risk is execution failure through weak governance, unclear ownership, or overloaded internal teams.",
+        "The next 90 days must lock owners, cadence, staffing, and commercial closure rather than reopen platform debate.",
+        "Phase 1 should stay focused on core ERP pillars while adjacent items like TMS strategy, FP&A uplift, and Excel-heavy reporting automation are framed as parallel gates or later transformation waves."
       ],
-      "dataRequests": [],
+      "dataRequests": [
+        {
+          "id": "brd-gap-1",
+          "topic": "KPMG PMO scope and authority model",
+          "owner": "Mike / KPMG",
+          "due": "Before Mar 13, 2026",
+          "priority": "high",
+          "status": "open",
+          "ask": "Convert the March 6 PMO walk-through into a crisp board-ready statement of PMO scope, decision rights, local coverage in France, and interaction model with NetSuite."
+        },
+        {
+          "id": "brd-gap-2",
+          "topic": "Implementation role split and internal staffing map",
+          "owner": "Mike / Hema / IT",
+          "due": "Before Mar 13, 2026",
+          "priority": "high",
+          "status": "open",
+          "ask": "Name the mobilized functions across Finance, IT, PMO, and vendor delivery with practical ownership for the first 90 days."
+        },
+        {
+          "id": "brd-gap-3",
+          "topic": "Commercial package summary",
+          "owner": "Mike / NetSuite / KPMG",
+          "due": "Before Mar 13, 2026",
+          "priority": "high",
+          "status": "open",
+          "ask": "Condense current NetSuite commercials, implementation economics, and open contracting items into a board-ready summary with Year 1 and run-rate framing."
+        },
+        {
+          "id": "brd-gap-4",
+          "topic": "Didier risk slide emphasis",
+          "owner": "Mike",
+          "due": "Before Mar 13, 2026",
+          "priority": "medium",
+          "status": "open",
+          "ask": "Explicitly include a board-level risk and mitigation slide reflecting ERP delay, overrun, and governance failure scenarios, per Didier follow-up."
+        }
+      ],
       "artifacts": [
         {
           "id": "brd-art-1",
@@ -84,82 +123,82 @@
       "slidePlan": [
         {
           "id": "brd-slide-1",
-          "section": "Context",
-          "title": "Mandate and Timing",
-          "status": "ready",
+          "section": "Decision",
+          "title": "Recommendation: Lock the Delivery Model Now",
+          "status": "active-redesign",
           "owner": "Mike",
           "evidenceStatus": "confirmed",
-          "visual": "timeline",
-          "notes": "",
+          "visual": "decision headline + 3-part rationale",
+          "notes": "Lead with the recommended operating model, not the process history.",
           "content": [
-            "ERP/SOX is a declared 2026 finance priority with executive sponsorship.",
-            "Jan 1, 2027 go-live remains the operating target.",
-            "March 19 board cycle is the decision-communication checkpoint.",
-            "Delay now increases execution and control risk."
+            "Recommendation: proceed with NetSuite as selected platform and run implementation with KPMG day-to-day PMO oversight.",
+            "Reason: platform decision is largely made; execution quality, governance discipline, and local coordination now matter more than feature debate.",
+            "Board purpose: align on how the program will be run, not reopen vendor selection."
           ]
         },
         {
           "id": "brd-slide-2",
-          "section": "Process",
-          "title": "What Has Been Completed",
-          "status": "ready",
+          "section": "Economics",
+          "title": "Economics: Pay for Control, Not for Complexity",
+          "status": "active-redesign",
           "owner": "Mike + KPMG",
-          "evidenceStatus": "confirmed",
-          "visual": "phase-map",
-          "notes": "",
+          "evidenceStatus": "confirmed-with-open-commercial-summary",
+          "visual": "comparison table + cost architecture",
+          "notes": "Must show implementation economics and open commercial items clearly.",
           "content": [
-            "Initiate and scope completed (Sep-Oct 2025).",
-            "Diagnostic and pain-point mapping completed (Oct-Nov 2025).",
-            "RFP workshops and requirements completed (Nov-Dec 2025).",
-            "Bid analysis, shortlist, and demos completed (Jan-Feb 2026)."
+            "NetSuite selected February 26, 2026 after structured selection process.",
+            "Current baseline in repo: Year 1 commercial package about EUR 650K, including build and annual run.",
+            "KPMG PMO proposal discussed March 6 at a flat fee of USD 350K initial proposal level.",
+            "Commercial focus now is implementation scope, PMO shape, and contract closure cadence ahead of April mobilization."
           ]
         },
         {
           "id": "brd-slide-3",
-          "section": "Decision",
-          "title": "Selection Decision Outcome and Tradeoffs",
-          "status": "ready",
+          "section": "Operating Model",
+          "title": "Operating Model: One Builder, One PMO, Clear Accountability",
+          "status": "active-redesign",
           "owner": "Mike",
-          "evidenceStatus": "confirmed",
-          "visual": "matrix",
-          "notes": "",
+          "evidenceStatus": "confirmed-with-management-judgment",
+          "visual": "responsibility model",
+          "notes": "Show Oracle / KPMG / Abivax role split cleanly.",
           "content": [
-            "Abivax team aligned on NetSuite as the selected path on February 26, 2026.",
-            "Decision reflects execution fit, usability, and implementation practicality for current organization size and constraints.",
-            "Open items now move to commercial negotiation, scope confirmation, and implementation mobilization timing.",
-            "Target remains early April mobilization to support Jan 1, 2027 go-live objective."
+            "Oracle / NetSuite: build, configure, and deliver the platform work.",
+            "KPMG PMO: run cadence, issue management, and on-the-ground coordination in France.",
+            "CFGI was considered as an implementation and PMO support option, but is not the current recommended PMO model.",
+            "Abivax leadership: keep design and prioritization ownership without becoming the day-to-day PMO."
           ]
         },
         {
           "id": "brd-slide-4",
-          "section": "Risk",
-          "title": "Top Delivery Risks and Mitigations",
-          "status": "ready",
-          "owner": "Mike + IT + Finance",
-          "evidenceStatus": "confirmed",
-          "visual": "risk-heatmap",
-          "notes": "Optional supporting visual: use France P2P and Reporting/FP&A swimlane previews (brd-art-5, brd-art-6) in appendix or discussion backup to show execution/control risk concentration by process stage.",
+          "section": "Mobilization",
+          "title": "First 90 Days: Protect the Go-Live by Controlling Scope",
+          "status": "active-redesign",
+          "owner": "Mike + Finance + IT",
+          "evidenceStatus": "partially-confirmed",
+          "visual": "30-60-90 roadmap",
+          "notes": "Translate ambition into a short, named owner plan and make Phase 1 versus adjacent transformation boundaries explicit.",
           "content": [
-            "Risk: manual legacy handoffs and unclear ownership. Mitigation: named owner matrix by process/feed.",
-            "Risk: business capacity constraints. Mitigation: phase-based staffing commitments.",
-            "Risk: control evidence gaps. Mitigation: control-by-design checkpoints in blueprint phase.",
-            "Risk: timeline slippage. Mitigation: weekly workstream governance and monthly executive review."
+            "March: lock commercials, PMO authority, staffing commitments, and blueprint entry conditions.",
+            "April: launch blueprint and governance rhythm with named workstream owners.",
+            "May: resolve priority process and control design decisions before build accelerates.",
+            "Separate Phase 1 core ERP scope from parallel decision gates such as TMS path, treasury connectivity, and reporting / FP&A modernization."
           ]
         },
         {
           "id": "brd-slide-5",
-          "section": "Ask",
-          "title": "Board Decision and Next 90 Days",
-          "status": "ready",
-          "owner": "Mike",
+          "section": "Risk",
+          "title": "Risk and Board Ask: Keep the Program Controlled",
+          "status": "active-redesign",
+          "owner": "Mike + IT + Finance",
           "evidenceStatus": "confirmed",
-          "visual": "decision",
-          "notes": "",
+          "visual": "risk / mitigation matrix",
+          "notes": "Didier specifically asked for this emphasis in his March 3 follow-up.",
           "content": [
-            "Acknowledge NetSuite selection and pivot governance focus to implementation execution risk.",
-            "Confirm post-selection negotiation/contracting ownership and cadence (Mike/Hema with vendor and advisors).",
-            "Confirm staffing and decision rights for design phase mobilization ahead of early April start target.",
-            "Maintain monthly executive and board-ready progress reporting against Jan 1, 2027 target."
+            "Risk: weak implementation governance. Mitigation: KPMG PMO with explicit authority and weekly cadence.",
+            "Risk: internal capacity overload across Finance and IT. Mitigation: phase-based staffing commitments and role clarity.",
+            "Risk: unclear ownership between vendor, PMO, and Abivax. Mitigation: hard RACI before mobilization.",
+            "Risk: scope confusion between Phase 1 ERP and broader transformation needs. Mitigation: explicit boundary between core scope, parallel gates, and later transformation waves.",
+            "Board ask: endorse operating model, staffing posture, and risk management discipline for the next 90 days."
           ]
         }
       ],
@@ -193,6 +232,11 @@
           "date": "2026-02-26",
           "author": "Codex",
           "action": "Updated board deck metadata for NetSuite selection outcome and shifted next-step messaging to negotiation and implementation mobilization (early April target)."
+        },
+        {
+          "date": "2026-03-09",
+          "author": "Codex",
+          "action": "Refocused board deck around Didier board ask: recommendation, economics, operating model, 90-day mobilization, and explicit risk / mitigation framing."
         }
       ],
       "tags": [
@@ -201,7 +245,7 @@
         "selection",
         "sox"
       ],
-      "lastUpdated": "2026-02-26"
+      "lastUpdated": "2026-03-09"
     },
     {
       "id": "audit-committee-erp-overview-20260306",
@@ -935,7 +979,9 @@
           "evidenceStatus": "confirmed",
           "visual": "title",
           "notes": "",
-          "content": ["Title slide with Roxandra Sturdza, ERP Program, March 5, 2026."]
+          "content": [
+            "Title slide with Roxandra Sturdza, ERP Program, March 5, 2026."
+          ]
         },
         {
           "id": "trs-slide-2",
@@ -946,7 +992,9 @@
           "evidenceStatus": "confirmed",
           "visual": "icon + text",
           "notes": "",
-          "content": ["R2R sub-workstream. Roxandra (FR), Kimberly (US). Go-live Jan 1, 2027. Mobilization Apr 2026."]
+          "content": [
+            "R2R sub-workstream. Roxandra (FR), Kimberly (US). Go-live Jan 1, 2027. Mobilization Apr 2026."
+          ]
         },
         {
           "id": "trs-slide-3",
@@ -957,7 +1005,9 @@
           "evidenceStatus": "confirmed",
           "visual": "flow + stats",
           "notes": "",
-          "content": ["Sage → Trustpair → Agicap → Bank. 2 campaigns/month. 497 vendors. 4-day lead time."]
+          "content": [
+            "Sage → Trustpair → Agicap → Bank. 2 campaigns/month. 497 vendors. 4-day lead time."
+          ]
         },
         {
           "id": "trs-slide-4",
@@ -968,7 +1018,9 @@
           "evidenceStatus": "confirmed",
           "visual": "table",
           "notes": "",
-          "content": ["Sage 100, Trustpair, Agicap, Globalcash, EBICS — functions and SOX relevance."]
+          "content": [
+            "Sage 100, Trustpair, Agicap, Globalcash, EBICS — functions and SOX relevance."
+          ]
         },
         {
           "id": "trs-slide-5",
@@ -979,7 +1031,9 @@
           "evidenceStatus": "confirmed",
           "visual": "control table",
           "notes": "",
-          "content": ["FR-TR-12G (SoD), FR-TR-13G (SOC Review), plus payment-stage controls with status badges."]
+          "content": [
+            "FR-TR-12G (SoD), FR-TR-13G (SOC Review), plus payment-stage controls with status badges."
+          ]
         },
         {
           "id": "trs-slide-6",
@@ -990,7 +1044,9 @@
           "evidenceStatus": "confirmed",
           "visual": "numbered list",
           "notes": "",
-          "content": ["9 discussion questions covering process, banks, Agicap, EBICS, reconciliation, intercompany, forecasting."]
+          "content": [
+            "9 discussion questions covering process, banks, Agicap, EBICS, reconciliation, intercompany, forecasting."
+          ]
         },
         {
           "id": "trs-slide-7",
@@ -1001,7 +1057,9 @@
           "evidenceStatus": "confirmed",
           "visual": "decision card",
           "notes": "",
-          "content": ["Treasury module scope for Phase 1. Owners: Mike, Roxandra, Jade. Deadline: before blueprint."]
+          "content": [
+            "Treasury module scope for Phase 1. Owners: Mike, Roxandra, Jade. Deadline: before blueprint."
+          ]
         }
       ],
       "actionLog": [
@@ -1011,7 +1069,13 @@
           "action": "Created Treasury briefing PPTX (7 slides) and interactive HTML briefing page with 3 layout variants for Roxandra meeting."
         }
       ],
-      "tags": ["erp", "treasury", "r2r", "roxandra", "banking"],
+      "tags": [
+        "erp",
+        "treasury",
+        "r2r",
+        "roxandra",
+        "banking"
+      ],
       "lastUpdated": "2026-03-05"
     }
   ]

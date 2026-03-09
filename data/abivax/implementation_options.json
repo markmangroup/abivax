@@ -1,0 +1,148 @@
+{
+  "updatedAt": "2026-03-06",
+  "decisionFrame": {
+    "selectedPlatform": "NetSuite",
+    "selectedOn": "2026-02-26",
+    "goal": "Choose the operating model that gives Abivax the best chance of a clean implementation with strong program control and low operator drag on Mike.",
+    "operatorBias": "Prefer fewer firms in the room if governance quality stays high. Strong PMO is valuable if it reduces noise instead of adding a parallel management layer."
+  },
+  "knownFacts": [
+    "NetSuite is currently shown as the implementation path on the ERP team page.",
+    "CFGI is in discussion as an alternative NetSuite implementor and can also provide PMO support.",
+    "KPMG presented a PMO proposal on March 6, 2026 at a flat fee of $350K in the initial proposal.",
+    "Mike is concerned about Oracle/NetSuite implementation quality based on past experience and possible Oracle-side changes.",
+    "Treasury ingestion is already materially complete: treasury page and sub-pages are populated from Roxandra workbook intake."
+  ],
+  "decisionCriteria": [
+    {
+      "label": "Execution reliability",
+      "prompt": "Who is most likely to actually deliver a clean build, not just sell one?"
+    },
+    {
+      "label": "Program control",
+      "prompt": "Who owns scope, issue triage, timeline pressure, and escalation discipline day to day?"
+    },
+    {
+      "label": "Operator load on Mike",
+      "prompt": "Which model minimizes translation work, referee work, and stakeholder herding?"
+    },
+    {
+      "label": "Role clarity",
+      "prompt": "Can every firm explain, in one sentence, what it owns and what it does not own?"
+    },
+    {
+      "label": "Control-by-design fit",
+      "prompt": "Which model best protects the SOX / control agenda while implementation accelerates?"
+    }
+  ],
+  "models": [
+    {
+      "id": "oracle-direct",
+      "label": "Model A",
+      "name": "NetSuite / Oracle direct as SI",
+      "summary": "Simplest vendor chain on paper: one implementation firm, one commercial owner, minimal overlay.",
+      "teamShape": "Oracle SI + Abivax core team",
+      "burdenOnMike": "medium-high",
+      "coordinationRisk": "low-medium",
+      "deliveryConfidence": "medium-low",
+      "operatorRead": "Leanest structure, but only works if you trust Oracle execution quality. Your stated concern is that you do not.",
+      "upsides": [
+        "Single implementor can reduce handoff confusion.",
+        "Commercial and scope accountability stay concentrated.",
+        "Lower visible governance overhead."
+      ],
+      "risks": [
+        "If Oracle execution is weak, there is no independent operating brake system.",
+        "Mike may end up acting as de facto PMO and quality filter.",
+        "Harder to separate 'implementation optimism' from real delivery risk."
+      ],
+      "bestWhen": "Choose this only if Oracle can show a named senior team, strong biotech references, and credible protection against turnover or internal changes."
+    },
+    {
+      "id": "oracle-plus-kpmg-pmo",
+      "label": "Model B",
+      "name": "NetSuite / Oracle SI + KPMG PMO overlay",
+      "summary": "Keep Oracle as builder but add an external PMO layer to drive cadence, issue management, and executive control.",
+      "teamShape": "Oracle SI + KPMG PMO + Abivax core team",
+      "burdenOnMike": "medium",
+      "coordinationRisk": "medium",
+      "deliveryConfidence": "medium-high",
+      "operatorRead": "Most defensible version of staying with Oracle if you want extra control without swapping the implementor.",
+      "upsides": [
+        "Creates an independent PMO spine if Oracle underperforms.",
+        "KPMG already knows the selection story and has recent credibility with you.",
+        "Can reduce Mike's need to manually police cadence and issue closure."
+      ],
+      "risks": [
+        "Three-sided coordination can still get noisy if PMO vs SI roles are fuzzy.",
+        "KPMG must be empowered to challenge Oracle, not just run meetings.",
+        "Adds cost and another reporting lane."
+      ],
+      "bestWhen": "Strong option if Abivax wants to keep NetSuite as builder but does not fully trust Oracle to self-manage."
+    },
+    {
+      "id": "cfgi-direct",
+      "label": "Model C",
+      "name": "CFGI as SI or implementation lead",
+      "summary": "Shift implementation leadership to CFGI if they can credibly run the build and not just advise around it.",
+      "teamShape": "CFGI SI + Abivax core team",
+      "burdenOnMike": "medium",
+      "coordinationRisk": "medium-low",
+      "deliveryConfidence": "unknown-medium",
+      "operatorRead": "Potentially cleaner than a three-firm model if CFGI can truly own implementation and PMO in one lane.",
+      "upsides": [
+        "May solve the Oracle trust issue directly.",
+        "Cleaner than Oracle + CFGI + KPMG all at once if CFGI can carry both delivery and PMO discipline.",
+        "Could give Abivax a more operator-oriented partner if CFGI team quality is strong."
+      ],
+      "risks": [
+        "Still needs hard validation that CFGI is a real NetSuite delivery machine for this size/scope.",
+        "Could create platform-accountability ambiguity if Oracle remains heavily involved.",
+        "New path may cost time if role transfer is not crisp."
+      ],
+      "bestWhen": "Worth serious consideration if CFGI can prove named delivery leadership, references, and a sharper governance spine than Oracle."
+    },
+    {
+      "id": "cfgi-plus-kpmg-pmo",
+      "label": "Model D",
+      "name": "CFGI implementation + KPMG PMO",
+      "summary": "Separate builder from PMO while avoiding Oracle-led delivery risk.",
+      "teamShape": "CFGI SI + KPMG PMO + Abivax core team",
+      "burdenOnMike": "medium-high",
+      "coordinationRisk": "medium-high",
+      "deliveryConfidence": "medium",
+      "operatorRead": "Can work, but only if KPMG and CFGI have extremely sharp swimlanes. Otherwise this becomes a meeting factory.",
+      "upsides": [
+        "Independent PMO plus potentially stronger implementor than Oracle direct.",
+        "Better control environment if both firms are disciplined."
+      ],
+      "risks": [
+        "Easy to create too many cooks in the kitchen.",
+        "Mike can get trapped between PMO language and implementation language.",
+        "Requires explicit RACI for issue ownership, design authority, and escalation rights."
+      ],
+      "bestWhen": "Only pursue if Abivax explicitly values independent PMO enough to accept the extra coordination layer."
+    }
+  ],
+  "currentShortlist": [
+    {
+      "name": "Model B: Oracle SI + KPMG PMO",
+      "why": "Best hedge if NetSuite stays the implementor but Mike wants more confidence and less direct referee work."
+    },
+    {
+      "name": "Model C: CFGI as implementation lead",
+      "why": "Best simplification path if CFGI proves they can really own delivery and governance without needing a third-firm overlay."
+    }
+  ],
+  "antiPatterns": [
+    "Do not run Oracle + CFGI + KPMG together without a brutally explicit RACI; that is the fastest route to duplicated meetings and unclear ownership.",
+    "Do not buy PMO that only reports status upward but cannot force issue closure across the SI.",
+    "Do not assume NetSuite platform selection automatically means Oracle is the best implementation operator."
+  ],
+  "evidenceStillNeeded": [
+    "Jamal commercial package: detailed scope, SOW shape, staffing, and contract terms.",
+    "CFGI delivery story: named implementation lead, delivery references, and PMO ownership model.",
+    "KPMG PMO pack: proposed cadence, authority, decision rights, and exact line between PMO vs SI.",
+    "Operator test: which model most clearly tells Mike who owns issues, risks, and schedule slippage on Day 10?"
+  ]
+}

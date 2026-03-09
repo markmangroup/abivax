@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Board ERP Readout Review</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #10233f;
+    --ink-2: #1d3557;
+    --slate: #516173;
+    --muted: #7c8a98;
+    --paper: #f3f5f8;
+    --card: #ffffff;
+    --line: #d8dee7;
+    --cyan: #0f6c8d;
+    --cyan-2: #1395ba;
+    --teal: #0f766e;
+    --teal-bg: #d8f3f0;
+    --amber: #b45309;
+    --amber-bg: #fff1db;
+    --rose: #be123c;
+    --rose-bg: #ffe4ea;
+    --green: #0f8a4b;
+    --green-bg: #dff7e8;
+    --navy-band: linear-gradient(135deg, #0d223f 0%, #14365f 62%, #0f6c8d 100%);
+  }
+  body {
+    font-family: "Aptos", "Segoe UI", system-ui, sans-serif;
+    background:
+      radial-gradient(circle at top left, rgba(19,149,186,0.10), transparent 32%),
+      radial-gradient(circle at 85% 10%, rgba(15,118,110,0.10), transparent 28%),
+      var(--paper);
+    color: var(--ink);
+    padding: 24px 18px 48px;
+  }
+  .shell { max-width: 1180px; margin: 0 auto; }
+  .topbar {
+    background: var(--navy-band);
+    color: white;
+    border-radius: 14px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 16px 36px rgba(16,35,63,0.18);
+    margin-bottom: 14px;
+  }
+  .topbar h1 { font-size: 20px; font-weight: 800; letter-spacing: 0.01em; }
+  .topbar p { font-size: 12px; color: rgba(255,255,255,0.78); margin-top: 4px; max-width: 760px; line-height: 1.5; }
+  .badge-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.10);
+    color: white;
+  }
+  .memo {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .memo-card {
+    background: rgba(255,255,255,0.78);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .memo-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .memo-main {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .memo-list { margin-top: 10px; display: grid; gap: 8px; }
+  .memo-item {
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid var(--line);
+    padding: 10px 12px;
+    font-size: 12px;
+    color: var(--slate);
+    line-height: 1.45;
+  }
+  .slides { display: grid; gap: 26px; }
+  .slide {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(17,34,68,0.09);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .slide-head {
+    background: var(--navy-band);
+    color: white;
+    padding: 10px 18px 12px;
+  }
+  .slide-head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(255,255,255,0.72);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .slide-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .slide-title h2 {
+    font-size: 28px;
+    line-height: 1.12;
+    font-weight: 800;
+    color: white;
+  }
+  .slide-title .num {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.70);
+  }
+  .slide-body { padding: 18px 20px 16px; display: grid; gap: 14px; }
+  .kicker {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--cyan);
+    font-weight: 800;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 14px;
+  }
+  .hero-box, .panel {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 15px;
+    background: #fbfcfe;
+  }
+  .hero-box strong {
+    display: block;
+    font-size: 26px;
+    line-height: 1.12;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .hero-box p, .panel p, .panel li, .table td, .table th {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--slate);
+  }
+  .hero-box p.emphasis {
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .signal {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .signal-green { background: var(--green-bg); color: var(--green); }
+  .signal-amber { background: var(--amber-bg); color: var(--amber); }
+  .signal-rose { background: var(--rose-bg); color: var(--rose); }
+  .signal-teal { background: var(--teal-bg); color: var(--teal); }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .metric {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    background: #ffffff;
+  }
+  .metric .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--muted);
+    font-weight: 800;
+  }
+  .metric .value {
+    margin-top: 6px;
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .metric .sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--slate);
+    line-height: 1.4;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .table th {
+    background: #eef4f8;
+    text-align: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--muted);
+    padding: 10px 12px;
+  }
+  .table td {
+    padding: 11px 12px;
+    border-top: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .rec-row { background: #f0fbff; }
+  .chip {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+  }
+  .chip-low { background: var(--green-bg); color: var(--green); border-color: #b4e7c6; }
+  .chip-med { background: var(--amber-bg); color: var(--amber); border-color: #f7d9a6; }
+  .chip-high { background: var(--rose-bg); color: var(--rose); border-color: #f6bfd0; }
+  .lane {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: stretch;
+  }
+  .lane-card {
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #fbfcfe;
+    padding: 14px;
+  }
+  .lane-card h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--cyan);
+    font-weight: 800;
+  }
+  .lane-card ul {
+    margin-top: 10px;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  .lane-card li {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--slate);
+    padding-left: 12px;
+    position: relative;
+  }
+  .lane-card li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--cyan-2);
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .roadmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .roadbox {
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
+    padding: 14px;
+  }
+  .roadbox .month {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--muted);
+    font-weight: 800;
+  }
+  .roadbox .headline {
+    margin-top: 7px;
+    font-size: 19px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .roadbox ul {
+    margin-top: 10px;
+    list-style: none;
+    display: grid;
+    gap: 7px;
+  }
+  .roadbox li {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--slate);
+    padding-left: 12px;
+    position: relative;
+  }
+  .roadbox li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--teal);
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .risk-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 14px;
+  }
+  .ask-box {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    background: linear-gradient(180deg, #10314f 0%, #194c72 100%);
+    color: white;
+  }
+  .ask-box h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: rgba(255,255,255,0.72);
+    font-weight: 800;
+  }
+  .ask-box p {
+    margin-top: 8px;
+    color: white;
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  .ask-box ul {
+    margin-top: 10px;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  .ask-box li {
+    font-size: 12px;
+    line-height: 1.45;
+    color: rgba(255,255,255,0.86);
+    padding-left: 12px;
+    position: relative;
+  }
+  .ask-box li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: #77d4f1;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .slide-foot {
+    border-top: 1px solid var(--line);
+    padding: 8px 18px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .sources { font-size: 10px; line-height: 1.35; }
+  @media (max-width: 1020px) {
+    .memo, .hero, .risk-grid { grid-template-columns: 1fr; }
+    .grid-3, .grid-4, .lane, .roadmap { grid-template-columns: 1fr; }
+    .slide { aspect-ratio: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div>
+      <h1>Board ERP Readout Review</h1>
+      <p>Draft board presentation for review. Purpose: summarize the ERP decision, proposed delivery model, required resources, cost posture, execution risks, and the broader transformation context required to support 2027 public-company readiness.</p>
+    </div>
+    <div class="badge-row">
+      <span class="badge">Board • Mar 19</span>
+      <span class="badge">5 slides</span>
+      <span class="badge">Draft review</span>
+    </div>
+  </div>
+
+  <div class="memo">
+    <div class="memo-card">
+      <div class="memo-label">Proposed recommendation</div>
+      <div class="memo-main">Proceed with NetSuite as the selected ERP platform. Use Oracle / NetSuite for implementation delivery and KPMG for program management, local coordination in France, and execution oversight.</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-label">Draft objective</div>
+      <div class="memo-list">
+        <div class="memo-item"><strong>Decision support:</strong> present the recommendation, rationale, delivery structure, and key execution risks in a format that does not assume prior project familiarity.</div>
+        <div class="memo-item"><strong>Scope framing:</strong> distinguish Phase 1 ERP scope from related transformation work that should be sequenced in parallel or after go-live.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slides">
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>Board ERP Readout</span>
+          <span>Decision</span>
+        </div>
+        <div class="slide-title">
+          <h2>ERP Program Recommendation</h2>
+          <span class="num">Slide 1</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="hero">
+          <div class="hero-box">
+            <span class="signal signal-green">Recommendation</span>
+            <strong>NetSuite platform.<br>KPMG program management.</strong>
+            <p class="emphasis">Management recommends proceeding with NetSuite as the ERP platform and using KPMG to manage day-to-day program governance, issue escalation, and local coordination in France. This structure is intended to improve execution control and reduce delivery risk.</p>
+          </div>
+          <div class="panel">
+            <div class="kicker">Program context</div>
+            <table class="table">
+              <tr><th>Topic</th><th>Summary</th></tr>
+              <tr><td>Platform decision</td><td>NetSuite is the selected ERP platform following the completed selection process.</td></tr>
+              <tr><td>Management priority</td><td>The principal remaining decision is the program delivery model and the level of execution control required for implementation.</td></tr>
+              <tr><td>Recommendation basis</td><td>KPMG provides additional governance capacity, local coordination, and escalation discipline without changing the selected platform.</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="metric">
+            <div class="label">Board objective</div>
+            <div class="value">Approve delivery model</div>
+            <div class="sub">Confirm how the ERP program will be executed and governed.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Management view</div>
+            <div class="value">Execution risk matters most</div>
+            <div class="sub">Program success will depend more on governance, role clarity, and capacity than on software features.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Target date</div>
+            <div class="value">Jan 1, 2027</div>
+            <div class="sub">The implementation plan should be managed against the January 1, 2027 go-live objective.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>Recommendation: confirm the delivery model required to execute the selected ERP program.</span>
+        <span class="sources">Sources: Didier board ask, NetSuite selection decision, implementation-model analysis.</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>Board ERP Readout</span>
+          <span>Economics</span>
+        </div>
+        <div class="slide-title">
+          <h2>Cost and Program Structure</h2>
+          <span class="num">Slide 2</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-4">
+          <div class="metric">
+            <div class="label">Selected platform</div>
+            <div class="value">NetSuite</div>
+            <div class="sub">Abivax aligned on NetSuite on February 26, 2026.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Year 1 baseline</div>
+            <div class="value">~EUR 650K</div>
+            <div class="sub">Current repo baseline combines build plus annual run.</div>
+          </div>
+          <div class="metric">
+            <div class="label">PMO proposal</div>
+            <div class="value">$350K</div>
+            <div class="sub">Initial KPMG PMO proposal discussed on March 6, 2026.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Mobilization target</div>
+            <div class="value">Early April</div>
+            <div class="sub">Commercial closure and PMO structure must support blueprint mobilization.</div>
+          </div>
+        </div>
+        <table class="table">
+          <tr>
+            <th>Topic</th>
+            <th>Current read</th>
+            <th>Board implication</th>
+          </tr>
+          <tr>
+            <td>Software + implementation</td>
+            <td>NetSuite remains the selected path and the current commercial baseline is acceptable relative to the size of the program.</td>
+            <td>The main commercial question is how to structure implementation to improve delivery confidence.</td>
+          </tr>
+          <tr>
+            <td>PMO overlay</td>
+            <td>KPMG PMO adds cost, but also adds governance capacity, local coordination, and escalation support.</td>
+            <td>This cost should be evaluated against the execution risk of a poorly governed implementation.</td>
+          </tr>
+          <tr>
+            <td>Open commercial items</td>
+            <td>Scope shape, PMO authority, contracting cadence, e-invoicing perimeter, and internal staffing still need to be locked cleanly.</td>
+            <td>The board should view these as execution controls, not as reasons to delay direction.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="slide-foot">
+        <span>Cost should be considered together with delivery risk, not in isolation.</span>
+        <span class="sources">Sources: board deck metadata, repo commercial baseline, KPMG PMO discussion.</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>Board ERP Readout</span>
+          <span>Operating model</span>
+        </div>
+        <div class="slide-title">
+          <h2>Proposed Delivery Structure</h2>
+          <span class="num">Slide 3</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <table class="table">
+          <tr>
+            <th>Model</th>
+            <th>Setup</th>
+            <th>Burden on Mike</th>
+            <th>Coordination risk</th>
+            <th>Assessment</th>
+          </tr>
+          <tr>
+            <td><strong>Oracle only</strong></td>
+            <td>Oracle / NetSuite builds and self-manages.</td>
+            <td><span class="chip chip-high">High</span></td>
+            <td><span class="chip chip-med">Medium</span></td>
+            <td>Lowest coordination complexity, but limited independent governance and less implementation control.</td>
+          </tr>
+          <tr class="rec-row">
+            <td><strong>Oracle + KPMG PMO</strong><br><span class="chip chip-low">Recommended</span></td>
+            <td>Oracle builds; KPMG runs cadence, issues, and France-side PMO.</td>
+            <td><span class="chip chip-low">Medium</span></td>
+            <td><span class="chip chip-med">Medium</span></td>
+            <td>Best balance of platform continuity, stronger governance, and manageable coordination overhead.</td>
+          </tr>
+          <tr>
+            <td><strong>CFGI support model</strong></td>
+            <td>CFGI was considered for implementation and PMO support.</td>
+            <td><span class="chip chip-med">Medium</span></td>
+            <td><span class="chip chip-low">Low-Med</span></td>
+            <td>Considered during evaluation, but not the current recommended PMO model.</td>
+          </tr>
+          <tr>
+            <td><strong>Multi-firm overlay</strong></td>
+            <td>Oracle, CFGI, and KPMG all active without a hard split.</td>
+            <td><span class="chip chip-high">High</span></td>
+            <td><span class="chip chip-high">High</span></td>
+            <td>Highest coordination burden and greatest risk of role confusion.</td>
+          </tr>
+        </table>
+        <div class="lane">
+          <div class="lane-card">
+            <h3>Oracle / NetSuite</h3>
+            <ul>
+              <li>Own system build, configuration, migration, and delivery staffing</li>
+              <li>Answer for scope execution and technical delivery</li>
+              <li>Provide implementation lead and accountable delivery plan</li>
+            </ul>
+          </div>
+          <div class="lane-card">
+            <h3>KPMG PMO</h3>
+            <ul>
+              <li>Run cadence, RAID log, escalations, and local coordination in France</li>
+              <li>Force issue closure instead of simply reporting status</li>
+              <li>Reduce translation and orchestration load on Mike and finance leadership</li>
+            </ul>
+          </div>
+          <div class="lane-card">
+            <h3>Abivax leadership</h3>
+            <ul>
+              <li>Own key design choices, priorities, and executive decisions</li>
+              <li>Commit named Finance and IT resources into the mobilization plan</li>
+              <li>Stay in control without becoming the daily PMO</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>Separate implementation delivery from program governance.</span>
+        <span class="sources">Sources: implementation-model page, current management view on delivery options, Didier board framing.</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>Board ERP Readout</span>
+          <span>90-day mobilization</span>
+        </div>
+        <div class="slide-title">
+          <h2>Initial Mobilization Plan</h2>
+          <span class="num">Slide 4</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="roadmap">
+          <div class="roadbox">
+            <div class="month">March</div>
+            <div class="headline">March 2026</div>
+            <ul>
+              <li>Close the NetSuite commercial and contracting path</li>
+              <li>Confirm KPMG PMO scope, authority, and local France coverage</li>
+              <li>Name internal Finance and IT mobilization owners</li>
+              <li>Freeze blueprint entry conditions and decision cadence</li>
+            </ul>
+          </div>
+          <div class="roadbox">
+            <div class="month">April</div>
+            <div class="headline">April 2026</div>
+            <ul>
+              <li>Start blueprint with weekly governance and active RAID management</li>
+              <li>Stand up workstream owners across Finance, IT, PMO, and vendor</li>
+              <li>Track staffing load before it becomes execution drag</li>
+              <li>Keep board-level reporting focused on actual delivery risk</li>
+            </ul>
+          </div>
+          <div class="roadbox">
+            <div class="month">May</div>
+            <div class="headline">May 2026</div>
+            <ul>
+              <li>Settle priority process and control design choices before build accelerates</li>
+              <li>Lock role clarity and working norms between Oracle, KPMG, and Abivax</li>
+              <li>Protect scope from drift and organizational confusion</li>
+              <li>Convert governance discipline into a repeatable operating rhythm</li>
+            </ul>
+          </div>
+        </div>
+        <table class="table">
+          <tr>
+            <th>Scope category</th>
+            <th>Included items</th>
+            <th>Implication</th>
+          </tr>
+          <tr class="rec-row">
+            <td><strong>Phase 1 core ERP scope</strong></td>
+            <td>P2P controls and workflow, GL / CoA foundation, close design, core R2R controls, core master data decisions, and minimum viable treasury handoff into ERP design.</td>
+            <td>This is the mandatory backbone for a controlled January 1, 2027 go-live and stronger listing readiness.</td>
+          </tr>
+          <tr>
+            <td><strong>Parallel decisions and gates</strong></td>
+            <td>TMS decision path, bank connectivity sequencing, treasury-to-GL evidence bridge, US treasury scope, Trustpair / DocuShare / Concur / payroll integration boundaries, and current-state close / consolidation documentation.</td>
+            <td>These items should not bloat Phase 1 build scope, but they do need owner/date discipline now because they affect architecture and control design.</td>
+          </tr>
+          <tr>
+            <td><strong>Phase 2 and broader transformation</strong></td>
+            <td>FP&amp;A uplift, management reporting improvement, reduction of Excel-heavy workflows, close acceleration, evidence-retention automation, and broader reporting / listing-readiness automation.</td>
+            <td>These are natural beneficiaries of better NetSuite data, but they should be framed as the next transformation wave rather than hidden inside Phase 1.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="slide-foot">
+        <span>The first phase should establish governance, confirm ownership, and protect implementation scope.</span>
+        <span class="sources">Sources: treasury briefing, R2R brief, process-flow analysis, updated board slide plan.</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>Board ERP Readout</span>
+          <span>Risk / mitigation</span>
+        </div>
+        <div class="slide-title">
+          <h2>Principal Risks and Board Decision</h2>
+          <span class="num">Slide 5</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="risk-grid">
+          <div class="panel">
+            <table class="table">
+              <tr>
+                <th>Risk</th>
+                <th>Why it matters</th>
+                <th>Mitigation</th>
+              </tr>
+              <tr>
+                <td><strong>Weak implementation governance</strong></td>
+                <td>ERP projects fail when cadence exists but no one has authority to force closure.</td>
+                <td>KPMG PMO with explicit authority, weekly cadence, and escalation rules.</td>
+              </tr>
+              <tr>
+                <td><strong>Internal capacity overload</strong></td>
+                <td>Finance and IT teams already carry heavy operational load; overloaded teams create hidden delays.</td>
+                <td>Phase-based staffing commitments and named owners before blueprint launch.</td>
+              </tr>
+              <tr>
+                <td><strong>Unclear ownership across firms</strong></td>
+                <td>Ambiguity between vendor, PMO, and Abivax leadership creates duplication and decision drift.</td>
+                <td>Hard RACI before mobilization and explicit role split shown to the program team.</td>
+              </tr>
+              <tr>
+                <td><strong>Timeline slippage</strong></td>
+                <td>Every month of delay compresses readiness against the Jan 1, 2027 target.</td>
+                <td>Monthly executive review and early escalation of issues that threaten blueprint or build timing.</td>
+              </tr>
+              <tr>
+                <td><strong>Scope confusion across transformation layers</strong></td>
+                <td>If Phase 1 ERP, treasury redesign, and reporting modernization are not separated, the program will become overloaded and harder to govern.</td>
+                <td>Define a hard boundary between core ERP scope, parallel decision gates, and Phase 2 transformation work.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="ask-box">
+            <h3>Board decision</h3>
+            <p>Approve the proposed delivery model and the execution posture for the first phase of the ERP program.</p>
+            <ul>
+              <li>Approve NetSuite implementation under a KPMG-managed program governance structure</li>
+              <li>Require named resource commitments across Finance, IT, and program leadership</li>
+              <li>Maintain a clear Phase 1 scope boundary while separately sequencing adjacent transformation work</li>
+              <li>Monitor the program against formal risk management and escalation standards</li>
+              <li>Retain January 1, 2027 as the target go-live date</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>Board focus: approve the execution model and risk posture for the ERP program.</span>
+        <span class="sources">Sources: Didier March 3 follow-up, updated slide plan, execution-risk analysis.</span>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

@@ -9,7 +9,9 @@ type NavItem = { href: string; label: string; exact: boolean };
 const operateItems: NavItem[] = [
   { href: "/abivax/spine/today", label: "Today", exact: false },
   { href: "/abivax/spine/program-overview", label: "Program Overview", exact: false },
+  { href: "/abivax/spine/board-review", label: "Board Review", exact: false },
   { href: "/abivax/spine/team", label: "ERP Team", exact: false },
+  { href: "/abivax/spine/delivery-models", label: "Delivery Models", exact: false },
   { href: "/abivax/spine/p2p", label: "P2P Intelligence", exact: false },
   { href: "/abivax/spine/r2r", label: "R2R Brief", exact: false },
   { href: "/abivax/spine/treasury", label: "Treasury", exact: false },
