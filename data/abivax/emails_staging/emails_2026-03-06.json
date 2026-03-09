@@ -1,0 +1,377 @@
+[
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE20000",
+        "direction":  "received",
+        "date":  "2026-03-06T03:23:29.9010000-05:00",
+        "subject":  "March Closing - Deadline: April 7, 2026 for your lists of Accruals/FNP",
+        "from":  "Frederick Golly \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F1A873C932554906B296978B01751F2C-E3C941B4-35\u003e",
+        "to":  [
+                   "Josianne Nitcheu \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=31fe3a980a684eb4905bd6e6749d03dc-Josianne Ni\u003e",
+                   "Pascaline Ploncard \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=66909818d554475ab2bec53a904ff096-Pascaline P\u003e",
+                   "Laurence Desroys du Roure \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0dcf763c4ba44098ba7d890e54369bf5-Laurence De\u003e",
+                   "Jessica Huskey \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e993f5bc3d11483b98003be88e27e9cd-158c23a0-17\u003e",
+                   "Julien Santo \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=af8fdf634ce943d8924e2ebb7ac12c1d-Julien Sant\u003e",
+                   "Aude Garcel \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=fcee385e07944328b8c054946b24161b-Aude.Garcel\u003e",
+                   "Jerome Denis \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=07a530527afd41658f600b8aaa102e7c-Jerome Deni\u003e",
+                   "Marianne Perdrijat \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=886cedb554014341a89f942a33512fd4-da669b2c-f1\u003e",
+                   "Pierre Courteille \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0450b04d114c4f34afc17eefd065e552-Pierre Cour\u003e",
+                   "Ida Hatoum \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e2a4a9b6c2f44e529dbabdd2ee2602e5-bcdce6c0-8f\u003e",
+                   "Saadia Batiga \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f5d3a7d5ba6b42c181fa874b1d005a28-3a0d480c-82\u003e",
+                   "Ouahiba Kaabeche \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6b14869df0bd4d529f6122eb8edf84d7-34f3ad75-e9\u003e",
+                   "Romain Najman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=7af2595e02d5446aa644188af67bfb1c-Romain Najm\u003e",
+                   "Maxime Thomas \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=73469106d590498cafc7abb4cc75aa5b-a90d5297-13\u003e",
+                   "Amy Adams \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=821be8ae2c6e4230a72b3670dcedef20-cc9ba150-a8\u003e",
+                   "Nadege Briancon-Eris \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=806e03d6d34a4aafafb3a21a38c917b9-9d5d71f7-6c\u003e",
+                   "Christine Cook \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e40994e02823421c84dacdac19fcd296-6a06621a-d6\u003e",
+                   "David Deng \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=64ef0c4ccfb349b589d3dcacb1041a1e-06ada631-d5\u003e",
+                   "Jennifer Fine \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=c0a3db2274204e9db8ec11a2baffdef5-fe3ead28-fc\u003e",
+                   "Ashley Harper \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=b4f101100c914e96b7d06f5434400759-26be7776-f1\u003e",
+                   "Patrick Malloy \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dda0291b46a04193bc28eb75711070a0-4d2a0b9a-7c\u003e",
+                   "Trang Nguyen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=75079e91ec094dc2ab584c6e07e2c0cb-e8c8482a-e0\u003e",
+                   "Phuong Tran \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=ba8da40fd7b542339b0d6ce0cb11e62f-ed9169dd-5e\u003e",
+                   "Chris Rabbat \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=3d3d6f7eec58478e857361f4d745a1f7-5a83e272-37\u003e",
+                   "Kejia Shan \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=eeda2772f9b240e6b5e40bb80ab36072-a1e6fcc5-1d\u003e",
+                   "Marcus Wilkes \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=a21916be593341278970513042e27427-d4e8f8fa-ed\u003e",
+                   "Sunil Sabbani \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=60bf6e47ddfb4787866efa1990dba2f4-778b4472-bd\u003e",
+                   "Sophie Gibelli \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=de0b14a90bd2427ea457ff7010b983c9-e7ee5aea-18\u003e",
+                   "Jackie Mitrano \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=b53e8d5e0eb34e86a74e955a0498b023-06c88ea9-bb\u003e",
+                   "Doug Jacobstein \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=09d3dddefec14fe0a5b1e77f31ec5686-37681b35-f9\u003e",
+                   "Stephane Courric \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=c008b165f1da4274ac9123eb54ed8bdb-Stephane Co\u003e",
+                   "Caroline Lee \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=b668a5013aee430291945bc52e473ca2-8b1ea764-60\u003e",
+                   "Nakesha Harding-Boyce \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f258780916d24ef5ab4f4244a11ef3db-2d6fd581-bc\u003e",
+                   "Sophie Lacourrege \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=30adcb094aed454894dd399888592afb-cd466dec-fb\u003e",
+                   "Maïwenn Bonnet \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=199938c3b1e14205b5c3acb08e3ce2d2-cc0c360d-11\u003e",
+                   "Fabio Cataldi \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=ba5580df159e4d5f8e94257c018d8768-1ac2c3d4-2d\u003e",
+                   "David Zhang \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=838fe55e40cf44adb4df0f3dc40e67c6-d6723be5-df\u003e",
+                   "Patricia Fleuranceau Morel \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f90dcc1650de49028e06e8a0c73d95f5-7c58aced-5a\u003e",
+                   "Maurus de la Rosa \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=687fd9993a744c83bc483eb7c80f85ab-b56a7fae-81\u003e",
+                   "Davy Baudelet \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=535535cca3ad4e7fbd8ffd725352a24d-89bef65f-2e\u003e",
+                   "Mark Hronec \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=bfb30ec7fbd745f3b8a3d1e7d100721d-f502b83d-f7\u003e",
+                   "Keith Fournier \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=28641194dce348f3867fdadf8342ae1a-3a5b9608-08\u003e",
+                   "Thanh-Huong Hoang-Thi \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1af0999e075241e4bfe9cb530fa24d78-1919afd1-6a\u003e",
+                   "Michael Nesrallah \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f0a638f92e10477c82647e6052f28ee6-0454ffe3-cc\u003e"
+               ],
+        "cc":  [
+                   "Didier Blondel \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1f6581bf2e0c43e2b53adf5562a689b8-Didier Blon\u003e",
+                   "Trinidad Mesa \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1b4f510fb9ef46fd8460f9495c565a29-Trinidad Me\u003e",
+                   "Juliette Courtot \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=56aaf871e6b145a4a2a877e59639f184-juliette.co\u003e",
+                   "Denis Jankovic \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=a4b2fd1b89f24d009b3b8d3e85419e7e-26484cef-af\u003e",
+                   "Matt Epley \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6231154a529a48d3a481b7fdfbfbe95a-3ff36c05-11\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e",
+                   "Roxandra Sturdza \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=2df5016fcc204d93a8cfd4e872429842-Roxandra St\u003e",
+                   "Philippe Goncalves \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=591082b8bc6147329258f53a17ef18d3-83a864a9-23\u003e",
+                   "Adrian Holbrook \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=58161941cbe64a879014d4a2e8d5220f-ea331a62-88\u003e",
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "bodyText":  "Dear all,\r\n\r\n \r\n\r\nIn preparation for the March 2026 closing, and as usual now, we need to ensure that all activities that took place in 2026 are recorded in our books as of March 31, 2026.\r\n\r\n \r\n\r\nTo do so, please contact your service providers to ensure that we receive all the invoices for the services provided in Q1 2026 (or goods received) by Tuesday, April 7th at the latest.\r\n\r\n \r\n\r\nAs usual, if the invoices related to this period are to be received after this date, please obtain via email from your suppliers the amount (excluding VAT) of their services or deliveries provided in Q1 2026 so that we can record them in ABIVAX accounts as invoices not received (FNP / accruals) in a documented manner.\r\n\r\n \r\n\r\nIf the supplier is unable to provide this information, please send us the amounts to be accrued by listing the contracts or purchase orders for which the goods or services provided in Q1 2026 have not yet been invoiced.\r\n\r\n \r\n\r\nPlease provide your results and overall feedback by April 7th at the latest. As much as possible in one single email.\r\n\r\nIf there is nothing pending and no accrual to book, please let us know as well in this feedback.\r\n\r\n \r\n\r\nAlso please note we might come back to you with individual invitations when needed.\r\n\r\n \r\n\r\nThe Finance team (Juliette, Trinidad, Philippe, Frederick, Adrian \u0026 Matt) remains at your disposal if you need information (extract of the commitments (“engagé”, budget by supplier/project) or simply need to discuss the subject.\r\n\r\n \r\n\r\nMany thanks in advance for your help!\r\n\r\n \r\n\r\nKind regards,\r\n\r\nFinance Team\r\n\r\n \r\n\r\n \r\n\r\nBonjour à tous,\r\n\r\n \r\n\r\nPour la clôture de mars 2026, comme vous en avez l’habitude maintenant, nous devons nous assurer que l’ensemble des activités qui ont eu lieu en 2026 sont bien enregistrées dans nos comptes au 31/03/2026.\r\n\r\n \r\n\r\nPour ce faire, merci de vous rapprocher de vos prestataires afin de vous assurer que nous recevrons les factures des prestations effectuées en Q1 2026, au plus tard le mardi 7 avril.\r\n\r\n \r\n\r\nDans le cas où les factures relatives à cette période seraient réceptionnées après cette date, pouvez-vous svp obtenir par mail de vos fournisseurs le montant HT de leurs prestations ou livraisons effectuées sur cette période et non facturées afin que nous puissions les provisionner en factures non parvenues (FNP) de façon documentée. \r\n\r\n \r\n\r\nSi le fournisseur n’est pas en mesure de nous fournir ces informations, veuillez nous transmettre les montants à provisionner en listant les contrats ou bons de commande pour lesquels les biens ou prestations réalisés sur cette période n’ont pas fait l’objet d’une facturation.\r\n\r\n \r\n\r\nAutant que possible, merci de nous envoyer l’ensemble des résultats en un seul mail avec la liste des activités réalisées en Q1 2026 et non facturées (FNP) par prestataires, ainsi qu’un récapitulatif pour le mardi 7 avril. \r\n\r\nS’il n’y a pas d’activités ayant eu lieu et non facturées, merci de nous l’indiquer dans ce mail.\r\n\r\n \r\n\r\nEnfin, il est possible qu’on revienne vers vous avec des invitations individuelles en cas de besoin.\r\n\r\n \r\n\r\nL’équipe Finance (Juliette, Trinidad, Philippe, Frederick, Adrian \u0026 Matt) se tient à votre disposition au cas où vous auriez besoin d’information (extraits de l’engagé, budget par fournisseurs/projet) ou simplement besoin d’échanger sur le sujet. \r\n\r\n \r\n\r\nUn grand merci d’avance pour vos retours !\r\n\r\n \r\n\r\nBien à vous,\r\n\r\nFinance Team\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n\r\n\r\nFrederick Golly\r\n\r\nDirector of Financial Planning \u0026 Analysis\r\n\r\n+33 7 88 73 14 25\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\nfrederick.golly@abivax.com \u003cmailto:frederick.golly@abivax.com\u003e  \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n\r\nFrom: Frederick Golly \r\nSent: mercredi 3 décembre 2025 10:38\r\nTo: Josianne Nitcheu \u003cJosianne.Nitcheu@abivax.com\u003e; Pascaline Ploncard \u003cPascaline.Ploncard@abivax.com\u003e; Laurence Desroys du Roure \u003cLaurence.DesroysDuRoure@abivax.com\u003e; Jessica Huskey \u003cjessica.huskey@abivax.com\u003e; Julien Santo \u003cJulien.Santo@abivax.com\u003e; Didier Scherrer \u003cDi",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "Abivax_Presentation_FNP_Process.pdf",
+                                "image001.png"
+                            ],
+        "threadId":  "385A7188A4B9354D8BCC4B738022DA24",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE10000",
+        "direction":  "received",
+        "date":  "2026-03-05T13:04:23.1400000-05:00",
+        "subject":  "tomorrow",
+        "from":  "Roxandra Sturdza \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Hey Mike,\r\n\r\n \r\n\r\nI just add Mazars on the phone.\r\n\r\nThey suggested for you not to come tomorrow as it will be focus on Treasury and to do a special meeting with you on TMS/ERP in the forthcoming weeks.\r\n\r\nIs that ok for you ? \r\n\r\nBest\r\n\r\n \r\n\r\n\r\n\r\nRoxandra STURDZA \r\nGroup Treasury Director\r\n\r\n06 63 25 75 01\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\nroxandra.sturdza@abivax.com \u003cmailto:roxandra.sturdza@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "image001.png"
+                            ],
+        "threadId":  "519F76D06BC640F2B5B6D328772A05B5",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDF0000",
+        "direction":  "received",
+        "date":  "2026-03-05T11:50:01.2230000-05:00",
+        "subject":  "Re: ABIVAX x NetSuite : Following up on our meeting",
+        "from":  "Kenneth Schatz \u003ckschatz@cfgi.com\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Received and acknowledged... thanks Mike.  I\u0027ll take a pass through these later today.\r\n\r\nKen\r\n\r\n\r\nKen Schatz | Managing Director\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg\u003e   Mobile | (512) 694-1202 \u003ctel: 5126941202\u003e \t \r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg\u003e   Email | kschatz@cfgi.com\t \r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png\u003e   LinkedIn \u003chttp://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2t26xm\u003e \t \r\nCFGI \u003chttp://go.pardot.com/l/176152/2025-05-12/2t26xq\u003e  | Partnering with you to address your most important accounting and finance needs\r\n\r\n________________________________\r\n\r\nFrom: Michael Markman \u003cmike.markman@abivax.com\u003e\r\nSent: Thursday, March 5, 2026 10:38 AM\r\nTo: Kenneth Schatz \u003ckschatz@cfgi.com\u003e\r\nSubject: [External] FW: ABIVAX x NetSuite : Following up on our meeting \r\n \r\n\r\nHi Kenneth – this is the data from Netsuite that they have sent over. Obviously there are commercial terms in here, so I’d ask that you keep this confidential.\r\n\r\n \r\n\r\nLet me know a good time to discuss this or if you have any other follow-up questions.\r\n\r\n \r\n\r\nThanks,\r\nMike\r\n\r\n \r\n\r\nFrom: jamal azil \u003cjamal.azil@oracle.com\u003e \r\nSent: Thursday, March 5, 2026 10:16 AM\r\nTo: Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc: Girard, Camille \u003ccamillegirard@kpmg.fr\u003e; Hema Keshava \u003cHema.Keshava@abivax.com\u003e; Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e; Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e; Laurent Bailly \u003claurent.bailly@oracle.com\u003e; Vincent Gehanno \u003cvincent.gehanno@oracle.com\u003e; Venceslas dEchallens \u003cvenceslas.dechallens@oracle.com\u003e\r\nSubject: ABIVAX x NetSuite : Following up on our meeting\r\n\r\n \r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n\r\n \r\n\r\nHello Michael,\r\n\r\n \r\n\r\nI hope you are doing well.\r\n\r\n \r\n\r\nAs agreed following our meeting on Tuesday, we are getting back to you with a summary of the offer for the implementation of NetSuite.\r\n\r\n \r\n\r\nPlease find attached an Excel document that outlines the overall budget, including licenses, support, maintenance, and the implementation services for NetSuite.\r\n\r\n \r\n\r\nIn addition, for review with your legal team, we have attached the contractual documents: the “Estimates” and the “SSA”, as well as a draft Statement of Work (SOW), which details the services to be delivered by our Customer Success team as part of the implementation.\r\n\r\n \r\n\r\nPlease feel free to reach out if you have any questions, and we would be happy to schedule a follow-up call to discuss the next steps.\r\n\r\n \r\n\r\nBest regards,\r\n\r\nJamal.\r\n\r\n \r\n\r\n \u003chttps://www.netsuite.com/portal/home.shtml\u003e \r\n\r\n\r\nJamal AZIL | Sales Representative – NetSuite\r\n\r\nMobile : +33 6 46 54 56 72 – jamal.azil@oracle.com \u003cmailto:jamal.azil@oracle.com\u003e \r\n\r\nZoom : https://oracle.zoom.us/my/jamal.azil \u003chttps://oracle.zoom.us/my/david.naccache\u003e \r\nOracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes\r\n\r\n \r\n\r\n \r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n\r\n\r\n\r\nDisclaimer\r\n\r\nThe information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized to receive it. If you are not the recipient, you are hereby notified that any disclosure, copying, distribution or taking action in relation of the contents of this information is strictly prohibited and may be unlawful.\r\n\r\nThis email has been scanned for viruses and malware, and may have been automatically archived by Mimecast, a leader in email security and cyber resilience. Mimecast integrates email defenses with brand protection, security awareness training, web security, compliance and other essential capabilities. Mimecast helps protect large and small organizations from malicious activity, human error and technology failure; and to lead the movement toward building a more resilient world. To find out more, visit our website.\r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5"
+                            ],
+        "threadId":  "C8760AC4C9D4AC409615D604965FC84C",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90F50000",
+        "direction":  "sent",
+        "date":  "2026-03-05T11:38:29.8020000-05:00",
+        "subject":  "FW: ABIVAX x NetSuite : Following up on our meeting",
+        "from":  "Michael Markman \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60\u003e",
+        "to":  [
+                   "Girard, Camille \u003ccamillegirard@kpmg.fr\u003e",
+                   "Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Hi both – got this revised version of the offer from NetSuite today. We can discuss on our call tomorrow any questions or concerns.\r\n\r\n \r\n\r\nThanks,\r\nMike\r\n\r\n \r\n\r\nFrom: jamal azil \u003cjamal.azil@oracle.com\u003e \r\nSent: Thursday, March 5, 2026 10:16 AM\r\nTo: Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc: Girard, Camille \u003ccamillegirard@kpmg.fr\u003e; Hema Keshava \u003cHema.Keshava@abivax.com\u003e; Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e; Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e; Laurent Bailly \u003claurent.bailly@oracle.com\u003e; Vincent Gehanno \u003cvincent.gehanno@oracle.com\u003e; Venceslas dEchallens \u003cvenceslas.dechallens@oracle.com\u003e\r\nSubject: ABIVAX x NetSuite : Following up on our meeting\r\n\r\n \r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n\r\n \r\n\r\nHello Michael,\r\n\r\n \r\n\r\nI hope you are doing well.\r\n\r\n \r\n\r\nAs agreed following our meeting on Tuesday, we are getting back to you with a summary of the offer for the implementation of NetSuite.\r\n\r\n \r\n\r\nPlease find attached an Excel document that outlines the overall budget, including licenses, support, maintenance, and the implementation services for NetSuite.\r\n\r\n \r\n\r\nIn addition, for review with your legal team, we have attached the contractual documents: the “Estimates” and the “SSA”, as well as a draft Statement of Work (SOW), which details the services to be delivered by our Customer Success team as part of the implementation.\r\n\r\n \r\n\r\nPlease feel free to reach out if you have any questions, and we would be happy to schedule a follow-up call to discuss the next steps.\r\n\r\n \r\n\r\nBest regards,\r\n\r\nJamal.\r\n\r\n \r\n\r\n \u003chttps://www.netsuite.com/portal/home.shtml\u003e \r\n\r\n\r\nJamal AZIL | Sales Representative – NetSuite\r\n\r\nMobile : +33 6 46 54 56 72 – jamal.azil@oracle.com \u003cmailto:jamal.azil@oracle.com\u003e \r\n\r\nZoom : https://oracle.zoom.us/my/jamal.azil \u003chttps://oracle.zoom.us/my/david.naccache\u003e \r\nOracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes\r\n\r\n \r\n\r\n \r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5",
+                                "NetSuite Offer Summary.xlsx",
+                                "Estimates.zip",
+                                "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+                                "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+                            ],
+        "threadId":  "C8760AC4C9D4AC409615D604965FC84C",
+        "folder":  "sent"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90F40000",
+        "direction":  "sent",
+        "date":  "2026-03-05T11:37:52.6530000-05:00",
+        "subject":  "FW: ABIVAX x NetSuite : Following up on our meeting",
+        "from":  "Michael Markman \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=6EA02FF9206844729F942B912EAA120D-3ADDD22D-60\u003e",
+        "to":  [
+                   "Kenneth Schatz \u003ckschatz@cfgi.com\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Hi Kenneth – this is the data from Netsuite that they have sent over. Obviously there are commercial terms in here, so I’d ask that you keep this confidential.\r\n\r\n \r\n\r\nLet me know a good time to discuss this or if you have any other follow-up questions.\r\n\r\n \r\n\r\nThanks,\r\nMike\r\n\r\n \r\n\r\nFrom: jamal azil \u003cjamal.azil@oracle.com\u003e \r\nSent: Thursday, March 5, 2026 10:16 AM\r\nTo: Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc: Girard, Camille \u003ccamillegirard@kpmg.fr\u003e; Hema Keshava \u003cHema.Keshava@abivax.com\u003e; Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e; Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e; Laurent Bailly \u003claurent.bailly@oracle.com\u003e; Vincent Gehanno \u003cvincent.gehanno@oracle.com\u003e; Venceslas dEchallens \u003cvenceslas.dechallens@oracle.com\u003e\r\nSubject: ABIVAX x NetSuite : Following up on our meeting\r\n\r\n \r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n\r\n \r\n\r\nHello Michael,\r\n\r\n \r\n\r\nI hope you are doing well.\r\n\r\n \r\n\r\nAs agreed following our meeting on Tuesday, we are getting back to you with a summary of the offer for the implementation of NetSuite.\r\n\r\n \r\n\r\nPlease find attached an Excel document that outlines the overall budget, including licenses, support, maintenance, and the implementation services for NetSuite.\r\n\r\n \r\n\r\nIn addition, for review with your legal team, we have attached the contractual documents: the “Estimates” and the “SSA”, as well as a draft Statement of Work (SOW), which details the services to be delivered by our Customer Success team as part of the implementation.\r\n\r\n \r\n\r\nPlease feel free to reach out if you have any questions, and we would be happy to schedule a follow-up call to discuss the next steps.\r\n\r\n \r\n\r\nBest regards,\r\n\r\nJamal.\r\n\r\n \r\n\r\n \u003chttps://www.netsuite.com/portal/home.shtml\u003e \r\n\r\n\r\nJamal AZIL | Sales Representative – NetSuite\r\n\r\nMobile : +33 6 46 54 56 72 – jamal.azil@oracle.com \u003cmailto:jamal.azil@oracle.com\u003e \r\n\r\nZoom : https://oracle.zoom.us/my/jamal.azil \u003chttps://oracle.zoom.us/my/david.naccache\u003e \r\nOracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes\r\n\r\n \r\n\r\n \r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5",
+                                "NetSuite Offer Summary.xlsx",
+                                "Estimates.zip",
+                                "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+                                "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+                            ],
+        "threadId":  "C8760AC4C9D4AC409615D604965FC84C",
+        "folder":  "sent"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDD0000",
+        "direction":  "received",
+        "date":  "2026-03-05T10:45:03.8530000-05:00",
+        "subject":  "Excels on Treasury",
+        "from":  "Roxandra Sturdza \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Hello Mike,\r\n\r\n \r\n\r\nPlease find enclosed the file on :\r\n\r\n*\tInvestment reporting and daily movement of treasury from investment (NCA) to SG current account\r\n\r\n“2025-2026 Treasury Management Report v11”\r\n\r\nO:\\Support\\Finance\\TRESORERIE\\REPORTING\\CALCULATION TOOLS\r\n\r\n \r\n\r\n*\tCash forecast (Work in progress)\r\n\r\n“Forecast12m 20260305”\r\n\r\nO:\\Support\\Finance\\Reporting\\2026\\4. Suivi Tréso 2026\\Cash forecast\r\n\r\n \r\n\r\n*\tDaily \u0026 monthly treasury movement\r\n\r\nCash Forecast Monthly Planning 2026\r\n\r\nManagement placements et Exposition FX 20251112\r\n\r\n \r\n\r\nBest regards\r\n\r\n \r\n\r\n\r\n\r\nRoxandra STURDZA \r\nGroup Treasury Director\r\n\r\n06 63 25 75 01\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\nroxandra.sturdza@abivax.com \u003cmailto:roxandra.sturdza@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "Cash Forecast Monthly Planning 2026.xlsx",
+                                "image001.png",
+                                "Management placements  et Exposition FX 20251112.xlsx",
+                                "2025-2026 Treasury Management Report v11.xlsx",
+                                "Forecast12m 20260305.xlsx"
+                            ],
+        "threadId":  "D7E448CA98114D13902D3EB1D4E05B44",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDB0000",
+        "direction":  "received",
+        "date":  "2026-03-05T10:17:55.3000000-05:00",
+        "subject":  "ABIVAX x NetSuite : Following up on our meeting",
+        "from":  "jamal azil \u003cjamal.azil@oracle.com\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+                   "Girard, Camille \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dc5042f0a8a442109fd9e35d052ef710-e04c150d-3b\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e",
+                   "Jade Nguyen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=71d049eef9fb411d8505fef564b72005-9c790acd-07\u003e",
+                   "Ben Alaya, Aymen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=7ba415158b4e4e518563167c7c9f01f9-7b2f5c22-d3\u003e",
+                   "Laurent Bailly \u003claurent.bailly@oracle.com\u003e",
+                   "Vincent Gehanno \u003cvincent.gehanno@oracle.com\u003e",
+                   "Venceslas dEchallens \u003cvenceslas.dechallens@oracle.com\u003e"
+               ],
+        "bodyText":  "Confidential - Oracle Restricted \\Including External Recipients\r\n\r\n\r\n\r\nHello Michael,\r\n\r\nI hope you are doing well.\r\n\r\nAs agreed following our meeting on Tuesday, we are getting back to you with a summary of the offer for the implementation of NetSuite.\r\n\r\nPlease find attached an Excel document that outlines the overall budget, including licenses, support, maintenance, and the implementation services for NetSuite.\r\n\r\nIn addition, for review with your legal team, we have attached the contractual documents: the “Estimates” and the “SSA”, as well as a draft Statement of Work (SOW), which details the services to be delivered by our Customer Success team as part of the implementation.\r\n\r\nPlease feel free to reach out if you have any questions, and we would be happy to schedule a follow-up call to discuss the next steps.\r\n\r\nBest regards,\r\nJamal.\r\n\r\n\r\n \u003chttps://www.netsuite.com/portal/home.shtml\u003e \r\n\r\n\r\nJamal AZIL | Sales Representative – NetSuite\r\n\r\nMobile : +33 6 46 54 56 72 – jamal.azil@oracle.com \u003cmailto:jamal.azil@oracle.com\u003e \r\n\r\nZoom : https://oracle.zoom.us/my/jamal.azil \u003chttps://oracle.zoom.us/my/david.naccache\u003e \r\nOracle France, 15 Boulevard Charles de Gaulle, 92715 Colombes\r\n\r\n\r\n\r\nConfidential - Oracle Restricted \\Including External Recipients\r\n\r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5",
+                                "NetSuite Offer Summary.xlsx",
+                                "Estimates.zip",
+                                "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+                                "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+                            ],
+        "threadId":  "C8760AC4C9D4AC409615D604965FC84C",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDA0000",
+        "direction":  "received",
+        "date":  "2026-03-05T08:44:34.4240000-05:00",
+        "subject":  "Re: V3 Availability Poll – [1/2] Master Data Management Workshop",
+        "from":  "Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e",
+        "to":  [
+                   "Girard, Camille \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dc5042f0a8a442109fd9e35d052ef710-e04c150d-3b\u003e",
+                   "Christophe Hennequin \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=556dc16111764bf596dff35a6cf45b1a-Christophe\u003e",
+                   "Benjamin Talmant \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d84320f01e2b471d9760cb1aabddbf98-d0a9279f-da\u003e",
+                   "Jade Nguyen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=71d049eef9fb411d8505fef564b72005-9c790acd-07\u003e",
+                   "Trinidad Mesa \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1b4f510fb9ef46fd8460f9495c565a29-Trinidad Me\u003e",
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Dear all,\r\n\r\nI hope you are well.\r\nI’m following up on the availability poll, could you submit your response at your earliest convenience so we can confirm a time slot that suits everyone?\r\n\r\nThank you in advance for your support.\r\n\r\nKind regards,\r\n\r\n\r\n________________________________\r\n\r\nFrom: Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e\r\nSent: Monday, March 02, 2026 11:55\r\nTo: Girard, Camille \u003ccamillegirard@kpmg.fr\u003e; Christophe Hennequin \u003cchristophe.hennequin@abivax.com\u003e; Benjamin Talmant \u003cbenjamin.talmant@abivax.com\u003e; Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e; Trinidad Mesa \u003ctrinidad.mesa@abivax.com\u003e; Michael Markman \u003cmike.markman@abivax.com\u003e; Hema Keshava \u003chema.keshava@abivax.com\u003e\r\nSubject: V3 Availability Poll – [1/2] Master Data Management Workshop \r\n\r\n\r\nHello,\r\n\r\nFollowing up on the workshop focused on organization and governance for effective Master Data Management (MDM).\r\n\r\nWe haven’t been able to align on a date for the second time yet. We have therefore launched a new poll to collect everyone’s availability.\r\n\r\nTo schedule the workshop as soon as possible, could you please complete the new poll below as soon as possible and indicate your availability?\r\n\r\nThis workshop will be conducted in two sessions of 1 hour each. For now, we are planning the first session.\r\n\r\n\r\n \u003chttps://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Data_Bar.png\u003e \tScheduling poll\r\n \u003chttps://ow2.res.office365.com/assets/findtime/images/v2/Icon_Clock.png\u003e \t1 hour duration\r\n \u003chttps://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Clock.png\u003e \t9 time options\r\n\tVote \u003chttps://outlook.office.com/findtime/vote?getrequesturl=https%3a%2f%2foutlook.office.com%2fows%2fPUID%3a10032003AF8087FC%40deff24bb-2089-4400-8c8e-f71e680378b2%2fbeta%2fOutlookMeetingPolls%2fGetPollForVotingPage%3fid%3dRgAAAABoPA-hEpQWTZFa1LMrDkjNBwDncSPYulLUQpHZKCLpBhJYAAEfgItvAADncSPYulLUQpHZKCLpBhJYAAF57K2sAAAA0%26authtoken%3deyJhbGciOiJSUzI1NiIsImtpZCI6Im1VRWhBM25Jdzc4SDA2S2pZRkNNNXhKQzBnVT0iLCJ0eXAiOiJKV1QiLCJ4NXQiOiJxcHFTbVJDdDNOWXBYRHdwcFFaelBtNXRlR0kifQ.eyJvaWQiOiJmYzE0Yjc2OC0yM2EwLTRmZmUtOGIwMS0wNmJlODQ0M2JiNmYiLCJ2ZXIiOiJSZXNvdXJjZUxvb3BiYWNrLlVzZXIuVjEiLCJzY3AiOiJPdXRsb29rUG9sbC1JbnRlcm5hbC5SZWFkV3JpdGUiLCJyc2NvcGVsZW4iOiIyMzYiLCJyZXNvdXJjZV9zY29wZSI6IntcIlVSTFwiOlwiYkhlMDJUbVBOOU1CNldHdUo1UVUyVXRFV2cwSUZyRDNUdFZKVldHUDlZaz1cIn0iLCJjb3JyaWQiOiIyZDQ0NjM2NC1lNDBmLTQ1NTUtYmNiMS1jYmM0NzA3OGNmNjIiLCJhcHBpZCI6IjE1N2NkZmJmLTczOTgtNGE1Ni05NmMzLWU5M2U5YWIzMDliNSIsImFwcGlkYWNyIjoiMCIsInRpZCI6ImRlZmYyNGJiLTIwODktNDQwMC04YzhlLWY3MWU2ODAzNzhiMiIsImlhdCI6MTc3MjQ0ODg1NywibmJmIjoxNzcyNDQ4ODU3LCJleHAiOjE3ODAyMjQ4NTcsImlzcyI6Imh0dHBzOi8vcmVzb3VyY2Uuc2VsZi8iLCJhdWQiOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSJ9.TzGAQqeWIDHHmUIPax4B1njTZYps0FTbOottuXrtLGuMxNtZxQVqpg3dASGw3TrmfxrQzpCKVTxYG26LxO7e6YTOrWCg2CDqIcpiMw55SBiu0xtSA4Ncy-RbiwM4kMwtTjnOV3SMPTZ7YUppU_jN_HVp_D9A_uylwN1A8W0z2_7HxPPIHPvv4qJSNlGMgi15qyrP0hCqPrvOXYfwedy2nvv1ecr9FYq-htsCYDFty9g_t2GkXfz7o1v7DryPhnZXEabLXyZIoy-MbuOFBcvvQmE3TuWT5uptVONxxYo8IFYlZ4OY0EN47EfGFLD9GGbD2T6g0VoRAguFKK9nxC-BEQ\u0026anonymous\u003e \r\n\tView all your polls \u003chttps://outlook.office.com/findtime/dashboard\u003e \r\n\t\r\n\r\n\r\n\r\n\r\nAymen Ben Alaya\r\n\r\nConsultant\r\nTech Strategy and Transformation / Connected Tech​\r\n\r\nKPMG ADVISORY​\r\nTour Eqho​\r\n2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​\r\n\r\nM. +33 7 78 55 33 58\r\nabenalaya@kpmg.fr\r\n\r\n \r\n\r\n \r\n\r\n________________________________\r\n\r\n\r\nL’opinion de KPMG, est que la communication non cryptée par l\u0027intermédiaire de l\u0027Internet ne doit pas être considérée comme sécurisée.\r\nPour cette raison, la politique de KPMG est que l\u0027utilisation de l\u0027Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s\u0027expose à leur divulgation.\r\nCet e-mail peut contenir des informations confidentielles à l\u0027attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez re",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "77F882336BD65C4AA682D838C28B5238",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD90000",
+        "direction":  "received",
+        "date":  "2026-03-05T07:55:19.8680000-05:00",
+        "subject":  "Re: Reference contact \u0026 template",
+        "from":  "Jade Nguyen \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07\u003e",
+        "to":  [
+                   "Ben Alaya, Aymen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=7ba415158b4e4e518563167c7c9f01f9-7b2f5c22-d3\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e",
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+                   "Girard, Camille \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dc5042f0a8a442109fd9e35d052ef710-e04c150d-3b\u003e",
+                   "Trinidad Mesa \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1b4f510fb9ef46fd8460f9495c565a29-Trinidad Me\u003e",
+                   "Philippe Goncalves \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=591082b8bc6147329258f53a17ef18d3-83a864a9-23\u003e"
+               ],
+        "bodyText":  "Hello Aymen,\r\n\r\nThank you for all the elements.\r\n\r\nPer our discussions, the plan was for Philippe and I to proceed with the reference taking.\r\nI’m looping him \u0026 Trinidad in to coordinate next steps.\r\n\r\nOn our end, we’re ready to move forward and start contacting the shared references.\r\n\r\nHowever I understand you wanted to maybe brief Philippe beforehand on the finance inquiries @Hema Keshava \u003cmailto:Hema.Keshava@abivax.com\u003e  and @Michael Markman \u003cmailto:mike.markman@abivax.com\u003e .\r\n\r\nCould you let us know the preferred timeline for us to proceed? Happy to start right away if you’d like. \r\n\r\nBest,\r\nJade\r\n\r\n\r\n\r\nJade Nguyen\r\nIT Project Manager\r\n\r\n+33 6 95 56 32 02 \u003ctel:+33695563202\u003e \r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\njade.nguyen-ext@abivax.com \u003cmailto:jade.nguyen-ext@abivax.com\u003e \r\n\r\n \r\n\r\nDe : Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e\r\nDate : mercredi, 4 mars 2026 à 17:25\r\nÀ : Hema Keshava \u003cHema.Keshava@abivax.com\u003e, Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e, Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc : Girard, Camille \u003ccamillegirard@kpmg.fr\u003e\r\nObjet : Re: Reference contact \u0026 template\r\n\r\n\r\nWe have received the last reference contact. For Ennov, the contact will be available starting 16/03.\r\n\r\nPlease find below the reference contact details:\r\n\r\n*\tNetsuite\r\n\r\n\t*\t\r\n\t\tEFESO: Laure Tchervenkov (laure.tchervenkov@efeso.com)\r\n\t*\t\r\n\t\tEnnov: Sebastien Rossi-Ferrari (srossi-ferrari@ennov.com \u003cmailto:srossi-ferrari@ennov.com\u003e ) - CFO\r\n\r\n*\t\r\n\tSAP\r\n\r\n\t*\t\r\n\t\tH2Air : dmoyal@h2air.fr - CFO\r\n\t*\t\r\n\t\tCERBA RESEARCH : oussama.kiti@cerbahealthcare.com - COO\r\n\r\nYou can start planning the reference calls at your convenience.\r\n\r\nAs a reminder, here is the template (Reference call template.pptx \u003chttps://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Reference%20meeting/Reference%20call%20template.pptx?d=w6abcfba0bec24c938193b72b029e4262\u0026csf=1\u0026web=1\u0026e=vBp3DH\u003e ) to complete.\r\n\r\n\r\nBest regards, \r\n\r\n\r\nAymen Ben Alaya\r\n\r\nConsultant\r\nTech Strategy and Transformation / Connected Tech​\r\n\r\nKPMG ADVISORY​\r\nTour Eqho​\r\n2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​\r\n\r\nM. +33 7 78 55 33 58\r\nabenalaya@kpmg.fr\r\n\r\n________________________________\r\n\r\nFrom: Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e\r\nSent: Wednesday, March 04, 2026 09:58\r\nTo: Hema Keshava \u003chema.keshava@abivax.com\u003e; Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e; Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc: Girard, Camille \u003ccamillegirard@kpmg.fr\u003e\r\nSubject: Reference contact \u0026 template\r\n\r\nHello,\r\n\r\nI hope you’re doing well.\r\n\r\nPlease find below the reference contact details:\r\n\r\n*\tNetsuite\r\n\r\n\t*\t\r\n\t\tEFESO: Laure Tchervenkov (laure.tchervenkov@efeso.com)\r\n\t*\t\r\n\t\tSecond reference: we have followed up with NetSuite and will get back to you as soon as we receive the contact details.\r\n\r\n*\t\r\n\tSAP\r\n\r\n\t*\t\r\n\t\tH2Air : dmoyal@h2air.fr (CFO)\r\n\t*\t\r\n\t\tCERBA RESEARCH : oussama.kiti@cerbahealthcare.com (COO)\r\n\r\nYou can start planning the reference calls at your convenience.\r\n\r\nHere is the template (Reference call template.pptx \u003chttps://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Reference%20meeting/Reference%20call%20template.pptx?d=w6abcfba0bec24c938193b72b029e4262\u0026csf=1\u0026web=1\u0026e=vBp3DH\u003e ) to complete so you can capture all the necessary information. If helpful, I can also join the call to help fill in the template and take notes.\r\n\r\n\r\nBest regards,\r\n\r\n\r\nAymen Ben Alaya\r\n\r\nConsultant\r\nTech Strategy and Transformation / Connected Tech​\r\n\r\nKPMG ADVISORY​\r\nTour Eqho​\r\n2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​\r\n\r\nM. +33 7 78 55 33 58\r\nabenalaya@kpmg.fr\r\n\r\n \r\n\r\n \r\n\r\n________________________________\r\n\r\n\r\nL’opinion de KPMG, est que la communication non cryptée par l\u0027intermédiaire de l\u0027Internet ne doit pas être considérée comme sécurisée.\r\nPour cette raison, la politiqu",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "img-da6a72b4-425a-45ec-9750-2a8a4796d2b5"
+                            ],
+        "threadId":  "2246931EF61E364884F02B00C0D7E2D2",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD80000",
+        "direction":  "received",
+        "date":  "2026-03-05T04:38:51.8150000-05:00",
+        "subject":  "RE: France P2P - Follow-up for ERP planning",
+        "from":  "Philippe Goncalves \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=591082B8BC6147329258F53A17EF18D3-83A864A9-23\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Hi Mike,\r\n\r\n \r\n\r\n \r\n\r\nI hope you are well.\r\n\r\n \r\n\r\nYou find enclosed :\r\n\r\n \r\n\r\nprocess flow for invoice recording process (Abivax_Procédure Achat) in English.\r\n\r\n \r\n\r\nKind regards\r\n\r\n \r\n\r\n\r\n\r\nPhilippe GONCALVES \r\nSenior Manager Accounting \r\n\r\n.+33 (0)6 87 66 54 59\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\nphilippe.goncalves@abivax.com \u003cmailto:philippe.goncalves@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n\r\nDe : Trinidad Mesa \u003cTrinidad.Mesa@abivax.com\u003e \r\nEnvoyé : jeudi 26 février 2026 10:33\r\nÀ : Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc : Philippe Goncalves \u003cphilippe.goncalves@abivax.com\u003e\r\nObjet : RE: France P2P - Follow-up for ERP planning\r\n\r\n \r\n\r\nHi Mike,\r\n\r\n \r\n\r\nAs per your request for documentation, you will find enclosed :\r\n\r\n- the SOP for PO and contract \r\n\r\n- the approval PO and invoices matrix\r\n\r\n- the approval of contract approval (signature policy)\r\n\r\n- process flow for invoice recording process (Abivax_Procédure Achat) – in French\r\n\r\n-Docushare user guide (for PO)\r\n\r\n-Supplier database update and maintenance (called Supplier data base cleaning)\r\n\r\n-Recording in currency (saisie en devise) – in French\r\n\r\n-Payment process by wire transfer (Moyen de paiement – virements bancaires) – in French\r\n\r\nSome description processes are in French, sorry for that…\r\n\r\n \r\n\r\nConcerning the session on PTP, are you free on next Monday from 5 p.m. CET?\r\n\r\nIf not, can you provide with timeslots?\r\n\r\nI copy Philippe, who will attend the session.\r\n\r\n \r\n\r\nBest\r\n\r\n \r\n\r\n\r\n\r\nTrinidad Mesa \r\nFinance \u0026 Accounting Director\r\n\r\n+33 (0)6 51 81 96 04\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\ntrinidad.mesa@abivax.com \u003cmailto:trinidad.mesa@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\nDe : Michael Markman \u003cmike.markman@abivax.com \u003cmailto:mike.markman@abivax.com\u003e \u003e \r\nEnvoyé : mardi 24 février 2026 16:41\r\nÀ : Trinidad Mesa \u003cTrinidad.Mesa@abivax.com \u003cmailto:Trinidad.Mesa@abivax.com\u003e \u003e\r\nObjet : France P2P - Follow-up for ERP planning\r\n\r\n \r\n\r\nHi Trinidad - Thank you again for your feedback in the finance discussions so far, it’ very helpful. As I organize the ERP work, I’m trying to build a clear current-state picture of the P2P process (not just vendor demo impressions), so we can make sure the implementation addresses the real operational issues.\r\n\r\n \r\n\r\nWould you be open to a short working session (30-45 min) to walk through the current P2P flow on the France side?\r\n\r\n \r\n\r\nI’d like to understand, at a practical level:\r\n\r\n  - current steps from request/PO through invoice/payment\r\n\r\n  - where approvals happen today (and where they do not)\r\n\r\n  - key manual workarounds / pain points\r\n\r\n  - exceptions or rework points\r\n\r\n  - where evidence/audit trail is weak today\r\n\r\n  - what you consider “must-have” changes in the future ERP process\r\n\r\n \r\n\r\nIf you already have any process notes, screenshots, SOPs, flowcharts, checklists, or examples (even informal) that show the current P2P process, please send those first. I’d like to review what exists before we meet so the discussion can stay focused on the real gaps and priorities.\r\n\r\n \r\n\r\nThanks,\r\n\r\nMike\r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "ABIVAX_Purchase proecss - step 1 to 4 ENG version.pdf",
+                                "image001.png"
+                            ],
+        "threadId":  "809388B22EA449E3938B4602F3F30293",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD70000",
+        "direction":  "received",
+        "date":  "2026-03-05T04:13:15.7030000-05:00",
+        "subject":  "RE: PTP Process + your trip in Paris",
+        "from":  "Juliette Courtot \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=56AAF871E6B145A4A2A877E59639F184-JULIETTE.CO\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+                   "Philippe Goncalves \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=591082b8bc6147329258f53a17ef18d3-83a864a9-23\u003e"
+               ],
+        "bodyText":  "Hello Mike, and thank you for your feedback.\r\n\r\n \r\n\r\nI think 30 minutes is too short a time to explain the entire purchasing process and the challenges we face.\r\n\r\nHowever, we can use this time to answer your questions once you have finished reading the documentation we sent you:\r\n\r\n \r\n\r\n- Purchase Process Steps 1 to 4 (a new version translated into English will be sent to you)\r\n\r\n- The Purchase SOP written by Hema, which is complex\r\n\r\n- Docushare User Guide: I\u0027m sure you\u0027ll have questions about how Docushare works and how we use it in finance to justify POs and invoices.\r\n\r\n- The approval matrix authorization: PO validation, invoice validation, according to each person\u0027s rank and the amounts involved.\r\n\r\n \r\n\r\nI think we should also invite Philippe to this short meeting, as he will have some answers for you. \r\n\r\nWhat would you like to do? 30 minutes for a few questions prepared in advance, or an hour for a general presentation of the process?\r\n\r\n \r\n\r\nLooking forward to hearing from you,\r\n\r\nJuliette\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n-----Rendez-vous d\u0027origine-----\r\nDe : Michael Markman \u003cmike.markman@abivax.com\u003e \r\nEnvoyé : mercredi 4 mars 2026 21:38\r\nÀ : Juliette Courtot\r\nObjet : Re: PTP Process + your trip in Paris\r\nDate : mardi 17 mars 2026 06:30-07:00 (UTC-05:00) Est (É.-U. et Canada).\r\nOù : Microsoft Teams Meeting\r\n\r\n \r\n\r\nHi Juliette - let’s meet on Tuesday when I’m in the office and we can walk through your current process and challenges you are facing. \r\n\r\n \r\n\r\nLooking forward to working together!\r\n\r\n \r\n\r\nThanks,\r\n\r\nMike\r\n\r\n \r\n\r\nGet Outlook for iOS \u003chttps://aka.ms/o0ukef\u003e \r\n\r\n________________________________\r\n\r\nFrom: Juliette Courtot \u003cJuliette.Courtot@abivax.com \u003cmailto:Juliette.Courtot@abivax.com\u003e \u003e\r\nSent: Tuesday, March 3, 2026 11:44 AM\r\nTo: Michael Markman \u003cmike.markman@abivax.com \u003cmailto:mike.markman@abivax.com\u003e \u003e\r\nSubject: PTP Process + your trip in Paris \r\n\r\n \r\n\r\nHello Mike, I hope you are well?\r\n\r\n \r\n\r\nIt seems you have a few questions for me about PTP processes, and you\u0027ll probably want to set up a meeting when you\u0027re in Paris the week of March 16.\r\n\r\nFirst, can I provide you with some documentation or answers to your most urgent questions, and second, do you already have a rough idea of how your days in Paris will be organized? I think that if we are going to meet in person, it would be a good idea to schedule an appointment so that I can organize my teleworking days (for your information, I telework on Mondays and Thursdays).\r\n\r\n \r\n\r\nIn any case, I\u0027m available if you have any questions, either by email or Teams.\r\n\r\nMy spoken English is a little rusty, but I\u0027m sure we\u0027ll manage to understand each other.\r\n\r\nHave a great day!\r\n\r\nBest regards,\r\n\r\nJuliette\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \u003cui-copy://9FDE5BAB-E7CB-4523-97E1-420497C94EEF\u003e \r\n\r\nJuliette COURTOT\r\nSenior Accountant, AP\r\n\r\n \r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\njuliette.courtot@abivax.com \u003cmailto:juliette.courtot@abivax.com\u003e \r\n\r\ninvoices@abivax.com \u003cmailto:invoices@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n\r\nNext OOO :\r\n\r\n \r\n\r\n \r\n\r\n________________________________________________________________________________\r\n\r\nMicrosoft Teams meeting \r\n\r\nJoin: https://teams.microsoft.com/meet/38790709008897?p=7T9KeEImZl1V07eNnu \u003chttps://teams.microsoft.com/meet/38790709008897?p=7T9KeEImZl1V07eNnu\u003e  \r\n\r\nMeeting ID: 387 907 090 088 97 \r\n\r\nPasscode: xu3ut77N \r\n\r\n________________________________\r\n\r\nNeed help? \u003chttps://aka.ms/JoinTeamsMeeting?omkt=en-US\u003e  | System reference \u003chttps://teams.microsoft.com/l/meetup-join/19%3ameeting_Yzk3ZTRhYzMtMGZlMi00ZmFmLWFmODAtOWMzMWQxMzQ2MGIy%40thread.v2/0?context=%7b%22Tid%22%3a%220723fe73-2359-40d2-8c34-7e2aa7415594%22%2c%22Oid%22%3a%223addd22d-6010-46b8-8651-28b62767f916%22%7d\u003e  \r\n\r\nFor organizers: Meeting options \u003chttps://teams.microsoft.com/meetingOptions/?organizerId=3addd22d-6010-46b8-8651-28b62767f916\u0026tenantId=0723fe73-2359-40d2-8c34-7e2aa7415594\u0026threadId=19_meeting_Yzk3ZTRhYzMtMGZlMi00ZmFmLWFmODAtOWMzMWQxMzQ2MGIy@thread.v2\u0026messageId=0\u0026language=en-US\u003e  \r\n\r\nPers",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "04DADD23C4C72641A88E04CC540F32AE",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD40000",
+        "direction":  "received",
+        "date":  "2026-03-04T16:01:59.5860000-05:00",
+        "subject":  "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+        "from":  "Kenneth Schatz \u003ckschatz@cfgi.com\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e"
+               ],
+        "cc":  [
+                   "Shine Thomas \u003csthomas@cfgi.com\u003e",
+                   "Guy Morissette \u003cgmorissette@cfgi.com\u003e",
+                   "Jean-Arnold Coutareau \u003cjacoutareau@cfgi.com\u003e",
+                   "wbouassida \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=195be7c8996c42ca95bd31df3b314c68-f02b5f59-87\u003e",
+                   "Angela DePoy \u003cadepoy@cfgi.com\u003e"
+               ],
+        "bodyText":  "Thank you for the intro, Angela!\r\n\r\nHema and Mike - We are looking forward to our discussion tomorrow and learning more about how we might be able to assist you on your Netsuite journey.  In advance, I wanted to share the attached deck which gives a bit more content and context on our ERP practice here at CFGI.\r\n\r\nAs Angela mentioned, if there are any materials/information you are able to share prior to our conversation as well, we\u0027d be happy to review.\r\n\r\nTalk soon,\r\n\r\nKen\r\n\r\n\r\nKen Schatz | Managing Director\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg\u003e   Mobile | (512) 694-1202 \u003ctel: 5126941202\u003e \t \r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg\u003e   Email | kschatz@cfgi.com\t \r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png\u003e   LinkedIn \u003chttp://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2t26xm\u003e \t \r\nCFGI \u003chttp://go.pardot.com/l/176152/2025-05-12/2t26xq\u003e  | Partnering with you to address your most important accounting and finance needs\r\n\r\n\r\n________________________________\r\n\r\nFrom: Angela DePoy \u003cadepoy@cfgi.com\u003e\r\nSent: Tuesday, March 3, 2026 2:02 PM\r\nTo: Michael Markman \u003cmike.markman@abivax.com\u003e; Hema Keshava \u003cHema.Keshava@abivax.com\u003e\r\nCc: Shine Thomas \u003csthomas@cfgi.com\u003e; Kenneth Schatz \u003ckschatz@cfgi.com\u003e; Guy Morissette \u003cgmorissette@cfgi.com\u003e; Jean-Arnold Coutareau \u003cjacoutareau@cfgi.com\u003e; Walid Bouassida \u003cwbouassida@cfgi.com\u003e\r\nSubject: Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction\r\n \r\nAnd, I apologize for a second email - trying to get things out between audit committees today.\r\n\r\nWould you be able to share the RFP and/or the response you received (fully redacted is perfectly fine — we’re not looking for any dollar amounts or commercial details from NetSuite)?\r\n\r\nThat would help our ERP team tailor their messaging, so it’s actually meaningful and specific to what you’re evaluating and sensitive of your time. I realize Phase I went out before you joined, so I’m not sure how much of that you have access to or are able to share — but anything you can provide would be helpful.\r\n\r\nThanks again,\r\nAngela\r\n\r\n\r\nAngela DePoy | Partner\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg\u003e   Mobile | (202) 412-0175\t \r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg\u003e   Email | Adepoy@cfgi.com\t \r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png\u003e   LinkedIn \u003chttp://go.pardot.com/e/176152/pany-thecorporatefinancegroup-/wk5w2/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E\u003e \t \r\nCFGI \u003chttp://go.pardot.com/e/176152/2023-10-18/2gvlrv/403276573/h/75GZD1_4q3ebJ8Gmw6-a3ci3b5daJWpQ30VuYDY241E\u003e  | PARTNERING WITH YOU TO ADDRESS YOUR MOST IMPORTANT ACCOUNTING AND FINANCE NEED\r\n\r\n\r\n________________________________\r\n\r\nFrom: Angela DePoy \u003cadepoy@cfgi.com\u003e\r\nSent: Tuesday, March 3, 2026 2:55 PM\r\nTo: Michael Markman \u003cmike.markman@abivax.com\u003e; Hema Keshava \u003cHema.Keshava@abivax.com\u003e\r\nCc: Shine Thomas \u003csthomas@cfgi.com\u003e; Kenneth Schatz \u003ckschatz@cfgi.com\u003e; Guy Morissette \u003cgmorissette@cfgi.com\u003e; Jean-Arnold Coutareau \u003cjacoutareau@cfgi.com\u003e; Walid Bouassida \u003cwbouassida@cfgi.com\u003e\r\nSubject: Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction\r\n \r\nHi Mike,\r\n\r\nSounds great — I’ve set up a quick half hour on Thursday and am moving Erica to BCC.\r\n\r\nShine and Ken will cover the NetSuite component.\r\n\r\nAs for SOX, our knowledge of the Company\u0027s existing processes and gaps would be incorporated into any system design - and similarly, where there is opportunity for process improvement - which, while not necessarily SOX and largely operations focused, we know there are many bottlenecks and key person dependencies.  Even though I\u0027m a Risk partner/SOX person, I recognize that SOX needs don\u0027t always come first (sighs!)\r\n\r\nThere will also be SOD considerations in roles/p",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "Abivax - CFGI ERP Practice Overview_03.04.36.pdf"
+                            ],
+        "threadId":  "B701EBE549808E419518D9F1139198FA",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C5400000",
+        "direction":  "sent",
+        "date":  "2026-03-04T15:38:40.4340000-05:00",
+        "subject":  "Re: Audit committee slides ",
+        "from":  "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e",
+        "to":  [
+                   "Adrian Holbrook \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=58161941cbe64a879014d4a2e8d5220f-ea331a62-88\u003e"
+               ],
+        "cc":  [
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e",
+                   "Matt Epley \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6231154a529a48d3a481b7fdfbfbe95a-3ff36c05-11\u003e"
+               ],
+        "bodyText":  "Looks good. Thanks Adrian. \r\n\r\nGet Outlook for iOS \u003chttps://aka.ms/o0ukef\u003e \r\n________________________________\r\n\r\nFrom: Adrian Holbrook \u003cadrian.holbrook@abivax.com\u003e\r\nSent: Tuesday, March 3, 2026 5:13:51 PM\r\nTo: Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc: Hema Keshava \u003cHema.Keshava@abivax.com\u003e; Matt Epley \u003cMatt.Epley@abivax.com\u003e\r\nSubject: Re: Audit committee slides \r\n \r\nMike,\r\n\r\n\r\nThis is a first pass at an initial draft. I recreated it to ensure alignment with our current Abivax PPT template.\r\n\r\n\r\nHappy to refine further based on your feedback.\r\n\r\n\r\nThanks,\r\n\r\n\r\nAdrian Holbrook\r\n\r\nSr. Financial Analyst\r\n\r\n(1)704-929-3383\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\na \u003cmailto:adrian.holbrook@abivax.com\u003e drian.holbrook \u003cmailto:adrian.holbrook@abivax.com\u003e @abivax.com \u003cmailto:adrian.holbrook@abivax.com\u003e  \r\n\r\n\t\r\n\r\n \r\n\r\n\r\n\r\n\r\n________________________________\r\n\r\nFrom: Michael Markman \u003cmike.markman@abivax.com\u003e\r\nSent: Tuesday, March 3, 2026 2:07 PM\r\nTo: Adrian Holbrook \u003cadrian.holbrook@abivax.com\u003e\r\nSubject: Audit committee slides \r\n\r\nHi Adrian - here are slides KPMG put together based on the request. I informed NetSuite team today of the decision and will be working through the negotiation and commercial aspects over the next couple of weeks. \r\n\r\nLet me know any questions.\r\n\r\nThanks,\r\nMike\r\n\r\nGet Outlook for iOS \u003chttps://aka.ms/o0ukef\u003e ",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "Outlook-photo.png"
+                            ],
+        "threadId":  "5BA0B11C912133479783327BCC49FCCC",
+        "folder":  "sent"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD20000",
+        "direction":  "received",
+        "date":  "2026-03-04T11:25:14.7680000-05:00",
+        "subject":  "Re: Reference contact \u0026 template",
+        "from":  "Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e",
+        "to":  [
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e",
+                   "Jade Nguyen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=71d049eef9fb411d8505fef564b72005-9c790acd-07\u003e",
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+                   "Girard, Camille \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dc5042f0a8a442109fd9e35d052ef710-e04c150d-3b\u003e"
+               ],
+        "bodyText":  "We have received the last reference contact. For Ennov, the contact will be available starting 16/03.\r\n\r\nPlease find below the reference contact details:\r\n\r\n*\tNetsuite\r\n\r\n\t*\t\r\n\t\tEFESO: Laure Tchervenkov (laure.tchervenkov@efeso.com)\r\n\t*\t\r\n\t\tEnnov: Sebastien Rossi-Ferrari (srossi-ferrari@ennov.com \u003cmailto:srossi-ferrari@ennov.com\u003e ) - CFO\r\n\r\n*\t\r\n\tSAP\r\n\r\n\t*\t\r\n\t\tH2Air : dmoyal@h2air.fr - CFO\r\n\t*\t\r\n\t\tCERBA RESEARCH : oussama.kiti@cerbahealthcare.com - COO\r\n\r\nYou can start planning the reference calls at your convenience.\r\n\r\nAs a reminder, here is the template (Reference call template.pptx \u003chttps://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Reference%20meeting/Reference%20call%20template.pptx?d=w6abcfba0bec24c938193b72b029e4262\u0026csf=1\u0026web=1\u0026e=vBp3DH\u003e ) to complete.\r\n\r\n\r\nBest regards, \r\n\r\n\r\nAymen Ben Alaya\r\n\r\nConsultant\r\nTech Strategy and Transformation / Connected Tech​\r\n\r\nKPMG ADVISORY​\r\nTour Eqho​\r\n2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​\r\n\r\nM. +33 7 78 55 33 58\r\nabenalaya@kpmg.fr\r\n\r\n________________________________\r\n\r\nFrom: Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e\r\nSent: Wednesday, March 04, 2026 09:58\r\nTo: Hema Keshava \u003chema.keshava@abivax.com\u003e; Jade Nguyen \u003cjade.nguyen-ext@abivax.com\u003e; Michael Markman \u003cmike.markman@abivax.com\u003e\r\nCc: Girard, Camille \u003ccamillegirard@kpmg.fr\u003e\r\nSubject: Reference contact \u0026 template \r\n\r\nHello,\r\n\r\nI hope you’re doing well.\r\n\r\nPlease find below the reference contact details:\r\n\r\n*\tNetsuite\r\n\r\n\t*\t\r\n\t\tEFESO: Laure Tchervenkov (laure.tchervenkov@efeso.com)\r\n\t*\t\r\n\t\tSecond reference: we have followed up with NetSuite and will get back to you as soon as we receive the contact details.\r\n\r\n*\t\r\n\tSAP\r\n\r\n\t*\t\r\n\t\tH2Air : dmoyal@h2air.fr (CFO)\r\n\t*\t\r\n\t\tCERBA RESEARCH : oussama.kiti@cerbahealthcare.com (COO)\r\n\r\nYou can start planning the reference calls at your convenience.\r\n\r\nHere is the template (Reference call template.pptx \u003chttps://abivaxfr.sharepoint.com/:p:/r/sites/ERPChoiceProjectxKPMGQ42025/Shared%20Documents/General/Phase%203%20-%20Consultation%20process%20and%20preparation/Consultation/Reference%20meeting/Reference%20call%20template.pptx?d=w6abcfba0bec24c938193b72b029e4262\u0026csf=1\u0026web=1\u0026e=vBp3DH\u003e ) to complete so you can capture all the necessary information. If helpful, I can also join the call to help fill in the template and take notes.\r\n\r\n\r\nBest regards,\r\n\r\n\r\nAymen Ben Alaya\r\n\r\nConsultant\r\nTech Strategy and Transformation / Connected Tech​\r\n\r\nKPMG ADVISORY​\r\nTour Eqho​\r\n2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​\r\n\r\nM. +33 7 78 55 33 58\r\nabenalaya@kpmg.fr\r\n\r\n \r\n\r\n \r\n\r\n________________________________\r\n\r\n\r\nL’opinion de KPMG, est que la communication non cryptée par l\u0027intermédiaire de l\u0027Internet ne doit pas être considérée comme sécurisée.\r\nPour cette raison, la politique de KPMG est que l\u0027utilisation de l\u0027Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s\u0027expose à leur divulgation.\r\nCet e-mail peut contenir des informations confidentielles à l\u0027attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.\r\n\r\nIn KPMG\u0027s opinion, non-encrypted communication via the Internet is not to be considered secure.\r\nFor that reason, it is KPMG\u0027s policy that uninvited use of the Internet concerning exchange of confidential information with our clients must not take place.\r\nWhen exchanging information, the client is held liable. This e-mail may contain confidential information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited and may be unlawful. If you have received this e-mail by mistake, please notify us immediately and delete this mail.\r\n\r\nMentions légale",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "2246931EF61E364884F02B00C0D7E2D2",
+        "folder":  "inbox"
+    }
+]

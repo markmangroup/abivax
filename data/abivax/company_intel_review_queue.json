@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-26T20:39:39.601Z",
+  "generatedAt": "2026-03-06T15:26:39.313Z",
   "summary": {
-    "pendingReview": 0,
-    "reviewed": 5,
+    "pendingReview": 1,
+    "reviewed": 2,
     "highPriorityPending": 0
   },
   "items": [
@@ -12,7 +12,7 @@
       "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm",
       "title": "Abivax S.A. filed 6-K (2026-02-23)",
       "date": "2026-02-23",
-      "detectedAt": "2026-02-26T20:39:37.539Z",
+      "detectedAt": "2026-03-06T15:26:37.210Z",
       "status": "reviewed",
       "queueType": "company-intel-review",
       "categoryHint": "general-company-update",
@@ -28,7 +28,7 @@
       "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1956827/000195682725000035/abvx-20250930.htm",
       "title": "Abivax S.A. filed 6-K (2025-12-15)",
       "date": "2025-12-15",
-      "detectedAt": "2026-02-26T20:39:37.539Z",
+      "detectedAt": "2026-03-06T15:26:37.210Z",
       "status": "reviewed",
       "queueType": "company-intel-review",
       "categoryHint": "general-company-update",
@@ -41,50 +41,18 @@
     {
       "id": "queue-YWJpdmF4LWlyLWVtYWlsfGlyLWVtYW",
       "source": "abivax-ir-email",
-      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm",
-      "title": "New Form 6-K for Abivax",
-      "date": "2026-02-23",
-      "detectedAt": "2026-02-26T20:39:36.507Z",
-      "status": "reviewed",
-      "queueType": "company-intel-review",
-      "categoryHint": "general-company-update",
-      "priority": "medium",
-      "reviewHint": "Review significance and update company intel / digest if material.",
-      "reviewedAt": "2026-02-27T16:10:00.000Z",
-      "reviewOutcome": "confirmed-existing-company-intel-item",
-      "notes": "SEC 6-K alert duplicates ECCO-related filing coverage already captured in company_intel.json (pipe-5-ecco26-antifibrotic-ir); no net-new intel item needed."
-    },
-    {
-      "id": "queue-YWJpdmF4LWlyLWVtYWlsfGlyLWVtYW",
-      "source": "abivax-ir-email",
-      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1956827/000195682726000003/a6-kxeccopr.htm",
-      "title": "Abivax Presents First Evidence of Anti-Fibrotic Activity for Obefazimod Alongside New Clinical Efficacy and Safety Analyses in Inflammatory Bowel Disease at ECCO 2026",
-      "date": "2026-02-21",
-      "detectedAt": "2026-02-26T20:39:36.507Z",
-      "status": "reviewed",
-      "queueType": "company-intel-review",
-      "categoryHint": "clinical-data",
-      "priority": "high",
-      "reviewHint": "Review significance and update company intel / digest if material.",
-      "reviewedAt": "2026-02-27T16:10:00.000Z",
-      "reviewOutcome": "confirmed-existing-company-intel-item",
-      "notes": "ECCO 2026 anti-fibrotic/efficacy/safety signal is already reflected in company_intel.json and digest context; queue item closed as integrated."
-    },
-    {
-      "id": "queue-YWJpdmF4LWlyLWVtYWlsfGlyLWVtYW",
-      "source": "abivax-ir-email",
-      "sourceUrl": "https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DuXpN_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr38R86dfe-2Bcl9ku8o1rbrXnyyEdzVpiezORxSWEkFqr0EKxsb1RStSqy8W5VEcxTEashtSOXIxYgS5VALI1EpEN744G-2BqNPTT-2BnT2rcWiTAozMLUgjGoTgreR6u-2Fm3duHkm5-2Bw-2BnBvQVdnqXs0gk3-2BqlXYH-2FtMkEJ1ESi2O1aD8wS7dLKsHsqVyIzlpWwnANkETKsA-2Bxl7OHoWEd92XwRQ10imNJcDbNGtOq4IS2SEUtyj78bIU4qg7GoXBMXgxRQ1q3gniRC65u5o7YN3OxOjz",
+      "sourceUrl": "https://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DGYx4_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr0zPIZkwgqCtZ5N7tXWuLxKtLT-2FzQbBK5rborGRA88fqyaq9Pcqh-2Fr9cvTRU4JOuYEtp5zMYEAk3QtfscyFBRNAEe20sievQ8O2otHYVEVnD9r4AJAls1ET5YHbACH34-2FQEYrjKTP6IzhtPyyM-2BZZKiY7uoCVaElEa9CFi0rZBghqXMoSOLaELvBE8Y-2BK2r9qgnDWIXRTGdFZBigsR7DPHXX0fUfAGsRvnZ32epbTenFPtejxSoEVDxwf1Ll6pW82dgBtG1uwKjlnJRI9KjJRdo",
       "title": "Weekly Summary Alert for Abivax",
-      "date": "2026-02-20",
-      "detectedAt": "2026-02-26T20:39:36.507Z",
-      "status": "reviewed",
+      "date": "2026-02-27",
+      "detectedAt": "2026-03-06T15:26:35.650Z",
+      "status": "pending-review",
       "queueType": "company-intel-review",
       "categoryHint": "general-company-update",
       "priority": "medium",
       "reviewHint": "Review significance and update company intel / digest if material.",
-      "reviewedAt": "2026-02-26T16:15:30.000Z",
-      "reviewOutcome": "summary-alert-no-immediate-update",
-      "notes": "Weekly summary alert is an aggregate notification and did not introduce net-new material company intel beyond items already detected/reviewed."
+      "reviewedAt": null,
+      "reviewOutcome": "",
+      "notes": ""
     }
   ]
 }

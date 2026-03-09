@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-03-09T16:30:10.245Z",
+  "sourceFile": "emails_2026-03-09.json",
+  "totalEmails": 6,
+  "byType": {
+    "action-required": 0,
+    "external-request": 1,
+    "internal-update": 1,
+    "deliverable-received": 0,
+    "thread-reply": 0,
+    "scheduling": 1,
+    "noise": 3
+  },
+  "flagCounts": {
+    "deadline": 1,
+    "financial": 1,
+    "decision": 1,
+    "data-gap-fill": 0,
+    "risk": 0,
+    "urgent": 0
+  },
+  "noiseCount": 3,
+  "triageErrors": [],
+  "emails": [
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000179840770000",
+      "date": "2026-03-09T08:57:44.3790000-04:00",
+      "direction": "received",
+      "subject": "V3 Availability Poll – [1/2] Master Data Management Workshop",
+      "from": "Ben Alaya, Aymen",
+      "to": [
+        "Girard, Camille",
+        "Christophe Hennequin",
+        "Benjamin Talmant",
+        "Jade Nguyen",
+        "Trinidad Mesa",
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline"
+      ],
+      "oneSentenceSummary": "Aymen widened the MDM workshop scheduling window and asked everyone to submit availability.",
+      "keyFacts": [
+        "The MDM workshop poll now covers a two-week window with 18 time options.",
+        "KPMG said a date cannot be locked without enough responses submitted in advance."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000179840760000",
+      "date": "2026-03-09T07:30:31.8170000-04:00",
+      "direction": "received",
+      "subject": "RE: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Walid Bouassida",
+      "to": [
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "external-request",
+      "flags": [
+        "decision"
+      ],
+      "oneSentenceSummary": "Walid asked to schedule a discussion on CFGI finance PMO scope, start date, and expectations.",
+      "keyFacts": [
+        "Walid requested a 30-minute discussion with Youness during this week.",
+        "Topic: CFGI Finance PMO role for NetSuite migration, including scope and start date.",
+        "Walid is also developing an accounting support role for Trinidad."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE40000",
+      "date": "2026-03-06T17:51:04.4880000-05:00",
+      "direction": "received",
+      "subject": "Weekly Summary Alert for Abivax",
+      "from": "Abivax",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "internal-update",
+      "flags": [
+        "financial"
+      ],
+      "oneSentenceSummary": "Investor relations weekly market alert for Abivax stock activity.",
+      "keyFacts": [
+        "IR alert summarizes March 2 week market trading data for ABVX.PA."
+      ],
+      "linkedPillars": [],
+      "linkedEntities": [],
+      "attachments": [],
+      "suggestedAction": "file-only"
+    }
+  ]
+}

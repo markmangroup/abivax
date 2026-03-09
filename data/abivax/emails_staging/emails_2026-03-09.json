@@ -1,0 +1,140 @@
+[
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000179840780000",
+        "direction":  "received",
+        "date":  "2026-03-09T11:17:00.2240000-04:00",
+        "subject":  "RE: Weekly Summary of QMS Documents Update 09Mar2026",
+        "from":  "Malinda Micho \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07\u003e",
+        "to":  [
+                   "allabivax \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1ae9ec8146b84c54b003b3a7617745dc-allabivax\u003e",
+                   "ALLABIVAX-E \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f98d557a69b940368798048da4347bee-645a9157-c3\u003e"
+               ],
+        "cc":  [
+                   "Mark Hronec \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=bfb30ec7fbd745f3b8a3d1e7d100721d-f502b83d-f7\u003e",
+                   "Katy Vu \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=09e657d52ca44f17a7630368ff135719-a62f8f3e-15\u003e"
+               ],
+        "bodyText":  "Hi everyone,\r\n\r\n \r\n\r\nPlease see below a summary of controlled QMS documents that were created or revised and were approved or became effective in the last week.\r\n\r\n \r\n\r\nPlease be aware that two (2) new policies (as noted below) have been issued for training by all Abivax staff: (1) Data Integrity Policy and (2) Record Management and Retention Policy. Ensure that you are proactively completing training assignment tasks within Veeva Vault (Veeva Vault QualityDocs \u003chttps://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#t/0TB000000000101/all?fcah=\u0026initSrch=false\u003e ).\r\n\r\n \r\n\r\nDocument Name\r\n\r\nDocument Number\r\n\r\nSubtype\r\n\r\nDocument Status\r\n\r\nOwning Department\r\n\r\nApproved Date\r\n\r\nEffective Date\r\n\r\nData Integrity Policy (v1.0) \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/15402/1/0\u003e \r\n\r\nABX-QUAL-1140 \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/15402/1/0\u003e \r\n\r\nPolicy\r\n\r\nIssued\r\n\r\nQuality \u003chttps://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003016\u003e \r\n\r\n06 Mar 2026\r\n\r\n \r\n\r\nRecord Management and Retention Policy (v1.0) \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/15501/1/0\u003e \r\n\r\nABX-QUAL-1138 \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/15501/1/0\u003e \r\n\r\nPolicy\r\n\r\nIssued\r\n\r\nQuality \u003chttps://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003016\u003e \r\n\r\n06 Mar 2026\r\n\r\n \r\n\r\nGxP Good Documentation Practices (v1.0) \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/15401/1/0\u003e \r\n\r\nABX-QUAL-1137 \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/15401/1/0\u003e \r\n\r\nStandard Operating Procedure (SOP)\r\n\r\nIssued\r\n\r\nQuality \u003chttps://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003016\u003e \r\n\r\n06 Mar 2026\r\n\r\n \r\n\r\nGxP Inventory: Quality Management (v2.0) \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/865/2/0\u003e \r\n\r\nABX-QUAL-0701 \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/865/2/0\u003e \r\n\r\nWork Instruction\r\n\r\nEffective\r\n\r\nClinical Trial Supplies \u003chttps://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003005\u003e \r\n\r\n18 Feb 2026\r\n\r\n04 Mar 2026\r\n\r\nGxP Inventory: Stock Management (v3.0) \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/866/3/0\u003e \r\n\r\nABX-QUAL-0702 \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/866/3/0\u003e \r\n\r\nWork Instruction\r\n\r\nEffective\r\n\r\nClinical Trial Supplies \u003chttps://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003005\u003e \r\n\r\n18 Feb 2026\r\n\r\n04 Mar 2026\r\n\r\nDocumentation Review \u0026 Approval Form (v2.0) \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/848/2/0\u003e \r\n\r\nABX-QUAL-0684 \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/848/2/0\u003e \r\n\r\nMaster Form\r\n\r\nApproved\r\n\r\nClinical Trial Supplies \u003chttps://abivax-quality.veevavault.com/ui/#object/department__v/00D000000003005\u003e \r\n\r\n02 Mar 2026\r\n\r\n \r\n\r\n \r\n\r\nKindly,\r\n\r\n \r\n\r\n\r\n\r\nMalinda MICHO\r\nManager, Quality Systems\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\nmalinda.micho@abivax.com \u003cmailto:malinda.micho@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n\r\nFrom: Malinda Micho \u003cmalinda.micho@abivax.com\u003e \r\nSent: Tuesday, March 3, 2026 2:14 PM\r\nTo: allabivax \u003callabivax@abivax.com\u003e; ALLABIVAX-E \u003callabivax-e@abivax.com\u003e\r\nCc: Mark Hronec \u003cmark.hronec@abivax.com\u003e; Katy Vu \u003ckaty.vu-ext@abivax.com\u003e\r\nSubject: RE: Weekly Summary of QMS Documents Update 03Mar2026\r\n\r\n \r\n\r\nHi everyone, \r\n\r\n \r\n\r\nSee below a summary of controlled QMS documents that were created or revised and were approved or became effective over the last week. As well, please see attached an updated QMS Index showing all currently active Policies, SOPs, WINs and Forms. A copy of this is always stored in PDF and Excel formats on the shared drive here: O:\\Commun\\Common Activity\\ABIVAX Quality Documents\\ABX QMS Index and Glossary (QMS Documents moved to Veeva Vault)\\QMS Index\r\n\r\n \r\n\r\nThis communication is sent for your awareness only; there are several documents included here – please ensure you take a moment to review and let me know if you have any questions. As well, please ensure that you are proactively completing training assignment",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "image001.png",
+                                "image002.png",
+                                "image003.png",
+                                "image004.png",
+                                "image005.png"
+                            ],
+        "threadId":  "65C8C3BCAEC61B4BA469FEE09360969E",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000179840770000",
+        "direction":  "received",
+        "date":  "2026-03-09T08:57:44.3790000-04:00",
+        "subject":  "V3 Availability Poll – [1/2] Master Data Management Workshop",
+        "from":  "Ben Alaya, Aymen \u003cabenalaya@kpmg.fr\u003e",
+        "to":  [
+                   "Girard, Camille \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=dc5042f0a8a442109fd9e35d052ef710-e04c150d-3b\u003e",
+                   "Christophe Hennequin \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=556dc16111764bf596dff35a6cf45b1a-Christophe\u003e",
+                   "Benjamin Talmant \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d84320f01e2b471d9760cb1aabddbf98-d0a9279f-da\u003e",
+                   "Jade Nguyen \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=71d049eef9fb411d8505fef564b72005-9c790acd-07\u003e",
+                   "Trinidad Mesa \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1b4f510fb9ef46fd8460f9495c565a29-Trinidad Me\u003e",
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  "Hello,\r\n\r\n\r\nFollowing up on the workshop on organization and governance for effective Master Data Management (MDM).\r\n\r\nWe have still not been able to secure a common time slot, so this time we are widening the scheduling window to cover a two-week period in order to maximize the chances of finding a date that works for everyone.\r\n\r\nTo make sure we can finally confirm this session, it is very important that everyone provides their availability in advance. Without enough responses ahead of time, we will unfortunately not be able to lock in a date.\r\n\r\nCould you therefore please complete the poll below as soon as possible and make sure to submit your availability at the earliest convenience?\r\n\r\n\r\n \u003chttps://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Data_Bar.png\u003e \tScheduling poll\r\nV3 Availability Poll – [1/2] Master Data Management Workshop\r\n \u003chttps://ow2.res.office365.com/assets/findtime/images/v2/Icon_Clock.png\u003e \t1 hour duration\r\n \u003chttps://ow2.res.office365.com/assets/findtime/images/v2/Icon_Calendar_Clock.png\u003e \t18 time options\r\n\tVote \u003chttps://outlook.office.com/findtime/vote?getrequesturl=https%3a%2f%2foutlook.office.com%2fows%2fPUID%3a10032003AF8087FC%40deff24bb-2089-4400-8c8e-f71e680378b2%2fbeta%2fOutlookMeetingPolls%2fGetPollForVotingPage%3fid%3dRgAAAABoPA-hEpQWTZFa1LMrDkjNBwDncSPYulLUQpHZKCLpBhJYAAEfgItvAADncSPYulLUQpHZKCLpBhJYAAF-uId6AAAA0%26authtoken%3deyJhbGciOiJSUzI1NiIsImtpZCI6Im1VRWhBM25Jdzc4SDA2S2pZRkNNNXhKQzBnVT0iLCJ0eXAiOiJKV1QiLCJ4NXQiOiJxcHFTbVJDdDNOWXBYRHdwcFFaelBtNXRlR0kifQ.eyJvaWQiOiJmYzE0Yjc2OC0yM2EwLTRmZmUtOGIwMS0wNmJlODQ0M2JiNmYiLCJ2ZXIiOiJSZXNvdXJjZUxvb3BiYWNrLlVzZXIuVjEiLCJzY3AiOiJPdXRsb29rUG9sbC1JbnRlcm5hbC5SZWFkV3JpdGUiLCJyc2NvcGVsZW4iOiIyMzYiLCJyZXNvdXJjZV9zY29wZSI6IntcIlVSTFwiOlwiWHJ3Vm9COE9nZldkMDVoTCt6MkczcjJraG1RN1EvUTB1WmhvQ1NvWUs5UT1cIn0iLCJjb3JyaWQiOiI5NDg4MzgwOS1kNDVmLTRmOTYtYTJiZS0yNmRjNTJhOThkZGYiLCJhcHBpZCI6IjE1N2NkZmJmLTczOTgtNGE1Ni05NmMzLWU5M2U5YWIzMDliNSIsImFwcGlkYWNyIjoiMCIsInRpZCI6ImRlZmYyNGJiLTIwODktNDQwMC04YzhlLWY3MWU2ODAzNzhiMiIsImlhdCI6MTc3MzA2MDk0OCwibmJmIjoxNzczMDYwOTQ4LCJleHAiOjE3ODA4MzY5NDgsImlzcyI6Imh0dHBzOi8vcmVzb3VyY2Uuc2VsZi8iLCJhdWQiOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSJ9.BJM49gTEIoKAhTA2f2jQUYixy2MZiCnys_7YfT5Zvhxc65K7CCAKFoZlgDpdK-HxF5AlqRgWYLOkpKREYrPGC8FP1frdlQeI2rh54iewWir46FaSzt5SAYHEb-a36gCQbEYYrIRbp3BFQqj4S8i9R2U7mFj-m80bDmUnvWYNYY7FtIrx1IDwDBiZhVgpokufhJPEoIVI4qayAlwPBj_MzjBmoDjky_UgkQ2WyYij7q4hGIQiSzEewyqnceWXvj1kX-V4Fav-qZ-zychtdo-aPAMLodxinIZjPD1f6o71qRUteg4N8866wC6y35diFXkNQJnSAANtJFPdi1AIQ9yoBQ\u0026anonymous\u003e \r\n\tView all your polls \u003chttps://outlook.office.com/findtime/dashboard\u003e \r\n\t\r\n\r\n\r\nAs a reminder, this workshop will be conducted in two 1-hour sessions. For now, we are focusing on scheduling the first session.\r\n\r\nThank you in advance for your prompt response.\r\n\r\nBest regards,\r\n\r\nAymen Ben Alaya\r\n\r\nConsultant\r\nTech Strategy and Transformation / Connected Tech​\r\n\r\nKPMG ADVISORY​\r\nTour Eqho​\r\n2 Avenue Gambetta, La Défense | 92066 Paris La Défense Cedex​\r\n\r\nM. +33 7 78 55 33 58\r\nabenalaya@kpmg.fr\r\n\r\n \r\n\r\n \r\n\r\n________________________________\r\n\r\n\r\nL’opinion de KPMG, est que la communication non cryptée par l\u0027intermédiaire de l\u0027Internet ne doit pas être considérée comme sécurisée.\r\nPour cette raison, la politique de KPMG est que l\u0027utilisation de l\u0027Internet pour échanger des informations confidentielles avec ses clients ne doit pas avoir lieu sauf à leur demande. En échangeant de telles informations, le client s\u0027expose à leur divulgation.\r\nCet e-mail peut contenir des informations confidentielles à l\u0027attention du destinataire. Toute révélation de cette information est strictement interdite et peut être illégale. Si vous avez reçu cet e-mail par erreur, merci de nous en informer immédiatement et supprimez-le.\r\n\r\nIn KPMG\u0027s opinion, non-encrypted communication via the Internet is not to be considered secure.\r\nFor that reason, it is KPMG\u0027s policy that uninvited use of the Internet concerning exchange of confidential information with our clients must no",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "E4E8FA957B2A81408301F242954888AC",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF980000179840760000",
+        "direction":  "received",
+        "date":  "2026-03-09T07:30:31.8170000-04:00",
+        "subject":  "RE: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+        "from":  "Walid Bouassida \u003cwbouassida@cfgi.com\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e",
+                   "Hema Keshava \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=5a51c1ed70d348bfbb5e19f2c4bca678-88974f20-cc\u003e"
+               ],
+        "cc":  [
+                   "Jean-Arnold Coutareau \u003cjacoutareau@cfgi.com\u003e",
+                   "Angela DePoy \u003cadepoy@cfgi.com\u003e",
+                   "Erica Devlin \u003cedevlin@cfgi.com\u003e",
+                   "Youness Tyamaz \u003cytyamaz@cfgi.com\u003e"
+               ],
+        "bodyText":  "Hi Michael, Hema \r\n\r\n \r\n\r\nCould we schedule a 30‑minute discussion with Youness during this week to clarify your expectations regarding the Finance PMO role as part of the Netsuite migration project (scope of the role, start date, etc.)?\r\nWhat would your availabilities be? We can check your calendars and propose a slot that works for us.\r\n\r\nPS: I am also working in parallel on the accounting role that would support Trinidad \r\n\r\n \r\n\r\nBest \r\n\r\nWalid, \r\n\r\n \r\n\r\n \r\n\r\nWalid Bouassida (he/him) | Director\r\n\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg\u003e   Mobile | +33 (0)6 47 55 30 52\r\n\r\n\t\t\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg\u003e   Email | wbouassida@cfgi.com \u003cmailto:wbouassida@cfgi.com\u003e \r\n\r\n\t\t\t\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png\u003e   LinkedIn \u003chttp://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp\u003e \r\n\r\n\t\t\t\r\n\r\n \r\n\r\nCFGI \u003chttp://go.pardot.com/l/176152/2024-10-07/2pxcws\u003e  | Partnering with you to address your most important accounting and finance needs\r\n\r\n \r\n\r\n \r\n\r\nDe : Walid Bouassida \r\nEnvoyé : mercredi 4 mars 2026 10:24\r\nÀ : Michael Markman \u003cmike.markman@abivax.com\u003e; Hema Keshava \u003cHema.Keshava@abivax.com\u003e\r\nCc : Jean-Arnold Coutareau \u003cjacoutareau@cfgi.com\u003e; Angela DePoy \u003cadepoy@cfgi.com\u003e; Erica Devlin \u003cedevlin@cfgi.com\u003e\r\nObjet : RE: Abivax ERP - NetSuite Biotech Expert Implementors Introduction\r\n\r\n \r\n\r\nDear Hema,\r\nDear Mickael,\r\n\r\nIn parallel, I would be happy to discuss with you the setup you are considering and anticipate any potential needs or resources that could be supported by additional operational assistance.\r\n\r\nWe can then determine together the relevant profiles as well as the desired availability.\r\nHappy to discuss this with you.\r\n\r\nBest regards,\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\nWalid Bouassida (he/him) | Director\r\n\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg\u003e   Mobile | +33 (0)6 47 55 30 52\r\n\r\n\t\t\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtrv/176152/16383923044Wq7ugGv/blue_email.jpg\u003e   Email | wbouassida@cfgi.com \u003cmailto:wbouassida@cfgi.com\u003e \r\n\r\n\t\t\t\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtsj/176152/1638393343cFN11PNB/blue_linkedin.png\u003e   LinkedIn \u003chttp://go.pardot.com/l/176152/pany-thecorporatefinancegroup-/2pxcwp\u003e \r\n\r\n\t\t\t\r\n\r\n \r\n\r\nCFGI \u003chttp://go.pardot.com/l/176152/2024-10-07/2pxcws\u003e  | Partnering with you to address your most important accounting and finance needs\r\n\r\n \r\n\r\n \r\n\r\nDe : Angela DePoy \u003cadepoy@cfgi.com \u003cmailto:adepoy@cfgi.com\u003e \u003e \r\nEnvoyé : mardi 3 mars 2026 21:02\r\nÀ : Michael Markman \u003cmike.markman@abivax.com \u003cmailto:mike.markman@abivax.com\u003e \u003e; Hema Keshava \u003cHema.Keshava@abivax.com \u003cmailto:Hema.Keshava@abivax.com\u003e \u003e\r\nCc : Shine Thomas \u003csthomas@cfgi.com \u003cmailto:sthomas@cfgi.com\u003e \u003e; Kenneth Schatz \u003ckschatz@cfgi.com \u003cmailto:kschatz@cfgi.com\u003e \u003e; Guy Morissette \u003cgmorissette@cfgi.com \u003cmailto:gmorissette@cfgi.com\u003e \u003e; Jean-Arnold Coutareau \u003cjacoutareau@cfgi.com \u003cmailto:jacoutareau@cfgi.com\u003e \u003e; Walid Bouassida \u003cwbouassida@cfgi.com \u003cmailto:wbouassida@cfgi.com\u003e \u003e\r\nObjet : Re: Abivax ERP - NetSuite Biotech Expert Implementors Introduction\r\n\r\n \r\n\r\nAnd, I apologize for a second email - trying to get things out between audit committees today.\r\n\r\n \r\n\r\nWould you be able to share the RFP and/or the response you received (fully redacted is perfectly fine — we’re not looking for any dollar amounts or commercial details from NetSuite)?\r\n\r\n \r\n\r\nThat would help our ERP team tailor their messaging, so it’s actually meaningful and specific to what you’re evaluating and sensitive of your time. I realize Phase I went out before you joined, so I’m not sure how much of that you have access to or are able to share — but anything you can provide would be helpful.\r\n\r\n \r\n\r\nThanks again,\r\n\r\nAngela\r\n\r\n \r\n\r\n \r\n\r\nAngela DePoy | Partner\r\n\r\n \u003chttps://www2.cfgi.com/l/176152/2021-12-01/wjtqd/176152/1638391647kYjfUIce/blue_tele.jpg\u003e   Mobile | (",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "B701EBE549808E419518D9F1139198FA",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE50000",
+        "direction":  "received",
+        "date":  "2026-03-06T18:15:41.5180000-05:00",
+        "subject":  "Vault Notification Summary (Quality Production)",
+        "from":  "Vault Quality \u003cvault-emails@veeva.com\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  " \u003chttps://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/v12-email-header.20b218df313841ed2490.png\u003e \t\r\n\r\nYou have received the following notifications from Quality Production for 3/6/26 6:15:36 PM EST\r\n\r\nTasks \r\n \u003chttps://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png\u003e \r\nPlease read and complete the training task for Record Management and Retention Policy \u003chttps://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004T007\u003e . \t\r\n3/6/26 6:01:30 PM EST \t\r\n \u003chttps://static-assets.veevavault.com/resources/runtime-asset/vault-ui/assets/main/webapp/images/avatar.42879f6519bc47baca19.png\u003e \r\nPlease read and complete the training task for Data Integrity Policy \u003chttps://abivax-quality.veevavault.com/ui/#object/training_assignment__v/V1H00000004T008\u003e . \t\r\n3/6/26 6:01:29 PM EST \t\r\n\t\r\nThis message is automatically generated by Veeva Vault and sent from the Quality Production vault abivax-quality.veevavault.com \u003chttps://abivax-quality.veevavault.com/ui\u003e . If you think it was sent incorrectly, please contact your Vault administrators. To ensure delivery to your inbox, please add vault-emails@veeva.com to your address book. \r\nVeeva Vault Copyright © 2010-2026 Veeva Systems \u003chttp://www.veeva.com/\u003e . All rights reserved. | Privacy Policy \u003chttps://www.veeva.com/vault-privacy/\u003e  ",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "D95AF7148A5A7E4884CF398D5399E6C1",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE40000",
+        "direction":  "received",
+        "date":  "2026-03-06T17:51:04.4880000-05:00",
+        "subject":  "Weekly Summary Alert for Abivax",
+        "from":  "Abivax \u003cno-reply@notification.gcs-web.com\u003e",
+        "to":  [
+                   "Michael Markman \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=6ea02ff9206844729f942b912eaa120d-3addd22d-60\u003e"
+               ],
+        "cc":  [
+
+               ],
+        "bodyText":  " \u003chttps://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DXOox_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr3EljD61MfJwGe7gfcIetdtF-2F4IzJg7SU1a9vxWn5bjuvOQBCCJKzYC-2B1g3EaUWeF45Bx5HSVrsOB-2B1NahvQIOySLdBGkG-2BlnIK8B9DxuHv-2BeoARoSA2cgLTUpOf3b-2FQ1EJWJd3-2Fesc-2BME9oxkdJeL2MBAANvljick2xihQ0NrpHhWWnIG-2B2TCkn0qExag6hdhQcjq3EhrVSeIvicpCkD3uObuShCCYDzLCNDkbzPrCHxqBIdsnLZxJuahAlK6mCm7vL63aAv40dtS5A6BYr8Q-2B\u003e \r\n\r\nAbivax added the following items during the week of March 2, 2026\r\n\r\n\r\n\r\n  \r\nABVX.PA\tMonday\tTuesday\tWednesday\tThursday\tFriday\t\r\nOpening Price\t$100.60\t$96.60\t$95.00\t$101.60\t$97.90\t\r\nLast Trade\t$99.60\t$95.40\t$99.50\t$99.10\t$94.00\t\r\nPrice Change\t-$3.00\t-$4.20\t+$4.10\t-$0.40\t-$5.10\t\r\nPercent Change\t-2.92%\t-4.22%\t+4.30%\t-0.40%\t-5.15%\t\r\nDay High\t$103.60\t$97.80\t$99.60\t$102.00\t$98.00\t\r\nDay Low\t$96.00\t$91.70\t$94.20\t$98.60\t$94.00\t\r\nVolume\t125,243\t154,322\t83,403\t73,325\t116,230\t\r\n\r\n\r\n\r\nYou are subscribed to Abivax Investor Relations\u0027 email alerts.\r\nVisit the website \u003chttps://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FVlylkTzksHy9uAwhOlMyfY-3DGLNk_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr3EljD61MfJwGe7gfcIetdtF-2F4IzJg7SU1a9vxWn5bjuvOQBCCJKzYC-2B1g3EaUWeF45Bx5HSVrsOB-2B1NahvQIOySLdBGkG-2BlnIK8B9DxuHv-2BeoARoSA2cgLTUpOf3b-2FQ1FRQPK4EEZVC9ynJ-2BuUGomOW6clrdrAACqheTsSqFzA9zN5-2BTSnN3MbcBDcAEHspMgG0McOp1SL71M1IBm3DuCaFUfzQtmK-2B6ajzF-2BfsnFi-2Bw-2Fgxyc9Jde-2BwyrdHk3EGEWYS08dl-2BjarSTTPCy2snao\u003e  | Unsubscribe \u003chttps://url9490.notification.gcs-web.com/ls/click?upn=u001.AUFxN-2BmJAFYrJtYvqzf8-2FRtzeXp6s3URsJ6UuKW5ZG5OTwiqqTxjE4LKGoOSrTPoe7W2_C-2BN9U4AzftouD7TUwUqlvyHp3513HIsC-2B0j7E85bn02UYOrS-2FlV8ix8rDw8DjD6RAxqfAkgdZDBAFeQRa5eSW1dwxlBbk-2Fr8IkP-2Bv-2BXvdr3EljD61MfJwGe7gfcIetdtF-2F4IzJg7SU1a9vxWn5bjuvOQBCCJKzYC-2B1g3EaUWeF45Bx5HSVrsOB-2B1NahvQIOySLdBGkG-2BlnIK8B9DxuHv-2BeoARoSA2cgLTUpOf3b-2FQ1GgZ8gvxjqkoLqDnjPyayGVsI9voz9-2Fv-2Bhwqh7uVQpoqLIQ6R-2BbzJe19Yi4ktY5nf8OsRm8NOsFS8RVoPUAXTrDPjlm6s9b8Vh9csgi1QCe9dQ0F8Wgr07QwVp-2FIeCLdEo6lU346vE9jZ4avFBzx-2F0Q\u003e \r\n\r\nAbivax\r\n7-11 Blvd. Haussmann , Paris, 75009, France\r\nService provided by Notified\r\n\r\n \u003chttps://url9490.notification.gcs-web.com/wf/open?upn=u001.BlbdGd6hf4FZ-2B7912u66a-2FX7rQmg2RoaO5fV-2F5bTdRo0LooO4a6bKx74zOKwEJxHc7GizmQFQG6q-2FbN3Czd86EBdRkrZTin45Rlg4Bd1AXaE9-2F-2F-2B0KPrasFUSKyyPTS913AUB2zoGbSpHsZUXqNHiY-2BX4I-2F25C5am5HCqZQ0XZKt4bBlwRYqSCEsH8igLYdiB9Ym8aj5NZIjDvYk52lKc-2FiQthO6CkjL8-2F8-2FcZbkHlzzMrAHlhxszNBs-2BoNkyP3mvJLGKkmRaCjKQW10aEojyasgIt3X0hn2dw5SToKbF5CU8j50ay60UPExZi13WlU4vlborRV-2BW9ukFOJ2B3zeCcfbZAiURz8539DyYGWuq44PEt0yg2ujSxdMHbWLaBAZ\u003e ",
+        "hasAttachments":  false,
+        "attachmentNames":  [
+
+                            ],
+        "threadId":  "0D2B746564485642B2F9229ABE44F79E",
+        "folder":  "inbox"
+    },
+    {
+        "id":  "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE30000",
+        "direction":  "received",
+        "date":  "2026-03-06T10:39:48.9680000-05:00",
+        "subject":  "New SOP/WIN/Template Templates Available for Use",
+        "from":  "Malinda Micho \u003c/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07\u003e",
+        "to":  [
+                   "allabivax \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1ae9ec8146b84c54b003b3a7617745dc-allabivax\u003e",
+                   "ALLABIVAX-E \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f98d557a69b940368798048da4347bee-645a9157-c3\u003e"
+               ],
+        "cc":  [
+                   "Katy Vu \u003c/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=09e657d52ca44f17a7630368ff135719-a62f8f3e-15\u003e"
+               ],
+        "bodyText":  "Hi everyone,\r\n\r\n \r\n\r\nThe SOP, Work Instruction, and Form/Template templates have been updated following functional area/SME feedback and are available for use in Veeva. Please utilize these versions moving forward.\r\n\r\n*\tTemplate for SOPs \u003chttps://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#doc_info/993/2/0\u003e \r\n*\tTemplate for WINs \u003chttps://abivax-quality.veevavault.com/ui/?tab-collection=qualitydocs__c#doc_info/994/1/1\u003e \r\n*\tTemplate for Forms and Templates \u003chttps://abivax-quality.veevavault.com/ui/#doc_info/11501/2/0\u003e \r\n\r\n \r\n\r\nWe do not intend to revise any existing documents with the purpose of matching these new templates only – we will slowly do this as the need for other edits arise and/or during periodic reviews. \r\n\r\n \r\n\r\nUpdates primarily include:\r\n\r\n*\tProviding clear instructions for template use as well as color-coded text for guidance\r\n*\tAdding more information into the headers and references in footers\r\n*\tModifying spacing (using more white space) and font sizes (decreased within tables) to allow for fewer pages\r\n*\tAdding more tables within each section and aligning format to allow for increased readability and consistency\r\n*\tAdding clarification around types of referenced documents\r\n\r\n \r\n\r\nNote: The templates utilize ‘tokens’ which are auto-populated when entered into the Veeva system. An example of a completed document header, when using the updated templates, will look like this:\r\n\r\n\r\n\r\nPlease let me know if you have any questions.\r\n\r\nKindly,\r\n\r\n \r\n\r\n\r\n\r\nMalinda MICHO\r\nManager, Quality Systems\r\n\r\nwww.abivax.com \u003chttp://www.abivax.com/\u003e \r\n\r\nmalinda.micho@abivax.com \u003cmailto:malinda.micho@abivax.com\u003e \r\n\r\n\t\r\n\r\n \r\n\r\n \r\n",
+        "hasAttachments":  true,
+        "attachmentNames":  [
+                                "image001.png",
+                                "image002.png"
+                            ],
+        "threadId":  "E2B92A5CBE784918ADFA6E574A9B56AD",
+        "folder":  "inbox"
+    }
+]

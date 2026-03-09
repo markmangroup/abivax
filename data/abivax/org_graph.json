@@ -1,5 +1,5 @@
 {
-    "generatedAt":  "2026-02-26T15:37:46.4538200-05:00",
+    "generatedAt":  "2026-03-06T10:24:16.4455777-05:00",
     "source":  "outlook-gal",
     "status":  "ok",
     "statusMessage":  "Org cache updated from Outlook Global Address List.",
@@ -175,7 +175,12 @@
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=3b0331044109441fab6755c22d1389df-07cc7661-7b",
                       "jobTitle":  "Medical Writer",
                       "department":  "Programs",
-                      "manager":  null,
+                      "manager":  {
+                                      "id":  null,
+                                      "displayName":  "Bindu Saini",
+                                      "mail":  "bindu.saini-ext@abivax.com",
+                                      "userPrincipalName":  "bindu.saini-ext@abivax.com"
+                                  },
                       "directReports":  [
 
                                         ]
@@ -250,6 +255,23 @@
                                       "displayName":  "Nadege Briancon-Eris",
                                       "mail":  "Nadege.BrianconEris@abivax.com",
                                       "userPrincipalName":  "Nadege.BrianconEris@abivax.com"
+                                  },
+                      "directReports":  [
+
+                                        ]
+                  },
+                  {
+                      "id":  null,
+                      "displayName":  "Anthony Loizides",
+                      "mail":  "anthony.loizides-ext@abivax.com",
+                      "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=1b8b94eea537477e814f8c7660ce1ee2-09512936-3c",
+                      "jobTitle":  "Medical Director",
+                      "department":  "Clinical Development",
+                      "manager":  {
+                                      "id":  null,
+                                      "displayName":  "Doug Jacobstein",
+                                      "mail":  "Doug.Jacobstein@abivax.com",
+                                      "userPrincipalName":  "Doug.Jacobstein@abivax.com"
                                   },
                       "directReports":  [
 
@@ -354,12 +376,7 @@
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=fcee385e07944328b8c054946b24161b-Aude.Garcel",
                       "jobTitle":  "Director R\u0026D",
                       "department":  "Research",
-                      "manager":  {
-                                      "id":  null,
-                                      "displayName":  "Didier Scherrer",
-                                      "mail":  "Didier.Scherrer@abivax.com",
-                                      "userPrincipalName":  "Didier.Scherrer@abivax.com"
-                                  },
+                      "manager":  null,
                       "directReports":  [
                                             {
                                                 "id":  null,
@@ -556,6 +573,12 @@
                       "directReports":  [
                                             {
                                                 "id":  null,
+                                                "displayName":  "Amy Attivissimo",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
+                                            {
+                                                "id":  null,
                                                 "displayName":  "Helen Carr",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
@@ -563,6 +586,12 @@
                                             {
                                                 "id":  null,
                                                 "displayName":  "Nicole Damour",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
+                                            {
+                                                "id":  null,
+                                                "displayName":  "Oki Dzivenu",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
                                             },
@@ -1131,6 +1160,12 @@
                                             },
                                             {
                                                 "id":  null,
+                                                "displayName":  "Frederic Giqueaux",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
+                                            {
+                                                "id":  null,
                                                 "displayName":  "Harry Koka",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
@@ -1174,37 +1209,9 @@
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e55a12e112f54b839c0ee724867e8f07-Didier.Sche",
                       "jobTitle":  "Chief Scientific Officer",
                       "department":  "Research",
-                      "manager":  {
-                                      "id":  null,
-                                      "displayName":  "Marc de Garidel",
-                                      "mail":  "Marc.De.Garidel@abivax.com",
-                                      "userPrincipalName":  "Marc.De.Garidel@abivax.com"
-                                  },
+                      "manager":  null,
                       "directReports":  [
-                                            {
-                                                "id":  null,
-                                                "displayName":  "Aude Garcel",
-                                                "mail":  "",
-                                                "userPrincipalName":  ""
-                                            },
-                                            {
-                                                "id":  null,
-                                                "displayName":  "Maïwenn Bonnet",
-                                                "mail":  "",
-                                                "userPrincipalName":  ""
-                                            },
-                                            {
-                                                "id":  null,
-                                                "displayName":  "Maurus de la Rosa",
-                                                "mail":  "",
-                                                "userPrincipalName":  ""
-                                            },
-                                            {
-                                                "id":  null,
-                                                "displayName":  "Romain Najman",
-                                                "mail":  "",
-                                                "userPrincipalName":  ""
-                                            }
+
                                         ]
                   },
                   {
@@ -1262,6 +1269,12 @@
                                       "userPrincipalName":  "fabio.cataldi@abivax.com"
                                   },
                       "directReports":  [
+                                            {
+                                                "id":  null,
+                                                "displayName":  "Anthony Loizides",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
                                             {
                                                 "id":  null,
                                                 "displayName":  "Caroline Lee",
@@ -1530,13 +1543,30 @@
                       "displayName":  "Fatma Hemdani",
                       "mail":  "fatma.hemdani@abivax.com",
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=60230a76732c47adbc10429f73b26bd4-8bb630f2-30",
-                      "jobTitle":  "General Accountant",
+                      "jobTitle":  "Accountant",
                       "department":  "Finance",
                       "manager":  {
                                       "id":  null,
                                       "displayName":  "Juliette Courtot",
                                       "mail":  "Juliette.Courtot@abivax.com",
                                       "userPrincipalName":  "Juliette.Courtot@abivax.com"
+                                  },
+                      "directReports":  [
+
+                                        ]
+                  },
+                  {
+                      "id":  null,
+                      "displayName":  "Frederic Giqueaux",
+                      "mail":  "frederic.giqueaux@abivax.com",
+                      "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=87cc3e86e47c425db137bad167eb717a-99ee2ae9-71",
+                      "jobTitle":  "Security Consultant",
+                      "department":  "Finance \u0026 HR",
+                      "manager":  {
+                                      "id":  null,
+                                      "displayName":  "Didier Blondel",
+                                      "mail":  "Didier.Blondel@abivax.com",
+                                      "userPrincipalName":  "Didier.Blondel@abivax.com"
                                   },
                       "directReports":  [
 
@@ -1572,6 +1602,23 @@
                       "jobTitle":  "",
                       "department":  "",
                       "manager":  null,
+                      "directReports":  [
+
+                                        ]
+                  },
+                  {
+                      "id":  null,
+                      "displayName":  "Gilles Fonknechten",
+                      "mail":  "gilles.fonknechten-ext@abivax.com",
+                      "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e8f5b88c51b94b79b08a390885ee0e92-c2f6043d-03",
+                      "jobTitle":  "VP CMC Development",
+                      "department":  "CMC",
+                      "manager":  {
+                                      "id":  null,
+                                      "displayName":  "Jerome Denis",
+                                      "mail":  "Jerome.Denis@abivax.com",
+                                      "userPrincipalName":  "Jerome.Denis@abivax.com"
+                                  },
                       "directReports":  [
 
                                         ]
@@ -1908,6 +1955,12 @@
                                             {
                                                 "id":  null,
                                                 "displayName":  "Andy Cullen",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
+                                            {
+                                                "id":  null,
+                                                "displayName":  "Gilles Fonknechten",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
                                             },
@@ -2338,6 +2391,23 @@
                   },
                   {
                       "id":  null,
+                      "displayName":  "Lauren White",
+                      "mail":  "lauren.white-ext@abivax.com",
+                      "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0c4321c2e05d46e8a64b200a2af3f610-94b85aff-46",
+                      "jobTitle":  "Senior Manager TMF",
+                      "department":  "Clinical Operations",
+                      "manager":  {
+                                      "id":  null,
+                                      "displayName":  "Laurence Desroys du Roure",
+                                      "mail":  "Laurence.DesroysDuRoure@abivax.com",
+                                      "userPrincipalName":  "Laurence.DesroysDuRoure@abivax.com"
+                                  },
+                      "directReports":  [
+
+                                        ]
+                  },
+                  {
+                      "id":  null,
                       "displayName":  "Laurence Desroys du Roure",
                       "mail":  "Laurence.DesroysDuRoure@abivax.com",
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0dcf763c4ba44098ba7d890e54369bf5-Laurence De",
@@ -2353,6 +2423,12 @@
                                             {
                                                 "id":  null,
                                                 "displayName":  "Cheryl Shook",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
+                                            {
+                                                "id":  null,
+                                                "displayName":  "Lauren White",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
                                             },
@@ -2405,12 +2481,7 @@
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=199938c3b1e14205b5c3acb08e3ce2d2-cc0c360d-11",
                       "jobTitle":  "IP Patent Attorney",
                       "department":  "Research",
-                      "manager":  {
-                                      "id":  null,
-                                      "displayName":  "Didier Scherrer",
-                                      "mail":  "Didier.Scherrer@abivax.com",
-                                      "userPrincipalName":  "Didier.Scherrer@abivax.com"
-                                  },
+                      "manager":  null,
                       "directReports":  [
 
                                         ]
@@ -2461,12 +2532,6 @@
                                             },
                                             {
                                                 "id":  null,
-                                                "displayName":  "Didier Scherrer",
-                                                "mail":  "",
-                                                "userPrincipalName":  ""
-                                            },
-                                            {
-                                                "id":  null,
                                                 "displayName":  "Fabio Cataldi",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
@@ -2480,6 +2545,12 @@
                                             {
                                                 "id":  null,
                                                 "displayName":  "Jerome Denis",
+                                                "mail":  "",
+                                                "userPrincipalName":  ""
+                                            },
+                                            {
+                                                "id":  null,
+                                                "displayName":  "Maurus de la Rosa",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
                                             },
@@ -2672,13 +2743,13 @@
                       "displayName":  "Maurus de la Rosa",
                       "mail":  "maurus.delarosa-ext@abivax.com",
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=687fd9993a744c83bc483eb7c80f85ab-b56a7fae-81",
-                      "jobTitle":  "VP R\u0026D contractor",
-                      "department":  "Scientific Affairs",
+                      "jobTitle":  "SVP R\u0026D",
+                      "department":  "R\u0026D Scientific Affairs",
                       "manager":  {
                                       "id":  null,
-                                      "displayName":  "Didier Scherrer",
-                                      "mail":  "Didier.Scherrer@abivax.com",
-                                      "userPrincipalName":  "Didier.Scherrer@abivax.com"
+                                      "displayName":  "Marc de Garidel",
+                                      "mail":  "Marc.De.Garidel@abivax.com",
+                                      "userPrincipalName":  "Marc.De.Garidel@abivax.com"
                                   },
                       "directReports":  [
 
@@ -2912,12 +2983,6 @@
                                             {
                                                 "id":  null,
                                                 "displayName":  "Stephane Courric",
-                                                "mail":  "",
-                                                "userPrincipalName":  ""
-                                            },
-                                            {
-                                                "id":  null,
-                                                "displayName":  "Yuan-di Halvorsen",
                                                 "mail":  "",
                                                 "userPrincipalName":  ""
                                             }
@@ -3412,12 +3477,7 @@
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=7af2595e02d5446aa644188af67bfb1c-Romain Najm",
                       "jobTitle":  "Research Chemist",
                       "department":  "Research",
-                      "manager":  {
-                                      "id":  null,
-                                      "displayName":  "Didier Scherrer",
-                                      "mail":  "Didier.Scherrer@abivax.com",
-                                      "userPrincipalName":  "Didier.Scherrer@abivax.com"
-                                  },
+                      "manager":  null,
                       "directReports":  [
 
                                         ]
@@ -4114,12 +4174,7 @@
                       "userPrincipalName":  "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=929984158b9b44148dd15f2821d7a54f-39e15404-24",
                       "jobTitle":  "Consultant, ABTECT China",
                       "department":  "Clinical Operations",
-                      "manager":  {
-                                      "id":  null,
-                                      "displayName":  "Nadege Briancon-Eris",
-                                      "mail":  "Nadege.BrianconEris@abivax.com",
-                                      "userPrincipalName":  "Nadege.BrianconEris@abivax.com"
-                                  },
+                      "manager":  null,
                       "directReports":  [
 
                                         ]

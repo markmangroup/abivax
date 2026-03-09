@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-26T20:58:28.478Z",
+  "generatedAt": "2026-03-06T15:24:47.229Z",
   "status": "ok",
   "payloads": [
     {
@@ -8,7 +8,7 @@
       "pillarId": "p2p",
       "scope": "Abivax SA / France finance operations",
       "status": "source-backed-fact-finding",
-      "generatedAt": "2026-02-26T20:58:28.477Z",
+      "generatedAt": "2026-03-06T15:24:47.229Z",
       "lanes": [
         {
           "id": "owners",
@@ -397,7 +397,7 @@
       ],
       "source": {
         "processFlowLastUpdated": "2026-02-26",
-        "overlayGeneratedAt": "2026-02-26T20:58:28.158Z"
+        "overlayGeneratedAt": "2026-03-06T15:24:46.026Z"
       }
     },
     {
@@ -406,7 +406,7 @@
       "pillarId": "reporting-data",
       "scope": "French GAAP -> IFRS / SEC bridge, management reporting, FP&A dimensions",
       "status": "source-backed-fact-finding",
-      "generatedAt": "2026-02-26T20:58:28.478Z",
+      "generatedAt": "2026-03-06T15:24:47.229Z",
       "lanes": [
         {
           "id": "owners",
@@ -859,7 +859,7 @@
       ],
       "source": {
         "processFlowLastUpdated": "2026-02-24",
-        "overlayGeneratedAt": "2026-02-26T20:58:28.158Z"
+        "overlayGeneratedAt": "2026-03-06T15:24:46.026Z"
       }
     },
     {
@@ -868,7 +868,7 @@
       "pillarId": "controls-audit",
       "scope": "Finance + IT controls relevant to ERP program and auditability",
       "status": "source-backed-fact-finding",
-      "generatedAt": "2026-02-26T20:58:28.478Z",
+      "generatedAt": "2026-03-06T15:24:47.229Z",
       "lanes": [
         {
           "id": "owners",
@@ -1297,7 +1297,7 @@
       ],
       "source": {
         "processFlowLastUpdated": "2026-02-25",
-        "overlayGeneratedAt": "2026-02-26T20:58:28.158Z"
+        "overlayGeneratedAt": "2026-03-06T15:24:46.026Z"
       }
     }
   ]

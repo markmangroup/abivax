@@ -1,37 +1,24 @@
 {
-  "generatedAt": "2026-02-26T20:39:40.656Z",
-  "asOf": "2026-02-26",
+  "generatedAt": "2026-03-06T15:26:41.334Z",
+  "asOf": "2026-03-06",
   "freshness": {
     "intelAsOf": "2026-02-25",
-    "daysSinceIntelSnapshot": 1,
+    "daysSinceIntelSnapshot": 9,
     "stale": true,
-    "staleReason": "Curated company intel snapshot is 1 day(s) old. Live feeds may be partial while direct sources are still being connected/stabilized."
+    "staleReason": "Curated company intel snapshot is 9 day(s) old. Live feeds may be partial while direct sources are still being connected/stabilized."
   },
   "summary": {
     "newCount": 0,
-    "highPriorityCount": 7,
+    "highPriorityCount": 6,
     "sourceFeedsActive": 3,
     "sourceFeedsPlanned": 2
   },
   "headlines": [
     {
-      "id": "ir-email-headline-ir-email-1-QWJpdmF4IFByZX",
-      "date": "2026-02-21",
-      "title": "Abivax Presents First Evidence of Anti-Fibrotic Activity for Obefazimod Alongside New Clinical Efficacy and Safety Analyses in Inflammatory Bowel Disease at ECCO 2026",
-      "summary": "Abivax Presents First Evidence of Anti-Fibr",
-      "category": "ir-email-alert",
-      "confidence": "confirmed",
-      "sourceType": "primary",
-      "sourceTitle": "Abivax IR Email Alert",
-      "sourceUrl": "",
-      "impact": "",
-      "status": "carry-forward"
-    },
-    {
-      "id": "ir-email-headline-ir-email-2-V2Vla2x5IFN1bW",
-      "date": "2026-02-20",
+      "id": "ir-email-headline-ir-email-0-V2Vla2x5IFN1bW",
+      "date": "2026-02-27",
       "title": "Weekly Summary Alert for Abivax",
-      "summary": "added the following items during the week of February 16, 2026",
+      "summary": "added the following items during the week of February 23, 2026 News Ab",
       "category": "ir-email-alert",
       "confidence": "confirmed",
       "sourceType": "primary",
@@ -125,7 +112,7 @@
       "label": "Abivax IR / Press Releases",
       "status": "degraded",
       "mode": "automated-sec-derived-fallback",
-      "lastCheckedAt": "2026-02-26T20:38:13.651Z",
+      "lastCheckedAt": "2026-03-06T15:25:03.039Z",
       "notes": "Direct IR sync failed; using SEC-derived fallback (3 item(s)) while detector is stabilized."
     },
     {
@@ -133,15 +120,15 @@
       "label": "Abivax IR Email Alerts",
       "status": "active",
       "mode": "outlook-email-derived",
-      "lastCheckedAt": "2026-02-26T20:39:36.507Z",
-      "notes": "Using inbox alerts as fallback/secondary IR source (3 item(s))."
+      "lastCheckedAt": "2026-03-06T15:26:35.650Z",
+      "notes": "Using inbox alerts as fallback/secondary IR source (1 item(s))."
     },
     {
       "id": "sec-filings",
       "label": "SEC / 6-K / filings",
       "status": "active",
       "mode": "automated-sec-edgar",
-      "lastCheckedAt": "2026-02-26T20:39:37.539Z",
+      "lastCheckedAt": "2026-03-06T15:26:37.210Z",
       "notes": "SEC detector active (20 recent filing item(s))."
     },
     {
@@ -165,7 +152,7 @@
       "label": "Curated internal intel file",
       "status": "active",
       "mode": "manual-curated",
-      "lastCheckedAt": "2026-02-26T20:39:40.656Z",
+      "lastCheckedAt": "2026-03-06T15:26:41.334Z",
       "notes": "Current company_intel.json is the active source until feed agents are added."
     }
   ],

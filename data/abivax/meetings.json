@@ -171,6 +171,34 @@
       "source": "outlook-sync",
       "sourceUpdatedAt": "2026-02-27T11:12:03.8148366-05:00",
       "id": "catch-up-feedback-from-managers-forum-20260227"
+    },
+    {
+      "title": "ABIVAX x KPMG - Proposal presentation",
+      "date": "2026-03-06",
+      "time": "10:00 AM EST",
+      "location": "Réunion Microsoft Teams",
+      "organizer": "Girard, Camille",
+      "attendees": "Girard, Camille; Michael Markman; Ben Alaya, Aymen; Denoual, Sebastien",
+      "purpose": "",
+      "prep": [],
+      "link": "https://teams.microsoft.com/meet/38519235527657?p=LSsir3alvxalLmwMNC",
+      "source": "outlook-sync",
+      "sourceUpdatedAt": "2026-03-06T10:19:01.1502201-05:00",
+      "id": "abivax-x-kpmg-proposal-presentation-20260306"
+    },
+    {
+      "title": "Abivax : TOM validation",
+      "date": "2026-03-06",
+      "time": "10:00 AM EST",
+      "location": "Réunion Microsoft Teams",
+      "organizer": "Guillaume Bideau",
+      "attendees": "Guillaume Bideau; Michael Markman; Roxandra Sturdza; Hema Keshava; Mathieu Vincent",
+      "purpose": "",
+      "prep": [],
+      "link": "https://teams.microsoft.com/meet/33566951643866?p=Qyme85MFA2fR60IY33",
+      "source": "outlook-sync",
+      "sourceUpdatedAt": "2026-03-06T10:19:01.1755751-05:00",
+      "id": "abivax-tom-validation-20260306"
     }
   ]
 }

@@ -49,7 +49,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.854Z"
     },
     {
       "id": "hema",
@@ -115,7 +115,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.854Z"
     },
     {
       "id": "pat-maloy",
@@ -143,7 +143,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "trinidad",
@@ -190,7 +190,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "frederick",
@@ -240,7 +240,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "juliette",
@@ -288,7 +288,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "kimberly-gordon",
@@ -334,7 +334,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "philippe",
@@ -379,7 +379,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.913Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "matt-epley",
@@ -428,7 +428,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "jade",
@@ -486,7 +486,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "thelma",
@@ -508,7 +508,7 @@
       "notes": "Invited to NetSuite/Oracle demo Feb 12.",
       "mentions": [],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "camille",
@@ -553,7 +553,7 @@
         }
       ],
       "createdAt": "2026-01-12T10:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "venceslas-dechallens",
@@ -1573,7 +1573,7 @@
       "notes": "CEO since May 2023 per Abivax leadership pages.",
       "mentions": [],
       "createdAt": "2026-02-18T00:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "roxandra-sturdza",
@@ -1612,7 +1612,7 @@
         }
       ],
       "createdAt": "2026-02-18T15:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "adrian-holbrook",
@@ -1653,7 +1653,7 @@
         }
       ],
       "createdAt": "2026-02-18T15:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "fatma-hemdani",
@@ -1673,7 +1673,7 @@
         "org": "France",
         "mail": "fatma.hemdani@abivax.com",
         "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=60230a76732c47adbc10429f73b26bd4-8bb630f2-30",
-        "graphJobTitle": "General Accountant",
+        "graphJobTitle": "Accountant",
         "graphDepartment": "Finance",
         "graphReportsTo": "Juliette Courtot",
         "reportsTo": "Juliette Courtot",
@@ -1692,7 +1692,7 @@
         }
       ],
       "createdAt": "2026-02-18T15:00:00.000Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "mike-markman",
@@ -1738,7 +1738,7 @@
         }
       ],
       "createdAt": "2026-02-18T15:30:00.000Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "aymen-ben-alaya",
@@ -1963,7 +1963,7 @@
       "notes": "Working with Abivax around 2 years; joined IT landscape walkthrough.",
       "mentions": [],
       "createdAt": "2026-02-19T20:10:27.235Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "christophe-hennequin",
@@ -2006,7 +2006,7 @@
         }
       ],
       "createdAt": "2026-02-19T20:10:27.235Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "denis-jankovic",
@@ -2033,7 +2033,7 @@
       "notes": "Supported system access routing; leaned NetSuite in finance intro sentiment.",
       "mentions": [],
       "createdAt": "2026-02-19T20:10:27.235Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "ewan",
@@ -2054,7 +2054,7 @@
       "notes": "Reported in IT org chart under Christophe.",
       "mentions": [],
       "createdAt": "2026-02-19T20:10:27.235Z",
-      "updatedAt": "2026-02-26T20:42:10.914Z"
+      "updatedAt": "2026-03-06T15:24:41.855Z"
     },
     {
       "id": "sophie-lacourrege",
@@ -2090,7 +2090,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-24T14:30:42.117Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "ben-alaya",
@@ -2156,7 +2156,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "laurence-desroys-du-roure",
@@ -2192,7 +2192,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "julien-santo",
@@ -2228,7 +2228,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "mary-mantock",
@@ -2264,7 +2264,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "kejia-shan",
@@ -2300,7 +2300,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "jennifer-fine",
@@ -2336,7 +2336,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "sophie-gibelli",
@@ -2372,7 +2372,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "marianne-perdrijat",
@@ -2408,7 +2408,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "chris-rabbat",
@@ -2444,7 +2444,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "patrick-malloy",
@@ -2480,7 +2480,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "rebecca-mosig",
@@ -2516,7 +2516,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "patricia-fleuranceau-morel",
@@ -2552,7 +2552,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "murielle-salaun-lancien",
@@ -2587,7 +2587,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "nakesha-harding-boyce",
@@ -2622,7 +2622,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "maurus-de-la-rosa",
@@ -2645,12 +2645,12 @@
         ],
         "mail": "maurus.delarosa-ext@abivax.com",
         "userPrincipalName": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=687fd9993a744c83bc483eb7c80f85ab-b56a7fae-81",
-        "reportsTo": "Didier Scherrer",
+        "reportsTo": "Marc de Garidel",
         "reportsToSource": "Outlook GAL",
         "seededFrom": "meeting-attendee-agent",
-        "graphJobTitle": "VP R&D contractor",
-        "graphDepartment": "Scientific Affairs",
-        "graphReportsTo": "Didier Scherrer"
+        "graphJobTitle": "SVP R&D",
+        "graphDepartment": "R&D Scientific Affairs",
+        "graphReportsTo": "Marc de Garidel"
       },
       "links": [
         "abivax"
@@ -2658,7 +2658,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "valerie-contassot",
@@ -2694,7 +2694,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "thomas-descusses",
@@ -2730,7 +2730,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "josianne-nitcheu",
@@ -2766,7 +2766,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "pascaline-ploncard",
@@ -2802,7 +2802,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "bindu-saini",
@@ -2838,7 +2838,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "mark-hronec",
@@ -2872,7 +2872,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "jessica-huskey",
@@ -2908,7 +2908,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "doug-jacobstein",
@@ -2944,7 +2944,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "keith-fournier",
@@ -2980,7 +2980,7 @@
       "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
       "mentions": [],
       "createdAt": "2026-02-26T15:33:28.467Z",
-      "updatedAt": "2026-02-26T20:42:07.831Z"
+      "updatedAt": "2026-03-06T15:24:37.672Z"
     },
     {
       "id": "girard-camille",
@@ -3004,6 +3004,66 @@
       "mentions": [],
       "createdAt": "2026-02-27T16:07:12.603Z",
       "updatedAt": "2026-02-27T16:07:12.603Z"
+    },
+    {
+      "id": "guillaume-bideau",
+      "name": "Guillaume Bideau",
+      "type": "person",
+      "aliases": [
+        "Guillaume"
+      ],
+      "description": "Auto-seeded from meeting attendee and pending role confirmation.",
+      "properties": {
+        "role": "Role pending confirmation",
+        "team": "Unknown",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "new meeting attendee"
+        ],
+        "mail": "",
+        "userPrincipalName": "",
+        "reportsTo": "",
+        "reportsToSource": "",
+        "seededFrom": "meeting-attendee-agent"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-03-06T15:24:36.399Z",
+      "updatedAt": "2026-03-06T15:24:36.399Z"
+    },
+    {
+      "id": "mathieu-vincent",
+      "name": "Mathieu Vincent",
+      "type": "person",
+      "aliases": [
+        "Mathieu"
+      ],
+      "description": "Auto-seeded from meeting attendee and pending role confirmation.",
+      "properties": {
+        "role": "Role pending confirmation",
+        "team": "Unknown",
+        "entity": "Abivax",
+        "needLevel": "engage",
+        "focusHints": [
+          "new meeting attendee"
+        ],
+        "mail": "",
+        "userPrincipalName": "",
+        "reportsTo": "",
+        "reportsToSource": "",
+        "seededFrom": "meeting-attendee-agent"
+      },
+      "links": [
+        "abivax"
+      ],
+      "notes": "Auto-created because person is an upcoming/today meeting attendee and no wiki entity existed yet.",
+      "mentions": [],
+      "createdAt": "2026-03-06T15:24:36.399Z",
+      "updatedAt": "2026-03-06T15:24:36.399Z"
     }
   ]
 }

@@ -1,0 +1,489 @@
+{
+  "generatedAt": "2026-03-06T15:29:30.142Z",
+  "sourceFile": "emails_2026-03-06.json",
+  "totalEmails": 14,
+  "byType": {
+    "action-required": 3,
+    "external-request": 0,
+    "internal-update": 1,
+    "deliverable-received": 5,
+    "thread-reply": 3,
+    "scheduling": 2,
+    "noise": 0
+  },
+  "flagCounts": {
+    "deadline": 2,
+    "financial": 11,
+    "decision": 6,
+    "data-gap-fill": 5,
+    "risk": 2,
+    "urgent": 1,
+    "new-contact": 3
+  },
+  "noiseCount": 0,
+  "triageErrors": [],
+  "emails": [
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE20000",
+      "date": "2026-03-06T03:23:29.9010000-05:00",
+      "direction": "received",
+      "subject": "March Closing - Deadline: April 7, 2026 for your lists of Accruals/FNP",
+      "from": "Frederick Golly",
+      "to": [
+        "Josianne Nitcheu",
+        "Pascaline Ploncard",
+        "Laurence Desroys du Roure",
+        "Jessica Huskey",
+        "Julien Santo",
+        "Aude Garcel",
+        "Jerome Denis",
+        "Marianne Perdrijat",
+        "Pierre Courteille",
+        "Ida Hatoum",
+        "Saadia Batiga",
+        "Ouahiba Kaabeche",
+        "Romain Najman",
+        "Maxime Thomas",
+        "Amy Adams",
+        "Nadege Briancon-Eris",
+        "Christine Cook",
+        "David Deng",
+        "Jennifer Fine",
+        "Ashley Harper",
+        "Patrick Malloy",
+        "Trang Nguyen",
+        "Phuong Tran",
+        "Chris Rabbat",
+        "Kejia Shan",
+        "Marcus Wilkes",
+        "Sunil Sabbani",
+        "Sophie Gibelli",
+        "Jackie Mitrano",
+        "Doug Jacobstein",
+        "Stephane Courric",
+        "Caroline Lee",
+        "Nakesha Harding-Boyce",
+        "Sophie Lacourrege",
+        "Maïwenn Bonnet",
+        "Fabio Cataldi",
+        "David Zhang",
+        "Patricia Fleuranceau Morel",
+        "Maurus de la Rosa",
+        "Davy Baudelet",
+        "Mark Hronec",
+        "Keith Fournier",
+        "Thanh-Huong Hoang-Thi",
+        "Michael Nesrallah"
+      ],
+      "primaryType": "action-required",
+      "flags": [
+        "deadline",
+        "financial",
+        "data-gap-fill"
+      ],
+      "oneSentenceSummary": "Frederick set the March close accrual/FNP deadline and attached the FNP process guide.",
+      "keyFacts": [
+        "March 2026 close request sent by Frederick Golly.",
+        "Deadline: April 7, 2026 for accrual and FNP lists.",
+        "Attachment: Abivax_Presentation_FNP_Process.pdf."
+      ],
+      "linkedPillars": [
+        "finance-close",
+        "reporting"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "Abivax_Presentation_FNP_Process.pdf",
+        "image001.png"
+      ],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BE10000",
+      "date": "2026-03-05T13:04:23.1400000-05:00",
+      "direction": "received",
+      "subject": "tomorrow",
+      "from": "Roxandra Sturdza",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "decision",
+        "urgent",
+        "financial",
+        "data-gap-fill"
+      ],
+      "oneSentenceSummary": "Roxandra asked Mike not to attend the treasury-focused meeting and proposed a later TMS/ERP session.",
+      "keyFacts": [
+        "Mazars suggested Mike should not attend the March 6 treasury-focused session.",
+        "Treasury/TMS-ERP follow-up meeting proposed for forthcoming weeks."
+      ],
+      "linkedPillars": [
+        "finance-close"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "image001.png"
+      ],
+      "suggestedAction": "draft-reply"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDF0000",
+      "date": "2026-03-05T11:50:01.2230000-05:00",
+      "direction": "received",
+      "subject": "Re: ABIVAX x NetSuite : Following up on our meeting",
+      "from": "Kenneth Schatz",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "financial",
+        "decision"
+      ],
+      "oneSentenceSummary": "Jamal sent the NetSuite commercial package, draft SOW, estimates, and contract terms after the vendor meeting.",
+      "keyFacts": [
+        "Sender: Jamal Azil (Oracle NetSuite).",
+        "Attachments: NetSuite Offer Summary.xlsx; Estimates.zip; SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf; nsgbu-subscription-services-agreement-v061625-uk-eng.pdf.",
+        "Contains implementation budget, licenses, support, maintenance, services, and contract documents."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90F50000",
+      "date": "2026-03-05T11:38:29.8020000-05:00",
+      "direction": "sent",
+      "subject": "FW: ABIVAX x NetSuite : Following up on our meeting",
+      "from": "Michael Markman",
+      "to": [
+        "Girard, Camille",
+        "Ben Alaya, Aymen"
+      ],
+      "primaryType": "thread-reply",
+      "flags": [
+        "financial"
+      ],
+      "oneSentenceSummary": "Mike forwarded the NetSuite package to internal and external stakeholders for review.",
+      "keyFacts": [
+        "Forwarded to: Girard, Camille; Ben Alaya, Aymen."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5",
+        "NetSuite Offer Summary.xlsx",
+        "Estimates.zip",
+        "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+      ],
+      "suggestedAction": "file-only"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF980000094D90F40000",
+      "date": "2026-03-05T11:37:52.6530000-05:00",
+      "direction": "sent",
+      "subject": "FW: ABIVAX x NetSuite : Following up on our meeting",
+      "from": "Michael Markman",
+      "to": [
+        "Kenneth Schatz"
+      ],
+      "primaryType": "thread-reply",
+      "flags": [
+        "financial"
+      ],
+      "oneSentenceSummary": "Mike forwarded the NetSuite package to internal and external stakeholders for review.",
+      "keyFacts": [
+        "Forwarded to: Kenneth Schatz."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5",
+        "NetSuite Offer Summary.xlsx",
+        "Estimates.zip",
+        "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+      ],
+      "suggestedAction": "file-only"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDD0000",
+      "date": "2026-03-05T10:45:03.8530000-05:00",
+      "direction": "received",
+      "subject": "Excels on Treasury",
+      "from": "Roxandra Sturdza",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "financial",
+        "data-gap-fill"
+      ],
+      "oneSentenceSummary": "Roxandra sent treasury workbooks covering cash forecast, placements, FX exposure, and treasury reporting.",
+      "keyFacts": [
+        "Attachments: Cash Forecast Monthly Planning 2026.xlsx; Management placements et Exposition FX 20251112.xlsx; 2025-2026 Treasury Management Report v11.xlsx; Forecast12m 20260305.xlsx.",
+        "Fills gap: Treasury current-state tools, cash management, and reconciliation evidence."
+      ],
+      "linkedPillars": [
+        "finance-close",
+        "reporting"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "Cash Forecast Monthly Planning 2026.xlsx",
+        "image001.png",
+        "Management placements  et Exposition FX 20251112.xlsx",
+        "2025-2026 Treasury Management Report v11.xlsx",
+        "Forecast12m 20260305.xlsx"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDB0000",
+      "date": "2026-03-05T10:17:55.3000000-05:00",
+      "direction": "received",
+      "subject": "ABIVAX x NetSuite : Following up on our meeting",
+      "from": "jamal azil",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "financial",
+        "decision"
+      ],
+      "oneSentenceSummary": "Jamal sent the NetSuite commercial package, draft SOW, estimates, and contract terms after the vendor meeting.",
+      "keyFacts": [
+        "Sender: Jamal Azil (Oracle NetSuite).",
+        "Attachments: NetSuite Offer Summary.xlsx; Estimates.zip; SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf; nsgbu-subscription-services-agreement-v061625-uk-eng.pdf.",
+        "Contains implementation budget, licenses, support, maintenance, services, and contract documents."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "img-d88aa61c-e12c-4abb-ba65-0f6d15cfe2b5",
+        "NetSuite Offer Summary.xlsx",
+        "Estimates.zip",
+        "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BDA0000",
+      "date": "2026-03-05T08:44:34.4240000-05:00",
+      "direction": "received",
+      "subject": "Re: V3 Availability Poll – [1/2] Master Data Management Workshop",
+      "from": "Ben Alaya, Aymen",
+      "to": [
+        "Girard, Camille",
+        "Christophe Hennequin",
+        "Benjamin Talmant",
+        "Jade Nguyen",
+        "Trinidad Mesa",
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "scheduling",
+      "flags": [
+        "deadline",
+        "financial",
+        "decision"
+      ],
+      "oneSentenceSummary": "Aymen followed up for responses to the MDM workshop availability poll.",
+      "keyFacts": [
+        "KPMG requested poll responses as soon as possible to lock the MDM workshop slot."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD90000",
+      "date": "2026-03-05T07:55:19.8680000-05:00",
+      "direction": "received",
+      "subject": "Re: Reference contact & template",
+      "from": "Jade Nguyen",
+      "to": [
+        "Ben Alaya, Aymen",
+        "Hema Keshava",
+        "Michael Markman"
+      ],
+      "primaryType": "action-required",
+      "flags": [
+        "decision",
+        "new-contact"
+      ],
+      "oneSentenceSummary": "Jade asked Mike and Hema to confirm when she and Philippe should begin ERP reference calls.",
+      "keyFacts": [
+        "Jade and Philippe are ready to start contacting references immediately.",
+        "Jade asked for preferred timing and whether Philippe should be briefed first on finance questions."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "img-da6a72b4-425a-45ec-9750-2a8a4796d2b5"
+      ],
+      "suggestedAction": "draft-reply"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD80000",
+      "date": "2026-03-05T04:38:51.8150000-05:00",
+      "direction": "received",
+      "subject": "RE: France P2P - Follow-up for ERP planning",
+      "from": "Philippe Goncalves",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "data-gap-fill",
+        "financial"
+      ],
+      "oneSentenceSummary": "Philippe sent the English invoice recording process flow for France P2P.",
+      "keyFacts": [
+        "Attachment: ABIVAX_Purchase proecss - step 1 to 4 ENG version.pdf.",
+        "Fills gap: France P2P process evidence and invoice recording flow documentation."
+      ],
+      "linkedPillars": [
+        "p2p"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "ABIVAX_Purchase proecss - step 1 to 4 ENG version.pdf",
+        "image001.png"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD70000",
+      "date": "2026-03-05T04:13:15.7030000-05:00",
+      "direction": "received",
+      "subject": "RE: PTP Process + your trip in Paris",
+      "from": "Juliette Courtot",
+      "to": [
+        "Michael Markman"
+      ],
+      "primaryType": "action-required",
+      "flags": [
+        "risk",
+        "financial",
+        "data-gap-fill"
+      ],
+      "oneSentenceSummary": "Juliette said 30 minutes is too short for the full PTP process and listed prerequisite docs Mike should review first.",
+      "keyFacts": [
+        "Juliette expects Mike to review purchase steps, SOP, DocuShare guide, and approval matrix before the Paris session.",
+        "Current 30-minute slot is insufficient to explain the full purchasing process.",
+        "Potential gap fill: P2P process documentation/evidence."
+      ],
+      "linkedPillars": [
+        "p2p"
+      ],
+      "linkedEntities": [],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD40000",
+      "date": "2026-03-04T16:01:59.5860000-05:00",
+      "direction": "received",
+      "subject": "Re: Abivax ERP - NetSuite Biotech Expert Implementors  Introduction",
+      "from": "Kenneth Schatz",
+      "to": [
+        "Michael Markman",
+        "Hema Keshava"
+      ],
+      "primaryType": "deliverable-received",
+      "flags": [
+        "new-contact",
+        "risk"
+      ],
+      "oneSentenceSummary": "Ken shared CFGI ERP practice materials before the introductory discussion.",
+      "keyFacts": [
+        "Attachment: Abivax - CFGI ERP Practice Overview_03.04.36.pdf.",
+        "CFGI requested any background materials before the discussion."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "Abivax - CFGI ERP Practice Overview_03.04.36.pdf"
+      ],
+      "suggestedAction": "update-data"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF980000000001090000F6E5DF465773544EBAB7E574AC15EF98000010B2C5400000",
+      "date": "2026-03-04T15:38:40.4340000-05:00",
+      "direction": "sent",
+      "subject": "Re: Audit committee slides ",
+      "from": "Michael Markman",
+      "to": [
+        "Adrian Holbrook"
+      ],
+      "primaryType": "thread-reply",
+      "flags": [
+        "financial",
+        "decision"
+      ],
+      "oneSentenceSummary": "Mike replied on the audit committee slides thread.",
+      "keyFacts": [],
+      "linkedPillars": [
+        "controls",
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [
+        "Outlook-photo.png"
+      ],
+      "suggestedAction": "file-only"
+    },
+    {
+      "emailId": "000000003957C9EF8D64E44BAB294B7D252E6CD40700F6E5DF465773544EBAB7E574AC15EF9800000000010C0000F6E5DF465773544EBAB7E574AC15EF98000010B20BD20000",
+      "date": "2026-03-04T11:25:14.7680000-05:00",
+      "direction": "received",
+      "subject": "Re: Reference contact & template",
+      "from": "Ben Alaya, Aymen",
+      "to": [
+        "Hema Keshava",
+        "Jade Nguyen",
+        "Michael Markman"
+      ],
+      "primaryType": "internal-update",
+      "flags": [
+        "new-contact"
+      ],
+      "oneSentenceSummary": "Aymen shared reference contacts and the template for ERP vendor reference calls.",
+      "keyFacts": [
+        "Ennov contact available starting March 16, 2026.",
+        "Reference contacts include EFESO / Laure Tchervenkov, H2Air / dmoyal@h2air.fr, and CERBA Research / oussama.kiti@cerbahealthcare.com."
+      ],
+      "linkedPillars": [
+        "governance"
+      ],
+      "linkedEntities": [],
+      "attachments": [],
+      "suggestedAction": "create-todo"
+    }
+  ]
+}

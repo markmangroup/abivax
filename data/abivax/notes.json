@@ -40,14 +40,10 @@
           "Need treasury-specific control design finalized before ERP blueprint decisions lock in."
         ],
         "entityMentions": [
-          "Roxandra Sturdza",
-          "Agicap",
-          "Societe Generale",
-          "Citibank",
-          "Wells Fargo",
-          "Mazars",
           "Sage",
-          "Michael Markman"
+          "Abivax",
+          "SOX Compliance",
+          "Financial Reporting"
         ],
         "entityUpdateQueue": []
       }

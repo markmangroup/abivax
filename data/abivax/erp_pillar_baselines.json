@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-26",
+  "updatedAt": "2026-03-06",
   "baselines": [
     {
       "pillarId": "p2p",
@@ -254,7 +254,7 @@
           "source": "email",
           "sentTo": "Jade",
           "topic": "IT control gaps, interface monitoring/failure handling docs, and system admin ownership matrix",
-          "status": "awaiting-response",
+          "status": "partial",
           "why": "Adds IT control evidence and ownership paths needed for finance-system auditability and SOX support.",
           "nextMove": "Map IT controls into ERP controls design and enablement dependencies."
         },

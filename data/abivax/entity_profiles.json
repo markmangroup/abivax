@@ -2,7 +2,7 @@
   "profiles": [
     {
       "entityId": "didier",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "board decision gate",
         "executive signoff",
@@ -42,7 +42,7 @@
     },
     {
       "entityId": "hema",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "budget approval path",
         "finance scope lock",
@@ -87,7 +87,7 @@
     },
     {
       "entityId": "pat-maloy",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -103,7 +103,7 @@
     },
     {
       "entityId": "trinidad",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "consolidation ownership",
         "monthly close coordination",
@@ -138,7 +138,7 @@
     },
     {
       "entityId": "frederick",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "budget tracking cadence",
         "fp&a baseline",
@@ -173,7 +173,7 @@
     },
     {
       "entityId": "juliette",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "p2p approvals ownership",
         "ap workflow controls",
@@ -200,7 +200,7 @@
     },
     {
       "entityId": "kimberly-gordon",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "us p2p execution",
         "invoice process handoff",
@@ -232,7 +232,7 @@
     },
     {
       "entityId": "philippe",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "p2p management oversight",
         "approval governance"
@@ -256,7 +256,7 @@
     },
     {
       "entityId": "matt-epley",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "sec reporting dependencies",
         "accounting close impacts",
@@ -281,7 +281,7 @@
     },
     {
       "entityId": "jade",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "it resourcing model",
         "integration ownership",
@@ -328,7 +328,7 @@
     },
     {
       "entityId": "thelma",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [],
       "signalsNow": [
@@ -343,7 +343,7 @@
     },
     {
       "entityId": "camille",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "rfp process ownership",
         "vendor comparison assumptions",
@@ -380,7 +380,7 @@
     },
     {
       "entityId": "venceslas-dechallens",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260212-netsuite-demo"
@@ -399,13 +399,14 @@
     },
     {
       "entityId": "sage",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "sunset date",
         "manual controls risk",
         "interim support model"
       ],
       "noteIds": [
+        "20260305-treasury-roxandra-workstream-call",
         "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
         "20260220-jade-it-master-plan-deck-extract",
         "20260220-email-jade-follow-up-and-access-confirmations",
@@ -426,9 +427,9 @@
       "decisions": [
         "Treat Sage integration validation as part of ERP design and controls scope (6/6 mapped as active).",
         "Sage appears in ERP-signaled control areas and should stay in pillar-level design review.",
+        "Mazars may support a formal RFP if replacement path is chosen.",
         "Scope excludes manufacturing; external logistics/provider model",
-        "Use the CFTI RCMs and remediation tracker as primary source evidence for the Controls pillar baseline...",
-        "Use the deck roadmap to anchor IT capacity-risk questions (ERP vs SOX/cyber/compliance concurrent work)."
+        "Use the CFTI RCMs and remediation tracker as primary source evidence for the Controls pillar baseline..."
       ],
       "risks": [
         "Primary legacy core; limited audit flow per IT call.",
@@ -445,11 +446,11 @@
         "Confirm integration owner for Sage (US LLC) -> Trustpair.",
         "Access owner: Denis Jankovic / MBVSI Support."
       ],
-      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+      "lastTouchedAt": "2026-03-05T16:30:00Z"
     },
     {
       "entityId": "sap-s4hana",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "offer expiry",
         "implementation estimate",
@@ -495,7 +496,7 @@
     },
     {
       "entityId": "netsuite",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "implementation ownership",
         "ocr addon gap",
@@ -542,7 +543,7 @@
     },
     {
       "entityId": "docushare",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260219-it-landscape-live-outcomes",
@@ -578,7 +579,7 @@
     },
     {
       "entityId": "ariba",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260218-finance-intro-live-outcomes",
@@ -603,7 +604,7 @@
     },
     {
       "entityId": "certent",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -625,7 +626,7 @@
     },
     {
       "entityId": "activa",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -647,7 +648,7 @@
     },
     {
       "entityId": "adaptive",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -675,9 +676,10 @@
     },
     {
       "entityId": "abivax",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
+        "20260305-treasury-roxandra-workstream-call",
         "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
         "20260223-email-kpmg-next-steps-and-audit-slide-requests",
         "20260220-jade-it-master-plan-deck-extract",
@@ -699,14 +701,15 @@
         "If workload assumptions are under-scoped, Abivax capacity risk could impact delivery readiness."
       ],
       "openLoops": [
+        "Treasury Excel handoff is received and ingested in data/abivax/inbox_assets/2026-03-05-roxandra-treasury; next step is structured extraction/mapping.",
         "Who at ABIVAX owns commercial negotiation with the selected vendor (Didier, Hema, procurement, legal)?",
         "What revised timeline (April start) and Abivax workload plan does NetSuite commit to in writing?"
       ],
-      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+      "lastTouchedAt": "2026-03-05T16:30:00Z"
     },
     {
       "entityId": "abivax-france",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260220-jade-it-master-plan-deck-extract",
@@ -734,7 +737,7 @@
     },
     {
       "entityId": "abivax-us",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260220-email-jade-follow-up-and-access-confirmations",
@@ -755,7 +758,7 @@
     },
     {
       "entityId": "pwc",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -770,7 +773,7 @@
     },
     {
       "entityId": "kpmg",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260223-email-kpmg-next-steps-and-audit-slide-requests",
@@ -805,7 +808,7 @@
     },
     {
       "entityId": "sap-company",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [],
       "signalsNow": [],
@@ -816,7 +819,7 @@
     },
     {
       "entityId": "oracle",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260218-email-thread-netsuite-offer",
@@ -839,7 +842,7 @@
     },
     {
       "entityId": "hema-matt-intro-20260210",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -856,7 +859,7 @@
     },
     {
       "entityId": "netsuite-demo-20260212",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260212-netsuite-demo"
@@ -876,7 +879,7 @@
     },
     {
       "entityId": "erp-go-live",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "critical path",
         "scope by go-live",
@@ -916,7 +919,7 @@
     },
     {
       "entityId": "us-public-launch",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -933,7 +936,7 @@
     },
     {
       "entityId": "sap-offer-expiry",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [],
       "signalsNow": [],
@@ -944,7 +947,7 @@
     },
     {
       "entityId": "sage-sunset",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260212-netsuite-demo"
@@ -959,7 +962,7 @@
     },
     {
       "entityId": "p2p",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "po approvals",
         "sox controls",
@@ -1004,9 +1007,10 @@
     },
     {
       "entityId": "sox-compliance",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
+        "20260305-treasury-roxandra-workstream-call",
         "20260225-cfti-sox-rcm-remediation-call-live-outcomes",
         "20260220-jade-it-master-plan-deck-extract",
         "20260220-email-jade-follow-up-and-access-confirmations",
@@ -1025,6 +1029,7 @@
         "Use the deck roadmap to anchor IT capacity-risk questions (ERP vs SOX/cyber/compliance concurrent work)."
       ],
       "risks": [
+        "Agicap lacks SOC/SOX reporting support today, creating a controls/compliance risk.",
         "Concurrent IT initiatives (SOX, SOC/SIEM, SOC2, DR, Freshservice rollout) may reduce ERP support capacity unless explicitly...",
         "SOX material weaknesses; manual P2P unsustainable for audit clearance"
       ],
@@ -1033,11 +1038,11 @@
         "Where are current SOX control deficiencies logged and who owns remediation?",
         "What are the month-by-month IT allocations to ERP versus cybersecurity/compliance objectives in 2026?"
       ],
-      "lastTouchedAt": "2026-02-25T10:45:00.000-05:00"
+      "lastTouchedAt": "2026-03-05T16:30:00Z"
     },
     {
       "entityId": "ifrs",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260219-us-finance-live-outcomes",
@@ -1067,7 +1072,7 @@
     },
     {
       "entityId": "gaap",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260219-us-finance-live-outcomes",
@@ -1087,7 +1092,7 @@
     },
     {
       "entityId": "consolidation",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260217-post-11am-review",
@@ -1106,9 +1111,10 @@
     },
     {
       "entityId": "financial-reporting",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
+        "20260305-treasury-roxandra-workstream-call",
         "20260220-jade-it-master-plan-deck-extract",
         "20260219-us-finance-live-outcomes",
         "20260218-finance-intro-live-outcomes",
@@ -1125,7 +1131,9 @@
       "decisions": [
         "Run separate FP&A-focused follow-up with Adrian/Frederick to map reporting model and data dependencies."
       ],
-      "risks": [],
+      "risks": [
+        "Agicap lacks SOC/SOX reporting support today, creating a controls/compliance risk."
+      ],
       "openLoops": [
         "Go-live 1/1/27 non-negotiable for P2P and financial reporting",
         "What minimum reporting data model is required for US growth and SEC readiness?",
@@ -1133,11 +1141,11 @@
         "Who owns weekly budget tracking and reporting packet preparation before March 19?",
         "Sage sunset date - when does reporting move to new ERP?"
       ],
-      "lastTouchedAt": "2026-02-20T12:15:00.000-05:00"
+      "lastTouchedAt": "2026-03-05T16:30:00Z"
     },
     {
       "entityId": "no-manufacturing-module",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260210-hema-matt-intro"
@@ -1154,7 +1162,7 @@
     },
     {
       "entityId": "external-cmo-model",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [],
       "signalsNow": [],
@@ -1165,7 +1173,7 @@
     },
     {
       "entityId": "board-decision-20260319",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "decision narrative",
         "required pre-reads",
@@ -1188,7 +1196,7 @@
     },
     {
       "entityId": "marc-de-garidel",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "board decision gate",
         "executive signoff",
@@ -1210,7 +1218,7 @@
     },
     {
       "entityId": "roxandra-sturdza",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "finance intro role clarity",
         "erp ownership boundary"
@@ -1241,7 +1249,7 @@
     },
     {
       "entityId": "adrian-holbrook",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "cost center reporting design",
         "data quality and extract limitations",
@@ -1273,7 +1281,7 @@
     },
     {
       "entityId": "fatma-hemdani",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "finance intro role clarity",
         "erp ownership boundary"
@@ -1284,7 +1292,7 @@
       ],
       "signalsNow": [
         "Fatma Hemdani profile baseline -> role: Finance stakeholder; team: P2P; reports to: Juliette Courtot; org: Abivax Finance.",
-        "Outlook GAL enrichment -> title General Accountant; dept Finance; manager Juliette Courtot.",
+        "Outlook GAL enrichment -> title Accountant; dept Finance; manager Juliette Courtot.",
         "Juliette Courtot and Kimberly Gordon are key P2P participants expected in the finance intro."
       ],
       "decisions": [],
@@ -1299,7 +1307,7 @@
     },
     {
       "entityId": "mike-markman",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "role mandate clarity",
         "cross-functional alignment",
@@ -1338,7 +1346,7 @@
     },
     {
       "entityId": "aymen-ben-alaya",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "netsuite offer clarifications",
         "technical assumption tracking",
@@ -1374,7 +1382,7 @@
     },
     {
       "entityId": "trustpair",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260220-jade-it-master-plan-deck-extract",
@@ -1415,7 +1423,7 @@
     },
     {
       "entityId": "jamal-azil",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "netsuite technical clarifications",
         "offer response follow-ups"
@@ -1444,7 +1452,7 @@
     },
     {
       "entityId": "denis",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "finance intro role clarity",
         "erp ownership boundary",
@@ -1472,7 +1480,7 @@
     },
     {
       "entityId": "france-room-attendee-1",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "identity confirmation",
         "role ownership mapping",
@@ -1492,7 +1500,7 @@
     },
     {
       "entityId": "france-room-attendee-2",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "identity confirmation",
         "role ownership mapping",
@@ -1512,7 +1520,7 @@
     },
     {
       "entityId": "benjamin-talmant",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260220-jade-it-master-plan-deck-extract",
@@ -1537,7 +1545,7 @@
     },
     {
       "entityId": "christophe-hennequin",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "integration coordination",
         "technical change ownership",
@@ -1571,7 +1579,7 @@
     },
     {
       "entityId": "denis-jankovic",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260220-email-jade-follow-up-and-access-confirmations"
@@ -1593,7 +1601,7 @@
     },
     {
       "entityId": "ewan",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [],
       "noteIds": [
         "20260219-it-landscape-live-outcomes"
@@ -1612,7 +1620,7 @@
     },
     {
       "entityId": "sophie-lacourrege",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Human Resources",
         "VP, HR Engagement & Culture",
@@ -1632,7 +1640,7 @@
     },
     {
       "entityId": "ben-alaya",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "new meeting attendee"
       ],
@@ -1653,7 +1661,7 @@
     },
     {
       "entityId": "aude-garcel",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Research",
         "Director R&D",
@@ -1662,7 +1670,7 @@
       "noteIds": [],
       "signalsNow": [
         "Aude Garcel profile baseline -> role: Director R&D; team: Research; reports to: Didier Scherrer; org: Abivax.",
-        "Outlook GAL enrichment -> title Director R&D; dept Research; manager Didier Scherrer."
+        "Outlook GAL enrichment -> title Director R&D; dept Research."
       ],
       "decisions": [],
       "risks": [],
@@ -1671,7 +1679,7 @@
     },
     {
       "entityId": "laurence-desroys-du-roure",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Operations",
         "Associate Director, Clin Ops  ABTECT",
@@ -1689,7 +1697,7 @@
     },
     {
       "entityId": "julien-santo",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Development",
         "Director Translational Research",
@@ -1707,7 +1715,7 @@
     },
     {
       "entityId": "mary-mantock",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Regulatory Affairs",
         "SVP Global Head of Regulatory Affairs",
@@ -1725,7 +1733,7 @@
     },
     {
       "entityId": "kejia-shan",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Biometrics",
         "VP, Global Head Biometrics",
@@ -1743,7 +1751,7 @@
     },
     {
       "entityId": "jennifer-fine",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "HEOR/RWE",
         "Global Head HEOR&RWE",
@@ -1761,7 +1769,7 @@
     },
     {
       "entityId": "sophie-gibelli",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Quality",
         "Global Quality Assurance Lead",
@@ -1783,7 +1791,7 @@
     },
     {
       "entityId": "marianne-perdrijat",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Trial Supplies",
         "Director Clinical Supply",
@@ -1801,7 +1809,7 @@
     },
     {
       "entityId": "chris-rabbat",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Medical Affairs",
         "VP, Global Head of Medical Affairs",
@@ -1819,7 +1827,7 @@
     },
     {
       "entityId": "patrick-malloy",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Finance",
         "SVP, Investor Relations",
@@ -1837,7 +1845,7 @@
     },
     {
       "entityId": "rebecca-mosig",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Development",
         "SD Clin Dev and Translational Medicine",
@@ -1855,7 +1863,7 @@
     },
     {
       "entityId": "patricia-fleuranceau-morel",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Drug Safety and Pharmacovigilance (Medical)",
         "Vice President, Global Head of Drug Safety and Pharmacovigilance",
@@ -1873,7 +1881,7 @@
     },
     {
       "entityId": "murielle-salaun-lancien",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Pharmacovigilance",
         "Safety Monitor",
@@ -1893,7 +1901,7 @@
     },
     {
       "entityId": "nakesha-harding-boyce",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Pharmacovigilance",
         "Senior Director Safety Ops",
@@ -1913,7 +1921,7 @@
     },
     {
       "entityId": "maurus-de-la-rosa",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Scientific Affairs",
         "VP R&D contractor",
@@ -1921,8 +1929,8 @@
       ],
       "noteIds": [],
       "signalsNow": [
-        "Maurus de la Rosa profile baseline -> role: VP R&D contractor; team: Scientific Affairs; reports to: Didier Scherrer; org: Abivax.",
-        "Outlook GAL enrichment -> title VP R&D contractor; dept Scientific Affairs; manager Didier Scherrer."
+        "Maurus de la Rosa profile baseline -> role: VP R&D contractor; team: Scientific Affairs; reports to: Marc de Garidel; org: Abivax.",
+        "Outlook GAL enrichment -> title SVP R&D; dept R&D Scientific Affairs; manager Marc de Garidel."
       ],
       "decisions": [],
       "risks": [],
@@ -1931,7 +1939,7 @@
     },
     {
       "entityId": "valerie-contassot",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Assurance Quality Team",
         "Manufacturing Quality Assurance Associate Director consultant",
@@ -1949,7 +1957,7 @@
     },
     {
       "entityId": "thomas-descusses",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Finance",
         "Legal Affairs Manager",
@@ -1966,7 +1974,7 @@
     },
     {
       "entityId": "josianne-nitcheu",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Operations",
         "CTM, Phase 1 /Pediatric",
@@ -1984,7 +1992,7 @@
     },
     {
       "entityId": "pascaline-ploncard",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Operations",
         "CTM Crohn’s/108",
@@ -2002,7 +2010,7 @@
     },
     {
       "entityId": "bindu-saini",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Program Management",
         "Medical Writing",
@@ -2020,7 +2028,7 @@
     },
     {
       "entityId": "mark-hronec",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Quality",
         "new meeting attendee"
@@ -2037,7 +2045,7 @@
     },
     {
       "entityId": "jessica-huskey",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Operations",
         "Director Clin Ops, ABTECT + LATAM/NA",
@@ -2055,7 +2063,7 @@
     },
     {
       "entityId": "doug-jacobstein",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "Clinical Development",
         "SVP, Global Head Of Clinical Dev",
@@ -2073,7 +2081,7 @@
     },
     {
       "entityId": "keith-fournier",
-      "generatedAt": "2026-02-26T20:37:59.001Z",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
       "focusHints": [
         "REGULATORY AFFAIRS",
         "SVP Regulatory Affairs",
@@ -2087,6 +2095,60 @@
       "decisions": [],
       "risks": [],
       "openLoops": [],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "girard-camille",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
+      "focusHints": [
+        "email context validation",
+        "role clarification"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Girard, Camille profile baseline -> role: Consultant (exact title to confirm); org: KPMG.",
+        "Girard, Camille is linked to workstreams/systems: kpmg."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Girard, Camille.",
+        "Confirm team for Girard, Camille."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "guillaume-bideau",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
+      "focusHints": [
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Guillaume Bideau profile baseline -> role: Role pending confirmation; team: Unknown; org: Abivax."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Guillaume Bideau."
+      ],
+      "lastTouchedAt": null
+    },
+    {
+      "entityId": "mathieu-vincent",
+      "generatedAt": "2026-03-06T15:24:43.896Z",
+      "focusHints": [
+        "new meeting attendee"
+      ],
+      "noteIds": [],
+      "signalsNow": [
+        "Mathieu Vincent profile baseline -> role: Role pending confirmation; team: Unknown; org: Abivax."
+      ],
+      "decisions": [],
+      "risks": [],
+      "openLoops": [
+        "Confirm reporting line for Mathieu Vincent."
+      ],
       "lastTouchedAt": null
     }
   ]
