@@ -742,7 +742,7 @@
     <div class="badge-row">
       <span class="badge">Board of Directors</span>
       <span class="badge">Mar 19, 2026</span>
-      <span class="badge">5 Slides + Appendix</span>
+      <span class="badge">5 Slides</span>
     </div>
   </div>
 
@@ -911,12 +911,12 @@
                 <td>Less intuitive UX</td>
               </tr>
               <tr>
-                <td><strong>Year 1 total</strong></td>
-                <td style="background: #f0fdf4;"><strong style="color: #166534;">€650K</strong><br><span style="font-size: 10px; color: #166534;">All-in (build + run)</span></td>
+                <td><strong>Year 1 cost</strong><br><span style="font-size: 10px; font-weight: 400; color: var(--muted);">Build + run</span></td>
+                <td style="background: #f0fdf4;"><strong style="color: #166534;">€650K</strong></td>
                 <td><strong>€1.24M</strong><br><span style="font-size: 10px; color: var(--muted);">€1.07M build + €173K run</span></td>
               </tr>
               <tr>
-                <td><strong>Ongoing</strong><br><span style="font-size: 10px; font-weight: 400; color: var(--muted);">Annual from Year 2</span></td>
+                <td><strong>Annual licensing</strong><br><span style="font-size: 10px; font-weight: 400; color: var(--muted);">Ongoing run cost</span></td>
                 <td style="background: #f0fdf4;"><strong style="color: #166534;">€151K/yr</strong></td>
                 <td>€173K/yr</td>
               </tr>
@@ -969,12 +969,9 @@
           <span class="num">3 / 5</span>
         </div>
       </div>
-      <div class="slide-body" style="display: flex; flex-direction: column; gap: 8px;">
-        <!-- Subtitle paragraph — matches Slides 1-2 pattern -->
-        <p style="font-size: 12px; color: var(--slate); line-height: 1.45;">The program requires approximately €1M in Year 1 across platform implementation and program management. Named resources across Finance, IT, and external partners have been identified and will be formalized at blueprint kickoff in April.</p>
-
+      <div class="slide-body" style="gap: 10px;">
         <!-- Implementation timeline — horizontal strip -->
-        <div class="timeline-strip" style="flex-shrink: 0;">
+        <div class="timeline-strip" style="margin-bottom: 2px;">
           <div class="phase">
             <div class="ph-label">Mar – Apr</div>
             <div class="ph-date">Mobilize</div>
@@ -1002,33 +999,37 @@
         </div>
 
         <!-- Two cards side by side -->
-        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 14px; flex: 1; min-height: 0; overflow: hidden;">
-          <!-- Left: Program Investment — single amount column -->
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 14px; flex: 1;">
+          <!-- Left: Program Investment -->
           <div style="border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white; display: flex; flex-direction: column;">
             <div class="milestones-header" style="padding: 10px 16px; border-bottom: 1px solid var(--line);"><h4>Program Investment</h4></div>
             <table class="table" style="border: none; border-radius: 0; flex: 1; display: table;">
               <tr>
-                <th style="width: 55%; background: #eef4f8;"></th>
-                <th style="width: 45%; background: #eef4f8;">Amount</th>
+                <th style="width: 40%; background: #eef4f8;"></th>
+                <th style="width: 30%; background: #eef4f8;">Year 1</th>
+                <th style="width: 30%; background: #eef4f8;">Ongoing</th>
               </tr>
               <tr>
-                <td><strong>NetSuite platform</strong><br><span style="font-size: 10px; color: var(--muted);">Build + first-year licensing</span></td>
+                <td><strong>NetSuite platform</strong><br><span style="font-size: 10px; color: var(--muted);">Build, config, licensing</span></td>
                 <td><strong>€650K</strong><br><span style="font-size: 10px; color: var(--muted);">€452K build + €151K run</span></td>
+                <td>€151K/yr</td>
               </tr>
               <tr>
-                <td><strong>KPMG PMO</strong><br><span style="font-size: 10px; color: var(--muted);">Governance, France coordination</span></td>
+                <td><strong>KPMG PMO</strong><br><span style="font-size: 10px; color: var(--muted);">Governance, France coord.</span></td>
                 <td><strong>$350K</strong><br><span style="font-size: 10px; color: var(--muted);">Flat fee</span></td>
+                <td style="color: var(--muted);">TBD</td>
               </tr>
               <tr style="background: #f0fdf4;">
-                <td><strong style="color: #065f46;">Year 1 subtotal</strong></td>
+                <td><strong style="color: #065f46;">Program total</strong></td>
                 <td><strong style="color: #065f46; font-size: 16px;">~€1M</strong></td>
+                <td><strong style="color: #065f46;">€151K/yr</strong></td>
               </tr>
               <tr>
-                <td><strong>NetSuite licensing Years 2–3</strong><br><span style="font-size: 10px; color: var(--muted);">€151K/yr × 2 years</span></td>
-                <td><strong>€302K</strong></td>
+                <td colspan="3" style="font-size: 11px; color: var(--slate); line-height: 1.5; padding: 10px 14px;">
+                  <strong style="color: var(--ink-2);">For context:</strong> The SAP alternative was €1.24M Year 1 (€1.07M build + €173K run), nearly double the implementation cost. Over 5 years, NetSuite saves approximately €720K. NetSuite also requires 134 internal man-days versus 480 for SAP.
+                </td>
               </tr>
             </table>
-            <div style="padding: 8px 14px; font-size: 10px; color: var(--slate); border-top: 1px solid var(--line); line-height: 1.45;">SAP alternative was €1.24M Year 1 (nearly double). NetSuite requires 134 internal man-days vs. 480 for SAP.</div>
           </div>
 
           <!-- Right: Resources to Mobilize -->
@@ -1040,36 +1041,35 @@
                 <th style="width: 45%; background: #eef4f8;">Status</th>
               </tr>
               <tr>
-                <td><strong>CFO Sponsor</strong><br><span style="font-size: 10px; color: var(--muted);">Executive oversight, budget authority</span></td>
-                <td><span class="chip chip-sel">Didier Blondel</span></td>
-              </tr>
-              <tr>
-                <td><strong>Program Lead</strong><br><span style="font-size: 10px; color: var(--muted);">Scope, execution, vendor management</span></td>
-                <td><span class="chip chip-sel">Mike Markman</span></td>
-              </tr>
-              <tr>
-                <td><strong>Finance (France + US)</strong><br><span style="font-size: 10px; color: var(--muted);">Process owners, design, UAT</span></td>
-                <td><span class="chip chip-low">Identified</span></td>
+                <td><strong>Finance (France + US)</strong><br><span style="font-size: 10px; color: var(--muted);">Process owners, design, UAT, reporting bridge</span></td>
+                <td><span class="chip chip-med">Named owners needed</span></td>
               </tr>
               <tr>
                 <td><strong>IT</strong><br><span style="font-size: 10px; color: var(--muted);">Integration, infra, data migration</span></td>
                 <td><span class="chip chip-low">Identified</span></td>
               </tr>
               <tr>
+                <td><strong>Oracle / NetSuite</strong><br><span style="font-size: 10px; color: var(--muted);">Build, config, delivery (372 man-days)</span></td>
+                <td><span class="chip chip-med">Team TBD</span></td>
+              </tr>
+              <tr>
                 <td><strong>KPMG PMO</strong><br><span style="font-size: 10px; color: var(--muted);">Governance, France coordination</span></td>
                 <td><span class="chip chip-low">Proposal in</span></td>
               </tr>
               <tr>
-                <td><strong>Oracle / NetSuite</strong><br><span style="font-size: 10px; color: var(--muted);">Build, config, delivery (372 days)</span></td>
-                <td><span class="chip chip-low">Proposal in</span><br><span style="font-size: 9px; color: var(--muted);">Contract not yet signed</span></td>
+                <td><strong>Program Lead</strong><br><span style="font-size: 10px; color: var(--muted);">Scope, execution decisions</span></td>
+                <td><span class="chip chip-low">Mike Markman</span></td>
+              </tr>
+              <tr>
+                <td><strong>CFO Sponsor</strong><br><span style="font-size: 10px; color: var(--muted);">Strategic oversight</span></td>
+                <td><span class="chip chip-low">Hema Keshava</span></td>
               </tr>
             </table>
-            <div style="padding: 8px 14px; font-size: 10px; color: var(--slate); border-top: 1px solid var(--line);">Full team roster with named roles in Appendix (Slide 6).</div>
           </div>
         </div>
       </div>
       <div class="slide-foot">
-        <span>Year 1: ~€1M (NetSuite + KPMG PMO). Contract finalization and resource commitments are the immediate next steps.</span>
+        <span>Year 1 program commitment: ~€1M (NetSuite + KPMG PMO). Internal resource commitments are the next decision.</span>
         <span class="sources">Sources: KPMG financial comparison, PMO proposal (Mar 6), Oracle NetSuite SOW.</span>
       </div>
     </section>
@@ -1216,163 +1216,6 @@
       <div class="slide-foot">
         <span>The board is approving a delivery model, a budget, and a resource commitment — not just a concept.</span>
         <span class="sources">Sources: execution risk analysis, Didier risk emphasis request, pillar baseline data.</span>
-      </div>
-    </section>
-
-    <!-- ==================== SLIDE 6: APPENDIX — TEAM ROSTER ==================== -->
-    <section class="slide" style="aspect-ratio: auto;">
-      <div class="slide-head">
-        <div class="slide-head-top">
-          <span>Project Meridian — ERP Program</span>
-          <span>Appendix</span>
-        </div>
-        <div class="slide-title">
-          <h2>Appendix: Program Team and Roles</h2>
-          <span class="num">6</span>
-        </div>
-      </div>
-      <div class="slide-body" style="gap: 14px;">
-        <p style="font-size: 13px; color: var(--slate); line-height: 1.5;">Named resources across Finance, IT, and external partners. Roles and responsibilities were identified during the KPMG-led selection process and will be formalized at blueprint kickoff in April 2026.</p>
-
-        <!-- Executive Sponsors -->
-        <div style="border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white;">
-          <div class="milestones-header" style="padding: 10px 16px; border-bottom: 1px solid var(--line);"><h4>Executive Sponsors</h4></div>
-          <table class="table" style="border: none; border-radius: 0;">
-            <tr>
-              <th style="width: 22%; background: #eef4f8;">Name</th>
-              <th style="width: 28%; background: #eef4f8;">Role</th>
-              <th style="width: 15%; background: #eef4f8;">Entity</th>
-              <th style="width: 35%; background: #eef4f8;">ERP Responsibility</th>
-            </tr>
-            <tr>
-              <td><strong>Didier Blondel</strong></td>
-              <td>CFO</td>
-              <td>Global</td>
-              <td>Executive sponsor. Board decision gate, budget authority, staffing sufficiency.</td>
-            </tr>
-            <tr>
-              <td><strong>Mike Markman</strong></td>
-              <td>VP, Global ERP Lead</td>
-              <td>Global</td>
-              <td>Program lead. Scope, vendor management, execution decisions, board reporting.</td>
-            </tr>
-            <tr>
-              <td><strong>Hema Keshava</strong></td>
-              <td>Finance Lead (FP&amp;A, Treasury, Tax)</td>
-              <td>Global</td>
-              <td>Key finance stakeholder. Drives ERP scope, P2P and reporting priorities.</td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- Two columns: Finance + IT -->
-        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 14px;">
-          <!-- Finance team -->
-          <div style="border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white;">
-            <div class="milestones-header" style="padding: 10px 16px; border-bottom: 1px solid var(--line);"><h4>Finance Team</h4></div>
-            <table class="table" style="border: none; border-radius: 0;">
-              <tr>
-                <th style="width: 25%; background: #eef4f8;">Name</th>
-                <th style="width: 30%; background: #eef4f8;">Role</th>
-                <th style="width: 12%; background: #eef4f8;">Entity</th>
-                <th style="width: 33%; background: #eef4f8;">ERP Focus</th>
-              </tr>
-              <tr>
-                <td><strong>Trinidad</strong></td>
-                <td>Accounting Manager</td>
-                <td>France</td>
-                <td>Consolidation, close process design</td>
-              </tr>
-              <tr>
-                <td><strong>Frederick</strong></td>
-                <td>FP&amp;A Lead</td>
-                <td>France</td>
-                <td>FP&amp;A scope and reporting bridge</td>
-              </tr>
-              <tr>
-                <td><strong>Philippe</strong></td>
-                <td>Finance Manager</td>
-                <td>France</td>
-                <td>P2P process ownership chain</td>
-              </tr>
-              <tr>
-                <td><strong>Juliette</strong></td>
-                <td>P2P Process Owner</td>
-                <td>France</td>
-                <td>Vendor onboarding, AP workflows, UAT</td>
-              </tr>
-              <tr>
-                <td><strong>Matt Epley</strong></td>
-                <td>SEC/Reporting Accountant</td>
-                <td>US</td>
-                <td>SEC/NASDAQ reporting, equity, IFRS</td>
-              </tr>
-              <tr>
-                <td><strong>Adrian Holbrook</strong></td>
-                <td>FP&amp;A / Reporting</td>
-                <td>US/Global</td>
-                <td>Cost center design, data access</td>
-              </tr>
-              <tr>
-                <td><strong>Kimberly Gordon</strong></td>
-                <td>P2P Contractor</td>
-                <td>US</td>
-                <td>US P2P processes and controls</td>
-              </tr>
-            </table>
-          </div>
-
-          <!-- IT + External -->
-          <div style="display: grid; gap: 14px;">
-            <div style="border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white;">
-              <div class="milestones-header" style="padding: 10px 16px; border-bottom: 1px solid var(--line);"><h4>IT Team</h4></div>
-              <table class="table" style="border: none; border-radius: 0;">
-                <tr>
-                  <th style="width: 35%; background: #eef4f8;">Name</th>
-                  <th style="width: 30%; background: #eef4f8;">Role</th>
-                  <th style="width: 35%; background: #eef4f8;">ERP Focus</th>
-                </tr>
-                <tr>
-                  <td><strong>Christophe Hennequin</strong></td>
-                  <td>IT Leadership</td>
-                  <td>IT org, escalation path</td>
-                </tr>
-                <tr>
-                  <td><strong>Jade Nguyen</strong></td>
-                  <td>IT Lead / ERP Coord.</td>
-                  <td>Integration, architecture, controls</td>
-                </tr>
-                <tr>
-                  <td><strong>Benjamin Talmant</strong></td>
-                  <td>IT Project Manager</td>
-                  <td>IT roadmap, delivery alignment</td>
-                </tr>
-              </table>
-            </div>
-
-            <div style="border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white;">
-              <div class="milestones-header" style="padding: 10px 16px; border-bottom: 1px solid var(--line);"><h4>External Partners</h4></div>
-              <table class="table" style="border: none; border-radius: 0;">
-                <tr>
-                  <th style="width: 35%; background: #eef4f8;">Partner</th>
-                  <th style="width: 65%; background: #eef4f8;">Role</th>
-                </tr>
-                <tr>
-                  <td><strong>Oracle / NetSuite</strong></td>
-                  <td>System build, configuration, data migration, delivery</td>
-                </tr>
-                <tr>
-                  <td><strong>KPMG PMO</strong></td>
-                  <td>Program governance, France coordination, issue closure</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slide-foot">
-        <span>All named roles will be formalized with explicit responsibilities at blueprint kickoff (April 2026).</span>
-        <span class="sources">Sources: people.json, KPMG selection process, IT landscape review.</span>
       </div>
     </section>
 
