@@ -486,57 +486,49 @@
   }
   .slide-cover .cover-overlay {
     position: absolute; inset: 0;
-    /* Light overlay — just enough to separate text from image.
-       Badge backgrounds do the heavy lifting for legibility. */
+    /* Gradient tuned for the gold-meridian image: heavier at top for sky legibility,
+       lighter at bottom to let the warm stone and gold line show through */
     background: linear-gradient(
       180deg,
-      rgba(13,34,63,0.38) 0%,
-      rgba(13,34,63,0.32) 30%,
-      rgba(16,40,72,0.28) 55%,
-      rgba(20,54,95,0.18) 75%,
-      rgba(15,108,141,0.10) 100%
+      rgba(13,34,63,0.78) 0%,
+      rgba(16,35,63,0.55) 35%,
+      rgba(20,54,95,0.30) 60%,
+      rgba(15,108,141,0.18) 100%
     );
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     padding: 48px 60px;
     text-align: center; color: white;
   }
-  /* Logo pinned top-left over the lightest part of the sky */
-  .cover-logo {
-    position: absolute; top: 22px; left: 28px;
-    height: 24px; opacity: 0.85;
-  }
+  .cover-logo { height: 28px; margin-bottom: 28px; opacity: 0.85; }
   .cover-title {
     font-size: 48px; font-weight: 800; letter-spacing: 1px;
     line-height: 1.15; margin-bottom: 10px;
-    text-shadow: 0 2px 24px rgba(10,20,40,0.55), 0 1px 4px rgba(10,20,40,0.35);
+    text-shadow: 0 2px 16px rgba(13,34,63,0.35);
   }
   .cover-subtitle {
-    font-size: 17px; font-weight: 500; opacity: 0.95;
+    font-size: 17px; font-weight: 400; opacity: 0.88;
     line-height: 1.5; max-width: 680px;
-    text-shadow: 0 1px 14px rgba(10,20,40,0.5), 0 1px 3px rgba(10,20,40,0.3);
+    text-shadow: 0 1px 8px rgba(13,34,63,0.3);
   }
   .cover-divider {
-    width: 60px; height: 2px; background: rgba(212,175,55,0.8);
+    width: 60px; height: 2px; background: rgba(212,175,55,0.7);
     margin: 16px auto 18px; border-radius: 1px;
-    box-shadow: 0 0 10px rgba(212,175,55,0.35);
   }
   .cover-meta {
     margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
   }
   .cover-meta span {
     font-size: 11px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase;
-    padding: 6px 16px; border: 1px solid rgba(255,255,255,0.20); border-radius: 20px;
-    background: rgba(13,34,63,0.52);
-    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-    text-shadow: 0 1px 4px rgba(10,20,40,0.4);
+    padding: 5px 14px; border: 1px solid rgba(255,255,255,0.30); border-radius: 20px;
+    opacity: 0.75; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.06);
   }
   .cover-foot {
     position: absolute; bottom: 16px; left: 0; right: 0;
     display: flex; justify-content: space-between; align-items: center;
-    padding: 0 28px; font-size: 11px; color: rgba(255,255,255,0.55);
-    text-shadow: 0 1px 8px rgba(10,20,40,0.5);
+    padding: 0 28px; font-size: 11px; color: rgba(255,255,255,0.5);
   }
-  .cover-foot img { height: 16px; opacity: 0.55; }
+  .cover-foot img { height: 16px; opacity: 0.5; }
 
   /* ---- Context banner (Slide 1 top) ---- */
   .context-banner {
