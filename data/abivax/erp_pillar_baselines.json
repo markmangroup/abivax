@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-03-06",
+  "updatedAt": "2026-03-17",
   "baselines": [
     {
       "pillarId": "p2p",
@@ -21,7 +21,12 @@
         "Received and parsed Trinidad France P2P artifact bundle (10 files) into the system: 2 approval matrices, 2 P2P SOP/procedure PDFs, signature policy, currency-entry guide, DocuShare user guide, supplier master-cleaning workbook, and payment-process workbook.",
         "Trinidad payment-process workbook intake confirms operational details useful for process mapping, including Trustpair/Agicap/Sage references, an AGICAP sheet, an EBICS signer-key mention, a documented cadence of two vendor payment campaigns per month (10th and 25th), and a payment-file preparation lead-time note (~4 working days before value date).",
         "Trinidad payment-process workbook intake references Juliette and Fatma in payment-file preparation roles, which gives named-owner clues for France payment-step mapping and walkthrough targeting.",
-        "Trinidad supplier-data workbook intake confirms vendor-master data fields/cleanup guidance are documented (including country, VAT, Siret, and bank fields) plus identification/bank/free-field setup tabs, which supports vendor-setup current-state mapping."
+        "Trinidad supplier-data workbook intake confirms vendor-master data fields/cleanup guidance are documented (including country, VAT, Siret, and bank fields) plus identification/bank/free-field setup tabs, which supports vendor-setup current-state mapping.",
+        "Juliette walkthrough notes confirm the real France AP control layer is DocuShare approval email plus Juliette's master Excel tracker, not Sage workflow.",
+        "Juliette walkthrough notes confirm current PO approval logic is amount-only today; future-state requirement is threshold plus department or cost center routing.",
+        "Juliette walkthrough notes confirm invoice-to-PO checking happens in the spreadsheet, invoice-over-PO exceptions are handled manually with some leeway, and future-state should include configurable tolerance thresholds.",
+        "Juliette walkthrough notes confirm only Juliette and Fatma create vendors in Sage, Juliette enters bank information there, and Trustpair checks banking data twice per day.",
+        "Juliette walkthrough notes confirm there is no formal aging report and effectively no usable P2P reporting across France today."
       ],
       "openItems": [
         "Current-state P2P workflow map by entity (SA vs LLC) is not yet documented in the program baseline.",
@@ -31,7 +36,8 @@
         "Need vendor response separating interfaces into custom build vs standard app vs paid app to avoid hidden scope/cost.",
         "Need side-by-side SAP vs NetSuite evidence on P2P integrations/interfaces/workflows to avoid decision-making from demo style rather than implementation scope reality.",
         "Need CFTI P2P RCM intake to identify which of the ERP-related controls/gaps should be explicit ERP design requirements vs non-ERP remediation.",
-        "Need PDF-level extraction/review of Trinidad approval matrices/SOPs/signature/currency docs to complement the workbook-derived operational signals."
+        "Need PDF-level extraction/review of Trinidad approval matrices/SOPs/signature/currency docs to complement the workbook-derived operational signals.",
+        "Need explicit design decision on France invoice-over-PO tolerance policy: percent threshold, absolute amount threshold, approver path, and hard-stop behavior."
       ],
       "waitingOn": [
         "KPMG response on P2P-focused follow-up and available process/detail documentation.",
@@ -44,7 +50,8 @@
         "Review France and US artifacts before live sessions to keep meetings focused and reduce generic discussion.",
         "Build side-by-side France vs US current-state P2P map (steps, approvals, exceptions, evidence).",
         "Convert findings into a P2P must-have workflow/control list tied to ERP design checkpoints.",
-        "Map CFTI P2P RCM gaps into three buckets: ERP-addressable, immediate non-ERP remediation, and management/ownership decisions."
+        "Map CFTI P2P RCM gaps into three buckets: ERP-addressable, immediate non-ERP remediation, and management/ownership decisions.",
+        "Turn Juliette's France notes into explicit design requirements for spreadsheet replacement, approval routing by threshold plus cost center, tolerance thresholds, and native aging or exception reporting."
       ],
       "keyContacts": [
         "Trinidad",

@@ -431,6 +431,51 @@ const PresentationsDataSchema = z.object({
   presentations: z.array(PresentationSchema).default([]),
 });
 
+const DocumentRegistryCitationSchema = z.object({
+  label: z.string(),
+  location: z.string().optional().default(""),
+  note: z.string().optional().default(""),
+});
+
+const DocumentRegistryEntrySchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  sender: z.string().optional().default(""),
+  organization: z.string().optional().default(""),
+  dateReceived: z.string().nullable().optional().default(null),
+  documentType: z.string(),
+  topicTags: z.array(z.string()).default([]),
+  relatedVendor: z.string().optional().default(""),
+  relatedWorkstream: z.string().optional().default(""),
+  status: z.string().default("current"),
+  summary: z.string().default(""),
+  keyQuestionsAnswered: z.array(z.string()).default([]),
+  notableEntities: z.array(z.string()).default([]),
+  collection: z.string().default("vendor-source-pack"),
+  sharingState: z.string().default("received-external"),
+  owner: z.string().optional().default(""),
+  appLink: z.string().optional().default(""),
+  sourceKind: z.string().default("file"),
+  sourcePath: z.string(),
+  sourceEmailSubject: z.string().optional().default(""),
+  citationRefs: z.array(DocumentRegistryCitationSchema).default([]),
+  supersedes: z.array(z.string()).default([]),
+  retrievalConfidence: z.string().default("medium"),
+});
+
+const DocumentRegistryDataSchema = z.object({
+  generatedAt: z.string().nullable().optional().default(null),
+  purpose: z.string().default(""),
+  scope: z.string().default(""),
+  summary: z.object({
+    documentCount: z.number().default(0),
+    currentCount: z.number().default(0),
+    draftCount: z.number().default(0),
+    supersededCount: z.number().default(0),
+  }),
+  documents: z.array(DocumentRegistryEntrySchema).default([]),
+});
+
 const SharePointArtifactSourceEmailSchema = z.object({
   received: z.string().nullable().optional().default(null),
   subject: z.string().optional().default(""),
@@ -908,6 +953,9 @@ export type PresentationGap = z.infer<typeof PresentationGapSchema>;
 export type PresentationLog = z.infer<typeof PresentationLogSchema>;
 export type Presentation = z.infer<typeof PresentationSchema>;
 export type PresentationsData = z.infer<typeof PresentationsDataSchema>;
+export type DocumentRegistryCitation = z.infer<typeof DocumentRegistryCitationSchema>;
+export type DocumentRegistryEntry = z.infer<typeof DocumentRegistryEntrySchema>;
+export type DocumentRegistryData = z.infer<typeof DocumentRegistryDataSchema>;
 export type SharePointArtifact = z.infer<typeof SharePointArtifactSchema>;
 export type SharePointArtifactsData = z.infer<typeof SharePointArtifactsDataSchema>;
 export type SharePointArtifactContentItem = z.infer<typeof SharePointArtifactContentItemSchema>;
@@ -1005,6 +1053,10 @@ export function loadAccessRequests(): AccessRequestsData {
 
 export function loadPresentations(): PresentationsData {
   return loadJsonFile("presentations.json", PresentationsDataSchema);
+}
+
+export function loadDocumentRegistry(): DocumentRegistryData {
+  return loadJsonFile("document_registry.json", DocumentRegistryDataSchema);
 }
 
 export function loadSharePointArtifacts(): SharePointArtifactsData {

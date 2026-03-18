@@ -1,0 +1,224 @@
+{
+  "updatedAt": "2026-03-16",
+  "netSuitePackage": {
+    "receivedAt": "2026-03-05T10:17:55-05:00",
+    "sender": "Jamal Azil",
+    "subject": "ABIVAX x NetSuite : Following up on our meeting",
+    "artifacts": [
+      {
+        "name": "NetSuite Offer Summary.xlsx",
+        "kind": "commercial-summary",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary.xlsx"
+      },
+      {
+        "name": "Estimates.zip",
+        "kind": "estimate-pack",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-commercial/Estimates.zip"
+      },
+      {
+        "name": "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "kind": "statement-of-work",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf"
+      },
+      {
+        "name": "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf",
+        "kind": "subscription-services-agreement",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-commercial/nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+      }
+    ],
+    "estimateBreakouts": [
+      "Estimate_28898869 (licenses, support, and professional services).pdf",
+      "Estimate_28938415 (NSAW).pdf",
+      "Estimate_28938606 (NSIP).pdf",
+      "Estimate_28938454 (ACS).pdf"
+    ],
+    "commercialRead": {
+      "recurringBaseEur": 153189.6,
+      "nonRecurringBuildAndTrainingEur": 427246.7,
+      "travelCapEur": 18000,
+      "optionalRecurringAddOnsEur": 30416.4,
+      "year1CoreEur": 580436.3,
+      "year1WithTravelAndOptionalAddOnsEur": 628852.7
+    },
+    "findings": [
+      "The archived workbook base includes Inventory Management and Electronic Invoices in the recurring package, so the commercial package is broader than a pure finance-only day-1 footprint.",
+      "The Oracle SOW is written as a single implementation scope and explicitly includes Procure to Pay, Record to Report, Design to Build / Inventory, and Order to Cash in the direct delivery package.",
+      "Optional recurring add-ons are carved out separately for ACS support, middleware / NSIP, and NetSuite Analytics Warehouse."
+    ]
+  },
+  "kennethReview": {
+    "receivedAt": "2026-03-10T14:23:53-04:00",
+    "sender": "Kenneth Schatz",
+    "subject": "ABIVAX <> CFGI - NetSuite discussion follow up",
+    "sourceConfidence": "medium",
+    "sourceNote": "Only the first 600 characters of the email body were preserved in the local Outlook export, so conclusions below use the preserved preview plus the attached CFGI proposal that followed 37 minutes later.",
+    "bodyPreviewKeyPoint": "Kenneth's archived preview says the Oracle SOW is written as a single phase and that a meaningful chunk of scope, specifically Order to Cash and Inventory, probably is not critical by January 1, 2027.",
+    "legitCounterpoints": [
+      {
+        "title": "Tighten phase 1 to the true Jan 1, 2027 minimum",
+        "assessment": "legit",
+        "why": "This is explicit in Kenneth's preview and aligns with the revised phase-1 boundary of finance, reporting, close, and controls first."
+      },
+      {
+        "title": "Do not let future commercial modules drive today's implementation cost",
+        "assessment": "legit",
+        "why": "If O2C and inventory are not required for day-1 readiness, they should not be forcing the Oracle package shape or negotiation posture now."
+      },
+      {
+        "title": "Use the CFGI phasing point as negotiation leverage even if NetSuite stays the implementor",
+        "assessment": "legit",
+        "why": "The counterpoint is useful regardless of who wins the work because it helps separate required scope from future-state scope."
+      }
+    ],
+    "opportunisticAngles": [
+      {
+        "title": "A better phase design does not automatically prove CFGI should replace NetSuite now",
+        "assessment": "not-proven",
+        "why": "The review identifies a valid scope issue, but that issue can be fixed commercially without changing the board-level delivery recommendation this week."
+      },
+      {
+        "title": "CFGI still benefits from framing the single-phase NetSuite scope as overbuilt",
+        "assessment": "true-but-self-interested",
+        "why": "That framing supports CFGI's own two-phase sales motion, so it should be treated as a useful challenge point, not neutral advice."
+      }
+    ],
+    "boardImpact": {
+      "supportsCurrentPlan": [
+        "Kenneth's strongest point reinforces the revised management view that phase 1 should stay focused on core finance, P2P, controls, and close readiness.",
+        "The critique supports more disciplined NetSuite negotiation, not a wholesale rewrite of the board story."
+      ],
+      "notEnoughToChangeBoardNarrative": [
+        "The archived feedback does not establish that CFGI is materially lower risk than NetSuite for April mobilization.",
+        "It does not remove the need for a targeted challenge and support layer if NetSuite remains the builder."
+      ]
+    }
+  },
+  "cfgiProposal": {
+    "receivedAt": "2026-03-10T15:01:21-04:00",
+    "sender": "Kenneth Schatz",
+    "subject": "ABIVAX <> CFGI - NetSuite Implementation Proposal",
+    "attachment": {
+      "name": "CFGI_Abivax_NS_Proposal_03.10.26.pdf",
+      "status": "archived",
+      "path": "data/abivax/vendor-assets/cfgi-implementation/CFGI_Abivax_NS_Proposal_03.10.26.pdf"
+    },
+    "commercials": {
+      "phase1FeeEur": 273000,
+      "phase2FeeEur": 117000,
+      "totalFeeEur": 390000,
+      "phase1DurationWeeks": 39,
+      "phase2DurationWeeks": 22,
+      "phase1Kickoff": "2026-04",
+      "phase2Kickoff": "2026-11"
+    },
+    "phase1Scope": [
+      "OneWorld multi-entity setup",
+      "IFRS / GAAP multi-book",
+      "Record to Report",
+      "Procure to Pay",
+      "5 integrations",
+      "NSAW analytics",
+      "Change management",
+      "Data migration: list records, opening balances, historical trial balances"
+    ],
+    "phase2Scope": [
+      "Order to Cash",
+      "Design to Build / Inventory",
+      "Phase 2 data migration",
+      "End-user training delivery",
+      "Post go-live hypercare"
+    ],
+    "exclusionsAndAssumptions": [
+      "French on-site project manager support is separate scope.",
+      "SOX-related SDLC activities are separate scope.",
+      "Abivax remains responsible for data extraction, cleansing, and validation.",
+      "Third-party connector licensing, API access, and vendor-side configuration are Abivax responsibilities.",
+      "Custom SuiteScript development is out of scope unless separately agreed.",
+      "Travel and expenses are billed separately at cost."
+    ],
+    "review": {
+      "credibleElements": [
+        "The two-phase structure is coherent and better aligned to the Jan 1, 2027 go-live constraint than the single-phase NetSuite SOW.",
+        "The proposal is specific enough to be a real alternative, not a generic capability deck."
+      ],
+      "watchouts": [
+        "CFGI still assumes April 2026 kickoff, so it does not create schedule slack relative to the current plan.",
+        "Because on-site French PM support and SOX SDLC are excluded, the proposal is not a full replacement for every support lane management still needs.",
+        "Phase 1 still includes 5 integrations and NSAW, so the proposal is not automatically a stripped-down minimal build."
+      ],
+      "operatorRead": "Useful leverage and a credible fallback path, but not enough by itself to justify disrupting the board-week plan or switching lanes without sharper RACI and ownership decisions."
+    }
+  },
+  "kpmgProposal": {
+    "receivedAt": "2026-03-10T12:46:00-04:00",
+    "sender": "Camille Girard",
+    "subject": "KPMG proposal",
+    "attachment": {
+      "name": "032026_Proposal_AMOA_ABIVAX_v1.pdf",
+      "status": "archived",
+      "path": "data/abivax/vendor-assets/kpmg-pmo/032026_Proposal_AMOA_ABIVAX_v1.pdf"
+    },
+    "commercials": {
+      "functionalAssistanceEur": 231200,
+      "changeManagementEur": 110400,
+      "projectManagementEur": 28500,
+      "totalFeeEur": 370100,
+      "totalManDays": 302
+    },
+    "keepScope": [
+      "Critical review of solution design and gap arbitration where finance / control requirements are at risk.",
+      "Controls, SoD, and user-access review in the target design.",
+      "UAT strategy, test-case support, and anomaly-management discipline.",
+      "Cutover, go-live readiness, and post-go-live support setup.",
+      "Selective France-side coordination and practical rollout support where internal bandwidth is thin."
+    ],
+    "cutFirst": [
+      "Broad PMO dashboarding, governance packs, and steering-committee minutes as a standing service.",
+      "Large persona / communications program beyond what is needed for practical rollout.",
+      "Duplicated project planning and budget-monitoring work if NetSuite already owns the delivery plan.",
+      "Any language that makes KPMG appear to be the project owner rather than a support layer."
+    ],
+    "staffingAssessment": {
+      "camilleTransition": "The source proposal names both Camille Girard and Toufik Madjoubi as project lead PMO options. If Camille rolls off, Toufik is a credible senior replacement on paper, but the narrowed role only works if he is the actual day-to-day senior contact rather than a nominal swap.",
+      "narrowedRoleFit": "The named KPMG bench looks stronger for targeted assurance, controls, and France-side coordination than for owning a broad second governance structure.",
+      "strengths": [
+        "Toufik Madjoubi's profile shows senior AMOA, project management, and integration / separation experience.",
+        "Olivia Berry is the clearest fit for controls, SoD, and internal-control-by-design challenge.",
+        "Chloe Senka and Mateo Defix give KPMG enough rollout and training coverage if that scope is kept practical and narrow."
+      ],
+      "watchouts": [
+        "The proposal team is not clearly NetSuite-native; it reads as broad transformation / AMOA support rather than deep product implementation challenge.",
+        "Aymen Ben Alaya looks useful but relatively junior for a role that could drift into day-to-day governance ownership.",
+        "If KPMG is sold back in as PMO owner, the team profile becomes less convincing because the proposal language is wider than the narrowed role Abivax should actually buy."
+      ]
+    }
+  },
+  "referenceDiligence": {
+    "context": "Jade is coordinating NetSuite references and Mike is joining that process this week. The question is no longer whether references are happening, but whether the right execution questions are asked and tracked.",
+    "questions": [
+      "Who was the named delivery lead, and did that person stay on the project through design, testing, and go-live?",
+      "How disciplined was NetSuite in challenging scope and deferring non-essential functionality instead of overloading phase 1?",
+      "What actually happened on data migration: who owned cleansing, mock loads, validation, and issue resolution?",
+      "How strong was NetSuite during UAT and cutover, especially around defect triage, readiness criteria, and escalation?",
+      "How did NetSuite handle multi-entity, multi-book, and local-country complexity similar to Abivax's French and US footprint?",
+      "How much senior attention did the client get once the deal was signed versus during the sales cycle?",
+      "Where did the client need external challenge or backup because NetSuite under-delivered on design, staffing, or control rigor?",
+      "Would the reference client use the same named lead and team again?"
+    ],
+    "namedLeadGaps": [
+      "Named NetSuite delivery lead and backup lead are not yet surfaced in the app as canonical diligence items.",
+      "France-side presence and language / timezone coverage for the implementation team are still not explicitly tracked.",
+      "The app does not yet show whether the proposed team has delivered similar finance-led, pre-commercial biotech or dual-footprint programs."
+    ],
+    "openTrackingItems": [
+      "Reference-call outcomes by client, including positives, negatives, and whether the same lead team was used.",
+      "Confirmed NetSuite delivery lead, role, geography, and escalation path.",
+      "Open concerns on staffing continuity, local support model, and controls-by-design depth.",
+      "Whether NetSuite is willing to commercialize phase 1 without O2C and Inventory in the baseline build."
+    ]
+  }
+}

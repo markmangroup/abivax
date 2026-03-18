@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>France P2P Review - Juliette Session</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #10233f;
+    --ink-2: #1d3557;
+    --slate: #516173;
+    --muted: #7c8a98;
+    --paper: #f3f5f8;
+    --card: #ffffff;
+    --line: #d8dee7;
+    --cyan: #0f6c8d;
+    --cyan-2: #1395ba;
+    --teal: #0f766e;
+    --teal-bg: #d8f3f0;
+    --amber: #b45309;
+    --amber-bg: #fff1db;
+    --rose: #be123c;
+    --rose-bg: #ffe4ea;
+    --green: #0f8a4b;
+    --green-bg: #dff7e8;
+    --navy-band: linear-gradient(135deg, #0d223f 0%, #14365f 62%, #0f6c8d 100%);
+  }
+  body {
+    font-family: "Aptos", "Segoe UI", system-ui, sans-serif;
+    background:
+      radial-gradient(circle at top left, rgba(19,149,186,0.10), transparent 32%),
+      radial-gradient(circle at 85% 10%, rgba(15,118,110,0.10), transparent 28%),
+      var(--paper);
+    color: var(--ink);
+    padding: 24px 18px 48px;
+  }
+  .shell { max-width: 1180px; margin: 0 auto; }
+  .topbar {
+    background: var(--navy-band);
+    color: white;
+    border-radius: 14px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 16px 36px rgba(16,35,63,0.18);
+    margin-bottom: 14px;
+  }
+  .topbar h1 { font-size: 20px; font-weight: 800; letter-spacing: 0.01em; }
+  .topbar p { font-size: 12px; color: rgba(255,255,255,0.78); margin-top: 4px; max-width: 760px; line-height: 1.5; }
+  .badge-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.10);
+    color: white;
+  }
+  .memo {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .memo-card {
+    background: rgba(255,255,255,0.78);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .memo-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .memo-main {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .memo-list { margin-top: 10px; display: grid; gap: 8px; }
+  .memo-item {
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid var(--line);
+    padding: 10px 12px;
+    font-size: 12px;
+    color: var(--slate);
+    line-height: 1.45;
+  }
+  .slides { display: grid; gap: 26px; }
+  .slide {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(17,34,68,0.09);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .slide-head {
+    background: var(--navy-band);
+    color: white;
+    padding: 10px 18px 12px;
+  }
+  .slide-head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(255,255,255,0.72);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .slide-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .slide-title h2 {
+    font-size: 28px;
+    line-height: 1.12;
+    font-weight: 800;
+    color: white;
+  }
+  .slide-title .num {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.70);
+  }
+  .slide-body { padding: 18px 20px 16px; display: grid; gap: 14px; overflow: hidden; }
+  .signal {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .signal-green { background: var(--green-bg); color: var(--green); }
+  .signal-amber { background: var(--amber-bg); color: var(--amber); }
+  .signal-rose { background: var(--rose-bg); color: var(--rose); }
+  .signal-teal { background: var(--teal-bg); color: var(--teal); }
+  .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 14px;
+  }
+  .hero-box, .panel {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 15px;
+    background: #fbfcfe;
+  }
+  .hero-box strong {
+    display: block;
+    font-size: 24px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .hero-box p, .panel p, .panel li, .table td, .table th {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--slate);
+  }
+  .hero-box p.emphasis {
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .metric {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    background: #ffffff;
+  }
+  .metric .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--muted);
+    font-weight: 800;
+  }
+  .metric .value {
+    margin-top: 6px;
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .metric .sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--slate);
+    line-height: 1.4;
+  }
+  .lane {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: stretch;
+  }
+  .lane-card {
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #fbfcfe;
+    padding: 14px;
+  }
+  .lane-card h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--cyan);
+    font-weight: 800;
+  }
+  .lane-card ul {
+    margin-top: 10px;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  .lane-card li {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--slate);
+    padding-left: 12px;
+    position: relative;
+  }
+  .lane-card li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--cyan-2);
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .table th {
+    background: #eef4f8;
+    text-align: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--muted);
+    padding: 10px 12px;
+  }
+  .table td {
+    padding: 11px 12px;
+    border-top: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .chip {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+  }
+  .chip-low { background: var(--green-bg); color: var(--green); border-color: #b4e7c6; }
+  .chip-med { background: var(--amber-bg); color: var(--amber); border-color: #f7d9a6; }
+  .chip-high { background: var(--rose-bg); color: var(--rose); border-color: #f6bfd0; }
+  .capture {
+    border: 1px dashed #9db3c8;
+    background: linear-gradient(180deg, #f8fbfd 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .capture .cap-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--muted);
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .capture .cap-body {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    font-weight: 600;
+  }
+  .capture ul {
+    margin-top: 6px;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+  .capture li {
+    min-height: 28px;
+    border-bottom: 1px dotted #c7d4e2;
+    color: #8aa0b5;
+    padding: 3px 0;
+    font-size: 12px;
+  }
+  [contenteditable="true"] {
+    outline: none;
+    cursor: text;
+  }
+  [contenteditable="true"]:focus {
+    background: #eef6fb;
+    box-shadow: inset 0 0 0 1px #9dc7dc;
+    border-radius: 4px;
+  }
+  .ask-box {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    background: linear-gradient(180deg, #10314f 0%, #194c72 100%);
+    color: white;
+  }
+  .ask-box h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: rgba(255,255,255,0.72);
+    font-weight: 800;
+  }
+  .ask-box p {
+    margin-top: 8px;
+    color: white;
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  .ask-box ol {
+    margin-top: 10px;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    counter-reset: ask-counter;
+  }
+  .ask-box li {
+    font-size: 12px;
+    line-height: 1.45;
+    color: rgba(255,255,255,0.90);
+    padding-left: 24px;
+    position: relative;
+    counter-increment: ask-counter;
+  }
+  .ask-box li::before {
+    content: counter(ask-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    background: rgba(119,212,241,0.22);
+    color: #77d4f1;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide-foot {
+    border-top: 1px solid var(--line);
+    padding: 8px 18px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .foot-logo { height: 16px; opacity: 0.5; flex-shrink: 0; }
+  .export-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+  .export-bar button {
+    border: 1px solid var(--line);
+    background: white;
+    color: var(--ink);
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(16,35,63,0.08);
+  }
+  .export-bar button:hover { background: #f8fbfd; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div>
+      <h1>France P2P Review</h1>
+      <p>Working deck for the Juliette Courtot session. This is not a vendor pitch or board narrative. It is a France AP current-state capture focused on DocuShare, Sage, Trustpair, Agicap, manual handoffs, and the ERP-signal gaps that need to be translated into design requirements.</p>
+    </div>
+    <div class="badge-row">
+      <span class="badge">France SA Only</span>
+      <span class="badge">Juliette Session</span>
+      <span class="badge">Live Capture Ready</span>
+    </div>
+  </div>
+
+  <div class="memo">
+    <div class="memo-card">
+      <div class="memo-label">Meeting Goal</div>
+      <div class="memo-main">Get the real AP process from invoice receipt through payment, identify where Juliette and Fatma touch the flow, and pin down where evidence, approvals, and exceptions live today.</div>
+    </div>
+    <div class="memo-card">
+      <div class="memo-label">What Good Looks Like</div>
+      <div class="memo-list">
+        <div class="memo-item">Clear step-by-step France AP flow with actual systems and handoffs.</div>
+        <div class="memo-item">Named owner split between Juliette, Fatma, Philippe, approvers, and treasury.</div>
+        <div class="memo-item">Top failure points and post-meeting follow-ups captured while live.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="export-bar">
+    <button onclick="window.print()">Export / Print</button>
+  </div>
+
+  <div class="slides">
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>France P2P</span>
+          <span>Session Anchor</span>
+        </div>
+        <div class="slide-title">
+          <h2>What We Need From Juliette</h2>
+          <span class="num">1 / 5</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="hero">
+          <div class="hero-box">
+            <span class="signal signal-teal">Ground Truth</span>
+            <strong>This meeting is about reality, not design opinions.</strong>
+            <p class="emphasis">Use this session to map how France AP actually runs today: shared inbox, DocuShare approvals, Sage posting, Trustpair validation, Agicap handoff, and payment-run preparation.</p>
+            <p style="margin-top:10px;">What we now know: France AP relies on DocuShare approval emails, Juliette's master Excel tracker, Sage booking and vendor setup, and Trustpair bank validation. The future ERP needs to replace that spreadsheet-and-email control layer with native PO workflow, approval routing, tolerance rules, and reporting.</p>
+          </div>
+          <div class="panel">
+            <span class="signal signal-amber">Opening Script</span>
+            <p><strong>Suggested opener:</strong></p>
+            <p style="margin-top:8px;">“I want to understand your actual AP process end to end, where the manual work and risks are, and what must not break in ERP design. I’m not looking for a polished answer, just the real flow.”</p>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="metric">
+            <div class="label">Known Volume</div>
+            <div class="value">4,000</div>
+            <div class="sub">Approximate France invoices per year.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Payment Cadence</div>
+            <div class="value">2x / month</div>
+            <div class="sub">Campaigns around the 10th and 25th.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Systems In Play</div>
+            <div class="value">4</div>
+            <div class="sub">DocuShare, Sage, Trustpair, Agicap.</div>
+          </div>
+        </div>
+        <div class="capture">
+          <div class="cap-label">Capture During Meeting</div>
+          <div class="cap-body">What is the one sentence that best describes Juliette's role in today's France P2P chain?</div>
+          <ul>
+            <li contenteditable="true">Juliette is the operational control point between DocuShare approvals, the master Excel tracker, Sage booking, and payment readiness.</li>
+            <li contenteditable="true">Her spreadsheet is the real PO and invoice matching layer until ERP replaces it.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>Keep the conversation operational. “Then what happens?” is the main prompt.</span>
+        <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>France P2P</span>
+          <span>Current State</span>
+        </div>
+        <div class="slide-title">
+          <h2>Current Flow We Need To Confirm</h2>
+          <span class="num">2 / 5</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="lane">
+          <div class="lane-card">
+            <h3>1. Intake and Approval</h3>
+            <ul>
+              <li>PO approvals start in DocuShare and AP receives an approval email after release.</li>
+              <li>The current approval matrix is driven by amount only.</li>
+              <li>Future-state routing should be tied to threshold plus department or cost center.</li>
+            </ul>
+          </div>
+          <div class="lane-card">
+            <h3>2. AP Processing</h3>
+            <ul>
+              <li>Juliette adds approved items into her master Excel payment tracker.</li>
+              <li>She checks invoices against the PO in the spreadsheet before booking in Sage.</li>
+              <li>If the invoice exceeds the PO, she reaches out manually and allows some leeway.</li>
+            </ul>
+          </div>
+          <div class="lane-card">
+            <h3>3. Payment Run</h3>
+            <ul>
+              <li>Only Juliette and Fatma can create vendors in Sage today.</li>
+              <li>Juliette enters bank information into Sage and Trustpair validates banking twice per day.</li>
+              <li>Payment execution still depends on manual checks and there is no formal reporting layer.</li>
+            </ul>
+          </div>
+        </div>
+        <table class="table">
+          <tr>
+            <th style="width: 26%;">Process Step</th>
+            <th style="width: 24%;">What We Think Today</th>
+            <th style="width: 25%;">What To Confirm</th>
+            <th style="width: 25%;">Live Notes</th>
+          </tr>
+          <tr>
+            <td><strong>Invoice receipt</strong></td>
+            <td>Shared AP inbox, AP triage, then DocuShare approval email flow.</td>
+            <td>Exact first reviewer and what fields are checked before logging to the tracker.</td>
+            <td contenteditable="true">Approved PO triggers an email from DocuShare to P2P.</td>
+          </tr>
+          <tr>
+            <td><strong>PO / non-PO split</strong></td>
+            <td>PO invoices are checked in Juliette's master Excel tracker.</td>
+            <td>When PO is bypassed and how non-PO invoices are approved today.</td>
+            <td contenteditable="true">Invoice-to-PO check happens in the spreadsheet, not in Sage.</td>
+          </tr>
+          <tr>
+            <td><strong>DocuShare to Sage</strong></td>
+            <td>Manual re-entry plus vendor setup in Sage.</td>
+            <td>Which fields Juliette keys into Sage and whether vendor creation is always same-step.</td>
+            <td contenteditable="true">Juliette or Fatma creates the vendor after the spreadsheet check.</td>
+          </tr>
+          <tr>
+            <td><strong>Payment prep</strong></td>
+            <td>Juliette / Fatma prepare run with Trustpair banking checks.</td>
+            <td>Exact payment checklist, cutoff timing, and Agicap handoff evidence.</td>
+            <td contenteditable="true">Trustpair checks bank data twice daily.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="slide-foot">
+        <span>The output of this slide should be a usable swimlane, not an abstract summary.</span>
+        <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>France P2P</span>
+          <span>Control Gaps</span>
+        </div>
+        <div class="slide-title">
+          <h2>Controls and Breakpoints</h2>
+          <span class="num">3 / 5</span>
+        </div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="panel">
+            <span class="signal signal-rose">Known ERP-Signal Gaps</span>
+            <table class="table" style="margin-top:4px;">
+              <tr>
+                <th style="width: 24%;">Control</th>
+                <th style="width: 36%;">Known Gap</th>
+                <th style="width: 40%;">What Juliette Can Clarify</th>
+              </tr>
+              <tr>
+                <td><strong>FR-PTP-04G</strong></td>
+                <td>PO approval workflow is email-driven and not ERP-enforced.</td>
+                <td>DocuShare approval exists, but routing is amount-only and not cost-center based.</td>
+              </tr>
+              <tr>
+                <td><strong>FR-PTP-05G</strong></td>
+                <td>No formal review of open orders.</td>
+                <td>Does AP ever review old open POs manually today?</td>
+              </tr>
+              <tr>
+                <td><strong>FR-PTP-06G</strong></td>
+                <td>No automated two-way match or tolerance enforcement.</td>
+                <td>Spreadsheet match exists today; future ERP needs percent or amount thresholds for over-PO invoices.</td>
+              </tr>
+              <tr>
+                <td><strong>FR-PTP-14G</strong></td>
+                <td>Search for unrecorded liabilities not formalized.</td>
+                <td>What AP support is provided for accruals and late invoices?</td>
+              </tr>
+            </table>
+          </div>
+          <div class="panel">
+            <span class="signal signal-amber">Live Exception Capture</span>
+            <div class="capture" style="margin-top:4px;">
+              <div class="cap-label">Top Exceptions She Names</div>
+              <ul>
+                <li contenteditable="true">Invoice exceeds PO and AP chases explanation manually.</li>
+                <li contenteditable="true">PO process is messy and not governed formally.</li>
+                <li contenteditable="true">No formal reporting or aging view exists across P2P.</li>
+              </ul>
+            </div>
+            <div class="capture" style="margin-top:10px;">
+              <div class="cap-label">Where Evidence Lives Today</div>
+              <ul>
+                <li contenteditable="true">DocuShare approval email</li>
+                <li contenteditable="true">Juliette's master Excel payment and PO tracker</li>
+                <li contenteditable="true">Sage vendor and booking records, plus Trustpair validation logs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="metric">
+            <div class="label">Vendor Validation</div>
+            <div class="value">Trustpair</div>
+            <div class="sub">Juliette enters bank information in Sage; Trustpair checks it twice per day.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Payment Approval</div>
+            <div class="value">Amount Only</div>
+            <div class="sub">Current authorization matrix is threshold-based, not cost-center or department-based.</div>
+          </div>
+          <div class="metric">
+            <div class="label">Key Test</div>
+            <div class="value">Reporting Gap</div>
+            <div class="sub">No formal aging report and no real P2P reporting layer exist today.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>The best answers here are specific examples, not general statements.</span>
+        <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>France P2P</span>
+          <span>Roles and Exceptions</span>
+        </div>
+        <div class="slide-title">
+          <h2>Who Does What and Where It Escalates</h2>
+          <span class="num">4 / 5</span>
+        </div>
+      </div>
+      <div class="slide-body" style="display:grid; grid-template-columns: 1.15fr 0.85fr; gap:14px;">
+        <div style="display:grid; gap:12px;">
+          <table class="table">
+            <tr>
+              <th style="width: 20%;">Person</th>
+              <th style="width: 24%;">Expected Role</th>
+              <th style="width: 26%;">What To Validate</th>
+              <th style="width: 30%;">Live Notes</th>
+            </tr>
+            <tr>
+              <td><strong>Juliette</strong></td>
+              <td>Senior Accountant, AP</td>
+              <td>Owns the spreadsheet control layer, invoice-to-PO check, booking, and vendor or bank entry.</td>
+              <td contenteditable="true">Central operational owner between approval email and Sage.</td>
+            </tr>
+            <tr>
+              <td><strong>Fatma</strong></td>
+              <td>AP support / accountant</td>
+              <td>Shares vendor-creation responsibility in Sage with Juliette.</td>
+              <td contenteditable="true">Only Juliette and Fatma can create vendors today.</td>
+            </tr>
+            <tr>
+              <td><strong>Philippe</strong></td>
+              <td>Finance manager</td>
+              <td>Where exception review and approval governance enter the AP chain.</td>
+              <td contenteditable="true">Likely escalation point when invoice exceeds PO or approval path is unclear.</td>
+            </tr>
+            <tr>
+              <td><strong>Treasury</strong></td>
+              <td>Agicap / bank execution</td>
+              <td>Handoff point after AP booking, validation, and payment preparation.</td>
+              <td contenteditable="true">Confirm whether Agicap is only execution or also reporting source.</td>
+            </tr>
+          </table>
+          <div class="capture">
+            <div class="cap-label">Escalation Points</div>
+            <div class="cap-body">When something is wrong, who is called and what gets delayed?</div>
+            <ul>
+              <li contenteditable="true">Invoice exceeds PO value and Juliette reaches out for explanation.</li>
+              <li contenteditable="true">Approver or ownership is unclear because routing is not tied to cost center.</li>
+              <li contenteditable="true">Vendor or bank-data issue requires Trustpair follow-up before payment.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ask-box">
+          <h3>Five Questions To Push</h3>
+          <p>These are the questions most likely to produce design-quality answers.</p>
+          <ol>
+              <li><strong>Walk me through</strong> one PO invoice from DocuShare approval email to Sage booking.</li>
+              <li><strong>Show me where</strong> the master Excel tracker is used as the real matching layer.</li>
+              <li><strong>How do you know</strong> an invoice can exceed a PO and when do you allow leeway?</li>
+              <li><strong>What do you check</strong> in Trustpair and who can create or update the vendor?</li>
+              <li><strong>If NetSuite fixed three things</strong> on day one, would it be PO workflow, thresholds, and reporting?</li>
+          </ol>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>You are trying to separate role boundaries, exception paths, and evidence ownership.</span>
+        <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div class="slide-head-top">
+          <span>France P2P</span>
+          <span>Closeout</span>
+        </div>
+        <div class="slide-title">
+          <h2>Live Summary and Next Moves</h2>
+          <span class="num">5 / 5</span>
+        </div>
+      </div>
+      <div class="slide-body" style="display:grid; grid-template-columns: 1fr 1fr; gap:14px;">
+        <div style="display:grid; gap:12px;">
+          <div class="capture">
+            <div class="cap-label">Top 3 Process Truths</div>
+            <ul>
+              <li contenteditable="true">The working control system today is DocuShare email plus Juliette's master Excel sheet.</li>
+              <li contenteditable="true">PO approval and invoice matching are not enforced in Sage.</li>
+              <li contenteditable="true">Reporting is effectively absent across France P2P, including aging.</li>
+            </ul>
+          </div>
+          <div class="capture">
+            <div class="cap-label">Top 3 ERP Design Inputs</div>
+            <ul>
+              <li contenteditable="true">Native PO management must replace DocuShare and the spreadsheet tracker.</li>
+              <li contenteditable="true">Approval routing should use threshold plus department or cost center.</li>
+              <li contenteditable="true">Invoice matching needs configurable percent and or amount tolerance rules plus reporting.</li>
+            </ul>
+          </div>
+        </div>
+        <div style="display:grid; gap:12px;">
+          <div class="capture">
+            <div class="cap-label">Documents / Screens / Follow-ups Requested</div>
+            <ul>
+              <li contenteditable="true">TBD</li>
+              <li contenteditable="true">TBD</li>
+              <li contenteditable="true">TBD</li>
+            </ul>
+          </div>
+          <div class="capture">
+            <div class="cap-label">Who Owes What By When</div>
+            <ul>
+              <li contenteditable="true">TBD</li>
+              <li contenteditable="true">TBD</li>
+              <li contenteditable="true">TBD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide-foot">
+        <span>Ideal outcome: one clean France AP current-state map and a short follow-up request list.</span>
+        <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

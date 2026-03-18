@@ -1,0 +1,417 @@
+{
+  "generatedAt": "2026-03-16",
+  "purpose": "Lightweight evidence registry for core ERP source materials used in vendor diligence, board preparation, and delivery-model decisions.",
+  "scope": "Initial pass covers NetSuite, KPMG, CFGI, ERP selection artifacts, and current board-level ERP outputs. It is an index layer, not a document portal.",
+  "summary": {
+    "documentCount": 12,
+    "currentCount": 10,
+    "draftCount": 1,
+    "supersededCount": 1
+  },
+  "documents": [
+    {
+      "id": "netsuite-offer-summary-20260305",
+      "title": "NetSuite Offer Summary",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-05T10:16:00-05:00",
+      "documentType": "commercial-summary",
+      "topicTags": ["netsuite", "commercials", "phase-1-scope", "licensing"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "ERP selection and implementation contracting",
+      "status": "current",
+      "summary": "Commercial workbook covering licenses, support, maintenance, and implementation economics for the NetSuite proposal.",
+      "keyQuestionsAnswered": [
+        "What is the current year-1 commercial envelope?",
+        "Which recurring and non-recurring cost elements are included?",
+        "Does the package include inventory-related licensing in the baseline?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Abivax"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary.xlsx",
+      "sourceEmailSubject": "ABIVAX x NetSuite : Following up on our meeting",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/netsuite-commercial/README.md",
+          "note": "README summarizes year-1 economics and notes Inventory Management in the base package."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-sow-draft-20260305",
+      "title": "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-05T10:16:00-05:00",
+      "documentType": "statement-of-work",
+      "topicTags": ["netsuite", "sow", "scope", "delivery-model"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation contracting",
+      "status": "draft",
+      "summary": "Draft implementation SOW from NetSuite Customer Success. Current repo read is that it is written as one implementation scope rather than a narrowed finance-first phase.",
+      "keyQuestionsAnswered": [
+        "What functional scope is included in the current NetSuite implementation baseline?",
+        "Is the current SOW structured as a single phase or a phased rollout?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite Customer Success"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+      "sourceEmailSubject": "ABIVAX x NetSuite : Following up on our meeting",
+      "citationRefs": [
+        {
+          "label": "commercial watchout",
+          "location": "data/abivax/vendor-assets/netsuite-commercial/README.md",
+          "note": "Archive note says the SOW includes P2P, R2R, O2C, and Design to Build / Inventory."
+        },
+        {
+          "label": "consultant synthesis",
+          "location": "data/abivax/consultant_reviews.json",
+          "note": "NetSuite package findings record the single-phase scope read."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-timeline-v2-20260223",
+      "title": "ABIVAX - Draft-Implementation Timeline V2",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-02-23T06:03:47.215-05:00",
+      "documentType": "implementation-timeline",
+      "topicTags": ["netsuite", "timeline", "go-live", "mobilization"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation planning",
+      "status": "current",
+      "summary": "Draft timeline workbook attached to Jamal's February 23 response package.",
+      "keyQuestionsAnswered": [
+        "What kickoff and go-live timing is NetSuite assuming?",
+        "What is the expected sequencing from design through UAT and cutover?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite/ABIVAX  - Draft-Implementation Timeline V2.xlsx",
+      "sourceEmailSubject": "Jamal Azil email [Not Virus Scanned] Re: ABIVAX Offer - Netsuite",
+      "citationRefs": [
+        {
+          "label": "ingest manifest",
+          "location": "data/abivax/vendor-assets/netsuite/ingest_manifest_2026-03-02.json",
+          "note": "Manifest confirms the file was pulled from the Feb 23 Jamal email."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-interface-workbook-20260223",
+      "title": "Interfaces ABIVAX",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-02-23T06:03:47.215-05:00",
+      "documentType": "integration-workbook",
+      "topicTags": ["netsuite", "integrations", "technical-scope"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Integrations",
+      "status": "current",
+      "summary": "Interface workbook from the February 23 NetSuite follow-up package.",
+      "keyQuestionsAnswered": [
+        "What integrations are being contemplated in the NetSuite delivery baseline?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Jade Nguyen"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite/Interfaces ABIVAX.xlsx",
+      "sourceEmailSubject": "Jamal Azil email [Not Virus Scanned] Re: ABIVAX Offer - Netsuite",
+      "citationRefs": [
+        {
+          "label": "ingest manifest",
+          "location": "data/abivax/vendor-assets/netsuite/ingest_manifest_2026-03-02.json",
+          "note": "Manifest confirms the file was pulled from the Feb 23 Jamal email."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "kpmg-amoa-proposal-20260310",
+      "title": "032026_Proposal_AMOA_ABIVAX_v1",
+      "sender": "Camille Girard",
+      "organization": "KPMG",
+      "dateReceived": "2026-03-10T12:46:00-04:00",
+      "documentType": "implementation-support-proposal",
+      "topicTags": ["kpmg", "amoa", "controls", "uat", "change-management"],
+      "relatedVendor": "KPMG",
+      "relatedWorkstream": "Implementation support model",
+      "status": "current",
+      "summary": "Broad AMOA-style support proposal covering functional assistance, change management, and project management support for the ERP implementation.",
+      "keyQuestionsAnswered": [
+        "What support scope is KPMG proposing?",
+        "What fee and man-day structure is KPMG asking for?",
+        "Does the proposal drift into broad PMO / governance ownership?"
+      ],
+      "notableEntities": ["Camille Girard", "Toufik Madjoubi", "KPMG"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/kpmg-pmo/032026_Proposal_AMOA_ABIVAX_v1.pdf",
+      "sourceEmailSubject": "KPMG proposal",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/kpmg-pmo/README.md",
+          "note": "README captures the fee structure and broad three-workstream scope."
+        },
+        {
+          "label": "parsed text",
+          "location": "data/abivax/vendor-assets/kpmg-pmo/032026_Proposal_AMOA_ABIVAX_v1.text.json",
+          "note": "Parsed text sidecar exists for deeper retrieval."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "cfgi-netsuite-proposal-20260310",
+      "title": "CFGI_Abivax_NS_Proposal_03.10.26",
+      "sender": "Kenneth Schatz",
+      "organization": "CFGI",
+      "dateReceived": "2026-03-10T15:01:21-04:00",
+      "documentType": "implementation-proposal",
+      "topicTags": ["cfgi", "netsuite", "phasing", "implementation"],
+      "relatedVendor": "CFGI",
+      "relatedWorkstream": "Implementation alternative",
+      "status": "current",
+      "summary": "CFGI two-phase NetSuite implementation proposal used primarily as scope and commercial leverage rather than an active board-week switch recommendation.",
+      "keyQuestionsAnswered": [
+        "How would a phased implementation split Phase 1 and Phase 2?",
+        "What does CFGI price for the phased delivery alternative?",
+        "Which items does CFGI exclude or assume Abivax will handle?"
+      ],
+      "notableEntities": ["Kenneth Schatz", "CFGI"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/cfgi-implementation/CFGI_Abivax_NS_Proposal_03.10.26.pdf",
+      "sourceEmailSubject": "ABIVAX <> CFGI - NetSuite Implementation Proposal",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/cfgi-implementation/README.md",
+          "note": "README summarizes the two-phase split, fee levels, and exclusions."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "erp-selection-financial-comparison",
+      "title": "Abivax - Final Financial comparaison Offer",
+      "sender": "KPMG / Finance process",
+      "organization": "KPMG",
+      "dateReceived": null,
+      "documentType": "vendor-comparison-workbook",
+      "topicTags": ["erp-selection", "net-suite-vs-sap", "commercials"],
+      "relatedVendor": "KPMG",
+      "relatedWorkstream": "ERP selection",
+      "status": "current",
+      "summary": "Primary archived workbook for final vendor commercial comparison during the ERP selection process.",
+      "keyQuestionsAnswered": [
+        "What did the final selection-era commercial comparison show between NetSuite and SAP?"
+      ],
+      "notableEntities": ["KPMG", "Finance"],
+      "collection": "historical-selection-archive",
+      "sharingState": "archived-reference",
+      "owner": "Mike Markman",
+      "sourceKind": "vendor-archive",
+      "sourcePath": "data/abivax/vendor-assets/erp-selection/Abivax - Final Financial comparaison Offer.xlsx",
+      "sourceEmailSubject": "",
+      "citationRefs": [
+        {
+          "label": "archive manifest",
+          "location": "data/abivax/vendor-assets/erp-selection/README.md",
+          "note": "README identifies this workbook as the primary source for vendor cost comparison."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "medium"
+    },
+    {
+      "id": "erp-selection-rfp-analysis-20260205",
+      "title": "Abivax - RFP Analysis review_20260205",
+      "sender": "KPMG",
+      "organization": "KPMG",
+      "dateReceived": "2026-02-05",
+      "documentType": "rfp-analysis-deck",
+      "topicTags": ["erp-selection", "rfp", "vendor-evaluation"],
+      "relatedVendor": "KPMG",
+      "relatedWorkstream": "ERP selection",
+      "status": "current",
+      "summary": "Selection-stage artifact used to support shortlist and finalist evaluation.",
+      "keyQuestionsAnswered": [
+        "What rationale supported the shortlist and finalist scoring during ERP selection?"
+      ],
+      "notableEntities": ["KPMG"],
+      "collection": "historical-selection-archive",
+      "sharingState": "archived-reference",
+      "owner": "Mike Markman",
+      "sourceKind": "vendor-archive",
+      "sourcePath": "data/abivax/vendor-assets/erp-selection/Abivax - RFP Analysis review_20260205.pdf",
+      "sourceEmailSubject": "",
+      "citationRefs": [
+        {
+          "label": "archive manifest",
+          "location": "data/abivax/vendor-assets/erp-selection/README.md",
+          "note": "README labels this as the KPMG RFP analysis artifact used in the finalist process."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "medium"
+    },
+    {
+      "id": "board-erp-readout-20260319",
+      "title": "Board ERP Readout",
+      "sender": "Mike Markman",
+      "organization": "Abivax",
+      "dateReceived": "2026-03-16",
+      "documentType": "board-deck",
+      "topicTags": ["board", "erp", "delivery-model", "budget"],
+      "relatedVendor": "",
+      "relatedWorkstream": "Board governance",
+      "status": "current",
+      "summary": "Current board-facing ERP readout in the repo output set.",
+      "keyQuestionsAnswered": [
+        "What delivery model, economics, and governance posture is being taken to the board?"
+      ],
+      "notableEntities": ["Mike Markman", "Didier", "Board"],
+      "collection": "shared-abivax-materials",
+      "sharingState": "shared-for-review",
+      "owner": "Mike Markman",
+      "appLink": "/abivax/spine/presentations/board-erp-readout-20260319/viewer",
+      "sourceKind": "generated-output",
+      "sourcePath": "outputs/Board_ERP_Readout_Mar19_2026.pptx",
+      "sourceEmailSubject": "",
+      "citationRefs": [
+        {
+          "label": "presentation registry",
+          "location": "data/abivax/presentations.json",
+          "note": "Existing presentation object exists, but some narrative lines still reflect older KPMG PMO framing."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "living-executive-deck-erp-program",
+      "title": "ERP Program Living Executive Deck",
+      "sender": "Mike Markman",
+      "organization": "Abivax",
+      "dateReceived": "2026-03-16",
+      "documentType": "executive-deck",
+      "topicTags": ["executive", "erp", "program-readiness"],
+      "relatedVendor": "",
+      "relatedWorkstream": "Program governance",
+      "status": "current",
+      "summary": "Living executive deck used as an internal program synthesis and briefing asset.",
+      "keyQuestionsAnswered": [
+        "What is the current internal read on ERP priorities and readiness?"
+      ],
+      "notableEntities": ["Mike Markman", "Executive team"],
+      "collection": "internal-working-materials",
+      "sharingState": "internal-working",
+      "owner": "Mike Markman",
+      "appLink": "/abivax/spine/presentations/exec-erp-program-backbone-living/viewer",
+      "sourceKind": "generated-output",
+      "sourcePath": "outputs/ERP_Program_Living_Executive_Deck.pptx",
+      "sourceEmailSubject": "",
+      "citationRefs": [],
+      "supersedes": [],
+      "retrievalConfidence": "medium"
+    },
+    {
+      "id": "netsuite-demo-feedback-selection",
+      "title": "Abivax - Netsuite Demonstration Feedback",
+      "sender": "KPMG / selection process",
+      "organization": "KPMG",
+      "dateReceived": null,
+      "documentType": "demo-feedback-deck",
+      "topicTags": ["netsuite", "selection", "demo-feedback"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "ERP selection",
+      "status": "superseded",
+      "summary": "Selection-stage demo feedback artifact. Useful for historical rationale, but superseded by the later commercial package and current implementation-shaping evidence.",
+      "keyQuestionsAnswered": [
+        "What concerns and reactions were captured during the NetSuite finalist demo?"
+      ],
+      "notableEntities": ["KPMG", "NetSuite", "Jade Nguyen", "Mike Markman"],
+      "collection": "historical-selection-archive",
+      "sharingState": "archived-reference",
+      "owner": "Mike Markman",
+      "sourceKind": "vendor-archive",
+      "sourcePath": "data/abivax/vendor-assets/erp-selection/Abivax - Netsuite Demonstration Feedback.pptx",
+      "sourceEmailSubject": "",
+      "citationRefs": [
+        {
+          "label": "archive manifest",
+          "location": "data/abivax/vendor-assets/erp-selection/README.md",
+          "note": "Selection-stage artifact retained for historical context."
+        },
+        {
+          "label": "meeting note",
+          "location": "data/abivax/notes.json",
+          "note": "Notes entry 20260212-netsuite-demo captures related demo facts and questions."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "medium"
+    },
+    {
+      "id": "audit-committee-erp-controls-202603week",
+      "title": "Audit Committee ERP Controls Readout",
+      "sender": "Mike Markman",
+      "organization": "Abivax",
+      "dateReceived": "2026-03-16",
+      "documentType": "audit-committee-deck",
+      "topicTags": ["audit-committee", "erp", "controls"],
+      "relatedVendor": "",
+      "relatedWorkstream": "Audit committee preparation",
+      "status": "current",
+      "summary": "Audit committee ERP controls readout used for committee preparation and ERP controls messaging.",
+      "keyQuestionsAnswered": [
+        "How is the ERP program framed as a controls and remediation story for the audit committee?"
+      ],
+      "notableEntities": ["Mike Markman", "Adrian Holbrook", "Audit Committee"],
+      "collection": "shared-abivax-materials",
+      "sharingState": "approved-for-use",
+      "owner": "Mike Markman",
+      "appLink": "/abivax/spine/presentations/audit-committee-erp-controls-202603week/viewer",
+      "sourceKind": "generated-output",
+      "sourcePath": "outputs/Audit_Committee_ERP_Controls_Mar2026.pptx",
+      "sourceEmailSubject": "",
+      "citationRefs": [
+        {
+          "label": "presentation registry",
+          "location": "data/abivax/presentations.json",
+          "note": "Presentation entry exists under audit-committee-erp-controls-202603week."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    }
+  ]
+}

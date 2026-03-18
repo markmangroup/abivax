@@ -437,6 +437,9 @@ function readTempTodayMeetings(): Meeting[] {
         title?: string;
         date?: string;
         time?: string;
+        start?: string;
+        end?: string;
+        timeZone?: string;
         location?: string;
         organizer?: string;
         attendees?: string;
@@ -450,7 +453,8 @@ function readTempTodayMeetings(): Meeting[] {
     return rows.map((m) => ({
       title: m.title || "",
       organizer: m.organizer || "",
-      start: parseCatalogStart(m.date || "", m.time || ""),
+      start: m.start || parseCatalogStart(m.date || "", m.time || ""),
+      end: m.end || "",
       location: m.location || "",
       attendees: typeof m.attendees === "string"
         ? m.attendees.split(/[;,]/).map((x) => x.trim()).filter(Boolean)

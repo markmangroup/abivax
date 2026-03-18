@@ -1,0 +1,1019 @@
+{
+  "generatedAt": "2026-03-17T15:52:03.847Z",
+  "asOfDate": "2026-03-17",
+  "sourceFile": "data/abivax/p2p/ENGAGE_2026.xlsx",
+  "workbook": {
+    "sheets": [
+      "Recap ENGAGE EUROS",
+      "BASE",
+      "Presta clôturées"
+    ],
+    "baseRowCount": 3066,
+    "closedRowCount": 3039,
+    "recapRowCount": 60
+  },
+  "methodology": {
+    "focus": "EUROS only by default for aging and exposure visuals",
+    "agingBasis": "Latest parseable invoice date in `Date facture`; if missing, fallback to `Date Milestones`; if none, bucket as `No date`.",
+    "openExposureDefinition": "Rows in BASE with `Currency = EUROS` and `To be expected > 0`.",
+    "likelyActiveDefinition": "Open EUR rows excluding explicit remove flags (`x`/`xx`) and states containing `OUT` or `Clôturé`.",
+    "caution": "This is a Juliette-maintained operational tracker, not the AP ledger. Use it as an operational exposure and process-quality view, not a statutory payable balance."
+  },
+  "kpis": {
+    "eurOpenGrossExpected": 165306215.53,
+    "eurOpenLikelyActiveExpected": 161823646.82,
+    "eurOpenLikelyActiveBooked": 80857950.63,
+    "eurOpenLikelyActiveMilestoneAmount": 242681574.28,
+    "eurOpenLikelyActiveLineCount": 748,
+    "eurOpenLikelyActiveSupplierCount": 73,
+    "eurOpenLikelyActiveProjectCount": 32,
+    "weightedAverageAgeDays": 51.72,
+    "futureDatedExposure": 46868289.5,
+    "noDateExposure": 28985274.61
+  },
+  "exclusions": {
+    "removedFlagAmount": 1895341.21,
+    "outStateAmount": 2200699.53,
+    "closedStateAmount": 27094.02,
+    "totalExclusions": 4123134.76,
+    "uniqueExcludedAmount": 3482568.71,
+    "exclusionOverlapAmount": 640566.05
+  },
+  "validations": [
+    {
+      "id": "gross-minus-exclusions-equals-active",
+      "label": "Gross EUR less exclusions equals likely active EUR",
+      "status": "pass",
+      "actual": 161823646.82,
+      "expected": 161823646.82,
+      "delta": 0,
+      "note": "Bridge from gross open EUR exposure to active EUR exposure using unique excluded rows."
+    },
+    {
+      "id": "aging-buckets-tie-to-active",
+      "label": "Aging buckets total ties to likely active EUR",
+      "status": "pass",
+      "actual": 161823646.82,
+      "expected": 161823646.82,
+      "delta": 0,
+      "note": "Every active EUR row should land in exactly one bucket."
+    },
+    {
+      "id": "department-total-ties",
+      "label": "Department aggregation ties to likely active EUR",
+      "status": "pass",
+      "actual": 161823646.82,
+      "expected": 161823646.82,
+      "delta": 0,
+      "note": "Checks that department grouping is not dropping rows."
+    },
+    {
+      "id": "supplier-total-ties",
+      "label": "Supplier aggregation ties to likely active EUR",
+      "status": "pass",
+      "actual": 161823646.82,
+      "expected": 161823646.82,
+      "delta": 0,
+      "note": "Checks that supplier grouping is not dropping rows."
+    },
+    {
+      "id": "project-total-ties",
+      "label": "Project aggregation ties to likely active EUR",
+      "status": "pass",
+      "actual": 161823646.82,
+      "expected": 161823646.82,
+      "delta": 0,
+      "note": "Checks that project grouping is not dropping rows."
+    },
+    {
+      "id": "recap-vs-base-euros",
+      "label": "Recap EUR pivot is directionally close to BASE EUR gross exposure",
+      "status": "warn",
+      "actual": 144887289.31,
+      "expected": 165306215.53,
+      "delta": -20418926.22,
+      "note": "Warn-level comparison because the recap sheet is pivot-like, not a strict ledger tie-out."
+    },
+    {
+      "id": "missing-date-share",
+      "label": "Missing-date share is below 25% of likely active EUR",
+      "status": "pass",
+      "actual": 17.91,
+      "expected": 25,
+      "delta": -7.09,
+      "note": "Data-quality threshold, not a hard numeric tie-out."
+    }
+  ],
+  "dataQuality": {
+    "missingPoLines": 127,
+    "missingPoExposure": 128913331.52,
+    "missingInvoiceLines": 552,
+    "missingInvoiceExposure": 107358465.11,
+    "missingDateLines": 501,
+    "missingDateExposure": 28985274.61,
+    "futureDatedLines": 23,
+    "futureDatedExposure": 46868289.5
+  },
+  "agingBuckets": [
+    {
+      "label": "Future-dated",
+      "min": -9007199254740991,
+      "max": -1,
+      "amount": 46868289.5,
+      "lines": 23
+    },
+    {
+      "label": "No date",
+      "min": null,
+      "max": null,
+      "amount": 28985274.61,
+      "lines": 501
+    },
+    {
+      "label": "0-30 days",
+      "min": 0,
+      "max": 30,
+      "amount": 9952520.03,
+      "lines": 31
+    },
+    {
+      "label": "31-60 days",
+      "min": 31,
+      "max": 60,
+      "amount": 32078193.02,
+      "lines": 19
+    },
+    {
+      "label": "61-90 days",
+      "min": 61,
+      "max": 90,
+      "amount": 34991670.01,
+      "lines": 29
+    },
+    {
+      "label": "91-180 days",
+      "min": 91,
+      "max": 180,
+      "amount": 2693598.12,
+      "lines": 14
+    },
+    {
+      "label": "181-365 days",
+      "min": 181,
+      "max": 365,
+      "amount": 534568.1,
+      "lines": 29
+    },
+    {
+      "label": "365+ days",
+      "min": 366,
+      "max": 9007199254740991,
+      "amount": 5719533.43,
+      "lines": 102
+    }
+  ],
+  "departmentExposure": [
+    {
+      "department": "CLI",
+      "amount": 136312289.67
+    },
+    {
+      "department": "CMC",
+      "amount": 22534191.26
+    },
+    {
+      "department": "LAB",
+      "amount": 1215479.84
+    },
+    {
+      "department": "QA",
+      "amount": 575712.95
+    },
+    {
+      "department": "PV",
+      "amount": 428938
+    },
+    {
+      "department": "REG",
+      "amount": 328346
+    },
+    {
+      "department": "PMO",
+      "amount": 206815
+    },
+    {
+      "department": "DAT",
+      "amount": 93084.62
+    },
+    {
+      "department": "MED",
+      "amount": 35770
+    },
+    {
+      "department": "ANA (SAM)",
+      "amount": 30960
+    }
+  ],
+  "supplierExposure": [
+    {
+      "supplier": "IQVIA",
+      "amount": 118772623.91
+    },
+    {
+      "supplier": "THERMO FISHER CORK",
+      "amount": 8478253.97
+    },
+    {
+      "supplier": "ALMAC",
+      "amount": 5471554
+    },
+    {
+      "supplier": "GBA CENTRAL LAB SERVICES (ex LKF)",
+      "amount": 4390339.64
+    },
+    {
+      "supplier": "SCOPE INTERNATIONAL",
+      "amount": 4329630
+    },
+    {
+      "supplier": "DELPHARM LILLE",
+      "amount": 3898407.55
+    },
+    {
+      "supplier": "SEQENS",
+      "amount": 1946954
+    },
+    {
+      "supplier": "NORDIC BIOSCIENCE",
+      "amount": 1684723
+    },
+    {
+      "supplier": "CHARLES RIVER ST NAZAIRE",
+      "amount": 1421485.46
+    },
+    {
+      "supplier": "CELLCARTA",
+      "amount": 1212161.13
+    },
+    {
+      "supplier": "PAREXEL EUR",
+      "amount": 1200864
+    },
+    {
+      "supplier": "PCAS - SEQENS",
+      "amount": 1104481.35
+    }
+  ],
+  "projectExposure": [
+    {
+      "project": "UC107",
+      "amount": 99255678.84
+    },
+    {
+      "project": "CD202",
+      "amount": 28745023.44
+    },
+    {
+      "project": "ABX464",
+      "amount": 18990512.78
+    },
+    {
+      "project": "UC108",
+      "amount": 4879937.46
+    },
+    {
+      "project": "UC105",
+      "amount": 3763042.04
+    },
+    {
+      "project": "UC106",
+      "amount": 1973404.78
+    },
+    {
+      "project": "CH922",
+      "amount": 1522546.71
+    },
+    {
+      "project": "UC104",
+      "amount": 615961.47
+    },
+    {
+      "project": "NOTAPP",
+      "amount": 578537.02
+    },
+    {
+      "project": "RB911",
+      "amount": 357633
+    },
+    {
+      "project": "RI907",
+      "amount": 206360
+    },
+    {
+      "project": "ABX711",
+      "amount": 206348.4
+    }
+  ],
+  "stateBreakdown": [
+    {
+      "label": "Unspecified",
+      "count": 757
+    },
+    {
+      "label": "OUT ?",
+      "count": 58
+    },
+    {
+      "label": "OUT ? Demander a Jo",
+      "count": 23
+    },
+    {
+      "label": "Clôturé",
+      "count": 16
+    },
+    {
+      "label": "OUT Si Sophie G Confirme",
+      "count": 5
+    },
+    {
+      "label": "Out ? Demander a julien S",
+      "count": 3
+    },
+    {
+      "label": "Out ?",
+      "count": 2
+    }
+  ],
+  "currencyMix": [
+    {
+      "currency": "EUROS",
+      "toBeExpected": 153157514.63
+    },
+    {
+      "currency": "JPY",
+      "toBeExpected": 32044205
+    },
+    {
+      "currency": "USD",
+      "toBeExpected": 13198255.95
+    },
+    {
+      "currency": "GBP",
+      "toBeExpected": 1929081.43
+    },
+    {
+      "currency": "CAD",
+      "toBeExpected": 50791
+    },
+    {
+      "currency": "CHF",
+      "toBeExpected": 45912.5
+    },
+    {
+      "currency": "AUD",
+      "toBeExpected": 18450
+    },
+    {
+      "currency": "EUR",
+      "toBeExpected": 0
+    },
+    {
+      "currency": "RBM",
+      "toBeExpected": 0
+    }
+  ],
+  "recapEurPivot": [
+    {
+      "currency": "AUD",
+      "originalAmount": 18450,
+      "eurAmount": 10364,
+      "rate": 1.7802
+    },
+    {
+      "currency": "CAD",
+      "originalAmount": 50790.64,
+      "eurAmount": 11379.06,
+      "rate": 1.6214
+    },
+    {
+      "currency": "CHF",
+      "originalAmount": 44737.7,
+      "eurAmount": 19745.29,
+      "rate": 0.9344
+    },
+    {
+      "currency": "EUROS",
+      "originalAmount": 144887289.31,
+      "eurAmount": 144887289.31,
+      "rate": null
+    },
+    {
+      "currency": "GBP",
+      "originalAmount": 558843.48,
+      "eurAmount": 21187.41,
+      "rate": 0.8708
+    },
+    {
+      "currency": "USD",
+      "originalAmount": 10832867.44,
+      "eurAmount": 15720.86,
+      "rate": 1.1736
+    }
+  ],
+  "topAgedItems": [
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "INV FRA-003543 + INV FRA-003639 + INV FRA-003692 + INV FRA-003789 + INV FRA-003867 + INV FRA-003945 + INV FRA-004044 + INV FRA-004108 + INV FRA-004187 + INV FRA-004257 + INV FRA-004328 + INV FRA-004416 + INV FRA-004494 + INV FRA-004570 + INV FRA-004650 + INV FRA-00464 + INV FRA-004835 + INV FRA-004906 + INV FRA-005009 + INV FRA-005150 + INV FRA-005079 + INV FRA-005234 + INV FRA-005311 + INV FRA-005377 + INV FRA-005441 + INC FRA-005515 + INV FRA-005583 + INV FRA-005655 + INV FRA-005759 + INV FRA-005914 + INV FRA- 005929 + INV FRA-006031 + INV FRA-006124 + INV FRA-006220 + INV FRA-006320+ INV FRA-006454+ INV FRA-006565+ INV FRA- 006656 + INV FRA-006780 + INV FRA- 006894 + INV FRA-007057+ INV FRA-007170 +INV FRA-007255",
+      "effectiveDate": "2026-02-12",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 33,
+      "toBeExpected": 17541791.47,
+      "alreadyBooked": 10439100,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-03",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 73,
+      "toBeExpected": 9581924,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-01",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 75,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-07",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 69,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-12",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 64,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "GBA CENTRAL LAB SERVICES (ex LKF)",
+      "department": "CLI",
+      "project": "CD202",
+      "po": "",
+      "invoiceNumber": "INV 027843 + INV 727894 + INV 028075 + INV 028097 + INV 028260 + INV 028185 + INV A24-217 INV 028454 + INV 028454 + INV 028635 + INV 028729 + INV 028830 + INV 028964 + INV 028982 + INV 029097 + INV 029204 + INV 029295 + INV 029396 + INV 029511 + INV 029614 + INV 029780 + INV 029810",
+      "effectiveDate": "2026-03-06",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 11,
+      "toBeExpected": 4390339.64,
+      "alreadyBooked": 1372335,
+      "comment": "Payement Schedule en cours de réalisation chez Julien le 29/08"
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "CD202",
+      "po": "",
+      "invoiceNumber": "INV FRA-005374 + FRA-005568 + INV FRA-005644 + INV FRA-005731 + INV FRA-005810 + INV FRA-005908 + INV FRA-006017 + INV FRA-006099 + INV FRA-006210 + INV FRA-006333 + INV FRA-006438 + INV FRA- 006545 + INV FRA-006641+INV FRA-006755+ INV FRA-006896+INV FRA-007035 +INV FRA-007131+INV FRA-007250",
+      "effectiveDate": "2026-02-11",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 34,
+      "toBeExpected": 4341140.35,
+      "alreadyBooked": 1661943,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "CD202",
+      "po": "",
+      "invoiceNumber": "INV FRA-005432 + INV FRA-005510 + INV FRA-005647 + INV FRA-005729 + INV FRA-005809+ INV FRA-005909 + INV FRA-006018 + INV FRA-006103 + INV FRA-006329 + INV FRA-006436 + INV FRA- 006546 + INV FRA - 006645 + INV FRA-006754 + INV FRA-006898 + INV FRA-007019 + INV FRA-007132+ INV FRA-007248",
+      "effectiveDate": "2026-02-11",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 34,
+      "toBeExpected": 3570816.18,
+      "alreadyBooked": 1544100,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC105",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2025-01-09",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 432,
+      "toBeExpected": 2363322,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "THERMO FISHER CORK",
+      "department": "CMC",
+      "project": "ABX464",
+      "po": "P00240_2023",
+      "invoiceNumber": "INV 2024-0005 + (INV 2024-0008 - AV 2024-9001) + INV 900125262 + INV 900129859 + (INV 900130615 - CR 910004962) + INV 900130832 + INV 900132301 + INV 900132300 + INV 900134264 + INV 900134677",
+      "effectiveDate": "2026-02-06",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 39,
+      "toBeExpected": 2014848.47,
+      "alreadyBooked": 1971201,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "INV FRA-003854 + INV FRA-003944 + INV FRA-004038 + INV FRA-004126 + INV FRA-004186 + INV FRA-004259 + INV FRA-004330 + INV FRA-004418 + INV FRA-004490 + INV FRA-004576 + INV FRA-004646 + INV FRA-004760 + INV FRA-004834 + INV FRA-004904 + INV FRA-005008 + INV FRA-005149 + INV FRA-005077 + INV FRA-005232 + INV FRA-005303 + INV FRA-005383 + INV FRA-005445 + INV FRA-005516 + INV FRA-005584 + INV FRA-005549 + INV FRA-005762 + INV FRA-005918 + INV FRA-005933 + INV FRA-006038 + INV FRA-006120 + INV FRA -006211 + INV FRA-006322+ INV FRA-006451 + INV FRA-006563+INV FRA-006655+INV FRA-006765 + INV FRA-006897 + INV FRA-007056 + INV FRA-007169 + INV FRA-007253",
+      "effectiveDate": "2026-02-12",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 33,
+      "toBeExpected": 1947689.29,
+      "alreadyBooked": 10939579,
+      "comment": ""
+    },
+    {
+      "supplier": "SCOPE INTERNATIONAL",
+      "department": "CLI",
+      "project": "UC108",
+      "po": "",
+      "invoiceNumber": "INV E22-075281 + INV E22-097281 + INV E22-259281 + INV E22-344281 + INV E22-386281 + INV E22-443281 + INV E22-561281 + INV E22-611281 + INV E + INV E24-19328123-06281 + INV E23-088281 + INV E23-124281 + Inv E23-178281 + INV E23-222281 + INV E23-263281 + INV E23-325281 + INV E23-369281 + INV E23-404281 + INV E23-470281 + INv E23-532281 + INV E23-585281 + INV E24-081281 + INV E24-037281 + INV E24-258281 + INV E24-312281 + INV E24-081281 + INV E24-143281 + INV E24-224281 + INV E24-361281 + INV E24-399281 + INV E24-519281 + INV E24-576281+ INV E25-050281 + INV E25-067281 + INV E25-102281 + INV E25-133281 + INV E25-156281 + INV E25-247281 + INV E25-299281 + INV E25-340281 + INV I25-370281 + INV E25-394281 +INV E25-453281+ INV E25-518281 + INV E26-035281 + INV E26-044281 + INV E26-066281",
+      "effectiveDate": "2026-02-24",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 21,
+      "toBeExpected": 1607747,
+      "alreadyBooked": 1307977,
+      "comment": ""
+    },
+    {
+      "supplier": "THERMO FISHER CORK",
+      "department": "CMC",
+      "project": "ABX464",
+      "po": "P00307_2025",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-04",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 72,
+      "toBeExpected": 1512945,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "SCOPE INTERNATIONAL",
+      "department": "CLI",
+      "project": "UC108",
+      "po": "",
+      "invoiceNumber": "INV I22-075281 + INV I22-098281 + INV I22-260281 + INV I22-444281 + INV I22-496281 + INV I22-562281 + INV I22-610281 + INV I23-091281 + INV I23-131281 + INV I23-177281 + INV I23-261281 + INV I23-358281 + INV I23-383281 + INV I23-403281 + INV I23-422281 + INV I23-468281 + INV I23-517281 + INV I23-585281 + INV I24-036281 + INV I24-256281 + INV I24-321281 + INV I24-099281 + INV I24-140281 + INV I24-1952811 + INV I24-390281 + INV I24-393281 + INV I24-404281 + INV I24-484281 + INV I24-506281 + INV I24-577281 + INV I25-056281 + INV I25-085281 + INV I25-108281 +INV I25-051281 + INV I25-120281 + INV I25-157281 + INV I25-219281 + INV I25-248281+ INV I25-298281 + INV I25-361281 + INV E25-369281 + INV I25-384281+INV I28--517281 + INV I26-065281",
+      "effectiveDate": "2025-12-16",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 91,
+      "toBeExpected": 1320204,
+      "alreadyBooked": 1583423,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "INV FRA-004003 + INV FRA-004128 + INV FRA-004255 + INV FRA-004329 + INV FRA-004415 + INV FRA-004489 + INV FRA-004569 + INV FRA-004644 + INV FRA-004763 + INV FRA-004836 + INV FRA-004905 + INV FRA-005015 + INV FRA-005148 + INV FRA-005076 + INV FRA-005235 + INV FRA-005305 + INV FRA-005382 + INV FRA-005443 + INV FRA-005514 + INV FRA-005585 + INV FRA-005548 + INV FRA-005760 + INV FRA- 5931+ INV FRA-005913+ INV FRA-006041 + INV FRA-006126 + INV FRA-006214 + INV FRA-006321 + INV FRA-006453+INV FRA6566+INV FRA-006654+INV FRA-006767 + INV FRA-006901 + INV FRA-007043 + INV FRA-007171 + INV FRA-007254",
+      "effectiveDate": "2026-02-12",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 33,
+      "toBeExpected": 1254973.83,
+      "alreadyBooked": 10398245,
+      "comment": ""
+    }
+  ],
+  "topFutureItems": [
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2027-01-06",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -295,
+      "toBeExpected": 8384183,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2028-01-03",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -657,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2028-01-12",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -666,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2029-01-10",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1030,
+      "toBeExpected": 5988702,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2030-01-03",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1388,
+      "toBeExpected": 5988702,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "ALMAC",
+      "department": "CMC",
+      "project": "UC107",
+      "po": "P00362_2024",
+      "invoiceNumber": "INV 30207821 + INV 30209972 + INV 30211213 + INV 30216531 + INV 30217515 + INV 30219137 + INV 30221799 + INV 30222330 + INV 30225671 + INV 30227778+INV 30229312+ INV 30231265 + INV 30232961 + INV 30235302 + INV 30235602 + INV 30238988 + INV 30239709 + INV 30241804 + INV 30243278",
+      "effectiveDate": "2205-04-30",
+      "effectiveDateSource": "invoice",
+      "daysOpen": -65422,
+      "toBeExpected": 5470954,
+      "alreadyBooked": 1538354,
+      "comment": "5 990 861,65 GBP"
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2030-01-07",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1392,
+      "toBeExpected": 4790962,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2030-01-11",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1396,
+      "toBeExpected": 1340328,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "PAREXEL EUR",
+      "department": "CLI",
+      "project": "CH922",
+      "po": "P00028_2026",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-04-14",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -28,
+      "toBeExpected": 118119,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "PAREXEL EUR",
+      "department": "CLI",
+      "project": "CH922",
+      "po": "P00028_2026",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-08-05",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -141,
+      "toBeExpected": 118119,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "PAREXEL EUR",
+      "department": "CLI",
+      "project": "CH922",
+      "po": "P00028_2026",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-08-18",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -154,
+      "toBeExpected": 94495,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "THERMO FISHER CORK",
+      "department": "CMC",
+      "project": "ABX464",
+      "po": "P00241_2023",
+      "invoiceNumber": "INV 900134247",
+      "effectiveDate": "2026-12-01",
+      "effectiveDateSource": "invoice",
+      "daysOpen": -259,
+      "toBeExpected": 63547.5,
+      "alreadyBooked": 63548,
+      "comment": ""
+    },
+    {
+      "supplier": "PAREXEL EUR",
+      "department": "CLI",
+      "project": "CH922",
+      "po": "P00028_2026",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-11-17",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -245,
+      "toBeExpected": 59060,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "EVOTEC",
+      "department": "LAB",
+      "project": "NOTAPP",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2027-01-01",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -290,
+      "toBeExpected": 10500,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "EVOTEC",
+      "department": "LAB",
+      "project": "NOTAPP",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2028-01-01",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -655,
+      "toBeExpected": 10500,
+      "alreadyBooked": 0,
+      "comment": ""
+    }
+  ],
+  "topExposureItems": [
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "INV FRA-003543 + INV FRA-003639 + INV FRA-003692 + INV FRA-003789 + INV FRA-003867 + INV FRA-003945 + INV FRA-004044 + INV FRA-004108 + INV FRA-004187 + INV FRA-004257 + INV FRA-004328 + INV FRA-004416 + INV FRA-004494 + INV FRA-004570 + INV FRA-004650 + INV FRA-00464 + INV FRA-004835 + INV FRA-004906 + INV FRA-005009 + INV FRA-005150 + INV FRA-005079 + INV FRA-005234 + INV FRA-005311 + INV FRA-005377 + INV FRA-005441 + INC FRA-005515 + INV FRA-005583 + INV FRA-005655 + INV FRA-005759 + INV FRA-005914 + INV FRA- 005929 + INV FRA-006031 + INV FRA-006124 + INV FRA-006220 + INV FRA-006320+ INV FRA-006454+ INV FRA-006565+ INV FRA- 006656 + INV FRA-006780 + INV FRA- 006894 + INV FRA-007057+ INV FRA-007170 +INV FRA-007255",
+      "effectiveDate": "2026-02-12",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 33,
+      "toBeExpected": 17541791.47,
+      "alreadyBooked": 10439100,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-03",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 73,
+      "toBeExpected": 9581924,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2027-01-06",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -295,
+      "toBeExpected": 8384183,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-01",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 75,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-07",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 69,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2026-01-12",
+      "effectiveDateSource": "milestone",
+      "daysOpen": 64,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2028-01-03",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -657,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2028-01-12",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -666,
+      "toBeExpected": 7186443,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2029-01-10",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1030,
+      "toBeExpected": 5988702,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2030-01-03",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1388,
+      "toBeExpected": 5988702,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "ALMAC",
+      "department": "CMC",
+      "project": "UC107",
+      "po": "P00362_2024",
+      "invoiceNumber": "INV 30207821 + INV 30209972 + INV 30211213 + INV 30216531 + INV 30217515 + INV 30219137 + INV 30221799 + INV 30222330 + INV 30225671 + INV 30227778+INV 30229312+ INV 30231265 + INV 30232961 + INV 30235302 + INV 30235602 + INV 30238988 + INV 30239709 + INV 30241804 + INV 30243278",
+      "effectiveDate": "2205-04-30",
+      "effectiveDateSource": "invoice",
+      "daysOpen": -65422,
+      "toBeExpected": 5470954,
+      "alreadyBooked": 1538354,
+      "comment": "5 990 861,65 GBP"
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "UC107",
+      "po": "",
+      "invoiceNumber": "",
+      "effectiveDate": "2030-01-07",
+      "effectiveDateSource": "milestone",
+      "daysOpen": -1392,
+      "toBeExpected": 4790962,
+      "alreadyBooked": 0,
+      "comment": ""
+    },
+    {
+      "supplier": "GBA CENTRAL LAB SERVICES (ex LKF)",
+      "department": "CLI",
+      "project": "CD202",
+      "po": "",
+      "invoiceNumber": "INV 027843 + INV 727894 + INV 028075 + INV 028097 + INV 028260 + INV 028185 + INV A24-217 INV 028454 + INV 028454 + INV 028635 + INV 028729 + INV 028830 + INV 028964 + INV 028982 + INV 029097 + INV 029204 + INV 029295 + INV 029396 + INV 029511 + INV 029614 + INV 029780 + INV 029810",
+      "effectiveDate": "2026-03-06",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 11,
+      "toBeExpected": 4390339.64,
+      "alreadyBooked": 1372335,
+      "comment": "Payement Schedule en cours de réalisation chez Julien le 29/08"
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "CD202",
+      "po": "",
+      "invoiceNumber": "INV FRA-005374 + FRA-005568 + INV FRA-005644 + INV FRA-005731 + INV FRA-005810 + INV FRA-005908 + INV FRA-006017 + INV FRA-006099 + INV FRA-006210 + INV FRA-006333 + INV FRA-006438 + INV FRA- 006545 + INV FRA-006641+INV FRA-006755+ INV FRA-006896+INV FRA-007035 +INV FRA-007131+INV FRA-007250",
+      "effectiveDate": "2026-02-11",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 34,
+      "toBeExpected": 4341140.35,
+      "alreadyBooked": 1661943,
+      "comment": ""
+    },
+    {
+      "supplier": "IQVIA",
+      "department": "CLI",
+      "project": "CD202",
+      "po": "",
+      "invoiceNumber": "INV FRA-005432 + INV FRA-005510 + INV FRA-005647 + INV FRA-005729 + INV FRA-005809+ INV FRA-005909 + INV FRA-006018 + INV FRA-006103 + INV FRA-006329 + INV FRA-006436 + INV FRA- 006546 + INV FRA - 006645 + INV FRA-006754 + INV FRA-006898 + INV FRA-007019 + INV FRA-007132+ INV FRA-007248",
+      "effectiveDate": "2026-02-11",
+      "effectiveDateSource": "invoice",
+      "daysOpen": 34,
+      "toBeExpected": 3570816.18,
+      "alreadyBooked": 1544100,
+      "comment": ""
+    }
+  ],
+  "closedBaseline": {
+    "eurClosedLineCount": 2656,
+    "eurClosedBookedAmount": 84035579.2,
+    "eurClosedMilestoneAmount": 84302144.47
+  }
+}

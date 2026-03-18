@@ -27,6 +27,7 @@
     "agent:sharepoint-graph-sync": "powershell -ExecutionPolicy Bypass -File scripts/sync_sharepoint_graph.ps1",
     "agent:meeting-attendee-seed": "node scripts/seed_meeting_attendee_entities.js",
     "agent:treasury-extract": "node scripts/extract_treasury_workbooks.js",
+    "agent:engage-extract": "node scripts/extract_engage_2026.js",
     "org:sync-graph": "powershell -ExecutionPolicy Bypass -File scripts/sync_org_graph.ps1",
     "agent:org-merge": "node scripts/merge_org_graph_into_entities.js",
     "agent:people-dedupe": "node scripts/reconcile_duplicate_people.js",

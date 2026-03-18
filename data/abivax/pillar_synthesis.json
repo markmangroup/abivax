@@ -73,9 +73,9 @@
       "shortLabel": "P2P",
       "programPhase": "active-fact-finding",
       "confidenceLevel": "established",
-      "lastRefreshedAt": "2026-03-02",
-      "currentStateSummary": "France SA processes ~4,000 invoices/year and 650 POs across four disconnected systems (Sage 100, DocuShare, Trustpair, Concur) with zero system-to-system feeds \u2014 all handoffs are manual, performed by Juliette and Fatma via a shared invoice inbox. Active vendor master confirmed at 497 vendors (Trustpair export, Mar 2): 475 globally favorable, 22 with unconfirmed bank-company ownership (couple D\u00e9favorable \u2014 SOX pre-migration gate), 10 D\u00e9favorable/Anomalie global requiring remediation. \u20ac165M EUR in active contract commitments across 2,888 lines and 187 unique vendors (ENGAGE register, 31-Dec-2025), with \u20ac7.5M already invoiced. No vendor onboarding process. No Delegation of Authority matrix. Approval workflows exist only on paper. Trustpair handles vendor bank validation per wire transfer (<$15K/year) \u2014 load-bearing SOX control that Sage cannot perform. Two payment campaigns/month. US LLC P2P baseline still pending.",
-      "futureStateSummary": "Phase 1 ERP (SOX-first, per Trinidad): NetSuite closes the 5 ERP-signal P2P control gaps by design \u2014 approval workflows, commitment register, vendor setup process, two-way match, audit evidence retention. Automation and efficiency improvements are Phase 2+ scope (post Jan 1, 2027). Trustpair integration is a must-have. DoA matrix is a pre-ERP governance deliverable. Contractor PO policy is a pre-blueprint decision.",
+      "lastRefreshedAt": "2026-03-17",
+      "currentStateSummary": "France SA processes ~4,000 invoices/year and 650 POs across disconnected systems (Sage 100, DocuShare, Trustpair, Concur, Agicap) with no system-to-system flow. In practice, the working control layer is DocuShare approval emails plus Juliette's master Excel tracker, where approved POs are logged and invoices are manually checked before booking in Sage. Current authorization is amount-based only, not tied to department or cost center. If an invoice exceeds the PO, Juliette chases explanation manually and allows some leeway. Only Juliette and Fatma can create vendors in Sage; Juliette also enters bank information there, with Trustpair checking banking data twice per day. Reporting is effectively absent across France P2P, including formal aging.",
+      "futureStateSummary": "Phase 1 ERP (SOX-first, per Trinidad): NetSuite should replace the DocuShare plus spreadsheet control layer with native France PO management, approval routing by threshold and department or cost center, invoice-to-PO tolerance rules, vendor workflow, Trustpair-compatible validation, and usable P2P reporting. DoA design remains a pre-ERP governance deliverable, but the ERP should enforce the resulting matrix. The France AP objective is not just control closure; it is replacing manual operational dependency on Juliette's workbook with system workflow and reporting.",
       "whyItMatters": "P2P is the highest-density area of ERP-addressable control gaps (5 of 9 ERP-signal controls). It is also where material weakness indicators exist on vendor master and approval workflow. Getting this right is the most direct path from 'manual + risky' to 'system-enforced + auditable'.",
       "cftiControls": {
         "total": 20,
@@ -111,6 +111,14 @@
         "No PO requirement for contractors (high volume, industry-typical in biotech/CRO). No POs for contractors = commitments off the books.",
         "Some CRO contracts processed without POs \u2014 Trinidad views PO coverage for CRO as critical.",
         "PO process flows through DocuShare with no systematic capture of amounts. Juliette handles manually.",
+        "Juliette maintains a master Excel sheet that tracks payments and acts as the real PO and invoice matching layer after DocuShare approval emails are received.",
+        "Current PO approval authorization is based on amount only. Future-state routing is expected to be tied to threshold plus department or cost center.",
+        "After PO approval in DocuShare, P2P receives an email showing approval and Juliette adds the item to her Excel tracker.",
+        "If an invoice exceeds the PO, Juliette reaches out manually for explanation and applies some leeway. No configured percent or amount tolerance rule exists in-system today.",
+        "Once the invoice is checked against the PO in the spreadsheet, AP books it in Sage and creates the vendor there if needed.",
+        "Only Juliette and Fatma can create vendors in Sage today.",
+        "Juliette enters bank information into Sage; Trustpair validates banking information twice per day.",
+        "No formal aging report exists and there is effectively no usable reporting layer across France P2P today.",
         "Cost coding is broken: entire multi-component projects may be booked to single item#. Pass-throughs difficult to track.",
         "No formal vendor onboarding/selection process \u2014 Trustpair validates banking at wire only, not at vendor creation.",
         "Trinidad P2P bundle received: 10 files including approval matrices, SOPs, payment workbook, DocuShare guide, supplier master cleaning workbook.",
@@ -121,7 +129,7 @@
         "US LLC P2P current-state flow and evidence practices \u2014 Matt Epley confirmed docs in progress as of Feb 25; still not received by Mar 2.",
         "Trustpair integration model for NetSuite: standard bundled app vs. custom build vs. paid app \u2014 not yet confirmed with vendor.",
         "1099-specific process requirements (US).",
-        "Two-way match (FR-PTP-06G): not confirmed in Mar 2 call \u2014 process still unknown.",
+        "Tolerance policy for invoice-over-PO exceptions is not formalized: percent threshold, absolute amount threshold, approver path, and hard-stop behavior still need design.",
         "Where control evidence is retained today for completed wire transfers (Trustpair log? Sage? Email?).",
         "Contractor volume and spend \u2014 no count or $ figure available; not tracked."
       ],
@@ -129,12 +137,15 @@
         "PRE-ERP (governance, not NetSuite): Delegation of Authority matrix \u2014 who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.",
         "PRE-ERP (policy decision): PO requirement for contractors \u2014 yes/no decision needed before configuration. Change management required if yes.",
         "System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.",
+        "Approval routing should support threshold plus department or cost center, not amount alone.",
         "Trustpair integration at vendor onboarding (not just at wire) \u2014 integration model to be confirmed with NetSuite (standard app / custom / paid).",
         "Two-way and three-way match capability for invoice processing.",
+        "Invoice matching needs configurable percent and or amount tolerance thresholds for over-PO invoices, with explicit exception routing.",
         "Vendor setup workflow with named approver and Trustpair validation gate before vendor is live.",
         "Role-based access / SOD enforcement on vendor setup and payment authorization.",
         "Payment run traceable from PO to payment with system-retained evidence (not email-based).",
         "Commitment register: all PO-backed commitments tracked in NetSuite by go-live \u2014 closes $200M+ untracked commitment gap.",
+        "France P2P reporting baseline must include AP aging, open PO aging, exception reporting, and payment status reporting inside the ERP.",
         "Entity-level separation: France SA vs US LLC must be independently operable under common framework.",
         "PHASE 2+ (post Jan 1, 2027): CRO pass-through tracking, contractor PO workflows, cost coding optimization \u2014 not Phase 1 scope."
       ],
@@ -161,8 +172,11 @@
         "ENGAGE register migration strategy: confirm with Trinidad whether \u20ac165M commitments load as open POs or reference data only.",
         "Await Philippe's reports: Sage vendor master XLS + Trustpair report \u2014 use as migration baseline and FR-PTP-02G evidence.",
         "Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.",
+        "Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.",
         "Get NetSuite response on Trustpair integration model: standard app / custom / paid app.",
+        "Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.",
         "Raise contractor PO policy decision with Hema \u2014 yes/no before NetSuite configuration.",
+        "Add France P2P reporting requirements to scope baseline: AP aging, open PO aging, and exception reporting.",
         "Extract P2P RCM rows and classify into: ERP-addressable / non-ERP remediation / management decision.",
         "Build side-by-side France vs US P2P map once Kimberly/Matt respond.",
         "Schedule follow-up with Trinidad on cost coding / CRO pass-through structure (pre-blueprint, not urgent now)."
@@ -384,6 +398,11 @@
         ],
         "outOfScope": 10
       }
+    },
+    {
+      "date": "2026-03-17",
+      "by": "codex-session",
+      "summary": "Juliette France P2P fact capture added. Updated P2P current-state to reflect DocuShare approval emails feeding Juliette's master Excel tracker, amount-only approval routing, manual invoice-over-PO exception handling with leeway, vendor creation restricted to Juliette/Fatma in Sage, Juliette bank entry with Trustpair twice-daily validation, and the absence of formal aging or usable P2P reporting. Added ERP requirements for cost-center-based approval routing, invoice tolerance thresholds, spreadsheet replacement, and France P2P reporting."
     }
   ],
   "changeLog": [

@@ -6,12 +6,26 @@ $meetingPath = Join-Path $tempDir "meeting.txt"
 
 New-Item -ItemType Directory -Path $tempDir -Force | Out-Null
 
+function Get-OutlookApplication {
+  try {
+    return [Runtime.InteropServices.Marshal]::GetActiveObject("Outlook.Application")
+  }
+  catch {
+    return New-Object -ComObject Outlook.Application
+  }
+}
+
+function Format-OutlookFilterDate {
+  param([datetime]$Value)
+  return $Value.ToString("MM/dd/yyyy hh:mm tt", [System.Globalization.CultureInfo]::InvariantCulture)
+}
+
 function Write-NoMeeting {
   Set-Content -Path $meetingPath -Value "NO_MEETING" -Encoding UTF8
 }
 
 try {
-  $outlook = New-Object -ComObject Outlook.Application
+  $outlook = Get-OutlookApplication
   $namespace = $outlook.GetNamespace("MAPI")
   $calendar = $namespace.GetDefaultFolder(9)
   $items = $calendar.Items
@@ -20,7 +34,8 @@ try {
 
   $now = Get-Date
   $windowEnd = $now.AddHours(36)
-  $dateFilter = "[Start] >= '" + $now.ToString("g") + "' AND [Start] <= '" + $windowEnd.ToString("g") + "'"
+  $windowStart = $now.AddHours(-6)
+  $dateFilter = "[Start] >= '" + (Format-OutlookFilterDate -Value $windowStart) + "' AND [Start] <= '" + (Format-OutlookFilterDate -Value $windowEnd) + "'"
   $restricted = $items.Restrict($dateFilter)
 
   $nextMeeting = $null

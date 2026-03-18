@@ -13,6 +13,8 @@ const operateItems: NavItem[] = [
   { href: "/abivax/spine/team", label: "ERP Team", exact: false },
   { href: "/abivax/spine/delivery-models", label: "Delivery Models", exact: false },
   { href: "/abivax/spine/p2p", label: "P2P Intelligence", exact: false },
+  { href: "/abivax/spine/p2p-review", label: "P2P Review", exact: false },
+  { href: "/abivax/spine/p2p-analytics", label: "P2P Analytics", exact: false },
   { href: "/abivax/spine/r2r", label: "R2R Brief", exact: false },
   { href: "/abivax/spine/treasury", label: "Treasury", exact: false },
   // { href: "/abivax/spine/reporting", label: "Reporting Brief", exact: false }, // coming
@@ -21,6 +23,7 @@ const operateItems: NavItem[] = [
 
 const controlRoomItems: NavItem[] = [
   { href: "/abivax/spine/search", label: "Wiki", exact: false },
+  { href: "/abivax/spine/documents", label: "Documents", exact: false },
   { href: "/abivax/spine/process-flows", label: "Process Flows", exact: false },
   { href: "/abivax/spine/program", label: "Program Ops", exact: false },
   { href: "/abivax/spine/notes", label: "Notes", exact: false },

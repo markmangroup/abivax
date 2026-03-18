@@ -23,6 +23,10 @@
 # misc
 .DS_Store
 *.pem
+.claude/
+.npm-cache/
+temp/
+collab/external/
 
 # debug
 npm-debug.log*
