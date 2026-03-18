@@ -1,27 +1,33 @@
 {
-  "updatedAt": "2026-03-16",
+  "updatedAt": "2026-03-18",
   "netSuitePackage": {
-    "receivedAt": "2026-03-05T10:17:55-05:00",
+    "receivedAt": "2026-03-17T16:57:11+01:00",
     "sender": "Jamal Azil",
-    "subject": "ABIVAX x NetSuite : Following up on our meeting",
+    "subject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
     "artifacts": [
       {
-        "name": "NetSuite Offer Summary.xlsx",
+        "name": "NetSuite Offer Summary V2.xlsx",
         "kind": "commercial-summary",
         "status": "archived",
-        "path": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary.xlsx"
+        "path": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary V2.xlsx"
       },
       {
-        "name": "Estimates.zip",
-        "kind": "estimate-pack",
-        "status": "archived",
-        "path": "data/abivax/vendor-assets/netsuite-commercial/Estimates.zip"
-      },
-      {
-        "name": "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "name": "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf",
         "kind": "statement-of-work",
         "status": "archived",
-        "path": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf"
+        "path": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      },
+      {
+        "name": "Netsuite RACI standard Suite Success ABIVAX V1.xlsx",
+        "kind": "delivery-raci",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-commercial/Netsuite RACI standard Suite Success ABIVAX V1.xlsx"
+      },
+      {
+        "name": "ABIVAX TEAM V1.pptx",
+        "kind": "delivery-team",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-commercial/ABIVAX TEAM V1.pptx"
       },
       {
         "name": "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf",
@@ -31,23 +37,22 @@
       }
     ],
     "estimateBreakouts": [
-      "Estimate_28898869 (licenses, support, and professional services).pdf",
-      "Estimate_28938415 (NSAW).pdf",
-      "Estimate_28938606 (NSIP).pdf",
-      "Estimate_28938454 (ACS).pdf"
+      "Recurring base in V2 workbook remains separated from optional ACS, NSIP / Oracle Integration Cloud, and NSAW add-ons.",
+      "March 5 estimate pack remains archived as a superseded baseline for comparison."
     ],
     "commercialRead": {
-      "recurringBaseEur": 153189.6,
-      "nonRecurringBuildAndTrainingEur": 427246.7,
+      "recurringBaseEur": 148588.8,
+      "nonRecurringBuildAndTrainingEur": 396346.7,
       "travelCapEur": 18000,
       "optionalRecurringAddOnsEur": 30416.4,
-      "year1CoreEur": 580436.3,
-      "year1WithTravelAndOptionalAddOnsEur": 628852.7
+      "year1CoreEur": 544935.5,
+      "year1WithTravelAndOptionalAddOnsEur": 593351.9
     },
     "findings": [
-      "The archived workbook base includes Inventory Management and Electronic Invoices in the recurring package, so the commercial package is broader than a pure finance-only day-1 footprint.",
-      "The Oracle SOW is written as a single implementation scope and explicitly includes Procure to Pay, Record to Report, Design to Build / Inventory, and Order to Cash in the direct delivery package.",
-      "Optional recurring add-ons are carved out separately for ACS support, middleware / NSIP, and NetSuite Analytics Warehouse."
+      "The March 17 workbook still includes Inventory Management and Electronic Invoices in the recurring package, so the commercial package remains broader than a pure finance-only day-1 footprint.",
+      "The March 17 revised SOW is still written as a broad implementation scope and explicitly includes Procure to Pay, Record to Report, Design to Build / Inventory, and Order to Cash.",
+      "The revised SOW explicitly names bank account reconciliation, transfers, and deposits in Record to Report, so bank rec is covered at functional-scope level, though the detailed operating model is still a blueprint-stage design item.",
+      "The new RACI workbook makes clear that Abivax retains meaningful delivery responsibilities, especially around sponsor decisions, project management participation, business process ownership, and data cleansing."
     ]
   },
   "kennethReview": {
@@ -151,6 +156,50 @@
         "Phase 1 still includes 5 integrations and NSAW, so the proposal is not automatically a stripped-down minimal build."
       ],
       "operatorRead": "Useful leverage and a credible fallback path, but not enough by itself to justify disrupting the board-week plan or switching lanes without sharper RACI and ownership decisions."
+    }
+  },
+  "cfgiLocalSupportProposal": {
+    "receivedAt": "2026-03-17T19:28:28+01:00",
+    "sender": "Walid Bouassida",
+    "subject": "CFGI Proposal",
+    "attachment": {
+      "name": "Abivax_CFGI_PMO&Change proposal.pdf",
+      "status": "archived",
+      "path": "data/abivax/vendor-assets/cfgi-pmo-change/Abivax_CFGI_PMO&Change proposal.pdf"
+    },
+    "commercials": {
+      "localPmoAndFunctionalLowEur": 70000,
+      "localPmoAndFunctionalHighEur": 90000,
+      "changeLowEur": 30000,
+      "changeHighEur": 35000,
+      "totalLowEur": 100000,
+      "totalHighEur": 125000,
+      "estimatedDurationWeeks": 35
+    },
+    "scope": [
+      "Kick-off support and meeting facilitation with the project director",
+      "Steering and governance materials in flash-report format",
+      "Ad-hoc reporting and participation in governance forums",
+      "Business process analyst support for requirements, gaps, and cross-process dependencies",
+      "Change interviews, change strategy support, and communication plan development"
+    ],
+    "teamShape": [
+      "Walid Bouassida positioned as the local lead",
+      "Youness Tyamaz included in the delivery mix",
+      "Jean-Arnold Coutareau shown at low allocation",
+      "Ken Schatz and CFGI NetSuite experts listed as on-demand support"
+    ],
+    "review": {
+      "credibleElements": [
+        "This is a more focused and more affordable local-support package than CFGI's broader March 10 implementation proposal.",
+        "The positioning matches a real Abivax need: Paris-side PMO, business-process coordination, and change support around Mike."
+      ],
+      "watchouts": [
+        "The proposal is time-and-materials based, not a fixed fee commitment.",
+        "CFGI NetSuite experts are explicitly on-demand and billed separately, so this is not a deep product-implementation package by itself.",
+        "The proposal does not appear to cover the broader controls assurance, UAT discipline, and challenge role as explicitly as the KPMG AMOA proposal."
+      ],
+      "operatorRead": "Best read as a lower-cost local PMO and change support alternative, not as a substitute for the integrator or a full assurance layer. It is directly relevant if Abivax wants Paris-side support without buying KPMG's broader AMOA package."
     }
   },
   "kpmgProposal": {

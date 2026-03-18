@@ -1,5 +1,5 @@
 {
-  "_note": "Updated 2026-03-16. NetSuite selected 2026-02-26. The March 5 NetSuite package is now archived in-repo and under review. Commercial decisions are still open because scope, add-ons, and delivery model are not final.",
+  "_note": "Updated 2026-03-18. NetSuite selected 2026-02-26. The March 17 NetSuite revised package is now the current archived source set, replacing the March 5 baseline as the main scope/commercial reference. CFGI's March 17 local PMO/change proposal is also archived for support-model comparison.",
   "selectionDecision": {
     "selectedVendor": "NetSuite (Oracle)",
     "decidedOn": "2026-02-26",
@@ -9,12 +9,13 @@
   },
   "commercialStatus": {
     "status": "package-received-under-review",
-    "note": "NetSuite commercial package was received on 2026-03-05 and archived in vendor-assets. The current question is not whether a package exists, but which parts of it are truly required for phase 1 and who should lead delivery.",
+    "note": "NetSuite's revised package was received on 2026-03-17 and archived in vendor-assets. The current question is not whether a package exists, but which parts of the revised package are truly required for phase 1 and who should lead delivery.",
     "openDecisions": [
       "Phase 1 boundary: keep Jan 1, 2027 scope to core finance / P2P / controls or include O2C and inventory now.",
       "Which license counts and add-ons are truly required on day 1 vs defer / remove.",
       "Implementation lead: NetSuite directly or alternative SI.",
       "KPMG implementation support scope: governance overlay only or broader AMOA package.",
+      "Whether CFGI's narrower local PMO/change proposal is a better Paris-side support fit than KPMG's broader AMOA package.",
       "Who owns contract redlines and final negotiation cadence (Hema / Mike / Legal)."
     ],
     "mobilizationTarget": "2026-04-01",
@@ -36,12 +37,12 @@
   },
   "keyNumbers": [
     {
-      "label": "NetSuite year 1 core",
-      "value": "~EUR 580K"
+      "label": "NetSuite year 1 core (Mar 17 V2)",
+      "value": "~EUR 545K"
     },
     {
-      "label": "NetSuite year 1 with travel + optional add-ons",
-      "value": "~EUR 629K"
+      "label": "NetSuite year 1 with travel + optional add-ons (Mar 17 V2)",
+      "value": "~EUR 593K"
     },
     {
       "label": "CFGI phase 1 fee",
@@ -50,6 +51,14 @@
     {
       "label": "CFGI total 2-phase fee",
       "value": "EUR 390K"
+    },
+    {
+      "label": "CFGI local PMO/change estimate",
+      "value": "EUR 100K-125K"
+    },
+    {
+      "label": "KPMG AMOA proposal",
+      "value": "EUR 370.1K"
     },
     {
       "label": "CFTI controls total",

@@ -27,6 +27,7 @@
 .npm-cache/
 temp/
 collab/external/
+__MACOSX/
 
 # debug
 npm-debug.log*

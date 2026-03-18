@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-16",
+  "generatedAt": "2026-03-18",
   "purpose": "Lightweight evidence registry for core ERP source materials used in vendor diligence, board preparation, and delivery-model decisions.",
   "scope": "Initial pass covers NetSuite, KPMG, CFGI, ERP selection artifacts, and current board-level ERP outputs. It is an index layer, not a document portal.",
   "summary": {
-    "documentCount": 12,
-    "currentCount": 10,
+    "documentCount": 17,
+    "currentCount": 13,
     "draftCount": 1,
-    "supersededCount": 1
+    "supersededCount": 3
   },
   "documents": [
     {
@@ -19,8 +19,8 @@
       "topicTags": ["netsuite", "commercials", "phase-1-scope", "licensing"],
       "relatedVendor": "NetSuite",
       "relatedWorkstream": "ERP selection and implementation contracting",
-      "status": "current",
-      "summary": "Commercial workbook covering licenses, support, maintenance, and implementation economics for the NetSuite proposal.",
+      "status": "superseded",
+      "summary": "March 5 commercial workbook covering licenses, support, maintenance, and implementation economics for the NetSuite proposal. Superseded by the March 17 V2 offer summary.",
       "keyQuestionsAnswered": [
         "What is the current year-1 commercial envelope?",
         "Which recurring and non-recurring cost elements are included?",
@@ -53,8 +53,8 @@
       "topicTags": ["netsuite", "sow", "scope", "delivery-model"],
       "relatedVendor": "NetSuite",
       "relatedWorkstream": "Implementation contracting",
-      "status": "draft",
-      "summary": "Draft implementation SOW from NetSuite Customer Success. Current repo read is that it is written as one implementation scope rather than a narrowed finance-first phase.",
+      "status": "superseded",
+      "summary": "March 5 draft implementation SOW from NetSuite Customer Success. Superseded by the March 17 V3 draft SOW.",
       "keyQuestionsAnswered": [
         "What functional scope is included in the current NetSuite implementation baseline?",
         "Is the current SOW structured as a single phase or a phased rollout?"
@@ -78,6 +78,133 @@
           "note": "NetSuite package findings record the single-phase scope read."
         }
       ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-offer-summary-v2-20260317",
+      "title": "NetSuite Offer Summary V2",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-17T16:57:11+01:00",
+      "documentType": "commercial-summary",
+      "topicTags": ["netsuite", "commercials", "phase-1-scope", "licensing", "updated-package"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "ERP selection and implementation contracting",
+      "status": "current",
+      "summary": "Revised March 17 commercial workbook. This is the current source of truth for NetSuite licensing, support, implementation, training, and optional add-ons.",
+      "keyQuestionsAnswered": [
+        "What is the latest year-1 commercial envelope from NetSuite?",
+        "Did the revised package change recurring or implementation economics?",
+        "Does the revised package still include inventory-related licensing in the baseline?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Abivax"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary V2.xlsx",
+      "sourceEmailSubject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/netsuite-commercial/README.md",
+          "note": "README now distinguishes the March 17 current package from the March 5 superseded baseline."
+        }
+      ],
+      "supersedes": ["netsuite-offer-summary-20260305"],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-sow-draft-v3-20260317",
+      "title": "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-17T16:57:11+01:00",
+      "documentType": "statement-of-work",
+      "topicTags": ["netsuite", "sow", "scope", "delivery-model", "updated-package"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation contracting",
+      "status": "draft",
+      "summary": "Revised March 17 draft SOW from NetSuite. It still reflects a broad implementation scope and explicitly covers bank account reconciliation in the Record to Report workstream.",
+      "keyQuestionsAnswered": [
+        "What functional scope is included in the latest NetSuite implementation baseline?",
+        "Does the revised SOW still include O2C and inventory in phase 1?",
+        "Are bank reconciliations explicitly covered in the revised SOW?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite Customer Success"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf",
+      "sourceEmailSubject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/netsuite-commercial/README.md",
+          "note": "README captures that the revised SOW still includes P2P, R2R, O2C, and Design to Build / Inventory and explicitly names bank account reconciliation."
+        },
+        {
+          "label": "consultant synthesis",
+          "location": "data/abivax/consultant_reviews.json",
+          "note": "NetSuite package findings now reflect the March 17 revised package."
+        }
+      ],
+      "supersedes": ["netsuite-sow-draft-20260305"],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-raci-v1-20260317",
+      "title": "Netsuite RACI standard Suite Success ABIVAX V1",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-17T16:57:11+01:00",
+      "documentType": "delivery-raci",
+      "topicTags": ["netsuite", "raci", "delivery-model", "implementation-roles"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation planning",
+      "status": "current",
+      "summary": "NetSuite RACI workbook showing role split across NetSuite Customer Success and Abivax, including sponsor, PM, system admin, BPO, and data consultant responsibilities.",
+      "keyQuestionsAnswered": [
+        "What work does NetSuite expect Abivax to own during implementation?",
+        "How are data cleansing, business process ownership, and project participation split?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Abivax"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/Netsuite RACI standard Suite Success ABIVAX V1.xlsx",
+      "sourceEmailSubject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+      "citationRefs": [],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-team-v1-20260317",
+      "title": "ABIVAX TEAM V1",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-17T16:57:11+01:00",
+      "documentType": "delivery-team-deck",
+      "topicTags": ["netsuite", "team", "delivery-model", "implementation-staffing"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation planning",
+      "status": "current",
+      "summary": "NetSuite team deck attached to the March 17 revised package, intended to show the implementation team composition.",
+      "keyQuestionsAnswered": [
+        "Who does NetSuite say will staff the implementation team?",
+        "What supporting team artifact accompanied the revised SOW and commercial workbook?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Abivax"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/ABIVAX TEAM V1.pptx",
+      "sourceEmailSubject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+      "citationRefs": [],
       "supersedes": [],
       "retrievalConfidence": "high"
     },
@@ -214,6 +341,45 @@
           "label": "archive note",
           "location": "data/abivax/vendor-assets/cfgi-implementation/README.md",
           "note": "README summarizes the two-phase split, fee levels, and exclusions."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "cfgi-local-pmo-change-proposal-20260317",
+      "title": "Abivax_CFGI_PMO&Change proposal",
+      "sender": "Walid Bouassida",
+      "organization": "CFGI",
+      "dateReceived": "2026-03-17T19:28:28+01:00",
+      "documentType": "local-support-proposal",
+      "topicTags": ["cfgi", "pmo", "change-management", "local-support"],
+      "relatedVendor": "CFGI",
+      "relatedWorkstream": "Implementation support model",
+      "status": "current",
+      "summary": "Focused CFGI proposal for Paris-side PMO, business-process support, and change management around the NetSuite program, positioned as a narrower support layer than CFGI's earlier implementation proposal.",
+      "keyQuestionsAnswered": [
+        "What would CFGI charge for a narrower local PMO and change support lane?",
+        "How does CFGI frame its Paris-side support around Mike and the local teams?",
+        "Is this proposal comparable to a narrowed KPMG support package rather than a full implementation alternative?"
+      ],
+      "notableEntities": ["Walid Bouassida", "Youness Tyamaz", "Jean-Arnold Coutareau", "CFGI"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/cfgi-pmo-change/Abivax_CFGI_PMO&Change proposal.pdf",
+      "sourceEmailSubject": "CFGI Proposal",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/cfgi-pmo-change/README.md",
+          "note": "README captures the estimated fee range, time-and-materials pricing, scope shape, and comparison angle versus KPMG."
+        },
+        {
+          "label": "consultant synthesis",
+          "location": "data/abivax/consultant_reviews.json",
+          "note": "Structured read added under cfgiLocalSupportProposal."
         }
       ],
       "supersedes": [],
