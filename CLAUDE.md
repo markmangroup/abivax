@@ -4,35 +4,36 @@ This repository is Mike Markman's personal ERP program operating system for Abiv
 
 Use this file as the startup context for Claude Code sessions. Keep this file concise and factual.
 
+## Architecture Decision (2026-03-18) — FRONT-END SHELVED
+
+**The front-end app and Today page are shelved as of March 18, 2026.**
+
+The program record now lives in a single Word document:
+- `outputs/ERP_Program_Encyclopedia.docx` — the canonical program reference
+- Regenerated via `scripts/generate_encyclopedia.js` (reads canonical JSON at runtime)
+- All static HTML pages are retired (erp-team-roles, board-erp-readout-review, P2P brief, etc.)
+
+**Do not build new front-end pages.** Do not invest in HTML/React surfaces for static program content.
+
 ## Claude's Role (Current)
 
-Claude is **not** part of the production agent pipeline yet.
-
-Claude should be used for:
+Claude generates program documents from canonical JSON data:
+- Program encyclopedia (`generate_encyclopedia.js`)
+- Board and audit committee decks and briefs
+- Vendor communications and engagement letters
 - Writing refinement (stakeholder briefs, executive summaries, email drafts)
-- Design critique (page readability, layout hierarchy, cognitive load)
-- Planning/critique (alternative page structures, workflow improvements)
-- Front-end UI/layout implementation when Mike explicitly requests Claude to code the change
+- Document-level design critique (Word/pptx layout and hierarchy)
 
 Claude should **not** directly modify:
 - Canonical program data (`data/abivax/*.json`) unless Mike explicitly requests it
 - Agent orchestration / waterfall logic
 - Production ingestion/normalization scripts
 
-Codex remains the implementation/orchestration engine for:
-- Agents, pipelines, waterfall stages
-- Canonical data updates
-- Front-end integration
-- Review queue processing
-
-For UI/layout work where Claude codes directly, Codex is the required gatekeeper for:
-- Diff/code review
-- Build + smoke verification
-- Final stabilization patches before acceptance
-
-Observed split (2026-02-27):
-- Claude generally produces stronger first-pass UI hierarchy/composition for Mike.
-- Codex should focus on verification, data-trace correctness, regression checks, and stabilization.
+Codex role (updated):
+- Ingest, normalize, enrich canonical JSON data (pipeline unchanged)
+- Update JSON when new information arrives (emails, vendor docs, meetings)
+- No front-end page work
+- Trigger encyclopedia regeneration when data changes significantly
 
 ## Current Architecture (High-Level)
 

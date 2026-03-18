@@ -1,22 +1,43 @@
-# Abivax Operator Compendium - Roadmap
+# Abivax ERP Program — Roadmap
 
-**Mission:** ERP go-live 1/1/27. Mike needs fast, pointed operational judgment.
+**Mission:** ERP go-live January 1, 2027. Program Director: Mike Markman.
 
-**Principle:** Keep ingestion in agent/chat. Keep UI for decision-quality consumption.
+**Architecture (as of 2026-03-18):** Encyclopedia-first. The front-end app and Today page are shelved. Codex pipeline maintains canonical JSON data. Claude generates the program encyclopedia and output documents from that data. No front-end investment until post-go-live.
 
 ---
 
-## Short-term (now to 4 weeks)
+## Architecture Decision (2026-03-18)
+
+- **Front-end app:** Shelved. Static HTML pages (erp-team-roles, board-erp-readout-review, P2P brief, etc.) are retired. No new front-end pages.
+- **Today page:** Shelved. Not used in practice. May revisit post-go-live.
+- **Program encyclopedia:** `outputs/ERP_Program_Encyclopedia.docx` — canonical reference, regenerated via `scripts/generate_encyclopedia.js`. This is the single source of truth.
+- **Codex role:** Ingest, normalize, enrich canonical JSON data. Feed the encyclopedia. No page rendering.
+- **Claude role:** Generate documents (encyclopedia, audit committee briefs, board decks, vendor communications) from canonical JSON. Writing refinement. Design critique (document-level only).
+
+---
+
+## Short-term (now to April 2026 mobilization)
 
 | Area | What | Why |
 |------|------|-----|
-| **Today page** | Decision Radar, Unresolved Questions, People to Ping, Deadline Ladder | Daily operating clarity in one screen. |
-| **Entity wiki quality** | Type-aware wiki sections (person/system/milestone labels) | More readable and less generic. |
-| **Entity profiles** | Generate `entity_profiles.json` from notes using relevance scoring | Keep wiki context fresh without manual rewriting. |
-| **Connectivity QA** | `verify:connectivity` gate in pipeline | Catch broken links, stale profiles, encoding issues early. |
-| **Plan hygiene** | Replace stale roadmap items with active operator workflow | Keep execution aligned with what Mike actually uses. |
+| **Contract execution** | NetSuite V3 SOW signed by March 31; CFGI combined engagement letter | Nothing starts without signed contracts |
+| **Encyclopedia quality** | Keep `generate_encyclopedia.js` current as decisions land | Single source of truth must stay accurate |
+| **Canonical JSON hygiene** | Fix stale data (goLive date in pillar_synthesis.json, keyPeople sponsor naming) | Encyclopedia accuracy depends on data quality |
+| **Board deck** | Update Board_ERP_Readout_Mar19_2026 to reflect CFGI model (not KPMG) | Board meeting March 19 — story must be consistent |
+| **Budget authorization** | Get written sign-off from Hema and Didier on EUR 1M program budget | BUD-1/BUD-2 still open |
 
-**Collapse if:** A section is not used for 2+ weeks -> simplify or remove.
+**Collapse if:** Any item is not driving a near-term decision or contract.
+
+---
+
+## Medium-term (April — September 2026)
+
+| Area | What | Why |
+|------|------|-----|
+| **Blueprint deliverables** | CFGI controls-by-design doc; integration architecture confirmed | Required before build starts |
+| **Weekly flash reporting** | Walid / CFGI weekly report feeding Mike | Operational heartbeat |
+| **Encyclopedia updates** | Refresh after each steering committee; update risk register and open items | Keep the record current |
+| **Data migration planning** | Abivax BPOs own cleansing; track progress against cutover plan | RACI confirmed — Abivax responsibility |
 
 ---
 

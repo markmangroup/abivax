@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-03-16",
-  "recommendedModelId": "netsuite-plus-kpmg-targeted",
+  "updatedAt": "2026-03-18",
+  "recommendedModelId": "cfgi-direct",
+  "selected": {
+    "modelId": "cfgi-direct",
+    "decisionDate": "2026-03-18",
+    "decisionOwner": "Mike Markman",
+    "notes": "CFGI selected as implementation lead (Ken Schatz + Walid Bouassida). NetSuite as SI. KPMG role limited to statutory audit only — no implementation advisory engagement."
+  },
+  "kpmgScope": {
+    "role": "statutory-audit-only",
+    "contacts": [
+      "Camille Girard (Audit Committee liaison)",
+      "Aymen (selection phase, closed)"
+    ],
+    "explicitlyExcluded": [
+      "implementation advisory",
+      "PMO",
+      "controls testing during implementation"
+    ],
+    "confirmedDate": "2026-03-18"
+  },
   "decisionFrame": {
     "selectedPlatform": "NetSuite",
     "selectedOn": "2026-02-26",
@@ -63,6 +82,9 @@
       "id": "netsuite-plus-kpmg-targeted",
       "label": "Model B",
       "name": "NetSuite implements, KPMG supports selectively",
+      "status": "superseded",
+      "supersededDate": "2026-03-18",
+      "supersededBy": "cfgi-direct",
       "summary": "Keep NetSuite as the sole builder while using KPMG as a narrow challenge and support layer around controls, UAT, cutover, and France-side execution.",
       "teamShape": "NetSuite implementor + KPMG targeted support + Abivax core team",
       "burdenOnMike": "medium",
@@ -85,6 +107,8 @@
       "id": "cfgi-direct",
       "label": "Model C",
       "name": "CFGI as implementation lead",
+      "selected": true,
+      "selectedDate": "2026-03-18",
       "summary": "Potentially cleaner than a three-firm model if CFGI can truly own delivery, but the evidence is not yet strong enough to switch during board week.",
       "teamShape": "CFGI implementation lead + Abivax core team",
       "burdenOnMike": "medium",
@@ -107,6 +131,8 @@
       "id": "cfgi-plus-kpmg-targeted",
       "label": "Model D",
       "name": "CFGI implementation with KPMG targeted support",
+      "status": "not-selected",
+      "notSelectedReason": "KPMG implementation advisory role not activated — KPMG limited to statutory audit only.",
       "summary": "Structurally possible, but not a good near-term move because it introduces a builder switch and an overlay at the same time.",
       "teamShape": "CFGI implementation lead + KPMG targeted support + Abivax core team",
       "burdenOnMike": "medium-high",
@@ -126,14 +152,14 @@
     }
   ],
   "minimumViableModel": {
-    "summary": "The minimum viable model is Didier as sponsor, Mike as internal ERP Program Director, NetSuite as sole implementor, a small finance-business owner group for decisions/signoff, one IT/integration owner, and a narrowed KPMG lane for design challenge, UAT, cutover, and selective France-side coordination.",
+    "summary": "The minimum viable model is Didier as sponsor, Mike as internal ERP Program Director, NetSuite as sole implementor, a small finance-business owner group for decisions/signoff, one IT/integration owner, and a KPMG lane limited to statutory audit liaison only (no implementation advisory).",
     "requiredRoles": [
       "Didier as executive sponsor and final escalation point",
       "Mike as internal ERP Program Director and day-to-day decision owner",
       "NetSuite as the only builder accountable for system delivery",
       "Finance business owners for requirements, design choices, and signoff",
       "IT/integration owner for interfaces, access, and technical dependencies",
-      "KPMG only for targeted support where internal bandwidth is weakest"
+      "KPMG only for statutory audit liaison (implementation advisory explicitly excluded)"
     ],
     "whyLeanEnough": "It removes the second command structure while preserving the few external support lanes that reduce operational risk for a bandwidth-constrained finance team.",
     "whereItBreaks": [
@@ -150,7 +176,7 @@
     "keepHrTitle": "Keep VP, Global ERP Lead in identity/profile data where the point is Mike's actual corporate title."
   },
   "antiPatterns": [
-    "Do not let KPMG become a second command structure with broad PMO ownership, weekly governance theater, and duplicate escalation paths.",
+    "Do not let KPMG become a second command structure; KPMG is limited to statutory audit liaison only with implementation advisory explicitly excluded.",
     "Do not treat NetSuite platform selection as proof that NetSuite should define all functional scope in phase 1.",
     "Do not switch to CFGI during board week based on a credible proposal alone; that is still too speculative without deeper diligence.",
     "Do not remove all external support if the practical result is that finance has to run documentation, testing admin, and cutover tracking on top of day jobs."
@@ -163,8 +189,7 @@
   "evidenceStillNeeded": [
     "Named NetSuite delivery lead, backup lead, and France / US staffing model for phase 1.",
     "Reference-call confirmation on how NetSuite handled scope discipline, data migration, UAT, cutover, and executive escalation.",
-    "Commercially narrowed KPMG statement of work aligned to targeted support only.",
     "Final phase 1 scope lock for reporting, controls, P2P boundaries, and deferred items.",
-    "Explicit RACI showing Didier sponsors, Mike runs, NetSuite builds, and KPMG supports selectively."
+    "CFGI engagement letter signed (target: April 2026) — Ken Schatz + Walid Bouassida, combined scope €175–225K"
   ]
 }

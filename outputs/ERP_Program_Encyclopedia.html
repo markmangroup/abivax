@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abivax ERP Program Encyclopedia</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #1F3864;
+    --blue:   #2E5EA8;
+    --ltblue: #D6E4F7;
+    --gray1:  #F5F6F8;
+    --gray2:  #E8EAED;
+    --gray3:  #6C757D;
+    --black:  #1A1A1A;
+    --white:  #ffffff;
+    --sidebar-w: 250px;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body { font-family: var(--font); font-size: 14px; color: var(--black);
+         background: #f0f2f5; display: flex; min-height: 100vh; }
+
+  /* ── Sidebar ── */
+  #sidebar {
+    width: var(--sidebar-w); min-width: var(--sidebar-w);
+    background: var(--navy); color: #fff;
+    position: fixed; top: 0; left: 0; bottom: 0;
+    overflow-y: auto; display: flex; flex-direction: column;
+    z-index: 100;
+  }
+  #sidebar-header {
+    padding: 20px 16px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  #sidebar-header .logo { font-size: 11px; text-transform: uppercase;
+    letter-spacing: 1.2px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+  #sidebar-header .title { font-size: 15px; font-weight: 700; color: #fff; line-height: 1.3; }
+  #sidebar-header .meta { font-size: 11px; color: rgba(255,255,255,0.4);
+    margin-top: 6px; line-height: 1.5; }
+
+  .nav-section-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
+    color: rgba(255,255,255,0.35); padding: 14px 16px 4px; }
+
+  a.nav-link {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500;
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+  }
+  a.nav-link:hover { color: #fff; background: rgba(255,255,255,0.08);
+    border-left-color: rgba(255,255,255,0.3); }
+  a.nav-link.active { color: #fff; background: rgba(255,255,255,0.12);
+    border-left-color: #60A5FA; }
+  .nav-num { font-size: 11px; color: rgba(255,255,255,0.35);
+    min-width: 18px; text-align: right; }
+
+  #sidebar-footer { margin-top: auto; padding: 14px 16px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.6; }
+
+  /* ── Main ── */
+  #main { margin-left: var(--sidebar-w); flex: 1; padding: 0 0 80px; }
+
+  #page-header {
+    background: var(--white); border-bottom: 2px solid var(--ltblue);
+    padding: 28px 48px 24px; position: sticky; top: 0; z-index: 50;
+  }
+  #page-header h1 { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+  #page-header .meta { font-size: 13px; color: var(--gray3); }
+  #page-header .pills { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  .pill { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px;
+    background: var(--ltblue); color: var(--blue); }
+  .pill.green  { background: #D4EDDA; color: #1A5C38; }
+  .pill.amber  { background: #FFF3CD; color: #BF6C00; }
+  .pill.red    { background: #FDECEA; color: #8B1A1A; }
+
+  /* ── Sections ── */
+  section { background: var(--white); margin: 24px 32px 0;
+    border-radius: 8px; padding: 36px 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+
+  section h1 { font-size: 20px; font-weight: 800; color: var(--navy);
+    margin-bottom: 12px; padding-bottom: 10px;
+    border-bottom: 2px solid var(--ltblue); display: flex; align-items: center; gap: 10px; }
+  .sec-num { display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--navy); color: #fff; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+
+  section h2 { font-size: 15px; font-weight: 700; color: var(--blue);
+    margin: 24px 0 10px; }
+
+  section p { font-size: 14px; line-height: 1.65; color: var(--black); margin-bottom: 14px; }
+  section p.note { font-size: 12px; color: var(--gray3); font-style: italic; }
+  section code { font-family: "SF Mono", Consolas, monospace; font-size: 12px;
+    background: var(--gray1); padding: 1px 5px; border-radius: 3px; }
+
+  /* ── Tables ── */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0 16px; }
+  .data-table thead tr { background: var(--accent, var(--navy)); }
+  .data-table th { padding: 9px 12px; text-align: left; font-weight: 600;
+    font-size: 12px; color: #fff; white-space: nowrap; }
+  .data-table td { padding: 8px 12px; vertical-align: top; line-height: 1.5;
+    border-bottom: 1px solid var(--gray2); }
+  .data-table tr.even td { background: var(--gray1); }
+  .data-table tr.odd td { background: var(--white); }
+  .data-table tr:hover td { background: var(--ltblue) !important; }
+
+  .kv-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0 16px; }
+  .kv-key { width: 200px; font-weight: 600; padding: 8px 12px;
+    vertical-align: top; white-space: nowrap; color: var(--navy); }
+  .kv-val { padding: 8px 12px; vertical-align: top; line-height: 1.5; }
+
+  /* ── Callout ── */
+  .callout { border-left: 4px solid; border-radius: 0 6px 6px 0;
+    padding: 14px 18px; margin: 16px 0; }
+  .callout-title { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .callout-body  { font-size: 13px; line-height: 1.65; }
+
+  /* ── Budget ── */
+  .budget-block { border-radius: 6px; overflow: hidden; border: 1px solid var(--gray2); }
+  .budget-header { color: #fff; font-weight: 700; font-size: 13px; padding: 9px 14px; }
+  .budget-total { background: var(--navy); color: #fff; font-weight: 800;
+    font-size: 16px; padding: 14px 20px; border-radius: 6px; margin-top: 16px;
+    display: flex; justify-content: space-between; align-items: center; }
+
+  /* ── Badge ── */
+  .badge { display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 10px; }
+
+  /* ── Risk list ── */
+  ol.risk-list { padding-left: 20px; margin: 8px 0 16px; }
+  ol.risk-list li { font-size: 13px; line-height: 1.6; margin-bottom: 6px; padding-left: 4px; }
+
+  /* ── Print ── */
+  @media print {
+    #sidebar { display: none; }
+    #main { margin-left: 0; }
+    section { box-shadow: none; border: 1px solid #ddd; margin: 16px 0; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="sidebar">
+  <div id="sidebar-header">
+    <div class="logo">Abivax ERP Program</div>
+    <div class="title">Program Encyclopedia</div>
+    <div class="meta">Program Director: Mike Markman<br>Generated: 2026-03-18</div>
+  </div>
+  <div class="nav-section-label">Sections</div>
+  <a href="#s1" class="nav-link"><span class="nav-num">1</span>Program Overview</a><a href="#s2" class="nav-link"><span class="nav-num">2</span>Key Decisions Log</a><a href="#s3" class="nav-link"><span class="nav-num">3</span>System Selection</a><a href="#s4" class="nav-link"><span class="nav-num">4</span>Delivery Model</a><a href="#s5" class="nav-link"><span class="nav-num">5</span>SOX and Controls</a><a href="#s6" class="nav-link"><span class="nav-num">6</span>Program Budget</a><a href="#s7" class="nav-link"><span class="nav-num">7</span>Implementation Timeline</a><a href="#s8" class="nav-link"><span class="nav-num">8</span>Risk Register</a><a href="#s9" class="nav-link"><span class="nav-num">9</span>Vendor Profiles</a><a href="#s10" class="nav-link"><span class="nav-num">10</span>ERP Pillars</a><a href="#s11" class="nav-link"><span class="nav-num">11</span>Governance</a><a href="#s12" class="nav-link"><span class="nav-num">12</span>Open Items</a><a href="#s13" class="nav-link"><span class="nav-num">13</span>Outputs Registry</a><a href="#s14" class="nav-link"><span class="nav-num">14</span>Change Log</a>
+  <div id="sidebar-footer">
+    Confidential — Program Director Use<br>
+    Regenerate: <code style="background:rgba(255,255,255,0.1);color:#ccc">scripts/generate_encyclopedia.js</code>
+  </div>
+</nav>
+
+<div id="main">
+  <div id="page-header">
+    <h1>Abivax ERP Program Encyclopedia</h1>
+    <div class="meta">Executive Sponsor: Didier Blondel, CFO &nbsp;|&nbsp; Go-Live: January 1, 2027 &nbsp;|&nbsp; Last generated: 2026-03-18</div>
+    <div class="pills">
+      <span class="pill">Post-Selection</span>
+      <span class="pill amber">Mobilization: April 2026</span>
+      <span class="pill green">Platform: NetSuite</span>
+      <span class="pill green">SI: NetSuite Paris Team</span>
+      <span class="pill green">Support: CFGI</span>
+      <span class="pill">Budget: EUR 999,936</span>
+    </div>
+  </div>
+
+  
+<section id="s1">
+  <h1><span class="sec-num">1</span>Program Overview</h1>
+  <p>Abivax is implementing NetSuite (Oracle) as its ERP platform, replacing the current multi-system finance environment. The program targets a <strong>January 1, 2027 go-live</strong> — non-negotiable, tied to the US public launch in December 2027.</p>
+  <table class="kv-table" style="--accent:#2E5EA8"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Current phase</td><td class="kv-val">post-selection / mobilization planning</td></tr><tr style="background:#fff"><td class="kv-key">Current focus</td><td class="kv-val">Delivery model confirmed March 18: NetSuite as SI (Paris team), CFGI as integrated support (controls, governance, change). Priority: sign NetSuite V3 SOW by March 31, consolidate CFGI dual proposals into one engagement, confirm Phase 1/2 scope boundary, obtain budget authorization from Didier and Hema.</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Go-live target</td><td class="kv-val">January 1, 2027 (non-negotiable)</td></tr><tr style="background:#fff"><td class="kv-key">Mobilization target</td><td class="kv-val">April 2026</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Program Director</td><td class="kv-val">Mike Markman</td></tr><tr style="background:#fff"><td class="kv-key">Executive Sponsor</td><td class="kv-val">Didier Blondel, CFO</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Finance Lead</td><td class="kv-val">Hema Keshava</td></tr></tbody></table>
+  <h2>Top Program Risks</h2>
+  <ol class="risk-list"><li style="color:#8B1A1A">NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.</li><li style="color:#8B1A1A">CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.</li><li style="color:#1A1A1A">O2C / Inventory Phase 1/2 scope boundary not contractually confirmed — in base SOW but not activated Phase 1; confirm with Jamal.</li><li style="color:#1A1A1A">Budget authorization not obtained — EUR 1M program budget (EUR 999,936) needs written sign-off from Didier and Hema; BUD-1/BUD-2 still open.</li><li style="color:#1A1A1A">Internal capacity commitments not documented — Finance, IT, and FP&amp;A availability for ERP workstreams not yet formally committed.</li><li style="color:#1A1A1A">ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this.</li></ol>
+</section>
+
+<section id="s2">
+  <h1><span class="sec-num">2</span>Key Decisions Log</h1>
+  <p>Authoritative decision trail for board, audit, and operational reference.</p>
+  <table class="data-table" style="--accent:#1F3864"><thead><tr><th style="width:110px">Date</th><th style="width:220px">Decision</th><th style="width:auto">Rationale / Notes</th></tr></thead><tbody><tr class="even"><td style="">2026-02-26</td><td style="font-weight:600">NetSuite selected as ERP platform</td><td style="">Selected over SAP following structured RFP with KPMG advisory support. Basis: TCO, timeline, native multi-GAAP, fit for Abivax scale.</td></tr><tr class="odd"><td style="">2026-02-26</td><td style="font-weight:600">January 1, 2027 go-live non-negotiable</td><td style="">Tied to US public launch December 2027. Compressing phases preferred over extending go-live date.</td></tr><tr class="even"><td style="">2026-03-18</td><td style="font-weight:600">NetSuite Customer Success confirmed as SI</td><td style="">Paris-based team confirmed: Hafid Irbaiyne, Mazdak Sayyedelar, Ali Brahmi, Mathieu Lair, Sukeyna Ouled. French-speaking, on-site for milestones.</td></tr><tr class="odd"><td style="">2026-03-18</td><td style="font-weight:600">CFGI confirmed as integrated support partner</td><td style="">Three workstreams: controls oversight (Ken Schatz / Guy Morissette), program governance (Walid / Youness), change management (Walid / Youness). Target EUR 175-225K.</td></tr><tr class="even"><td style="">2026-03-18</td><td style="font-weight:600">KPMG scoped to selection advisory only</td><td style="">KPMG engagement covered SAP vs NetSuite evaluation and is complete. No ongoing implementation role.</td></tr><tr class="odd"><td style="">2026-03-18</td><td style="font-weight:600">Front-end app shelved; encyclopedia adopted</td><td style="">Static HTML pages retired. Today page shelved. Program record lives in this document, generated from canonical JSON.</td></tr></tbody></table>
+</section>
+
+<section id="s3">
+  <h1><span class="sec-num">3</span>System Selection</h1>
+  <p>NetSuite (Oracle SuiteSuccess Financials Premium) was selected over SAP S/4HANA on <strong>February 26, 2026</strong> following a competitive RFP process managed with KPMG France as advisory support. The decision was unanimous.</p>
+  <h2>Selection Rationale</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:220px">Factor</th><th style="width:auto">NetSuite Outcome</th></tr></thead><tbody><tr class="even"><td style="">Multi-GAAP reporting</td><td style="">Native multi-book: IFRS, French GAAP, and US GAAP in a single system — eliminates manual bridging and quarterly IFRS adjustments</td></tr><tr class="odd"><td style="">Multi-entity consolidation</td><td style="">OneWorld handles Abivax parent + two subsidiaries (France, US) with automated intercompany eliminations</td></tr><tr class="even"><td style="">Implementation team</td><td style="">Paris-based European delivery team; French-speaking; on-site for blueprint, UAT, and cutover</td></tr><tr class="odd"><td style="">SOX / controls readiness</td><td style="">SuiteSuccess delivery includes SoD design and controls documentation as standard scope</td></tr><tr class="even"><td style="">Total cost vs SAP</td><td style="">Materially lower across Year 1 and 5-year horizon; SAP implementation complexity would require significantly more resources</td></tr><tr class="odd"><td style="">Timeline to Jan 1, 2027</td><td style="">Achievable from April 2026 kickoff under SuiteSuccess model; SAP timeline was not credible within this constraint</td></tr><tr class="even"><td style="">French regulatory fit</td><td style="">E-invoicing module available; French accounting standards native; Hafid Irbaiyne (ex-CFO, French CPA) leads delivery</td></tr></tbody></table>
+  <h2>What Was Evaluated</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:200px">Vendor</th><th style="width:130px">Outcome</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">NetSuite (Oracle)</td><td style="color:#1A5C38;font-weight:700">SELECTED</td><td style="">SuiteSuccess Financials Premium; Paris-based team; selected Feb 26, 2026</td></tr><tr class="odd"><td style="">SAP S/4HANA</td><td style="">Not selected</td><td style="">Higher TCO; timeline risk; implementation complexity mismatched to Abivax scale</td></tr><tr class="even"><td style="">KPMG France (advisory)</td><td style="">Selection only</td><td style="">Managed RFP; evaluated both platforms; no ongoing implementation role</td></tr></tbody></table>
+</section>
+
+<section id="s4">
+  <h1><span class="sec-num">4</span>Delivery Model</h1>
+  <p>Two-layer external model: NetSuite as the sole system integrator, CFGI as integrated program support. Abivax retains internal ownership of all decisions, data, and business process sign-off.</p>
+  <h2>Layer 1 — NetSuite Implementation Team</h2>
+  <p>Paris-based Customer Success team. Solely accountable for configuration, integration delivery, data migration support, and go-live.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:170px">Name</th><th style="width:190px">Role</th><th style="width:150px">Location</th><th style="width:auto">Background</th></tr></thead><tbody><tr class="even"><td style="">Hafid Irbaiyne</td><td style="">Practice Manager France/MEA</td><td style="">Paris — on-site</td><td style="">18 yrs; ex-CFO; French CPA; 4 yrs NetSuite; program escalation lead</td></tr><tr class="odd"><td style="">Mazdak Sayyedelar</td><td style="">Project Manager Europe</td><td style="">Paris — on-site</td><td style="">7 yrs international IT PM; 6 yrs Oracle/NetSuite</td></tr><tr class="even"><td style="">Ali Brahmi</td><td style="">Senior Functional Consultant</td><td style="">Paris — on-site</td><td style="">8 yrs ERP finance; 4+ yrs Oracle NetSuite; R2R and multi-GAAP specialist</td></tr><tr class="odd"><td style="">Sukeyna Ouled</td><td style="">Technical / Dev Lead</td><td style="">Remote (on-demand)</td><td style="">9+ yrs IT development; 7 yrs Oracle NetSuite; integrations</td></tr><tr class="even"><td style="">Mathieu Lair</td><td style="">Trainer</td><td style="">Paris — on-site</td><td style="">10 yrs ERP experience; tailored training in French</td></tr></tbody></table>
+  <h2>Layer 2 — CFGI Integrated Program Support</h2>
+  <p>Independent program support across three workstreams. Engaged on Abivax SOX remediation since September 2025. Jean-Arnold Coutareau (Partner) leads; Walid Bouassida (Director) is Paris-based day-to-day lead.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:200px">Workstream</th><th style="width:190px">CFGI Lead</th><th style="width:auto">Scope</th></tr></thead><tbody><tr class="even"><td style="font-weight:600;background:#D6E4F7">Technical and Controls Oversight</td><td style="">Kenneth Schatz (MD)<br>Guy Morissette (Director)</td><td style="">Independent design checkpoint reviews at blueprint, build, and UAT. Controls-by-design deliverable at blueprint. Written go/no-go at cutover.</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Program Governance</td><td style="">Walid Bouassida (Director)<br>Youness Tyamaz (Consultant)</td><td style="">On-the-ground program coordination in Paris. Weekly flash report. Steering committee facilitation. Risk and issue escalation.</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Change Management and Adoption</td><td style="">Walid Bouassida<br>Youness Tyamaz</td><td style="">Stakeholder and adoption risk mapping at kickoff. Communication plan. Training coordination in French. Post-go-live adoption checks at 30 and 60 days.</td></tr></tbody></table>
+  <h2>Abivax Internal Program Team</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:160px">Name</th><th style="width:210px">Role</th><th style="width:110px">Location</th><th style="width:auto">ERP Responsibility</th></tr></thead><tbody><tr class="even"><td style="">Didier Blondel</td><td style="">CFO / Executive Sponsor</td><td style="">Global</td><td style="">Program sponsor; final escalation; board and audit committee reporting</td></tr><tr class="odd"><td style="">Mike Markman</td><td style="">ERP Program Director</td><td style="">US / Global</td><td style="">Day-to-day program ownership; vendor management; scope and budget decisions</td></tr><tr class="even"><td style="">Hema Keshava</td><td style="">Finance Lead (FP&amp;A, Treasury, Tax)</td><td style="">US / Global</td><td style="">Finance scope decisions; reporting model; R2R and multi-GAAP design</td></tr><tr class="odd"><td style="">Trinidad Mesa</td><td style="">Accounting Manager / Consolidation</td><td style="">France</td><td style="">French consolidation; COA; close process; primary France accounting BPO</td></tr><tr class="even"><td style="">Frederick Golly</td><td style="">FP&amp;A Lead</td><td style="">France</td><td style="">FP&amp;A and reporting model; cost center design; reporting extract requirements</td></tr><tr class="odd"><td style="">Adrian Holbrook</td><td style="">FP&amp;A / Reporting</td><td style="">US / Global</td><td style="">Cost center design; data-access quality; US reporting bridge (reports to Frederick)</td></tr><tr class="even"><td style="">Juliette Courtot</td><td style="">P2P Process Owner</td><td style="">France</td><td style="">France P2P BPO; invoice processing; workflow design; vendor master</td></tr><tr class="odd"><td style="">Kimberly Gordon</td><td style="">P2P Contractor</td><td style="">US</td><td style="">US-side P2P; AP coordination; US workflow counterpart to Juliette</td></tr><tr class="even"><td style="">Philippe Goncalves</td><td style="">Finance Manager</td><td style="">France</td><td style="">P2P governance chain; Juliette manager; France P2P escalation</td></tr><tr class="odd"><td style="">Matt Epley</td><td style="">US Accounting / SEC Reporting</td><td style="">US</td><td style="">SEC/NASDAQ; equity (Certent); IFRS adjustments; US GAAP outputs</td></tr><tr class="even"><td style="">Jade Nguyen</td><td style="">IT Lead / ERP Integration</td><td style="">France</td><td style="">IT integration architecture; system access; infrastructure and controls</td></tr><tr class="odd"><td style="">Benjamin Talmant</td><td style="">IT Project Manager</td><td style="">France</td><td style="">IT delivery coordination; integration workstream PM; IT capacity</td></tr></tbody></table>
+</section>
+
+<section id="s5">
+  <h1><span class="sec-num">5</span>SOX and Controls</h1>
+  <p>SOX readiness is a first-order program requirement embedded in the delivery model from day one. The program has <strong>143 active controls</strong> in the CFTI register.</p>
+  <h2>CFTI Control Register</h2>
+  <table class="data-table" style="--accent:#3B0764"><thead><tr><th style="width:220px">Category</th><th style="width:80px">Count</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">Controls / Audit</td><td style="">84</td><td style="">Core SOX controls; audit evidence and remediation tracking</td></tr><tr class="odd"><td style="">Reporting / Data</td><td style="">39</td><td style="">Financial reporting integrity; data model and close controls</td></tr><tr class="even"><td style="">P2P</td><td style="">20</td><td style="">Procure-to-pay transaction controls; vendor and payment flows</td></tr><tr class="odd"><td style="font-weight:700;background:#E8EAED">Total in-scope</td><td style="font-weight:700;background:#E8EAED">143</td><td style="font-weight:700;background:#E8EAED"></td></tr><tr class="even"><td style="">Out-of-scope</td><td style="">45</td><td style="">Assessed and excluded from ERP program scope</td></tr><tr class="odd"><td style="">ERP-signal controls</td><td style="">9</td><td style="">Must be addressed explicitly in blueprint before build begins</td></tr></tbody></table>
+  <div class="callout" style="border-left-color:#3B0764;background:#EDE9FE">
+    <div class="callout-title" style="color:#3B0764">Controls-by-design approach</div>
+    <div class="callout-body">CFGI holds the SOX remediation program and has documented Abivax's control gaps since September 2025. At blueprint stage, CFGI delivers a controls-by-design document mapping each ERP configuration decision to the relevant SOX control requirement. Controls are built into the system — not retrofitted after go-live.</div>
+  </div>
+  <h2>SOX Program Response</h2>
+  <table class="data-table" style="--accent:#3B0764"><thead><tr><th style="width:250px">Requirement</th><th style="width:auto">Program Response</th></tr></thead><tbody><tr class="even"><td style="">Controls-by-design at blueprint</td><td style="">CFGI deliverable mapping ERP configuration to SOX register — produced before build begins</td></tr><tr class="odd"><td style="">Segregation of duties (SoD)</td><td style="">SoD-compliant role design reviewed by CFGI at blueprint; validated at UAT</td></tr><tr class="even"><td style="">ITGC / SDLC controls</td><td style="">NetSuite SuiteSuccess delivery includes SDLC controls as standard scope</td></tr><tr class="odd"><td style="">Audit trail and data integrity</td><td style="">NetSuite native audit logging; CFGI reviews at each milestone</td></tr><tr class="even"><td style="">Go-live readiness</td><td style="">CFGI written go/no-go against SOX criteria; required before cutover approved</td></tr><tr class="odd"><td style="">Post-go-live validation</td><td style="">CFGI adoption checks at 30 and 60 days confirm controls operating as designed</td></tr></tbody></table>
+</section>
+
+<section id="s6">
+  <h1><span class="sec-num">6</span>Program Budget</h1>
+  <p class="note">All figures in EUR, excluding VAT. CFGI fees are targets communicated to the firm, subject to contract execution. Budget sized to approximately EUR 1.0M.</p>
+
+  <div class="budget-block" style="--bcolor:#1F3864">
+    <div class="budget-header" style="background:#1F3864">NetSuite — System and Implementation</div>
+    <table class="data-table" style="--accent:#1F3864"><thead><tr><th style="width:200px">Line</th><th style="width:120px">Amount</th><th style="width:120px">Type</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">Recurring license (Year 1)</td><td style="">EUR 148,589</td><td style="">Annual recurring</td><td style="">Base platform, multi-entity, multi-book; after negotiated discount</td></tr><tr class="odd"><td style="">Implementation (fixed bid)</td><td style="">EUR 388,700</td><td style="">Fixed fee</td><td style="">V3 SOW 17 Mar 2026; Phase 1: R2R, P2P, multi-GAAP; O2C/Inventory in base SOW, not activated Phase 1</td></tr><tr class="even"><td style="">Tailored training</td><td style="">EUR 7,647</td><td style="">Fixed fee</td><td style="">After discount</td></tr><tr class="odd"><td style="">Travel (capped)</td><td style="">EUR 18,000</td><td style="">Capped T&amp;M</td><td style="">Paris team travel; hard cap in contract</td></tr><tr class="even"><td style="font-weight:700;background:#E8EAED">Subtotal</td><td style="font-weight:700;background:#E8EAED">EUR 562,936</td><td style="font-weight:700;background:#E8EAED"></td><td style="font-weight:700;background:#E8EAED"></td></tr></tbody></table>
+  </div>
+
+  <div class="budget-block" style="--bcolor:#2E5EA8;margin-top:16px">
+    <div class="budget-header" style="background:#2E5EA8">CFGI — Integrated Program Support</div>
+    <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:240px">Line</th><th style="width:120px">Amount</th><th style="width:120px">Type</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">Technical and controls oversight</td><td style="">EUR 70,000</td><td style="">Fixed fee</td><td style="">Ken Schatz / Guy Morissette; design checkpoints, controls-by-design, go/no-go</td></tr><tr class="odd"><td style="">Program governance (Walid / Youness)</td><td style="">EUR 110,000</td><td style="">T&amp;M (capped)</td><td style="">Paris-based PMO; flash reporting; steering facilitation; 35 weeks</td></tr><tr class="even"><td style="">Change management and adoption</td><td style="">EUR 40,000</td><td style="">T&amp;M (capped)</td><td style="">Stakeholder mapping; comms plan; training coordination; adoption checks</td></tr><tr class="odd"><td style="font-weight:700;background:#E8EAED">Subtotal</td><td style="font-weight:700;background:#E8EAED">EUR 220,000</td><td style="font-weight:700;background:#E8EAED"></td><td style="font-weight:700;background:#E8EAED"></td></tr></tbody></table>
+  </div>
+
+  <div class="budget-block" style="--bcolor:#0B5E5E;margin-top:16px">
+    <div class="budget-header" style="background:#0B5E5E">Management Reserve — Finance Team Capacity</div>
+    <table class="data-table" style="--accent:#0B5E5E"><thead><tr><th style="width:240px">Line</th><th style="width:120px">Amount</th><th style="width:120px">Type</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">Interim / fractional finance support</td><td style="">EUR 85,000</td><td style="">T&amp;M (reserve)</td><td style="">Backstop capacity during peak phases; interim or advisory resources</td></tr><tr class="odd"><td style="">Training, readiness, enablement</td><td style="">EUR 37,000</td><td style="">Reserve</td><td style="">Supplemental training, system admin ramp-up, or third-party enablement</td></tr><tr class="even"><td style="">Data migration and cutover prep</td><td style="">EUR 35,000</td><td style="">Reserve</td><td style="">Third-party support for data cleansing, mock loads, or cutover coordination</td></tr><tr class="odd"><td style="">Contingency and scope buffer</td><td style="">EUR 60,000</td><td style="">Reserve</td><td style="">Regulatory adjustments, integration complexity, or unforeseen scope</td></tr><tr class="even"><td style="font-weight:700;background:#E8EAED">Subtotal</td><td style="font-weight:700;background:#E8EAED">EUR 217,000</td><td style="font-weight:700;background:#E8EAED"></td><td style="font-weight:700;background:#E8EAED">Held by program director; written approval required to release</td></tr></tbody></table>
+  </div>
+
+  <div class="budget-total">
+    <span>TOTAL PROGRAM BUDGET (YEAR 1)</span>
+    <span>EUR 999,936</span>
+  </div>
+  <p class="note">Phase 2 scope (O2C, Inventory) contracted separately post-go-live.</p>
+</section>
+
+<section id="s7">
+  <h1><span class="sec-num">7</span>Implementation Timeline</h1>
+  <p>Eight-month implementation from April 2026 to January 1, 2027. No schedule float after October — any slippage from UAT or cutover directly threatens the go-live date.</p>
+  <h2>Phase Plan</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:150px">Phase</th><th style="width:160px">Timing</th><th style="width:auto">Key Activities</th></tr></thead><tbody><tr class="even"><td style="font-weight:600;background:#D6E4F7">Mobilization</td><td style="">April 2026</td><td style="">Contracts signed; teams onboarded; governance established; kickoff; CFGI controls-by-design scope confirmed</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Blueprint</td><td style="">April – May 2026</td><td style="">Business process design; ERP configuration decisions; controls-by-design deliverable (CFGI); data migration planning; integration architecture confirmed</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Build</td><td style="">June – Aug 2026</td><td style="">System configuration; integration development; data cleansing (Abivax); mock data loads; change communications begin</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">UAT</td><td style="">Aug – Oct 2026</td><td style="">User acceptance testing; defect resolution; SoD role validation; cutover planning and dry run</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Cutover / Deploy</td><td style="">Oct – Dec 2026</td><td style="">Final data migration; parallel run; CFGI written go/no-go; production cutover approval by CFO and Program Director</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Go-Live</td><td style="">Jan 1, 2027</td><td style="">Production go-live; hypercare; CFGI adoption checks at 30 and 60 days</td></tr></tbody></table>
+  <h2>Key Milestones</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:120px">Date</th><th style="width:300px">Milestone</th><th style="width:auto">Status</th></tr></thead><tbody><tr class="even"><td style="">2026-02-26</td><td style="">ERP Final Selection Decision Forum</td><td style="">completed</td></tr><tr class="odd"><td style="">2026-02-27</td><td style="">Notify NetSuite and Start Commercial Negotiation Path</td><td style="">next</td></tr><tr class="even"><td style="">2026-03-06</td><td style="">Audit Committee ERP PPT Requested Finalization</td><td style="">deadline</td></tr><tr class="odd"><td style="">2026-03-19</td><td style="">Board Meeting (ERP decision communication checkpoint)</td><td style="">deadline</td></tr><tr class="even"><td style="">2026-03-31</td><td style="">SAP Offer Validity</td><td style="">deadline</td></tr><tr class="odd"><td style="">2026-04-01</td><td style="">ERP Implementation Work Start Target (NetSuite)</td><td style="">target</td></tr><tr class="even"><td style="">2027-01-01</td><td style="">ERP Go-Live</td><td style="">target</td></tr><tr class="odd"><td style="">2027-12-31</td><td style="">US Public Launch</td><td style="">target</td></tr></tbody></table>
+</section>
+
+<section id="s8">
+  <h1><span class="sec-num">8</span>Risk Register</h1>
+  <p class="note">Living register. Update after each steering committee or when a risk status changes.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:260px">Risk</th><th style="width:80px">Level</th><th style="width:130px">Owner</th><th style="width:auto">Mitigation</th></tr></thead><tbody><tr class="even"><td style="">Commercial terms not signed before April mobilization window closes</td><td style="color:#8B1A1A;background:#FDECEA;font-weight:700">High</td><td style="">Mike / Hema</td><td style="">Accelerate contract review; Didier escalation path confirmed; target signature March 31</td></tr><tr class="odd"><td style="">NetSuite scope not locked at blueprint (O2C / Inventory ambiguity)</td><td style="color:#8B1A1A;background:#FDECEA;font-weight:700">High</td><td style="">Mike / Jamal</td><td style="">Confirm Phase 1/2 boundary on Jamal call; enforce through CFGI checkpoint reviews</td></tr><tr class="even"><td style="">Multi-GAAP configuration complexity causes late rework</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Hafid / CFGI</td><td style="">Hafid Irbaiyne (ex-CFO, French CPA) leads design; CFGI controls-by-design at blueprint</td></tr><tr class="odd"><td style="">Finance team capacity constrained during peak implementation</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Mike / Walid</td><td style="">EUR 85K reserve for interim/fractional support; Walid manages workload visibility</td></tr><tr class="even"><td style="">French e-invoicing regulatory scope underestimated</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Jade / NetSuite</td><td style="">Confirm coverage in final NetSuite SOW; reserve budget available</td></tr><tr class="odd"><td style="">Data migration quality issues delay UAT</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Abivax BPOs</td><td style="">RACI: Abivax owns data cleansing; EUR 35K reserve for third-party migration support</td></tr><tr class="even"><td style="">NetSuite delivery lead changes post-signing</td><td style="color:#1A5C38;background:#D4EDDA">Low-Med</td><td style="">Mike</td><td style="">Named team contractually confirmed; Hafid as escalation; CFGI at all milestones</td></tr><tr class="odd"><td style="">CFGI engagement not executed before April</td><td style="color:#1A5C38;background:#D4EDDA">Low-Med</td><td style="">Mike / Jean-Arnold</td><td style="">Email to Ken + Jean-Arnold sent 18 Mar; combined target EUR 175-225K</td></tr><tr class="even"><td style="">Program deprioritized due to M&amp;A or corporate event</td><td style="color:#1A5C38;background:#D4EDDA">Low</td><td style="">Didier</td><td style="">Phase 1 scope deliberately narrow; contracts structured with clear pause/exit provisions</td></tr></tbody></table>
+</section>
+
+<section id="s9">
+  <h1><span class="sec-num">9</span>Vendor Profiles</h1>
+  <h2>NetSuite (Oracle) — System Integrator</h2>
+  <table class="kv-table" style="--accent:#2E5EA8"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Engagement type</td><td class="kv-val">System integrator — SuiteSuccess Financials Premium</td></tr><tr style="background:#fff"><td class="kv-key">Contract status</td><td class="kv-val">V3 SOW dated 17 March 2026; under legal review; target signature March 31</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Implementation fee</td><td class="kv-val">EUR 388,700 fixed bid (V3 SOW)</td></tr><tr style="background:#fff"><td class="kv-key">Recurring license</td><td class="kv-val">EUR 148,589 / year after discount</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Training</td><td class="kv-val">EUR 7,647 after discount</td></tr><tr style="background:#fff"><td class="kv-key">Travel</td><td class="kv-val">EUR 18,000 capped</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Phase 1 scope</td><td class="kv-val">R2R, P2P, multi-GAAP (IFRS / French GAAP / US GAAP), OneWorld, 5 integrations</td></tr><tr style="background:#fff"><td class="kv-key">Phase 2 scope</td><td class="kv-val">O2C, Inventory — in base SOW but not activated Phase 1; contracted separately post-go-live</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Key contact</td><td class="kv-val">Jamal Azil (Account Executive); Hafid Irbaiyne (Practice Manager, Paris)</td></tr><tr style="background:#fff"><td class="kv-key">Watch-outs</td><td class="kv-val">O2C / Inventory still in base SOW — enforce Phase 1 boundary in contract. Abivax owns data cleansing, BPO decisions, and UAT coordination per RACI.</td></tr></tbody></table>
+  <h2>CFGI — Integrated Program Support</h2>
+  <table class="kv-table" style="--accent:#2E5EA8"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Engagement type</td><td class="kv-val">Integrated program support — controls oversight, governance, change management</td></tr><tr style="background:#fff"><td class="kv-key">Contract status</td><td class="kv-val">Proposals received; combined engagement letter pending; target April mobilization</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Engagement target</td><td class="kv-val">EUR 175-225K combined; fixed fee where possible</td></tr><tr style="background:#fff"><td class="kv-key">Current SOX role</td><td class="kv-val">SOX remediation since September 2025; Walid on-site ~2 days/week</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Paris team</td><td class="kv-val">Walid Bouassida (Director, 16 yrs, French CPA); Youness Tyamaz (Consultant, IFRS / French / US GAAP)</td></tr><tr style="background:#fff"><td class="kv-key">US oversight</td><td class="kv-val">Kenneth Schatz (MD); Guy Morissette (Director) — technical and controls review</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Engagement lead</td><td class="kv-val">Jean-Arnold Coutareau (Partner, 30 yrs); contract and escalation through him</td></tr><tr style="background:#fff"><td class="kv-key">Watch-outs</td><td class="kv-val">Two separate proposals (Ken + Walid) need consolidation into one engagement. NetSuite implementation references from CFGI not yet provided — outstanding diligence item.</td></tr></tbody></table>
+  <h2>KPMG France — Selection Advisory (Completed)</h2>
+  <p class="note">KPMG's engagement was scoped to the ERP selection process only. Complete as of February 26, 2026. No ongoing role.</p>
+  <table class="kv-table" style="--accent:#6C757D"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Engagement type</td><td class="kv-val">ERP selection advisory — SAP vs NetSuite evaluation, RFP management</td></tr><tr style="background:#fff"><td class="kv-key">Status</td><td class="kv-val">COMPLETED — concluded at selection decision February 26, 2026</td></tr><tr style="background:#F5F6F8"><td class="kv-key">AMOA proposal</td><td class="kv-val">EUR 370,100 total (302 man-days) — not accepted for implementation phase</td></tr><tr style="background:#fff"><td class="kv-key">Key contact</td><td class="kv-val">Olivia Berry (Assistant Manager); 3 years experience; SAP-focused; no NetSuite experience</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Why not ongoing</td><td class="kv-val">Thin NetSuite credentials; CFGI's existing SOX engagement made CFGI the stronger choice</td></tr></tbody></table>
+</section>
+
+<section id="s10">
+  <h1><span class="sec-num">10</span>ERP Pillars and Process Scope</h1>
+  <p>Three primary pillars plus one cross-cutting enablement layer. Each pillar has named business process owners and a clear definition of done.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:160px">Pillar</th><th style="width:150px">BPOs</th><th style="width:220px">Core Scope</th><th style="width:auto">Done Means...</th></tr></thead><tbody><tr class="even"><td style="">Record to Report (R2R)</td><td style="">Trinidad Mesa<br>Matt Epley</td><td style="">COA; multi-entity; FX; multi-GAAP (IFRS / French GAAP / US GAAP); close process; reporting extracts; consolidation</td><td style="">COA design agreed. Reporting extract supports FP&amp;A. Multi-entity and multi-GAAP explicitly designed. Close is system-enforced.</td></tr><tr class="odd"><td style="">Procure to Pay (P2P)</td><td style="">Juliette Courtot<br>Kimberly Gordon</td><td style="">Req-to-PO; invoice processing; vendor master; payment execution; approval workflows; expense; 1099 / evidence</td><td style="">Workflow approvals system-enforced. Vendor validation and payment flow ownership explicit. Manual handoffs reduced or controlled.</td></tr><tr class="even"><td style="">SOX / Controls</td><td style="">CFGI (Walid)<br>Adrian Holbrook</td><td style="">Control design; audit trail; remediation tracking; SoD; access controls; evidence repository; automation split</td><td style="">Key controls mapped to owners and system steps. Audit evidence paths defined. Remediation tracking live. Design supports testable controls.</td></tr><tr class="odd"><td style="">Platform / Enablement</td><td style="">Jade Nguyen<br>Benjamin Talmant</td><td style="">IT integrations (5); system admin; access validation; architecture; timeline dependencies; change management</td><td style="">Integration architecture confirmed. Admin ownership explicit. IT capacity planned and committed. Change plan live.</td></tr></tbody></table>
+</section>
+
+<section id="s11">
+  <h1><span class="sec-num">11</span>Governance and Oversight</h1>
+  <p>Five forums covering the full escalation chain. Mike remains the day-to-day decision owner; issues surface to Didier or the Audit Committee only when warranted.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:190px">Forum</th><th style="width:160px">Cadence</th><th style="width:auto">Attendees and Purpose</th></tr></thead><tbody><tr class="even"><td style="font-weight:600;background:#D6E4F7">Program Flash Report</td><td style="">Weekly</td><td style="">Prepared by Walid / CFGI; delivered to Mike. Status, milestones, open risks, decisions needed. Two-page max.</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Design Authority</td><td style="">As needed (blueprint/build)</td><td style="">NetSuite functional team, CFGI controls lead, Abivax BPOs. Configuration and design decisions; scope change management.</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Steering Committee</td><td style="">Every 4-6 weeks</td><td style="">CFO (Didier Blondel), ERP Program Director (Mike), NetSuite Practice Manager (Hafid), CFGI Program Lead (Walid). Status, risk escalation, scope and budget decisions.</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Audit Committee Update</td><td style="">Quarterly / as required</td><td style="">Audit Committee, CFO (Didier Blondel), ERP Program Director. SOX status, controls-by-design progress, go-live readiness.</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Go / No-Go Review</td><td style="">Pre-cutover (Dec 2026)</td><td style="">CFO (Didier Blondel), ERP Program Director, NetSuite PM, CFGI. Written readiness assessment before production cutover approved.</td></tr></tbody></table>
+</section>
+
+<section id="s12">
+  <h1><span class="sec-num">12</span>Open Items and Decision Queue</h1>
+  <h2>Immediate Actions (This Week)</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:150px">Owner</th><th style="width:260px">Item</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike</td><td style="font-weight:600">Sign NetSuite SOW (V3 17 Mar 2026)</td><td style="">Target March 31. Confirm Phase 1/2 scope with Jamal. Legal review in progress.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Jean-Arnold</td><td style="font-weight:600">Consolidate CFGI proposals — one engagement</td><td style="">Email drafted 18 Mar to Ken + Jean-Arnold. Target combined EUR 175-225K. April deadline.</td></tr><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Jamal</td><td style="font-weight:600">Confirm O2C / Inventory Phase 1/2 boundary</td><td style="">Not yet contractually confirmed. Resolve on Jamal call.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike</td><td style="font-weight:600">Get CFGI NetSuite implementation references</td><td style="">CFGI-2 NOT FOUND in diligence — outstanding before contract.</td></tr><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Hema</td><td style="font-weight:600">Budget authorization from Hema and Didier</td><td style="">BUD-1/BUD-2 open — EUR 1M program budget needs written sign-off.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Camille</td><td style="font-weight:600">Confirm Audit Committee meeting date</td><td style="">Camille Girard availability on March 6 not confirmed.</td></tr></tbody></table>
+  <h2>Program Queue</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:120px">Lane</th><th style="width:340px">Item</th><th style="width:auto">ID</th></tr></thead><tbody><tr class="even"><td style="">synthesis</td><td style="">Refresh P2P pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-p2p-1</td></tr><tr class="odd"><td style="">synthesis</td><td style="">Refresh Reporting/Data pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-reporting-1</td></tr><tr class="even"><td style="">synthesis</td><td style="">Refresh Controls/Audit pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-controls-1</td></tr><tr class="odd"><td style="">writing</td><td style="">Stakeholder Brief wording/style pass (fact-based operator language)</td><td style="">claude-writing-stakeholder-briefs-1</td></tr><tr class="even"><td style="">writing</td><td style="">Post-selection communication templates (Camille/Hema/NetSuite path)</td><td style="">claude-writing-post-selection-comms-1</td></tr><tr class="odd"><td style="">writing</td><td style="">Create controls slides for Adrian Holbrook to present at Audit Committee (Mar 6)</td><td style="">claude-writing-audit-cmte-controls-slides-1</td></tr><tr class="even"><td style="">synthesis</td><td style="">Refresh open thread tracker after Audit Committee meeting (Mar 6)</td><td style="">claude-synthesis-open-threads-1</td></tr><tr class="odd"><td style="">deferred</td><td style="">Robin Lapous (KPMG consolidation) outreach and reporting current-state documentation</td><td style="">claude-deferred-robin-lapous-reporting-1</td></tr><tr class="even"><td style="">deferred</td><td style="">2026 Performance Objectives (Lucca) — set ERP-related objectives</td><td style="">claude-deferred-hr-objectives-2026-1</td></tr></tbody></table>
+</section>
+
+<section id="s13">
+  <h1><span class="sec-num">13</span>Outputs Registry</h1>
+  <p>All program outputs in the <code>outputs/</code> folder. Regenerate via the corresponding script when underlying data changes.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:240px">Document</th><th style="width:160px">Audience</th><th style="width:110px">Last Updated</th><th style="width:auto">Status</th></tr></thead><tbody><tr class="even"><td style="">ERP Program Encyclopedia (this doc)</td><td style="">Program Director</td><td style="">2026-03-18</td><td style="">Canonical reference. Regenerate: scripts/generate_encyclopedia.js</td></tr><tr class="odd"><td style="">ERP Program Encyclopedia (.docx)</td><td style="">Program Director</td><td style="">2026-03-18</td><td style="">Word version for extraction / sharing. Same generator.</td></tr><tr class="even"><td style="">Board ERP Readout (Mar 19, 2026)</td><td style="">Board of Directors</td><td style="">2026-03-18</td><td style="">Needs CFGI/KPMG story updated. outputs/Board_ERP_Readout_Mar19_2026.pptx</td></tr><tr class="odd"><td style="">Audit Committee ERP Controls Readout</td><td style="">Audit Committee</td><td style="">2026-03-06</td><td style="">outputs/Audit_Committee_ERP_Controls_Mar2026.pptx</td></tr><tr class="even"><td style="">Audit Committee Program Brief</td><td style="">Audit Committee</td><td style="">2026-03-18</td><td style="">outputs/ERP_Program_Audit_Committee_Brief_Mar2026.docx</td></tr><tr class="odd"><td style="">Vendor Comparison V2</td><td style="">Internal — Mike</td><td style="">2026-03-18</td><td style="">Superseded by decisions. outputs/Vendor_Comparison_V2_Mar18_2026.docx</td></tr><tr class="even"><td style="">CFGI Integrated Engagement Brief</td><td style="">CFGI (Ken + Jean-Arnold)</td><td style="">2026-03-18</td><td style="">collab/claude/outputs/cfgi-integrated-brief-2026-03-18.md</td></tr></tbody></table>
+</section>
+
+<section id="s14">
+  <h1><span class="sec-num">14</span>Change Log</h1>
+  <p class="note">Record every material update. This is the audit trail for the program record.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:110px">Date</th><th style="width:130px">Author</th><th style="width:auto">Changes</th></tr></thead><tbody><tr class="even"><td style="">2026-03-18</td><td style="">Claude / Mike</td><td style="">Initial encyclopedia created. All March 18 decisions recorded: NetSuite as SI (Paris team confirmed), CFGI as integrated support, KPMG selection-only, front-end shelved, encyclopedia model adopted. Budget EUR 999,936 confirmed from V3 SOW. Full team roster, risk register, governance, and outputs registry included.</td></tr></tbody></table>
+</section>
+</div>
+
+<script>
+  // Highlight active nav link on scroll
+  const links = document.querySelectorAll('a.nav-link');
+  const secs  = document.querySelectorAll('section[id]');
+  const obs   = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  secs.forEach(s => obs.observe(s));
+
+  // Smooth scroll
+  links.forEach(l => l.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(l.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+</script>
+</body>
+</html>

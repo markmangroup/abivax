@@ -17,54 +17,54 @@
   },
   "programState": {
     "phase": "post-selection / mobilization planning",
-    "currentFocus": "NetSuite selected Feb 26. Program now in the window between selection and implementation kickoff. Priority: lock commercial terms, confirm implementation scope, stand up governance, and close evidence gaps before April mobilization starts.",
-    "goLive": "2026-01-01",
+    "currentFocus": "Delivery model confirmed March 18: NetSuite as SI (Paris team), CFGI as integrated support (controls, governance, change). Priority: sign NetSuite V3 SOW by March 31, consolidate CFGI dual proposals into one engagement, confirm Phase 1/2 scope boundary, obtain budget authorization from Didier and Hema.",
+    "goLive": "2027-01-01",
     "goLiveNote": "Non-negotiable. Tied to US public launch December 2027. Every month of delay compounds risk exponentially.",
     "nextHardDeadlines": [
-      {
-        "date": "2026-03-06",
-        "event": "Audit Committee ERP Controls Readout",
-        "owner": "Mike / Camille Girard",
-        "deck": "outputs/presentations/Audit Committee ERP Controls Readout.pptx"
-      },
       {
         "date": "2026-03-19",
         "event": "Board Meeting ERP Checkpoint",
         "owner": "Mike",
-        "deck": "outputs/presentations/Board ERP Readout.pptx"
+        "deck": "outputs/Board_ERP_Readout_Mar19_2026.pptx"
+      },
+      {
+        "date": "2026-03-31",
+        "event": "NetSuite V3 SOW signature target",
+        "owner": "Mike / Hema",
+        "deck": null
       },
       {
         "date": "2026-04-01",
         "event": "Implementation Mobilization Target",
-        "owner": "Mike / Hema / NetSuite",
+        "owner": "Mike / NetSuite / CFGI",
         "deck": null
       }
     ],
     "topProgramRisks": [
-      "Commercial negotiation owner confirmed: Mike Markman + Hema Keshava. Contract commercials confirmed: \u20ac650K Year 1 (\u20ac463K build + \u20ac187K run). Timeline for signature still not locked \u2014 delays compress April mobilization window.",
-      "Implementation scope is not confirmed \u2014 no contract, no blueprint start date, no resourcing plan.",
-      "Internal capacity commitments by function are not documented \u2014 Finance, IT, and FP&A availability for ERP workstreams unknown.",
-      "ITGC RCM still pending final validation \u2014 controls baseline for audit readiness is incomplete.",
-      "Controls slides for Audit Committee: Adrian Holbrook (FP&A) asked Mike to provide slides he will present. Mike is the author \u2014 source content from CFGI (Youness Tyamaz). This is an action item for Mike, not a waiting item.",
-      "Camille Girard (KPMG Audit liaison) has OOO on March 6 \u2014 if Audit Committee meeting is that date, she may not be available. Confirm with Hema.",
-      "NetSuite implementation timeline XLSX exists: Jamal Azil sent 'ABIVAX - Draft-Implementation Timeline V2.xlsx' Feb 23 \u2014 retrieve and assess before declaring Audit deck Gap #2 still open."
+      "NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.",
+      "CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.",
+      "O2C / Inventory Phase 1/2 scope boundary not contractually confirmed — in base SOW but not activated Phase 1; confirm with Jamal.",
+      "Budget authorization not obtained — EUR 1M program budget (EUR 999,936) needs written sign-off from Didier and Hema; BUD-1/BUD-2 still open.",
+      "Internal capacity commitments not documented — Finance, IT, and FP&A availability for ERP workstreams not yet formally committed.",
+      "ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this."
     ],
     "keyPeople": {
-      "internalSponsors": [
-        "Hema Keshava (CFO / internal ERP sponsor)",
-        "Didier Blondel (CFO / executive sponsor)"
-      ],
-      "programOwner": "Mike Markman",
-      "controlsLead": "Adrian Holbrook",
+      "executiveSponsor": "Didier Blondel (CFO / executive sponsor)",
+      "financeLead": "Hema Keshava (Finance Lead — FP&A, Treasury, Tax, Accounting)",
+      "programOwner": "Mike Markman (ERP Program Director)",
+      "siLead": "Hafid Irbaiyne (NetSuite Practice Manager France/MEA)",
+      "cfgiEngagementLead": "Jean-Arnold Coutareau (CFGI Partner)",
+      "cfgiParis": "Walid Bouassida (CFGI Director, Paris)",
       "auditLiaison": "Camille Girard",
       "itLead": "Jade Nguyen",
       "fpaLead": "Frederick Golly",
-      "kpmgReporting": "Robin Lapous",
       "cftiContacts": [
         "Walid Bouassida",
         "Youness Tyamaz"
       ]
-    }
+    },
+    "lastUpdated": "2026-03-18",
+    "updatedBy": "Claude / Mike — delivery model decisions confirmed"
   },
   "pillars": [
     {
@@ -97,7 +97,7 @@
         "FR-PTP-02G control evidence confirmed: Trustpair actively validates all 497 vendors on bank account integrity. Audit evidence is exportable from Trustpair platform.",
         "Active contract commitments: \u20ac165,055,532 EUR across 2,888 active lines and 187 unique vendors (ENGAGE_2025 register, 31-Dec-2025). \u20ac7,490,467 already booked. Grand total EURO-equivalent across all currencies: \u20ac182.8M.",
         "ENGAGE commitment breakdown by department: CLI (Clinical) 1,265 lines, CMC 1,014, LAB 334, DAT 65, QA 111, REG 34. Currencies: EUROS 79%, USD 15%, GBP 3%. 3,042 closed lines in 'Presta cl\u00f4tur\u00e9es' sheet.",
-        "Trustpair NetSuite integration confirmed as in-scope (per KPMG deck, Feb 26 2026).",
+        "Trustpair NetSuite integration confirmed as in-scope (per KPMG deck, Feb 26 2026). (_archived)",
         "Invoice volume: ~4,000/year (France SA). PO volume: 650 raised in 2025.",
         "Total contract commitments: $200M+ \u2014 not tracked in any system; lives in contracts in DocuShare.",
         "Active vendors: <500. Vendor master cleaned in 2025. Second cleanup scheduled March 2026 (Philippe will provide XLS report).",
@@ -193,7 +193,7 @@
         "Kimberly Gordon (US)",
         "Matt Epley (US)",
         "Hema Keshava",
-        "KPMG (Camille/Aymen)"
+        "KPMG (Camille/Aymen) (_archived)"
       ],
       "processVisual": "p2p-france-current-to-future",
       "relatedDeckSlides": [
@@ -272,7 +272,7 @@
         "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.",
         "Treasury module: bank connectivity and cash management must be in Phase 1 scope.",
         "Audit evidence retained in-system by transaction \u2014 not assembled manually per audit cycle.",
-        "Internal vs KPMG handoff points clearly defined \u2014 what NetSuite does vs what KPMG continues to own."
+        "Internal vs audit-liaison handoff points clearly defined \u2014 what NetSuite does vs what statutory audit continues to own."
       ],
       "keyDecisionsPending": [
         {
@@ -281,8 +281,11 @@
           "impact": "Most consequential data model decision \u2014 affects every downstream report, rollup, and audit test. Must precede blueprint."
         },
         {
-          "decision": "KPMG close dependency: what gets insourced vs stays KPMG-managed post go-live",
-          "owner": "Mike / Hema / KPMG",
+          "decision": "Close dependency boundary: what gets insourced vs stays audit-only post go-live",
+          "owner": "Mike / Hema / CFGI",
+          "status": "closed",
+          "closedDate": "2026-03-18",
+          "resolution": "Close dependency boundary closed on 2026-03-18. Post go-live close executed in NetSuite with audit-ready evidence retention; statutory audit remains outside implementation operations.",
           "impact": "Determines the degree to which the quarterly close process gets insourced through ERP vs stays consultant-dependent."
         },
         {
@@ -292,7 +295,7 @@
         }
       ],
       "nextMoves": [
-        "Document current-state close process: steps, owners, KPMG handoffs, evidence paths \u2014 baseline before blueprint.",
+        "Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths \u2014 baseline before blueprint.",
         "Initiate GL/CoA design conversation with Denis Jankovic and Hema \u2014 agree on global vs entity-level approach.",
         "Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.",
         "Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.",
@@ -344,7 +347,7 @@
         "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area \u2014 agreed before COA design begins.",
         "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).",
         "Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.",
-        "Internal vs KPMG handoff points clearly defined in system design \u2014 what NetSuite does vs what KPMG still does.",
+        "Internal vs audit-liaison handoff points clearly defined in system design \u2014 what NetSuite does vs what statutory audit still does.",
         "Future-ready data architecture for monthly/commercial complexity \u2014 must not need a full redesign to scale."
       ],
       "keyDecisionsPending": [
@@ -355,8 +358,8 @@
         },
         {
           "decision": "Consultant dependency vs in-house scope for bridge and consolidation work",
-          "owner": "Mike / Hema / KPMG",
-          "impact": "Determines how much of the quarterly reporting process gets insourced through ERP vs stays KPMG-managed."
+          "owner": "Mike / Hema / CFGI",
+          "impact": "Determines how much of the quarterly reporting process gets insourced through ERP vs stays audit-only managed."
         },
         {
           "decision": "Reporting dimension minimum set (country, entity, cost center, others)",
@@ -365,7 +368,7 @@
         }
       ],
       "nextMoves": [
-        "Build reporting baseline flow: steps, owners, systems, KPMG handoffs \u2014 from Hema/KPMG responses.",
+        "Build reporting baseline flow: steps, owners, systems, existing handoffs \u2014 from Hema/audit-liaison responses.",
         "Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.",
         "Define minimum reporting dimension set with Frederick input.",
         "Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.",
@@ -488,7 +491,7 @@
         },
         {
           "decision": "Evidence repository design: where does control evidence live post-ERP (NetSuite native vs separate tool)",
-          "owner": "Mike / Jade / KPMG",
+          "owner": "Mike / Jade",
           "impact": "Audit evidence repository is a pre-condition for audit readiness \u2014 must be designed, not assumed."
         }
       ],
@@ -562,9 +565,9 @@
         }
       ],
       "currentStateKnown": [
-        "NetSuite commercials confirmed via Camille Girard KPMG deck (Feb 26 2026 Audit Committee meeting): Build (one-off) \u20ac463,120 | Run (annual SaaS) \u20ac187,009/year | Year 1 total \u2248 \u20ac650,128 | 3-year total \u20ac1,024,145.80. Implementation: 392 man-days at \u20ac1,135.51/day. Replaces $1M Year 1 budget assumption used in prior planning.",
+        "NetSuite commercials confirmed via Camille Girard KPMG deck (Feb 26 2026 Audit Committee meeting): Build (one-off) \u20ac463,120 | Run (annual SaaS) \u20ac187,009/year | Year 1 total \u2248 \u20ac650,128 | 3-year total \u20ac1,024,145.80. Implementation: 392 man-days at \u20ac1,135.51/day. Replaces $1M Year 1 budget assumption used in prior planning. (_archived)",
         "NetSuite selected. Competing vendor was SAP \u2014 SAP eliminated due to proposal/RACI concerns and governance/PMO sufficiency questions.",
-        "KPMG played advisory role in selection (Camille Girard / Aymen). Implementation advisory role not yet confirmed.",
+        "KPMG played advisory role in selection (Camille Girard / Aymen). Implementation advisory role confirmed: none. KPMG role limited to statutory audit only (Camille Girard, Audit Committee liaison). Decided 2026-03-18. (_archived)",
         "IT org confirmed: Didier \u2192 Christophe Hennequin \u2192 Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP in 2026-2027 framing.",
         "Implementation vendor: NetSuite directly or NetSuite partner \u2014 not yet determined.",
         "Governance model target: weekly program governance, monthly exec update, board-cycle readout, milestone-triggered escalation.",
@@ -576,7 +579,7 @@
       "currentStateUnknown": [
         "Commercial negotiation owner: Mike Markman + Hema Keshava (confirmed Mar 2). Budget assumption: $1M Year 1, scale naturally thereafter. Contract timeline still to be locked with NetSuite.",
         "Implementation scope: not confirmed. No contract, no blueprint start date.",
-        "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team \u2014 roles not separated.",
+        "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team \u2014 roles not separated. (_archived)",
         "Internal capacity commitments by function \u2014 Finance, IT, FP&A availability for ERP workstreams unknown.",
         "Executive decision rights model \u2014 who can approve scope changes, escalate blockers, authorize budget."
       ],
@@ -591,13 +594,16 @@
           "decision": "Implementation scope confirmation: which modules, which entities, which integrations in Phase 1",
           "owner": "Mike / Hema / NetSuite",
           "blockedSince": "2026-02-26",
-          "impact": "Without confirmed scope, resourcing plan, KPMG advisory scope, and internal commitments are all floating."
+          "impact": "Without confirmed scope, resourcing plan, KPMG advisory scope, and internal commitments are all floating. (_archived)"
         },
         {
-          "decision": "KPMG implementation advisory engagement: scope and owner",
+          "decision": "KPMG implementation advisory engagement: scope and owner (_archived)",
           "owner": "Hema / Mike",
           "blockedSince": "2026-02-26",
-          "impact": "KPMG knows the Abivax control environment. Whether they play an advisory role in implementation affects both quality and timeline."
+          "status": "closed",
+          "closedDate": "2026-03-18",
+          "resolution": "No KPMG implementation advisory engagement. CFGI selected as SI lead. KPMG = statutory audit only. (_archived)",
+          "impact": "KPMG knows the Abivax control environment. Whether they play an advisory role in implementation affects both quality and timeline. (_archived)"
         },
         {
           "decision": "Executive decision rights model",
@@ -609,13 +615,13 @@
       "nextMoves": [
         "Draft post-selection notification email to Camille (cc Hema): confirm owners, negotiation path, and timing toward April work start.",
         "Confirm internal capacity commitments by function before April \u2014 Finance, IT, FP&A.",
-        "Separate KPMG selection-phase contacts from implementation-phase advisory contacts.",
+        "Separate KPMG selection-phase contacts from implementation-phase advisory contacts. (_archived)",
         "Establish governance cadence: weekly program, monthly exec, board-cycle readout.",
         "Present governance model at Board (Mar 19) and Audit Committee (Mar 6) meetings."
       ],
       "waitingOn": [
         "NetSuite: commercial terms package",
-        "Hema: internal capacity commitments, KPMG advisory scope decision",
+        "Hema: internal capacity commitments; KPMG advisory scope decision closed — no KPMG implementation advisory (CFGI selected as SI lead). KPMG limited to statutory audit only. Decided 2026-03-18 (_archived)",
         "Board / Audit Committee: endorse governance model and control-by-design principle"
       ],
       "keyPeople": [
