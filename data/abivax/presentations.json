@@ -250,7 +250,7 @@
     {
       "id": "audit-committee-erp-overview-20260306",
       "title": "Audit Committee ERP Overview",
-      "audience": "Audit Committee / Adrian Holbrook",
+      "audience": "Audit Committee",
       "meetingDate": "2026-03-06",
       "owner": "Mike Markman",
       "status": "ready",
@@ -315,7 +315,7 @@
           "content": [
             "Why: fragmented manual systems, inconsistent controls, not scalable for SEC filing.",
             "Why NetSuite: 9-month implementation, SaaS-native, multi-GAAP, biotech track record.",
-            "Ownership: Mike Markman (ERP Lead), Hema Keshava (CFO Sponsor), NetSuite delivery team."
+            "Ownership: Mike Markman (ERP Program Director), Didier Blondel (CFO / Executive Sponsor), NetSuite delivery team."
           ]
         },
         {
