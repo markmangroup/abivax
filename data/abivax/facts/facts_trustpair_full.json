@@ -1,0 +1,122 @@
+[
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Atelier processus _ Recommandations Trustpair - pgo.xlsx",
+    "pillar": "p2p",
+    "substream": "vendor-management",
+    "system": "Trustpair",
+    "fact_type": "control-playbook",
+    "fact": "Trustpair recommendation sheets define explicit remediation actions for unfavorable bank-validation outcomes, including blocking payment, contacting the supplier, requesting certified bank details, and retriggering the Trustpair check after updates.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as structured evidence for current exception-handling rules in vendor bank validation."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Atelier processus _ Recommandations Trustpair - pgo.xlsx",
+    "pillar": "p2p",
+    "substream": "vendor-management",
+    "system": "Trustpair",
+    "fact_type": "control-playbook",
+    "fact": "For blacklisted accounts, company closures, missing IDs, invalid IDs, and missing account information, the recommendation is to block processing and investigate using supplier outreach or official corporate documentation.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use to define the high-severity Trustpair exception classes in the target-state control register."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Atelier processus _ Recommandations Trustpair - pgo.xlsx",
+    "pillar": "p2p",
+    "substream": "vendor-management",
+    "system": "Trustpair / email",
+    "fact_type": "manual-handoff",
+    "fact": "The French overlay notes that when bank details change, Trinidad should be notified by email and supplier validation should use known contact details independent of the invoice.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Use as a France-specific manual escalation point in current-state vendor-change controls."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\supplier control process.xlsx",
+    "pillar": "p2p",
+    "substream": "controls",
+    "system": "Trustpair",
+    "fact_type": "control-ownership",
+    "fact": "The supplier control process workbook assigns Juliette Courtot as Control Preparer for SA, Matt Epley as Control Preparer for LLC, Philippe Goncalves and Denis Jankovic as SA reviewers, and Denis Jankovic as LLC reviewer.",
+    "entity": "Abivax Group",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use to populate entity-specific preparer and reviewer ownership for Trustpair controls."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\supplier control process.xlsx",
+    "pillar": "p2p",
+    "substream": "controls",
+    "system": "Trustpair",
+    "fact_type": "control-tool",
+    "fact": "The reviewing tool for the supplier control process is explicitly identified as Trustpair.",
+    "entity": "Abivax Group",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use to anchor Trustpair as the formal review tool in vendor bank-detail controls."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Trustpair x Abivax __ Suite à notre réunion du 20_01_2026.msg",
+    "pillar": "p2p",
+    "substream": "integrations",
+    "system": "Trustpair / NetSuite",
+    "fact_type": "future-integration",
+    "fact": "Trustpair states that it does not describe a native NetSuite connector but indicates API compatibility without specific constraints, and notes that several clients use NetSuite.",
+    "entity": "Abivax Group",
+    "current_or_target": "target",
+    "confidence": "medium",
+    "claude_action": "Use in future-state architecture as a compatibility signal, not as proof of a production-ready native connector."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Trustpair x Abivax __ Suite à notre réunion du 20_01_2026.msg",
+    "pillar": "p2p",
+    "substream": "integrations",
+    "system": "Trustpair / SFTP",
+    "fact_type": "implementation-gap",
+    "fact": "The US perimeter SFTP connection is still pending and requires IP addresses to be whitelisted.",
+    "entity": "Abivax US LLC",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as an outstanding cross-entity rollout dependency for Trustpair."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Trustpair x Abivax __ Suite à notre réunion du 20_01_2026.msg",
+    "pillar": "p2p",
+    "substream": "controls",
+    "system": "Trustpair",
+    "fact_type": "coverage-level",
+    "fact": "Trustpair describes the reliability of the vendor base as above 95 percent in the current context.",
+    "entity": "Abivax Group",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Treat as directional quality evidence and avoid using it as a formal KPI without separate validation."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Trustpair x Abivax __ Suite à notre réunion du 20_01_2026.msg",
+    "pillar": "r2r",
+    "substream": "program-architecture",
+    "system": "ERP / TMS landscape",
+    "fact_type": "future-context",
+    "fact": "The January 2026 Trustpair exchange records that Abivax is evaluating SAP, Oracle, and NetSuite for ERP and Agicap, Kyriba, or Diapason for TMS, with implementation not expected before 2027.",
+    "entity": "Abivax Group",
+    "current_or_target": "target",
+    "confidence": "medium",
+    "claude_action": "Use only as time-stamped planning context, not as the current approved target architecture."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TRUSTPAIR\\FRANCE\\Abivax x Trustpair  Outils et connecteurs TMS.msg",
+    "pillar": "p2p",
+    "substream": "integrations",
+    "system": "Trustpair",
+    "fact_type": "vendor-statement",
+    "fact": "Trustpair says it collaborates with partners and can share currently available TMS connectors, but this email does not itself confirm a native NetSuite connector.",
+    "entity": "Abivax Group",
+    "current_or_target": "target",
+    "confidence": "medium",
+    "claude_action": "Use to avoid overstating connector maturity in ERP selection materials."
+  }
+]

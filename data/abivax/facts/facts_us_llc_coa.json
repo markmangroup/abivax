@@ -1,0 +1,38 @@
+[
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats avant upgrade (before upgrade)\\2025\\ABIVAX LLC\\Abivax LLC plans comptables COA.xlsx",
+    "pillar": "r2r",
+    "substream": "chart-of-accounts",
+    "system": "Sage 100",
+    "fact_type": "account-structure",
+    "fact": "The pre-upgrade US LLC chart of accounts workbook contains 128 rows on the 'Plan comptable' sheet.",
+    "entity": "Abivax US LLC",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as a baseline size metric for the US LLC COA before the Sage upgrade."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats apres upgrade (after upgrade)\\2025\\ABIVAX LLC\\Abivax LLC plan comptable COA après upgrade.xlsx",
+    "pillar": "r2r",
+    "substream": "chart-of-accounts",
+    "system": "Sage 100",
+    "fact_type": "account-structure",
+    "fact": "The post-upgrade US LLC chart of accounts workbook also contains 128 rows on the 'Plan comptable' sheet.",
+    "entity": "Abivax US LLC",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as evidence that the US LLC COA row count did not change across the recorded Sage upgrade comparison."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats apres upgrade (after upgrade)\\2025\\ABIVAX LLC\\Abivax LLC plan comptable COA après upgrade.xlsx",
+    "pillar": "r2r",
+    "substream": "chart-of-accounts",
+    "system": "Sage 100",
+    "fact_type": "account-example",
+    "fact": "Visible post-upgrade US LLC accounts include 119000 Carry Forward (debtor), 151820 Provision for charges, and 205000 Concessions, patents, licenses, software, rights and similar values.",
+    "entity": "Abivax US LLC",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Use as directional evidence of account naming conventions until a fuller COA categorization pass is completed."
+  }
+]

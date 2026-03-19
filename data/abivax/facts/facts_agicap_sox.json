@@ -1,0 +1,110 @@
+[
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Agicap",
+    "fact_type": "system-role",
+    "fact": "Agicap is currently used as the TMS in the France payment environment.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use to anchor Agicap as a live treasury/payment platform rather than a hypothetical future tool."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "controls",
+    "system": "Agicap",
+    "fact_type": "itgc-gap",
+    "fact": "Agicap does not have a SOC report available today; a SOC 2 report is described as being on the 2026 roadmap.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as a major control-design constraint in the target-state finance architecture."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "security",
+    "system": "Agicap",
+    "fact_type": "sod-gap",
+    "fact": "Agicap does not currently have co-administration; an administrator can create or modify a vendor or profile.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Flag as a segregation-of-duties gap requiring either compensating controls or future-state tool redesign."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "vendor-management",
+    "system": "Agicap / Sage 100",
+    "fact_type": "system-boundary",
+    "fact": "The vendor master remains in Sage and not in Agicap, with vendor information flowing through payment files.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use to separate vendor-master ownership from payment execution in the source-of-truth model."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Agicap",
+    "fact_type": "control-behavior",
+    "fact": "The payment file sent automatically by accountants is described as non-modifiable in Agicap.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Cross-reference this claim with other Agicap evidence that suggests rework risk after cancellation."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Agicap",
+    "fact_type": "approval-design",
+    "fact": "Agicap can support dual validation for some actions when configured, including payments and expense reports.",
+    "entity": "Abivax France SA",
+    "current_or_target": "target",
+    "confidence": "medium",
+    "claude_action": "Use as a capability fact, but distinguish it from currently enabled controls."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\Agicap - SOX control - CFGI.msg",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Agicap",
+    "fact_type": "control-gap",
+    "fact": "The system cannot distinguish USD treasury transfers from supplier third-party transfers, creating a validation-rights risk if the Treasurer can validate USD payments.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Escalate as a material future-state design issue for payment-type routing and approver entitlements."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\RE Abivax x CFGI - Retour sur Agicap- SOX.msg",
+    "pillar": "p2p",
+    "substream": "controls",
+    "system": "Agicap",
+    "fact_type": "sox-conclusion",
+    "fact": "Because Agicap lacks a SOC report, CFGI states Abivax cannot rely on Agicap alone as the signing tool from a SOX perspective and must validate that payments appearing on the bank statement were approved and signed.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Map this directly to control remediation and target-state operating-model decisions."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\TMS AGICAP\\Point SOX et parametrage moyens de paiement\\RE Abivax x CFGI - Retour sur Agicap- SOX.msg",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Bank statements / Agicap",
+    "fact_type": "operating-rhythm",
+    "fact": "CFGI notes that there appear to be only two payment batches per month, making a bank-statement-to-approval reconciliation process feasible as a formalized compensating control.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Use as context for practical design of month-end and payment control evidence."
+  }
+]

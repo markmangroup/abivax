@@ -1,0 +1,62 @@
+[
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\Flows\\Flux Sage x Turstpair x Agicap.pdf",
+    "pillar": "p2p",
+    "substream": "integrations",
+    "system": "Sage 100",
+    "fact_type": "integration-flow",
+    "fact": "The current France payment ecosystem includes Sage 100 ABIVAX as the ERP/accounting source feeding both Trustpair and Agicap.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as core evidence for current-state payment architecture and integration dependency mapping."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\Flows\\Flux Sage x Turstpair x Agicap.pdf",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Trustpair",
+    "fact_type": "integration-flow",
+    "fact": "Trustpair is shown as a SaaS platform receiving payment-file and vendor-base information through SFTP exchanges.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Map Trustpair as a live control layer in payment-file and vendor validation flows."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\Flows\\Flux Sage x Turstpair x Agicap.pdf",
+    "pillar": "p2p",
+    "substream": "payments",
+    "system": "Agicap",
+    "fact_type": "integration-flow",
+    "fact": "Agicap is shown as a SaaS platform connected by SFTP to payment files and return files, indicating it operates downstream of Sage-generated payment preparation.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use in the target-state view to show which treasury and payment activities currently sit outside Sage."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\Flows\\Flux Sage x Turstpair x Agicap.pdf",
+    "pillar": "p2p",
+    "substream": "vendor-management",
+    "system": "Trustpair",
+    "fact_type": "interface-pattern",
+    "fact": "The architecture explicitly references a two-way SFTP vendor-base exchange and a return file for the vendor master base.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Treat vendor-base synchronization and feedback files as part of current-state bank-detail control design."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\Flows\\Flux Sage x Turstpair x Agicap.pdf",
+    "pillar": "p2p",
+    "substream": "controls",
+    "system": "Trustpair",
+    "fact_type": "control-evidence",
+    "fact": "The flow document includes a Trustpair analysis return, indicating that Trustpair produces a feedback artifact rather than only passively receiving files.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Flag for controls-by-design mapping: determine where Trustpair analysis outputs are stored and reviewed."
+  }
+]

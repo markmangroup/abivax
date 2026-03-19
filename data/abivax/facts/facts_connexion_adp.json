@@ -1,0 +1,74 @@
+[
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\CONNEXION ADP\\ADP Agicap en SFTP.msg",
+    "pillar": "p2p",
+    "substream": "integrations",
+    "system": "Sage 100 / Agicap",
+    "fact_type": "integration-pattern",
+    "fact": "Agicap confirmed the Sage invoice connection uses an API with two synchronizations per day at 06:00 and 13:00.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use to distinguish invoice synchronization from payment-file transmission in the current architecture."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\CONNEXION ADP\\ADP Agicap en SFTP.msg",
+    "pillar": "p2p",
+    "substream": "payroll-payments",
+    "system": "ADP / Agicap / SFTP",
+    "fact_type": "integration-pattern",
+    "fact": "For payroll payment file upload, the process remains based on SFTP and SEPA files rather than the API invoice connection.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Treat payroll and vendor-payment integration flows separately in the target-state map."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\CONNEXION ADP\\ADP Agicap en SFTP.msg",
+    "pillar": "p2p",
+    "substream": "payroll-payments",
+    "system": "ADP / Agicap",
+    "fact_type": "commercial",
+    "fact": "The ADP integration pricing referenced in the email is 500 euros for implementation and 50 euros per month for extra maintenance.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as support context if commercial comparison of sub-integrations becomes relevant."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\CONNEXION ADP\\RE GO for EBICS T contrat signature with SG.msg",
+    "pillar": "p2p",
+    "substream": "payroll-payments",
+    "system": "ADP / Societe Generale / EBICS T",
+    "fact_type": "dependency",
+    "fact": "ADP payroll transmission required EBICS T setup with the bank before production, with tests expected before the July payroll run.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Map EBICS T as an implementation dependency for payroll-bank connectivity."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\CONNEXION ADP\\RE GO for EBICS T contrat signature with SG.msg",
+    "pillar": "p2p",
+    "substream": "payroll-payments",
+    "system": "ADP / EBICS T",
+    "fact_type": "setup-requirement",
+    "fact": "ADP requested either the signed EBICS T contract or the user ID, partner ID, and file format details to proceed.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as evidence of the specific bank-connectivity prerequisites in the payroll payment stream."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\CONNEXION ADP\\RE Contrat EBICS T - ADP  SG - Points sur les contrats OK SG.msg",
+    "pillar": "p2p",
+    "substream": "payroll-payments",
+    "system": "Societe Generale / EBICS T",
+    "fact_type": "implementation-status",
+    "fact": "Societe Generale confirmed that the certificates were reconciled and activated for the EBICS T setup, and the transport user ID ST000091 is referenced.",
+    "entity": "Abivax France SA",
+    "current_or_target": "current",
+    "confidence": "high",
+    "claude_action": "Use as evidence that the EBICS T connection progressed beyond planning into activation."
+  }
+]

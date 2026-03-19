@@ -1,0 +1,38 @@
+[
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\SOX\\Dernière RCM envoyée par KPMG\\Abivax_RCM_combined.xlsx",
+    "pillar": "controls",
+    "substream": "rcm-coverage",
+    "system": "SOX RCM workbook",
+    "fact_type": "workbook-structure",
+    "fact": "The combined KPMG RCM workbook contains 25 sheets and approximately 291 rows across the parsed process sheets.",
+    "entity": "Abivax Group",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Use as a structural inventory fact only; a deeper control-by-control extraction still needs a separate pass."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\SOX\\Dernière RCM envoyée par KPMG\\Abivax_RCM_combined.xlsx",
+    "pillar": "controls",
+    "substream": "rcm-coverage",
+    "system": "SOX RCM workbook",
+    "fact_type": "process-coverage",
+    "fact": "Parsed process sheets include FR_PTP, FR_Treasury & Debt, FR_FSCP, IT, ELC, US_Treasury & Debt, and US_FSCP, indicating coverage across France and US finance and control domains.",
+    "entity": "Abivax Group",
+    "current_or_target": "current",
+    "confidence": "medium",
+    "claude_action": "Use to orient future extraction efforts toward the process tabs that matter most for ERP control coverage."
+  },
+  {
+    "source_file": "O:\\Commun\\Support\\Finance projects- IT\\SOX\\Dernière RCM envoyée par KPMG\\Abivax_RCM_combined.xlsx",
+    "pillar": "controls",
+    "substream": "rcm-coverage",
+    "system": "SOX RCM workbook",
+    "fact_type": "absence-signal",
+    "fact": "No obvious O2C process sheet was identified by sheet name in the parsed workbook.",
+    "entity": "Abivax Group",
+    "current_or_target": "current",
+    "confidence": "low",
+    "claude_action": "Treat as a directional signal only and verify with a more robust workbook parse before using it in scoping decisions."
+  }
+]
