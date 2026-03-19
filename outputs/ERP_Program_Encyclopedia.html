@@ -60,7 +60,29 @@
   a.nav-link.active { color: #fff; background: rgba(255,255,255,0.12);
     border-left-color: #60A5FA; }
   .nav-num { font-size: 11px; color: rgba(255,255,255,0.35);
-    min-width: 18px; text-align: right; }
+    min-width: 28px; text-align: right; font-weight: 700; }
+  a.nav-link.has-children { padding-bottom: 2px; }
+  .nav-sub-list { padding: 0 0 4px 0; }
+
+  /* Entity level (France SA / US LLC) */
+  .nav-entity-label { padding: 4px 16px 1px 28px; }
+  a.nav-entity-link {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    color: rgba(255,255,255,0.55); text-decoration: none;
+    letter-spacing: 0.3px;
+  }
+  a.nav-entity-link:hover { color: rgba(255,255,255,0.9); }
+
+  /* Sub-section level (Process Flow, COA, etc.) */
+  .nav-sub-sub-list { padding: 0 0 6px 0; }
+  a.nav-sub-sub-link {
+    display: block; padding: 2px 16px 2px 40px;
+    font-size: 11px; color: rgba(255,255,255,0.38);
+    text-decoration: none; border-left: 3px solid transparent;
+    transition: all 0.12s ease;
+  }
+  a.nav-sub-sub-link:hover { color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.04); }
+  a.nav-sub-sub-link.active { color: #93C5FD; border-left-color: #93C5FD; background: rgba(255,255,255,0.06); }
 
   #sidebar-footer { margin-top: auto; padding: 14px 16px;
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -156,14 +178,23 @@
     <div class="meta">Program Director: Mike Markman<br>Generated: 2026-03-18</div>
   </div>
   
-  <div class="nav-group-label">Foundation</div>
-  <a href="#s1" class="nav-link"><span class="nav-num">1</span>Program Overview</a><a href="#s2" class="nav-link"><span class="nav-num">2</span>Key Decisions Log</a><a href="#s3" class="nav-link"><span class="nav-num">3</span>System Selection</a><a href="#s4" class="nav-link"><span class="nav-num">4</span>Delivery Model</a>
+  <div class="nav-group-label">Program Status</div>
+  <a href="#s1" class="nav-link"><span class="nav-num">1</span>Program Overview</a><a href="#s12" class="nav-link"><span class="nav-num">—</span>Open Items & Actions</a>
 
-  <div class="nav-group-label">Program Detail</div>
-  <a href="#s5" class="nav-link"><span class="nav-num">5</span>SOX and Controls</a><a href="#s6" class="nav-link"><span class="nav-num">6</span>Program Budget</a><a href="#s7" class="nav-link"><span class="nav-num">7</span>Timeline</a><a href="#s8" class="nav-link"><span class="nav-num">8</span>Risk Register</a><a href="#s9" class="nav-link"><span class="nav-num">9</span>Vendor Profiles</a><a href="#s10" class="nav-link"><span class="nav-num">10</span>ERP Pillars</a><a href="#s15" class="nav-link"><span class="nav-num">15</span>Integrations & Migration</a>
+  <div class="nav-group-label">Foundation</div>
+  <a href="#s2" class="nav-link"><span class="nav-num">2</span>Key Decisions</a><a href="#s3" class="nav-link"><span class="nav-num">3</span>System Selection</a><a href="#s6" class="nav-link"><span class="nav-num">6</span>Budget & Contract</a><a href="#s7" class="nav-link"><span class="nav-num">7</span>Timeline</a>
+
+  <div class="nav-group-label">Delivery</div>
+  <a href="#s4" class="nav-link"><span class="nav-num">4</span>Delivery Model</a><a href="#s9" class="nav-link"><span class="nav-num">9</span>Vendor Profiles</a><a href="#s11" class="nav-link"><span class="nav-num">11</span>Governance</a>
+
+  <div class="nav-group-label">Pillars</div>
+  <a href="#s10" class="nav-link has-children"><span class="nav-num">P2P</span>P2P — Procure to Pay</a><div class="nav-sub-list"><div class="nav-entity-label"><a href="#s10-sa" class="nav-entity-link">🇫🇷 France SA</a></div><div class="nav-sub-sub-list"><a href="#s10-sa-flow" class="nav-sub-sub-link">Process Flow</a><a href="#s10-sa-matrices" class="nav-sub-sub-link">Approval Matrices</a><a href="#s10-sa-reqs" class="nav-sub-sub-link">ERP Requirements</a><a href="#s10-sa-decisions" class="nav-sub-sub-link">Open Decisions</a></div><div class="nav-entity-label"><a href="#s10-llc" class="nav-entity-link">🇺🇸 US LLC</a></div><div class="nav-sub-sub-list"><a href="#s10-llc-status" class="nav-sub-sub-link">Status & Gaps</a></div></div><a href="#s16" class="nav-link has-children"><span class="nav-num">R2R</span>R2R — Record to Report</a><div class="nav-sub-list"><div class="nav-entity-label"><a href="#s16-sa" class="nav-entity-link">🇫🇷 France SA</a></div><div class="nav-sub-sub-list"><a href="#s16-sa-gaap" class="nav-sub-sub-link">Multi-GAAP</a><a href="#s16-sa-coa" class="nav-sub-sub-link">COA Design</a><a href="#s16-sa-treasury" class="nav-sub-sub-link">Treasury</a><a href="#s16-sa-decisions" class="nav-sub-sub-link">Open Decisions</a></div><div class="nav-entity-label"><a href="#s16-llc" class="nav-entity-link">🇺🇸 US LLC</a></div><div class="nav-sub-sub-list"><a href="#s16-llc-status" class="nav-sub-sub-link">Status & Gaps</a></div></div><a href="#s17" class="nav-link has-children"><span class="nav-num">RPT</span>Reporting & Planning</a><div class="nav-sub-list"><div class="nav-entity-label"><a href="#s17-sa" class="nav-entity-link">🇫🇷 France SA</a></div><div class="nav-sub-sub-list"><a href="#s17-sa-current" class="nav-sub-sub-link">Current State</a><a href="#s17-sa-reqs" class="nav-sub-sub-link">ERP Requirements</a><a href="#s17-sa-decisions" class="nav-sub-sub-link">Open Decisions</a></div><div class="nav-entity-label"><a href="#s17-llc" class="nav-entity-link">🇺🇸 US LLC</a></div><div class="nav-sub-sub-list"><a href="#s17-llc-status" class="nav-sub-sub-link">Status & Gaps</a></div></div><a href="#s5" class="nav-link"><span class="nav-num">SOX</span>SOX / Controls</a>
+
+  <div class="nav-group-label">Risk & Systems</div>
+  <a href="#s8" class="nav-link"><span class="nav-num">8</span>Risk Register</a><a href="#s15" class="nav-link"><span class="nav-num">15</span>Systems & Integration</a>
 
   <div class="nav-group-label">Reference</div>
-  <a href="#s11" class="nav-link"><span class="nav-num">11</span>Governance</a><a href="#s12" class="nav-link"><span class="nav-num">12</span>Open Items</a><a href="#s13" class="nav-link"><span class="nav-num">13</span>Outputs Registry</a><a href="#s14" class="nav-link"><span class="nav-num">14</span>Change Log</a>
+  <a href="#s13" class="nav-link"><span class="nav-num">13</span>Outputs Registry</a><a href="#s14" class="nav-link"><span class="nav-num">14</span>Change Log</a>
 
   <div id="sidebar-footer">
     Confidential — Program Director Use<br>
@@ -294,12 +325,19 @@
   <p>Three primary pillars plus one cross-cutting enablement layer. Each has named business process owners and a clear definition of done.</p>
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:165px">Pillar</th><th style="width:175px">BPOs</th><th style="width:210px">Core Scope</th><th style="width:auto">Done Means...</th></tr></thead><tbody><tr class="even"><td style="">Record to Report (R2R)</td><td style="">Trinidad Mesa · Matt Epley</td><td style="">COA; multi-entity; FX; multi-GAAP (IFRS / French GAAP / US GAAP); close process; reporting extracts; consolidation</td><td style="">COA design agreed. Reporting extract supports FP&amp;A. Multi-entity and multi-GAAP explicitly designed. Close is system-enforced.</td></tr><tr class="odd"><td style="">Procure to Pay (P2P)</td><td style="">Juliette Courtot · Kimberly Gordon</td><td style="">Req-to-PO; invoice processing; vendor master; payment execution; approval workflows; expense; 1099 / evidence</td><td style="">Workflow approvals system-enforced. Vendor validation and payment flow ownership explicit. Manual handoffs eliminated.</td></tr><tr class="even"><td style="">SOX / Controls</td><td style="">CFGI (Walid) · Adrian Holbrook</td><td style="">Control design; audit trail; SoD; access controls; evidence repository; automation split</td><td style="">Key controls mapped to owners and system steps. Audit evidence paths defined. Design supports testable controls.</td></tr><tr class="odd"><td style="">Platform / Enablement</td><td style="">Jade Nguyen · Benjamin Talmant</td><td style="">IT integrations; system admin; access validation; architecture; change management</td><td style="">Integration architecture confirmed. Admin ownership explicit. IT capacity committed. Change plan live.</td></tr></tbody></table>
 
-  <h2>Procure to Pay (P2P) — France SA</h2>
-  <p>P2P is the highest-priority pillar for Phase 1. 20 CFTI controls, 5 ERP-signal. Current state is manual and fragmented across Sage, DocuShare, Trustpair, and Agicap. Below is the France SA flow with per-area current state, pain points, and NetSuite requirements.</p>
+  <!-- ── France SA ─────────────────────────────────────────────────────── -->
+  <div id="s10-sa" style="margin:20px 0 0">
+    <div style="background:#1F3864;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇫🇷</span>
+      <span style="font-size:14px;font-weight:700">France SA</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">20 CFTI controls · 5 ERP-signal · BPO: Juliette Courtot</span>
+    </div>
+    <div style="border:1px solid #D6E4F7;border-top:none;border-radius:0 0 6px 6px;padding:0 0 16px">
 
-  <div style="margin:20px 0;padding:16px;background:#F8FAFF;border:1px solid #D6E4F7;border-radius:6px">
-    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:12px">France SA — Current State Process Flow</div>
-    <div class="mermaid">
+      <div id="s10-sa-flow" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:10px">Current State Process Flow — Source: SOP0084_V01 · ABIVAX Purchase Process ENG (2024)</div>
+        <div style="padding:12px;background:#F8FAFF;border:1px solid #D6E4F7;border-radius:6px">
+          <div class="mermaid">
 flowchart LR
     subgraph RECEIPT["1 · Receipt"]
       direction TB
@@ -332,10 +370,9 @@ flowchart LR
     style ENTRY      fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
     style VALIDATION fill:#FFF3CD,stroke:#BF6C00,color:#5C3D00
     style PAYMENT    fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20
-    </div>
-  </div>
-
-  
+          </div>
+        </div>
+        
   <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
     <div style="background:#EBF2FC;border-left:4px solid #1F3864;padding:8px 14px;font-size:13px;font-weight:700;color:#1F3864;margin:0"> Vendor setup / validation — Finance + Trustpair validation path (to confirm)</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
@@ -352,7 +389,7 @@ flowchart LR
       </div>
     </div>
   </div>
-  
+        
   <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
     <div style="background:#EBF2FC;border-left:4px solid #1F3864;padding:8px 14px;font-size:13px;font-weight:700;color:#1F3864;margin:0"> Invoice / coding / approval flow — Finance (Trinidad/France team - confirm by step)</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
@@ -369,7 +406,7 @@ flowchart LR
       </div>
     </div>
   </div>
-  
+        
   <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
     <div style="background:#EBF2FC;border-left:4px solid #1F3864;padding:8px 14px;font-size:13px;font-weight:700;color:#1F3864;margin:0"> Payment validation and execution — Finance / Treasury (Roxandra + team to confirm)</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
@@ -386,132 +423,197 @@ flowchart LR
       </div>
     </div>
   </div>
-
-  <h3 style="margin:24px 0 10px;font-size:14px;color:#1F3864;border-bottom:2px solid #D6E4F7;padding-bottom:6px">Approval Authority Matrices — Source: Formal Policy Documents (Mar 2026)</h3>
-  <p style="font-size:12px;color:#555;margin:0 0 14px">Current-state approval thresholds. These are the DoA matrices NetSuite must enforce. Separate from contract signature authority (Didier ≤€500K · Marc de Garidel >€500K).</p>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
-
-    <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
-      <div style="background:#2E5EA8;color:#fff;padding:8px 14px;font-size:12px;font-weight:700">PO / Contract Approval Matrix</div>
-      <table style="width:100%;border-collapse:collapse;font-size:11px">
-        <thead>
-          <tr style="background:#EBF2FC">
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Amount Threshold</th>
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Required Approver</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €50,000</td><td style="padding:5px 10px;color:#333">SVP · VPs · Sr Directors</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€50K – €500K</td><td style="padding:5px 10px;color:#333">Chiefs (C-suite −1)</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€500K – €750K</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance (Hema Keshava)</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€750K – €1M</td><td style="padding:5px 10px;color:#333;font-weight:600">CFO (Didier Blondel)</td></tr>
-          <tr><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">> €1M</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO (Marc de Garidel)</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
-      <div style="background:#2E5EA8;color:#fff;padding:8px 14px;font-size:12px;font-weight:700">Invoice Approval Matrix</div>
-      <table style="width:100%;border-collapse:collapse;font-size:11px">
-        <thead>
-          <tr style="background:#EBF2FC">
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Amount</th>
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Without PO</th>
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">With PO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €50K</td><td style="padding:5px 10px;color:#333">PM + SVP/VP</td><td style="padding:5px 10px;color:#1F6830">PM only</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €200K</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#1F6830">PM + SVP/VP</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €50K – €500K</td><td style="padding:5px 10px;color:#333">Chiefs</td><td style="padding:5px 10px;color:#333">—</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €200K – €750K</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#333">Chiefs</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €500K – €750K</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance</td><td style="padding:5px 10px;color:#333">—</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €750K – €1M</td><td style="padding:5px 10px;color:#333;font-weight:600">CFO</td><td style="padding:5px 10px;color:#333">—</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €750K – €2M</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance + CFO</td></tr>
-          <tr><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">> €1M / >€2M</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div style="background:#F0F5FF;border:1px solid #C0D4F0;border-radius:4px;padding:8px 14px;font-size:11px;color:#1F3864;margin-bottom:20px">
-    <strong>Key control insight:</strong> With-PO invoices require fewer approvers at every tier — the PO acts as the pre-committed control layer. The largest gap today: PO coverage for CROs is near-zero, pushing those invoices onto the higher-scrutiny without-PO track at large dollar amounts. NetSuite must enforce this matrix and make the PO track the default.
-  </div>
-
-  <div style="margin:16px 0;border:1px solid #E8F5E9;border-radius:6px;overflow:hidden">
-    <div style="background:#E8F5E9;border-left:4px solid #1F6830;padding:8px 14px;font-size:13px;font-weight:700;color:#1F6830;margin:0">📋 Pre-ERP Governance Requirements (before blueprint)</div>
-    <div style="padding:12px 16px">
-      <p style="font-size:12px;color:#555;margin:0 0 8px">These items must be resolved by Abivax leadership before NetSuite configuration begins. ERP enforces decisions — it does not make them.</p>
-      <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.</li><li>PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.</li></ul>
-    </div>
-  </div>
-
-  <div style="margin:16px 0;border:1px solid #FFF3CD;border-radius:6px;overflow:hidden">
-    <div style="background:#FFF8E6;border-left:4px solid #BF6C00;padding:8px 14px;font-size:13px;font-weight:700;color:#BF6C00;margin:0">⚠ Open Decisions — P2P</div>
-    <div style="padding:12px 16px">
-      <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[NetSuite vendor / Mike]</span> Trustpair integration: standard bundled app vs. custom build vs. paid app in NetSuite</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / Finance]</span> France vs US P2P: single design vs. intentionally different by entity</li><li><span style="color:#1F3864;font-weight:600">[Mike (to formalize from RCM)]</span> P2P must-have control/workflow list for ERP blueprint</li></ul>
-    </div>
-  </div>
-
-  <div style="margin:16px 0;border:1px solid #F3E5FF;border-radius:6px;overflow:hidden">
-    <div style="background:#F9F0FF;border-left:4px solid #5B2D8E;padding:8px 14px;font-size:13px;font-weight:700;color:#5B2D8E;margin:0">→ Next Moves — P2P</div>
-    <div style="padding:12px 16px">
-      <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Pre-migration: 22 couple-Défavorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.</li><li>Pre-migration: 10 Défavorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.</li><li>ENGAGE register migration strategy: confirm with Trinidad whether €165M commitments load as open POs or reference data only.</li><li>Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.</li><li>Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.</li><li>Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.</li><li>Get NetSuite response on Trustpair integration model: standard app / custom / paid app.</li><li>Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.</li><li style="color:#888;list-style:none">+ 5 more in source JSON</li></ul>
-    </div>
-  </div>
-
-  <h2>Record to Report (R2R)</h2>
-  
-  <div style="margin:0 0 24px;border:1px solid #E0E8F5;border-radius:6px;overflow:hidden">
-    <div style="background:#2E5EA8;color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between">
-      <span style="font-size:14px;font-weight:700">Record to Report (R2R)</span>
-      <span style="font-size:11px;opacity:0.7">Confidence: partial</span>
-    </div>
-    <div style="padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #F0F4FA">
-      <div>
-        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:5px">Current State</div>
-        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">Financial close is a manual, Excel-heavy process executed by KPMG (Robin Lapous) on a quarterly basis with no system support for consolidation or IFRS adjustments. Sage 100 lacks the data dimensions (country tag, cost center structure) needed for multi-entity reporting. No Chart of Accounts designed for NetSuite. GL/CoA design is the most consequential pre-blueprint decision — it affects every downstream report, rollup, and audit test. Treasury (cash, bank connectivity) is a sub-workstream owned by Roxandra Sturdza (FR) and Kimberly Gordon (US).</p>
-        
       </div>
-      <div>
-        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:5px">Target State (Phase 1)</div>
-        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">NetSuite as the system of record for France SA and US LLC. Quarterly close executed in-system with audit-ready evidence retention. GL/CoA designed for multi-entity, multi-GAAP operation. Treasury integrated for cash visibility and bank connectivity. Manual Excel bridge eliminated or scoped down to exceptional items only.</p>
+
+      <div id="s10-sa-matrices" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F3864;font-weight:700;margin-bottom:8px">Approval Authority Matrices — Source: Formal Policy Docs (Mar 2026)</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Current DoA thresholds NetSuite must enforce. Separate from contract signature authority (Didier ≤€500K · Marc de Garidel >€500K).</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px">
+          <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
+            <div style="background:#2E5EA8;color:#fff;padding:7px 12px;font-size:11px;font-weight:700">PO / Contract Approval</div>
+            <table style="width:100%;border-collapse:collapse;font-size:11px">
+              <thead><tr style="background:#EBF2FC"><th style="padding:5px 10px;text-align:left;color:#1F3864">Threshold</th><th style="padding:5px 10px;text-align:left;color:#1F3864">Approver</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">≤ €50K</td><td style="padding:4px 10px">SVP · VPs · Sr Directors</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">€50K–€500K</td><td style="padding:4px 10px">Chiefs</td></tr>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">€500K–€750K</td><td style="padding:4px 10px;font-weight:600">SVP Finance</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">€750K–€1M</td><td style="padding:4px 10px;font-weight:600">CFO</td></tr>
+                <tr><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">> €1M</td><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
+            <div style="background:#2E5EA8;color:#fff;padding:7px 12px;font-size:11px;font-weight:700">Invoice Approval (Without PO / With PO)</div>
+            <table style="width:100%;border-collapse:collapse;font-size:11px">
+              <thead><tr style="background:#EBF2FC"><th style="padding:5px 10px;text-align:left;color:#1F3864">Amount</th><th style="padding:5px 10px;text-align:left;color:#1F3864">No PO</th><th style="padding:5px 10px;text-align:left;color:#1F3864">With PO</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">≤€50K</td><td style="padding:4px 10px">PM+SVP/VP</td><td style="padding:4px 10px;color:#1F6830">PM only</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">≤€200K</td><td style="padding:4px 10px">—</td><td style="padding:4px 10px;color:#1F6830">PM+SVP/VP</td></tr>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€50K–€500K</td><td style="padding:4px 10px">Chiefs</td><td style="padding:4px 10px">—</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€200K–€750K</td><td style="padding:4px 10px">—</td><td style="padding:4px 10px">Chiefs</td></tr>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€500K–€750K</td><td style="padding:4px 10px;font-weight:600">SVP Finance</td><td style="padding:4px 10px">—</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€750K–€2M</td><td style="padding:4px 10px;font-weight:600">CFO</td><td style="padding:4px 10px;font-weight:600">SVP+CFO</td></tr>
+                <tr><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">>€1M/>€2M</td><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">CEO</td><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="background:#F0F5FF;border:1px solid #C0D4F0;border-radius:4px;padding:7px 12px;font-size:11px;color:#1F3864">
+          <strong>Control insight:</strong> With-PO invoices need fewer approvers at every tier. CRO PO coverage is near-zero today — pushing high-value CRO invoices onto the higher-scrutiny no-PO track. NetSuite must make PO-backed the default path.
+        </div>
+      </div>
+
+      <div id="s10-sa-reqs" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:6px">ERP Design Requirements — France SA</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.</li><li>PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.</li></ul>
+      </div>
+
+      <div id="s10-sa-decisions" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;font-weight:700;margin-bottom:6px">⚠ Open Decisions & Next Moves</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[NetSuite vendor / Mike]</span> Trustpair integration: standard bundled app vs. custom build vs. paid app in NetSuite</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / Finance]</span> France vs US P2P: single design vs. intentionally different by entity</li><li><span style="color:#1F3864;font-weight:600">[Mike (to formalize from RCM)]</span> P2P must-have control/workflow list for ERP blueprint</li></ul>
+        <div style="margin-top:8px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:4px">→ Next Moves</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Pre-migration: 22 couple-Défavorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.</li><li>Pre-migration: 10 Défavorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.</li><li>ENGAGE register migration strategy: confirm with Trinidad whether €165M commitments load as open POs or reference data only.</li><li>Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.</li><li>Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.</li><li>Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.</li><li>Get NetSuite response on Trustpair integration model: standard app / custom / paid app.</li><li>Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.</li><li style="color:#888;list-style:none">+ 5 more in source JSON</li></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── US LLC ──────────────────────────────────────────────────────────── -->
+  <div id="s10-llc" style="margin:16px 0 0">
+    <div style="background:#3D1F6E;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇺🇸</span>
+      <span style="font-size:14px;font-weight:700">US LLC</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">BPO: Kimberly Gordon</span>
+    </div>
+    <div id="s10-llc-status" style="border:1px solid #E0D0F5;border-top:none;border-radius:0 0 6px 6px;padding:20px 16px;background:#FDFBFF">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:28px;flex-shrink:0">⏳</div>
+        <div>
+          <p style="font-size:13px;font-weight:600;color:#3D1F6E;margin:0 0 6px">Current state not yet documented</p>
+          <p style="font-size:12px;color:#555;margin:0 0 10px">US LLC P2P process documentation is outstanding. Kimberly Gordon and Matt Epley were engaged as of Feb 25 — docs have not yet arrived.</p>
+          <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:220px">Item</th><th style="width:130px">Status</th><th style="width:auto">Owner</th></tr></thead><tbody><tr class="even"><td style="">P2P current-state flow</td><td style="color:#BF6C00;font-weight:600">⚠ Not received</td><td style="">Kimberly Gordon / Matt Epley</td></tr><tr class="odd"><td style="">Invoice approval matrix (US)</td><td style="color:#BF6C00;font-weight:600">⚠ Not received</td><td style="">Kimberly Gordon</td></tr><tr class="even"><td style="">Vendor master / Trustpair US</td><td style="color:#BF6C00;font-weight:600">⚠ Partial — US cleanup workbook in share drive</td><td style="">Philippe / Kimberly</td></tr><tr class="odd"><td style="">1099 process documentation</td><td style="color:#BF6C00;font-weight:600">⚠ Not received</td><td style="">TBD</td></tr></tbody></table>
+        </div>
       </div>
     </div>
-    <div style="padding:10px 16px;border-bottom:1px solid #F0F4FA"><span style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888">Key People: </span><span style="font-size:12px;color:#1F3864;font-weight:600">Philippe Goncalves (R2R / close process, FR) · Denis Jankovic (GL / CoA design, FR) · Matt Epley (US GL / CoA) · Roxandra Sturdza (Treasury, FR) · Kimberly Gordon (Treasury, US) · Robin Lapous (KPMG consolidation) · Jade Nguyen (IT / integrations)</span></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">ERP Design Requirements (6)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>GL/CoA designed before blueprint begins — this is the most consequential pre-ERP decision.</li><li>Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area.</li><li>NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.</li><li>Treasury module: bank connectivity and cash management must be in Phase 1 scope.</li><li>Audit evidence retained in-system by transaction — not assembled manually per audit cycle.</li><li>Internal vs audit-liaison handoff points clearly defined — what NetSuite does vs what statutory audit continues to own.</li></ul></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#FFFBF0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;margin-bottom:6px">⚠ Open Decisions</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[Mike / Denis Jankovic / Hema]</span> COA and cost center design: global consistency vs entity-level separation</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / CFGI]</span> Close dependency boundary: what gets insourced vs stays audit-only post go-live</li><li><span style="color:#1F3864;font-weight:600">[Mike / Roxandra / Jade]</span> Treasury module scope: which banking integrations are in Phase 1</li></ul></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:6px">Next Moves (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths — baseline before blueprint.</li><li>Initiate GL/CoA design conversation with Denis Jankovic and Hema — agree on global vs entity-level approach.</li><li>Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.</li><li>Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.</li><li>Extract FSCP RCM ERP-signal controls and map to named owners with remediation commitments.</li></ul></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#F5F0FF"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;margin-bottom:6px">Waiting On</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Denis Jankovic: availability and initial CoA design input</li><li>Hema: reporting process docs, SOX findings, and bridge workflow</li><li>Robin Lapous (KPMG): consolidation/IFRS adjustments current-state documentation</li></ul></div>
-    <div style="padding:12px 16px;background:#FFF0F0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;margin-bottom:6px">Data Gaps — Unknown (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Chart of Accounts / cost center future-state design principles not formalized.</li><li>Current-state close process with step-by-step ownership (internal vs KPMG by step) not documented.</li><li>US LLC financial close process and evidence practices not documented.</li><li>Treasury current-state: bank connectivity, cash management tools, and reconciliation process not mapped.</li><li>Intercompany eliminations process not documented.</li></ul></div>
   </div>
 
-  <h2>Reporting &amp; Planning</h2>
-  
-  <div style="margin:0 0 24px;border:1px solid #E0E8F5;border-radius:6px;overflow:hidden">
-    <div style="background:#2E5EA8;color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between">
-      <span style="font-size:14px;font-weight:700">Reporting &amp; Planning</span>
-      <span style="font-size:11px;opacity:0.7">Confidence: partial</span>
+</section>
+
+<section id="s16">
+  <h1><span class="sec-num">R2R</span>Record to Report</h1>
+  <p style="font-size:13px;color:#444;margin:0 0 6px">Financial close is a manual, Excel-heavy process executed by KPMG (Robin Lapous) on a quarterly basis with no system support for consolidation or IFRS adjustments. Sage 100 lacks the data dimensions (country tag, cost center structure) needed for multi-entity reporting. No Chart of Accounts designed for NetSuite. GL/CoA design is the most consequential pre-blueprint decision — it affects every downstream report, rollup, and audit test. Treasury (cash, bank connectivity) is a sub-workstream owned by Roxandra Sturdza (FR) and Kimberly Gordon (US).</p>
+  <p style="font-size:11px;color:#2E5EA8;font-weight:600;margin:0 0 20px">Confidence: partial ·  · BPOs: Philippe Goncalves (R2R / close process, FR) · Denis Jankovic (GL / CoA design, FR) · Matt Epley (US GL / CoA)</p>
+
+  <!-- ── France SA ──────────────────────────────────────────────────────────── -->
+  <div id="s16-sa" style="margin:20px 0 0">
+    <div style="background:#1F3864;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇫🇷</span>
+      <span style="font-size:14px;font-weight:700">France SA</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">Close: Robin Lapous (KPMG) · BPO: Roxandra Sturdza</span>
     </div>
-    <div style="padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #F0F4FA">
-      <div>
-        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:5px">Current State</div>
-        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&amp;A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.</p>
-        
+    <div style="border:1px solid #D6E4F7;border-top:none;border-radius:0 0 6px 6px;padding:0 0 16px">
+
+      <div id="s16-sa-gaap" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F3864;font-weight:700;margin-bottom:8px">Multi-Entity / Multi-GAAP Requirements</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Abivax runs two entities under different accounting frameworks. NetSuite OneWorld must carry both books and support automated intercompany elimination.</p>
+        <table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="background:#2E5EA8"><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:130px">Entity</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:170px">GAAP Framework</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:205px">Current Close Owner</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:auto">NetSuite Requirement</th></tr></thead><tbody><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;font-weight:600;background:#EBF2FC">Abivax SA (France)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">IFRS + French GAAP (statutory)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Robin Lapous (KPMG) — quarterly, manual Excel</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830">Multi-book: IFRS primary + French GAAP secondary. System-enforced close.</td></tr><tr style="background:#FAFBFF"><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;font-weight:600;background:#EBF2FC">Abivax LLC (US)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">US GAAP</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Not documented — Matt Epley engaged, docs pending</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830">OneWorld US entity. Intercompany eliminations automated.</td></tr><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;font-weight:600;background:#EBF2FC">Consolidated</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">IFRS (IFRS 16, SEC-path)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">KPMG-led quarterly consolidation, Excel-based</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830">NetSuite consolidation module. Internal ownership of IFRS adjustments post go-live.</td></tr></tbody></table>
       </div>
-      <div>
-        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:5px">Target State (Phase 1)</div>
-        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">NetSuite should deliver a stronger quarterly reporting operating model immediately — better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.</p>
+
+      <div id="s16-sa-coa" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:8px">Chart of Accounts — Design Dimensions</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Five structural dimensions must be designed before blueprint. Country and Functional Area are the two highest-risk gaps — neither exists in Sage today.</p>
+        <table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="background:#2E5EA8"><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:130px">Dimension</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:230px">Current State</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:auto">NetSuite Requirement</th></tr></thead><tbody><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Entity</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#8B1A1A;font-size:11px">Sage 100 France SA only (US LLC separate instance)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830;font-size:11px">OneWorld — single COA, entity separation via subsidiary</td></tr><tr style="background:#FAFBFF"><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Country</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#8B1A1A;font-size:11px">Missing in Sage — no country tag on transactions</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830;font-size:11px">Required dimension; must be designed before blueprint</td></tr><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Cost Center</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#8B1A1A;font-size:11px">Partial — exists in Sage, inconsistently used</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830;font-size:11px">Standardized across SA + LLC; global vs entity-level TBD (key decision)</td></tr><tr style="background:#FAFBFF"><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Functional Area</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#8B1A1A;font-size:11px">Not available — limits G&amp;A / R&amp;D split</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830;font-size:11px">G&amp;A / R&amp;D / Clinical split required; drives IFRS/SEC disclosures</td></tr><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Project Code</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#8B1A1A;font-size:11px">Used in P2P (ADM/RAD); not consistently in GL</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830;font-size:11px">Extend to GL for clinical trial cost tracking</td></tr></tbody></table>
       </div>
+
+      <div id="s16-sa-treasury" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:8px">Treasury Sub-Workstream — France SA</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Treasury is a named Phase 1 sub-workstream. Bank connectivity and cash management in scope; cash flow forecasting is Phase 2.</p>
+        <table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="background:#2E5EA8"><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:90px">Entity</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:140px">Owner</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:195px">Current Tool</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:auto">Phase 1 Requirement</th></tr></thead><tbody><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">France SA</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Roxandra Sturdza</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Agicap (cash visibility) + SocGen / Wells Fargo</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Bank connectivity in NetSuite; payment integration via Agicap or direct bank feed.</td></tr><tr style="background:#FAFBFF"><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">US LLC</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Kimberly Gordon</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Wells Fargo (direct) — Agicap LLC connection in progress</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">US bank feed confirmed in scope; SWIFT/ACH integration method TBD.</td></tr></tbody></table>
+      </div>
+
+      <div id="s16-sa-decisions" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;font-weight:700;margin-bottom:6px">⚠ Open Decisions & Next Moves</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li><span style="color:#1F3864;font-weight:600">[Mike / Denis Jankovic / Hema]</span> COA and cost center design: global consistency vs entity-level separation</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / CFGI]</span> Close dependency boundary: what gets insourced vs stays audit-only post go-live</li><li><span style="color:#1F3864;font-weight:600">[Mike / Roxandra / Jade]</span> Treasury module scope: which banking integrations are in Phase 1</li></ul>
+        <div style="margin-top:8px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:4px">→ Next Moves</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li>Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths — baseline before blueprint.</li><li>Initiate GL/CoA design conversation with Denis Jankovic and Hema — agree on global vs entity-level approach.</li><li>Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.</li><li>Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.</li><li>Extract FSCP RCM ERP-signal controls and map to named owners with remediation commitments.</li></ul>
+        <div style="margin-top:12px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:4px">ERP Design Requirements</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li>GL/CoA designed before blueprint begins — this is the most consequential pre-ERP decision.</li><li>Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area.</li><li>NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.</li><li>Treasury module: bank connectivity and cash management must be in Phase 1 scope.</li><li>Audit evidence retained in-system by transaction — not assembled manually per audit cycle.</li><li>Internal vs audit-liaison handoff points clearly defined — what NetSuite does vs what statutory audit continues to own.</li></ul>
+      </div>
+
     </div>
-    <div style="padding:10px 16px;border-bottom:1px solid #F0F4FA"><span style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888">Key People: </span><span style="font-size:12px;color:#1F3864;font-weight:600">Frederick Golly (FP&amp;A) · Robin Lapous (KPMG) · Hema Keshava · Adrian Holbrook · Matt Epley</span></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">ERP Design Requirements (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.</li><li>NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).</li><li>Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.</li><li>Internal vs audit-liaison handoff points clearly defined in system design — what NetSuite does vs what statutory audit still does.</li><li>Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale.</li></ul></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#FFFBF0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;margin-bottom:6px">⚠ Open Decisions</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[Mike / Frederick / Hema]</span> COA and cost center design: global consistency vs entity-level separation</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / CFGI]</span> Consultant dependency vs in-house scope for bridge and consolidation work</li><li><span style="color:#1F3864;font-weight:600">[Mike / Frederick]</span> Reporting dimension minimum set (country, entity, cost center, others)</li></ul></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:6px">Next Moves (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Build reporting baseline flow: steps, owners, systems, existing handoffs — from Hema/audit-liaison responses.</li><li>Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.</li><li>Define minimum reporting dimension set with Frederick input.</li><li>Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.</li><li>Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)</li></ul></div>
-    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#F5F0FF"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;margin-bottom:6px">Waiting On</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Frederick Golly: FP&amp;A reporting dimensions and core output needs response</li><li>Hema: reporting process docs and bridge workflow</li><li>Robin Lapous (KPMG): consolidation/IFRS adjustments process documentation</li></ul></div>
-    <div style="padding:12px 16px;background:#FFF0F0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;margin-bottom:6px">Data Gaps — Unknown (6)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.</li><li>COA / cost center future-state design principles not formalized (global consistency vs entity separation).</li><li>Department reporting expectations not standardized (clinical visibility, G&amp;A/R&amp;D split expectations unclear).</li><li>Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.</li><li>Frederick response on FP&amp;A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).</li><li>Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance.</li></ul></div>
   </div>
+
+  <!-- ── US LLC ──────────────────────────────────────────────────────────── -->
+  <div id="s16-llc" style="margin:16px 0 0">
+    <div style="background:#3D1F6E;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇺🇸</span>
+      <span style="font-size:14px;font-weight:700">US LLC</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">BPO: Matt Epley (engagement in progress)</span>
+    </div>
+    <div id="s16-llc-status" style="border:1px solid #E0D0F5;border-top:none;border-radius:0 0 6px 6px;padding:20px 16px;background:#FDFBFF">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:28px;flex-shrink:0">⏳</div>
+        <div>
+          <p style="font-size:13px;font-weight:600;color:#3D1F6E;margin:0 0 6px">US LLC R2R documentation pending</p>
+          <p style="font-size:12px;color:#555;margin:0 0 10px">COA files for US LLC are being extracted by Codex from the Finance Projects-IT share drive (SAGE/ABIVAX LLC/ cluster). Matt Epley engaged Feb 25; current-state docs outstanding.</p>
+          <table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="background:#2E5EA8"><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:250px">Item</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:175px">Status</th><th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;width:auto">Owner</th></tr></thead><tbody><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">US GAAP close process documentation</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#BF6C00;font-weight:600">⚠ Not received</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Matt Epley</td></tr><tr style="background:#FAFBFF"><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">US LLC COA files (Sage)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#1F6830;font-weight:600">🔄 Codex extracting from share drive</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Codex → Claude</td></tr><tr style=""><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">US bank feed confirmation (Wells Fargo)</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#BF6C00;font-weight:600">⚠ Pending</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Kimberly Gordon</td></tr><tr style="background:#FAFBFF"><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">Intercompany elimination design</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;color:#BF6C00;font-weight:600">⚠ Pre-blueprint decision required</td><td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;">NetSuite / CFGI</td></tr></tbody></table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="s17">
+  <h1><span class="sec-num">RPT</span>Reporting &amp; Planning</h1>
+  <p style="font-size:13px;color:#444;margin:0 0 6px">French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&amp;A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.</p>
+  <p style="font-size:11px;color:#2E5EA8;font-weight:600;margin:0 0 20px">Confidence: partial · </p>
+
+  <!-- ── France SA ──────────────────────────────────────────────────────────── -->
+  <div id="s17-sa" style="margin:20px 0 0">
+    <div style="background:#1F3864;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇫🇷</span>
+      <span style="font-size:14px;font-weight:700">France SA</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">Owner: Robin Lapous (KPMG)</span>
+    </div>
+    <div style="border:1px solid #D6E4F7;border-top:none;border-radius:0 0 6px 6px;padding:0 0 16px">
+
+      <div id="s17-sa-current" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F3864;font-weight:700;margin-bottom:8px">Current State — Known Facts</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li>KPMG (Robin Lapous) handles consolidation and IFRS adjustments — manual in Excel, no formal documentation.</li><li>Frederick (FP&amp;A): pragmatic target is quarterly reporting quality first; monthly is later-stage.</li><li>Workday Adaptive/Interactive exists but is underused — intended for internal consolidation/intercompany and forecasting/variance visibility.</li><li>Current Sage data model is missing a country tag — impacts reporting dimensions and cost center use cases.</li><li>Milestone billing is not automated — creates reporting/timing visibility limitations.</li><li>CFTI FSCP RCM received and structure confirmed. 39 reporting controls with gap/remediation columns.</li><li>Internal vs KPMG ownership split by reporting step is not yet mapped.</li></ul>
+        <div style="margin-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;font-weight:700;margin-bottom:4px">Data Gaps</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li>Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.</li><li>COA / cost center future-state design principles not formalized (global consistency vs entity separation).</li><li>Department reporting expectations not standardized (clinical visibility, G&amp;A/R&amp;D split expectations unclear).</li><li>Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.</li><li>Frederick response on FP&amp;A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).</li><li>Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance.</li></ul>
+      </div>
+
+      <div id="s17-sa-reqs" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:6px">ERP Design Requirements</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li>Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.</li><li>NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).</li><li>Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.</li><li>Internal vs audit-liaison handoff points clearly defined in system design — what NetSuite does vs what statutory audit still does.</li><li>Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale.</li></ul>
+      </div>
+
+      <div id="s17-sa-decisions" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;font-weight:700;margin-bottom:6px">⚠ Open Decisions & Next Moves</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li><span style="color:#1F3864;font-weight:600">[Mike / Frederick / Hema]</span> COA and cost center design: global consistency vs entity-level separation</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / CFGI]</span> Consultant dependency vs in-house scope for bridge and consolidation work</li><li><span style="color:#1F3864;font-weight:600">[Mike / Frederick]</span> Reporting dimension minimum set (country, entity, cost center, others)</li></ul>
+        <div style="margin-top:8px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:4px">→ Next Moves</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8"><li>Build reporting baseline flow: steps, owners, systems, existing handoffs — from Hema/audit-liaison responses.</li><li>Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.</li><li>Define minimum reporting dimension set with Frederick input.</li><li>Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.</li><li>Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)</li></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── US LLC ──────────────────────────────────────────────────────────── -->
+  <div id="s17-llc" style="margin:16px 0 0">
+    <div style="background:#3D1F6E;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇺🇸</span>
+      <span style="font-size:14px;font-weight:700">US LLC</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">Status: pending</span>
+    </div>
+    <div id="s17-llc-status" style="border:1px solid #E0D0F5;border-top:none;border-radius:0 0 6px 6px;padding:20px 16px;background:#FDFBFF">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:28px;flex-shrink:0">⏳</div>
+        <div>
+          <p style="font-size:13px;font-weight:600;color:#3D1F6E;margin:0 0 6px">US LLC reporting documentation pending</p>
+          <p style="font-size:12px;color:#555;margin:0">US LLC reporting structure, management reporting format, and consolidation inputs are not yet documented. Expected to come from Matt Epley engagement and NetSuite OneWorld blueprint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <section id="s11">
@@ -585,20 +687,22 @@ flowchart LR
       edgeLabelBackground: '#fff', fontFamily: 'Inter, system-ui, sans-serif' }
   });
 
-  // Highlight active nav link on scroll
-  const links = document.querySelectorAll('a.nav-link');
-  const secs  = document.querySelectorAll('section[id]');
-  const obs   = new IntersectionObserver(entries => {
+  // Highlight active nav link on scroll (all 3 levels)
+  const allNavLinks = document.querySelectorAll('a.nav-link, a.nav-entity-link, a.nav-sub-sub-link');
+  const secs = document.querySelectorAll('section[id], [id^="s10-"], [id^="s16-"], [id^="s17-"]');
+
+  const obs = new IntersectionObserver(entries => {
     entries.forEach(en => {
       if (en.isIntersecting) {
-        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+        const href = '#' + en.target.id;
+        allNavLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === href));
       }
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
+  }, { rootMargin: '-10% 0px -65% 0px' });
   secs.forEach(s => obs.observe(s));
 
-  // Smooth scroll
-  links.forEach(l => l.addEventListener('click', e => {
+  // Smooth scroll for all nav links
+  allNavLinks.forEach(l => l.addEventListener('click', e => {
     e.preventDefault();
     const t = document.querySelector(l.getAttribute('href'));
     if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });

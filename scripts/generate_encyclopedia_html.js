@@ -64,48 +64,171 @@ function kv(pairs, accent = '#2E5EA8') {
   return `<table class="kv-table" style="--accent:${accent}"><tbody>${rows}</tbody></table>`;
 }
 
+// ── Shared entity-split renderer ──────────────────────────────────────────────
+// Renders a fact array as SA | LLC side-by-side columns.
+// Facts tagged 'both' appear in both columns; 'SA' left only; 'LLC' right only.
+function entitySplitFacts(arr, title, opts = {}) {
+  const getText = item => typeof item === 'string' ? item
+    : (item.fact || item.decision || item.move || item.action || '');
+  const getEntity = item => typeof item === 'string' ? 'both' : (item.entity || 'both');
+
+  const saItems  = arr.filter(i => ['SA', 'both'].includes(getEntity(i)));
+  const llcItems = arr.filter(i => ['LLC', 'both'].includes(getEntity(i)));
+
+  const listHtml = (items, emptyMsg) => {
+    if (!items.length) return `<p style="font-size:12px;color:#aaa;font-style:italic">${emptyMsg}</p>`;
+    return '<ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8">'
+      + items.map(i => `<li>${e(getText(i))}</li>`).join('')
+      + '</ul>';
+  };
+
+  const saCount  = arr.filter(i => getEntity(i) === 'SA').length;
+  const llcCount = arr.filter(i => getEntity(i) === 'LLC').length;
+  const bothCount = arr.filter(i => getEntity(i) === 'both').length;
+
+  const llcEmpty = llcCount === 0 && bothCount === 0;
+  const llcLabel = llcEmpty
+    ? `<span style="font-size:10px;color:#BF6C00;font-weight:700;margin-left:6px">⚠ No data yet</span>`
+    : `<span style="font-size:10px;color:#888;margin-left:4px">(${llcItems.length})</span>`;
+
+  return `
+  <div style="margin:14px 0;border:1px solid #E0E8F5;border-radius:6px;overflow:hidden">
+    ${title ? `<div style="background:#EBF2FC;padding:7px 14px;font-size:11px;font-weight:700;color:#1F3864;text-transform:uppercase;letter-spacing:0.7px">${e(title)}</div>` : ''}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+      <div style="padding:12px 16px;border-right:1px solid #F0F4FA">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#2E5EA8;font-weight:700;margin-bottom:6px">🇫🇷 France SA <span style="font-weight:400;color:#888">(${saItems.length})</span></div>
+        ${listHtml(saItems, 'No SA-specific facts recorded.')}
+      </div>
+      <div style="padding:12px 16px;${llcEmpty ? 'background:#FFFBF4' : ''}">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:6px">🇺🇸 US LLC${llcLabel}</div>
+        ${llcEmpty
+          ? `<p style="font-size:12px;color:#BF6C00;font-style:italic">Pending — US LLC current-state docs not yet received. Kimberly Gordon / Matt Epley engaged.</p>`
+          : listHtml(llcItems, 'No LLC-specific facts recorded.')}
+      </div>
+    </div>
+  </div>`;
+}
+
 // ── Sections ──────────────────────────────────────────────────────────────────
 const navGroups = [
   {
-    label: 'Foundation',
+    label: 'Program Status',
     sections: [
       { id: 's1',  num: '1',  title: 'Program Overview' },
-      { id: 's2',  num: '2',  title: 'Key Decisions Log' },
-      { id: 's3',  num: '3',  title: 'System Selection' },
-      { id: 's4',  num: '4',  title: 'Delivery Model' },
+      { id: 's12', num: '—',  title: 'Open Items & Actions' },
     ]
   },
   {
-    label: 'Program Detail',
+    label: 'Foundation',
     sections: [
-      { id: 's5',  num: '5',  title: 'SOX and Controls' },
-      { id: 's6',  num: '6',  title: 'Program Budget' },
+      { id: 's2',  num: '2',  title: 'Key Decisions' },
+      { id: 's3',  num: '3',  title: 'System Selection' },
+      { id: 's6',  num: '6',  title: 'Budget & Contract' },
       { id: 's7',  num: '7',  title: 'Timeline' },
-      { id: 's8',  num: '8',  title: 'Risk Register' },
+    ]
+  },
+  {
+    label: 'Delivery',
+    sections: [
+      { id: 's4',  num: '4',  title: 'Delivery Model' },
       { id: 's9',  num: '9',  title: 'Vendor Profiles' },
-      { id: 's10', num: '10', title: 'ERP Pillars' },
-      { id: 's15', num: '15', title: 'Integrations & Migration' },
+      { id: 's11', num: '11', title: 'Governance' },
+    ]
+  },
+  {
+    label: 'Pillars',
+    sections: [
+      { id: 's10', num: 'P2P', title: 'P2P — Procure to Pay',
+        children: [
+          { id: 's10-sa',  title: '🇫🇷 France SA', isEntity: true,
+            children: [
+              { id: 's10-sa-flow',      title: 'Process Flow' },
+              { id: 's10-sa-matrices',  title: 'Approval Matrices' },
+              { id: 's10-sa-reqs',      title: 'ERP Requirements' },
+              { id: 's10-sa-decisions', title: 'Open Decisions' },
+            ]
+          },
+          { id: 's10-llc', title: '🇺🇸 US LLC', isEntity: true,
+            children: [
+              { id: 's10-llc-status', title: 'Status & Gaps' },
+            ]
+          },
+        ]
+      },
+      { id: 's16', num: 'R2R', title: 'R2R — Record to Report',
+        children: [
+          { id: 's16-sa',  title: '🇫🇷 France SA', isEntity: true,
+            children: [
+              { id: 's16-sa-gaap',      title: 'Multi-GAAP' },
+              { id: 's16-sa-coa',       title: 'COA Design' },
+              { id: 's16-sa-treasury',  title: 'Treasury' },
+              { id: 's16-sa-decisions', title: 'Open Decisions' },
+            ]
+          },
+          { id: 's16-llc', title: '🇺🇸 US LLC', isEntity: true,
+            children: [
+              { id: 's16-llc-status', title: 'Status & Gaps' },
+            ]
+          },
+        ]
+      },
+      { id: 's17', num: 'RPT', title: 'Reporting & Planning',
+        children: [
+          { id: 's17-sa',  title: '🇫🇷 France SA', isEntity: true,
+            children: [
+              { id: 's17-sa-current',   title: 'Current State' },
+              { id: 's17-sa-reqs',      title: 'ERP Requirements' },
+              { id: 's17-sa-decisions', title: 'Open Decisions' },
+            ]
+          },
+          { id: 's17-llc', title: '🇺🇸 US LLC', isEntity: true,
+            children: [
+              { id: 's17-llc-status', title: 'Status & Gaps' },
+            ]
+          },
+        ]
+      },
+      { id: 's5',  num: 'SOX', title: 'SOX / Controls' },
+    ]
+  },
+  {
+    label: 'Risk & Systems',
+    sections: [
+      { id: 's8',  num: '8',  title: 'Risk Register' },
+      { id: 's15', num: '15', title: 'Systems & Integration' },
     ]
   },
   {
     label: 'Reference',
     sections: [
-      { id: 's11', num: '11', title: 'Governance' },
-      { id: 's12', num: '12', title: 'Open Items' },
       { id: 's13', num: '13', title: 'Outputs Registry' },
       { id: 's14', num: '14', title: 'Change Log' },
     ]
   },
 ];
 
-// Flat list for IntersectionObserver
+// Flat list for IntersectionObserver (top-level sections only)
 const sections = navGroups.flatMap(g => g.sections);
+
+function renderNavItem(s) {
+  const children = s.children || [];
+  if (s.isEntity) {
+    // Entity level (France SA / US LLC) — renders as a sub-header with its own children
+    const grandchildren = children.map(c =>
+      `<a href="#${c.id}" class="nav-sub-sub-link">${c.title}</a>`
+    ).join('');
+    return `<div class="nav-entity-label"><a href="#${s.id}" class="nav-entity-link">${s.title}</a></div>`
+      + (grandchildren ? `<div class="nav-sub-sub-list">${grandchildren}</div>` : '');
+  }
+  const childHtml = children.length
+    ? `<div class="nav-sub-list">${children.map(c => renderNavItem(c)).join('')}</div>`
+    : '';
+  return `<a href="#${s.id}" class="nav-link${children.length ? ' has-children' : ''}"><span class="nav-num">${s.num||''}</span>${s.title}</a>${childHtml}`;
+}
 
 const nav = navGroups.map(g => `
   <div class="nav-group-label">${g.label}</div>
-  ${g.sections.map(s =>
-    `<a href="#${s.id}" class="nav-link"><span class="nav-num">${s.num}</span>${s.title}</a>`
-  ).join('')}
+  ${g.sections.map(s => renderNavItem(s)).join('')}
 `).join('');
 
 // ── Section content ───────────────────────────────────────────────────────────
@@ -414,7 +537,7 @@ function s10() {
   // ── shared helpers ──────────────────────────────────────────────────────────
   const ul = (arr, limit = 999, style = '') => {
     const items = arr.slice(0, limit).map(item => {
-      const text  = typeof item === 'string' ? item : (item.decision || item.move || item.action || JSON.stringify(item));
+      const text  = typeof item === 'string' ? item : (item.fact || item.decision || item.move || item.action || JSON.stringify(item));
       const owner = typeof item === 'object' ? (item.owner || '') : '';
       return owner
         ? `<li><span style="color:#1F3864;font-weight:600">[${e(owner)}]</span> ${e(text)}</li>`
@@ -543,6 +666,80 @@ function s10() {
   const ctrlNodes = (p2pFlow.nodes || []).filter(n => n.lane === 'controls');
   const ctrl = i => (ctrlNodes[i] || {}).label || '';
 
+  // ── R2R section builder ─────────────────────────────────────────────────────
+  const r2r = pillarsData.find(p => p.id === 'record-to-report') || {};
+
+  function r2rSection() {
+    const r2rReqs    = r2r.erpDesignRequirements || [];
+    const r2rPending = r2r.keyDecisionsPending   || [];
+    const r2rMoves   = r2r.nextMoves             || [];
+    const r2rUnknown = r2r.currentStateUnknown   || [];
+    const r2rKnown   = r2r.currentStateKnown     || [];
+
+    const subCard = (title, items, accentColor = '#2E5EA8', bg = '#F8FAFF') => `
+  <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:10px">
+    <div style="background:${bg};border-left:4px solid ${accentColor};padding:7px 14px;font-size:12px;font-weight:700;color:${accentColor}">${e(title)}</div>
+    <div style="padding:10px 14px">${items}</div>
+  </div>`;
+
+    // Multi-GAAP table
+    const multiGaapTable = table(
+      ['Entity', 'GAAP Framework', 'Current Close Owner', 'ERP Requirement'],
+      [
+        ['Abivax SA (France)', 'IFRS + French GAAP (statutory)', 'Robin Lapous (KPMG) — quarterly, manual Excel', 'NetSuite multi-book: IFRS primary + French GAAP secondary. System-enforced close.'],
+        ['Abivax LLC (US)',    'US GAAP',                        'Not documented — Matt Epley engaged, docs pending', 'NetSuite OneWorld US entity. Intercompany eliminations automated.'],
+        ['Consolidated',      'IFRS (IFRS 16, SEC-path)',        'KPMG-led quarterly consolidation, Excel-based', 'NetSuite consolidation module. Internal ownership of IFRS adjustments post go-live.'],
+      ],
+      { widths: ['140px','175px','210px','auto'], cellStyle: (r,c) => c===0?'font-weight:600;background:#EBF2FC':c===3?'color:#1F6830':''}
+    );
+
+    // COA design table
+    const coaTable = table(
+      ['Dimension', 'Current State', 'Requirement'],
+      [
+        ['Entity',         'Sage 100 — France SA only (US LLC separate instance)', 'NetSuite OneWorld — single chart, entity separation via subsidiary'],
+        ['Country',        'Missing in Sage — no country tag on transactions',       'Required dimension in NetSuite COA design before blueprint'],
+        ['Cost Center',    'Partial — exists in Sage but not consistently used',     'Standardized across SA and LLC; global consistency vs entity-level TBD'],
+        ['Functional Area','Not available — limits R&D vs G&A split reporting',     'G&A / R&D / Clinical split required; drives SEC/IFRS disclosures'],
+        ['Project Code',   'Used in P2P (ADM/RAD); not consistently in GL',         'Extend to GL for clinical trial cost tracking by trial / indication'],
+      ],
+      { widths: ['130px','240px','auto'], cellStyle: (r,c) => c===1?'color:#8B1A1A;font-size:11px':c===2?'color:#1F6830;font-size:11px':'' }
+    );
+
+    return `
+  <p style="font-size:13px;color:#444;margin:0 0 16px">${e(r2r.currentStateSummary||'')} <span style="color:#2E5EA8;font-weight:600">Confidence: ${e(r2r.confidenceLevel||'')}</span> · ${e(r2r.cftiControls ? (r2r.cftiControls.total||0) + ' CFTI controls (' + (r2r.cftiControls.erpSignal||0) + ' ERP-signal)' : '')}</p>
+
+  ${subCard('Multi-Entity / Multi-GAAP Requirements — Phase 1 Scope', multiGaapTable)}
+
+  ${subCard('Chart of Accounts — Design Dimensions', coaTable, '#1F6830', '#F0F7F0')}
+
+  ${subCard('Treasury Sub-Workstream', `
+    <p style="font-size:12px;color:#555;margin:0 0 8px">Treasury is a named Phase 1 sub-workstream. Bank connectivity and cash management are in scope; cash flow forecasting is Phase 2.</p>
+    ${table(['Entity','Owner','Current Tool','Phase 1 Requirement'],[
+      ['France SA', 'Roxandra Sturdza', 'Agicap (cash visibility) + SocGen / Wells Fargo', 'Bank connectivity in NetSuite; payment integration via Agicap or direct bank feed.'],
+      ['US LLC',    'Kimberly Gordon',  'Wells Fargo (direct) — Agicap LLC connection in progress', 'US bank feed confirmed in scope; SWIFT/ACH integration method TBD.'],
+    ], { widths: ['90px','140px','195px','auto'] })}
+  `, '#5B2D8E', '#F9F0FF')}
+
+  ${r2rPending.length ? `
+  <div style="margin:10px 0;border:1px solid #FFF3CD;border-radius:6px;overflow:hidden">
+    <div style="background:#FFF8E6;border-left:4px solid #BF6C00;padding:7px 14px;font-size:12px;font-weight:700;color:#BF6C00">⚠ Open Decisions — R2R</div>
+    <div style="padding:10px 14px">${ul(r2rPending)}</div>
+  </div>` : ''}
+
+  ${r2rUnknown.length ? `
+  <div style="margin:10px 0;border:1px solid #FFDDDD;border-radius:6px;overflow:hidden">
+    <div style="background:#FFF0F0;border-left:4px solid #8B1A1A;padding:7px 14px;font-size:12px;font-weight:700;color:#8B1A1A">Data Gaps (${r2rUnknown.length})</div>
+    <div style="padding:10px 14px">${ul(r2rUnknown)}</div>
+  </div>` : ''}
+
+  ${r2rMoves.length ? `
+  <div style="margin:10px 0 20px;border:1px solid #F3E5FF;border-radius:6px;overflow:hidden">
+    <div style="background:#F9F0FF;border-left:4px solid #5B2D8E;padding:7px 14px;font-size:12px;font-weight:700;color:#5B2D8E">→ Next Moves</div>
+    <div style="padding:10px 14px">${ul(r2rMoves)}</div>
+  </div>` : ''}`;
+  }
+
   return `
 <section id="s10">
   <h1><span class="sec-num">10</span>ERP Pillars and Process Scope</h1>
@@ -556,100 +753,326 @@ function s10() {
     ['Platform / Enablement',  'Jade Nguyen · Benjamin Talmant',     'IT integrations; system admin; access validation; architecture; change management', 'Integration architecture confirmed. Admin ownership explicit. IT capacity committed. Change plan live.'],
   ], { widths: ['165px','175px','210px','auto'] })}
 
-  <h2>Procure to Pay (P2P) — France SA</h2>
-  <p>P2P is the highest-priority pillar for Phase 1. 20 CFTI controls, 5 ERP-signal. Current state is manual and fragmented across Sage, DocuShare, Trustpair, and Agicap. Below is the France SA flow with per-area current state, pain points, and NetSuite requirements.</p>
+  <!-- ── France SA ─────────────────────────────────────────────────────── -->
+  <div id="s10-sa" style="margin:20px 0 0">
+    <div style="background:#1F3864;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇫🇷</span>
+      <span style="font-size:14px;font-weight:700">France SA</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">20 CFTI controls · 5 ERP-signal · BPO: Juliette Courtot</span>
+    </div>
+    <div style="border:1px solid #D6E4F7;border-top:none;border-radius:0 0 6px 6px;padding:0 0 16px">
 
-  <div style="margin:20px 0;padding:16px;background:#F8FAFF;border:1px solid #D6E4F7;border-radius:6px">
-    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:12px">France SA — Current State Process Flow</div>
-    <div class="mermaid">
+      <div id="s10-sa-flow" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:10px">Current State Process Flow — Source: SOP0084_V01 · ABIVAX Purchase Process ENG (2024)</div>
+        <div style="padding:12px;background:#F8FAFF;border:1px solid #D6E4F7;border-radius:6px">
+          <div class="mermaid">
 ${mermaidDef}
+          </div>
+        </div>
+        ${p2pSteps[0] ? stepCard(p2pSteps[0], reqMap.vendor,  ctrl(0)) : ''}
+        ${p2pSteps[1] ? stepCard(p2pSteps[1], reqMap.invoice, ctrl(1)) : ''}
+        ${p2pSteps[2] ? stepCard(p2pSteps[2], reqMap.payment, ctrl(2)) : ''}
+      </div>
+
+      <div id="s10-sa-matrices" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F3864;font-weight:700;margin-bottom:8px">Approval Authority Matrices — Source: Formal Policy Docs (Mar 2026)</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Current DoA thresholds NetSuite must enforce. Separate from contract signature authority (Didier ≤€500K · Marc de Garidel >€500K).</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px">
+          <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
+            <div style="background:#2E5EA8;color:#fff;padding:7px 12px;font-size:11px;font-weight:700">PO / Contract Approval</div>
+            <table style="width:100%;border-collapse:collapse;font-size:11px">
+              <thead><tr style="background:#EBF2FC"><th style="padding:5px 10px;text-align:left;color:#1F3864">Threshold</th><th style="padding:5px 10px;text-align:left;color:#1F3864">Approver</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">≤ €50K</td><td style="padding:4px 10px">SVP · VPs · Sr Directors</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">€50K–€500K</td><td style="padding:4px 10px">Chiefs</td></tr>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">€500K–€750K</td><td style="padding:4px 10px;font-weight:600">SVP Finance</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">€750K–€1M</td><td style="padding:4px 10px;font-weight:600">CFO</td></tr>
+                <tr><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">> €1M</td><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
+            <div style="background:#2E5EA8;color:#fff;padding:7px 12px;font-size:11px;font-weight:700">Invoice Approval (Without PO / With PO)</div>
+            <table style="width:100%;border-collapse:collapse;font-size:11px">
+              <thead><tr style="background:#EBF2FC"><th style="padding:5px 10px;text-align:left;color:#1F3864">Amount</th><th style="padding:5px 10px;text-align:left;color:#1F3864">No PO</th><th style="padding:5px 10px;text-align:left;color:#1F3864">With PO</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">≤€50K</td><td style="padding:4px 10px">PM+SVP/VP</td><td style="padding:4px 10px;color:#1F6830">PM only</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">≤€200K</td><td style="padding:4px 10px">—</td><td style="padding:4px 10px;color:#1F6830">PM+SVP/VP</td></tr>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€50K–€500K</td><td style="padding:4px 10px">Chiefs</td><td style="padding:4px 10px">—</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€200K–€750K</td><td style="padding:4px 10px">—</td><td style="padding:4px 10px">Chiefs</td></tr>
+                <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€500K–€750K</td><td style="padding:4px 10px;font-weight:600">SVP Finance</td><td style="padding:4px 10px">—</td></tr>
+                <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:4px 10px">>€750K–€2M</td><td style="padding:4px 10px;font-weight:600">CFO</td><td style="padding:4px 10px;font-weight:600">SVP+CFO</td></tr>
+                <tr><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">>€1M/>€2M</td><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">CEO</td><td style="padding:4px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="background:#F0F5FF;border:1px solid #C0D4F0;border-radius:4px;padding:7px 12px;font-size:11px;color:#1F3864">
+          <strong>Control insight:</strong> With-PO invoices need fewer approvers at every tier. CRO PO coverage is near-zero today — pushing high-value CRO invoices onto the higher-scrutiny no-PO track. NetSuite must make PO-backed the default path.
+        </div>
+      </div>
+
+      <div id="s10-sa-reqs" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:6px">ERP Design Requirements — France SA</div>
+        ${ul([reqs[0], reqs[1]].filter(Boolean).concat(reqs.slice(2).filter(r => r && typeof r === 'string' && !r.includes('PHASE 2'))))}
+      </div>
+
+      <div id="s10-sa-decisions" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;font-weight:700;margin-bottom:6px">⚠ Open Decisions & Next Moves</div>
+        ${ul(p2p.keyDecisionsPending || [])}
+        <div style="margin-top:8px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:4px">→ Next Moves</div>
+        ${ul(p2p.nextMoves || [], 8)}
+      </div>
+
     </div>
   </div>
 
-  ${p2pSteps[0] ? stepCard(p2pSteps[0], reqMap.vendor,  ctrl(0)) : ''}
-  ${p2pSteps[1] ? stepCard(p2pSteps[1], reqMap.invoice, ctrl(1)) : ''}
-  ${p2pSteps[2] ? stepCard(p2pSteps[2], reqMap.payment, ctrl(2)) : ''}
-
-  <h3 style="margin:24px 0 10px;font-size:14px;color:#1F3864;border-bottom:2px solid #D6E4F7;padding-bottom:6px">Approval Authority Matrices — Source: Formal Policy Documents (Mar 2026)</h3>
-  <p style="font-size:12px;color:#555;margin:0 0 14px">Current-state approval thresholds. These are the DoA matrices NetSuite must enforce. Separate from contract signature authority (Didier ≤€500K · Marc de Garidel >€500K).</p>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
-
-    <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
-      <div style="background:#2E5EA8;color:#fff;padding:8px 14px;font-size:12px;font-weight:700">PO / Contract Approval Matrix</div>
-      <table style="width:100%;border-collapse:collapse;font-size:11px">
-        <thead>
-          <tr style="background:#EBF2FC">
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Amount Threshold</th>
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Required Approver</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €50,000</td><td style="padding:5px 10px;color:#333">SVP · VPs · Sr Directors</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€50K – €500K</td><td style="padding:5px 10px;color:#333">Chiefs (C-suite −1)</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€500K – €750K</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance (Hema Keshava)</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€750K – €1M</td><td style="padding:5px 10px;color:#333;font-weight:600">CFO (Didier Blondel)</td></tr>
-          <tr><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">> €1M</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO (Marc de Garidel)</td></tr>
-        </tbody>
-      </table>
+  <!-- ── US LLC ──────────────────────────────────────────────────────────── -->
+  <div id="s10-llc" style="margin:16px 0 0">
+    <div style="background:#3D1F6E;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇺🇸</span>
+      <span style="font-size:14px;font-weight:700">US LLC</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">BPO: Kimberly Gordon</span>
     </div>
-
-    <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
-      <div style="background:#2E5EA8;color:#fff;padding:8px 14px;font-size:12px;font-weight:700">Invoice Approval Matrix</div>
-      <table style="width:100%;border-collapse:collapse;font-size:11px">
-        <thead>
-          <tr style="background:#EBF2FC">
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Amount</th>
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Without PO</th>
-            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">With PO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €50K</td><td style="padding:5px 10px;color:#333">PM + SVP/VP</td><td style="padding:5px 10px;color:#1F6830">PM only</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €200K</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#1F6830">PM + SVP/VP</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €50K – €500K</td><td style="padding:5px 10px;color:#333">Chiefs</td><td style="padding:5px 10px;color:#333">—</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €200K – €750K</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#333">Chiefs</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €500K – €750K</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance</td><td style="padding:5px 10px;color:#333">—</td></tr>
-          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €750K – €1M</td><td style="padding:5px 10px;color:#333;font-weight:600">CFO</td><td style="padding:5px 10px;color:#333">—</td></tr>
-          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €750K – €2M</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance + CFO</td></tr>
-          <tr><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">> €1M / >€2M</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
-        </tbody>
-      </table>
+    <div id="s10-llc-status" style="border:1px solid #E0D0F5;border-top:none;border-radius:0 0 6px 6px;padding:20px 16px;background:#FDFBFF">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:28px;flex-shrink:0">⏳</div>
+        <div>
+          <p style="font-size:13px;font-weight:600;color:#3D1F6E;margin:0 0 6px">Current state not yet documented</p>
+          <p style="font-size:12px;color:#555;margin:0 0 10px">US LLC P2P process documentation is outstanding. Kimberly Gordon and Matt Epley were engaged as of Feb 25 — docs have not yet arrived.</p>
+          ${table(['Item','Status','Owner'],[
+            ['P2P current-state flow', '⚠ Not received', 'Kimberly Gordon / Matt Epley'],
+            ['Invoice approval matrix (US)', '⚠ Not received', 'Kimberly Gordon'],
+            ['Vendor master / Trustpair US', '⚠ Partial — US cleanup workbook in share drive', 'Philippe / Kimberly'],
+            ['1099 process documentation', '⚠ Not received', 'TBD'],
+          ], { widths: ['220px','130px','auto'], cellStyle: (r,c,v) => c===1&&v.includes('⚠')?'color:#BF6C00;font-weight:600':'' })}
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="background:#F0F5FF;border:1px solid #C0D4F0;border-radius:4px;padding:8px 14px;font-size:11px;color:#1F3864;margin-bottom:20px">
-    <strong>Key control insight:</strong> With-PO invoices require fewer approvers at every tier — the PO acts as the pre-committed control layer. The largest gap today: PO coverage for CROs is near-zero, pushing those invoices onto the higher-scrutiny without-PO track at large dollar amounts. NetSuite must enforce this matrix and make the PO track the default.
-  </div>
+</section>`;
+}
 
-  <div style="margin:16px 0;border:1px solid #E8F5E9;border-radius:6px;overflow:hidden">
-    ${areaLabel('📋', 'Pre-ERP Governance Requirements (before blueprint)', '#1F6830', '#E8F5E9')}
-    <div style="padding:12px 16px">
-      <p style="font-size:12px;color:#555;margin:0 0 8px">These items must be resolved by Abivax leadership before NetSuite configuration begins. ERP enforces decisions — it does not make them.</p>
-      ${ul([reqs[0], reqs[1]].filter(Boolean))}
+function s16() {
+  // Reuse helpers from s10 by re-declaring a minimal set
+  const e = v => String(v||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const ul = (arr, limit = 999) => {
+    const items = arr.slice(0, limit).map(item => {
+      const text  = typeof item === 'string' ? item : (item.fact || item.decision || item.move || item.action || JSON.stringify(item));
+      const owner = typeof item === 'object' ? (item.owner || '') : '';
+      return owner
+        ? `<li><span style="color:#1F3864;font-weight:600">[${e(owner)}]</span> ${e(text)}</li>`
+        : `<li>${e(text)}</li>`;
+    }).join('');
+    return `<ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8">${items}</ul>`;
+  };
+
+  const synth2 = JSON.parse(fs.readFileSync(path.join(DATA, 'pillar_synthesis.json'), 'utf8'));
+  const pillars2 = synth2.pillars || [];
+  const r2r = pillars2.find(p => p.id === 'record-to-report') || {};
+  const r2rReqs    = r2r.erpDesignRequirements || [];
+  const r2rPending = r2r.keyDecisionsPending   || [];
+  const r2rMoves   = r2r.nextMoves             || [];
+  const r2rUnknown = r2r.currentStateUnknown   || [];
+
+  const subCard = (id, title, body, accentColor = '#2E5EA8', bg = '#F8FAFF') => `
+  <div id="${id}" style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:14px">
+    <div style="background:${bg};border-left:4px solid ${accentColor};padding:8px 14px;font-size:13px;font-weight:700;color:${accentColor}">${e(title)}</div>
+    <div style="padding:12px 16px">${body}</div>
+  </div>`;
+
+  const tbl = (cols, rows, opts = {}) => {
+    const ws = opts.widths || [];
+    const cs = opts.cellStyle || (() => '');
+    const head = cols.map((c,i) => `<th style="padding:6px 10px;text-align:left;color:#fff;font-size:11px;${ws[i]?'width:'+ws[i]:''}">${e(c)}</th>`).join('');
+    const body = rows.map((row,r) =>
+      `<tr style="${r%2?'background:#FAFBFF':''}">${row.map((cell,c) => `<td style="padding:5px 10px;font-size:11px;vertical-align:top;border-bottom:1px solid #F0F4FA;${cs(r,c,cell)}">${e(cell)}</td>`).join('')}</tr>`
+    ).join('');
+    return `<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="background:#2E5EA8">${head}</tr></thead><tbody>${body}</tbody></table>`;
+  };
+
+  const multiGaapTable = tbl(
+    ['Entity', 'GAAP Framework', 'Current Close Owner', 'NetSuite Requirement'],
+    [
+      ['Abivax SA (France)', 'IFRS + French GAAP (statutory)', 'Robin Lapous (KPMG) — quarterly, manual Excel', 'Multi-book: IFRS primary + French GAAP secondary. System-enforced close.'],
+      ['Abivax LLC (US)',    'US GAAP',                        'Not documented — Matt Epley engaged, docs pending', 'OneWorld US entity. Intercompany eliminations automated.'],
+      ['Consolidated',      'IFRS (IFRS 16, SEC-path)',        'KPMG-led quarterly consolidation, Excel-based', 'NetSuite consolidation module. Internal ownership of IFRS adjustments post go-live.'],
+    ],
+    { widths: ['130px','170px','205px','auto'], cellStyle: (r,c) => c===0?'font-weight:600;background:#EBF2FC':c===3?'color:#1F6830':''}
+  );
+
+  const coaTable = tbl(
+    ['Dimension', 'Current State', 'NetSuite Requirement'],
+    [
+      ['Entity',          'Sage 100 France SA only (US LLC separate instance)',    'OneWorld — single COA, entity separation via subsidiary'],
+      ['Country',         'Missing in Sage — no country tag on transactions',       'Required dimension; must be designed before blueprint'],
+      ['Cost Center',     'Partial — exists in Sage, inconsistently used',          'Standardized across SA + LLC; global vs entity-level TBD (key decision)'],
+      ['Functional Area', 'Not available — limits G&A / R&D split',                'G&A / R&D / Clinical split required; drives IFRS/SEC disclosures'],
+      ['Project Code',    'Used in P2P (ADM/RAD); not consistently in GL',         'Extend to GL for clinical trial cost tracking'],
+    ],
+    { widths: ['130px','230px','auto'], cellStyle: (r,c) => c===1?'color:#8B1A1A;font-size:11px':c===2?'color:#1F6830;font-size:11px':''}
+  );
+
+  const treasuryTable = tbl(
+    ['Entity', 'Owner', 'Current Tool', 'Phase 1 Requirement'],
+    [
+      ['France SA', 'Roxandra Sturdza', 'Agicap (cash visibility) + SocGen / Wells Fargo', 'Bank connectivity in NetSuite; payment integration via Agicap or direct bank feed.'],
+      ['US LLC',    'Kimberly Gordon',  'Wells Fargo (direct) — Agicap LLC connection in progress', 'US bank feed confirmed in scope; SWIFT/ACH integration method TBD.'],
+    ],
+    { widths: ['90px','140px','195px','auto'] }
+  );
+
+  const factList = (arr) => ul(arr.map(f => typeof f === 'string' ? f : f.fact || JSON.stringify(f)));
+
+  return `
+<section id="s16">
+  <h1><span class="sec-num">R2R</span>Record to Report</h1>
+  <p style="font-size:13px;color:#444;margin:0 0 6px">${e(r2r.currentStateSummary||'')}</p>
+  <p style="font-size:11px;color:#2E5EA8;font-weight:600;margin:0 0 20px">Confidence: ${e(r2r.confidenceLevel||'partial')} · ${r2r.cftiControls ? (r2r.cftiControls.total||0)+' CFTI controls ('+( r2r.cftiControls.erpSignal||0)+' ERP-signal)' : ''} · BPOs: ${(r2r.keyPeople||[]).slice(0,3).join(' · ')}</p>
+
+  <!-- ── France SA ──────────────────────────────────────────────────────────── -->
+  <div id="s16-sa" style="margin:20px 0 0">
+    <div style="background:#1F3864;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇫🇷</span>
+      <span style="font-size:14px;font-weight:700">France SA</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">Close: Robin Lapous (KPMG) · BPO: Roxandra Sturdza</span>
+    </div>
+    <div style="border:1px solid #D6E4F7;border-top:none;border-radius:0 0 6px 6px;padding:0 0 16px">
+
+      <div id="s16-sa-gaap" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F3864;font-weight:700;margin-bottom:8px">Multi-Entity / Multi-GAAP Requirements</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Abivax runs two entities under different accounting frameworks. NetSuite OneWorld must carry both books and support automated intercompany elimination.</p>
+        ${multiGaapTable}
+      </div>
+
+      <div id="s16-sa-coa" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:8px">Chart of Accounts — Design Dimensions</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Five structural dimensions must be designed before blueprint. Country and Functional Area are the two highest-risk gaps — neither exists in Sage today.</p>
+        ${coaTable}
+      </div>
+
+      <div id="s16-sa-treasury" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:8px">Treasury Sub-Workstream — France SA</div>
+        <p style="font-size:11px;color:#555;margin:0 0 10px">Treasury is a named Phase 1 sub-workstream. Bank connectivity and cash management in scope; cash flow forecasting is Phase 2.</p>
+        ${treasuryTable}
+      </div>
+
+      <div id="s16-sa-decisions" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;font-weight:700;margin-bottom:6px">⚠ Open Decisions & Next Moves</div>
+        ${r2rPending.length ? ul(r2rPending) : '<p style="font-size:12px;color:#999">No open decisions recorded.</p>'}
+        ${r2rMoves.length ? `<div style="margin-top:8px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:4px">→ Next Moves</div>${ul(r2rMoves, 8)}` : ''}
+        ${r2rReqs.length ? `<div style="margin-top:12px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:4px">ERP Design Requirements</div>${factList(r2rReqs)}` : ''}
+      </div>
+
     </div>
   </div>
 
-  <div style="margin:16px 0;border:1px solid #FFF3CD;border-radius:6px;overflow:hidden">
-    ${areaLabel('⚠', 'Open Decisions — P2P', '#BF6C00', '#FFF8E6')}
-    <div style="padding:12px 16px">
-      ${ul(p2p.keyDecisionsPending || [])}
+  <!-- ── US LLC ──────────────────────────────────────────────────────────── -->
+  <div id="s16-llc" style="margin:16px 0 0">
+    <div style="background:#3D1F6E;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇺🇸</span>
+      <span style="font-size:14px;font-weight:700">US LLC</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">BPO: Matt Epley (engagement in progress)</span>
+    </div>
+    <div id="s16-llc-status" style="border:1px solid #E0D0F5;border-top:none;border-radius:0 0 6px 6px;padding:20px 16px;background:#FDFBFF">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:28px;flex-shrink:0">⏳</div>
+        <div>
+          <p style="font-size:13px;font-weight:600;color:#3D1F6E;margin:0 0 6px">US LLC R2R documentation pending</p>
+          <p style="font-size:12px;color:#555;margin:0 0 10px">COA files for US LLC are being extracted by Codex from the Finance Projects-IT share drive (SAGE/ABIVAX LLC/ cluster). Matt Epley engaged Feb 25; current-state docs outstanding.</p>
+          ${tbl(['Item','Status','Owner'],[
+            ['US GAAP close process documentation', '⚠ Not received', 'Matt Epley'],
+            ['US LLC COA files (Sage)', '🔄 Codex extracting from share drive', 'Codex → Claude'],
+            ['US bank feed confirmation (Wells Fargo)', '⚠ Pending', 'Kimberly Gordon'],
+            ['Intercompany elimination design', '⚠ Pre-blueprint decision required', 'NetSuite / CFGI'],
+          ], { widths: ['250px','175px','auto'], cellStyle: (r,c,v) => c===1&&v.includes('⚠')?'color:#BF6C00;font-weight:600':c===1&&v.includes('🔄')?'color:#1F6830;font-weight:600':'' })}
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="margin:16px 0;border:1px solid #F3E5FF;border-radius:6px;overflow:hidden">
-    ${areaLabel('→', 'Next Moves — P2P', '#5B2D8E', '#F9F0FF')}
-    <div style="padding:12px 16px">
-      ${ul(p2p.nextMoves || [], 8)}
+</section>`;
+}
+
+function s17() {
+  const e = v => String(v||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const ul = (arr, limit = 999) => {
+    const items = arr.slice(0, limit).map(item => {
+      const text  = typeof item === 'string' ? item : (item.fact || item.decision || item.move || item.action || JSON.stringify(item));
+      const owner = typeof item === 'object' ? (item.owner || '') : '';
+      return owner
+        ? `<li><span style="color:#1F3864;font-weight:600">[${e(owner)}]</span> ${e(text)}</li>`
+        : `<li>${e(text)}</li>`;
+    }).join('');
+    return `<ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8">${items}</ul>`;
+  };
+
+  const synth3 = JSON.parse(fs.readFileSync(path.join(DATA, 'pillar_synthesis.json'), 'utf8'));
+  const rep = (synth3.pillars||[]).find(p => p.id === 'reporting-planning') || {};
+  const repKnown   = rep.currentStateKnown     || [];
+  const repUnknown = rep.currentStateUnknown   || [];
+  const repReqs    = rep.erpDesignRequirements || [];
+  const repPending = rep.keyDecisionsPending   || [];
+  const repMoves   = rep.nextMoves             || [];
+
+  const factList = (arr) => ul(arr.map(f => typeof f === 'string' ? f : f.fact || JSON.stringify(f)));
+  const saKnown   = repKnown.filter(f => !f.entity || f.entity === 'SA' || f.entity === 'both');
+  const saUnknown = repUnknown.filter(f => !f.entity || f.entity === 'SA' || f.entity === 'both');
+
+  return `
+<section id="s17">
+  <h1><span class="sec-num">RPT</span>Reporting &amp; Planning</h1>
+  <p style="font-size:13px;color:#444;margin:0 0 6px">${e(rep.currentStateSummary||'')}</p>
+  <p style="font-size:11px;color:#2E5EA8;font-weight:600;margin:0 0 20px">Confidence: ${e(rep.confidenceLevel||'partial')} · ${rep.cftiControls ? (rep.cftiControls.total||0)+' CFTI controls ('+( rep.cftiControls.erpSignal||0)+' ERP-signal)' : ''}</p>
+
+  <!-- ── France SA ──────────────────────────────────────────────────────────── -->
+  <div id="s17-sa" style="margin:20px 0 0">
+    <div style="background:#1F3864;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇫🇷</span>
+      <span style="font-size:14px;font-weight:700">France SA</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">Owner: Robin Lapous (KPMG)</span>
+    </div>
+    <div style="border:1px solid #D6E4F7;border-top:none;border-radius:0 0 6px 6px;padding:0 0 16px">
+
+      <div id="s17-sa-current" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F3864;font-weight:700;margin-bottom:8px">Current State — Known Facts</div>
+        ${saKnown.length ? factList(saKnown) : '<p style="font-size:12px;color:#999">No current-state facts recorded.</p>'}
+        ${saUnknown.length ? `<div style="margin-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;font-weight:700;margin-bottom:4px">Data Gaps</div>${factList(saUnknown)}` : ''}
+      </div>
+
+      <div id="s17-sa-reqs" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;font-weight:700;margin-bottom:6px">ERP Design Requirements</div>
+        ${repReqs.length ? factList(repReqs) : '<p style="font-size:12px;color:#999">No ERP requirements recorded.</p>'}
+      </div>
+
+      <div id="s17-sa-decisions" style="padding:16px 16px 0">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;font-weight:700;margin-bottom:6px">⚠ Open Decisions & Next Moves</div>
+        ${repPending.length ? ul(repPending) : '<p style="font-size:12px;color:#999">No open decisions recorded.</p>'}
+        ${repMoves.length ? `<div style="margin-top:8px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;font-weight:700;margin-bottom:4px">→ Next Moves</div>${ul(repMoves, 8)}` : ''}
+      </div>
+
     </div>
   </div>
 
-  <h2>Record to Report (R2R)</h2>
+  <!-- ── US LLC ──────────────────────────────────────────────────────────── -->
+  <div id="s17-llc" style="margin:16px 0 0">
+    <div style="background:#3D1F6E;color:#fff;padding:9px 16px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:10px">
+      <span style="font-size:16px">🇺🇸</span>
+      <span style="font-size:14px;font-weight:700">US LLC</span>
+      <span style="font-size:11px;opacity:0.55;margin-left:auto">Status: pending</span>
+    </div>
+    <div id="s17-llc-status" style="border:1px solid #E0D0F5;border-top:none;border-radius:0 0 6px 6px;padding:20px 16px;background:#FDFBFF">
+      <div style="display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:28px;flex-shrink:0">⏳</div>
+        <div>
+          <p style="font-size:13px;font-weight:600;color:#3D1F6E;margin:0 0 6px">US LLC reporting documentation pending</p>
+          <p style="font-size:12px;color:#555;margin:0">US LLC reporting structure, management reporting format, and consolidation inputs are not yet documented. Expected to come from Matt Epley engagement and NetSuite OneWorld blueprint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <%R2R_SECTION%>
-
-  <h2>Reporting &amp; Planning</h2>
-  ${genericPillarCard(pillarsData.find(p => p.id === 'reporting-planning') || {})}
 </section>`;
 }
 
@@ -810,7 +1233,7 @@ function s15() {
 }
 
 // ── Assemble ──────────────────────────────────────────────────────────────────
-const body = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15].map(f => f()).join('\n');
+const body = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s16,s17,s11,s12,s13,s14,s15].map(f => f()).join('\n');
 
 const html = `<!DOCTYPE html>
 <html lang="en">
@@ -874,7 +1297,29 @@ const html = `<!DOCTYPE html>
   a.nav-link.active { color: #fff; background: rgba(255,255,255,0.12);
     border-left-color: #60A5FA; }
   .nav-num { font-size: 11px; color: rgba(255,255,255,0.35);
-    min-width: 18px; text-align: right; }
+    min-width: 28px; text-align: right; font-weight: 700; }
+  a.nav-link.has-children { padding-bottom: 2px; }
+  .nav-sub-list { padding: 0 0 4px 0; }
+
+  /* Entity level (France SA / US LLC) */
+  .nav-entity-label { padding: 4px 16px 1px 28px; }
+  a.nav-entity-link {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    color: rgba(255,255,255,0.55); text-decoration: none;
+    letter-spacing: 0.3px;
+  }
+  a.nav-entity-link:hover { color: rgba(255,255,255,0.9); }
+
+  /* Sub-section level (Process Flow, COA, etc.) */
+  .nav-sub-sub-list { padding: 0 0 6px 0; }
+  a.nav-sub-sub-link {
+    display: block; padding: 2px 16px 2px 40px;
+    font-size: 11px; color: rgba(255,255,255,0.38);
+    text-decoration: none; border-left: 3px solid transparent;
+    transition: all 0.12s ease;
+  }
+  a.nav-sub-sub-link:hover { color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.04); }
+  a.nav-sub-sub-link.active { color: #93C5FD; border-left-color: #93C5FD; background: rgba(255,255,255,0.06); }
 
   #sidebar-footer { margin-top: auto; padding: 14px 16px;
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -1002,20 +1447,22 @@ const html = `<!DOCTYPE html>
       edgeLabelBackground: '#fff', fontFamily: 'Inter, system-ui, sans-serif' }
   });
 
-  // Highlight active nav link on scroll
-  const links = document.querySelectorAll('a.nav-link');
-  const secs  = document.querySelectorAll('section[id]');
-  const obs   = new IntersectionObserver(entries => {
+  // Highlight active nav link on scroll (all 3 levels)
+  const allNavLinks = document.querySelectorAll('a.nav-link, a.nav-entity-link, a.nav-sub-sub-link');
+  const secs = document.querySelectorAll('section[id], [id^="s10-"], [id^="s16-"], [id^="s17-"]');
+
+  const obs = new IntersectionObserver(entries => {
     entries.forEach(en => {
       if (en.isIntersecting) {
-        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+        const href = '#' + en.target.id;
+        allNavLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === href));
       }
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
+  }, { rootMargin: '-10% 0px -65% 0px' });
   secs.forEach(s => obs.observe(s));
 
-  // Smooth scroll
-  links.forEach(l => l.addEventListener('click', e => {
+  // Smooth scroll for all nav links
+  allNavLinks.forEach(l => l.addEventListener('click', e => {
     e.preventDefault();
     const t = document.querySelector(l.getAttribute('href'));
     if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });

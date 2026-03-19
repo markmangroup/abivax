@@ -1299,6 +1299,46 @@
         "processFlowLastUpdated": "2026-02-25",
         "overlayGeneratedAt": "2026-03-06T15:24:46.026Z"
       }
+    },
+    {
+      "flowId": "p2p-us-llc-current",
+      "pillar": "p2p",
+      "entity": "LLC",
+      "status": "stub-pending",
+      "statusNote": "US LLC P2P current-state flow not yet documented. Awaiting Kimberly Gordon / Matt Epley source docs.",
+      "nodes": []
+    },
+    {
+      "flowId": "r2r-france-close-current",
+      "pillar": "r2r",
+      "entity": "SA",
+      "status": "stub-pending",
+      "statusNote": "France SA financial close current-state flow not yet documented. Step-by-step ownership (internal vs KPMG) not yet mapped.",
+      "nodes": []
+    },
+    {
+      "flowId": "r2r-us-llc-close-current",
+      "pillar": "r2r",
+      "entity": "LLC",
+      "status": "stub-pending",
+      "statusNote": "US LLC financial close flow not yet documented.",
+      "nodes": []
+    },
+    {
+      "flowId": "reporting-consolidation-current",
+      "pillar": "reporting-planning",
+      "entity": "both",
+      "status": "stub-pending",
+      "statusNote": "Consolidation and IFRS adjustment flow not yet documented. Currently KPMG-led, manual Excel.",
+      "nodes": []
+    },
+    {
+      "flowId": "sox-controls-testing-cycle",
+      "pillar": "sox-controls",
+      "entity": "both",
+      "status": "stub-pending",
+      "statusNote": "SOX controls testing cycle (design → evidence → remediation) flow not yet documented.",
+      "nodes": []
     }
   ]
 }

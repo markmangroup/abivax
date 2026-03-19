@@ -104,108 +104,342 @@
         ]
       },
       "currentStateKnown": [
-        "Vendor master confirmed at 497 vendors (Trustpair export 'Base supplier Trustpair.xlsx', received 2026-03-02 from Philippe Goncalves). Geography: FR 245 (49%), US 99 (20%), GB 33 (7%), DE 27 (5%).",
-        "Trustpair validation results: 475/497 globally Favorable (95.6%). 22 Défavorable couple — bank account exists but ownership by supplier not confirmed. 10 Défavorable/Anomalie global (2 closed bank accounts, 4 invalid IBAN format, 4 missing company ID for non-FR entities). Zero vendors on blocklist.",
-        "FR-PTP-02G control evidence confirmed: Trustpair actively validates all 497 vendors on bank account integrity. Audit evidence is exportable from Trustpair platform.",
-        "Active contract commitments: €165,055,532 EUR across 2,888 active lines and 187 unique vendors (ENGAGE_2025 register, 31-Dec-2025). €7,490,467 already booked. Grand total EURO-equivalent across all currencies: €182.8M.",
-        "ENGAGE commitment breakdown by department: CLI (Clinical) 1,265 lines, CMC 1,014, LAB 334, DAT 65, QA 111, REG 34. Currencies: EUROS 79%, USD 15%, GBP 3%. 3,042 closed lines in 'Presta clôturées' sheet.",
-        "Trustpair NetSuite integration confirmed as in-scope (per KPMG deck, Feb 26 2026). (_archived)",
-        "Invoice volume: ~4,000/year (France SA). PO volume: 650 raised in 2025.",
-        "Total contract commitments: $200M+ — not tracked in any system; lives in contracts in DocuShare.",
-        "Active vendors: <500. Vendor master cleaned in 2025. Second cleanup scheduled March 2026 (Philippe will provide XLS report).",
-        "France SA payment cycle: two campaigns per month, 10th and 25th.",
-        "System landscape: Sage 100 (GL/invoicing), DocuShare (documents), Trustpair (vendor validation), Concur (expenses). Zero integration feeds between any of them.",
-        "Juliette and Fatma perform all manual handoffs via shared invoice inbox (monitored with Philippe).",
-        "Sage 100 cannot verify vendor banking information — structurally incapable.",
-        "Trustpair handles bank validation AND full vendor audit per wire transfer. Cost <$15K/year. Load-bearing control.",
-        "Approval workflows are not in Sage — entirely manual and paper/email-based.",
-        "No PO requirement for contractors (high volume, industry-typical in biotech/CRO). No POs for contractors = commitments off the books.",
-        "Some CRO contracts processed without POs — Trinidad views PO coverage for CRO as critical.",
-        "PO process flows through DocuShare with no systematic capture of amounts. Juliette handles manually.",
-        "Juliette maintains a master Excel sheet that tracks payments and acts as the real PO and invoice matching layer after DocuShare approval emails are received.",
-        "Current PO approval authorization is based on amount only. Future-state routing is expected to be tied to threshold plus department or cost center.",
-        "After PO approval in DocuShare, P2P receives an email showing approval and Juliette adds the item to her Excel tracker.",
-        "If an invoice exceeds the PO, Juliette reaches out manually for explanation and applies some leeway. No configured percent or amount tolerance rule exists in-system today.",
-        "Once the invoice is checked against the PO in the spreadsheet, AP books it in Sage and creates the vendor there if needed.",
-        "Only Juliette and Fatma can create vendors in Sage today.",
-        "Juliette enters bank information into Sage; Trustpair validates banking information twice per day.",
-        "No formal aging report exists and there is effectively no usable reporting layer across France P2P today.",
-        "Cost coding is broken: entire multi-component projects may be booked to single item#. Pass-throughs difficult to track.",
-        "No formal vendor onboarding/selection process — Trustpair validates banking at wire only, not at vendor creation.",
-        "Trinidad P2P bundle received: 10 files including approval matrices, SOPs, payment workbook, DocuShare guide, supplier master cleaning workbook.",
-        "CFTI P2P RCM received and structure confirmed. 5 ERP-signal controls confirmed (FR-PTP-02G, 04G, 05G, 06G, 14G).",
-        "Strategic framing confirmed by Trinidad (Mar 2 call): SOX gaps drive Phase 1 ERP design. Automation/efficiency = Phase 2+ post Jan 1, 2027.",
-        "4-step France P2P process formally documented in SOP0084_V01 (effective 09-SEP-2024, source: ABIVAX_Purchase process ENG): Step 1 Receipt — invoice received via DocuShare/email inbox monitored by Juliette/Fatma/Philippe. Step 2 Entry — AP codes and enters into Sage ACHA journal with analytical allocation (ADM/RAD 20/80 split) and project codes. Step 3 Validation — DocuShare approval routing per DoA threshold matrix; 48-hour cutoff before payment run. Step 4 Payment — Trustpair validation gate (mandatory hard stop) then Agicap-connected bank transfer (Wells Fargo / SocGen), campaigns on 10th and 25th of each month.",
-        "SOP0084_V01 (Purchase Order and Contract Process) formally signed: authored by Hema Keshava (SVP Finance), quality reviewed by Ana Sharma, approved by Didier Blondel (CFO) and Marc de Garidel (CEO). Effective 09-SEP-2024. Policy confirmed: every PO must be connected to a signed contract — no standalone POs.",
-        "SVP Finance pre-approval required for all Abivax LLC contracts (US entity). This is a policy constraint that must be reflected in NetSuite approval routing for US LLC transactions.",
-        "Trustpair is a mandatory hard gate per formal SOP: 'No invoice can be paid without prior validation by Trustpair.' The 48-hour cutoff before each payment campaign means Trustpair validation and DocuShare approval must be completed by the 8th and 23rd of each month.",
-        "Delegation of Authority matrix confirmed (source: Approval PO matrix.pdf + Approval Invoices Authorization Matrix.pdf). PO/Contract approval thresholds: ≤€50K — SVP, VPs, or Sr Directors; €50K–€500K — Chiefs (C-suite -1); €500K–€750K — SVP Finance (Hema Keshava); €750K–€1M — CFO (Didier Blondel); >€1M — CEO (Marc de Garidel).",
-        "Invoice approval matrix — WITHOUT purchase order: ≤€50K — Project Manager + SVP/VP; >€50K–€500K — Chiefs; >€500K–€750K — SVP Finance; >€750K–€1M — CFO; >€1M — CEO. This is the higher-risk track (no committed spend baseline).",
-        "Invoice approval matrix — WITH purchase order: ≤€50K — Project Manager only; ≤€200K — PM + SVP/VP; >€200K–€750K — Chiefs; >€750K–€2M — SVP Finance + CFO (dual approval); >€2M — CEO. Lower thresholds than without-PO track reflect PO pre-commitment as a control.",
-        "Contract signature authority is a separate policy layer above operational approval (source: Signature policy.pdf): Didier Blondel signs contracts ≤€500K; Marc de Garidel signs contracts >€500K. This is distinct from invoice and PO approval routing.",
-        "Analytical allocation confirmed: all invoices coded with (1) ADM vs. RAD designation at 20%/80% split for mixed costs, (2) project code, (3) cost center. This is the current-state cost coding structure that NetSuite COA design must accommodate.",
-        "DocuShare confirmed as formally controlled document routing tool in SOP (not tribal knowledge). Current role: receives invoice documents, routes for approval, issues email approval confirmation to AP team. Juliette logs the DocuShare approval email in her master Excel tracker before Sage booking."
+        {
+          "fact": "Vendor master confirmed at 497 vendors (Trustpair export 'Base supplier Trustpair.xlsx', received 2026-03-02 from Philippe Goncalves). Geography: FR 245 (49%), US 99 (20%), GB 33 (7%), DE 27 (5%).",
+          "entity": "SA"
+        },
+        {
+          "fact": "Trustpair validation results: 475/497 globally Favorable (95.6%). 22 Défavorable couple — bank account exists but ownership by supplier not confirmed. 10 Défavorable/Anomalie global (2 closed bank accounts, 4 invalid IBAN format, 4 missing company ID for non-FR entities). Zero vendors on blocklist.",
+          "entity": "SA"
+        },
+        {
+          "fact": "FR-PTP-02G control evidence confirmed: Trustpair actively validates all 497 vendors on bank account integrity. Audit evidence is exportable from Trustpair platform.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Active contract commitments: €165,055,532 EUR across 2,888 active lines and 187 unique vendors (ENGAGE_2025 register, 31-Dec-2025). €7,490,467 already booked. Grand total EURO-equivalent across all currencies: €182.8M.",
+          "entity": "SA"
+        },
+        {
+          "fact": "ENGAGE commitment breakdown by department: CLI (Clinical) 1,265 lines, CMC 1,014, LAB 334, DAT 65, QA 111, REG 34. Currencies: EUROS 79%, USD 15%, GBP 3%. 3,042 closed lines in 'Presta clôturées' sheet.",
+          "entity": "both"
+        },
+        {
+          "fact": "Trustpair NetSuite integration confirmed as in-scope (per KPMG deck, Feb 26 2026). (_archived)",
+          "entity": "SA"
+        },
+        {
+          "fact": "Invoice volume: ~4,000/year (France SA). PO volume: 650 raised in 2025.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Total contract commitments: $200M+ — not tracked in any system; lives in contracts in DocuShare.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Active vendors: <500. Vendor master cleaned in 2025. Second cleanup scheduled March 2026 (Philippe will provide XLS report).",
+          "entity": "SA"
+        },
+        {
+          "fact": "France SA payment cycle: two campaigns per month, 10th and 25th.",
+          "entity": "SA"
+        },
+        {
+          "fact": "System landscape: Sage 100 (GL/invoicing), DocuShare (documents), Trustpair (vendor validation), Concur (expenses). Zero integration feeds between any of them.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Juliette and Fatma perform all manual handoffs via shared invoice inbox (monitored with Philippe).",
+          "entity": "SA"
+        },
+        {
+          "fact": "Sage 100 cannot verify vendor banking information — structurally incapable.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Trustpair handles bank validation AND full vendor audit per wire transfer. Cost <$15K/year. Load-bearing control.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Approval workflows are not in Sage — entirely manual and paper/email-based.",
+          "entity": "SA"
+        },
+        {
+          "fact": "No PO requirement for contractors (high volume, industry-typical in biotech/CRO). No POs for contractors = commitments off the books.",
+          "entity": "both"
+        },
+        {
+          "fact": "Some CRO contracts processed without POs — Trinidad views PO coverage for CRO as critical.",
+          "entity": "both"
+        },
+        {
+          "fact": "PO process flows through DocuShare with no systematic capture of amounts. Juliette handles manually.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Juliette maintains a master Excel sheet that tracks payments and acts as the real PO and invoice matching layer after DocuShare approval emails are received.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Current PO approval authorization is based on amount only. Future-state routing is expected to be tied to threshold plus department or cost center.",
+          "entity": "both"
+        },
+        {
+          "fact": "After PO approval in DocuShare, P2P receives an email showing approval and Juliette adds the item to her Excel tracker.",
+          "entity": "SA"
+        },
+        {
+          "fact": "If an invoice exceeds the PO, Juliette reaches out manually for explanation and applies some leeway. No configured percent or amount tolerance rule exists in-system today.",
+          "entity": "both"
+        },
+        {
+          "fact": "Once the invoice is checked against the PO in the spreadsheet, AP books it in Sage and creates the vendor there if needed.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Only Juliette and Fatma can create vendors in Sage today.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Juliette enters bank information into Sage; Trustpair validates banking information twice per day.",
+          "entity": "SA"
+        },
+        {
+          "fact": "No formal aging report exists and there is effectively no usable reporting layer across France P2P today.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Cost coding is broken: entire multi-component projects may be booked to single item#. Pass-throughs difficult to track.",
+          "entity": "both"
+        },
+        {
+          "fact": "No formal vendor onboarding/selection process — Trustpair validates banking at wire only, not at vendor creation.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Trinidad P2P bundle received: 10 files including approval matrices, SOPs, payment workbook, DocuShare guide, supplier master cleaning workbook.",
+          "entity": "SA"
+        },
+        {
+          "fact": "CFTI P2P RCM received and structure confirmed. 5 ERP-signal controls confirmed (FR-PTP-02G, 04G, 05G, 06G, 14G).",
+          "entity": "both"
+        },
+        {
+          "fact": "Strategic framing confirmed by Trinidad (Mar 2 call): SOX gaps drive Phase 1 ERP design. Automation/efficiency = Phase 2+ post Jan 1, 2027.",
+          "entity": "both"
+        },
+        {
+          "fact": "4-step France P2P process formally documented in SOP0084_V01 (effective 09-SEP-2024, source: ABIVAX_Purchase process ENG): Step 1 Receipt — invoice received via DocuShare/email inbox monitored by Juliette/Fatma/Philippe. Step 2 Entry — AP codes and enters into Sage ACHA journal with analytical allocation (ADM/RAD 20/80 split) and project codes. Step 3 Validation — DocuShare approval routing per DoA threshold matrix; 48-hour cutoff before payment run. Step 4 Payment — Trustpair validation gate (mandatory hard stop) then Agicap-connected bank transfer (Wells Fargo / SocGen), campaigns on 10th and 25th of each month.",
+          "entity": "both"
+        },
+        {
+          "fact": "SOP0084_V01 (Purchase Order and Contract Process) formally signed: authored by Hema Keshava (SVP Finance), quality reviewed by Ana Sharma, approved by Didier Blondel (CFO) and Marc de Garidel (CEO). Effective 09-SEP-2024. Policy confirmed: every PO must be connected to a signed contract — no standalone POs.",
+          "entity": "SA"
+        },
+        {
+          "fact": "SVP Finance pre-approval required for all Abivax LLC contracts (US entity). This is a policy constraint that must be reflected in NetSuite approval routing for US LLC transactions.",
+          "entity": "LLC"
+        },
+        {
+          "fact": "Trustpair is a mandatory hard gate per formal SOP: 'No invoice can be paid without prior validation by Trustpair.' The 48-hour cutoff before each payment campaign means Trustpair validation and DocuShare approval must be completed by the 8th and 23rd of each month.",
+          "entity": "both"
+        },
+        {
+          "fact": "Delegation of Authority matrix confirmed (source: Approval PO matrix.pdf + Approval Invoices Authorization Matrix.pdf). PO/Contract approval thresholds: ≤€50K — SVP, VPs, or Sr Directors; €50K–€500K — Chiefs (C-suite -1); €500K–€750K — SVP Finance (Hema Keshava); €750K–€1M — CFO (Didier Blondel); >€1M — CEO (Marc de Garidel).",
+          "entity": "SA"
+        },
+        {
+          "fact": "Invoice approval matrix — WITHOUT purchase order: ≤€50K — Project Manager + SVP/VP; >€50K–€500K — Chiefs; >€500K–€750K — SVP Finance; >€750K–€1M — CFO; >€1M — CEO. This is the higher-risk track (no committed spend baseline).",
+          "entity": "both"
+        },
+        {
+          "fact": "Invoice approval matrix — WITH purchase order: ≤€50K — Project Manager only; ≤€200K — PM + SVP/VP; >€200K–€750K — Chiefs; >€750K–€2M — SVP Finance + CFO (dual approval); >€2M — CEO. Lower thresholds than without-PO track reflect PO pre-commitment as a control.",
+          "entity": "both"
+        },
+        {
+          "fact": "Contract signature authority is a separate policy layer above operational approval (source: Signature policy.pdf): Didier Blondel signs contracts ≤€500K; Marc de Garidel signs contracts >€500K. This is distinct from invoice and PO approval routing.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Analytical allocation confirmed: all invoices coded with (1) ADM vs. RAD designation at 20%/80% split for mixed costs, (2) project code, (3) cost center. This is the current-state cost coding structure that NetSuite COA design must accommodate.",
+          "entity": "both"
+        },
+        {
+          "fact": "DocuShare confirmed as formally controlled document routing tool in SOP (not tribal knowledge). Current role: receives invoice documents, routes for approval, issues email approval confirmation to AP team. Juliette logs the DocuShare approval email in her master Excel tracker before Sage booking.",
+          "entity": "SA"
+        }
       ],
       "currentStateUnknown": [
-        "US LLC P2P current-state flow and evidence practices — Matt Epley confirmed docs in progress as of Feb 25; still not received by Mar 2.",
-        "Trustpair integration model for NetSuite: standard bundled app vs. custom build vs. paid app — not yet confirmed with vendor.",
-        "1099-specific process requirements (US).",
-        "Tolerance policy for invoice-over-PO exceptions is not formalized: percent threshold, absolute amount threshold, approver path, and hard-stop behavior still need design.",
-        "Where control evidence is retained today for completed wire transfers (Trustpair log? Sage? Email?).",
-        "Contractor volume and spend — no count or $ figure available; not tracked."
+        {
+          "fact": "US LLC P2P current-state flow and evidence practices — Matt Epley confirmed docs in progress as of Feb 25; still not received by Mar 2.",
+          "entity": "LLC"
+        },
+        {
+          "fact": "Trustpair integration model for NetSuite: standard bundled app vs. custom build vs. paid app — not yet confirmed with vendor.",
+          "entity": "SA"
+        },
+        {
+          "fact": "1099-specific process requirements (US).",
+          "entity": "LLC"
+        },
+        {
+          "fact": "Tolerance policy for invoice-over-PO exceptions is not formalized: percent threshold, absolute amount threshold, approver path, and hard-stop behavior still need design.",
+          "entity": "both"
+        },
+        {
+          "fact": "Where control evidence is retained today for completed wire transfers (Trustpair log? Sage? Email?).",
+          "entity": "SA"
+        },
+        {
+          "fact": "Contractor volume and spend — no count or $ figure available; not tracked.",
+          "entity": "both"
+        }
       ],
       "erpDesignRequirements": [
-        "PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.",
-        "PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.",
-        "System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.",
-        "Approval routing should support threshold plus department or cost center, not amount alone.",
-        "Trustpair integration at vendor onboarding (not just at wire) — integration model to be confirmed with NetSuite (standard app / custom / paid).",
-        "Two-way and three-way match capability for invoice processing.",
-        "Invoice matching needs configurable percent and or amount tolerance thresholds for over-PO invoices, with explicit exception routing.",
-        "Vendor setup workflow with named approver and Trustpair validation gate before vendor is live.",
-        "Role-based access / SOD enforcement on vendor setup and payment authorization.",
-        "Payment run traceable from PO to payment with system-retained evidence (not email-based).",
-        "Commitment register: all PO-backed commitments tracked in NetSuite by go-live — closes $200M+ untracked commitment gap.",
-        "France P2P reporting baseline must include AP aging, open PO aging, exception reporting, and payment status reporting inside the ERP.",
-        "Entity-level separation: France SA vs US LLC must be independently operable under common framework.",
-        "PHASE 2+ (post Jan 1, 2027): CRO pass-through tracking, contractor PO workflows, cost coding optimization — not Phase 1 scope."
+        {
+          "fact": "PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.",
+          "entity": "both"
+        },
+        {
+          "fact": "PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.",
+          "entity": "both"
+        },
+        {
+          "fact": "System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.",
+          "entity": "both"
+        },
+        {
+          "fact": "Approval routing should support threshold plus department or cost center, not amount alone.",
+          "entity": "both"
+        },
+        {
+          "fact": "Trustpair integration at vendor onboarding (not just at wire) — integration model to be confirmed with NetSuite (standard app / custom / paid).",
+          "entity": "SA"
+        },
+        {
+          "fact": "Two-way and three-way match capability for invoice processing.",
+          "entity": "both"
+        },
+        {
+          "fact": "Invoice matching needs configurable percent and or amount tolerance thresholds for over-PO invoices, with explicit exception routing.",
+          "entity": "both"
+        },
+        {
+          "fact": "Vendor setup workflow with named approver and Trustpair validation gate before vendor is live.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Role-based access / SOD enforcement on vendor setup and payment authorization.",
+          "entity": "both"
+        },
+        {
+          "fact": "Payment run traceable from PO to payment with system-retained evidence (not email-based).",
+          "entity": "both"
+        },
+        {
+          "fact": "Commitment register: all PO-backed commitments tracked in NetSuite by go-live — closes $200M+ untracked commitment gap.",
+          "entity": "both"
+        },
+        {
+          "fact": "France P2P reporting baseline must include AP aging, open PO aging, exception reporting, and payment status reporting inside the ERP.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Entity-level separation: France SA vs US LLC must be independently operable under common framework.",
+          "entity": "both"
+        },
+        {
+          "fact": "PHASE 2+ (post Jan 1, 2027): CRO pass-through tracking, contractor PO workflows, cost coding optimization — not Phase 1 scope.",
+          "entity": "both"
+        }
       ],
       "keyDecisionsPending": [
         {
           "decision": "Trustpair integration: standard bundled app vs. custom build vs. paid app in NetSuite",
           "owner": "NetSuite vendor / Mike",
-          "impact": "Significant scope and cost implications. Flagged in demo feedback. Need vendor response before blueprint."
+          "impact": "Significant scope and cost implications. Flagged in demo feedback. Need vendor response before blueprint.",
+          "entity": "SA"
         },
         {
           "decision": "France vs US P2P: single design vs. intentionally different by entity",
           "owner": "Mike / Hema / Finance",
-          "impact": "Drives COA design, approval matrix, and reporting rollup approach."
+          "impact": "Drives COA design, approval matrix, and reporting rollup approach.",
+          "entity": "both"
         },
         {
           "decision": "P2P must-have control/workflow list for ERP blueprint",
           "owner": "Mike (to formalize from RCM)",
-          "impact": "Without this list, implementation scope discussions lack a specific requirements baseline."
+          "impact": "Without this list, implementation scope discussions lack a specific requirements baseline.",
+          "entity": "both"
         }
       ],
       "nextMoves": [
-        "Pre-migration: 22 couple-Défavorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.",
-        "Pre-migration: 10 Défavorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.",
-        "ENGAGE register migration strategy: confirm with Trinidad whether €165M commitments load as open POs or reference data only.",
-        "Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.",
-        "Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.",
-        "Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.",
-        "Get NetSuite response on Trustpair integration model: standard app / custom / paid app.",
-        "Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.",
-        "Raise contractor PO policy decision with Hema — yes/no before NetSuite configuration.",
-        "Add France P2P reporting requirements to scope baseline: AP aging, open PO aging, and exception reporting.",
-        "Extract P2P RCM rows and classify into: ERP-addressable / non-ERP remediation / management decision.",
-        "Build side-by-side France vs US P2P map once Kimberly/Matt respond.",
-        "Schedule follow-up with Trinidad on cost coding / CRO pass-through structure (pre-blueprint, not urgent now)."
+        {
+          "fact": "Pre-migration: 22 couple-Défavorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Pre-migration: 10 Défavorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.",
+          "entity": "SA"
+        },
+        {
+          "fact": "ENGAGE register migration strategy: confirm with Trinidad whether €165M commitments load as open POs or reference data only.",
+          "entity": "both"
+        },
+        {
+          "fact": "Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Get NetSuite response on Trustpair integration model: standard app / custom / paid app.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Raise contractor PO policy decision with Hema — yes/no before NetSuite configuration.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Add France P2P reporting requirements to scope baseline: AP aging, open PO aging, and exception reporting.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Extract P2P RCM rows and classify into: ERP-addressable / non-ERP remediation / management decision.",
+          "entity": "both"
+        },
+        {
+          "fact": "Build side-by-side France vs US P2P map once Kimberly/Matt respond.",
+          "entity": "both"
+        },
+        {
+          "fact": "Schedule follow-up with Trinidad on cost coding / CRO pass-through structure (pre-blueprint, not urgent now).",
+          "entity": "both"
+        }
       ],
       "waitingOn": [
-        "Philippe Goncalves: Sage vendor master XLS report + Trustpair report (committed on Mar 2 call)",
-        "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs — expected Feb 25-26; overdue as of Mar 2. Chase required.",
-        "NetSuite (Jamal): Trustpair integration model confirmation; also retrieve Interface Tracker V2.xlsx from Feb 23 email"
+        {
+          "fact": "Philippe Goncalves: Sage vendor master XLS report + Trustpair report (committed on Mar 2 call)",
+          "entity": "SA"
+        },
+        {
+          "fact": "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs — expected Feb 25-26; overdue as of Mar 2. Chase required.",
+          "entity": "LLC"
+        },
+        {
+          "fact": "NetSuite (Jamal): Trustpair integration model confirmation; also retrieve Interface Tracker V2.xlsx from Feb 23 email",
+          "entity": "SA"
+        }
       ],
       "keyPeople": [
         "Trinidad Mesa (France P2P)",
@@ -273,33 +507,85 @@
         ]
       },
       "currentStateKnown": [
-        "Financial close is manual/quarterly, KPMG-led (Robin Lapous). No formal process documentation.",
-        "Sage 100 missing country tag — limits reporting dimensions and cost center use cases.",
-        "Milestone billing not automated — creates reporting/timing visibility gaps.",
-        "IT org confirmed: Didier → Christophe Hennequin → Jade Nguyen / Benjamin / Erwan. ERP in 2026-2027 IT roadmap.",
-        "Treasury sub-workstream confirmed in scope: Roxandra Sturdza (France) + Kimberly Gordon (US).",
-        "Workday Adaptive/Interactive exists for FP&A but is underused — intended for intercompany/forecasting."
+        {
+          "fact": "Financial close is manual/quarterly, KPMG-led (Robin Lapous). No formal process documentation.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Sage 100 missing country tag — limits reporting dimensions and cost center use cases.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Milestone billing not automated — creates reporting/timing visibility gaps.",
+          "entity": "both"
+        },
+        {
+          "fact": "IT org confirmed: Didier → Christophe Hennequin → Jade Nguyen / Benjamin / Erwan. ERP in 2026-2027 IT roadmap.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Treasury sub-workstream confirmed in scope: Roxandra Sturdza (France) + Kimberly Gordon (US).",
+          "entity": "both"
+        },
+        {
+          "fact": "Workday Adaptive/Interactive exists for FP&A but is underused — intended for intercompany/forecasting.",
+          "entity": "both"
+        }
       ],
       "currentStateUnknown": [
-        "Chart of Accounts / cost center future-state design principles not formalized.",
-        "Current-state close process with step-by-step ownership (internal vs KPMG by step) not documented.",
-        "US LLC financial close process and evidence practices not documented.",
-        "Treasury current-state: bank connectivity, cash management tools, and reconciliation process not mapped.",
-        "Intercompany eliminations process not documented."
+        {
+          "fact": "Chart of Accounts / cost center future-state design principles not formalized.",
+          "entity": "both"
+        },
+        {
+          "fact": "Current-state close process with step-by-step ownership (internal vs KPMG by step) not documented.",
+          "entity": "SA"
+        },
+        {
+          "fact": "US LLC financial close process and evidence practices not documented.",
+          "entity": "LLC"
+        },
+        {
+          "fact": "Treasury current-state: bank connectivity, cash management tools, and reconciliation process not mapped.",
+          "entity": "both"
+        },
+        {
+          "fact": "Intercompany eliminations process not documented.",
+          "entity": "both"
+        }
       ],
       "erpDesignRequirements": [
-        "GL/CoA designed before blueprint begins — this is the most consequential pre-ERP decision.",
-        "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area.",
-        "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.",
-        "Treasury module: bank connectivity and cash management must be in Phase 1 scope.",
-        "Audit evidence retained in-system by transaction — not assembled manually per audit cycle.",
-        "Internal vs audit-liaison handoff points clearly defined — what NetSuite does vs what statutory audit continues to own."
+        {
+          "fact": "GL/CoA designed before blueprint begins — this is the most consequential pre-ERP decision.",
+          "entity": "both"
+        },
+        {
+          "fact": "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area.",
+          "entity": "LLC"
+        },
+        {
+          "fact": "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.",
+          "entity": "both"
+        },
+        {
+          "fact": "Treasury module: bank connectivity and cash management must be in Phase 1 scope.",
+          "entity": "both"
+        },
+        {
+          "fact": "Audit evidence retained in-system by transaction — not assembled manually per audit cycle.",
+          "entity": "both"
+        },
+        {
+          "fact": "Internal vs audit-liaison handoff points clearly defined — what NetSuite does vs what statutory audit continues to own.",
+          "entity": "both"
+        }
       ],
       "keyDecisionsPending": [
         {
           "decision": "COA and cost center design: global consistency vs entity-level separation",
           "owner": "Mike / Denis Jankovic / Hema",
-          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test. Must precede blueprint."
+          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test. Must precede blueprint.",
+          "entity": "both"
         },
         {
           "decision": "Close dependency boundary: what gets insourced vs stays audit-only post go-live",
@@ -307,25 +593,51 @@
           "status": "closed",
           "closedDate": "2026-03-18",
           "resolution": "Close dependency boundary closed on 2026-03-18. Post go-live close executed in NetSuite with audit-ready evidence retention; statutory audit remains outside implementation operations.",
-          "impact": "Determines the degree to which the quarterly close process gets insourced through ERP vs stays consultant-dependent."
+          "impact": "Determines the degree to which the quarterly close process gets insourced through ERP vs stays consultant-dependent.",
+          "entity": "both"
         },
         {
           "decision": "Treasury module scope: which banking integrations are in Phase 1",
           "owner": "Mike / Roxandra / Jade",
-          "impact": "Bank connectivity requires IT integration work — must be scoped in the implementation contract."
+          "impact": "Bank connectivity requires IT integration work — must be scoped in the implementation contract.",
+          "entity": "both"
         }
       ],
       "nextMoves": [
-        "Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths — baseline before blueprint.",
-        "Initiate GL/CoA design conversation with Denis Jankovic and Hema — agree on global vs entity-level approach.",
-        "Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.",
-        "Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.",
-        "Extract FSCP RCM ERP-signal controls and map to named owners with remediation commitments."
+        {
+          "fact": "Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths — baseline before blueprint.",
+          "entity": "both"
+        },
+        {
+          "fact": "Initiate GL/CoA design conversation with Denis Jankovic and Hema — agree on global vs entity-level approach.",
+          "entity": "both"
+        },
+        {
+          "fact": "Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.",
+          "entity": "both"
+        },
+        {
+          "fact": "Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.",
+          "entity": "both"
+        },
+        {
+          "fact": "Extract FSCP RCM ERP-signal controls and map to named owners with remediation commitments.",
+          "entity": "both"
+        }
       ],
       "waitingOn": [
-        "Denis Jankovic: availability and initial CoA design input",
-        "Hema: reporting process docs, SOX findings, and bridge workflow",
-        "Robin Lapous (KPMG): consolidation/IFRS adjustments current-state documentation"
+        {
+          "fact": "Denis Jankovic: availability and initial CoA design input",
+          "entity": "SA"
+        },
+        {
+          "fact": "Hema: reporting process docs, SOX findings, and bridge workflow",
+          "entity": "SA"
+        },
+        {
+          "fact": "Robin Lapous (KPMG): consolidation/IFRS adjustments current-state documentation",
+          "entity": "SA"
+        }
       ],
       "keyPeople": [
         "Philippe Goncalves (R2R / close process, FR)",
@@ -348,57 +660,138 @@
       "futureStateSummary": "NetSuite should deliver a stronger quarterly reporting operating model immediately — better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.",
       "whyItMatters": "Without a reliable reporting data model in NetSuite, Abivax cannot scale toward US public launch reporting requirements. The ERP is the foundation that makes quarterly → monthly → SEC-grade reporting possible without manual bridging and KPMG dependency for every close.",
       "currentStateKnown": [
-        "KPMG (Robin Lapous) handles consolidation and IFRS adjustments — manual in Excel, no formal documentation.",
-        "Frederick (FP&A): pragmatic target is quarterly reporting quality first; monthly is later-stage.",
-        "Workday Adaptive/Interactive exists but is underused — intended for internal consolidation/intercompany and forecasting/variance visibility.",
-        "Current Sage data model is missing a country tag — impacts reporting dimensions and cost center use cases.",
-        "Milestone billing is not automated — creates reporting/timing visibility limitations.",
-        "CFTI FSCP RCM received and structure confirmed. 39 reporting controls with gap/remediation columns.",
-        "Internal vs KPMG ownership split by reporting step is not yet mapped."
+        {
+          "fact": "KPMG (Robin Lapous) handles consolidation and IFRS adjustments — manual in Excel, no formal documentation.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Frederick (FP&A): pragmatic target is quarterly reporting quality first; monthly is later-stage.",
+          "entity": "both"
+        },
+        {
+          "fact": "Workday Adaptive/Interactive exists but is underused — intended for internal consolidation/intercompany and forecasting/variance visibility.",
+          "entity": "both"
+        },
+        {
+          "fact": "Current Sage data model is missing a country tag — impacts reporting dimensions and cost center use cases.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Milestone billing is not automated — creates reporting/timing visibility limitations.",
+          "entity": "both"
+        },
+        {
+          "fact": "CFTI FSCP RCM received and structure confirmed. 39 reporting controls with gap/remediation columns.",
+          "entity": "both"
+        },
+        {
+          "fact": "Internal vs KPMG ownership split by reporting step is not yet mapped.",
+          "entity": "SA"
+        }
       ],
       "currentStateUnknown": [
-        "Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.",
-        "COA / cost center future-state design principles not formalized (global consistency vs entity separation).",
-        "Department reporting expectations not standardized (clinical visibility, G&A/R&D split expectations unclear).",
-        "Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.",
-        "Frederick response on FP&A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).",
-        "Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance."
+        {
+          "fact": "Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.",
+          "entity": "SA"
+        },
+        {
+          "fact": "COA / cost center future-state design principles not formalized (global consistency vs entity separation).",
+          "entity": "both"
+        },
+        {
+          "fact": "Department reporting expectations not standardized (clinical visibility, G&A/R&D split expectations unclear).",
+          "entity": "both"
+        },
+        {
+          "fact": "Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.",
+          "entity": "both"
+        },
+        {
+          "fact": "Frederick response on FP&A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).",
+          "entity": "both"
+        },
+        {
+          "fact": "Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance.",
+          "entity": "both"
+        }
       ],
       "erpDesignRequirements": [
-        "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.",
-        "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).",
-        "Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.",
-        "Internal vs audit-liaison handoff points clearly defined in system design — what NetSuite does vs what statutory audit still does.",
-        "Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale."
+        {
+          "fact": "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.",
+          "entity": "LLC"
+        },
+        {
+          "fact": "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).",
+          "entity": "both"
+        },
+        {
+          "fact": "Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.",
+          "entity": "both"
+        },
+        {
+          "fact": "Internal vs audit-liaison handoff points clearly defined in system design — what NetSuite does vs what statutory audit still does.",
+          "entity": "both"
+        },
+        {
+          "fact": "Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale.",
+          "entity": "both"
+        }
       ],
       "keyDecisionsPending": [
         {
           "decision": "COA and cost center design: global consistency vs entity-level separation",
           "owner": "Mike / Frederick / Hema",
-          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test."
+          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test.",
+          "entity": "both"
         },
         {
           "decision": "Consultant dependency vs in-house scope for bridge and consolidation work",
           "owner": "Mike / Hema / CFGI",
-          "impact": "Determines how much of the quarterly reporting process gets insourced through ERP vs stays audit-only managed."
+          "impact": "Determines how much of the quarterly reporting process gets insourced through ERP vs stays audit-only managed.",
+          "entity": "both"
         },
         {
           "decision": "Reporting dimension minimum set (country, entity, cost center, others)",
           "owner": "Mike / Frederick",
-          "impact": "Must be agreed before ERP data model is designed — cannot be retrofitted post go-live easily."
+          "impact": "Must be agreed before ERP data model is designed — cannot be retrofitted post go-live easily.",
+          "entity": "both"
         }
       ],
       "nextMoves": [
-        "Build reporting baseline flow: steps, owners, systems, existing handoffs — from Hema/audit-liaison responses.",
-        "Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.",
-        "Define minimum reporting dimension set with Frederick input.",
-        "Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.",
-        "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)"
+        {
+          "fact": "Build reporting baseline flow: steps, owners, systems, existing handoffs — from Hema/audit-liaison responses.",
+          "entity": "SA"
+        },
+        {
+          "fact": "Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.",
+          "entity": "both"
+        },
+        {
+          "fact": "Define minimum reporting dimension set with Frederick input.",
+          "entity": "both"
+        },
+        {
+          "fact": "Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.",
+          "entity": "both"
+        },
+        {
+          "fact": "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)",
+          "entity": "both"
+        }
       ],
       "waitingOn": [
-        "Frederick Golly: FP&A reporting dimensions and core output needs response",
-        "Hema: reporting process docs and bridge workflow",
-        "Robin Lapous (KPMG): consolidation/IFRS adjustments process documentation"
+        {
+          "fact": "Frederick Golly: FP&A reporting dimensions and core output needs response",
+          "entity": "both"
+        },
+        {
+          "fact": "Hema: reporting process docs and bridge workflow",
+          "entity": "SA"
+        },
+        {
+          "fact": "Robin Lapous (KPMG): consolidation/IFRS adjustments process documentation",
+          "entity": "SA"
+        }
       ],
       "keyPeople": [
         "Frederick Golly (FP&A)",
