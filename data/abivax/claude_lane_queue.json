@@ -19,14 +19,21 @@
       "priority": "high",
       "title": "Refresh P2P pillar synthesis when new context arrives",
       "why": "P2P is in active fact-finding. Several open items (US LLC flow, Trustpair integration feasibility, RCM row extraction) are blocking the must-have control/workflow list that feeds ERP blueprint.",
-      "triggerWhen": ["New email from Kimberly Gordon or Matt Epley", "KPMG P2P response received", "Trinidad RCM extraction done", "NetSuite integration classification response received"],
+      "triggerWhen": [
+        "New email from Kimberly Gordon or Matt Epley",
+        "KPMG P2P response received",
+        "Trinidad RCM extraction done",
+        "NetSuite integration classification response received"
+      ],
       "files": [
         "data/abivax/pillar_synthesis.json",
         "data/abivax/erp_pillar_baselines.json",
         "data/abivax/cfti_control_register.json",
         "data/abivax/process_flow_diagram_payloads.json"
       ],
-      "promptHint": "Read the P2P entry in pillar_synthesis.json and erp_pillar_baselines.json. Read the new context. Move confirmed items from currentStateUnknown to currentStateKnown. Update nextMoves and waitingOn. Update synthesizedAt. Add a changeLog entry. Do not rewrite fields that didn't change."
+      "promptHint": "Read the P2P entry in pillar_synthesis.json and erp_pillar_baselines.json. Read the new context. Move confirmed items from currentStateUnknown to currentStateKnown. Update nextMoves and waitingOn. Update synthesizedAt. Add a changeLog entry. Do not rewrite fields that didn't change.",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     },
     {
       "id": "claude-synthesis-refresh-reporting-1",
@@ -34,13 +41,20 @@
       "priority": "high",
       "title": "Refresh Reporting/Data pillar synthesis when new context arrives",
       "why": "Reporting is blocked on Frederick's dimension response, Hema's process docs, and Robin Lapous (KPMG) consolidation flow. COA design decision is the highest-stakes unresolved item.",
-      "triggerWhen": ["Frederick Golly response on FP&A dimensions received", "Hema provides reporting process docs", "Robin Lapous KPMG contact made", "FSCP RCM row extraction complete"],
+      "triggerWhen": [
+        "Frederick Golly response on FP&A dimensions received",
+        "Hema provides reporting process docs",
+        "Robin Lapous KPMG contact made",
+        "FSCP RCM row extraction complete"
+      ],
       "files": [
         "data/abivax/pillar_synthesis.json",
         "data/abivax/erp_pillar_baselines.json",
         "data/abivax/cfti_control_register.json"
       ],
-      "promptHint": "Read the reporting-data entry in pillar_synthesis.json. Read the new context. Update currentStateKnown, currentStateUnknown, keyDecisionsPending, nextMoves. Add a changeLog entry."
+      "promptHint": "Read the reporting-data entry in pillar_synthesis.json. Read the new context. Update currentStateKnown, currentStateUnknown, keyDecisionsPending, nextMoves. Add a changeLog entry.",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     },
     {
       "id": "claude-synthesis-refresh-controls-1",
@@ -48,13 +62,20 @@
       "priority": "high",
       "title": "Refresh Controls/Audit pillar synthesis when new context arrives",
       "why": "Controls is blocked on ITGC RCM, Hema SOX findings, Jade IT gaps, and Adrian's 3-slide pack. The 9 ERP-signal controls need named owners before April mobilization.",
-      "triggerWhen": ["ITGC RCM received from CFTI", "Hema SOX findings received", "Jade IT control docs received", "Adrian 3-slide controls pack received"],
+      "triggerWhen": [
+        "ITGC RCM received from CFTI",
+        "Hema SOX findings received",
+        "Jade IT control docs received",
+        "Adrian 3-slide controls pack received"
+      ],
       "files": [
         "data/abivax/pillar_synthesis.json",
         "data/abivax/erp_pillar_baselines.json",
         "data/abivax/cfti_control_register.json"
       ],
-      "promptHint": "Read the controls-audit entry in pillar_synthesis.json. Read the new context. Update currentStateKnown, currentStateUnknown. Map any new deficiencies into ERP-addressable / non-ERP / management-decision buckets. Update nextMoves. Add a changeLog entry. Also flag whether the Audit Committee deck open data gaps should be marked closed."
+      "promptHint": "Read the controls-audit entry in pillar_synthesis.json. Read the new context. Update currentStateKnown, currentStateUnknown. Map any new deficiencies into ERP-addressable / non-ERP / management-decision buckets. Update nextMoves. Add a changeLog entry. Also flag whether the Audit Committee deck open data gaps should be marked closed.",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     },
     {
       "id": "claude-writing-stakeholder-briefs-1",
@@ -75,7 +96,9 @@
         "data/abivax/erp_pillar_baselines.json",
         "data/abivax/entities.json"
       ],
-      "promptHint": "Rewrite top-of-page stakeholder brief copy style guidelines and example paragraphs for Mike, Trinidad, Hema using factual operator brief language (no ranking/fluff)."
+      "promptHint": "Rewrite top-of-page stakeholder brief copy style guidelines and example paragraphs for Mike, Trinidad, Hema using factual operator brief language (no ranking/fluff).",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     },
     {
       "id": "claude-design-today-layout-1",
@@ -92,7 +115,10 @@
         "src/app/abivax/spine/today/TodayBriefClient.tsx",
         "src/app/abivax/spine/today/page.tsx"
       ],
-      "promptHint": "Critique the top 1-2 screens for post-meeting mode and propose a tighter visual hierarchy without adding new workflow mechanics."
+      "promptHint": "Critique the top 1-2 screens for post-meeting mode and propose a tighter visual hierarchy without adding new workflow mechanics.",
+      "status": "retired",
+      "retiredDate": "2026-03-18",
+      "retiredReason": "Front-end shelved 2026-03-18 per architecture decision — encyclopedia model adopted"
     },
     {
       "id": "claude-design-program-layout-1",
@@ -111,7 +137,10 @@
         "data/abivax/erp_pillar_baselines.json",
         "collab/claude/MIKE_DESIGN_PREFERENCES.md"
       ],
-      "promptHint": "Critique Program page visual hierarchy and status styling so received/pending/blocked signals are obvious at a glance without adding new workflow mechanics."
+      "promptHint": "Critique Program page visual hierarchy and status styling so received/pending/blocked signals are obvious at a glance without adding new workflow mechanics.",
+      "status": "retired",
+      "retiredDate": "2026-03-18",
+      "retiredReason": "Front-end shelved 2026-03-18 per architecture decision — encyclopedia model adopted"
     },
     {
       "id": "claude-design-page-patterns-1",
@@ -131,7 +160,10 @@
         "src/app/abivax/spine/program/page.tsx",
         "src/app/abivax/spine/presentations/page.tsx"
       ],
-      "promptHint": "Propose a reusable visual pattern system (not implementation code) for low-noise default views and advanced detail collapses."
+      "promptHint": "Propose a reusable visual pattern system (not implementation code) for low-noise default views and advanced detail collapses.",
+      "status": "retired",
+      "retiredDate": "2026-03-18",
+      "retiredReason": "Front-end shelved 2026-03-18 per architecture decision — encyclopedia model adopted"
     },
     {
       "id": "claude-writing-post-selection-comms-1",
@@ -149,25 +181,31 @@
         "data/abivax/erp_pillar_baselines.json",
         "data/abivax/presentations.json"
       ],
-      "promptHint": "Draft concise, factual post-selection comms templates aligned to early April mobilization target and explicit ownership boundaries."
+      "promptHint": "Draft concise, factual post-selection comms templates aligned to early April mobilization target and explicit ownership boundaries.",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     },
-
     {
       "id": "claude-writing-audit-cmte-controls-slides-1",
       "lane": "writing",
       "priority": "urgent",
       "title": "Create controls slides for Adrian Holbrook to present at Audit Committee (Mar 6)",
       "why": "Adrian Holbrook (FP&A) asked Mike to provide controls slides that Adrian will present to the Audit Committee. Mike is the author. Source controls narrative from CFGI (Youness Tyamaz) RCM documents. This is an active Mike action item, not a waiting item.",
-      "triggerWhen": ["Mike is ready to draft controls slides for Audit Committee", "CFGI (Youness) content available"],
+      "triggerWhen": [
+        "Mike is ready to draft controls slides for Audit Committee",
+        "CFGI (Youness) content available"
+      ],
       "files": [
         "data/abivax/cfti_control_register.json",
         "data/abivax/pillar_synthesis.json",
         "outputs/Audit_Committee_ERP_Controls_Mar2026.pptx"
       ],
       "promptHint": "Help Mike draft 2-3 slides on ERP-addressable control gaps using CFGI RCM structure. Use CFTI control IDs, statuses, and the 9 ERP-signal controls as the backbone. Fact-based, no fluff. Format for an Audit Committee audience (not a controls deep-dive).",
-      "deadline": "2026-03-05"
+      "deadline": "2026-03-05",
+      "status": "retired",
+      "retiredDate": "2026-03-18",
+      "retiredReason": "Audit Committee meeting March 6 complete — slides no longer needed"
     },
-
     {
       "id": "claude-synthesis-open-threads-1",
       "lane": "synthesis",
@@ -176,19 +214,48 @@
       "why": "Several email threads from the Feb 16-Mar 2 analysis are unanswered or in-flight. These should be reviewed after the Audit Committee meeting to capture any new commitments, closures, or escalations.",
       "raiseWhen": "After March 6 Audit Committee meeting",
       "openThreads": [
-        { "item": "US P2P docs from Matt Epley / Kimberly Gordon", "expectedBy": "Mar 2 (overdue)" },
-        { "item": "Frederick Golly FP&A reporting dimensions", "expectedBy": "No deadline set" },
-        { "item": "CFGI debrief outcome (Walid/Youness call Feb 25)", "expectedBy": "Ongoing" },
-        { "item": "Roxandra Sturdza treasury walkthrough", "expectedBy": "Unknown" },
-        { "item": "Jade IT interface monitoring detail", "expectedBy": "Early next week (from Feb 25)" },
-        { "item": "Sage access setup completion (Denis)", "expectedBy": "Unknown" },
-        { "item": "NetSuite vendor references (Camille requesting)", "expectedBy": "TBD" },
-        { "item": "MDM Workshop date confirmation (Aymen poll)", "expectedBy": "TBD" },
-        { "item": "Audit Committee meeting confirmed date/time", "expectedBy": "Mar 2 (urgent)" }
+        {
+          "item": "US P2P docs from Matt Epley / Kimberly Gordon",
+          "expectedBy": "Mar 2 (overdue)"
+        },
+        {
+          "item": "Frederick Golly FP&A reporting dimensions",
+          "expectedBy": "No deadline set"
+        },
+        {
+          "item": "CFGI debrief outcome (Walid/Youness call Feb 25)",
+          "expectedBy": "Ongoing"
+        },
+        {
+          "item": "Roxandra Sturdza treasury walkthrough",
+          "expectedBy": "Unknown"
+        },
+        {
+          "item": "Jade IT interface monitoring detail",
+          "expectedBy": "Early next week (from Feb 25)"
+        },
+        {
+          "item": "Sage access setup completion (Denis)",
+          "expectedBy": "Unknown"
+        },
+        {
+          "item": "NetSuite vendor references (Camille requesting)",
+          "expectedBy": "TBD"
+        },
+        {
+          "item": "MDM Workshop date confirmation (Aymen poll)",
+          "expectedBy": "TBD"
+        },
+        {
+          "item": "Audit Committee meeting confirmed date/time",
+          "expectedBy": "Mar 2 (urgent)"
+        }
       ],
-      "promptHint": "Read email-analysis-2026-03-02.md section 5 (Unanswered threads). Cross-reference any new emails in the staging pipeline. Mark threads as closed/updated/still-open. Update pillar_synthesis.json waitingOn fields for affected pillars."
+      "promptHint": "Read email-analysis-2026-03-02.md section 5 (Unanswered threads). Cross-reference any new emails in the staging pipeline. Mark threads as closed/updated/still-open. Update pillar_synthesis.json waitingOn fields for affected pillars.",
+      "status": "retired",
+      "retiredDate": "2026-03-18",
+      "retiredReason": "Post-Audit Committee open threads superseded by March 18 decisions"
     },
-
     {
       "id": "claude-design-today-program-signals-1",
       "lane": "design-critique",
@@ -202,9 +269,11 @@
         "src/app/abivax/spine/today/page.tsx",
         "collab/claude/MIKE_DESIGN_PREFERENCES.md"
       ],
-      "promptHint": "Propose a minimal design pattern for a non-ERP context signal strip on the Today page. Should be read-only, low-noise, and collapsed by default. No new workflow mechanics. Output: layout sketch + field names for a new signals JSON file."
+      "promptHint": "Propose a minimal design pattern for a non-ERP context signal strip on the Today page. Should be read-only, low-noise, and collapsed by default. No new workflow mechanics. Output: layout sketch + field names for a new signals JSON file.",
+      "status": "retired",
+      "retiredDate": "2026-03-18",
+      "retiredReason": "Front-end shelved 2026-03-18 per architecture decision — encyclopedia model adopted"
     },
-
     {
       "id": "claude-deferred-robin-lapous-reporting-1",
       "lane": "deferred",
@@ -212,14 +281,19 @@
       "title": "Robin Lapous (KPMG consolidation) outreach and reporting current-state documentation",
       "why": "Robin Lapous handles KPMG consolidation and IFRS adjustments — entirely manual in Excel, no documentation. This is critical input for the Reporting/Data pillar ERP design. However, this is not needed during commercial negotiations — it becomes critical when blueprint work begins.",
       "raiseWhen": "After commercial negotiation milestone (contract signed or scope confirmed with NetSuite). Raise at start of blueprint phase.",
-      "triggerWhen": ["NetSuite contract signed", "Blueprint phase kickoff", "Frederick Golly FP&A response received (as companion outreach)"],
+      "triggerWhen": [
+        "NetSuite contract signed",
+        "Blueprint phase kickoff",
+        "Frederick Golly FP&A response received (as companion outreach)"
+      ],
       "files": [
         "data/abivax/pillar_synthesis.json",
         "data/abivax/erp_pillar_baselines.json"
       ],
-      "promptHint": "Draft a short introduction email from Mike to Robin Lapous (rlapous@kpmg.fr). Request a 30-min call to understand current consolidation and IFRS adjustment process as ERP scope input. Reference Hema as the connector."
+      "promptHint": "Draft a short introduction email from Mike to Robin Lapous (rlapous@kpmg.fr). Request a 30-min call to understand current consolidation and IFRS adjustment process as ERP scope input. Reference Hema as the connector.",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     },
-
     {
       "id": "claude-deferred-hr-objectives-2026-1",
       "lane": "deferred",
@@ -227,7 +301,10 @@
       "title": "2026 Performance Objectives (Lucca) — set ERP-related objectives",
       "why": "2026 objective cycle opened March 2. Deadline for objective setting is March 17. As ERP Program Director, Mike will need to set objectives tied to the ERP program milestones. Not urgent during current Audit Committee/Board sprint.",
       "raiseWhen": "After Audit Committee (Mar 6) and before March 17 deadline",
-      "promptHint": "Help Mike draft 3-4 SMART objectives for the ERP program for 2026: e.g., contract signed by X, implementation started by X, controls remediation milestones, go-live readiness by Jan 1 2027. Align to program milestones in timeline.json."
+      "promptHint": "Help Mike draft 3-4 SMART objectives for the ERP program for 2026: e.g., contract signed by X, implementation started by X, controls remediation milestones, go-live readiness by Jan 1 2027. Align to program milestones in timeline.json.",
+      "updatedAt": "2026-03-18",
+      "status": "open"
     }
-  ]
+  ],
+  "updatedAt": "2026-03-18"
 }

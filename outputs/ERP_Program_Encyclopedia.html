@@ -43,6 +43,10 @@
 
   .nav-section-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
     color: rgba(255,255,255,0.35); padding: 14px 16px 4px; }
+  .nav-group-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: rgba(255,255,255,0.28); padding: 16px 16px 3px; margin-top: 4px;
+    border-top: 1px solid rgba(255,255,255,0.07); }
+  .nav-group-label:first-child { border-top: none; margin-top: 0; }
 
   a.nav-link {
     display: flex; align-items: center; gap: 10px;
@@ -151,8 +155,16 @@
     <div class="title">Program Encyclopedia</div>
     <div class="meta">Program Director: Mike Markman<br>Generated: 2026-03-18</div>
   </div>
-  <div class="nav-section-label">Sections</div>
-  <a href="#s1" class="nav-link"><span class="nav-num">1</span>Program Overview</a><a href="#s2" class="nav-link"><span class="nav-num">2</span>Key Decisions Log</a><a href="#s3" class="nav-link"><span class="nav-num">3</span>System Selection</a><a href="#s4" class="nav-link"><span class="nav-num">4</span>Delivery Model</a><a href="#s5" class="nav-link"><span class="nav-num">5</span>SOX and Controls</a><a href="#s6" class="nav-link"><span class="nav-num">6</span>Program Budget</a><a href="#s7" class="nav-link"><span class="nav-num">7</span>Implementation Timeline</a><a href="#s8" class="nav-link"><span class="nav-num">8</span>Risk Register</a><a href="#s9" class="nav-link"><span class="nav-num">9</span>Vendor Profiles</a><a href="#s10" class="nav-link"><span class="nav-num">10</span>ERP Pillars</a><a href="#s11" class="nav-link"><span class="nav-num">11</span>Governance</a><a href="#s12" class="nav-link"><span class="nav-num">12</span>Open Items</a><a href="#s13" class="nav-link"><span class="nav-num">13</span>Outputs Registry</a><a href="#s14" class="nav-link"><span class="nav-num">14</span>Change Log</a>
+  
+  <div class="nav-group-label">Foundation</div>
+  <a href="#s1" class="nav-link"><span class="nav-num">1</span>Program Overview</a><a href="#s2" class="nav-link"><span class="nav-num">2</span>Key Decisions Log</a><a href="#s3" class="nav-link"><span class="nav-num">3</span>System Selection</a><a href="#s4" class="nav-link"><span class="nav-num">4</span>Delivery Model</a>
+
+  <div class="nav-group-label">Program Detail</div>
+  <a href="#s5" class="nav-link"><span class="nav-num">5</span>SOX and Controls</a><a href="#s6" class="nav-link"><span class="nav-num">6</span>Program Budget</a><a href="#s7" class="nav-link"><span class="nav-num">7</span>Timeline</a><a href="#s8" class="nav-link"><span class="nav-num">8</span>Risk Register</a><a href="#s9" class="nav-link"><span class="nav-num">9</span>Vendor Profiles</a><a href="#s10" class="nav-link"><span class="nav-num">10</span>ERP Pillars</a><a href="#s15" class="nav-link"><span class="nav-num">15</span>Integrations & Migration</a>
+
+  <div class="nav-group-label">Reference</div>
+  <a href="#s11" class="nav-link"><span class="nav-num">11</span>Governance</a><a href="#s12" class="nav-link"><span class="nav-num">12</span>Open Items</a><a href="#s13" class="nav-link"><span class="nav-num">13</span>Outputs Registry</a><a href="#s14" class="nav-link"><span class="nav-num">14</span>Change Log</a>
+
   <div id="sidebar-footer">
     Confidential — Program Director Use<br>
     Regenerate: <code style="background:rgba(255,255,255,0.1);color:#ccc">scripts/generate_encyclopedia.js</code>
@@ -179,7 +191,7 @@
   <p>Abivax is implementing NetSuite (Oracle) as its ERP platform, replacing the current multi-system finance environment. The program targets a <strong>January 1, 2027 go-live</strong> — non-negotiable, tied to the US public launch in December 2027.</p>
   <table class="kv-table" style="--accent:#2E5EA8"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Current phase</td><td class="kv-val">post-selection / mobilization planning</td></tr><tr style="background:#fff"><td class="kv-key">Current focus</td><td class="kv-val">Delivery model confirmed March 18: NetSuite as SI (Paris team), CFGI as integrated support (controls, governance, change). Priority: sign NetSuite V3 SOW by March 31, consolidate CFGI dual proposals into one engagement, confirm Phase 1/2 scope boundary, obtain budget authorization from Didier and Hema.</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Go-live target</td><td class="kv-val">January 1, 2027 (non-negotiable)</td></tr><tr style="background:#fff"><td class="kv-key">Mobilization target</td><td class="kv-val">April 2026</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Program Director</td><td class="kv-val">Mike Markman</td></tr><tr style="background:#fff"><td class="kv-key">Executive Sponsor</td><td class="kv-val">Didier Blondel, CFO</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Finance Lead</td><td class="kv-val">Hema Keshava</td></tr></tbody></table>
   <h2>Top Program Risks</h2>
-  <ol class="risk-list"><li style="color:#8B1A1A">NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.</li><li style="color:#8B1A1A">CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.</li><li style="color:#1A1A1A">O2C / Inventory Phase 1/2 scope boundary not contractually confirmed — in base SOW but not activated Phase 1; confirm with Jamal.</li><li style="color:#1A1A1A">Budget authorization not obtained — EUR 1M program budget (EUR 999,936) needs written sign-off from Didier and Hema; BUD-1/BUD-2 still open.</li><li style="color:#1A1A1A">Internal capacity commitments not documented — Finance, IT, and FP&amp;A availability for ERP workstreams not yet formally committed.</li><li style="color:#1A1A1A">ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this.</li></ol>
+  <ol class="risk-list"><li style="color:#8B1A1A">NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.</li><li style="color:#8B1A1A">CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.</li><li style="color:#1A1A1A">Budget approved verbally by Didier Blondel (EUR 999,936) — written authorization and board documentation still to be formalized before contract execution.</li><li style="color:#1A1A1A">Internal capacity commitments not documented — Finance, IT, and FP&amp;A availability for ERP workstreams not yet formally committed.</li><li style="color:#1A1A1A">ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this.</li></ol>
 </section>
 
 <section id="s2">
@@ -277,8 +289,170 @@
 
 <section id="s10">
   <h1><span class="sec-num">10</span>ERP Pillars and Process Scope</h1>
-  <p>Three primary pillars plus one cross-cutting enablement layer. Each pillar has named business process owners and a clear definition of done.</p>
-  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:160px">Pillar</th><th style="width:150px">BPOs</th><th style="width:220px">Core Scope</th><th style="width:auto">Done Means...</th></tr></thead><tbody><tr class="even"><td style="">Record to Report (R2R)</td><td style="">Trinidad Mesa<br>Matt Epley</td><td style="">COA; multi-entity; FX; multi-GAAP (IFRS / French GAAP / US GAAP); close process; reporting extracts; consolidation</td><td style="">COA design agreed. Reporting extract supports FP&amp;A. Multi-entity and multi-GAAP explicitly designed. Close is system-enforced.</td></tr><tr class="odd"><td style="">Procure to Pay (P2P)</td><td style="">Juliette Courtot<br>Kimberly Gordon</td><td style="">Req-to-PO; invoice processing; vendor master; payment execution; approval workflows; expense; 1099 / evidence</td><td style="">Workflow approvals system-enforced. Vendor validation and payment flow ownership explicit. Manual handoffs reduced or controlled.</td></tr><tr class="even"><td style="">SOX / Controls</td><td style="">CFGI (Walid)<br>Adrian Holbrook</td><td style="">Control design; audit trail; remediation tracking; SoD; access controls; evidence repository; automation split</td><td style="">Key controls mapped to owners and system steps. Audit evidence paths defined. Remediation tracking live. Design supports testable controls.</td></tr><tr class="odd"><td style="">Platform / Enablement</td><td style="">Jade Nguyen<br>Benjamin Talmant</td><td style="">IT integrations (5); system admin; access validation; architecture; timeline dependencies; change management</td><td style="">Integration architecture confirmed. Admin ownership explicit. IT capacity planned and committed. Change plan live.</td></tr></tbody></table>
+
+  <h2>Pillar Overview</h2>
+  <p>Three primary pillars plus one cross-cutting enablement layer. Each has named business process owners and a clear definition of done.</p>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:165px">Pillar</th><th style="width:175px">BPOs</th><th style="width:210px">Core Scope</th><th style="width:auto">Done Means...</th></tr></thead><tbody><tr class="even"><td style="">Record to Report (R2R)</td><td style="">Trinidad Mesa · Matt Epley</td><td style="">COA; multi-entity; FX; multi-GAAP (IFRS / French GAAP / US GAAP); close process; reporting extracts; consolidation</td><td style="">COA design agreed. Reporting extract supports FP&amp;A. Multi-entity and multi-GAAP explicitly designed. Close is system-enforced.</td></tr><tr class="odd"><td style="">Procure to Pay (P2P)</td><td style="">Juliette Courtot · Kimberly Gordon</td><td style="">Req-to-PO; invoice processing; vendor master; payment execution; approval workflows; expense; 1099 / evidence</td><td style="">Workflow approvals system-enforced. Vendor validation and payment flow ownership explicit. Manual handoffs eliminated.</td></tr><tr class="even"><td style="">SOX / Controls</td><td style="">CFGI (Walid) · Adrian Holbrook</td><td style="">Control design; audit trail; SoD; access controls; evidence repository; automation split</td><td style="">Key controls mapped to owners and system steps. Audit evidence paths defined. Design supports testable controls.</td></tr><tr class="odd"><td style="">Platform / Enablement</td><td style="">Jade Nguyen · Benjamin Talmant</td><td style="">IT integrations; system admin; access validation; architecture; change management</td><td style="">Integration architecture confirmed. Admin ownership explicit. IT capacity committed. Change plan live.</td></tr></tbody></table>
+
+  <h2>Procure to Pay (P2P) — France SA</h2>
+  <p>P2P is the highest-priority pillar for Phase 1. 20 CFTI controls, 5 ERP-signal. Current state is manual and fragmented across Sage, DocuShare, Trustpair, and Agicap. Below is the France SA flow with per-area current state, pain points, and NetSuite requirements.</p>
+
+  <div style="margin:20px 0;padding:16px;background:#F8FAFF;border:1px solid #D6E4F7;border-radius:6px">
+    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:12px">France SA — Current State Process Flow</div>
+    <div class="mermaid">
+flowchart LR
+    subgraph VENDOR["1 · Vendor Setup & Validation"]
+      direction TB
+      V1["Sage vendor master\n497 vendors — Juliette + Fatma only"]
+      V2["Trustpair validation\n2× daily bank check"]
+      V1 --> V2
+    end
+    subgraph INVOICE["2 · Invoice / Coding / Approval"]
+      direction TB
+      I1["Invoice received\nDocuShare + email"]
+      I2["Manual coding\nAmount-only approval routing"]
+      I3["Sage posting\nNo system-enforced workflow"]
+      I1 --> I2 --> I3
+    end
+    subgraph PAYMENT["3 · Payment Execution"]
+      direction TB
+      P1["Trustpair\npayment file validation"]
+      P2["Agicap execution\nWells Fargo · SocGen"]
+      P1 --> P2
+    end
+    VENDOR -->|"~4,000 invoices/yr\n650 POs"| INVOICE
+    INVOICE --> PAYMENT
+    style VENDOR  fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    style INVOICE fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    style PAYMENT fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    </div>
+  </div>
+
+  
+  <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
+    <div style="background:#EBF2FC;border-left:4px solid #1F3864;padding:8px 14px;font-size:13px;font-weight:700;color:#1F3864;margin:0"> Vendor setup / validation — Finance + Trustpair validation path (to confirm)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+      <div style="padding:12px 16px;border-right:1px solid #F0F4FA">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px">Current State Pain Points</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Exact current flow and evidence retention path not yet documented end-to-end.</li><li>Sage-based vendor master changes rely on manual/IT-dependent manual controls and email evidence (per P2P RCM gap examples).</li></ul>
+        <div style="margin-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:4px">Systems (current)</div>
+        <div><span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Sage</span> <span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Trustpair</span> <span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Docushare (to confirm exact role)</span></div>
+        <div style="margin-top:8px;font-size:11px;color:#2E5EA8;font-weight:600">Controls: P2P controls (3)</div>
+      </div>
+      <div style="padding:12px 16px">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">NetSuite Requirements (Phase 1)</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;background:#F8FAFF;padding:8px 8px 8px 24px;border-radius:0 0 4px 4px"><li>PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.</li><li>PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.</li><li>Trustpair integration at vendor onboarding (not just at wire) — integration model to be confirmed with NetSuite (standard app / custom / paid).</li><li>Vendor setup workflow with named approver and Trustpair validation gate before vendor is live.</li><li>Role-based access / SOD enforcement on vendor setup and payment authorization.</li></ul>
+      </div>
+    </div>
+  </div>
+  
+  <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
+    <div style="background:#EBF2FC;border-left:4px solid #1F3864;padding:8px 14px;font-size:13px;font-weight:700;color:#1F3864;margin:0"> Invoice / coding / approval flow — Finance (Trinidad/France team - confirm by step)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+      <div style="padding:12px 16px;border-right:1px solid #F0F4FA">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px">Current State Pain Points</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Workflow approvals not currently present in Sage.</li><li>Manual process and timing variability.</li></ul>
+        <div style="margin-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:4px">Systems (current)</div>
+        <div><span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Sage</span> <span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Docushare</span></div>
+        <div style="margin-top:8px;font-size:11px;color:#2E5EA8;font-weight:600">Controls: P2P controls (5)</div>
+      </div>
+      <div style="padding:12px 16px">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">NetSuite Requirements (Phase 1)</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;background:#F8FAFF;padding:8px 8px 8px 24px;border-radius:0 0 4px 4px"><li>System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.</li><li>Approval routing should support threshold plus department or cost center, not amount alone.</li><li>Two-way and three-way match capability for invoice processing.</li><li>Invoice matching needs configurable percent and or amount tolerance thresholds for over-PO invoices, with explicit exception routing.</li><li>Commitment register: all PO-backed commitments tracked in NetSuite by go-live — closes $200M+ untracked commitment gap.</li><li>Entity-level separation: France SA vs US LLC must be independently operable under common framework.</li></ul>
+      </div>
+    </div>
+  </div>
+  
+  <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
+    <div style="background:#EBF2FC;border-left:4px solid #1F3864;padding:8px 14px;font-size:13px;font-weight:700;color:#1F3864;margin:0"> Payment validation and execution — Finance / Treasury (Roxandra + team to confirm)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+      <div style="padding:12px 16px;border-right:1px solid #F0F4FA">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px">Current State Pain Points</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Need exact handoffs and exception handling path documented end-to-end despite workbook process clues.</li><li>Need confirmation of current signer/validator roles and where control evidence is retained across Trustpair/Agicap/bank steps.</li></ul>
+        <div style="margin-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:4px">Systems (current)</div>
+        <div><span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Sage</span> <span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Trustpair</span> <span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Agicap</span> <span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">Banks</span></div>
+        <div style="margin-top:8px;font-size:11px;color:#2E5EA8;font-weight:600">Controls: P2P controls (7)</div>
+      </div>
+      <div style="padding:12px 16px">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">NetSuite Requirements (Phase 1)</div>
+        <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;background:#F8FAFF;padding:8px 8px 8px 24px;border-radius:0 0 4px 4px"><li>Payment run traceable from PO to payment with system-retained evidence (not email-based).</li><li>Role-based access / SOD enforcement on vendor setup and payment authorization.</li><li>Entity-level separation: France SA vs US LLC must be independently operable under common framework.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:16px 0;border:1px solid #E8F5E9;border-radius:6px;overflow:hidden">
+    <div style="background:#E8F5E9;border-left:4px solid #1F6830;padding:8px 14px;font-size:13px;font-weight:700;color:#1F6830;margin:0">📋 Pre-ERP Governance Requirements (before blueprint)</div>
+    <div style="padding:12px 16px">
+      <p style="font-size:12px;color:#555;margin:0 0 8px">These items must be resolved by Abivax leadership before NetSuite configuration begins. ERP enforces decisions — it does not make them.</p>
+      <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.</li><li>PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.</li></ul>
+    </div>
+  </div>
+
+  <div style="margin:16px 0;border:1px solid #FFF3CD;border-radius:6px;overflow:hidden">
+    <div style="background:#FFF8E6;border-left:4px solid #BF6C00;padding:8px 14px;font-size:13px;font-weight:700;color:#BF6C00;margin:0">⚠ Open Decisions — P2P</div>
+    <div style="padding:12px 16px">
+      <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[NetSuite vendor / Mike]</span> Trustpair integration: standard bundled app vs. custom build vs. paid app in NetSuite</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / Finance]</span> France vs US P2P: single design vs. intentionally different by entity</li><li><span style="color:#1F3864;font-weight:600">[Mike (to formalize from RCM)]</span> P2P must-have control/workflow list for ERP blueprint</li></ul>
+    </div>
+  </div>
+
+  <div style="margin:16px 0;border:1px solid #F3E5FF;border-radius:6px;overflow:hidden">
+    <div style="background:#F9F0FF;border-left:4px solid #5B2D8E;padding:8px 14px;font-size:13px;font-weight:700;color:#5B2D8E;margin:0">→ Next Moves — P2P</div>
+    <div style="padding:12px 16px">
+      <ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Pre-migration: 22 couple-Défavorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.</li><li>Pre-migration: 10 Défavorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.</li><li>ENGAGE register migration strategy: confirm with Trinidad whether €165M commitments load as open POs or reference data only.</li><li>Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.</li><li>Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.</li><li>Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.</li><li>Get NetSuite response on Trustpair integration model: standard app / custom / paid app.</li><li>Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.</li><li style="color:#888;list-style:none">+ 5 more in source JSON</li></ul>
+    </div>
+  </div>
+
+  <h2>Record to Report (R2R)</h2>
+  
+  <div style="margin:0 0 24px;border:1px solid #E0E8F5;border-radius:6px;overflow:hidden">
+    <div style="background:#2E5EA8;color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font-size:14px;font-weight:700">Record to Report (R2R)</span>
+      <span style="font-size:11px;opacity:0.7">Confidence: partial</span>
+    </div>
+    <div style="padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #F0F4FA">
+      <div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:5px">Current State</div>
+        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">Financial close is a manual, Excel-heavy process executed by KPMG (Robin Lapous) on a quarterly basis with no system support for consolidation or IFRS adjustments. Sage 100 lacks the data dimensions (country tag, cost center structure) needed for multi-entity reporting. No Chart of Accounts designed for NetSuite. GL/CoA design is the most consequential pre-blueprint decision — it affects every downstream report, rollup, and audit test. Treasury (cash, bank connectivity) is a sub-workstream owned by Roxandra Sturdza (FR) and Kimberly Gordon (US).</p>
+        
+      </div>
+      <div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:5px">Target State (Phase 1)</div>
+        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">NetSuite as the system of record for France SA and US LLC. Quarterly close executed in-system with audit-ready evidence retention. GL/CoA designed for multi-entity, multi-GAAP operation. Treasury integrated for cash visibility and bank connectivity. Manual Excel bridge eliminated or scoped down to exceptional items only.</p>
+      </div>
+    </div>
+    <div style="padding:10px 16px;border-bottom:1px solid #F0F4FA"><span style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888">Key People: </span><span style="font-size:12px;color:#1F3864;font-weight:600">Philippe Goncalves (R2R / close process, FR) · Denis Jankovic (GL / CoA design, FR) · Matt Epley (US GL / CoA) · Roxandra Sturdza (Treasury, FR) · Kimberly Gordon (Treasury, US) · Robin Lapous (KPMG consolidation) · Jade Nguyen (IT / integrations)</span></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">ERP Design Requirements (6)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>GL/CoA designed before blueprint begins — this is the most consequential pre-ERP decision.</li><li>Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area.</li><li>NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.</li><li>Treasury module: bank connectivity and cash management must be in Phase 1 scope.</li><li>Audit evidence retained in-system by transaction — not assembled manually per audit cycle.</li><li>Internal vs audit-liaison handoff points clearly defined — what NetSuite does vs what statutory audit continues to own.</li></ul></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#FFFBF0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;margin-bottom:6px">⚠ Open Decisions</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[Mike / Denis Jankovic / Hema]</span> COA and cost center design: global consistency vs entity-level separation</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / CFGI]</span> Close dependency boundary: what gets insourced vs stays audit-only post go-live</li><li><span style="color:#1F3864;font-weight:600">[Mike / Roxandra / Jade]</span> Treasury module scope: which banking integrations are in Phase 1</li></ul></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:6px">Next Moves (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths — baseline before blueprint.</li><li>Initiate GL/CoA design conversation with Denis Jankovic and Hema — agree on global vs entity-level approach.</li><li>Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.</li><li>Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.</li><li>Extract FSCP RCM ERP-signal controls and map to named owners with remediation commitments.</li></ul></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#F5F0FF"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;margin-bottom:6px">Waiting On</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Denis Jankovic: availability and initial CoA design input</li><li>Hema: reporting process docs, SOX findings, and bridge workflow</li><li>Robin Lapous (KPMG): consolidation/IFRS adjustments current-state documentation</li></ul></div>
+    <div style="padding:12px 16px;background:#FFF0F0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;margin-bottom:6px">Data Gaps — Unknown (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Chart of Accounts / cost center future-state design principles not formalized.</li><li>Current-state close process with step-by-step ownership (internal vs KPMG by step) not documented.</li><li>US LLC financial close process and evidence practices not documented.</li><li>Treasury current-state: bank connectivity, cash management tools, and reconciliation process not mapped.</li><li>Intercompany eliminations process not documented.</li></ul></div>
+  </div>
+
+  <h2>Reporting &amp; Planning</h2>
+  
+  <div style="margin:0 0 24px;border:1px solid #E0E8F5;border-radius:6px;overflow:hidden">
+    <div style="background:#2E5EA8;color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font-size:14px;font-weight:700">Reporting &amp; Planning</span>
+      <span style="font-size:11px;opacity:0.7">Confidence: partial</span>
+    </div>
+    <div style="padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #F0F4FA">
+      <div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:5px">Current State</div>
+        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&amp;A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.</p>
+        
+      </div>
+      <div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:5px">Target State (Phase 1)</div>
+        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">NetSuite should deliver a stronger quarterly reporting operating model immediately — better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.</p>
+      </div>
+    </div>
+    <div style="padding:10px 16px;border-bottom:1px solid #F0F4FA"><span style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888">Key People: </span><span style="font-size:12px;color:#1F3864;font-weight:600">Frederick Golly (FP&amp;A) · Robin Lapous (KPMG) · Hema Keshava · Adrian Holbrook · Matt Epley</span></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">ERP Design Requirements (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.</li><li>NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).</li><li>Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.</li><li>Internal vs audit-liaison handoff points clearly defined in system design — what NetSuite does vs what statutory audit still does.</li><li>Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale.</li></ul></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#FFFBF0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;margin-bottom:6px">⚠ Open Decisions</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li><span style="color:#1F3864;font-weight:600">[Mike / Frederick / Hema]</span> COA and cost center design: global consistency vs entity-level separation</li><li><span style="color:#1F3864;font-weight:600">[Mike / Hema / CFGI]</span> Consultant dependency vs in-house scope for bridge and consolidation work</li><li><span style="color:#1F3864;font-weight:600">[Mike / Frederick]</span> Reporting dimension minimum set (country, entity, cost center, others)</li></ul></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:6px">Next Moves (5)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Build reporting baseline flow: steps, owners, systems, existing handoffs — from Hema/audit-liaison responses.</li><li>Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.</li><li>Define minimum reporting dimension set with Frederick input.</li><li>Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.</li><li>Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)</li></ul></div>
+    <div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#F5F0FF"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;margin-bottom:6px">Waiting On</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Frederick Golly: FP&amp;A reporting dimensions and core output needs response</li><li>Hema: reporting process docs and bridge workflow</li><li>Robin Lapous (KPMG): consolidation/IFRS adjustments process documentation</li></ul></div>
+    <div style="padding:12px 16px;background:#FFF0F0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;margin-bottom:6px">Data Gaps — Unknown (6)</div><ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;"><li>Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.</li><li>COA / cost center future-state design principles not formalized (global consistency vs entity separation).</li><li>Department reporting expectations not standardized (clinical visibility, G&amp;A/R&amp;D split expectations unclear).</li><li>Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.</li><li>Frederick response on FP&amp;A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).</li><li>Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance.</li></ul></div>
+  </div>
 </section>
 
 <section id="s11">
@@ -289,9 +463,15 @@
 
 <section id="s12">
   <h1><span class="sec-num">12</span>Open Items and Decision Queue</h1>
+
   <h2>Immediate Actions (This Week)</h2>
-  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:150px">Owner</th><th style="width:260px">Item</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike</td><td style="font-weight:600">Sign NetSuite SOW (V3 17 Mar 2026)</td><td style="">Target March 31. Confirm Phase 1/2 scope with Jamal. Legal review in progress.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Jean-Arnold</td><td style="font-weight:600">Consolidate CFGI proposals — one engagement</td><td style="">Email drafted 18 Mar to Ken + Jean-Arnold. Target combined EUR 175-225K. April deadline.</td></tr><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Jamal</td><td style="font-weight:600">Confirm O2C / Inventory Phase 1/2 boundary</td><td style="">Not yet contractually confirmed. Resolve on Jamal call.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike</td><td style="font-weight:600">Get CFGI NetSuite implementation references</td><td style="">CFGI-2 NOT FOUND in diligence — outstanding before contract.</td></tr><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Hema</td><td style="font-weight:600">Budget authorization from Hema and Didier</td><td style="">BUD-1/BUD-2 open — EUR 1M program budget needs written sign-off.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Camille</td><td style="font-weight:600">Confirm Audit Committee meeting date</td><td style="">Camille Girard availability on March 6 not confirmed.</td></tr></tbody></table>
-  <h2>Program Queue</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:155px">Owner</th><th style="width:235px">Item</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Hema</td><td style="font-weight:600">Sign NetSuite SOW (V3)</td><td style="">Target March 31. EUR 388,700 fixed bid confirmed. Legal review in progress.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Jean-Arnold</td><td style="font-weight:600">Consolidate CFGI proposals — one engagement</td><td style="">Email sent 18 Mar to Ken Schatz + Jean-Arnold Coutareau. Target EUR 175-225K combined. April start.</td></tr><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike</td><td style="font-weight:600">CFGI NetSuite implementation references</td><td style="">CFGI-2 NOT FOUND in diligence — obtain before contract signature.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Didier</td><td style="font-weight:600">Budget written authorization</td><td style="">Verbal approval confirmed (Didier, EUR 999,936). Formal written sign-off needed before contract execution.</td></tr><tr class="even"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Jade</td><td style="font-weight:600">IT integration architecture — blueprint</td><td style="">Integration ownership and monitoring for Concur, ADP, Trustpair, Agicap not yet assigned for NetSuite build.</td></tr><tr class="odd"><td style="background:#FFF3CD;color:#BF6C00;font-weight:600">Mike / Hema</td><td style="font-weight:600">Workiva scope confirmation</td><td style="">Confirm with Hema whether Workiva is in scope for Phase 1 — touches reporting data model design.</td></tr></tbody></table>
+
+  <h2>Active Risk Register Summary</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:30px">#</th><th style="width:auto">Risk</th><th style="width:120px">Owner</th></tr></thead><tbody><tr class="even"><td style="">1</td><td style="color:#8B1A1A;font-weight:600">NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.</td><td style=""></td></tr><tr class="odd"><td style="">2</td><td style="color:#8B1A1A;font-weight:600">CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.</td><td style=""></td></tr><tr class="even"><td style="">3</td><td style="">Budget approved verbally by Didier Blondel (EUR 999,936) — written authorization and board documentation still to be formalized before contract execution.</td><td style=""></td></tr><tr class="odd"><td style="">4</td><td style="">Internal capacity commitments not documented — Finance, IT, and FP&amp;A availability for ERP workstreams not yet formally committed.</td><td style=""></td></tr><tr class="even"><td style="">5</td><td style="">ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this.</td><td style=""></td></tr></tbody></table>
+
+  <h2>Program Queue (Claude Lane)</h2>
+  <p class="note">Active tasks for Claude / AI synthesis. Retired items not shown.</p>
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:120px">Lane</th><th style="width:340px">Item</th><th style="width:auto">ID</th></tr></thead><tbody><tr class="even"><td style="">synthesis</td><td style="">Refresh P2P pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-p2p-1</td></tr><tr class="odd"><td style="">synthesis</td><td style="">Refresh Reporting/Data pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-reporting-1</td></tr><tr class="even"><td style="">synthesis</td><td style="">Refresh Controls/Audit pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-controls-1</td></tr><tr class="odd"><td style="">writing</td><td style="">Stakeholder Brief wording/style pass (fact-based operator language)</td><td style="">claude-writing-stakeholder-briefs-1</td></tr><tr class="even"><td style="">writing</td><td style="">Post-selection communication templates (Camille/Hema/NetSuite path)</td><td style="">claude-writing-post-selection-comms-1</td></tr><tr class="odd"><td style="">writing</td><td style="">Create controls slides for Adrian Holbrook to present at Audit Committee (Mar 6)</td><td style="">claude-writing-audit-cmte-controls-slides-1</td></tr><tr class="even"><td style="">synthesis</td><td style="">Refresh open thread tracker after Audit Committee meeting (Mar 6)</td><td style="">claude-synthesis-open-threads-1</td></tr><tr class="odd"><td style="">deferred</td><td style="">Robin Lapous (KPMG consolidation) outreach and reporting current-state documentation</td><td style="">claude-deferred-robin-lapous-reporting-1</td></tr><tr class="even"><td style="">deferred</td><td style="">2026 Performance Objectives (Lucca) — set ERP-related objectives</td><td style="">claude-deferred-hr-objectives-2026-1</td></tr></tbody></table>
 </section>
 
@@ -304,11 +484,48 @@
 <section id="s14">
   <h1><span class="sec-num">14</span>Change Log</h1>
   <p class="note">Record every material update. This is the audit trail for the program record.</p>
-  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:110px">Date</th><th style="width:130px">Author</th><th style="width:auto">Changes</th></tr></thead><tbody><tr class="even"><td style="">2026-03-18</td><td style="">Claude / Mike</td><td style="">Initial encyclopedia created. All March 18 decisions recorded: NetSuite as SI (Paris team confirmed), CFGI as integrated support, KPMG selection-only, front-end shelved, encyclopedia model adopted. Budget EUR 999,936 confirmed from V3 SOW. Full team roster, risk register, governance, and outputs registry included.</td></tr></tbody></table>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:110px">Date</th><th style="width:130px">Author</th><th style="width:auto">Changes</th></tr></thead><tbody><tr class="even"><td style="">2026-03-18</td><td style="">Claude / Mike</td><td style="">Initial encyclopedia created. All March 18 decisions recorded: NetSuite as SI (Paris team confirmed), CFGI as integrated support, KPMG selection-only, front-end shelved, encyclopedia model adopted. Budget EUR 999,936 confirmed from V3 SOW. Full team roster, risk register, governance, and outputs registry included.</td></tr><tr class="odd"><td style="">2026-03-18</td><td style="">Claude</td><td style="">Section 15 (Integrations &amp; Data Migration) added. Integration inventory sourced from integrations.json. Data migration and Workiva gaps documented.</td></tr></tbody></table>
+</section>
+
+<section id="s15">
+  <h1><span class="sec-num">15</span>Integrations &amp; Data Migration</h1>
+
+  <h2>Current Integration Stack (Sage-era)</h2>
+  <p>Every integration below currently terminates in or originates from Sage, which NetSuite replaces.
+  All feeds must be re-pointed or rebuilt as part of the NetSuite implementation.
+  NetSuite SI is responsible for building the integration layer; Jade / IT owns technical infrastructure and ongoing monitoring;
+  CFGI reviews integration design at blueprint to ensure controls are embedded.</p>
+
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:130px">Source System</th><th style="width:120px">Target System</th><th style="width:110px">Feed Type</th><th style="width:140px">Owner</th><th style="width:70px">Status</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">SAP Concur</td><td style="">Sage</td><td style="">manual-entry</td><td style="">Finance (confirm)</td><td style="">active</td><td style="">Expense entries are manually posted in Sage.</td></tr><tr class="odd"><td style="">ADP</td><td style="">Sage</td><td style="">file-manual</td><td style="">HR + Finance (confirm)</td><td style="">active</td><td style="">Payroll file manually entered in Sage.</td></tr><tr class="even"><td style="">Docushare</td><td style="">Sage</td><td style="">manual-replication</td><td style="">P2P team (confirm)</td><td style="">active</td><td style="">PO process starts in Docushare then replicated in Sage.</td></tr><tr class="odd"><td style="">Sage</td><td style="">Trustpair</td><td style="">sftp-file</td><td style="">Finance controls + IT (confirm)</td><td style="">active</td><td style="">Vendor database feed from Sage to Trustpair.</td></tr><tr class="even"><td style="">Sage</td><td style="">Trustpair</td><td style="">sftp-file</td><td style="">Treasury/Payments (confirm)</td><td style="">active</td><td style="">Pending payment file sent for Trustpair validation.</td></tr><tr class="odd"><td style="">Trustpair</td><td style="">Agicap</td><td style="">validated-payment-flow</td><td style="">Treasury (confirm)</td><td style="">active</td><td style="">Validated payments continue through Agicap.</td></tr><tr class="even"><td style="">Agicap</td><td style="">Wells Fargo / SocGen</td><td style="">bank-connection</td><td style="">Treasury (confirm)</td><td style="">active</td><td style="">Agicap connected to Wells Fargo and SocGen.</td></tr><tr class="odd"><td style="">Sage (US LLC)</td><td style="">Trustpair</td><td style="">file-upload/manual-trigger</td><td style="">US Finance + Treasury (confirm)</td><td style="">active</td><td style="">US team uses Trustpair controls but payment execution differs from SA path.</td></tr><tr class="even"><td style="">US Finance workflow</td><td style="">Wells Fargo</td><td style="">template-upload/manual</td><td style="">US Accounting (Matt/Kimberly confirm)</td><td style="">active</td><td style="">US side does not use Agicap and runs direct bank templates with manual journals/reconciliations.</td></tr></tbody></table>
+
+  <h2>Integration Responsibility Matrix</h2>
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:180px">Workstream</th><th style="width:160px">Owner</th><th style="width:180px">CFGI Role</th><th style="width:auto">IT / Jade Role</th></tr></thead><tbody><tr class="even"><td style="">Integration design &amp; build</td><td style="">NetSuite SI</td><td style="">Design review — controls embedded at blueprint</td><td style="">Technical access, credentials, network</td></tr><tr class="odd"><td style="">Trustpair feed (Sage → NetSuite)</td><td style="">Finance Controls + IT</td><td style="">Controls validation</td><td style="">Feed monitoring, failure escalation</td></tr><tr class="even"><td style="">Agicap / Treasury feeds</td><td style="">Treasury (confirm)</td><td style="">N/A unless payment controls in scope</td><td style="">Connection config and monitoring</td></tr><tr class="odd"><td style="">ADP / Concur / Docushare</td><td style="">HR + Finance + P2P team</td><td style="">N/A</td><td style="">File transfer and error handling</td></tr><tr class="even"><td style="">Workiva (SEC/XBRL reporting)</td><td style="">⚠️ TBC — confirm with Hema</td><td style="">Reporting data model review</td><td style="">API / file connection</td></tr></tbody></table>
+
+  <h2>Workiva — Confirmation Required</h2>
+  <div class="callout" style="border-left-color:#8B4000;background:#FFF3E0">
+    <div class="callout-title" style="color:#8B4000">⚠️ Open Gap: Workiva Scope</div>
+    <div class="callout-body">Workiva is not currently in integrations.json. If Abivax uses Workiva for SEC/XBRL reporting, this integration must be designed before blueprint closes — it touches the NetSuite reporting data model directly. Confirm with Hema whether Workiva is in scope for Phase 1.</div>
+  </div>
+
+  <h2>Data Migration</h2>
+  <div class="callout" style="border-left-color:#8B1A1A;background:#FFF0F0">
+    <div class="callout-title" style="color:#8B1A1A">⚠️ Open Gap: Data Migration Plan</div>
+    <div class="callout-body">Data migration is not yet formally owned or scoped. Current-state data lives in Sage (chart of accounts, vendor master, open AP/AR balances, historical transactions). Migrating this to NetSuite is typically one of the top three implementation risks on a program this size. KPMG's proposal covered this under functional assistance — with KPMG out, this must be explicitly assigned. Candidates: NetSuite SI (primary), CFGI (design and validation oversight). Formal data migration plan with ownership, scope, and cutover approach should be a blueprint deliverable.</div>
+  </div>
+
+  <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:200px">Migration Workstream</th><th style="width:220px">Complexity</th><th style="width:200px">Proposed Owner</th><th style="width:auto">Status</th></tr></thead><tbody><tr class="even"><td style="">Chart of accounts</td><td style="">Medium — multi-GAAP mapping required</td><td style="">NetSuite SI + Hema</td><td style="color:#8B4000;font-weight:600">⚠️ Not assigned</td></tr><tr class="odd"><td style="">Vendor master (497 vendors confirmed)</td><td style="">Medium — Trustpair integration dependency</td><td style="">NetSuite SI + Finance Controls</td><td style="color:#8B4000;font-weight:600">⚠️ Not assigned</td></tr><tr class="even"><td style="">Open AP / AR balances</td><td style="">High — cutover timing critical</td><td style="">NetSuite SI + CFGI oversight</td><td style="color:#8B4000;font-weight:600">⚠️ Not assigned</td></tr><tr class="odd"><td style="">Historical transaction data</td><td style="">Medium — reporting baseline dependency</td><td style="">NetSuite SI (confirm scope)</td><td style="color:#8B4000;font-weight:600">⚠️ Not assigned</td></tr><tr class="even"><td style="">Employee / cost center data</td><td style="">Low-Medium</td><td style="">HR + Finance (ADP source)</td><td style="color:#8B4000;font-weight:600">⚠️ Not assigned</td></tr></tbody></table>
 </section>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
+  mermaid.initialize({ startOnLoad: true, theme: 'base',
+    themeVariables: { primaryColor: '#D6E4F7', primaryTextColor: '#1F3864',
+      primaryBorderColor: '#2E5EA8', lineColor: '#2E5EA8',
+      secondaryColor: '#F5F6F8', tertiaryColor: '#fff',
+      edgeLabelBackground: '#fff', fontFamily: 'Inter, system-ui, sans-serif' }
+  });
+
   // Highlight active nav link on scroll
   const links = document.querySelectorAll('a.nav-link');
   const secs  = document.querySelectorAll('section[id]');

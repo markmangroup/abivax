@@ -207,9 +207,10 @@ const ps = pillar?.programState;
   const items = queue.items || queue;
   if (!Array.isArray(items)) return report('WARN', 'open_items_staleness', 'claude_lane_queue items is not an array');
   const cutoff = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
+  const INACTIVE = new Set(['done', 'completed', 'retired', 'closed']);
   let stale = 0;
   items.forEach(item => {
-    if (item.status === 'done' || item.status === 'completed') return;
+    if (INACTIVE.has(item.status)) return;
     const updated = item.updatedAt || item.createdAt;
     if (!updated) {
       stale++;
@@ -217,7 +218,7 @@ const ps = pillar?.programState;
       stale++;
     }
   });
-  const open = items.filter(i => i.status !== 'done' && i.status !== 'completed').length;
+  const open = items.filter(i => !INACTIVE.has(i.status)).length;
   if (stale > 0) report('WARN', 'open_items_staleness', `${stale} of ${open} open queue items have no update in 14+ days`);
   else ok('open_items_staleness', `All ${open} open items updated within 14 days ✓`);
 })();

@@ -65,26 +65,48 @@ function kv(pairs, accent = '#2E5EA8') {
 }
 
 // ── Sections ──────────────────────────────────────────────────────────────────
-const sections = [
-  { id: 's1',  num: '1',  title: 'Program Overview' },
-  { id: 's2',  num: '2',  title: 'Key Decisions Log' },
-  { id: 's3',  num: '3',  title: 'System Selection' },
-  { id: 's4',  num: '4',  title: 'Delivery Model' },
-  { id: 's5',  num: '5',  title: 'SOX and Controls' },
-  { id: 's6',  num: '6',  title: 'Program Budget' },
-  { id: 's7',  num: '7',  title: 'Implementation Timeline' },
-  { id: 's8',  num: '8',  title: 'Risk Register' },
-  { id: 's9',  num: '9',  title: 'Vendor Profiles' },
-  { id: 's10', num: '10', title: 'ERP Pillars' },
-  { id: 's11', num: '11', title: 'Governance' },
-  { id: 's12', num: '12', title: 'Open Items' },
-  { id: 's13', num: '13', title: 'Outputs Registry' },
-  { id: 's14', num: '14', title: 'Change Log' },
+const navGroups = [
+  {
+    label: 'Foundation',
+    sections: [
+      { id: 's1',  num: '1',  title: 'Program Overview' },
+      { id: 's2',  num: '2',  title: 'Key Decisions Log' },
+      { id: 's3',  num: '3',  title: 'System Selection' },
+      { id: 's4',  num: '4',  title: 'Delivery Model' },
+    ]
+  },
+  {
+    label: 'Program Detail',
+    sections: [
+      { id: 's5',  num: '5',  title: 'SOX and Controls' },
+      { id: 's6',  num: '6',  title: 'Program Budget' },
+      { id: 's7',  num: '7',  title: 'Timeline' },
+      { id: 's8',  num: '8',  title: 'Risk Register' },
+      { id: 's9',  num: '9',  title: 'Vendor Profiles' },
+      { id: 's10', num: '10', title: 'ERP Pillars' },
+      { id: 's15', num: '15', title: 'Integrations & Migration' },
+    ]
+  },
+  {
+    label: 'Reference',
+    sections: [
+      { id: 's11', num: '11', title: 'Governance' },
+      { id: 's12', num: '12', title: 'Open Items' },
+      { id: 's13', num: '13', title: 'Outputs Registry' },
+      { id: 's14', num: '14', title: 'Change Log' },
+    ]
+  },
 ];
 
-const nav = sections.map(s =>
-  `<a href="#${s.id}" class="nav-link"><span class="nav-num">${s.num}</span>${s.title}</a>`
-).join('');
+// Flat list for IntersectionObserver
+const sections = navGroups.flatMap(g => g.sections);
+
+const nav = navGroups.map(g => `
+  <div class="nav-group-label">${g.label}</div>
+  ${g.sections.map(s =>
+    `<a href="#${s.id}" class="nav-link"><span class="nav-num">${s.num}</span>${s.title}</a>`
+  ).join('')}
+`).join('');
 
 // ── Section content ───────────────────────────────────────────────────────────
 
@@ -383,16 +405,191 @@ function s9() {
 }
 
 function s10() {
+  const diagrams   = JSON.parse(fs.readFileSync(path.join(DATA, 'process_flow_diagram_payloads.json'), 'utf8'));
+  const pillarsData = synth.pillars.filter(p => p.id);
+  const p2p        = pillarsData.find(p => p.id === 'p2p') || {};
+  const p2pFlow    = (diagrams.payloads || []).find(d => d.flowId === 'p2p-france-current-to-future') || {};
+  const p2pSteps   = (p2pFlow.nodes || []).filter(n => n.lane === 'process').sort((a,b) => a.stepIndex - b.stepIndex);
+
+  // ── shared helpers ──────────────────────────────────────────────────────────
+  const ul = (arr, limit = 999, style = '') => {
+    const items = arr.slice(0, limit).map(item => {
+      const text  = typeof item === 'string' ? item : (item.decision || item.move || item.action || JSON.stringify(item));
+      const owner = typeof item === 'object' ? (item.owner || '') : '';
+      return owner
+        ? `<li><span style="color:#1F3864;font-weight:600">[${e(owner)}]</span> ${e(text)}</li>`
+        : `<li>${e(text)}</li>`;
+    }).join('');
+    const more = arr.length > limit ? `<li style="color:#888;list-style:none">+ ${arr.length - limit} more in source JSON</li>` : '';
+    return `<ul style="font-size:12px;color:#333;padding-left:18px;margin:0;line-height:1.8;${style}">${items}${more}</ul>`;
+  };
+
+  const areaLabel = (icon, title, color = '#1F3864', bg = '#F0F5FF') =>
+    `<div style="background:${bg};border-left:4px solid ${color};padding:8px 14px;font-size:13px;font-weight:700;color:${color};margin:0">${icon} ${e(title)}</div>`;
+
+  // ── Req mapping by step keyword ─────────────────────────────────────────────
+  const reqMap = {
+    vendor:  [0, 1, 4, 7, 8],   // DoA, contractor PO, Trustpair integration, vendor workflow, SOD
+    invoice: [2, 3, 5, 6, 10, 12], // PO approval, routing, 2-way match, tolerance, commitment reg, entity sep
+    payment: [9, 8, 12],         // payment traceability, SOD, entity sep
+    phase2:  [13],
+  };
+  const reqs = p2p.erpDesignRequirements || [];
+
+  function reqList(indices) {
+    return ul(indices.map(i => reqs[i]).filter(Boolean), 999,
+      'background:#F8FAFF;padding:8px 8px 8px 24px;border-radius:0 0 4px 4px');
+  }
+
+  // ── P2P Mermaid flow ────────────────────────────────────────────────────────
+  const mermaidDef = `flowchart LR
+    subgraph VENDOR["1 · Vendor Setup & Validation"]
+      direction TB
+      V1["Sage vendor master\\n497 vendors — Juliette + Fatma only"]
+      V2["Trustpair validation\\n2× daily bank check"]
+      V1 --> V2
+    end
+    subgraph INVOICE["2 · Invoice / Coding / Approval"]
+      direction TB
+      I1["Invoice received\\nDocuShare + email"]
+      I2["Manual coding\\nAmount-only approval routing"]
+      I3["Sage posting\\nNo system-enforced workflow"]
+      I1 --> I2 --> I3
+    end
+    subgraph PAYMENT["3 · Payment Execution"]
+      direction TB
+      P1["Trustpair\\npayment file validation"]
+      P2["Agicap execution\\nWells Fargo · SocGen"]
+      P1 --> P2
+    end
+    VENDOR -->|"~4,000 invoices/yr\\n650 POs"| INVOICE
+    INVOICE --> PAYMENT
+    style VENDOR  fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    style INVOICE fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    style PAYMENT fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864`;
+
+  // ── Per-step detail cards ───────────────────────────────────────────────────
+  function stepCard(step, reqIndices, ctrlLabel) {
+    const systems = (step.systems || []).map(s => `<span style="background:#E8EDF5;border-radius:3px;padding:1px 7px;font-size:11px;font-weight:600;color:#1F3864;margin:2px">${e(s)}</span>`).join(' ');
+    const pains   = step.painPoints || [];
+    return `
+  <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden;margin-bottom:12px">
+    ${areaLabel('', step.label + ' — ' + (step.subtitle || ''), '#1F3864', '#EBF2FC')}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+      <div style="padding:12px 16px;border-right:1px solid #F0F4FA">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:6px">Current State Pain Points</div>
+        ${ul(pains)}
+        <div style="margin-top:10px;font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:4px">Systems (current)</div>
+        <div>${systems || '<span style="font-size:12px;color:#aaa">TBC</span>'}</div>
+        ${ctrlLabel ? `<div style="margin-top:8px;font-size:11px;color:#2E5EA8;font-weight:600">Controls: ${e(ctrlLabel)}</div>` : ''}
+      </div>
+      <div style="padding:12px 16px">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">NetSuite Requirements (Phase 1)</div>
+        ${reqList(reqIndices)}
+      </div>
+    </div>
+  </div>`;
+  }
+
+  // ── Generic pillar card for R2R / Reporting ─────────────────────────────────
+  function genericPillarCard(p) {
+    const known   = p.currentStateKnown     || [];
+    const unknown = p.currentStateUnknown   || [];
+    const reqs    = p.erpDesignRequirements || [];
+    const pending = p.keyDecisionsPending   || [];
+    const moves   = p.nextMoves             || [];
+    const waiting = p.waitingOn             || [];
+    const people  = p.keyPeople             || [];
+    const cfti    = p.cftiControls          || {};
+    const labelMap = { 'record-to-report': 'Record to Report (R2R)', 'reporting-planning': 'Reporting & Planning' };
+    const label   = labelMap[p.id] || p.label || p.id;
+    const cftiStr = cfti.total ? `${cfti.total} controls (${cfti.erpSignal||0} ERP-signal)` : '';
+    const conf    = p.confidenceLevel || '';
+
+    return `
+  <div style="margin:0 0 24px;border:1px solid #E0E8F5;border-radius:6px;overflow:hidden">
+    <div style="background:#2E5EA8;color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font-size:14px;font-weight:700">${e(label)}</span>
+      ${conf ? `<span style="font-size:11px;opacity:0.7">Confidence: ${e(conf)}</span>` : ''}
+    </div>
+    <div style="padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px;border-bottom:1px solid #F0F4FA">
+      <div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888;margin-bottom:5px">Current State</div>
+        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">${e(p.currentStateSummary||'')}</p>
+        ${cftiStr ? `<p style="font-size:11px;color:#2E5EA8;margin:8px 0 0;font-weight:600">CFTI: ${cftiStr}</p>` : ''}
+      </div>
+      <div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:5px">Target State (Phase 1)</div>
+        <p style="font-size:13px;color:#333;margin:0;line-height:1.6">${e(p.futureStateSummary||'')}</p>
+      </div>
+    </div>
+    ${people.length ? `<div style="padding:10px 16px;border-bottom:1px solid #F0F4FA"><span style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#888">Key People: </span><span style="font-size:12px;color:#1F3864;font-weight:600">${e(people.join(' · '))}</span></div>` : ''}
+    ${reqs.length ? `<div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#1F6830;margin-bottom:6px">ERP Design Requirements (${reqs.length})</div>${ul(reqs, 8)}</div>` : ''}
+    ${pending.length ? `<div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#FFFBF0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#BF6C00;margin-bottom:6px">⚠ Open Decisions</div>${ul(pending)}</div>` : ''}
+    ${moves.length ? `<div style="padding:12px 16px;border-bottom:1px solid #F0F4FA"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:6px">Next Moves (${moves.length})</div>${ul(moves, 6)}</div>` : ''}
+    ${waiting.length ? `<div style="padding:12px 16px;border-bottom:1px solid #F0F4FA;background:#F5F0FF"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#5B2D8E;margin-bottom:6px">Waiting On</div>${ul(waiting)}</div>` : ''}
+    ${unknown.length ? `<div style="padding:12px 16px;background:#FFF0F0"><div style="font-size:10px;text-transform:uppercase;letter-spacing:0.8px;color:#8B1A1A;margin-bottom:6px">Data Gaps — Unknown (${unknown.length})</div>${ul(unknown)}</div>` : ''}
+  </div>`;
+  }
+
+  // ── P2P control labels per step ─────────────────────────────────────────────
+  const ctrlNodes = (p2pFlow.nodes || []).filter(n => n.lane === 'controls');
+  const ctrl = i => (ctrlNodes[i] || {}).label || '';
+
   return `
 <section id="s10">
   <h1><span class="sec-num">10</span>ERP Pillars and Process Scope</h1>
-  <p>Three primary pillars plus one cross-cutting enablement layer. Each pillar has named business process owners and a clear definition of done.</p>
+
+  <h2>Pillar Overview</h2>
+  <p>Three primary pillars plus one cross-cutting enablement layer. Each has named business process owners and a clear definition of done.</p>
   ${table(['Pillar','BPOs','Core Scope','Done Means...'], [
-    ['Record to Report (R2R)',     'Trinidad Mesa\nMatt Epley',       'COA; multi-entity; FX; multi-GAAP (IFRS / French GAAP / US GAAP); close process; reporting extracts; consolidation', 'COA design agreed. Reporting extract supports FP&A. Multi-entity and multi-GAAP explicitly designed. Close is system-enforced.'],
-    ['Procure to Pay (P2P)',       'Juliette Courtot\nKimberly Gordon','Req-to-PO; invoice processing; vendor master; payment execution; approval workflows; expense; 1099 / evidence', 'Workflow approvals system-enforced. Vendor validation and payment flow ownership explicit. Manual handoffs reduced or controlled.'],
-    ['SOX / Controls',            'CFGI (Walid)\nAdrian Holbrook',   'Control design; audit trail; remediation tracking; SoD; access controls; evidence repository; automation split', 'Key controls mapped to owners and system steps. Audit evidence paths defined. Remediation tracking live. Design supports testable controls.'],
-    ['Platform / Enablement',     'Jade Nguyen\nBenjamin Talmant',   'IT integrations (5); system admin; access validation; architecture; timeline dependencies; change management', 'Integration architecture confirmed. Admin ownership explicit. IT capacity planned and committed. Change plan live.'],
-  ], { widths: ['160px','150px','220px','auto'] })}
+    ['Record to Report (R2R)',  'Trinidad Mesa · Matt Epley',        'COA; multi-entity; FX; multi-GAAP (IFRS / French GAAP / US GAAP); close process; reporting extracts; consolidation', 'COA design agreed. Reporting extract supports FP&A. Multi-entity and multi-GAAP explicitly designed. Close is system-enforced.'],
+    ['Procure to Pay (P2P)',    'Juliette Courtot · Kimberly Gordon', 'Req-to-PO; invoice processing; vendor master; payment execution; approval workflows; expense; 1099 / evidence', 'Workflow approvals system-enforced. Vendor validation and payment flow ownership explicit. Manual handoffs eliminated.'],
+    ['SOX / Controls',         'CFGI (Walid) · Adrian Holbrook',     'Control design; audit trail; SoD; access controls; evidence repository; automation split', 'Key controls mapped to owners and system steps. Audit evidence paths defined. Design supports testable controls.'],
+    ['Platform / Enablement',  'Jade Nguyen · Benjamin Talmant',     'IT integrations; system admin; access validation; architecture; change management', 'Integration architecture confirmed. Admin ownership explicit. IT capacity committed. Change plan live.'],
+  ], { widths: ['165px','175px','210px','auto'] })}
+
+  <h2>Procure to Pay (P2P) — France SA</h2>
+  <p>P2P is the highest-priority pillar for Phase 1. 20 CFTI controls, 5 ERP-signal. Current state is manual and fragmented across Sage, DocuShare, Trustpair, and Agicap. Below is the France SA flow with per-area current state, pain points, and NetSuite requirements.</p>
+
+  <div style="margin:20px 0;padding:16px;background:#F8FAFF;border:1px solid #D6E4F7;border-radius:6px">
+    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:12px">France SA — Current State Process Flow</div>
+    <div class="mermaid">
+${mermaidDef}
+    </div>
+  </div>
+
+  ${p2pSteps[0] ? stepCard(p2pSteps[0], reqMap.vendor,  ctrl(0)) : ''}
+  ${p2pSteps[1] ? stepCard(p2pSteps[1], reqMap.invoice, ctrl(1)) : ''}
+  ${p2pSteps[2] ? stepCard(p2pSteps[2], reqMap.payment, ctrl(2)) : ''}
+
+  <div style="margin:16px 0;border:1px solid #E8F5E9;border-radius:6px;overflow:hidden">
+    ${areaLabel('📋', 'Pre-ERP Governance Requirements (before blueprint)', '#1F6830', '#E8F5E9')}
+    <div style="padding:12px 16px">
+      <p style="font-size:12px;color:#555;margin:0 0 8px">These items must be resolved by Abivax leadership before NetSuite configuration begins. ERP enforces decisions — it does not make them.</p>
+      ${ul([reqs[0], reqs[1]].filter(Boolean))}
+    </div>
+  </div>
+
+  <div style="margin:16px 0;border:1px solid #FFF3CD;border-radius:6px;overflow:hidden">
+    ${areaLabel('⚠', 'Open Decisions — P2P', '#BF6C00', '#FFF8E6')}
+    <div style="padding:12px 16px">
+      ${ul(p2p.keyDecisionsPending || [])}
+    </div>
+  </div>
+
+  <div style="margin:16px 0;border:1px solid #F3E5FF;border-radius:6px;overflow:hidden">
+    ${areaLabel('→', 'Next Moves — P2P', '#5B2D8E', '#F9F0FF')}
+    <div style="padding:12px 16px">
+      ${ul(p2p.nextMoves || [], 8)}
+    </div>
+  </div>
+
+  <h2>Record to Report (R2R)</h2>
+  ${genericPillarCard(pillarsData.find(p => p.id === 'record-to-report') || {})}
+
+  <h2>Reporting &amp; Planning</h2>
+  ${genericPillarCard(pillarsData.find(p => p.id === 'reporting-planning') || {})}
 </section>`;
 }
 
@@ -412,23 +609,40 @@ function s11() {
 }
 
 function s12() {
-  const qRows = activeQueue.map(i => [i.lane || '', i.title || '', i.id || '']);
+  const qRows = activeQueue.map(i => [i.lane || '', i.title || i.description || '', i.id || '']);
+
+  // Immediate actions derived from program state — only current open items
+  const ps = synth.programState;
+  const risks = ps.topProgramRisks || [];
+
+  // Build action rows from active risks (first 2 are highest priority by convention)
+  const actionRows = [
+    ['Mike / Hema',        'Sign NetSuite SOW (V3)',                    'Target March 31. EUR 388,700 fixed bid confirmed. Legal review in progress.'],
+    ['Mike / Jean-Arnold', 'Consolidate CFGI proposals — one engagement','Email sent 18 Mar to Ken Schatz + Jean-Arnold Coutareau. Target EUR 175-225K combined. April start.'],
+    ['Mike',               'CFGI NetSuite implementation references',    'CFGI-2 NOT FOUND in diligence — obtain before contract signature.'],
+    ['Mike / Didier',      'Budget written authorization',               'Verbal approval confirmed (Didier, EUR 999,936). Formal written sign-off needed before contract execution.'],
+    ['Mike / Jade',        'IT integration architecture — blueprint',    'Integration ownership and monitoring for Concur, ADP, Trustpair, Agicap not yet assigned for NetSuite build.'],
+    ['Mike / Hema',        'Workiva scope confirmation',                 'Confirm with Hema whether Workiva is in scope for Phase 1 — touches reporting data model design.'],
+  ];
+
   return `
 <section id="s12">
   <h1><span class="sec-num">12</span>Open Items and Decision Queue</h1>
+
   <h2>Immediate Actions (This Week)</h2>
-  ${table(['Owner','Item','Notes'], [
-    ['Mike',                'Sign NetSuite SOW (V3 17 Mar 2026)',           'Target March 31. Confirm Phase 1/2 scope with Jamal. Legal review in progress.'],
-    ['Mike / Jean-Arnold',  'Consolidate CFGI proposals — one engagement',  'Email drafted 18 Mar to Ken + Jean-Arnold. Target combined EUR 175-225K. April deadline.'],
-    ['Mike / Jamal',        'Confirm O2C / Inventory Phase 1/2 boundary',   'Not yet contractually confirmed. Resolve on Jamal call.'],
-    ['Mike',                'Get CFGI NetSuite implementation references',   'CFGI-2 NOT FOUND in diligence — outstanding before contract.'],
-    ['Mike / Hema',         'Budget authorization from Hema and Didier',    'BUD-1/BUD-2 open — EUR 1M program budget needs written sign-off.'],
-    ['Mike / Camille',      'Confirm Audit Committee meeting date',          'Camille Girard availability on March 6 not confirmed.'],
-  ], {
-    widths: ['150px','260px','auto'],
+  ${table(['Owner','Item','Notes'], actionRows, {
+    widths: ['155px','235px','auto'],
     cellStyle: (r, c) => c === 1 ? 'font-weight:600' : c === 0 ? 'background:#FFF3CD;color:#BF6C00;font-weight:600' : '',
   })}
-  <h2>Program Queue</h2>
+
+  <h2>Active Risk Register Summary</h2>
+  ${table(['#','Risk','Owner'], risks.map((r, i) => [String(i+1), r, '']), {
+    widths: ['30px','auto','120px'],
+    cellStyle: (r, c) => r < 2 && c === 1 ? 'color:#8B1A1A;font-weight:600' : '',
+  })}
+
+  <h2>Program Queue (Claude Lane)</h2>
+  <p class="note">Active tasks for Claude / AI synthesis. Retired items not shown.</p>
   ${table(['Lane','Item','ID'], qRows, { widths: ['120px','340px','auto'] })}
 </section>`;
 }
@@ -457,12 +671,86 @@ function s14() {
   <p class="note">Record every material update. This is the audit trail for the program record.</p>
   ${table(['Date','Author','Changes'], [
     ['2026-03-18', 'Claude / Mike', 'Initial encyclopedia created. All March 18 decisions recorded: NetSuite as SI (Paris team confirmed), CFGI as integrated support, KPMG selection-only, front-end shelved, encyclopedia model adopted. Budget EUR 999,936 confirmed from V3 SOW. Full team roster, risk register, governance, and outputs registry included.'],
+    ['2026-03-18', 'Claude', 'Section 15 (Integrations & Data Migration) added. Integration inventory sourced from integrations.json. Data migration and Workiva gaps documented.'],
   ], { widths: ['110px','130px','auto'] })}
 </section>`;
 }
 
+function s15() {
+  const integ = JSON.parse(fs.readFileSync(path.join(DATA, 'integrations.json'), 'utf8'));
+  const integList = integ.integrations || [];
+
+  const integRows = integList.map(i => [
+    i.sourceSystem || '',
+    i.targetSystem || '',
+    i.feedType || '',
+    i.owner || '',
+    i.status || '',
+    i.notes || '',
+  ]);
+
+  return `
+<section id="s15">
+  <h1><span class="sec-num">15</span>Integrations &amp; Data Migration</h1>
+
+  <h2>Current Integration Stack (Sage-era)</h2>
+  <p>Every integration below currently terminates in or originates from Sage, which NetSuite replaces.
+  All feeds must be re-pointed or rebuilt as part of the NetSuite implementation.
+  NetSuite SI is responsible for building the integration layer; Jade / IT owns technical infrastructure and ongoing monitoring;
+  CFGI reviews integration design at blueprint to ensure controls are embedded.</p>
+
+  ${table(
+    ['Source System','Target System','Feed Type','Owner','Status','Notes'],
+    integRows,
+    { widths: ['130px','120px','110px','140px','70px','auto'] }
+  )}
+
+  <h2>Integration Responsibility Matrix</h2>
+  ${table(
+    ['Workstream','Owner','CFGI Role','IT / Jade Role'],
+    [
+      ['Integration design & build', 'NetSuite SI', 'Design review — controls embedded at blueprint', 'Technical access, credentials, network'],
+      ['Trustpair feed (Sage → NetSuite)', 'Finance Controls + IT', 'Controls validation', 'Feed monitoring, failure escalation'],
+      ['Agicap / Treasury feeds', 'Treasury (confirm)', 'N/A unless payment controls in scope', 'Connection config and monitoring'],
+      ['ADP / Concur / Docushare', 'HR + Finance + P2P team', 'N/A', 'File transfer and error handling'],
+      ['Workiva (SEC/XBRL reporting)', '⚠️ TBC — confirm with Hema', 'Reporting data model review', 'API / file connection'],
+    ],
+    { widths: ['180px','160px','180px','auto'] }
+  )}
+
+  <h2>Workiva — Confirmation Required</h2>
+  ${callout(
+    '⚠️ Open Gap: Workiva Scope',
+    'Workiva is not currently in integrations.json. If Abivax uses Workiva for SEC/XBRL reporting, this integration must be designed before blueprint closes — it touches the NetSuite reporting data model directly. Confirm with Hema whether Workiva is in scope for Phase 1.',
+    '#8B4000', '#FFF3E0'
+  )}
+
+  <h2>Data Migration</h2>
+  ${callout(
+    '⚠️ Open Gap: Data Migration Plan',
+    'Data migration is not yet formally owned or scoped. Current-state data lives in Sage (chart of accounts, vendor master, open AP/AR balances, historical transactions). Migrating this to NetSuite is typically one of the top three implementation risks on a program this size. KPMG\'s proposal covered this under functional assistance — with KPMG out, this must be explicitly assigned. Candidates: NetSuite SI (primary), CFGI (design and validation oversight). Formal data migration plan with ownership, scope, and cutover approach should be a blueprint deliverable.',
+    '#8B1A1A', '#FFF0F0'
+  )}
+
+  ${table(
+    ['Migration Workstream','Complexity','Proposed Owner','Status'],
+    [
+      ['Chart of accounts', 'Medium — multi-GAAP mapping required', 'NetSuite SI + Hema', '⚠️ Not assigned'],
+      ['Vendor master (497 vendors confirmed)', 'Medium — Trustpair integration dependency', 'NetSuite SI + Finance Controls', '⚠️ Not assigned'],
+      ['Open AP / AR balances', 'High — cutover timing critical', 'NetSuite SI + CFGI oversight', '⚠️ Not assigned'],
+      ['Historical transaction data', 'Medium — reporting baseline dependency', 'NetSuite SI (confirm scope)', '⚠️ Not assigned'],
+      ['Employee / cost center data', 'Low-Medium', 'HR + Finance (ADP source)', '⚠️ Not assigned'],
+    ],
+    {
+      widths: ['200px','220px','200px','auto'],
+      cellStyle: (r, c, v) => c === 3 && v.includes('⚠️') ? 'color:#8B4000;font-weight:600' : ''
+    }
+  )}
+</section>`;
+}
+
 // ── Assemble ──────────────────────────────────────────────────────────────────
-const body = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14].map(f => f()).join('\n');
+const body = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15].map(f => f()).join('\n');
 
 const html = `<!DOCTYPE html>
 <html lang="en">
@@ -509,6 +797,10 @@ const html = `<!DOCTYPE html>
 
   .nav-section-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
     color: rgba(255,255,255,0.35); padding: 14px 16px 4px; }
+  .nav-group-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: rgba(255,255,255,0.28); padding: 16px 16px 3px; margin-top: 4px;
+    border-top: 1px solid rgba(255,255,255,0.07); }
+  .nav-group-label:first-child { border-top: none; margin-top: 0; }
 
   a.nav-link {
     display: flex; align-items: center; gap: 10px;
@@ -617,7 +909,6 @@ const html = `<!DOCTYPE html>
     <div class="title">Program Encyclopedia</div>
     <div class="meta">Program Director: Mike Markman<br>Generated: ${TODAY}</div>
   </div>
-  <div class="nav-section-label">Sections</div>
   ${nav}
   <div id="sidebar-footer">
     Confidential — Program Director Use<br>
@@ -642,7 +933,15 @@ const html = `<!DOCTYPE html>
   ${body}
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
+  mermaid.initialize({ startOnLoad: true, theme: 'base',
+    themeVariables: { primaryColor: '#D6E4F7', primaryTextColor: '#1F3864',
+      primaryBorderColor: '#2E5EA8', lineColor: '#2E5EA8',
+      secondaryColor: '#F5F6F8', tertiaryColor: '#fff',
+      edgeLabelBackground: '#fff', fontFamily: 'Inter, system-ui, sans-serif' }
+  });
+
   // Highlight active nav link on scroll
   const links = document.querySelectorAll('a.nav-link');
   const secs  = document.querySelectorAll('section[id]');

@@ -151,6 +151,39 @@
       "entity": "External or internal",
       "needThem": "Engage — has volumes, processes",
       "notes": "\"Spend a lot of time with her.\" Hema: \"We did tons of work with her and she has all the stuff you might be looking for like volumes and processes.\""
+    },
+    {
+      "name": "Mike Markman",
+      "role": "ERP Program Director",
+      "org": "Abivax",
+      "isActive": true,
+      "relevance": "primary",
+      "notes": "Internal ERP program lead"
+    },
+    {
+      "name": "Hafid Irbaiyne",
+      "role": "NetSuite Practice Manager France/MEA",
+      "org": "NetSuite",
+      "isActive": true,
+      "relevance": "delivery",
+      "notes": "NetSuite SI lead — Paris-based, confirmed for Abivax engagement"
+    },
+    {
+      "name": "Jean-Arnold Coutareau",
+      "role": "Partner",
+      "org": "CFGI",
+      "isActive": true,
+      "relevance": "delivery",
+      "notes": "CFGI engagement lead — US side"
+    },
+    {
+      "name": "Walid Bouassida",
+      "role": "Director",
+      "org": "CFGI Paris",
+      "isActive": true,
+      "relevance": "delivery",
+      "notes": "CFGI Paris — day-to-day program governance and change management lead"
     }
-  ]
+  ],
+  "updatedAt": "2026-03-18"
 }

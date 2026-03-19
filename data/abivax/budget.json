@@ -68,5 +68,11 @@
       "label": "ERP-signal controls",
       "value": "9 (must be addressed in blueprint)"
     }
-  ]
+  ],
+  "grandTotal": 999936,
+  "grandTotalCurrency": "EUR",
+  "approvalStatus": "approved",
+  "approver": "Didier Blondel",
+  "approvalDate": "2026-03",
+  "updatedAt": "2026-03-18"
 }

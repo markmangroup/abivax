@@ -3,9 +3,9 @@
     "purpose": "Briefing-quality synthesis of the ERP program. Answers any meeting question in 30 seconds per pillar. Sits above erp_pillar_baselines.json (which holds operational detail) and feeds both live UI pages and PPTX generation.",
     "version": 2,
     "synthesizedAt": "2026-03-04",
-    "pillarStructureNote": "As of 2026-03-04, restructured from 4 pillars (P2P, Reporting, Controls, Governance) to 3 functional workstream pillars (P2P, Record to Report, Reporting & Planning). Controls/SOX is now a compliance design layer within each pillar \u2014 not a top-level pillar. Program governance/mobilization status lives in programState.topProgramRisks and the header strip. This aligns with the board-level story: we are replacing three broken manual processes in Sage by Jan 1 2027, with SOX-compliant design baked in from day one.",
+    "pillarStructureNote": "As of 2026-03-04, restructured from 4 pillars (P2P, Reporting, Controls, Governance) to 3 functional workstream pillars (P2P, Record to Report, Reporting & Planning). Controls/SOX is now a compliance design layer within each pillar — not a top-level pillar. Program governance/mobilization status lives in programState.topProgramRisks and the header strip. This aligns with the board-level story: we are replacing three broken manual processes in Sage by Jan 1 2027, with SOX-compliant design baked in from day one.",
     "synthesizedBy": "claude-session",
-    "refreshInstructions": "When new context arrives (emails, meeting notes, vendor decks, SharePoint artifacts, CFTI updates), a Claude session should: (1) read this file + erp_pillar_baselines.json + the new context, (2) update the relevant pillar's currentStateSummary if material facts changed, (3) move items from currentStateUnknown to currentStateKnown if evidence arrived, (4) update keyDecisionsPending and nextMoves, (5) update lastRefreshedAt and synthesizedAt, (6) add a note to changeLog. Do not rewrite everything \u2014 only update what actually changed.",
+    "refreshInstructions": "When new context arrives (emails, meeting notes, vendor decks, SharePoint artifacts, CFTI updates), a Claude session should: (1) read this file + erp_pillar_baselines.json + the new context, (2) update the relevant pillar's currentStateSummary if material facts changed, (3) move items from currentStateUnknown to currentStateKnown if evidence arrived, (4) update keyDecisionsPending and nextMoves, (5) update lastRefreshedAt and synthesizedAt, (6) add a note to changeLog. Do not rewrite everything — only update what actually changed.",
     "dataRelationships": {
       "operationalDetail": "data/abivax/erp_pillar_baselines.json",
       "cftiControls": "data/abivax/cfti_control_register.json",
@@ -43,8 +43,7 @@
     "topProgramRisks": [
       "NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.",
       "CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.",
-      "O2C / Inventory Phase 1/2 scope boundary not contractually confirmed — in base SOW but not activated Phase 1; confirm with Jamal.",
-      "Budget authorization not obtained — EUR 1M program budget (EUR 999,936) needs written sign-off from Didier and Hema; BUD-1/BUD-2 still open.",
+      "Budget approved verbally by Didier Blondel (EUR 999,936) — written authorization and board documentation still to be formalized before contract execution.",
       "Internal capacity commitments not documented — Finance, IT, and FP&A availability for ERP workstreams not yet formally committed.",
       "ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this."
     ],
@@ -64,7 +63,20 @@
       ]
     },
     "lastUpdated": "2026-03-18",
-    "updatedBy": "Claude / Mike — delivery model decisions confirmed"
+    "updatedBy": "Claude / Mike",
+    "budgetStatus": {
+      "total": 999936,
+      "currency": "EUR",
+      "status": "approved",
+      "approver": "Didier Blondel",
+      "approvalDate": "2026-03",
+      "approvalType": "verbal",
+      "breakdown": {
+        "netSuite": 562936,
+        "cfgi": 220000,
+        "reserve": 217000
+      }
+    }
   },
   "pillars": [
     {
@@ -93,23 +105,23 @@
       },
       "currentStateKnown": [
         "Vendor master confirmed at 497 vendors (Trustpair export 'Base supplier Trustpair.xlsx', received 2026-03-02 from Philippe Goncalves). Geography: FR 245 (49%), US 99 (20%), GB 33 (7%), DE 27 (5%).",
-        "Trustpair validation results: 475/497 globally Favorable (95.6%). 22 D\u00e9favorable couple \u2014 bank account exists but ownership by supplier not confirmed. 10 D\u00e9favorable/Anomalie global (2 closed bank accounts, 4 invalid IBAN format, 4 missing company ID for non-FR entities). Zero vendors on blocklist.",
+        "Trustpair validation results: 475/497 globally Favorable (95.6%). 22 Défavorable couple — bank account exists but ownership by supplier not confirmed. 10 Défavorable/Anomalie global (2 closed bank accounts, 4 invalid IBAN format, 4 missing company ID for non-FR entities). Zero vendors on blocklist.",
         "FR-PTP-02G control evidence confirmed: Trustpair actively validates all 497 vendors on bank account integrity. Audit evidence is exportable from Trustpair platform.",
-        "Active contract commitments: \u20ac165,055,532 EUR across 2,888 active lines and 187 unique vendors (ENGAGE_2025 register, 31-Dec-2025). \u20ac7,490,467 already booked. Grand total EURO-equivalent across all currencies: \u20ac182.8M.",
-        "ENGAGE commitment breakdown by department: CLI (Clinical) 1,265 lines, CMC 1,014, LAB 334, DAT 65, QA 111, REG 34. Currencies: EUROS 79%, USD 15%, GBP 3%. 3,042 closed lines in 'Presta cl\u00f4tur\u00e9es' sheet.",
+        "Active contract commitments: €165,055,532 EUR across 2,888 active lines and 187 unique vendors (ENGAGE_2025 register, 31-Dec-2025). €7,490,467 already booked. Grand total EURO-equivalent across all currencies: €182.8M.",
+        "ENGAGE commitment breakdown by department: CLI (Clinical) 1,265 lines, CMC 1,014, LAB 334, DAT 65, QA 111, REG 34. Currencies: EUROS 79%, USD 15%, GBP 3%. 3,042 closed lines in 'Presta clôturées' sheet.",
         "Trustpair NetSuite integration confirmed as in-scope (per KPMG deck, Feb 26 2026). (_archived)",
         "Invoice volume: ~4,000/year (France SA). PO volume: 650 raised in 2025.",
-        "Total contract commitments: $200M+ \u2014 not tracked in any system; lives in contracts in DocuShare.",
+        "Total contract commitments: $200M+ — not tracked in any system; lives in contracts in DocuShare.",
         "Active vendors: <500. Vendor master cleaned in 2025. Second cleanup scheduled March 2026 (Philippe will provide XLS report).",
         "France SA payment cycle: two campaigns per month, 10th and 25th.",
         "System landscape: Sage 100 (GL/invoicing), DocuShare (documents), Trustpair (vendor validation), Concur (expenses). Zero integration feeds between any of them.",
         "Juliette and Fatma perform all manual handoffs via shared invoice inbox (monitored with Philippe).",
-        "Sage 100 cannot verify vendor banking information \u2014 structurally incapable.",
+        "Sage 100 cannot verify vendor banking information — structurally incapable.",
         "Trustpair handles bank validation AND full vendor audit per wire transfer. Cost <$15K/year. Load-bearing control.",
-        "Approval workflows are not in Sage \u2014 entirely manual and paper/email-based.",
-        "No Delegation of Authority (DoA) matrix exists \u2014 P2P team cannot identify who authorized an invoice or who a vendor's internal owner is.",
+        "Approval workflows are not in Sage — entirely manual and paper/email-based.",
+        "No Delegation of Authority (DoA) matrix exists — P2P team cannot identify who authorized an invoice or who a vendor's internal owner is.",
         "No PO requirement for contractors (high volume, industry-typical in biotech/CRO). No POs for contractors = commitments off the books.",
-        "Some CRO contracts processed without POs \u2014 Trinidad views PO coverage for CRO as critical.",
+        "Some CRO contracts processed without POs — Trinidad views PO coverage for CRO as critical.",
         "PO process flows through DocuShare with no systematic capture of amounts. Juliette handles manually.",
         "Juliette maintains a master Excel sheet that tracks payments and acts as the real PO and invoice matching layer after DocuShare approval emails are received.",
         "Current PO approval authorization is based on amount only. Future-state routing is expected to be tied to threshold plus department or cost center.",
@@ -120,34 +132,34 @@
         "Juliette enters bank information into Sage; Trustpair validates banking information twice per day.",
         "No formal aging report exists and there is effectively no usable reporting layer across France P2P today.",
         "Cost coding is broken: entire multi-component projects may be booked to single item#. Pass-throughs difficult to track.",
-        "No formal vendor onboarding/selection process \u2014 Trustpair validates banking at wire only, not at vendor creation.",
+        "No formal vendor onboarding/selection process — Trustpair validates banking at wire only, not at vendor creation.",
         "Trinidad P2P bundle received: 10 files including approval matrices, SOPs, payment workbook, DocuShare guide, supplier master cleaning workbook.",
         "CFTI P2P RCM received and structure confirmed. 5 ERP-signal controls confirmed (FR-PTP-02G, 04G, 05G, 06G, 14G).",
         "Strategic framing confirmed by Trinidad (Mar 2 call): SOX gaps drive Phase 1 ERP design. Automation/efficiency = Phase 2+ post Jan 1, 2027."
       ],
       "currentStateUnknown": [
-        "US LLC P2P current-state flow and evidence practices \u2014 Matt Epley confirmed docs in progress as of Feb 25; still not received by Mar 2.",
-        "Trustpair integration model for NetSuite: standard bundled app vs. custom build vs. paid app \u2014 not yet confirmed with vendor.",
+        "US LLC P2P current-state flow and evidence practices — Matt Epley confirmed docs in progress as of Feb 25; still not received by Mar 2.",
+        "Trustpair integration model for NetSuite: standard bundled app vs. custom build vs. paid app — not yet confirmed with vendor.",
         "1099-specific process requirements (US).",
         "Tolerance policy for invoice-over-PO exceptions is not formalized: percent threshold, absolute amount threshold, approver path, and hard-stop behavior still need design.",
         "Where control evidence is retained today for completed wire transfers (Trustpair log? Sage? Email?).",
-        "Contractor volume and spend \u2014 no count or $ figure available; not tracked."
+        "Contractor volume and spend — no count or $ figure available; not tracked."
       ],
       "erpDesignRequirements": [
-        "PRE-ERP (governance, not NetSuite): Delegation of Authority matrix \u2014 who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.",
-        "PRE-ERP (policy decision): PO requirement for contractors \u2014 yes/no decision needed before configuration. Change management required if yes.",
+        "PRE-ERP (governance, not NetSuite): Delegation of Authority matrix — who approves what at what spend threshold. Must be built before blueprint; ERP enforces it, it doesn't create it.",
+        "PRE-ERP (policy decision): PO requirement for contractors — yes/no decision needed before configuration. Change management required if yes.",
         "System-enforced PO approval workflow with configurable approval tiers by spend threshold and entity.",
         "Approval routing should support threshold plus department or cost center, not amount alone.",
-        "Trustpair integration at vendor onboarding (not just at wire) \u2014 integration model to be confirmed with NetSuite (standard app / custom / paid).",
+        "Trustpair integration at vendor onboarding (not just at wire) — integration model to be confirmed with NetSuite (standard app / custom / paid).",
         "Two-way and three-way match capability for invoice processing.",
         "Invoice matching needs configurable percent and or amount tolerance thresholds for over-PO invoices, with explicit exception routing.",
         "Vendor setup workflow with named approver and Trustpair validation gate before vendor is live.",
         "Role-based access / SOD enforcement on vendor setup and payment authorization.",
         "Payment run traceable from PO to payment with system-retained evidence (not email-based).",
-        "Commitment register: all PO-backed commitments tracked in NetSuite by go-live \u2014 closes $200M+ untracked commitment gap.",
+        "Commitment register: all PO-backed commitments tracked in NetSuite by go-live — closes $200M+ untracked commitment gap.",
         "France P2P reporting baseline must include AP aging, open PO aging, exception reporting, and payment status reporting inside the ERP.",
         "Entity-level separation: France SA vs US LLC must be independently operable under common framework.",
-        "PHASE 2+ (post Jan 1, 2027): CRO pass-through tracking, contractor PO workflows, cost coding optimization \u2014 not Phase 1 scope."
+        "PHASE 2+ (post Jan 1, 2027): CRO pass-through tracking, contractor PO workflows, cost coding optimization — not Phase 1 scope."
       ],
       "keyDecisionsPending": [
         {
@@ -167,15 +179,15 @@
         }
       ],
       "nextMoves": [
-        "Pre-migration: 22 couple-D\u00e9favorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.",
-        "Pre-migration: 10 D\u00e9favorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.",
-        "ENGAGE register migration strategy: confirm with Trinidad whether \u20ac165M commitments load as open POs or reference data only.",
-        "Await Philippe's reports: Sage vendor master XLS + Trustpair report \u2014 use as migration baseline and FR-PTP-02G evidence.",
+        "Pre-migration: 22 couple-Défavorable vendors require bank-company ownership confirmation before NetSuite vendor master load. Philippe/Juliette to drive with Trustpair. This is a pre-blueprint gate for FR-PTP-02G.",
+        "Pre-migration: 10 Défavorable/Anomalie global vendors (incl. 2 with closed bank accounts) require resolution or deactivation before migration. Share export list with Philippe.",
+        "ENGAGE register migration strategy: confirm with Trinidad whether €165M commitments load as open POs or reference data only.",
+        "Await Philippe's reports: Sage vendor master XLS + Trustpair report — use as migration baseline and FR-PTP-02G evidence.",
         "Flag DoA matrix to Hema as pre-blueprint governance deliverable with an owner assigned.",
         "Convert Juliette's master Excel control points into explicit ERP requirements: PO status, invoice match status, exception queue, and payment readiness tracking.",
         "Get NetSuite response on Trustpair integration model: standard app / custom / paid app.",
         "Define France invoice-over-PO tolerance policy before configuration: percent and or amount thresholds, approver path, and hard-stop behavior.",
-        "Raise contractor PO policy decision with Hema \u2014 yes/no before NetSuite configuration.",
+        "Raise contractor PO policy decision with Hema — yes/no before NetSuite configuration.",
         "Add France P2P reporting requirements to scope baseline: AP aging, open PO aging, and exception reporting.",
         "Extract P2P RCM rows and classify into: ERP-addressable / non-ERP remediation / management decision.",
         "Build side-by-side France vs US P2P map once Kimberly/Matt respond.",
@@ -183,7 +195,7 @@
       ],
       "waitingOn": [
         "Philippe Goncalves: Sage vendor master XLS report + Trustpair report (committed on Mar 2 call)",
-        "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs \u2014 expected Feb 25-26; overdue as of Mar 2. Chase required.",
+        "Kimberly Gordon / Matt Epley: US LLC P2P current-state docs — expected Feb 25-26; overdue as of Mar 2. Chase required.",
         "NetSuite (Jamal): Trustpair integration model confirmation; also retrieve Interface Tracker V2.xlsx from Feb 23 email"
       ],
       "keyPeople": [
@@ -221,14 +233,14 @@
       "programPhase": "active-fact-finding",
       "confidenceLevel": "partial",
       "lastRefreshedAt": "2026-03-04",
-      "currentStateSummary": "Financial close is a manual, Excel-heavy process executed by KPMG (Robin Lapous) on a quarterly basis with no system support for consolidation or IFRS adjustments. Sage 100 lacks the data dimensions (country tag, cost center structure) needed for multi-entity reporting. No Chart of Accounts designed for NetSuite. GL/CoA design is the most consequential pre-blueprint decision \u2014 it affects every downstream report, rollup, and audit test. Treasury (cash, bank connectivity) is a sub-workstream owned by Roxandra Sturdza (FR) and Kimberly Gordon (US).",
+      "currentStateSummary": "Financial close is a manual, Excel-heavy process executed by KPMG (Robin Lapous) on a quarterly basis with no system support for consolidation or IFRS adjustments. Sage 100 lacks the data dimensions (country tag, cost center structure) needed for multi-entity reporting. No Chart of Accounts designed for NetSuite. GL/CoA design is the most consequential pre-blueprint decision — it affects every downstream report, rollup, and audit test. Treasury (cash, bank connectivity) is a sub-workstream owned by Roxandra Sturdza (FR) and Kimberly Gordon (US).",
       "futureStateSummary": "NetSuite as the system of record for France SA and US LLC. Quarterly close executed in-system with audit-ready evidence retention. GL/CoA designed for multi-entity, multi-GAAP operation. Treasury integrated for cash visibility and bank connectivity. Manual Excel bridge eliminated or scoped down to exceptional items only.",
       "whyItMatters": "This is the core of what the ERP replaces: a fragmented, KPMG-dependent, manually-bridged financial close. Getting R2R right in NetSuite is the primary deliverable that justifies the program investment and enables the US public launch reporting infrastructure.",
       "subWorkstreams": [
         {
           "name": "GL / Chart of Accounts",
           "owner": "Denis Jankovic (FR), Matt Epley (US)",
-          "status": "Not started \u2014 most critical pre-blueprint design decision"
+          "status": "Not started — most critical pre-blueprint design decision"
         },
         {
           "name": "Financial Close / Consolidation",
@@ -242,7 +254,7 @@
         }
       ],
       "complianceLayer": {
-        "note": "The 84 Controls/Audit CFTI controls span ITGC, SOD, SDLC, and financial close controls. The ERP-signal controls within this workstream must be built into NetSuite configuration \u2014 not compensating controls added post go-live.",
+        "note": "The 84 Controls/Audit CFTI controls span ITGC, SOD, SDLC, and financial close controls. The ERP-signal controls within this workstream must be built into NetSuite configuration — not compensating controls added post go-live.",
         "cftiControlsInScope": 84,
         "erpSignalControls": 4,
         "outOfScope": 23,
@@ -253,11 +265,11 @@
       },
       "currentStateKnown": [
         "Financial close is manual/quarterly, KPMG-led (Robin Lapous). No formal process documentation.",
-        "Sage 100 missing country tag \u2014 limits reporting dimensions and cost center use cases.",
-        "Milestone billing not automated \u2014 creates reporting/timing visibility gaps.",
-        "IT org confirmed: Didier \u2192 Christophe Hennequin \u2192 Jade Nguyen / Benjamin / Erwan. ERP in 2026-2027 IT roadmap.",
+        "Sage 100 missing country tag — limits reporting dimensions and cost center use cases.",
+        "Milestone billing not automated — creates reporting/timing visibility gaps.",
+        "IT org confirmed: Didier → Christophe Hennequin → Jade Nguyen / Benjamin / Erwan. ERP in 2026-2027 IT roadmap.",
         "Treasury sub-workstream confirmed in scope: Roxandra Sturdza (France) + Kimberly Gordon (US).",
-        "Workday Adaptive/Interactive exists for FP&A but is underused \u2014 intended for intercompany/forecasting."
+        "Workday Adaptive/Interactive exists for FP&A but is underused — intended for intercompany/forecasting."
       ],
       "currentStateUnknown": [
         "Chart of Accounts / cost center future-state design principles not formalized.",
@@ -267,18 +279,18 @@
         "Intercompany eliminations process not documented."
       ],
       "erpDesignRequirements": [
-        "GL/CoA designed before blueprint begins \u2014 this is the most consequential pre-ERP decision.",
+        "GL/CoA designed before blueprint begins — this is the most consequential pre-ERP decision.",
         "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area.",
         "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope.",
         "Treasury module: bank connectivity and cash management must be in Phase 1 scope.",
-        "Audit evidence retained in-system by transaction \u2014 not assembled manually per audit cycle.",
-        "Internal vs audit-liaison handoff points clearly defined \u2014 what NetSuite does vs what statutory audit continues to own."
+        "Audit evidence retained in-system by transaction — not assembled manually per audit cycle.",
+        "Internal vs audit-liaison handoff points clearly defined — what NetSuite does vs what statutory audit continues to own."
       ],
       "keyDecisionsPending": [
         {
           "decision": "COA and cost center design: global consistency vs entity-level separation",
           "owner": "Mike / Denis Jankovic / Hema",
-          "impact": "Most consequential data model decision \u2014 affects every downstream report, rollup, and audit test. Must precede blueprint."
+          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test. Must precede blueprint."
         },
         {
           "decision": "Close dependency boundary: what gets insourced vs stays audit-only post go-live",
@@ -291,12 +303,12 @@
         {
           "decision": "Treasury module scope: which banking integrations are in Phase 1",
           "owner": "Mike / Roxandra / Jade",
-          "impact": "Bank connectivity requires IT integration work \u2014 must be scoped in the implementation contract."
+          "impact": "Bank connectivity requires IT integration work — must be scoped in the implementation contract."
         }
       ],
       "nextMoves": [
-        "Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths \u2014 baseline before blueprint.",
-        "Initiate GL/CoA design conversation with Denis Jankovic and Hema \u2014 agree on global vs entity-level approach.",
+        "Document current-state close process: steps, owners, audit-liaison handoffs, evidence paths — baseline before blueprint.",
+        "Initiate GL/CoA design conversation with Denis Jankovic and Hema — agree on global vs entity-level approach.",
         "Confirm Treasury sub-workstream scope with Roxandra Sturdza and Kimberly Gordon.",
         "Separate quarterly v1 close scope from monthly/commercial v2 scope explicitly.",
         "Extract FSCP RCM ERP-signal controls and map to named owners with remediation commitments."
@@ -324,14 +336,14 @@
       "confidenceLevel": "partial",
       "lastRefreshedAt": "2026-03-04",
       "currentStateSummary": "French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.",
-      "futureStateSummary": "NetSuite should deliver a stronger quarterly reporting operating model immediately \u2014 better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.",
-      "whyItMatters": "Without a reliable reporting data model in NetSuite, Abivax cannot scale toward US public launch reporting requirements. The ERP is the foundation that makes quarterly \u2192 monthly \u2192 SEC-grade reporting possible without manual bridging and KPMG dependency for every close.",
+      "futureStateSummary": "NetSuite should deliver a stronger quarterly reporting operating model immediately — better data dimensions, cleaner Sage-to-reporting extract path, and reduced manual bridge dependency where practical. Monthly reporting and commercial/royalty complexity are later-phase scope (2027/2028), not core ERP v1.",
+      "whyItMatters": "Without a reliable reporting data model in NetSuite, Abivax cannot scale toward US public launch reporting requirements. The ERP is the foundation that makes quarterly → monthly → SEC-grade reporting possible without manual bridging and KPMG dependency for every close.",
       "currentStateKnown": [
-        "KPMG (Robin Lapous) handles consolidation and IFRS adjustments \u2014 manual in Excel, no formal documentation.",
+        "KPMG (Robin Lapous) handles consolidation and IFRS adjustments — manual in Excel, no formal documentation.",
         "Frederick (FP&A): pragmatic target is quarterly reporting quality first; monthly is later-stage.",
-        "Workday Adaptive/Interactive exists but is underused \u2014 intended for internal consolidation/intercompany and forecasting/variance visibility.",
-        "Current Sage data model is missing a country tag \u2014 impacts reporting dimensions and cost center use cases.",
-        "Milestone billing is not automated \u2014 creates reporting/timing visibility limitations.",
+        "Workday Adaptive/Interactive exists but is underused — intended for internal consolidation/intercompany and forecasting/variance visibility.",
+        "Current Sage data model is missing a country tag — impacts reporting dimensions and cost center use cases.",
+        "Milestone billing is not automated — creates reporting/timing visibility limitations.",
         "CFTI FSCP RCM received and structure confirmed. 39 reporting controls with gap/remediation columns.",
         "Internal vs KPMG ownership split by reporting step is not yet mapped."
       ],
@@ -339,22 +351,22 @@
         "Current-state reporting flow with step-by-step ownership (internal vs KPMG by step) not documented.",
         "COA / cost center future-state design principles not formalized (global consistency vs entity separation).",
         "Department reporting expectations not standardized (clinical visibility, G&A/R&D split expectations unclear).",
-        "Commercial/licensing/royalty reporting requirements \u2014 future design consideration, not yet scoped.",
+        "Commercial/licensing/royalty reporting requirements — future design consideration, not yet scoped.",
         "Frederick response on FP&A reporting dimensions and core output needs still awaited (request sent Feb 24; no reply by Mar 2).",
         "Row-level FSCP RCM extraction: which reporting control gaps are ERP-addressable vs process/governance."
       ],
       "erpDesignRequirements": [
-        "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area \u2014 agreed before COA design begins.",
+        "Minimum reporting dimension model: entity (SA/LLC), country, cost center, functional area — agreed before COA design begins.",
         "NetSuite multi-entity / multi-GAAP capability explicitly validated in implementation scope (not demo assumption).",
         "Core reporting extract quality from NetSuite must support quarterly close without manual Excel bridge as primary mechanism.",
-        "Internal vs audit-liaison handoff points clearly defined in system design \u2014 what NetSuite does vs what statutory audit still does.",
-        "Future-ready data architecture for monthly/commercial complexity \u2014 must not need a full redesign to scale."
+        "Internal vs audit-liaison handoff points clearly defined in system design — what NetSuite does vs what statutory audit still does.",
+        "Future-ready data architecture for monthly/commercial complexity — must not need a full redesign to scale."
       ],
       "keyDecisionsPending": [
         {
           "decision": "COA and cost center design: global consistency vs entity-level separation",
           "owner": "Mike / Frederick / Hema",
-          "impact": "Most consequential data model decision \u2014 affects every downstream report, rollup, and audit test."
+          "impact": "Most consequential data model decision — affects every downstream report, rollup, and audit test."
         },
         {
           "decision": "Consultant dependency vs in-house scope for bridge and consolidation work",
@@ -364,15 +376,15 @@
         {
           "decision": "Reporting dimension minimum set (country, entity, cost center, others)",
           "owner": "Mike / Frederick",
-          "impact": "Must be agreed before ERP data model is designed \u2014 cannot be retrofitted post go-live easily."
+          "impact": "Must be agreed before ERP data model is designed — cannot be retrofitted post go-live easily."
         }
       ],
       "nextMoves": [
-        "Build reporting baseline flow: steps, owners, systems, existing handoffs \u2014 from Hema/audit-liaison responses.",
+        "Build reporting baseline flow: steps, owners, systems, existing handoffs — from Hema/audit-liaison responses.",
         "Tag FSCP RCM control gaps as ERP-addressable / process-governance / audit-only.",
         "Define minimum reporting dimension set with Frederick input.",
         "Separate quarterly v1 scope from monthly/commercial v2 scope explicitly in presentation materials.",
-        "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred \u2014 revisit after commercial negotiation milestone.)"
+        "Reach out to Robin Lapous (KPMG) on consolidation / IFRS adjustments current-state docs. (Deferred — revisit after commercial negotiation milestone.)"
       ],
       "waitingOn": [
         "Frederick Golly: FP&A reporting dimensions and core output needs response",
@@ -412,27 +424,37 @@
     {
       "date": "2026-02-28",
       "by": "claude-session",
-      "summary": "Initial synthesis created from erp_pillar_baselines.json, cfti_control_register.json, erp_pillars.json, process_flow_diagram_payloads.json, timeline.json, and presentations.json. All four pillars populated. Program governance section added. Confidence levels set to 'partial' across P2P, Reporting, and Controls \u2014 all three are in active fact-finding phase. Governance set to 'strong' given selection decision is confirmed."
+      "summary": "Initial synthesis created from erp_pillar_baselines.json, cfti_control_register.json, erp_pillars.json, process_flow_diagram_payloads.json, timeline.json, and presentations.json. All four pillars populated. Program governance section added. Confidence levels set to 'partial' across P2P, Reporting, and Controls — all three are in active fact-finding phase. Governance set to 'strong' given selection decision is confirmed."
     },
     {
       "date": "2026-03-02",
       "by": "claude-session",
-      "summary": "Email analysis pass on 166 emails (Feb 16\u2013Mar 2 window). Key updates: (1) P2P \u2014 Trinidad's 10-file France P2P bundle confirmed received; US P2P docs still pending from Matt Epley (expected Feb 25-26, not yet arrived). (2) Reporting \u2014 Frederick Golly FP&A request has no reply by Mar 2; Robin Lapous confirmed manual Excel, no docs. (3) Controls \u2014 CFGI engaged, FSCP + P2P RCM delivered; ITGC pending; Adrian Holbrook clarified as Sr. Financial Analyst (consolidator only) \u2014 escalate controls content to Youness Tyamaz. (4) Governance \u2014 NetSuite implementation timeline XLSX found in Jamal Azil's Feb 23 email (may close Audit deck Gap #2); Camille OOO March 6 flagged as scheduling risk; contract law options circulated (3 structures, legal review started); Board deck due Mar 13 to Didier. Program-level risks updated."
+      "summary": "Email analysis pass on 166 emails (Feb 16–Mar 2 window). Key updates: (1) P2P — Trinidad's 10-file France P2P bundle confirmed received; US P2P docs still pending from Matt Epley (expected Feb 25-26, not yet arrived). (2) Reporting — Frederick Golly FP&A request has no reply by Mar 2; Robin Lapous confirmed manual Excel, no docs. (3) Controls — CFGI engaged, FSCP + P2P RCM delivered; ITGC pending; Adrian Holbrook clarified as Sr. Financial Analyst (consolidator only) — escalate controls content to Youness Tyamaz. (4) Governance — NetSuite implementation timeline XLSX found in Jamal Azil's Feb 23 email (may close Audit deck Gap #2); Camille OOO March 6 flagged as scheduling risk; contract law options circulated (3 structures, legal review started); Board deck due Mar 13 to Didier. Program-level risks updated."
     },
     {
       "date": "2026-03-02",
       "by": "claude-session",
-      "summary": "P2P current-state call with Trinidad Mesa + Philippe Goncalves. Major P2P pillar update: volumes now confirmed (4,000 invoices/yr, 650 POs, $200M+ commitments, <500 vendors). System landscape locked: Sage/DocuShare/Trustpair/Concur with zero feeds \u2014 all manual. Key gaps surfaced: no DoA (pre-ERP governance deliverable), no PO for contractors, CRO contracts without POs, $200M+ commitments untracked, cost coding broken. Philippe to send Sage XLS + Trustpair report. Strategic framing from Trinidad: SOX-first design in Phase 1; automation/efficiency is Phase 2+ post Jan 1, 2027. currentStateSummary, currentStateKnown, erpDesignRequirements, nextMoves, waitingOn all updated. Meeting notes at collab/claude/outputs/p2p-meeting-notes-2026-03-02.md."
+      "summary": "P2P current-state call with Trinidad Mesa + Philippe Goncalves. Major P2P pillar update: volumes now confirmed (4,000 invoices/yr, 650 POs, $200M+ commitments, <500 vendors). System landscape locked: Sage/DocuShare/Trustpair/Concur with zero feeds — all manual. Key gaps surfaced: no DoA (pre-ERP governance deliverable), no PO for contractors, CRO contracts without POs, $200M+ commitments untracked, cost coding broken. Philippe to send Sage XLS + Trustpair report. Strategic framing from Trinidad: SOX-first design in Phase 1; automation/efficiency is Phase 2+ post Jan 1, 2027. currentStateSummary, currentStateKnown, erpDesignRequirements, nextMoves, waitingOn all updated. Meeting notes at collab/claude/outputs/p2p-meeting-notes-2026-03-02.md."
     },
     {
       "date": "2026-03-02",
       "by": "claude-session",
-      "summary": "Philippe Goncalves workbooks analyzed (received Mar 2). (1) P2P: vendor master confirmed 497 vendors; Trustpair validation results mapped \u2014 475 Favorable, 22 couple-D\u00e9favorable (pre-migration SOX gate), 10 D\u00e9favorable/Anomalie. FR-PTP-02G evidence confirmed. ENGAGE: \u20ac165M EUR active commitments, 2,888 lines, 187 vendors. confidenceLevel upgraded to 'established'. 3 migration-readiness nextMoves added. (2) Governance: KPMG commercials confirmed (\u20ac650K Year 1, \u20ac1.02M 3-year, 392 man-days). $1M Year 1 assumption retired. currentStateKnown updated in program-governance pillar and topProgramRisks."
+      "summary": "Philippe Goncalves workbooks analyzed (received Mar 2). (1) P2P: vendor master confirmed 497 vendors; Trustpair validation results mapped — 475 Favorable, 22 couple-Défavorable (pre-migration SOX gate), 10 Défavorable/Anomalie. FR-PTP-02G evidence confirmed. ENGAGE: €165M EUR active commitments, 2,888 lines, 187 vendors. confidenceLevel upgraded to 'established'. 3 migration-readiness nextMoves added. (2) Governance: KPMG commercials confirmed (€650K Year 1, €1.02M 3-year, 392 man-days). $1M Year 1 assumption retired. currentStateKnown updated in program-governance pillar and topProgramRisks."
     },
     {
       "date": "2026-03-04",
       "by": "claude-session",
-      "summary": "Pillar restructure v1\u2192v2. Consolidated from 4 pillars to 3 functional workstream pillars: P2P (unchanged), Record to Report (new \u2014 absorbs GL/CoA, close, treasury from old Controls/Governance context), Reporting & Planning (renamed/refocused from Reporting/Data). Controls/Audit and Program Governance demoted to _archivedPillars. SOX controls now a complianceLayer field within each pillar. Governance/mobilization data stays in programState. Rationale: the old 4-pillar structure over-weighted SOX compliance as a program objective; the 3-pillar structure reflects the actual ERP workstreams the program is delivering."
+      "summary": "Pillar restructure v1→v2. Consolidated from 4 pillars to 3 functional workstream pillars: P2P (unchanged), Record to Report (new — absorbs GL/CoA, close, treasury from old Controls/Governance context), Reporting & Planning (renamed/refocused from Reporting/Data). Controls/Audit and Program Governance demoted to _archivedPillars. SOX controls now a complianceLayer field within each pillar. Governance/mobilization data stays in programState. Rationale: the old 4-pillar structure over-weighted SOX compliance as a program objective; the 3-pillar structure reflects the actual ERP workstreams the program is delivering."
+    },
+    {
+      "date": "2026-03-18",
+      "by": "Mike",
+      "change": "O2C / Inventory confirmed Phase 2 only — not activating January 2027 go-live. Confirmed with Jamal. Removed from open risk register."
+    },
+    {
+      "date": "2026-03-18",
+      "by": "Mike",
+      "change": "Program budget EUR 999,936 approved — Didier Blondel verbal authorization March 2026."
     }
   ],
   "_archivedPillars": [
@@ -444,7 +466,7 @@
       "confidenceLevel": "partial",
       "lastRefreshedAt": "2026-03-02",
       "currentStateSummary": "143 CFTI controls reviewed across P2P, FSCP, and IT. 45 out-of-scope for ERP. 9 ERP-signal controls identified. Active remediation tracker exists (CFTI macro/micro views with control IDs and statuses). ITGC RCM is pending final validation. Documented SOX findings and deficiency inventory not yet loaded into program. Evidence retention is fragmented across systems.",
-      "futureStateSummary": "ERP should be governed as a control-remediation program, not just a technology rollout. NetSuite must embed approvals, SOD, and audit evidence retention into system design \u2014 not as compensating controls added after go-live. 9 ERP-signal controls are the minimum design checkpoints; all must have named remediation owners before blueprint starts.",
+      "futureStateSummary": "ERP should be governed as a control-remediation program, not just a technology rollout. NetSuite must embed approvals, SOD, and audit evidence retention into system design — not as compensating controls added after go-live. 9 ERP-signal controls are the minimum design checkpoints; all must have named remediation owners before blueprint starts.",
       "whyItMatters": "Abivax is a US-listed biotech with SOX compliance obligations. The Audit Committee is an active oversight body. If the ERP goes live without addressing documented control deficiencies, the company carries forward known audit risk into a higher-scrutiny environment. This is the pillar where the most reputational and governance risk lives.",
       "cftiControls": {
         "total": 84,
@@ -457,25 +479,25 @@
       },
       "currentStateKnown": [
         "CFTI FSCP RCM and P2P RCM both received and structure confirmed (control IDs, statuses, remediation columns).",
-        "Remediation tracker exists in CFTI macro/micro views \u2014 active tracking of gap categories and owners.",
+        "Remediation tracker exists in CFTI macro/micro views — active tracking of gap categories and owners.",
         "IT Master Plan (Jade) confirms SOX compliance is an explicit IT workstream for 2026-2027.",
-        "IT org: Didier \u2192 Christophe Hennequin \u2192 Jade Nguyen / Benjamin / Erwan.",
+        "IT org: Didier → Christophe Hennequin → Jade Nguyen / Benjamin / Erwan.",
         "At least one vendor-management gap is tied to a Sage material weakness finding.",
-        "9 ERP-addressable control gaps identified across P2P and FSCP \u2014 these are the minimum ERP blueprint checkpoints."
+        "9 ERP-addressable control gaps identified across P2P and FSCP — these are the minimum ERP blueprint checkpoints."
       ],
       "currentStateUnknown": [
-        "Documented SOX findings / deficiency inventory not yet loaded \u2014 Hema response still pending.",
+        "Documented SOX findings / deficiency inventory not yet loaded — Hema response still pending.",
         "Finance vs IT remediation ownership split not confirmed in one place.",
-        "ITGC RCM not yet finalized \u2014 expected from CFTI after final validation (was 'next week' as of Feb 25).",
+        "ITGC RCM not yet finalized — expected from CFTI after final validation (was 'next week' as of Feb 25).",
         "Evidence retention paths for critical flows not mapped.",
         "Explicit prioritization of 9 ERP-signal controls for blueprint sequencing not yet done.",
         "Controls slides for Audit Committee: Adrian Holbrook (Sr. Financial Analyst, FP&A) asked Mike to provide the slides. Mike is the author; Adrian will present. Mike should source controls content from CFGI (Youness Tyamaz) to populate the slides."
       ],
       "erpDesignRequirements": [
         "All 9 ERP-signal controls must be assigned a named owner with a dated remediation commitment before ERP blueprint begins.",
-        "Control-by-design: approval workflows, SOD, and audit evidence retention must be designed into ERP configuration \u2014 not managed outside the system.",
+        "Control-by-design: approval workflows, SOD, and audit evidence retention must be designed into ERP configuration — not managed outside the system.",
         "Each data feed and system integration must have a named owner, monitoring step, and failure escalation path.",
-        "US and France process variants must be rationalized within a common control framework \u2014 divergence must be bounded and documented.",
+        "US and France process variants must be rationalized within a common control framework — divergence must be bounded and documented.",
         "Evidence retention path must be system-retained by transaction type, not manually assembled per audit cycle."
       ],
       "keyDecisionsPending": [
@@ -492,12 +514,12 @@
         {
           "decision": "Evidence repository design: where does control evidence live post-ERP (NetSuite native vs separate tool)",
           "owner": "Mike / Jade",
-          "impact": "Audit evidence repository is a pre-condition for audit readiness \u2014 must be designed, not assumed."
+          "impact": "Audit evidence repository is a pre-condition for audit readiness — must be designed, not assumed."
         }
       ],
       "nextMoves": [
         "Follow up on ITGC RCM from CFTI (was expected 'next week' as of Feb 25).",
-        "Create controls slides for Adrian Holbrook to present at Audit Committee \u2014 Mike is author; source narrative from CFGI (Youness Tyamaz) RCM documents.",
+        "Create controls slides for Adrian Holbrook to present at Audit Committee — Mike is author; source narrative from CFGI (Youness Tyamaz) RCM documents.",
         "Extract deficiency inventory from Hema/CFTI responses and classify: ERP-addressable / non-ERP remediation / management decision.",
         "Map 9 ERP-signal controls to named owners and draft dated remediation commitments.",
         "Use CFTI tracker structure as baseline format for audit committee reporting."
@@ -506,7 +528,7 @@
         "Hema: SOX findings, remediation tracker location, control narratives",
         "Jade: IT control gaps, interface monitoring docs, admin ownership matrix (English version in progress with Denis)",
         "CFTI / Youness Tyamaz: ITGC RCM final validation; and source content for Audit Committee controls slides (Mike is building these, not Adrian)",
-        "Robin Lapous (KPMG consolidation): outreach deferred \u2014 hold during commercial negotiations; revisit when blueprint work begins"
+        "Robin Lapous (KPMG consolidation): outreach deferred — hold during commercial negotiations; revisit when blueprint work begins"
       ],
       "keyPeople": [
         "Adrian Holbrook (controls lead)",
@@ -530,9 +552,9 @@
       "programPhase": "post-selection",
       "confidenceLevel": "strong",
       "lastRefreshedAt": "2026-03-02",
-      "currentStateSummary": "NetSuite selected Feb 26, 2026 following a structured Sep 2025\u2013Feb 2026 selection process with KPMG support and vendor demos. Program is now in the post-selection window. No contract signed, no implementation scope confirmed, no implementation team assembled. April 2026 mobilization is the target.",
-      "futureStateSummary": "By April 2026: commercial terms agreed with NetSuite, implementation scope confirmed, KPMG advisory role defined, internal capacity committed by function, governance cadence established. From April through Jan 1, 2027: blueprint \u2192 build \u2192 test \u2192 go-live with weekly governance and monthly exec/board updates.",
-      "whyItMatters": "The implementation mobilization window is 6\u20138 weeks. Every week lost between now and April creates timeline compression in the 9-month implementation window. The go-live date is non-negotiable \u2014 scope decisions and resourcing commitments are the only variables.",
+      "currentStateSummary": "NetSuite selected Feb 26, 2026 following a structured Sep 2025–Feb 2026 selection process with KPMG support and vendor demos. Program is now in the post-selection window. No contract signed, no implementation scope confirmed, no implementation team assembled. April 2026 mobilization is the target.",
+      "futureStateSummary": "By April 2026: commercial terms agreed with NetSuite, implementation scope confirmed, KPMG advisory role defined, internal capacity committed by function, governance cadence established. From April through Jan 1, 2027: blueprint → build → test → go-live with weekly governance and monthly exec/board updates.",
+      "whyItMatters": "The implementation mobilization window is 6–8 weeks. Every week lost between now and April creates timeline compression in the 9-month implementation window. The go-live date is non-negotiable — scope decisions and resourcing commitments are the only variables.",
       "keyMilestones": [
         {
           "date": "2026-02-26",
@@ -565,23 +587,23 @@
         }
       ],
       "currentStateKnown": [
-        "NetSuite commercials confirmed via Camille Girard KPMG deck (Feb 26 2026 Audit Committee meeting): Build (one-off) \u20ac463,120 | Run (annual SaaS) \u20ac187,009/year | Year 1 total \u2248 \u20ac650,128 | 3-year total \u20ac1,024,145.80. Implementation: 392 man-days at \u20ac1,135.51/day. Replaces $1M Year 1 budget assumption used in prior planning. (_archived)",
-        "NetSuite selected. Competing vendor was SAP \u2014 SAP eliminated due to proposal/RACI concerns and governance/PMO sufficiency questions.",
+        "NetSuite commercials confirmed via Camille Girard KPMG deck (Feb 26 2026 Audit Committee meeting): Build (one-off) €463,120 | Run (annual SaaS) €187,009/year | Year 1 total ≈ €650,128 | 3-year total €1,024,145.80. Implementation: 392 man-days at €1,135.51/day. Replaces $1M Year 1 budget assumption used in prior planning. (_archived)",
+        "NetSuite selected. Competing vendor was SAP — SAP eliminated due to proposal/RACI concerns and governance/PMO sufficiency questions.",
         "KPMG played advisory role in selection (Camille Girard / Aymen). Implementation advisory role confirmed: none. KPMG role limited to statutory audit only (Camille Girard, Audit Committee liaison). Decided 2026-03-18. (_archived)",
-        "IT org confirmed: Didier \u2192 Christophe Hennequin \u2192 Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP in 2026-2027 framing.",
-        "Implementation vendor: NetSuite directly or NetSuite partner \u2014 not yet determined.",
+        "IT org confirmed: Didier → Christophe Hennequin → Jade/Benjamin/Erwan. IT roadmap explicitly includes ERP in 2026-2027 framing.",
+        "Implementation vendor: NetSuite directly or NetSuite partner — not yet determined.",
         "Governance model target: weekly program governance, monthly exec update, board-cycle readout, milestone-triggered escalation.",
         "NetSuite implementation timeline XLSX exists: Jamal Azil sent 'ABIVAX - Draft-Implementation Timeline V2.xlsx' on Feb 23 (email attachment). Retrieve before declaring Audit deck Gap #2 still open.",
         "Contract law options shared by Camille (Feb 27): three structures under consideration (French law / US law / split). Legal review initiated with Thomas Descusses, Olivia Bui, Peggy Gambardella.",
-        "Board ERP checkpoint confirmed Mar 19 \u2014 Didier requested deck draft by Mar 13. Didier unavailable Feb 26-Mar 16 (US bank conferences).",
-        "Camille Girard OOO on March 6 \u2014 if Audit Committee meeting is that date, confirm logistics with Hema."
+        "Board ERP checkpoint confirmed Mar 19 — Didier requested deck draft by Mar 13. Didier unavailable Feb 26-Mar 16 (US bank conferences).",
+        "Camille Girard OOO on March 6 — if Audit Committee meeting is that date, confirm logistics with Hema."
       ],
       "currentStateUnknown": [
         "Commercial negotiation owner: Mike Markman + Hema Keshava (confirmed Mar 2). Budget assumption: $1M Year 1, scale naturally thereafter. Contract timeline still to be locked with NetSuite.",
         "Implementation scope: not confirmed. No contract, no blueprint start date.",
-        "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team \u2014 roles not separated. (_archived)",
-        "Internal capacity commitments by function \u2014 Finance, IT, FP&A availability for ERP workstreams unknown.",
-        "Executive decision rights model \u2014 who can approve scope changes, escalate blockers, authorize budget."
+        "KPMG advisory engagement: ERP selection KPMG contacts (Camille/Aymen) vs separate implementation advisory team — roles not separated. (_archived)",
+        "Internal capacity commitments by function — Finance, IT, FP&A availability for ERP workstreams unknown.",
+        "Executive decision rights model — who can approve scope changes, escalate blockers, authorize budget."
       ],
       "keyDecisionsPending": [
         {
@@ -614,7 +636,7 @@
       ],
       "nextMoves": [
         "Draft post-selection notification email to Camille (cc Hema): confirm owners, negotiation path, and timing toward April work start.",
-        "Confirm internal capacity commitments by function before April \u2014 Finance, IT, FP&A.",
+        "Confirm internal capacity commitments by function before April — Finance, IT, FP&A.",
         "Separate KPMG selection-phase contacts from implementation-phase advisory contacts. (_archived)",
         "Establish governance cadence: weekly program, monthly exec, board-cycle readout.",
         "Present governance model at Board (Mar 19) and Audit Committee (Mar 6) meetings."
