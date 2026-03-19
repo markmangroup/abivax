@@ -983,7 +983,7 @@ function s16() {
           <p style="font-size:12px;color:#555;margin:0 0 10px">COA files for US LLC are being extracted by Codex from the Finance Projects-IT share drive (SAGE/ABIVAX LLC/ cluster). Matt Epley engaged Feb 25; current-state docs outstanding.</p>
           ${tbl(['Item','Status','Owner'],[
             ['US GAAP close process documentation', '⚠ Not received', 'Matt Epley'],
-            ['US LLC COA files (Sage)', '🔄 Codex extracting from share drive', 'Codex → Claude'],
+            ['US LLC COA files (Sage)', '✅ 128 accounts confirmed (pre/post-upgrade unchanged) · naming alignment TBD', 'Codex delivered 2026-03-19'],
             ['US bank feed confirmation (Wells Fargo)', '⚠ Pending', 'Kimberly Gordon'],
             ['Intercompany elimination design', '⚠ Pre-blueprint decision required', 'NetSuite / CFGI'],
           ], { widths: ['250px','175px','auto'], cellStyle: (r,c,v) => c===1&&v.includes('⚠')?'color:#BF6C00;font-weight:600':c===1&&v.includes('🔄')?'color:#1F6830;font-weight:600':'' })}

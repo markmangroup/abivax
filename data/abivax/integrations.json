@@ -16,13 +16,13 @@
       "id": "adp-to-sage",
       "sourceSystem": "ADP",
       "targetSystem": "Sage",
-      "feedType": "file-manual",
+      "feedType": "SFTP/SEPA file upload",
       "frequency": "pay-cycle",
       "owner": "HR + Finance (confirm)",
       "monitoring": "Manual reconciliation",
       "failureProcess": "Manual reload and finance correction",
       "status": "active",
-      "notes": "Payroll file manually entered in Sage."
+      "notes": "Payroll payment files transmitted via SFTP; SEPA format. EBICS T setup with bank required before production. ADP integration pricing: \u20ac500 implementation + \u20ac500/year maintenance (referenced in email)."
     },
     {
       "id": "docushare-to-sage",
@@ -40,13 +40,13 @@
       "id": "sage-to-trustpair-vendor",
       "sourceSystem": "Sage",
       "targetSystem": "Trustpair",
-      "feedType": "sftp-file",
+      "feedType": "SFTP \u2014 vendor-base exchange",
       "frequency": "scheduled",
-      "owner": "Finance controls + IT (confirm)",
+      "owner": "Juliette Courtot (Control Preparer SA)",
       "monitoring": "Low-touch per IT call",
       "failureProcess": "Escalate to IT + finance controls owner",
       "status": "active",
-      "notes": "Vendor database feed from Sage to Trustpair."
+      "notes": "Two-way: Sage sends vendor master base to Trustpair via SFTP; Trustpair returns analysis/feedback file. Trustpair is confirmed hard gate before payment release (SOP0084_V01)."
     },
     {
       "id": "sage-to-trustpair-payment",
@@ -66,23 +66,23 @@
       "targetSystem": "Agicap",
       "feedType": "validated-payment-flow",
       "frequency": "payment-run",
-      "owner": "Treasury (confirm)",
+      "owner": "Roxandra Sturdza (Treasury)",
       "monitoring": "Operational",
       "failureProcess": "Payment hold and escalation",
       "status": "active",
-      "notes": "Validated payments continue through Agicap."
+      "notes": "Payment files flow Sage \u2192 Agicap via SFTP (C:\\Agicap\\Exports on Sage remote desktop). Files removed after export. EBICS TS governs SocGen connection. \u20ac10M/file limit at SG; \u20ac5M Agicap threshold."
     },
     {
       "id": "agicap-to-banks",
       "sourceSystem": "Agicap",
       "targetSystem": "Wells Fargo / SocGen",
-      "feedType": "bank-connection",
+      "feedType": "EBICS TS (SocGen) / direct (Wells Fargo)",
       "frequency": "payment-run",
       "owner": "Treasury (confirm)",
       "monitoring": "Treasury + banking confirmations",
       "failureProcess": "Bank/payment investigation process",
       "status": "active",
-      "notes": "Agicap connected to Wells Fargo and SocGen."
+      "notes": "SocGen: EBICS TS contract. WF: direct. SOX note: Agicap has no SOC 2 report (on 2026 roadmap); CFGI requires compensating bank-statement reconciliation control. SoD gap: admin can create/modify vendors without co-approval."
     },
     {
       "id": "sage-to-trustpair-us",
