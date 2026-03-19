@@ -441,32 +441,39 @@ function s10() {
       'background:#F8FAFF;padding:8px 8px 8px 24px;border-radius:0 0 4px 4px');
   }
 
-  // ── P2P Mermaid flow ────────────────────────────────────────────────────────
+  // ── P2P Mermaid flow (4-step, source: SOP0084_V01 + ABIVAX_Purchase process ENG) ─
   const mermaidDef = `flowchart LR
-    subgraph VENDOR["1 · Vendor Setup & Validation"]
+    subgraph RECEIPT["1 · Receipt"]
       direction TB
-      V1["Sage vendor master\\n497 vendors — Juliette + Fatma only"]
-      V2["Trustpair validation\\n2× daily bank check"]
-      V1 --> V2
+      R1["Invoice arrives\\nDocuShare + email inbox\\nJuliette · Fatma · Philippe"]
+      R2["Invoice logged\\nJuliette Excel tracker"]
+      R1 --> R2
     end
-    subgraph INVOICE["2 · Invoice / Coding / Approval"]
+    subgraph ENTRY["2 · Entry & Coding"]
       direction TB
-      I1["Invoice received\\nDocuShare + email"]
-      I2["Manual coding\\nAmount-only approval routing"]
-      I3["Sage posting\\nNo system-enforced workflow"]
-      I1 --> I2 --> I3
+      E1["AP codes invoice\\nADM/RAD 20/80 split\\nProject code + cost center"]
+      E2["Book in Sage\\nACHA journal entry"]
+      E1 --> E2
     end
-    subgraph PAYMENT["3 · Payment Execution"]
+    subgraph VALIDATION["3 · Validation (DocuShare)"]
       direction TB
-      P1["Trustpair\\npayment file validation"]
-      P2["Agicap execution\\nWells Fargo · SocGen"]
+      D1["Route for approval\\nDocuShare — per DoA threshold"]
+      D2["Approval email received\\nAdded to Excel tracker"]
+      D1 --> D2
+    end
+    subgraph PAYMENT["4 · Payment Execution"]
+      direction TB
+      P1["Trustpair gate\\nMandatory — hard stop\\n48hr cutoff before campaign"]
+      P2["Bank transfer\\nAgicap · Wells Fargo · SocGen\\n10th & 25th campaigns"]
       P1 --> P2
     end
-    VENDOR -->|"~4,000 invoices/yr\\n650 POs"| INVOICE
-    INVOICE --> PAYMENT
-    style VENDOR  fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
-    style INVOICE fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
-    style PAYMENT fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864`;
+    RECEIPT -->|"~4,000 invoices/yr"| ENTRY
+    ENTRY --> VALIDATION
+    VALIDATION -->|"650 POs/yr"| PAYMENT
+    style RECEIPT    fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    style ENTRY      fill:#D6E4F7,stroke:#2E5EA8,color:#1F3864
+    style VALIDATION fill:#FFF3CD,stroke:#BF6C00,color:#5C3D00
+    style PAYMENT    fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20`;
 
   // ── Per-step detail cards ───────────────────────────────────────────────────
   function stepCard(step, reqIndices, ctrlLabel) {
@@ -563,6 +570,58 @@ ${mermaidDef}
   ${p2pSteps[1] ? stepCard(p2pSteps[1], reqMap.invoice, ctrl(1)) : ''}
   ${p2pSteps[2] ? stepCard(p2pSteps[2], reqMap.payment, ctrl(2)) : ''}
 
+  <h3 style="margin:24px 0 10px;font-size:14px;color:#1F3864;border-bottom:2px solid #D6E4F7;padding-bottom:6px">Approval Authority Matrices — Source: Formal Policy Documents (Mar 2026)</h3>
+  <p style="font-size:12px;color:#555;margin:0 0 14px">Current-state approval thresholds. These are the DoA matrices NetSuite must enforce. Separate from contract signature authority (Didier ≤€500K · Marc de Garidel >€500K).</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+
+    <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
+      <div style="background:#2E5EA8;color:#fff;padding:8px 14px;font-size:12px;font-weight:700">PO / Contract Approval Matrix</div>
+      <table style="width:100%;border-collapse:collapse;font-size:11px">
+        <thead>
+          <tr style="background:#EBF2FC">
+            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Amount Threshold</th>
+            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Required Approver</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €50,000</td><td style="padding:5px 10px;color:#333">SVP · VPs · Sr Directors</td></tr>
+          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€50K – €500K</td><td style="padding:5px 10px;color:#333">Chiefs (C-suite −1)</td></tr>
+          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€500K – €750K</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance (Hema Keshava)</td></tr>
+          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">€750K – €1M</td><td style="padding:5px 10px;color:#333;font-weight:600">CFO (Didier Blondel)</td></tr>
+          <tr><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">> €1M</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO (Marc de Garidel)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="border:1px solid #D6E4F7;border-radius:6px;overflow:hidden">
+      <div style="background:#2E5EA8;color:#fff;padding:8px 14px;font-size:12px;font-weight:700">Invoice Approval Matrix</div>
+      <table style="width:100%;border-collapse:collapse;font-size:11px">
+        <thead>
+          <tr style="background:#EBF2FC">
+            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Amount</th>
+            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">Without PO</th>
+            <th style="padding:6px 10px;text-align:left;color:#1F3864;border-bottom:1px solid #D6E4F7">With PO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €50K</td><td style="padding:5px 10px;color:#333">PM + SVP/VP</td><td style="padding:5px 10px;color:#1F6830">PM only</td></tr>
+          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">≤ €200K</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#1F6830">PM + SVP/VP</td></tr>
+          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €50K – €500K</td><td style="padding:5px 10px;color:#333">Chiefs</td><td style="padding:5px 10px;color:#333">—</td></tr>
+          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €200K – €750K</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#333">Chiefs</td></tr>
+          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €500K – €750K</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance</td><td style="padding:5px 10px;color:#333">—</td></tr>
+          <tr style="background:#FAFBFF;border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €750K – €1M</td><td style="padding:5px 10px;color:#333;font-weight:600">CFO</td><td style="padding:5px 10px;color:#333">—</td></tr>
+          <tr style="border-bottom:1px solid #F0F4FA"><td style="padding:5px 10px;color:#333">> €750K – €2M</td><td style="padding:5px 10px;color:#333">—</td><td style="padding:5px 10px;color:#333;font-weight:600">SVP Finance + CFO</td></tr>
+          <tr><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">> €1M / >€2M</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO</td><td style="padding:5px 10px;color:#8B1A1A;font-weight:700">CEO</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="background:#F0F5FF;border:1px solid #C0D4F0;border-radius:4px;padding:8px 14px;font-size:11px;color:#1F3864;margin-bottom:20px">
+    <strong>Key control insight:</strong> With-PO invoices require fewer approvers at every tier — the PO acts as the pre-committed control layer. The largest gap today: PO coverage for CROs is near-zero, pushing those invoices onto the higher-scrutiny without-PO track at large dollar amounts. NetSuite must enforce this matrix and make the PO track the default.
+  </div>
+
   <div style="margin:16px 0;border:1px solid #E8F5E9;border-radius:6px;overflow:hidden">
     ${areaLabel('📋', 'Pre-ERP Governance Requirements (before blueprint)', '#1F6830', '#E8F5E9')}
     <div style="padding:12px 16px">
@@ -586,7 +645,8 @@ ${mermaidDef}
   </div>
 
   <h2>Record to Report (R2R)</h2>
-  ${genericPillarCard(pillarsData.find(p => p.id === 'record-to-report') || {})}
+
+  <%R2R_SECTION%>
 
   <h2>Reporting &amp; Planning</h2>
   ${genericPillarCard(pillarsData.find(p => p.id === 'reporting-planning') || {})}
