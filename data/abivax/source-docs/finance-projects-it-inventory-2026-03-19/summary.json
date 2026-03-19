@@ -1,0 +1,610 @@
+﻿{
+    "generatedAt":  "2026-03-19T10:17:17",
+    "root":  "O:\\Commun\\Support\\Finance projects- IT",
+    "totalFiles":  1939,
+    "bucketSummary":  [
+                          {
+                              "bucket":  "archive-only",
+                              "fileCount":  726
+                          },
+                          {
+                              "bucket":  "ignore",
+                              "fileCount":  974
+                          },
+                          {
+                              "bucket":  "supporting-evidence",
+                              "fileCount":  234
+                          },
+                          {
+                              "bucket":  "core-source",
+                              "fileCount":  5
+                          }
+                      ],
+    "extensionSummary":  [
+                             {
+                                 "extension":  ".pdf",
+                                 "fileCount":  736
+                             },
+                             {
+                                 "extension":  ".xlsx",
+                                 "fileCount":  585
+                             },
+                             {
+                                 "extension":  ".msg",
+                                 "fileCount":  170
+                             },
+                             {
+                                 "extension":  ".png",
+                                 "fileCount":  133
+                             },
+                             {
+                                 "extension":  ".db",
+                                 "fileCount":  82
+                             },
+                             {
+                                 "extension":  ".docx",
+                                 "fileCount":  81
+                             },
+                             {
+                                 "extension":  ".xls",
+                                 "fileCount":  56
+                             },
+                             {
+                                 "extension":  ".eml",
+                                 "fileCount":  51
+                             },
+                             {
+                                 "extension":  ".csv",
+                                 "fileCount":  14
+                             },
+                             {
+                                 "extension":  ".txt",
+                                 "fileCount":  11
+                             },
+                             {
+                                 "extension":  ".xml",
+                                 "fileCount":  5
+                             },
+                             {
+                                 "extension":  ".zip",
+                                 "fileCount":  4
+                             },
+                             {
+                                 "extension":  ".pptx",
+                                 "fileCount":  4
+                             },
+                             {
+                                 "extension":  ".mp4",
+                                 "fileCount":  2
+                             },
+                             {
+                                 "extension":  ".7z",
+                                 "fileCount":  2
+                             },
+                             {
+                                 "extension":  ".xlsm",
+                                 "fileCount":  1
+                             },
+                             {
+                                 "extension":  ".xlsb",
+                                 "fileCount":  1
+                             },
+                             {
+                                 "extension":  ".crdownload",
+                                 "fileCount":  1
+                             }
+                         ],
+    "pillarSummary":  [
+                          {
+                              "pillar":  "p2p",
+                              "fileCount":  1127
+                          },
+                          {
+                              "pillar":  "integrations",
+                              "fileCount":  494
+                          },
+                          {
+                              "pillar":  "controls",
+                              "fileCount":  354
+                          },
+                          {
+                              "pillar":  "order-to-cash",
+                              "fileCount":  320
+                          },
+                          {
+                              "pillar":  "record-to-report",
+                              "fileCount":  212
+                          },
+                          {
+                              "pillar":  "treasury",
+                              "fileCount":  189
+                          },
+                          {
+                              "pillar":  "change",
+                              "fileCount":  73
+                          },
+                          {
+                              "pillar":  "master-data",
+                              "fileCount":  64
+                          },
+                          {
+                              "pillar":  "reporting-planning",
+                              "fileCount":  39
+                          },
+                          {
+                              "pillar":  "program-governance",
+                              "fileCount":  18
+                          },
+                          {
+                              "pillar":  "inventory",
+                              "fileCount":  1
+                          }
+                      ],
+    "topFolders":  [
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Reconciliations\\ABIVAX LLC\\2023",
+                           "fileCount":  6,
+                           "coreSourceCount":  2,
+                           "supportingCount":  0,
+                           "latestWriteTime":  "2025-10-31T14:19:20",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "controls"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "ERP\\Documentation process P2P",
+                           "fileCount":  11,
+                           "coreSourceCount":  1,
+                           "supportingCount":  6,
+                           "latestWriteTime":  "2026-03-05T10:09:57",
+                           "topDocTypes":  [
+                                               "document",
+                                               "policy-matrix",
+                                               "process-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "DOCUSHARE MAJ 2024",
+                           "fileCount":  16,
+                           "coreSourceCount":  1,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2026-02-26T09:45:38",
+                           "topDocTypes":  [
+                                               "document",
+                                               "workbook",
+                                               "other"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Reconciliations\\ABIVAX LLC",
+                           "fileCount":  14,
+                           "coreSourceCount":  1,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-10-31T12:16:44",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "program-doc",
+                                               "controls"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats apres upgrade (after upgrade)\\2025\\ABIVAX LLC",
+                           "fileCount":  35,
+                           "coreSourceCount":  0,
+                           "supportingCount":  11,
+                           "latestWriteTime":  "2025-10-31T09:36:57",
+                           "topDocTypes":  [
+                                               "document",
+                                               "workbook",
+                                               "program-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats avant upgrade (before upgrade)\\2025\\ABIVAX LLC",
+                           "fileCount":  36,
+                           "coreSourceCount":  0,
+                           "supportingCount":  9,
+                           "latestWriteTime":  "2025-10-31T09:36:41",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "document",
+                                               "other"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats apres upgrade (after upgrade)\\2025\\ABIVAX SA",
+                           "fileCount":  35,
+                           "coreSourceCount":  0,
+                           "supportingCount":  9,
+                           "latestWriteTime":  "2025-10-30T18:04:25",
+                           "topDocTypes":  [
+                                               "document",
+                                               "workbook",
+                                               "program-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONNEXION SAGE-AGICAP-SG",
+                           "fileCount":  20,
+                           "coreSourceCount":  0,
+                           "supportingCount":  9,
+                           "latestWriteTime":  "2025-09-26T15:58:20",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "other",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TRUSTPAIR\\FRANCE",
+                           "fileCount":  12,
+                           "coreSourceCount":  0,
+                           "supportingCount":  9,
+                           "latestWriteTime":  "2026-01-23T17:44:41",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "process-doc",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Etats avant upgrade (before upgrade)\\2025\\ABIVAX SA\\Etats",
+                           "fileCount":  38,
+                           "coreSourceCount":  0,
+                           "supportingCount":  8,
+                           "latestWriteTime":  "2025-10-30T18:01:30",
+                           "topDocTypes":  [
+                                               "other",
+                                               "workbook",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONNEXION ADP",
+                           "fileCount":  11,
+                           "coreSourceCount":  0,
+                           "supportingCount":  8,
+                           "latestWriteTime":  "2025-07-18T15:34:47",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "other",
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONCUR T\u0026E",
+                           "fileCount":  22,
+                           "coreSourceCount":  0,
+                           "supportingCount":  7,
+                           "latestWriteTime":  "2025-04-14T10:15:41",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "other",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TRUSTPAIR\\FRANCE\\communication frs - définitif",
+                           "fileCount":  10,
+                           "coreSourceCount":  0,
+                           "supportingCount":  7,
+                           "latestWriteTime":  "2025-07-18T16:51:16",
+                           "topDocTypes":  [
+                                               "master-data",
+                                               "other",
+                                               "integration-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONCUR T\u0026E\\Change control request\\Doc qualité",
+                           "fileCount":  9,
+                           "coreSourceCount":  0,
+                           "supportingCount":  6,
+                           "latestWriteTime":  "2025-02-24T08:28:33",
+                           "topDocTypes":  [
+                                               "policy-matrix",
+                                               "controls",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SOX\\Centralisation info controle - a retrier",
+                           "fileCount":  6,
+                           "coreSourceCount":  0,
+                           "supportingCount":  5,
+                           "latestWriteTime":  "2024-11-05T18:48:18",
+                           "topDocTypes":  [
+                                               "controls",
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TRUSTPAIR\\FRANCE\\Mise en place - procédures internes",
+                           "fileCount":  27,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2024-12-10T11:26:19",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "other",
+                                               "controls"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\V10\\Etats avant upgrade\\2024\\LLC",
+                           "fileCount":  22,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2024-09-12T22:27:28",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "document",
+                                               "controls"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Reconciliations\\ABIVAX SA",
+                           "fileCount":  19,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2025-10-31T16:08:25",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "program-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\Upgrade Sage v12\\4 - Contrôles Finance\\Reconciliations",
+                           "fileCount":  12,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2025-11-03T15:22:09",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "integration-doc",
+                                               "other"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TRUSTPAIR\\FRANCE\\Administratif\\Prep envoi Change control request",
+                           "fileCount":  7,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2025-04-03T17:26:25",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "controls",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SOX",
+                           "fileCount":  7,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2025-01-17T11:18:32",
+                           "topDocTypes":  [
+                                               "controls",
+                                               "workbook"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\V10\\Etats apres upgrade\\2024\\LLC\\2024\\Chart of Accounts",
+                           "fileCount":  4,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2024-09-19T10:43:39",
+                           "topDocTypes":  [
+                                               "master-data"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TMS AGICAP\\previsions\\06.2025",
+                           "fileCount":  4,
+                           "coreSourceCount":  0,
+                           "supportingCount":  4,
+                           "latestWriteTime":  "2025-06-26T15:19:21",
+                           "topDocTypes":  [
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\02-Moyens de paiement",
+                           "fileCount":  19,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-04-29T10:18:57",
+                           "topDocTypes":  [
+                                               "other",
+                                               "treasury-doc",
+                                               "document"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\V10",
+                           "fileCount":  19,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-03-31T19:15:22",
+                           "topDocTypes":  [
+                                               "other",
+                                               "document",
+                                               "controls"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONCUR T\u0026E\\Change control request",
+                           "fileCount":  18,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2024-12-02T15:53:42",
+                           "topDocTypes":  [
+                                               "document",
+                                               "integration-doc",
+                                               "policy-matrix"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "Devis suivi DJ",
+                           "fileCount":  14,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2026-02-17T15:34:34",
+                           "topDocTypes":  [
+                                               "document",
+                                               "integration-doc",
+                                               "workbook"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "DOCUSHARE NEW SERVEUR\\Fichiers de test - factures",
+                           "fileCount":  10,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-03-10T10:39:25",
+                           "topDocTypes":  [
+                                               "document",
+                                               "policy-matrix",
+                                               "workbook"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE\\01-Sage upgrade\\V10\\Etats apres upgrade\\2024",
+                           "fileCount":  9,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2024-09-19T12:23:39",
+                           "topDocTypes":  [
+                                               "controls",
+                                               "other",
+                                               "workbook"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "Abivax LLC Flows",
+                           "fileCount":  7,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2026-02-25T10:32:18",
+                           "topDocTypes":  [
+                                               "other",
+                                               "treasury-doc",
+                                               "integration-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TMS AGICAP\\Flux",
+                           "fileCount":  6,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2026-02-23T16:37:11",
+                           "topDocTypes":  [
+                                               "process-doc",
+                                               "other"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "ERP\\Treasury",
+                           "fileCount":  5,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-12-02T09:32:04",
+                           "topDocTypes":  [
+                                               "treasury-doc",
+                                               "other"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONNEXION SAGE-AGICAP-SG\\Formation 2",
+                           "fileCount":  5,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-04-14T16:51:00",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "other",
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "CONNEXION SAGE-AGICAP-SG\\Confidentialité et restitution global ou unitaire",
+                           "fileCount":  3,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-03-31T13:55:19",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TMS AGICAP\\Abivax LLC\\connexion swift",
+                           "fileCount":  3,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2026-02-25T10:09:30",
+                           "topDocTypes":  [
+                                               "integration-doc",
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TMS AGICAP\\previsions\\04.2025",
+                           "fileCount":  3,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-04-25T15:54:12",
+                           "topDocTypes":  [
+                                               "treasury-doc"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TRUSTPAIR\\FRANCE\\Administratif",
+                           "fileCount":  3,
+                           "coreSourceCount":  0,
+                           "supportingCount":  3,
+                           "latestWriteTime":  "2025-04-10T18:37:14",
+                           "topDocTypes":  [
+                                               "policy-matrix",
+                                               "controls"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SOX\\Intervention KPMG 12.2024\\FR-TR-C05\\FR-TR-C05-12.11.2024",
+                           "fileCount":  27,
+                           "coreSourceCount":  0,
+                           "supportingCount":  2,
+                           "latestWriteTime":  "2024-11-08T10:34:29",
+                           "topDocTypes":  [
+                                               "treasury-doc",
+                                               "other",
+                                               "policy-matrix"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "SAGE",
+                           "fileCount":  9,
+                           "coreSourceCount":  0,
+                           "supportingCount":  2,
+                           "latestWriteTime":  "2025-06-05T16:42:40",
+                           "topDocTypes":  [
+                                               "document",
+                                               "workbook",
+                                               "other"
+                                           ]
+                       },
+                       {
+                           "relativeDir":  "TMS AGICAP\\check engagé\\2024 et 2025\\20251117",
+                           "fileCount":  7,
+                           "coreSourceCount":  0,
+                           "supportingCount":  2,
+                           "latestWriteTime":  "2025-11-18T10:14:29",
+                           "topDocTypes":  [
+                                               "workbook",
+                                               "integration-doc",
+                                               "other"
+                                           ]
+                       }
+                   ]
+}
