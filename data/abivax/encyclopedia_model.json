@@ -1,0 +1,119 @@
+{
+  "modes": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "description": "Run the program and see what matters now.",
+      "firstSection": "s0",
+      "links": [
+        { "id": "s0", "label": "Start Here" },
+        { "id": "s1", "label": "Program Overview" },
+        { "id": "s2", "label": "Key Decisions" },
+        { "id": "s8", "label": "Top Risks" },
+        { "id": "s11", "label": "Governance" },
+        { "id": "s12", "label": "Open Items & Actions" }
+      ]
+    },
+    {
+      "id": "pillars",
+      "label": "Pillars",
+      "description": "Jump into the workstream or substream that matters for the next meeting.",
+      "firstSection": "s10",
+      "groups": [
+        {
+          "label": "P2P",
+          "links": [
+            { "id": "s10", "label": "P2P Summary" },
+            { "id": "s10-sa-flow", "label": "Process Flow" },
+            { "id": "s10-sa-matrices", "label": "Approval Matrices" },
+            { "id": "s10-sa-reqs", "label": "ERP Requirements" },
+            { "id": "s10-sa-decisions", "label": "Open Decisions" },
+            { "id": "s10-llc-status", "label": "US LLC Status" }
+          ]
+        },
+        {
+          "label": "R2R",
+          "links": [
+            { "id": "s16", "label": "R2R Summary" },
+            { "id": "s16-sa-gaap", "label": "Multi-GAAP" },
+            { "id": "s16-sa-coa", "label": "COA Design" },
+            { "id": "s16-sa-treasury", "label": "Treasury" },
+            { "id": "s16-sa-decisions", "label": "Open Decisions" },
+            { "id": "s16-llc-status", "label": "US LLC Status" }
+          ]
+        },
+        {
+          "label": "Reporting & Planning",
+          "links": [
+            { "id": "s17", "label": "R&P Summary" },
+            { "id": "s17-sa-current", "label": "Current State" },
+            { "id": "s17-sa-reqs", "label": "ERP Requirements" },
+            { "id": "s17-sa-decisions", "label": "Open Decisions" },
+            { "id": "s17-llc-status", "label": "US LLC Status" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scope-controls",
+      "label": "Scope & Controls",
+      "description": "Track phase 1 scope, SOX coverage, and unresolved blueprint decisions.",
+      "firstSection": "s5",
+      "links": [
+        { "id": "s5", "label": "SOX & Controls" },
+        { "id": "s3", "label": "System Selection" },
+        { "id": "s6", "label": "Budget & Contract" },
+        { "id": "s15", "label": "Integrations & Data Migration" }
+      ]
+    },
+    {
+      "id": "reference",
+      "label": "Reference",
+      "description": "Keep supporting material available without crowding the operating surface.",
+      "firstSection": "s7",
+      "links": [
+        { "id": "s7", "label": "Timeline" },
+        { "id": "s9", "label": "Vendor Profiles" },
+        { "id": "s13", "label": "Outputs Registry" },
+        { "id": "s14", "label": "Change Log" }
+      ]
+    }
+  ],
+  "pillars": [
+    {
+      "id": "p2p",
+      "label": "P2P",
+      "sectionId": "s10",
+      "summary": "Supplier operations, approvals, invoices, and payment execution across France SA and future US LLC alignment.",
+      "substreams": [
+        { "label": "Vendor Setup", "anchorId": "s10-sa-flow" },
+        { "label": "PO / Approval Workflow", "anchorId": "s10-sa-matrices" },
+        { "label": "Invoice Processing", "anchorId": "s10-sa-reqs" },
+        { "label": "Payments", "anchorId": "s10-sa-decisions" }
+      ]
+    },
+    {
+      "id": "r2r",
+      "label": "R2R",
+      "sectionId": "s16",
+      "summary": "Close, multi-GAAP, COA, treasury, bank reconciliation, and entity structure.",
+      "substreams": [
+        { "label": "Multi-GAAP", "anchorId": "s16-sa-gaap" },
+        { "label": "COA Design", "anchorId": "s16-sa-coa" },
+        { "label": "Treasury", "anchorId": "s16-sa-treasury" },
+        { "label": "Open Decisions", "anchorId": "s16-sa-decisions" }
+      ]
+    },
+    {
+      "id": "reporting-planning",
+      "label": "Reporting & Planning",
+      "sectionId": "s17",
+      "summary": "Management reporting, statutory reporting, dimensional model, and planning support for phase 1.",
+      "substreams": [
+        { "label": "Current State", "anchorId": "s17-sa-current" },
+        { "label": "ERP Requirements", "anchorId": "s17-sa-reqs" },
+        { "label": "Open Decisions", "anchorId": "s17-sa-decisions" }
+      ]
+    }
+  ]
+}

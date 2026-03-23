@@ -47,6 +47,10 @@
     color: rgba(255,255,255,0.28); padding: 16px 16px 3px; margin-top: 4px;
     border-top: 1px solid rgba(255,255,255,0.07); }
   .nav-group-label:first-child { border-top: none; margin-top: 0; }
+  .nav-mode-desc { font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.45;
+    padding: 0 16px 10px; }
+  .nav-subgroup-label { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.62);
+    padding: 12px 16px 6px; text-transform: uppercase; letter-spacing: 0.7px; }
 
   a.nav-link {
     display: flex; align-items: center; gap: 10px;
@@ -63,6 +67,13 @@
     min-width: 28px; text-align: right; font-weight: 700; }
   a.nav-link.has-children { padding-bottom: 2px; }
   .nav-sub-list { padding: 0 0 4px 0; }
+  a.nav-sub-link {
+    display: block; padding: 6px 16px 6px 26px; font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.66); text-decoration: none; border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+  }
+  a.nav-sub-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+  a.nav-sub-link.active { color: #fff; background: rgba(255,255,255,0.12); border-left-color: #93C5FD; }
 
   /* Entity level (France SA / US LLC) */
   .nav-entity-label { padding: 4px 16px 1px 28px; }
@@ -98,6 +109,16 @@
   #page-header h1 { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
   #page-header .meta { font-size: 13px; color: var(--gray3); }
   #page-header .pills { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  #page-header .mode-tabs { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+  .mode-tab {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 7px 14px; border-radius: 999px; text-decoration: none;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.2px;
+    color: var(--navy); background: #EEF3FA; border: 1px solid #D6E4F7;
+    transition: all 0.15s ease;
+  }
+  .mode-tab:hover { background: #E4EDF9; }
+  .mode-tab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
   .pill { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px;
     background: var(--ltblue); color: var(--blue); }
   .pill.green  { background: #D4EDDA; color: #1A5C38; }
@@ -161,6 +182,25 @@
   ol.risk-list { padding-left: 20px; margin: 8px 0 16px; }
   ol.risk-list li { font-size: 13px; line-height: 1.6; margin-bottom: 6px; padding-left: 4px; }
 
+  /* â”€â”€ Hub â”€â”€ */
+  .hub-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin: 18px 0 10px; }
+  .hub-card {
+    display:block; text-decoration:none; border:1px solid #D6E4F7; border-radius:10px;
+    padding:16px 18px; background:linear-gradient(180deg, #FBFDFF 0%, #F2F6FC 100%);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .hub-card:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(31,56,100,0.08); }
+  .hub-card-kicker { font-size:10px; text-transform:uppercase; letter-spacing:0.9px; color:#5D7494; font-weight:700; margin-bottom:8px; }
+  .hub-card-title { font-size:14px; font-weight:700; color:var(--navy); line-height:1.5; min-height: 42px; }
+  .hub-card-meta { font-size:11px; color:#6C757D; margin-top:10px; }
+  .pillar-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top: 10px; }
+  .pillar-card { border:1px solid #E0E8F5; border-radius:10px; padding:16px 18px; background:#fff; }
+  .pillar-card-title { display:inline-block; font-size:15px; font-weight:800; color:var(--navy); text-decoration:none; margin-bottom:10px; }
+  .pillar-card-summary { font-size:12px; color:#4F5D70; line-height:1.6; margin-bottom:12px; }
+  .pillar-card-links { display:flex; gap:8px; flex-wrap:wrap; }
+  .hub-mini-link { display:inline-flex; padding:5px 10px; border-radius:999px; text-decoration:none; font-size:11px; font-weight:700; color:#2E5EA8; background:#EEF4FD; }
+  .hub-mini-link:hover { background:#E2ECFA; }
+
   /* ── Print ── */
   @media print {
     #sidebar { display: none; }
@@ -175,27 +215,46 @@
   <div id="sidebar-header">
     <div class="logo">Abivax ERP Program</div>
     <div class="title">Program Encyclopedia</div>
-    <div class="meta">Program Director: Mike Markman<br>Generated: 2026-03-18</div>
+    <div class="meta">Program Director: Mike Markman<br>Generated: 2026-03-19</div>
   </div>
   
-  <div class="nav-group-label">Program Status</div>
-  <a href="#s1" class="nav-link"><span class="nav-num">1</span>Program Overview</a><a href="#s12" class="nav-link"><span class="nav-num">—</span>Open Items & Actions</a>
-
-  <div class="nav-group-label">Foundation</div>
-  <a href="#s2" class="nav-link"><span class="nav-num">2</span>Key Decisions</a><a href="#s3" class="nav-link"><span class="nav-num">3</span>System Selection</a><a href="#s6" class="nav-link"><span class="nav-num">6</span>Budget & Contract</a><a href="#s7" class="nav-link"><span class="nav-num">7</span>Timeline</a>
-
-  <div class="nav-group-label">Delivery</div>
-  <a href="#s4" class="nav-link"><span class="nav-num">4</span>Delivery Model</a><a href="#s9" class="nav-link"><span class="nav-num">9</span>Vendor Profiles</a><a href="#s11" class="nav-link"><span class="nav-num">11</span>Governance</a>
-
-  <div class="nav-group-label">Pillars</div>
-  <a href="#s10" class="nav-link has-children"><span class="nav-num">P2P</span>P2P — Procure to Pay</a><div class="nav-sub-list"><div class="nav-entity-label"><a href="#s10-sa" class="nav-entity-link">🇫🇷 France SA</a></div><div class="nav-sub-sub-list"><a href="#s10-sa-flow" class="nav-sub-sub-link">Process Flow</a><a href="#s10-sa-matrices" class="nav-sub-sub-link">Approval Matrices</a><a href="#s10-sa-reqs" class="nav-sub-sub-link">ERP Requirements</a><a href="#s10-sa-decisions" class="nav-sub-sub-link">Open Decisions</a></div><div class="nav-entity-label"><a href="#s10-llc" class="nav-entity-link">🇺🇸 US LLC</a></div><div class="nav-sub-sub-list"><a href="#s10-llc-status" class="nav-sub-sub-link">Status & Gaps</a></div></div><a href="#s16" class="nav-link has-children"><span class="nav-num">R2R</span>R2R — Record to Report</a><div class="nav-sub-list"><div class="nav-entity-label"><a href="#s16-sa" class="nav-entity-link">🇫🇷 France SA</a></div><div class="nav-sub-sub-list"><a href="#s16-sa-gaap" class="nav-sub-sub-link">Multi-GAAP</a><a href="#s16-sa-coa" class="nav-sub-sub-link">COA Design</a><a href="#s16-sa-treasury" class="nav-sub-sub-link">Treasury</a><a href="#s16-sa-decisions" class="nav-sub-sub-link">Open Decisions</a></div><div class="nav-entity-label"><a href="#s16-llc" class="nav-entity-link">🇺🇸 US LLC</a></div><div class="nav-sub-sub-list"><a href="#s16-llc-status" class="nav-sub-sub-link">Status & Gaps</a></div></div><a href="#s17" class="nav-link has-children"><span class="nav-num">RPT</span>Reporting & Planning</a><div class="nav-sub-list"><div class="nav-entity-label"><a href="#s17-sa" class="nav-entity-link">🇫🇷 France SA</a></div><div class="nav-sub-sub-list"><a href="#s17-sa-current" class="nav-sub-sub-link">Current State</a><a href="#s17-sa-reqs" class="nav-sub-sub-link">ERP Requirements</a><a href="#s17-sa-decisions" class="nav-sub-sub-link">Open Decisions</a></div><div class="nav-entity-label"><a href="#s17-llc" class="nav-entity-link">🇺🇸 US LLC</a></div><div class="nav-sub-sub-list"><a href="#s17-llc-status" class="nav-sub-sub-link">Status & Gaps</a></div></div><a href="#s5" class="nav-link"><span class="nav-num">SOX</span>SOX / Controls</a>
-
-  <div class="nav-group-label">Risk & Systems</div>
-  <a href="#s8" class="nav-link"><span class="nav-num">8</span>Risk Register</a><a href="#s15" class="nav-link"><span class="nav-num">15</span>Systems & Integration</a>
-
-  <div class="nav-group-label">Reference</div>
-  <a href="#s13" class="nav-link"><span class="nav-num">13</span>Outputs Registry</a><a href="#s14" class="nav-link"><span class="nav-num">14</span>Change Log</a>
-
+      <div class="nav-mode-block" data-mode-block="overview">
+        <div class="nav-group-label">Overview</div>
+        <div class="nav-mode-desc">Run the program and see what matters now.</div>
+        <a href="#s0" class="nav-link js-scroll-link" data-target-id="s0">Start Here</a><a href="#s1" class="nav-link js-scroll-link" data-target-id="s1">Program Overview</a><a href="#s2" class="nav-link js-scroll-link" data-target-id="s2">Key Decisions</a><a href="#s8" class="nav-link js-scroll-link" data-target-id="s8">Top Risks</a><a href="#s11" class="nav-link js-scroll-link" data-target-id="s11">Governance</a><a href="#s12" class="nav-link js-scroll-link" data-target-id="s12">Open Items &amp; Actions</a>
+        
+      </div>
+    
+      <div class="nav-mode-block" data-mode-block="pillars">
+        <div class="nav-group-label">Pillars</div>
+        <div class="nav-mode-desc">Jump into the workstream or substream that matters for the next meeting.</div>
+        
+        
+      <div class="nav-subgroup-label">P2P</div>
+      <a href="#s10" class="nav-sub-link js-scroll-link" data-target-id="s10">P2P Summary</a><a href="#s10-sa-flow" class="nav-sub-link js-scroll-link" data-target-id="s10-sa-flow">Process Flow</a><a href="#s10-sa-matrices" class="nav-sub-link js-scroll-link" data-target-id="s10-sa-matrices">Approval Matrices</a><a href="#s10-sa-reqs" class="nav-sub-link js-scroll-link" data-target-id="s10-sa-reqs">ERP Requirements</a><a href="#s10-sa-decisions" class="nav-sub-link js-scroll-link" data-target-id="s10-sa-decisions">Open Decisions</a><a href="#s10-llc-status" class="nav-sub-link js-scroll-link" data-target-id="s10-llc-status">US LLC Status</a>
+    
+      <div class="nav-subgroup-label">R2R</div>
+      <a href="#s16" class="nav-sub-link js-scroll-link" data-target-id="s16">R2R Summary</a><a href="#s16-sa-gaap" class="nav-sub-link js-scroll-link" data-target-id="s16-sa-gaap">Multi-GAAP</a><a href="#s16-sa-coa" class="nav-sub-link js-scroll-link" data-target-id="s16-sa-coa">COA Design</a><a href="#s16-sa-treasury" class="nav-sub-link js-scroll-link" data-target-id="s16-sa-treasury">Treasury</a><a href="#s16-sa-decisions" class="nav-sub-link js-scroll-link" data-target-id="s16-sa-decisions">Open Decisions</a><a href="#s16-llc-status" class="nav-sub-link js-scroll-link" data-target-id="s16-llc-status">US LLC Status</a>
+    
+      <div class="nav-subgroup-label">Reporting &amp; Planning</div>
+      <a href="#s17" class="nav-sub-link js-scroll-link" data-target-id="s17">R&amp;P Summary</a><a href="#s17-sa-current" class="nav-sub-link js-scroll-link" data-target-id="s17-sa-current">Current State</a><a href="#s17-sa-reqs" class="nav-sub-link js-scroll-link" data-target-id="s17-sa-reqs">ERP Requirements</a><a href="#s17-sa-decisions" class="nav-sub-link js-scroll-link" data-target-id="s17-sa-decisions">Open Decisions</a><a href="#s17-llc-status" class="nav-sub-link js-scroll-link" data-target-id="s17-llc-status">US LLC Status</a>
+    
+      </div>
+    
+      <div class="nav-mode-block" data-mode-block="scope-controls">
+        <div class="nav-group-label">Scope &amp; Controls</div>
+        <div class="nav-mode-desc">Track phase 1 scope, SOX coverage, and unresolved blueprint decisions.</div>
+        <a href="#s5" class="nav-link js-scroll-link" data-target-id="s5">SOX &amp; Controls</a><a href="#s3" class="nav-link js-scroll-link" data-target-id="s3">System Selection</a><a href="#s6" class="nav-link js-scroll-link" data-target-id="s6">Budget &amp; Contract</a><a href="#s15" class="nav-link js-scroll-link" data-target-id="s15">Integrations &amp; Data Migration</a>
+        
+      </div>
+    
+      <div class="nav-mode-block" data-mode-block="reference">
+        <div class="nav-group-label">Reference</div>
+        <div class="nav-mode-desc">Keep supporting material available without crowding the operating surface.</div>
+        <a href="#s7" class="nav-link js-scroll-link" data-target-id="s7">Timeline</a><a href="#s9" class="nav-link js-scroll-link" data-target-id="s9">Vendor Profiles</a><a href="#s13" class="nav-link js-scroll-link" data-target-id="s13">Outputs Registry</a><a href="#s14" class="nav-link js-scroll-link" data-target-id="s14">Change Log</a>
+        
+      </div>
+    
   <div id="sidebar-footer">
     Confidential — Program Director Use<br>
     Regenerate: <code style="background:rgba(255,255,255,0.1);color:#ccc">scripts/generate_encyclopedia.js</code>
@@ -205,7 +264,7 @@
 <div id="main">
   <div id="page-header">
     <h1>Abivax ERP Program Encyclopedia</h1>
-    <div class="meta">Executive Sponsor: Didier Blondel, CFO &nbsp;|&nbsp; Go-Live: January 1, 2027 &nbsp;|&nbsp; Last generated: 2026-03-18</div>
+    <div class="meta">Executive Sponsor: Didier Blondel, CFO &nbsp;|&nbsp; Go-Live: January 1, 2027 &nbsp;|&nbsp; Last generated: 2026-03-19</div>
     <div class="pills">
       <span class="pill">Post-Selection</span>
       <span class="pill amber">Mobilization: April 2026</span>
@@ -214,10 +273,65 @@
       <span class="pill green">Support: CFGI</span>
       <span class="pill">Budget: EUR 999,936</span>
     </div>
+    <div class="mode-tabs"><a href="#s0" class="mode-tab js-scroll-link" data-mode-tab="overview">Overview</a><a href="#s10" class="mode-tab js-scroll-link" data-mode-tab="pillars">Pillars</a><a href="#s5" class="mode-tab js-scroll-link" data-mode-tab="scope-controls">Scope &amp; Controls</a><a href="#s7" class="mode-tab js-scroll-link" data-mode-tab="reference">Reference</a></div>
   </div>
 
   
-<section id="s1">
+<section id="s0" data-mode="overview">
+  <h1><span class="sec-num">0</span>Program Hub</h1>
+  <p>This prototype keeps `/encyclopedia` as the single entry point, but shifts the experience toward a hub model. Start with the mode bar above, then jump directly into the pillar or substream relevant to the meeting you are walking into.</p>
+  <div class="hub-grid">
+    <a href="#s0" class="hub-card js-scroll-link">
+      <div class="hub-card-kicker">Overview</div>
+      <div class="hub-card-title">Run the program and see what matters now.</div>
+      <div class="hub-card-meta">Jump to overview</div>
+    </a>
+  
+    <a href="#s10" class="hub-card js-scroll-link">
+      <div class="hub-card-kicker">Pillars</div>
+      <div class="hub-card-title">Jump into the workstream or substream that matters for the next meeting.</div>
+      <div class="hub-card-meta">Jump to pillars</div>
+    </a>
+  
+    <a href="#s5" class="hub-card js-scroll-link">
+      <div class="hub-card-kicker">Scope &amp; Controls</div>
+      <div class="hub-card-title">Track phase 1 scope, SOX coverage, and unresolved blueprint decisions.</div>
+      <div class="hub-card-meta">Jump to scope &amp; controls</div>
+    </a>
+  
+    <a href="#s7" class="hub-card js-scroll-link">
+      <div class="hub-card-kicker">Reference</div>
+      <div class="hub-card-title">Keep supporting material available without crowding the operating surface.</div>
+      <div class="hub-card-meta">Jump to reference</div>
+    </a>
+  </div>
+  <h2>Pillar Directory</h2>
+  <div class="pillar-grid">
+      <div class="pillar-card">
+        <a href="#s10" class="pillar-card-title js-scroll-link">P2P</a>
+        <p class="pillar-card-summary">Supplier operations, approvals, invoices, and payment execution across France SA and future US LLC alignment.</p>
+        <div class="pillar-card-links"><a href="#s10-sa-flow" class="hub-mini-link js-scroll-link">Vendor Setup</a><a href="#s10-sa-matrices" class="hub-mini-link js-scroll-link">PO / Approval Workflow</a><a href="#s10-sa-reqs" class="hub-mini-link js-scroll-link">Invoice Processing</a><a href="#s10-sa-decisions" class="hub-mini-link js-scroll-link">Payments</a></div>
+      </div>
+    
+      <div class="pillar-card">
+        <a href="#s16" class="pillar-card-title js-scroll-link">R2R</a>
+        <p class="pillar-card-summary">Close, multi-GAAP, COA, treasury, bank reconciliation, and entity structure.</p>
+        <div class="pillar-card-links"><a href="#s16-sa-gaap" class="hub-mini-link js-scroll-link">Multi-GAAP</a><a href="#s16-sa-coa" class="hub-mini-link js-scroll-link">COA Design</a><a href="#s16-sa-treasury" class="hub-mini-link js-scroll-link">Treasury</a><a href="#s16-sa-decisions" class="hub-mini-link js-scroll-link">Open Decisions</a></div>
+      </div>
+    
+      <div class="pillar-card">
+        <a href="#s17" class="pillar-card-title js-scroll-link">Reporting &amp; Planning</a>
+        <p class="pillar-card-summary">Management reporting, statutory reporting, dimensional model, and planning support for phase 1.</p>
+        <div class="pillar-card-links"><a href="#s17-sa-current" class="hub-mini-link js-scroll-link">Current State</a><a href="#s17-sa-reqs" class="hub-mini-link js-scroll-link">ERP Requirements</a><a href="#s17-sa-decisions" class="hub-mini-link js-scroll-link">Open Decisions</a></div>
+      </div>
+    </div>
+  <div class="callout" style="border-left-color:#1F3864;background:#EBF2FC">
+    <div class="callout-title" style="color:#1F3864">Prototype Goal</div>
+    <div class="callout-body">Make Overview useful for daily steering, Pillars useful for meeting prep, Scope &amp; Controls useful for audit and blueprint questions, and Reference a support layer rather than the default experience.</div>
+  </div>
+</section>
+
+<section id="s1" data-mode="overview">
   <h1><span class="sec-num">1</span>Program Overview</h1>
   <p>Abivax is implementing NetSuite (Oracle) as its ERP platform, replacing the current multi-system finance environment. The program targets a <strong>January 1, 2027 go-live</strong> — non-negotiable, tied to the US public launch in December 2027.</p>
   <table class="kv-table" style="--accent:#2E5EA8"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Current phase</td><td class="kv-val">post-selection / mobilization planning</td></tr><tr style="background:#fff"><td class="kv-key">Current focus</td><td class="kv-val">Delivery model confirmed March 18: NetSuite as SI (Paris team), CFGI as integrated support (controls, governance, change). Priority: sign NetSuite V3 SOW by March 31, consolidate CFGI dual proposals into one engagement, confirm Phase 1/2 scope boundary, obtain budget authorization from Didier and Hema.</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Go-live target</td><td class="kv-val">January 1, 2027 (non-negotiable)</td></tr><tr style="background:#fff"><td class="kv-key">Mobilization target</td><td class="kv-val">April 2026</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Program Director</td><td class="kv-val">Mike Markman</td></tr><tr style="background:#fff"><td class="kv-key">Executive Sponsor</td><td class="kv-val">Didier Blondel, CFO</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Finance Lead</td><td class="kv-val">Hema Keshava</td></tr></tbody></table>
@@ -225,13 +339,13 @@
   <ol class="risk-list"><li style="color:#8B1A1A">NetSuite V3 SOW not yet signed — EUR 388,700 fixed bid confirmed; target signature March 31; delays compress April mobilization window directly.</li><li style="color:#8B1A1A">CFGI combined engagement not yet contracted — two separate proposals (Ken Schatz implementation + Walid PMO) need consolidation; email sent to Ken and Jean-Arnold Coutareau March 18; target EUR 175-225K.</li><li style="color:#1A1A1A">Budget approved verbally by Didier Blondel (EUR 999,936) — written authorization and board documentation still to be formalized before contract execution.</li><li style="color:#1A1A1A">Internal capacity commitments not documented — Finance, IT, and FP&amp;A availability for ERP workstreams not yet formally committed.</li><li style="color:#1A1A1A">ITGC RCM pending final validation — controls baseline for audit readiness incomplete; CFGI controls-by-design deliverable at blueprint will address this.</li></ol>
 </section>
 
-<section id="s2">
+<section id="s2" data-mode="overview">
   <h1><span class="sec-num">2</span>Key Decisions Log</h1>
   <p>Authoritative decision trail for board, audit, and operational reference.</p>
   <table class="data-table" style="--accent:#1F3864"><thead><tr><th style="width:110px">Date</th><th style="width:220px">Decision</th><th style="width:auto">Rationale / Notes</th></tr></thead><tbody><tr class="even"><td style="">2026-02-26</td><td style="font-weight:600">NetSuite selected as ERP platform</td><td style="">Selected over SAP following structured RFP with KPMG advisory support. Basis: TCO, timeline, native multi-GAAP, fit for Abivax scale.</td></tr><tr class="odd"><td style="">2026-02-26</td><td style="font-weight:600">January 1, 2027 go-live non-negotiable</td><td style="">Tied to US public launch December 2027. Compressing phases preferred over extending go-live date.</td></tr><tr class="even"><td style="">2026-03-18</td><td style="font-weight:600">NetSuite Customer Success confirmed as SI</td><td style="">Paris-based team confirmed: Hafid Irbaiyne, Mazdak Sayyedelar, Ali Brahmi, Mathieu Lair, Sukeyna Ouled. French-speaking, on-site for milestones.</td></tr><tr class="odd"><td style="">2026-03-18</td><td style="font-weight:600">CFGI confirmed as integrated support partner</td><td style="">Three workstreams: controls oversight (Ken Schatz / Guy Morissette), program governance (Walid / Youness), change management (Walid / Youness). Target EUR 175-225K.</td></tr><tr class="even"><td style="">2026-03-18</td><td style="font-weight:600">KPMG scoped to selection advisory only</td><td style="">KPMG engagement covered SAP vs NetSuite evaluation and is complete. No ongoing implementation role.</td></tr><tr class="odd"><td style="">2026-03-18</td><td style="font-weight:600">Front-end app shelved; encyclopedia adopted</td><td style="">Static HTML pages retired. Today page shelved. Program record lives in this document, generated from canonical JSON.</td></tr></tbody></table>
 </section>
 
-<section id="s3">
+<section id="s3" data-mode="scope-controls">
   <h1><span class="sec-num">3</span>System Selection</h1>
   <p>NetSuite (Oracle SuiteSuccess Financials Premium) was selected over SAP S/4HANA on <strong>February 26, 2026</strong> following a competitive RFP process managed with KPMG France as advisory support. The decision was unanimous.</p>
   <h2>Selection Rationale</h2>
@@ -240,7 +354,7 @@
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:200px">Vendor</th><th style="width:130px">Outcome</th><th style="width:auto">Notes</th></tr></thead><tbody><tr class="even"><td style="">NetSuite (Oracle)</td><td style="color:#1A5C38;font-weight:700">SELECTED</td><td style="">SuiteSuccess Financials Premium; Paris-based team; selected Feb 26, 2026</td></tr><tr class="odd"><td style="">SAP S/4HANA</td><td style="">Not selected</td><td style="">Higher TCO; timeline risk; implementation complexity mismatched to Abivax scale</td></tr><tr class="even"><td style="">KPMG France (advisory)</td><td style="">Selection only</td><td style="">Managed RFP; evaluated both platforms; no ongoing implementation role</td></tr></tbody></table>
 </section>
 
-<section id="s4">
+<section id="s4" data-mode="overview">
   <h1><span class="sec-num">4</span>Delivery Model</h1>
   <p>Two-layer external model: NetSuite as the sole system integrator, CFGI as integrated program support. Abivax retains internal ownership of all decisions, data, and business process sign-off.</p>
   <h2>Layer 1 — NetSuite Implementation Team</h2>
@@ -253,7 +367,7 @@
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:160px">Name</th><th style="width:210px">Role</th><th style="width:110px">Location</th><th style="width:auto">ERP Responsibility</th></tr></thead><tbody><tr class="even"><td style="">Didier Blondel</td><td style="">CFO / Executive Sponsor</td><td style="">Global</td><td style="">Program sponsor; final escalation; board and audit committee reporting</td></tr><tr class="odd"><td style="">Mike Markman</td><td style="">ERP Program Director</td><td style="">US / Global</td><td style="">Day-to-day program ownership; vendor management; scope and budget decisions</td></tr><tr class="even"><td style="">Hema Keshava</td><td style="">Finance Lead (FP&amp;A, Treasury, Tax)</td><td style="">US / Global</td><td style="">Finance scope decisions; reporting model; R2R and multi-GAAP design</td></tr><tr class="odd"><td style="">Trinidad Mesa</td><td style="">Accounting Manager / Consolidation</td><td style="">France</td><td style="">French consolidation; COA; close process; primary France accounting BPO</td></tr><tr class="even"><td style="">Frederick Golly</td><td style="">FP&amp;A Lead</td><td style="">France</td><td style="">FP&amp;A and reporting model; cost center design; reporting extract requirements</td></tr><tr class="odd"><td style="">Adrian Holbrook</td><td style="">FP&amp;A / Reporting</td><td style="">US / Global</td><td style="">Cost center design; data-access quality; US reporting bridge (reports to Frederick)</td></tr><tr class="even"><td style="">Juliette Courtot</td><td style="">P2P Process Owner</td><td style="">France</td><td style="">France P2P BPO; invoice processing; workflow design; vendor master</td></tr><tr class="odd"><td style="">Kimberly Gordon</td><td style="">P2P Contractor</td><td style="">US</td><td style="">US-side P2P; AP coordination; US workflow counterpart to Juliette</td></tr><tr class="even"><td style="">Philippe Goncalves</td><td style="">Finance Manager</td><td style="">France</td><td style="">P2P governance chain; Juliette manager; France P2P escalation</td></tr><tr class="odd"><td style="">Matt Epley</td><td style="">US Accounting / SEC Reporting</td><td style="">US</td><td style="">SEC/NASDAQ; equity (Certent); IFRS adjustments; US GAAP outputs</td></tr><tr class="even"><td style="">Jade Nguyen</td><td style="">IT Lead / ERP Integration</td><td style="">France</td><td style="">IT integration architecture; system access; infrastructure and controls</td></tr><tr class="odd"><td style="">Benjamin Talmant</td><td style="">IT Project Manager</td><td style="">France</td><td style="">IT delivery coordination; integration workstream PM; IT capacity</td></tr></tbody></table>
 </section>
 
-<section id="s5">
+<section id="s5" data-mode="scope-controls">
   <h1><span class="sec-num">5</span>SOX and Controls</h1>
   <p>SOX readiness is a first-order program requirement embedded in the delivery model from day one. The program has <strong>143 active controls</strong> in the CFTI register.</p>
   <h2>CFTI Control Register</h2>
@@ -266,7 +380,7 @@
   <table class="data-table" style="--accent:#3B0764"><thead><tr><th style="width:250px">Requirement</th><th style="width:auto">Program Response</th></tr></thead><tbody><tr class="even"><td style="">Controls-by-design at blueprint</td><td style="">CFGI deliverable mapping ERP configuration to SOX register — produced before build begins</td></tr><tr class="odd"><td style="">Segregation of duties (SoD)</td><td style="">SoD-compliant role design reviewed by CFGI at blueprint; validated at UAT</td></tr><tr class="even"><td style="">ITGC / SDLC controls</td><td style="">NetSuite SuiteSuccess delivery includes SDLC controls as standard scope</td></tr><tr class="odd"><td style="">Audit trail and data integrity</td><td style="">NetSuite native audit logging; CFGI reviews at each milestone</td></tr><tr class="even"><td style="">Go-live readiness</td><td style="">CFGI written go/no-go against SOX criteria; required before cutover approved</td></tr><tr class="odd"><td style="">Post-go-live validation</td><td style="">CFGI adoption checks at 30 and 60 days confirm controls operating as designed</td></tr></tbody></table>
 </section>
 
-<section id="s6">
+<section id="s6" data-mode="scope-controls">
   <h1><span class="sec-num">6</span>Program Budget</h1>
   <p class="note">All figures in EUR, excluding VAT. CFGI fees are targets communicated to the firm, subject to contract execution. Budget sized to approximately EUR 1.0M.</p>
 
@@ -292,7 +406,7 @@
   <p class="note">Phase 2 scope (O2C, Inventory) contracted separately post-go-live.</p>
 </section>
 
-<section id="s7">
+<section id="s7" data-mode="reference">
   <h1><span class="sec-num">7</span>Implementation Timeline</h1>
   <p>Eight-month implementation from April 2026 to January 1, 2027. No schedule float after October — any slippage from UAT or cutover directly threatens the go-live date.</p>
   <h2>Phase Plan</h2>
@@ -301,13 +415,13 @@
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:120px">Date</th><th style="width:300px">Milestone</th><th style="width:auto">Status</th></tr></thead><tbody><tr class="even"><td style="">2026-02-26</td><td style="">ERP Final Selection Decision Forum</td><td style="">completed</td></tr><tr class="odd"><td style="">2026-02-27</td><td style="">Notify NetSuite and Start Commercial Negotiation Path</td><td style="">next</td></tr><tr class="even"><td style="">2026-03-06</td><td style="">Audit Committee ERP PPT Requested Finalization</td><td style="">deadline</td></tr><tr class="odd"><td style="">2026-03-19</td><td style="">Board Meeting (ERP decision communication checkpoint)</td><td style="">deadline</td></tr><tr class="even"><td style="">2026-03-31</td><td style="">SAP Offer Validity</td><td style="">deadline</td></tr><tr class="odd"><td style="">2026-04-01</td><td style="">ERP Implementation Work Start Target (NetSuite)</td><td style="">target</td></tr><tr class="even"><td style="">2027-01-01</td><td style="">ERP Go-Live</td><td style="">target</td></tr><tr class="odd"><td style="">2027-12-31</td><td style="">US Public Launch</td><td style="">target</td></tr></tbody></table>
 </section>
 
-<section id="s8">
+<section id="s8" data-mode="overview">
   <h1><span class="sec-num">8</span>Risk Register</h1>
   <p class="note">Living register. Update after each steering committee or when a risk status changes.</p>
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:260px">Risk</th><th style="width:80px">Level</th><th style="width:130px">Owner</th><th style="width:auto">Mitigation</th></tr></thead><tbody><tr class="even"><td style="">Commercial terms not signed before April mobilization window closes</td><td style="color:#8B1A1A;background:#FDECEA;font-weight:700">High</td><td style="">Mike / Hema</td><td style="">Accelerate contract review; Didier escalation path confirmed; target signature March 31</td></tr><tr class="odd"><td style="">NetSuite scope not locked at blueprint (O2C / Inventory ambiguity)</td><td style="color:#8B1A1A;background:#FDECEA;font-weight:700">High</td><td style="">Mike / Jamal</td><td style="">Confirm Phase 1/2 boundary on Jamal call; enforce through CFGI checkpoint reviews</td></tr><tr class="even"><td style="">Multi-GAAP configuration complexity causes late rework</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Hafid / CFGI</td><td style="">Hafid Irbaiyne (ex-CFO, French CPA) leads design; CFGI controls-by-design at blueprint</td></tr><tr class="odd"><td style="">Finance team capacity constrained during peak implementation</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Mike / Walid</td><td style="">EUR 85K reserve for interim/fractional support; Walid manages workload visibility</td></tr><tr class="even"><td style="">French e-invoicing regulatory scope underestimated</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Jade / NetSuite</td><td style="">Confirm coverage in final NetSuite SOW; reserve budget available</td></tr><tr class="odd"><td style="">Data migration quality issues delay UAT</td><td style="color:#BF6C00;background:#FFF3CD;font-weight:600">Medium</td><td style="">Abivax BPOs</td><td style="">RACI: Abivax owns data cleansing; EUR 35K reserve for third-party migration support</td></tr><tr class="even"><td style="">NetSuite delivery lead changes post-signing</td><td style="color:#1A5C38;background:#D4EDDA">Low-Med</td><td style="">Mike</td><td style="">Named team contractually confirmed; Hafid as escalation; CFGI at all milestones</td></tr><tr class="odd"><td style="">CFGI engagement not executed before April</td><td style="color:#1A5C38;background:#D4EDDA">Low-Med</td><td style="">Mike / Jean-Arnold</td><td style="">Email to Ken + Jean-Arnold sent 18 Mar; combined target EUR 175-225K</td></tr><tr class="even"><td style="">Program deprioritized due to M&amp;A or corporate event</td><td style="color:#1A5C38;background:#D4EDDA">Low</td><td style="">Didier</td><td style="">Phase 1 scope deliberately narrow; contracts structured with clear pause/exit provisions</td></tr></tbody></table>
 </section>
 
-<section id="s9">
+<section id="s9" data-mode="reference">
   <h1><span class="sec-num">9</span>Vendor Profiles</h1>
   <h2>NetSuite (Oracle) — System Integrator</h2>
   <table class="kv-table" style="--accent:#2E5EA8"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Engagement type</td><td class="kv-val">System integrator — SuiteSuccess Financials Premium</td></tr><tr style="background:#fff"><td class="kv-key">Contract status</td><td class="kv-val">V3 SOW dated 17 March 2026; under legal review; target signature March 31</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Implementation fee</td><td class="kv-val">EUR 388,700 fixed bid (V3 SOW)</td></tr><tr style="background:#fff"><td class="kv-key">Recurring license</td><td class="kv-val">EUR 148,589 / year after discount</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Training</td><td class="kv-val">EUR 7,647 after discount</td></tr><tr style="background:#fff"><td class="kv-key">Travel</td><td class="kv-val">EUR 18,000 capped</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Phase 1 scope</td><td class="kv-val">R2R, P2P, multi-GAAP (IFRS / French GAAP / US GAAP), OneWorld, 5 integrations</td></tr><tr style="background:#fff"><td class="kv-key">Phase 2 scope</td><td class="kv-val">O2C, Inventory — in base SOW but not activated Phase 1; contracted separately post-go-live</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Key contact</td><td class="kv-val">Jamal Azil (Account Executive); Hafid Irbaiyne (Practice Manager, Paris)</td></tr><tr style="background:#fff"><td class="kv-key">Watch-outs</td><td class="kv-val">O2C / Inventory still in base SOW — enforce Phase 1 boundary in contract. Abivax owns data cleansing, BPO decisions, and UAT coordination per RACI.</td></tr></tbody></table>
@@ -318,7 +432,7 @@
   <table class="kv-table" style="--accent:#6C757D"><tbody><tr style="background:#F5F6F8"><td class="kv-key">Engagement type</td><td class="kv-val">ERP selection advisory — SAP vs NetSuite evaluation, RFP management</td></tr><tr style="background:#fff"><td class="kv-key">Status</td><td class="kv-val">COMPLETED — concluded at selection decision February 26, 2026</td></tr><tr style="background:#F5F6F8"><td class="kv-key">AMOA proposal</td><td class="kv-val">EUR 370,100 total (302 man-days) — not accepted for implementation phase</td></tr><tr style="background:#fff"><td class="kv-key">Key contact</td><td class="kv-val">Olivia Berry (Assistant Manager); 3 years experience; SAP-focused; no NetSuite experience</td></tr><tr style="background:#F5F6F8"><td class="kv-key">Why not ongoing</td><td class="kv-val">Thin NetSuite credentials; CFGI's existing SOX engagement made CFGI the stronger choice</td></tr></tbody></table>
 </section>
 
-<section id="s10">
+<section id="s10" data-mode="pillars">
   <h1><span class="sec-num">10</span>ERP Pillars and Process Scope</h1>
 
   <h2>Pillar Overview</h2>
@@ -499,7 +613,7 @@ flowchart LR
 
 </section>
 
-<section id="s16">
+<section id="s16" data-mode="pillars">
   <h1><span class="sec-num">R2R</span>Record to Report</h1>
   <p style="font-size:13px;color:#444;margin:0 0 6px">Financial close is a manual, Excel-heavy process executed by KPMG (Robin Lapous) on a quarterly basis with no system support for consolidation or IFRS adjustments. Sage 100 lacks the data dimensions (country tag, cost center structure) needed for multi-entity reporting. No Chart of Accounts designed for NetSuite. GL/CoA design is the most consequential pre-blueprint decision — it affects every downstream report, rollup, and audit test. Treasury (cash, bank connectivity) is a sub-workstream owned by Roxandra Sturdza (FR) and Kimberly Gordon (US).</p>
   <p style="font-size:11px;color:#2E5EA8;font-weight:600;margin:0 0 20px">Confidence: partial ·  · BPOs: Philippe Goncalves (R2R / close process, FR) · Denis Jankovic (GL / CoA design, FR) · Matt Epley (US GL / CoA)</p>
@@ -562,7 +676,7 @@ flowchart LR
 
 </section>
 
-<section id="s17">
+<section id="s17" data-mode="pillars">
   <h1><span class="sec-num">RPT</span>Reporting &amp; Planning</h1>
   <p style="font-size:13px;color:#444;margin:0 0 6px">French GAAP to IFRS/SEC bridge is quarterly-paced, manually executed in Excel, and heavily dependent on KPMG (Robin Lapous). No formal process documentation exists. Workday Adaptive/Interactive is in place for FP&amp;A but underused. Current Sage data model lacks a country tag and other dimensions needed for multi-entity reporting. US SEC reporting managed by internal Finance but bridged manually.</p>
   <p style="font-size:11px;color:#2E5EA8;font-weight:600;margin:0 0 20px">Confidence: partial · </p>
@@ -616,13 +730,13 @@ flowchart LR
 
 </section>
 
-<section id="s11">
+<section id="s11" data-mode="overview">
   <h1><span class="sec-num">11</span>Governance and Oversight</h1>
   <p>Five forums covering the full escalation chain. Mike remains the day-to-day decision owner; issues surface to Didier or the Audit Committee only when warranted.</p>
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:190px">Forum</th><th style="width:160px">Cadence</th><th style="width:auto">Attendees and Purpose</th></tr></thead><tbody><tr class="even"><td style="font-weight:600;background:#D6E4F7">Program Flash Report</td><td style="">Weekly</td><td style="">Prepared by Walid / CFGI; delivered to Mike. Status, milestones, open risks, decisions needed. Two-page max.</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Design Authority</td><td style="">As needed (blueprint/build)</td><td style="">NetSuite functional team, CFGI controls lead, Abivax BPOs. Configuration and design decisions; scope change management.</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Steering Committee</td><td style="">Every 4-6 weeks</td><td style="">CFO (Didier Blondel), ERP Program Director (Mike), NetSuite Practice Manager (Hafid), CFGI Program Lead (Walid). Status, risk escalation, scope and budget decisions.</td></tr><tr class="odd"><td style="font-weight:600;background:#D6E4F7">Audit Committee Update</td><td style="">Quarterly / as required</td><td style="">Audit Committee, CFO (Didier Blondel), ERP Program Director. SOX status, controls-by-design progress, go-live readiness.</td></tr><tr class="even"><td style="font-weight:600;background:#D6E4F7">Go / No-Go Review</td><td style="">Pre-cutover (Dec 2026)</td><td style="">CFO (Didier Blondel), ERP Program Director, NetSuite PM, CFGI. Written readiness assessment before production cutover approved.</td></tr></tbody></table>
 </section>
 
-<section id="s12">
+<section id="s12" data-mode="overview">
   <h1><span class="sec-num">12</span>Open Items and Decision Queue</h1>
 
   <h2>Immediate Actions (This Week)</h2>
@@ -636,19 +750,19 @@ flowchart LR
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:120px">Lane</th><th style="width:340px">Item</th><th style="width:auto">ID</th></tr></thead><tbody><tr class="even"><td style="">synthesis</td><td style="">Refresh P2P pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-p2p-1</td></tr><tr class="odd"><td style="">synthesis</td><td style="">Refresh Reporting/Data pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-reporting-1</td></tr><tr class="even"><td style="">synthesis</td><td style="">Refresh Controls/Audit pillar synthesis when new context arrives</td><td style="">claude-synthesis-refresh-controls-1</td></tr><tr class="odd"><td style="">writing</td><td style="">Stakeholder Brief wording/style pass (fact-based operator language)</td><td style="">claude-writing-stakeholder-briefs-1</td></tr><tr class="even"><td style="">writing</td><td style="">Post-selection communication templates (Camille/Hema/NetSuite path)</td><td style="">claude-writing-post-selection-comms-1</td></tr><tr class="odd"><td style="">writing</td><td style="">Create controls slides for Adrian Holbrook to present at Audit Committee (Mar 6)</td><td style="">claude-writing-audit-cmte-controls-slides-1</td></tr><tr class="even"><td style="">synthesis</td><td style="">Refresh open thread tracker after Audit Committee meeting (Mar 6)</td><td style="">claude-synthesis-open-threads-1</td></tr><tr class="odd"><td style="">deferred</td><td style="">Robin Lapous (KPMG consolidation) outreach and reporting current-state documentation</td><td style="">claude-deferred-robin-lapous-reporting-1</td></tr><tr class="even"><td style="">deferred</td><td style="">2026 Performance Objectives (Lucca) — set ERP-related objectives</td><td style="">claude-deferred-hr-objectives-2026-1</td></tr></tbody></table>
 </section>
 
-<section id="s13">
+<section id="s13" data-mode="reference">
   <h1><span class="sec-num">13</span>Outputs Registry</h1>
   <p>All program outputs in the <code>outputs/</code> folder. Regenerate via the corresponding script when underlying data changes.</p>
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:240px">Document</th><th style="width:160px">Audience</th><th style="width:110px">Last Updated</th><th style="width:auto">Status</th></tr></thead><tbody><tr class="even"><td style="">ERP Program Encyclopedia (this doc)</td><td style="">Program Director</td><td style="">2026-03-18</td><td style="">Canonical reference. Regenerate: scripts/generate_encyclopedia.js</td></tr><tr class="odd"><td style="">ERP Program Encyclopedia (.docx)</td><td style="">Program Director</td><td style="">2026-03-18</td><td style="">Word version for extraction / sharing. Same generator.</td></tr><tr class="even"><td style="">Board ERP Readout (Mar 19, 2026)</td><td style="">Board of Directors</td><td style="">2026-03-18</td><td style="">Needs CFGI/KPMG story updated. outputs/Board_ERP_Readout_Mar19_2026.pptx</td></tr><tr class="odd"><td style="">Audit Committee ERP Controls Readout</td><td style="">Audit Committee</td><td style="">2026-03-06</td><td style="">outputs/Audit_Committee_ERP_Controls_Mar2026.pptx</td></tr><tr class="even"><td style="">Audit Committee Program Brief</td><td style="">Audit Committee</td><td style="">2026-03-18</td><td style="">outputs/ERP_Program_Audit_Committee_Brief_Mar2026.docx</td></tr><tr class="odd"><td style="">Vendor Comparison V2</td><td style="">Internal — Mike</td><td style="">2026-03-18</td><td style="">Superseded by decisions. outputs/Vendor_Comparison_V2_Mar18_2026.docx</td></tr><tr class="even"><td style="">CFGI Integrated Engagement Brief</td><td style="">CFGI (Ken + Jean-Arnold)</td><td style="">2026-03-18</td><td style="">collab/claude/outputs/cfgi-integrated-brief-2026-03-18.md</td></tr></tbody></table>
 </section>
 
-<section id="s14">
+<section id="s14" data-mode="reference">
   <h1><span class="sec-num">14</span>Change Log</h1>
   <p class="note">Record every material update. This is the audit trail for the program record.</p>
   <table class="data-table" style="--accent:#2E5EA8"><thead><tr><th style="width:110px">Date</th><th style="width:130px">Author</th><th style="width:auto">Changes</th></tr></thead><tbody><tr class="even"><td style="">2026-03-18</td><td style="">Claude / Mike</td><td style="">Initial encyclopedia created. All March 18 decisions recorded: NetSuite as SI (Paris team confirmed), CFGI as integrated support, KPMG selection-only, front-end shelved, encyclopedia model adopted. Budget EUR 999,936 confirmed from V3 SOW. Full team roster, risk register, governance, and outputs registry included.</td></tr><tr class="odd"><td style="">2026-03-18</td><td style="">Claude</td><td style="">Section 15 (Integrations &amp; Data Migration) added. Integration inventory sourced from integrations.json. Data migration and Workiva gaps documented.</td></tr></tbody></table>
 </section>
 
-<section id="s15">
+<section id="s15" data-mode="scope-controls">
   <h1><span class="sec-num">15</span>Integrations &amp; Data Migration</h1>
 
   <h2>Current Integration Stack (Sage-era)</h2>
@@ -687,22 +801,42 @@ flowchart LR
       edgeLabelBackground: '#fff', fontFamily: 'Inter, system-ui, sans-serif' }
   });
 
-  // Highlight active nav link on scroll (all 3 levels)
-  const allNavLinks = document.querySelectorAll('a.nav-link, a.nav-entity-link, a.nav-sub-sub-link');
-  const secs = document.querySelectorAll('section[id], [id^="s10-"], [id^="s16-"], [id^="s17-"]');
+  const allScrollLinks = document.querySelectorAll('.js-scroll-link');
+  const modeTabs = document.querySelectorAll('.mode-tab');
+  const topSections = document.querySelectorAll('section[data-mode]');
+  const deepAnchors = document.querySelectorAll('[id^="s10-"], [id^="s16-"], [id^="s17-"]');
+  const activeTargets = new Map();
 
-  const obs = new IntersectionObserver(entries => {
+  const setActiveMode = mode => {
+    modeTabs.forEach(tab => tab.classList.toggle('active', tab.dataset.modeTab === mode));
+  };
+
+  const setActiveTarget = href => {
+    allScrollLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === href));
+  };
+
+  const topObs = new IntersectionObserver(entries => {
     entries.forEach(en => {
-      if (en.isIntersecting) {
-        const href = '#' + en.target.id;
-        allNavLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === href));
-      }
+      if (!en.isIntersecting) return;
+      const href = '#' + en.target.id;
+      const mode = en.target.dataset.mode;
+      setActiveTarget(href);
+      if (mode) setActiveMode(mode);
     });
-  }, { rootMargin: '-10% 0px -65% 0px' });
-  secs.forEach(s => obs.observe(s));
+  }, { rootMargin: '-10% 0px -70% 0px' });
+  topSections.forEach(s => topObs.observe(s));
 
-  // Smooth scroll for all nav links
-  allNavLinks.forEach(l => l.addEventListener('click', e => {
+  const deepObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const href = '#' + en.target.id;
+      setActiveTarget(href);
+    });
+  }, { rootMargin: '-8% 0px -78% 0px' });
+  deepAnchors.forEach(s => deepObs.observe(s));
+
+  // Smooth scroll for all navigation links
+  allScrollLinks.forEach(l => l.addEventListener('click', e => {
     e.preventDefault();
     const t = document.querySelector(l.getAttribute('href'));
     if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });

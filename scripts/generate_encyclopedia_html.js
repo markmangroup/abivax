@@ -12,9 +12,10 @@ const people   = JSON.parse(fs.readFileSync(path.join(DATA, 'people.json'))).peo
 const timeline = JSON.parse(fs.readFileSync(path.join(DATA, 'timeline.json')));
 const synth    = JSON.parse(fs.readFileSync(path.join(DATA, 'pillar_synthesis.json')));
 const queue    = JSON.parse(fs.readFileSync(path.join(DATA, 'claude_lane_queue.json')));
+const model    = JSON.parse(fs.readFileSync(path.join(DATA, 'encyclopedia_model.json')));
 
 const ps = synth.programState;
-const TODAY = '2026-03-18';
+const TODAY = '2026-03-19';
 
 const milestones = (timeline.milestones || [])
   .filter(m => m.date && m.label)
@@ -231,7 +232,92 @@ const nav = navGroups.map(g => `
   ${g.sections.map(s => renderNavItem(s)).join('')}
 `).join('');
 
+const sectionMode = {
+  s0: 'overview',
+  s1: 'overview',
+  s2: 'overview',
+  s4: 'overview',
+  s8: 'overview',
+  s11: 'overview',
+  s12: 'overview',
+  s10: 'pillars',
+  s16: 'pillars',
+  s17: 'pillars',
+  s3: 'scope-controls',
+  s5: 'scope-controls',
+  s6: 'scope-controls',
+  s15: 'scope-controls',
+  s7: 'reference',
+  s9: 'reference',
+  s13: 'reference',
+  s14: 'reference',
+};
+
+function renderModeTabs() {
+  return (model.modes || []).map(mode =>
+    `<a href="#${mode.firstSection}" class="mode-tab js-scroll-link" data-mode-tab="${mode.id}">${e(mode.label)}</a>`
+  ).join('');
+}
+
+function renderSidebarLinkV2(link, cls = 'nav-link') {
+  return `<a href="#${link.id}" class="${cls} js-scroll-link" data-target-id="${link.id}">${e(link.label)}</a>`;
+}
+
+function renderSidebarV2() {
+  return (model.modes || []).map(mode => {
+    const directLinks = (mode.links || []).map(link => renderSidebarLinkV2(link)).join('');
+    const groups = (mode.groups || []).map(group => `
+      <div class="nav-subgroup-label">${e(group.label)}</div>
+      ${(group.links || []).map(link => renderSidebarLinkV2(link, 'nav-sub-link')).join('')}
+    `).join('');
+    return `
+      <div class="nav-mode-block" data-mode-block="${mode.id}">
+        <div class="nav-group-label">${e(mode.label)}</div>
+        <div class="nav-mode-desc">${e(mode.description || '')}</div>
+        ${directLinks}
+        ${groups}
+      </div>
+    `;
+  }).join('');
+}
+
+const modeTabs = renderModeTabs();
+const sidebarNav = renderSidebarV2();
+
 // ── Section content ───────────────────────────────────────────────────────────
+
+function s0() {
+  const modeCards = (model.modes || []).map(mode => `
+    <a href="#${mode.firstSection}" class="hub-card js-scroll-link">
+      <div class="hub-card-kicker">${e(mode.label)}</div>
+      <div class="hub-card-title">${e(mode.description || '')}</div>
+      <div class="hub-card-meta">Jump to ${e(mode.label.toLowerCase())}</div>
+    </a>
+  `).join('');
+
+  const pillarCards = (model.pillars || []).map(pillar => {
+    const subs = (pillar.substreams || []).map(s =>
+      `<a href="#${s.anchorId}" class="hub-mini-link js-scroll-link">${e(s.label)}</a>`
+    ).join('');
+    return `
+      <div class="pillar-card">
+        <a href="#${pillar.sectionId}" class="pillar-card-title js-scroll-link">${e(pillar.label)}</a>
+        <p class="pillar-card-summary">${e(pillar.summary || '')}</p>
+        <div class="pillar-card-links">${subs}</div>
+      </div>
+    `;
+  }).join('');
+
+  return `
+<section id="s0">
+  <h1><span class="sec-num">0</span>Program Hub</h1>
+  <p>This prototype keeps \`/encyclopedia\` as the single entry point, but shifts the experience toward a hub model. Start with the mode bar above, then jump directly into the pillar or substream relevant to the meeting you are walking into.</p>
+  <div class="hub-grid">${modeCards}</div>
+  <h2>Pillar Directory</h2>
+  <div class="pillar-grid">${pillarCards}</div>
+  ${callout('Prototype Goal', 'Make Overview useful for daily steering, Pillars useful for meeting prep, Scope & Controls useful for audit and blueprint questions, and Reference a support layer rather than the default experience.', '#1F3864', '#EBF2FC')}
+</section>`;
+}
 
 function s1() {
   const risks = (ps.topProgramRisks || []).map((r, i) =>
@@ -1233,7 +1319,11 @@ function s15() {
 }
 
 // ── Assemble ──────────────────────────────────────────────────────────────────
-const body = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s16,s17,s11,s12,s13,s14,s15].map(f => f()).join('\n');
+const rawBody = [s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s16,s17,s11,s12,s13,s14,s15].map(f => f()).join('\n');
+const body = rawBody.replace(/<section id="(s\d+)">/g, (m, id) => {
+  const mode = sectionMode[id] || 'reference';
+  return `<section id="${id}" data-mode="${mode}">`;
+});
 
 const html = `<!DOCTYPE html>
 <html lang="en">
@@ -1284,6 +1374,10 @@ const html = `<!DOCTYPE html>
     color: rgba(255,255,255,0.28); padding: 16px 16px 3px; margin-top: 4px;
     border-top: 1px solid rgba(255,255,255,0.07); }
   .nav-group-label:first-child { border-top: none; margin-top: 0; }
+  .nav-mode-desc { font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.45;
+    padding: 0 16px 10px; }
+  .nav-subgroup-label { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.62);
+    padding: 12px 16px 6px; text-transform: uppercase; letter-spacing: 0.7px; }
 
   a.nav-link {
     display: flex; align-items: center; gap: 10px;
@@ -1300,6 +1394,13 @@ const html = `<!DOCTYPE html>
     min-width: 28px; text-align: right; font-weight: 700; }
   a.nav-link.has-children { padding-bottom: 2px; }
   .nav-sub-list { padding: 0 0 4px 0; }
+  a.nav-sub-link {
+    display: block; padding: 6px 16px 6px 26px; font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.66); text-decoration: none; border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+  }
+  a.nav-sub-link:hover { color: #fff; background: rgba(255,255,255,0.07); }
+  a.nav-sub-link.active { color: #fff; background: rgba(255,255,255,0.12); border-left-color: #93C5FD; }
 
   /* Entity level (France SA / US LLC) */
   .nav-entity-label { padding: 4px 16px 1px 28px; }
@@ -1335,6 +1436,16 @@ const html = `<!DOCTYPE html>
   #page-header h1 { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
   #page-header .meta { font-size: 13px; color: var(--gray3); }
   #page-header .pills { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  #page-header .mode-tabs { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+  .mode-tab {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 7px 14px; border-radius: 999px; text-decoration: none;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.2px;
+    color: var(--navy); background: #EEF3FA; border: 1px solid #D6E4F7;
+    transition: all 0.15s ease;
+  }
+  .mode-tab:hover { background: #E4EDF9; }
+  .mode-tab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
   .pill { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px;
     background: var(--ltblue); color: var(--blue); }
   .pill.green  { background: #D4EDDA; color: #1A5C38; }
@@ -1398,6 +1509,25 @@ const html = `<!DOCTYPE html>
   ol.risk-list { padding-left: 20px; margin: 8px 0 16px; }
   ol.risk-list li { font-size: 13px; line-height: 1.6; margin-bottom: 6px; padding-left: 4px; }
 
+  /* â”€â”€ Hub â”€â”€ */
+  .hub-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin: 18px 0 10px; }
+  .hub-card {
+    display:block; text-decoration:none; border:1px solid #D6E4F7; border-radius:10px;
+    padding:16px 18px; background:linear-gradient(180deg, #FBFDFF 0%, #F2F6FC 100%);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .hub-card:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(31,56,100,0.08); }
+  .hub-card-kicker { font-size:10px; text-transform:uppercase; letter-spacing:0.9px; color:#5D7494; font-weight:700; margin-bottom:8px; }
+  .hub-card-title { font-size:14px; font-weight:700; color:var(--navy); line-height:1.5; min-height: 42px; }
+  .hub-card-meta { font-size:11px; color:#6C757D; margin-top:10px; }
+  .pillar-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin-top: 10px; }
+  .pillar-card { border:1px solid #E0E8F5; border-radius:10px; padding:16px 18px; background:#fff; }
+  .pillar-card-title { display:inline-block; font-size:15px; font-weight:800; color:var(--navy); text-decoration:none; margin-bottom:10px; }
+  .pillar-card-summary { font-size:12px; color:#4F5D70; line-height:1.6; margin-bottom:12px; }
+  .pillar-card-links { display:flex; gap:8px; flex-wrap:wrap; }
+  .hub-mini-link { display:inline-flex; padding:5px 10px; border-radius:999px; text-decoration:none; font-size:11px; font-weight:700; color:#2E5EA8; background:#EEF4FD; }
+  .hub-mini-link:hover { background:#E2ECFA; }
+
   /* ── Print ── */
   @media print {
     #sidebar { display: none; }
@@ -1414,7 +1544,7 @@ const html = `<!DOCTYPE html>
     <div class="title">Program Encyclopedia</div>
     <div class="meta">Program Director: Mike Markman<br>Generated: ${TODAY}</div>
   </div>
-  ${nav}
+  ${sidebarNav}
   <div id="sidebar-footer">
     Confidential — Program Director Use<br>
     Regenerate: <code style="background:rgba(255,255,255,0.1);color:#ccc">scripts/generate_encyclopedia.js</code>
@@ -1433,6 +1563,7 @@ const html = `<!DOCTYPE html>
       <span class="pill green">Support: CFGI</span>
       <span class="pill">Budget: EUR 999,936</span>
     </div>
+    <div class="mode-tabs">${modeTabs}</div>
   </div>
 
   ${body}
@@ -1447,22 +1578,42 @@ const html = `<!DOCTYPE html>
       edgeLabelBackground: '#fff', fontFamily: 'Inter, system-ui, sans-serif' }
   });
 
-  // Highlight active nav link on scroll (all 3 levels)
-  const allNavLinks = document.querySelectorAll('a.nav-link, a.nav-entity-link, a.nav-sub-sub-link');
-  const secs = document.querySelectorAll('section[id], [id^="s10-"], [id^="s16-"], [id^="s17-"]');
+  const allScrollLinks = document.querySelectorAll('.js-scroll-link');
+  const modeTabs = document.querySelectorAll('.mode-tab');
+  const topSections = document.querySelectorAll('section[data-mode]');
+  const deepAnchors = document.querySelectorAll('[id^="s10-"], [id^="s16-"], [id^="s17-"]');
+  const activeTargets = new Map();
 
-  const obs = new IntersectionObserver(entries => {
+  const setActiveMode = mode => {
+    modeTabs.forEach(tab => tab.classList.toggle('active', tab.dataset.modeTab === mode));
+  };
+
+  const setActiveTarget = href => {
+    allScrollLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === href));
+  };
+
+  const topObs = new IntersectionObserver(entries => {
     entries.forEach(en => {
-      if (en.isIntersecting) {
-        const href = '#' + en.target.id;
-        allNavLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === href));
-      }
+      if (!en.isIntersecting) return;
+      const href = '#' + en.target.id;
+      const mode = en.target.dataset.mode;
+      setActiveTarget(href);
+      if (mode) setActiveMode(mode);
     });
-  }, { rootMargin: '-10% 0px -65% 0px' });
-  secs.forEach(s => obs.observe(s));
+  }, { rootMargin: '-10% 0px -70% 0px' });
+  topSections.forEach(s => topObs.observe(s));
 
-  // Smooth scroll for all nav links
-  allNavLinks.forEach(l => l.addEventListener('click', e => {
+  const deepObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const href = '#' + en.target.id;
+      setActiveTarget(href);
+    });
+  }, { rootMargin: '-8% 0px -78% 0px' });
+  deepAnchors.forEach(s => deepObs.observe(s));
+
+  // Smooth scroll for all navigation links
+  allScrollLinks.forEach(l => l.addEventListener('click', e => {
     e.preventDefault();
     const t = document.querySelector(l.getAttribute('href'));
     if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });

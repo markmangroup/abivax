@@ -151,6 +151,56 @@
     color: rgba(255,255,255,0.70);
   }
   .slide-body { padding: 18px 20px 16px; display: grid; gap: 14px; overflow: hidden; }
+  .slide-context .slide-body {
+    gap: 10px;
+    padding: 16px 18px 14px;
+  }
+  .slide-context .slide-head {
+    padding-bottom: 10px;
+  }
+  .slide-context .context-text h3 {
+    font-size: 24px;
+    line-height: 1.14;
+  }
+  .slide-context .context-text p {
+    font-size: 11px !important;
+    line-height: 1.38;
+  }
+  .slide-context .ms-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .slide-context .ms-value {
+    font-size: 14px !important;
+  }
+  .slide-context .ms-sub {
+    font-size: 10px;
+    line-height: 1.34;
+  }
+  .slide-appendix .slide-body {
+    gap: 6px;
+    padding: 12px 18px 12px;
+    font-size: 10px;
+  }
+  .slide-appendix .slide-head {
+    padding: 8px 18px 10px;
+  }
+  .slide-appendix .slide-head-top {
+    font-size: 10px;
+  }
+  .slide-appendix .slide-title {
+    margin-top: 8px;
+  }
+  .slide-appendix .slide-title h2 {
+    font-size: 22px;
+    line-height: 1.12;
+  }
+  .slide-appendix p,
+  .slide-appendix .table,
+  .slide-appendix .table th,
+  .slide-appendix .table td {
+    font-size: 10px;
+  }
 
   /* ---- Shared components ---- */
   .kicker {
@@ -841,10 +891,10 @@
   <div class="topbar">
     <div>
       <h1>Project Meridian — ERP Program Readout</h1>
-      <p>Board of Directors presentation, March 19, 2026. ERP platform selection, program cost and timeline, delivery model, resource mobilization, and key risks. Presented by Mike Markman, ERP Program Lead.</p>
+      <p>Audit Committee presentation, March 19, 2026. ERP platform selection, program cost and timeline, delivery model, resource mobilization, and key risks. Presented by Mike Markman, ERP Program Lead.</p>
     </div>
     <div class="badge-row">
-      <span class="badge">Board of Directors</span>
+      <span class="badge">Audit Committee</span>
       <span class="badge">Mar 19, 2026</span>
       <span class="badge">Cover + 5 Slides + Appendix</span>
     </div>
@@ -874,7 +924,7 @@
         <img src="abivax_logo.png" class="cover-logo" alt="Abivax">
         <div class="cover-title">Project Meridian</div>
         <div class="cover-divider"></div>
-        <div class="cover-subtitle">ERP Program Readout — Board of Directors</div>
+        <div class="cover-subtitle">ERP Program Readout — Audit Committee</div>
         <div class="cover-meta">
           <span>March 19, 2026</span>
           <span>Presented by Mike Markman</span>
@@ -888,7 +938,7 @@
     </section>
 
     <!-- ==================== SLIDE 1: PROGRAM CONTEXT ==================== -->
-    <section class="slide">
+    <section class="slide slide-context">
       <div class="slide-head">
         <div class="slide-head-top">
           <span>Project Meridian — ERP Program</span>
@@ -1037,12 +1087,12 @@
               </tr>
               <tr>
                 <td><strong>Year 1 total</strong></td>
-                <td style="background: #f0fdf4;"><strong style="color: #166534;">€650K</strong><br><span style="font-size: 10px; color: #166534;">All-in (build + run)</span></td>
+                <td style="background: #f0fdf4;"><strong style="color: #166534;">€563K</strong><br><span style="font-size: 10px; color: #166534;">Current approved planning basis</span></td>
                 <td><strong>€1.24M</strong><br><span style="font-size: 10px; color: var(--muted);">€1.07M build + €173K run</span></td>
               </tr>
               <tr>
                 <td><strong>Ongoing</strong><br><span style="font-size: 10px; font-weight: 400; color: var(--muted);">Annual from Year 2</span></td>
-                <td style="background: #f0fdf4;"><strong style="color: #166534;">€151K/yr</strong></td>
+                <td style="background: #f0fdf4;"><strong style="color: #166534;">€149K/yr</strong></td>
                 <td>€173K/yr</td>
               </tr>
             </table>
@@ -1096,8 +1146,8 @@
       </div>
       <div class="slide-body" style="display: flex; flex-direction: column; gap: 8px;">
         <div>
-          <h3 style="font-size: 18px; font-weight: 800; color: var(--ink); line-height: 1.25;">Approximately €1M in Year 1 across platform implementation and program management.</h3>
-          <p style="font-size: 12px; color: var(--slate); line-height: 1.45; margin-top: 4px;">€650K for the NetSuite platform and €370K for CFGI integrated program support covering controls oversight, governance, and change management. Named resources have been identified and will be formalized at blueprint kickoff in April.</p>
+          <h3 style="font-size: 18px; font-weight: 800; color: var(--ink); line-height: 1.25;">Approved program envelope: €999,936 for implementation, support, and execution reserve.</h3>
+          <p style="font-size: 12px; color: var(--slate); line-height: 1.45; margin-top: 4px;">Current planning basis is €562,936 for NetSuite, €220,000 for CFGI integrated support, and €217,000 of program reserve for internal capacity and execution risk. CFGI commercial scope still needs to be consolidated into one final contract, but the delivery model and budget envelope are now set.</p>
         </div>
 
         <!-- Implementation timeline — horizontal strip -->
@@ -1139,20 +1189,24 @@
                 <th style="width: 45%; background: #eef4f8;">Amount</th>
               </tr>
               <tr>
-                <td><strong>NetSuite platform</strong><br><span style="font-size: 10px; color: var(--muted);">Build + first-year licensing</span></td>
-                <td><strong>€650K</strong><br><span style="font-size: 10px; color: var(--muted);">€463K build + €187K run</span></td>
+                <td><strong>NetSuite platform</strong><br><span style="font-size: 10px; color: var(--muted);">Implementation, recurring base, training, travel cap</span></td>
+                <td><strong>€562,936</strong><br><span style="font-size: 10px; color: var(--muted);">March 17 package planning basis</span></td>
               </tr>
               <tr>
-                <td><strong>CFGI integrated program support</strong><br><span style="font-size: 10px; color: var(--muted);">Controls oversight, governance, change management</span></td>
-                <td><strong>€370K</strong><br><span style="font-size: 10px; color: var(--muted);">302 man-days, excl. VAT</span></td>
+                <td><strong>CFGI integrated program support</strong><br><span style="font-size: 10px; color: var(--muted);">Controls oversight, governance, change management, local coordination</span></td>
+                <td><strong>€220,000</strong><br><span style="font-size: 10px; color: var(--muted);">Target combined support budget</span></td>
+              </tr>
+              <tr>
+                <td><strong>Management reserve</strong><br><span style="font-size: 10px; color: var(--muted);">Internal capacity, execution risk, scoped support</span></td>
+                <td><strong>€217,000</strong><br><span style="font-size: 10px; color: var(--muted);">Held by program leadership</span></td>
               </tr>
               <tr style="background: #f0fdf4;">
-                <td><strong style="color: #065f46;">Year 1 subtotal</strong></td>
-                <td><strong style="color: #065f46; font-size: 16px;">~€1.02M</strong></td>
+                <td><strong style="color: #065f46;">Year 1 approved envelope</strong></td>
+                <td><strong style="color: #065f46; font-size: 16px;">€999,936</strong></td>
               </tr>
               <tr>
-                <td><strong>NetSuite licensing Years 2–3</strong><br><span style="font-size: 10px; color: var(--muted);">€151K/yr × 2 years</span></td>
-                <td><strong>€302K</strong></td>
+                <td><strong>NetSuite recurring base Years 2–3</strong><br><span style="font-size: 10px; color: var(--muted);">~€149K/yr × 2 years</span></td>
+                <td><strong>€297K</strong></td>
               </tr>
             </table>
             <div style="padding: 8px 14px; font-size: 10px; color: var(--slate); border-top: 1px solid var(--line); line-height: 1.45;">SAP alternative was €1.24M Year 1 (nearly double). NetSuite requires 134 internal man-days vs. 480 for SAP.</div>
@@ -1183,7 +1237,7 @@
                 <td style="padding: 7px 10px;"><span class="chip chip-low">Identified</span></td>
               </tr>
               <tr>
-                <td style="padding: 7px 10px;"><strong>KPMG</strong><br><span style="font-size: 10px; color: var(--muted);">Governance, assurance, change mgmt</span></td>
+                <td style="padding: 7px 10px;"><strong>CFGI</strong><br><span style="font-size: 10px; color: var(--muted);">Controls, governance, change, local support</span></td>
                 <td style="padding: 7px 10px;"><span class="chip chip-med">Contract pending</span></td>
               </tr>
               <tr>
@@ -1195,7 +1249,7 @@
         </div>
       </div>
       <div class="slide-foot">
-        <span>Year 1: ~€1M (€650K NetSuite + €370K KPMG). Contract finalization and resource commitments are the immediate next steps.</span>
+        <span>Year 1 approved envelope: €999,936 (€562,936 NetSuite + €220,000 CFGI + €217,000 reserve). Contract finalization and resource commitments are the immediate next steps.</span>
         <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
       </div>
     </section>
@@ -1251,12 +1305,12 @@
             </tr>
             <tr>
               <td style="vertical-align: top;"><span class="pillar-pill pill-fcr">Oversight</span></td>
-              <td style="vertical-align: top;"><strong>KPMG</strong><br><span style="font-size: 10px; color: var(--muted);">Contract pending</span></td>
+              <td style="vertical-align: top;"><strong>CFGI</strong><br><span style="font-size: 10px; color: var(--muted);">Combined proposal / contract pending</span></td>
               <td style="font-size: 12px; vertical-align: top;">
                 <ul style="margin: 0; padding-left: 14px; list-style: disc; color: var(--slate); line-height: 1.5;">
-                  <li>Functional design review, controls/SoD validation, and UAT oversight under Program Director</li>
-                  <li>On-the-ground France coordination, user adoption planning, and training delivery</li>
-                  <li>Weekly RAID tracking, risk escalation, and governance reporting for steering committees</li>
+                  <li>Controls-by-design oversight, SoD and audit-readiness challenge, and design review under the Program Director</li>
+                  <li>Paris-side program coordination, functional support, and change management around the finance organization</li>
+                  <li>Weekly flash reporting, risk escalation, and governance support in coordination with Mike and NetSuite</li>
                 </ul>
               </td>
             </tr>
@@ -1272,11 +1326,11 @@
                 <span class="pillar-pill pill-fcr">Weekly</span>
               </div>
               <div style="font-size: 13px; color: var(--ink); font-weight: 600;">Program review</div>
-              <div style="font-size: 11px; color: var(--slate); margin-top: 2px; line-height: 1.4;">Mike + KPMG-led, all workstreams. RAID log, blockers, decision queue.</div>
+              <div style="font-size: 11px; color: var(--slate); margin-top: 2px; line-height: 1.4;">Mike + CFGI, all workstreams. Flash report, blockers, decision queue, and escalation items.</div>
             </div>
             <div style="padding: 10px 14px; border-right: 1px solid var(--line);">
               <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-                <span class="pillar-pill pill-controls">Bi-weekly</span>
+                <span class="pillar-pill pill-controls">Monthly</span>
               </div>
               <div style="font-size: 13px; color: var(--ink); font-weight: 600;">Steering committee</div>
               <div style="font-size: 11px; color: var(--slate); margin-top: 2px; line-height: 1.4;">Didier + Mike + workstream leads. Budget, scope, escalation.</div>
@@ -1299,7 +1353,7 @@
         </div>
       </div>
       <div class="slide-foot">
-        <span>Both contracts (Oracle/NetSuite and KPMG) are pending finalization ahead of April mobilization.</span>
+        <span>Both contracts (Oracle/NetSuite and CFGI) are pending finalization ahead of April mobilization.</span>
         <img src="abivax_logo.png" class="foot-logo" alt="Abivax">
       </div>
     </section>
@@ -1336,11 +1390,11 @@
                 </tr>
                 <tr>
                   <td style="vertical-align: top;"><strong>Internal capacity</strong><br><span class="chip chip-high">High impact</span></td>
-                  <td style="font-size: 12px;">KPMG absorbs design review, UAT oversight, change management, and training delivery that would otherwise fall on stretched internal teams. Named owners committed before April.</td>
+                  <td style="font-size: 12px;">CFGI provides a focused support layer for controls, governance, and change management while the management reserve remains available to absorb internal capacity gaps if needed.</td>
                 </tr>
                 <tr>
                   <td style="vertical-align: top;"><strong>FR/US coordination</strong><br><span class="chip chip-med">Medium-High</span></td>
-                  <td style="font-size: 12px;">KPMG provides on-the-ground presence in France with one-third of steering meetings held in person in Paris. Three-tier governance model ensures decisions are escalated and closed weekly.</td>
+                  <td style="font-size: 12px;">CFGI's Paris team plus NetSuite's Paris delivery team create local coverage in France, while Mike maintains global ownership and escalation control across France and the US.</td>
                 </tr>
                 <tr>
                   <td style="vertical-align: top;"><strong>Scope creep</strong><br><span class="chip chip-med">Medium</span></td>
@@ -1358,7 +1412,7 @@
                     <span class="pillar-pill pill-erp">March</span>
                   </div>
                   <div style="font-size: 12px; color: var(--ink); font-weight: 600;">Finalize contracts</div>
-                  <div style="font-size: 11px; color: var(--slate); line-height: 1.4;">Oracle/NetSuite SOW and KPMG engagement letter.</div>
+                  <div style="font-size: 11px; color: var(--slate); line-height: 1.4;">Oracle/NetSuite SOW and CFGI combined support contract.</div>
                 </div>
                 <div style="padding: 8px 14px; border-right: 1px solid var(--line);">
                   <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
@@ -1383,8 +1437,8 @@
             <h3>Board decision requested</h3>
             <p style="font-size: 15px;">Three approvals to move from planning into execution.</p>
             <ol>
-              <li><strong>Approve</strong> the NetSuite + KPMG delivery model and January 1, 2027 go-live target</li>
-              <li><strong>Authorize</strong> the Year 1 program budget of ~€1M: €650K (NetSuite) + €370K (KPMG)</li>
+              <li><strong>Approve</strong> the NetSuite + CFGI delivery model and January 1, 2027 go-live target</li>
+              <li><strong>Authorize</strong> the Year 1 program envelope of €999,936: €562,936 (NetSuite) + €220,000 (CFGI) + €217,000 reserve</li>
               <li><strong>Confirm</strong> quarterly board visibility at milestone gates, beginning at the June meeting</li>
             </ol>
             <div style="margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.15);">
@@ -1401,7 +1455,7 @@
     </section>
 
     <!-- ==================== SLIDE 6: APPENDIX — TEAM ROSTER ==================== -->
-    <section class="slide">
+    <section class="slide slide-appendix">
       <div class="slide-head">
         <div class="slide-head-top">
           <span>Project Meridian — ERP Program</span>
@@ -1412,36 +1466,36 @@
           <span class="num">6</span>
         </div>
       </div>
-      <div class="slide-body" style="gap: 8px; font-size: 11px;">
-        <p style="font-size: 11px; color: var(--slate); line-height: 1.4;">Named resources across Finance, IT, and external partners. Roles and responsibilities were identified during the KPMG-led selection process and will be formalized at blueprint kickoff in April 2026.</p>
+      <div class="slide-body" style="gap: 6px; font-size: 10px;">
+        <p style="font-size: 10px; color: var(--slate); line-height: 1.35;">Named resources across Finance, IT, and external partners. Roles and responsibilities were identified during the selection process and will be formalized at blueprint kickoff in April 2026.</p>
 
         <!-- Executive Sponsors — compact single row per person -->
         <div style="border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: white;">
           <div class="milestones-header" style="padding: 6px 14px; border-bottom: 1px solid var(--line);"><h4 style="font-size: 11px;">Executive Sponsors</h4></div>
-          <table class="table" style="border: none; border-radius: 0; font-size: 11px;">
+          <table class="table" style="border: none; border-radius: 0; font-size: 10px;">
             <tr>
-              <th style="width: 20%; background: #eef4f8; padding: 4px 10px;">Name</th>
-              <th style="width: 22%; background: #eef4f8; padding: 4px 10px;">Role</th>
-              <th style="width: 10%; background: #eef4f8; padding: 4px 10px;">Entity</th>
-              <th style="width: 48%; background: #eef4f8; padding: 4px 10px;">ERP Responsibility</th>
+              <th style="width: 20%; background: #eef4f8; padding: 3px 10px;">Name</th>
+              <th style="width: 22%; background: #eef4f8; padding: 3px 10px;">Role</th>
+              <th style="width: 10%; background: #eef4f8; padding: 3px 10px;">Entity</th>
+              <th style="width: 48%; background: #eef4f8; padding: 3px 10px;">ERP Responsibility</th>
             </tr>
             <tr>
-              <td style="padding: 5px 10px;"><strong>Didier Blondel</strong></td>
-              <td style="padding: 5px 10px;">CFO</td>
-              <td style="padding: 5px 10px;">Global</td>
-              <td style="padding: 5px 10px;"><span class="pillar-pill pill-erp" style="font-size: 8px; padding: 2px 8px;">ERP Sponsor</span> Board decision gate, budget authority, staffing sufficiency</td>
+              <td style="padding: 4px 10px;"><strong>Didier Blondel</strong></td>
+              <td style="padding: 4px 10px;">CFO</td>
+              <td style="padding: 4px 10px;">Global</td>
+              <td style="padding: 4px 10px;"><span class="pillar-pill pill-erp" style="font-size: 8px; padding: 1px 7px;">ERP Sponsor</span> Board decision gate, budget authority, staffing sufficiency</td>
             </tr>
             <tr>
-              <td style="padding: 5px 10px;"><strong>Mike Markman</strong></td>
-              <td style="padding: 5px 10px;">Global ERP Lead</td>
-              <td style="padding: 5px 10px;">Global</td>
-              <td style="padding: 5px 10px;"><span class="pillar-pill pill-erp" style="font-size: 8px; padding: 2px 8px;">Program Director</span> Scope, vendor management, execution, board reporting</td>
+              <td style="padding: 4px 10px;"><strong>Mike Markman</strong></td>
+              <td style="padding: 4px 10px;">Global ERP Lead</td>
+              <td style="padding: 4px 10px;">Global</td>
+              <td style="padding: 4px 10px;"><span class="pillar-pill pill-erp" style="font-size: 8px; padding: 1px 7px;">Program Director</span> Scope, vendor management, execution, board reporting</td>
             </tr>
             <tr>
-              <td style="padding: 5px 10px;"><strong>Hema Keshava</strong></td>
-              <td style="padding: 5px 10px;">Finance Lead</td>
-              <td style="padding: 5px 10px;">Global</td>
-              <td style="padding: 5px 10px;"><span class="pillar-pill pill-fcr" style="font-size: 8px; padding: 2px 8px;">Finance Stakeholder</span> ERP scope, P2P and reporting priorities</td>
+              <td style="padding: 4px 10px;"><strong>Hema Keshava</strong></td>
+              <td style="padding: 4px 10px;">Finance Lead</td>
+              <td style="padding: 4px 10px;">Global</td>
+              <td style="padding: 4px 10px;"><span class="pillar-pill pill-fcr" style="font-size: 8px; padding: 1px 7px;">Finance Stakeholder</span> ERP scope, P2P and reporting priorities</td>
             </tr>
           </table>
         </div>
@@ -1451,7 +1505,7 @@
           <!-- Finance team -->
           <div style="border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: white;">
             <div class="milestones-header" style="padding: 6px 14px; border-bottom: 1px solid var(--line);"><h4 style="font-size: 11px;">Finance Team</h4></div>
-            <table class="table" style="border: none; border-radius: 0; font-size: 10px;">
+            <table class="table" style="border: none; border-radius: 0; font-size: 9px;">
               <tr>
                 <th style="width: 28%; background: #eef4f8; padding: 3px 8px;">Name</th>
                 <th style="width: 30%; background: #eef4f8; padding: 3px 8px;">Role</th>
@@ -1506,7 +1560,7 @@
           <!-- IT Team -->
           <div style="border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: white;">
             <div class="milestones-header" style="padding: 6px 14px; border-bottom: 1px solid var(--line);"><h4 style="font-size: 11px;">IT Team</h4></div>
-            <table class="table" style="border: none; border-radius: 0; font-size: 10px;">
+            <table class="table" style="border: none; border-radius: 0; font-size: 9px;">
               <tr>
                 <th style="width: 45%; background: #eef4f8; padding: 3px 8px;">Name</th>
                 <th style="width: 55%; background: #eef4f8; padding: 3px 8px;">ERP Focus</th>
@@ -1529,7 +1583,7 @@
           <!-- External Partners -->
           <div style="border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: white;">
             <div class="milestones-header" style="padding: 6px 14px; border-bottom: 1px solid var(--line);"><h4 style="font-size: 11px;">External Partners</h4></div>
-            <table class="table" style="border: none; border-radius: 0; font-size: 10px;">
+            <table class="table" style="border: none; border-radius: 0; font-size: 9px;">
               <tr>
                 <th style="width: 40%; background: #eef4f8; padding: 3px 8px;">Partner</th>
                 <th style="width: 60%; background: #eef4f8; padding: 3px 8px;">Role</th>
@@ -1539,8 +1593,8 @@
                 <td style="padding: 3px 8px;"><span class="pillar-pill pill-systems" style="font-size: 7px; padding: 1px 6px;">Builder</span> Build, config, migration, delivery</td>
               </tr>
               <tr>
-                <td style="padding: 3px 8px;"><strong>KPMG</strong></td>
-                <td style="padding: 3px 8px;"><span class="pillar-pill pill-fcr" style="font-size: 7px; padding: 1px 6px;">Oversight</span> Governance, assurance, change mgmt</td>
+                <td style="padding: 3px 8px;"><strong>CFGI</strong></td>
+                <td style="padding: 3px 8px;"><span class="pillar-pill pill-fcr" style="font-size: 7px; padding: 1px 6px;">Support</span> Controls oversight, governance, change, local coordination</td>
               </tr>
             </table>
           </div>
@@ -1561,22 +1615,20 @@
 async function exportPDF() {
   const btn = document.querySelector('.export-bar button');
   const orig = btn.textContent;
-  btn.textContent = 'Generating…';
+  btn.textContent = 'Generating...';
   btn.disabled = true;
 
   try {
     const { jsPDF } = window.jspdf;
-    // 16:9 widescreen page — matches slide aspect ratio exactly (no white bars)
-    // Standard presentation: 13.333" × 7.5" = 338.67mm × 190.5mm
+    // Standard 16:9 presentation: 13.333\" x 7.5\" = 338.67mm x 190.5mm
     const pw = 338.67, ph = 190.5;
-    const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: [ph, pw] });
+    const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: [pw, ph] });
     const slides = document.querySelectorAll('.slide');
 
     for (let i = 0; i < slides.length; i++) {
-      if (i > 0) pdf.addPage([ph, pw], 'landscape');
+      if (i > 0) pdf.addPage([pw, ph], 'landscape');
       const slide = slides[i];
 
-      // Temporarily remove border-radius and shadow for clean capture
       const origStyle = slide.style.cssText;
       slide.style.borderRadius = '0';
       slide.style.boxShadow = 'none';
@@ -1585,35 +1637,16 @@ async function exportPDF() {
         scale: 2,
         useCORS: true,
         backgroundColor: '#ffffff',
-        logging: false
+        logging: false,
+        windowWidth: slide.scrollWidth,
+        windowHeight: slide.scrollHeight
       });
 
       slide.style.cssText = origStyle;
 
       const imgData = canvas.toDataURL('image/jpeg', 0.95);
-      const cw = canvas.width, ch = canvas.height;
-      const slideRatio = cw / ch;
-      const pageRatio = pw / ph;
-
-      if (Math.abs(slideRatio - pageRatio) / pageRatio < 0.08) {
-        // Standard 16:9 slide — fill edge-to-edge
-        pdf.addImage(imgData, 'JPEG', 0, 0, pw, ph);
-      } else {
-        // Non-standard slide (e.g. taller appendix) — fit proportionally
-        const fitW = pw;
-        const fitH = pw / slideRatio;
-        if (fitH <= ph) {
-          // Fits within page height — center vertically
-          pdf.addImage(imgData, 'JPEG', 0, (ph - fitH) / 2, fitW, fitH);
-        } else {
-          // Still too tall — scale to fit height instead
-          const altH = ph;
-          const altW = ph * slideRatio;
-          pdf.addImage(imgData, 'JPEG', (pw - altW) / 2, 0, altW, altH);
-        }
-      }
-
-      btn.textContent = `Slide ${i + 1}/${slides.length}…`;
+      pdf.addImage(imgData, 'JPEG', 0, 0, pw, ph);
+      btn.textContent = 'Slide ' + (i + 1) + '/' + slides.length + '...';
     }
 
     pdf.save('Board_ERP_Readout_Mar19_2026.pdf');
@@ -1628,3 +1661,7 @@ async function exportPDF() {
 </script>
 </body>
 </html>
+
+
+
+

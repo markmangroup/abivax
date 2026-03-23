@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<body>
+<iframe id="f" src="file:///C:/Users/mmarkman/abivax/public/board-erp-readout-review.html" style="width:1600px;height:1200px;border:0"></iframe>
+<pre id="out"></pre>
+<script>
+window.addEventListener('load', () => {
+  const iframe = document.getElementById('f');
+  iframe.addEventListener('load', () => {
+    setTimeout(() => {
+      const doc = iframe.contentDocument;
+      const slides = [...doc.querySelectorAll('.slide')];
+      const rows = slides.map((slide, idx) => {
+        const body = slide.querySelector('.slide-body');
+        const title = slide.querySelector('.slide-title h2')?.textContent || '';
+        return {
+          i: idx + 1,
+          title,
+          slideClientH: slide.clientHeight,
+          slideScrollH: slide.scrollHeight,
+          bodyClientH: body ? body.clientHeight : null,
+          bodyScrollH: body ? body.scrollHeight : null,
+          overflow: body ? body.scrollHeight - body.clientHeight : null,
+          cls: slide.className
+        };
+      });
+      document.getElementById('out').textContent = JSON.stringify(rows, null, 2);
+    }, 2500);
+  });
+});
+</script>
+</body>
+</html>

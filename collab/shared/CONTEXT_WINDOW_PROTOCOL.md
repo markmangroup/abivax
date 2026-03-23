@@ -57,6 +57,7 @@ Codex should not hand off to Claude until all of the following are true:
 3. `data/abivax/current_context.json` reflects the current source snapshot boundary.
 4. A Claude prompt exists that names the exact files and context window to use.
 5. Codex has written down any unresolved risks or gaps that Claude must know before starting.
+6. If Mike may not return to the current Codex window, Codex should prefer a full repo sync to remote rather than a narrow partial push.
 
 If those conditions are not met, the switch is premature.
 
@@ -117,6 +118,18 @@ At every intentional switch, the receiving AI should be able to rely on this pac
 - one task-specific prompt for the receiving AI
 
 If that package is not sufficient, the handoff is not clean yet.
+
+## Remote sync rule
+
+For ordinary small iterations, a selective commit may be acceptable.
+
+For a true context-window handoff, especially when Mike may not return to the current window:
+
+- prefer syncing the full repo state to remote
+- do not assume Mike will remember which local-only changes were intentionally left behind
+- optimize for the next AI window seeing the same repo state Mike just left
+
+The burden should be on Codex to make the handoff state explicit and complete, not on Mike to clarify that later.
 
 ## Mike rule of thumb
 
