@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-18",
+  "updatedAt": "2026-03-23",
   "netSuitePackage": {
     "receivedAt": "2026-03-17T16:57:11+01:00",
     "sender": "Jamal Azil",
@@ -54,6 +54,64 @@
       "The revised SOW explicitly names bank account reconciliation, transfers, and deposits in Record to Report, so bank rec is covered at functional-scope level, though the detailed operating model is still a blueprint-stage design item.",
       "The new RACI workbook makes clear that Abivax retains meaningful delivery responsibilities, especially around sponsor decisions, project management participation, business process ownership, and data cleansing."
     ]
+  },
+  "netSuiteSupportTeamPackage": {
+    "receivedAt": "2026-03-20T15:07:05.703Z",
+    "sender": "Jamal Azil",
+    "subject": "ABIVAX NetSuite Implementation | Customer Side support Team",
+    "sourceConfidence": "medium",
+    "sourceNote": "The package itself is fully archived. The email body is only available as a preview in the local Outlook export, but the attachment set and Oracle feedback document were reviewed directly.",
+    "artifacts": [
+      {
+        "name": "ABIVAX Oracle Feedback File.docx",
+        "kind": "contract-feedback-template",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/ABIVAX Oracle Feedback File.docx"
+      },
+      {
+        "name": "CV OICHEM.pdf",
+        "kind": "support-team-cv",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/CV OICHEM.pdf"
+      },
+      {
+        "name": "CV IMEGZARI.pdf",
+        "kind": "support-team-cv",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/CV IMEGZARI.pdf"
+      },
+      {
+        "name": "CV ACHAOUI.pdf",
+        "kind": "support-team-cv",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/CV ACHAOUI.pdf"
+      },
+      {
+        "name": "Estimates.zip",
+        "kind": "estimate-pack",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates.zip"
+      }
+    ],
+    "emailPreviewRead": [
+      "Jamal says the package was sent after the live discussion and includes NetSuite expert resumes for customer-side support during implementation.",
+      "The email positions the team as a strong client-side counterpart for a major NetSuite project in France, covering project management, project-owner support, and business analysis."
+    ],
+    "contractRead": [
+      "Oracle's feedback file says comments must be entered in English with business justification.",
+      "Oracle says customers should not propose Oracle-side contractual language directly; Oracle will draft accepted contractual changes.",
+      "Oracle says URL terms incorporated by reference are not negotiable on a customer-by-customer basis."
+    ],
+    "operatorRead": {
+      "whatItAdds": [
+        "A more explicit customer-side support-team proposal than the March 17 package contained.",
+        "A structured path for legal / contractual comments through Oracle's own feedback file."
+      ],
+      "whatItDoesNotResolve": [
+        "It does not by itself solve the core commercial issue of a phase-1 scope that still appears broader than the actual Jan 1, 2027 minimum.",
+        "It does not replace the need to push Oracle for tighter scope, named accountability, and commercial alignment."
+      ]
+    }
   },
   "kennethReview": {
     "receivedAt": "2026-03-10T14:23:53-04:00",
@@ -200,6 +258,62 @@
         "The proposal does not appear to cover the broader controls assurance, UAT discipline, and challenge role as explicitly as the KPMG AMOA proposal."
       ],
       "operatorRead": "Best read as a lower-cost local PMO and change support alternative, not as a substitute for the integrator or a full assurance layer. It is directly relevant if Abivax wants Paris-side support without buying KPMG's broader AMOA package."
+    }
+  },
+  "cfgiCombinedAdvisoryProposal": {
+    "receivedAt": "2026-03-19T19:28:20.529Z",
+    "sender": "Jean-Arnold Coutareau",
+    "subject": "CFGI Support Proposal for Abivax NetSuite Program",
+    "sourceConfidence": "medium",
+    "sourceNote": "The PDF is archived but was not fully text-parsed in this pass. Conclusions below rely on the email preview plus direct workbook extraction, which is strong enough to confirm package shape and delivery model.",
+    "artifacts": {
+      "proposalPdf": {
+        "name": "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf"
+      },
+      "effortWorkbook": {
+        "name": "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx",
+        "status": "archived",
+        "path": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx"
+      }
+    },
+    "emailPreviewRead": [
+      "Jean-Arnold says CFGI is sending a revised proposal combining the three value-add dimensions Mike requested under a central lead.",
+      "He says the package uses a team Abivax already knows, is designed to work as one combined team, and is priced at rates below current SOX French rates.",
+      "He says the attached Excel is meant to give clearer visibility into who does what."
+    ],
+    "workbookRead": {
+      "grandTotalHours": 1063,
+      "namedTeam": [
+        "Jean Arnold Coutareau",
+        "Shine Thomas",
+        "Angela DePoy",
+        "Ken Schatz",
+        "Brad Quillen",
+        "Walid Bouassida",
+        "Youness Tyamaz",
+        "Ashley Williams"
+      ],
+      "majorWorkstreams": [
+        "Program Governance & Status Reporting - 386 hours",
+        "Business Process & Functional Support - 124 hours",
+        "US NetSuite Team Implementation Meeting Participation - 87 hours",
+        "Stage Gate Reviews - 70 hours",
+        "Controls-by-Design / SOX Integration - 165 hours",
+        "Change Management & Adoption - 202 hours"
+      ]
+    },
+    "operatorRead": {
+      "whatItChanges": [
+        "This is the clearest written evidence so far of the combined US/France CFGI support model Mike asked for after the board-supported delivery direction.",
+        "It moves CFGI beyond separate March 10 and March 17 proposals into a single integrated advisory/support construct."
+      ],
+      "whatStillNeedsClarification": [
+        "The full commercial read from the PDF still needs extraction into a more canonical fee summary.",
+        "The exact RACI boundary versus NetSuite and versus Abivax internal ownership still needs to be stated plainly in any reply or negotiated contract."
+      ],
+      "practicalUse": "Treat this as the current CFGI package to respond to, not just the older implementation proposal or Walid local-support proposal in isolation."
     }
   },
   "kpmgProposal": {

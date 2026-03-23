@@ -23,10 +23,43 @@ function nowDate() {
 }
 
 function pickNext(items) {
-  const pr = (p) => (p === "high" ? 0 : p === "medium" ? 1 : 2);
+  const pr = (p) => (p === "urgent" ? 0 : p === "high" ? 1 : p === "medium" ? 2 : 3);
   return (items || [])
+    .filter((item) => !item || !item.status || item.status === "open")
     .slice()
     .sort((a, b) => pr(a.priority) - pr(b.priority) || String(a.title || "").localeCompare(String(b.title || "")))[0];
+}
+
+function getOptionalContextFiles(root) {
+  const files = [];
+  const currentBrief = path.join(root, "collab", "shared", "CURRENT_OPERATING_BRIEF.md");
+  if (fs.existsSync(currentBrief)) {
+    files.push("collab/shared/CURRENT_OPERATING_BRIEF.md");
+  }
+  const sourceSystemFlow = path.join(root, "collab", "shared", "SOURCE_SYSTEM_FLOW.md");
+  if (fs.existsSync(sourceSystemFlow)) {
+    files.push("collab/shared/SOURCE_SYSTEM_FLOW.md");
+  }
+  const currentContext = path.join(root, "data", "abivax", "current_context.json");
+  if (fs.existsSync(currentContext)) {
+    files.push("data/abivax/current_context.json");
+  }
+
+  const promptDir = path.join(root, "collab", "claude", "prompts");
+  try {
+    const mikeBriefs = fs
+      .readdirSync(promptDir)
+      .filter((name) => /_mike-.*brief\.md$/i.test(name))
+      .sort()
+      .reverse();
+    if (mikeBriefs[0]) {
+      files.push(`collab/claude/prompts/${mikeBriefs[0]}`);
+    }
+  } catch {
+    // ignore optional context discovery failures
+  }
+
+  return files;
 }
 
 const root = process.cwd();
@@ -53,6 +86,7 @@ const outFile = `collab/claude/outputs/${nowDate()}_${slug}.md`;
 
 const files = Array.isArray(next.files) ? next.files : [];
 const targets = Array.isArray(next.targets) ? next.targets : [];
+const optionalContextFiles = getOptionalContextFiles(root);
 
 const prompt = `# Claude Next Prompt
 
@@ -61,8 +95,12 @@ Work only on queue item: \`${next.id}\`
 ## Context Files (read first)
 - \`CLAUDE.md\`
 - \`collab/claude/WORKFLOW.md\`
-- \`collab/claude/MIKE_DESIGN_PREFERENCES.md\`
 - \`data/abivax/claude_lane_queue.json\`
+${optionalContextFiles.map((f) => `- \`${f}\``).join("\n")}
+
+## Additional Context
+- Architecture pivot on \`2026-03-18\`: front-end/UI work is shelved unless Mike explicitly revives it.
+- Use the current operating brief to align to the live board-to-May-21 objective before acting on the queue item.
 
 ${files.length ? `## Focus Files (read only if needed)\n${files.map((f) => `- \`${f}\``).join("\n")}\n` : ""}
 ${targets.length ? `## Targets\n${targets.map((t) => `- ${t}`).join("\n")}\n` : ""}
@@ -80,6 +118,7 @@ ${next.promptHint || "Provide a concrete writing/design critique output that Cod
 - Do **not** create agent/pipeline changes.
 - Focus on writing/design critique/planning only.
 - Be concrete and implementation-oriented (for Codex), but do not write production code.
+- Ignore retired queue items and historical front-end critiques unless the current brief explicitly calls for them.
 
 ## Output
 Save your response to:

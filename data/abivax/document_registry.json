@@ -3,8 +3,8 @@
   "purpose": "Lightweight evidence registry for core ERP source materials used in vendor diligence, board preparation, and delivery-model decisions.",
   "scope": "Initial pass covers NetSuite, KPMG, CFGI, ERP selection artifacts, and current board-level ERP outputs. It is an index layer, not a document portal.",
   "summary": {
-    "documentCount": 17,
-    "currentCount": 13,
+    "documentCount": 21,
+    "currentCount": 17,
     "draftCount": 1,
     "supersededCount": 3
   },
@@ -578,6 +578,148 @@
       ],
       "supersedes": [],
       "retrievalConfidence": "high"
+    },
+    {
+      "id": "cfgi-combined-advisory-proposal-20260319",
+      "title": "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF",
+      "sender": "Jean-Arnold Coutareau",
+      "organization": "CFGI",
+      "dateReceived": "2026-03-19T19:28:20.529Z",
+      "documentType": "integrated-support-proposal",
+      "topicTags": ["cfgi", "integrated-support", "us-france-model", "controls-by-design", "change-management"],
+      "relatedVendor": "CFGI",
+      "relatedWorkstream": "Implementation support model",
+      "status": "current",
+      "summary": "Revised combined CFGI advisory/support proposal sent after the March 19 board meeting. This package appears to integrate the US and France support lanes under a single lead structure.",
+      "keyQuestionsAnswered": [
+        "Did CFGI convert the separate March 10 and March 17 proposals into one combined support model?",
+        "Is there now a written package aligned to the board-supported NetSuite plus CFGI path?"
+      ],
+      "notableEntities": ["Jean-Arnold Coutareau", "Ken Schatz", "Walid Bouassida", "Youness Tyamaz", "Angela DePoy", "Shine Thomas", "CFGI"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf",
+      "sourceEmailSubject": "CFGI Support Proposal for Abivax NetSuite Program",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/README.md",
+          "note": "README records the revised combined-package email context and scope read."
+        },
+        {
+          "label": "consultant synthesis",
+          "location": "data/abivax/consultant_reviews.json",
+          "note": "Structured review added under cfgiCombinedAdvisoryProposal."
+        }
+      ],
+      "supersedes": ["cfgi-netsuite-proposal-20260310", "cfgi-local-pmo-change-proposal-20260317"],
+      "retrievalConfidence": "medium"
+    },
+    {
+      "id": "cfgi-advisory-effort-workbook-20260319",
+      "title": "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26",
+      "sender": "Jean-Arnold Coutareau",
+      "organization": "CFGI",
+      "dateReceived": "2026-03-19T19:28:20.529Z",
+      "documentType": "effort-workbook",
+      "topicTags": ["cfgi", "workbook", "hours", "raci", "support-model"],
+      "relatedVendor": "CFGI",
+      "relatedWorkstream": "Implementation support model",
+      "status": "current",
+      "summary": "Workbook attached to CFGI's revised March 19 combined proposal showing named resources and effort distribution across governance, controls-by-design, business process support, stage gates, and change management.",
+      "keyQuestionsAnswered": [
+        "Who does what in CFGI's combined support model?",
+        "How much effort is allocated across governance, controls, US implementation participation, and change?"
+      ],
+      "notableEntities": ["Jean Arnold Coutareau", "Shine Thomas", "Angela DePoy", "Ken Schatz", "Brad Quillen", "Walid Bouassida", "Youness Tyamaz", "Ashley Williams"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx",
+      "sourceEmailSubject": "CFGI Support Proposal for Abivax NetSuite Program",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/README.md",
+          "note": "README captures the workbook's major workstreams and team columns."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-oracle-feedback-file-20260320",
+      "title": "ABIVAX Oracle Feedback File",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-20T15:07:05.703Z",
+      "documentType": "contract-feedback-template",
+      "topicTags": ["netsuite", "legal", "contract", "negotiation"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation contracting",
+      "status": "current",
+      "summary": "Oracle contract-feedback template sent with the March 20 support-team package. It sets the format and negotiation rules Oracle expects for legal / contractual comments.",
+      "keyQuestionsAnswered": [
+        "How does Oracle want Abivax to submit legal comments on the contract package?",
+        "What negotiation constraints is Oracle explicitly setting?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Abivax legal reviewers"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/ABIVAX Oracle Feedback File.docx",
+      "sourceEmailSubject": "ABIVAX NetSuite Implementation | Customer Side support Team",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/README.md",
+          "note": "README records the key negotiation-format rules extracted from the feedback file."
+        },
+        {
+          "label": "consultant synthesis",
+          "location": "data/abivax/consultant_reviews.json",
+          "note": "Structured review added under netSuiteSupportTeamPackage."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "high"
+    },
+    {
+      "id": "netsuite-support-team-package-20260320",
+      "title": "NetSuite support team CV and estimate package",
+      "sender": "Jamal Azil",
+      "organization": "Oracle NetSuite",
+      "dateReceived": "2026-03-20T15:07:05.703Z",
+      "documentType": "support-team-package",
+      "topicTags": ["netsuite", "team", "customer-side-support", "estimates", "legal"],
+      "relatedVendor": "NetSuite",
+      "relatedWorkstream": "Implementation contracting and staffing",
+      "status": "current",
+      "summary": "March 20 NetSuite follow-up package containing customer-side support-team CVs, estimate PDFs, and the Oracle feedback file. It supplements the March 17 SOW/commercial package.",
+      "keyQuestionsAnswered": [
+        "What customer-side support resources is Oracle proposing around the implementation?",
+        "What additional estimate and contract-negotiation materials did Oracle send after the live discussion?"
+      ],
+      "notableEntities": ["Jamal Azil", "Oracle NetSuite", "Abdelhafid Irbaiyne", "Abivax"],
+      "collection": "vendor-source-pack",
+      "sharingState": "received-external",
+      "owner": "Mike Markman",
+      "sourceKind": "email-attachment-bundle",
+      "sourcePath": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20",
+      "sourceEmailSubject": "ABIVAX NetSuite Implementation | Customer Side support Team",
+      "citationRefs": [
+        {
+          "label": "archive note",
+          "location": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/README.md",
+          "note": "README lists the full bundle and how it supplements the March 17 package."
+        }
+      ],
+      "supersedes": [],
+      "retrievalConfidence": "medium"
     }
   ]
 }

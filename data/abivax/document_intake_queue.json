@@ -1,0 +1,290 @@
+{
+  "generatedAt": "2026-03-23T16:05:42.638Z",
+  "purpose": "Tracks staged email/desktop attachment packages and whether they have been promoted into durable repo storage and canonical summary layers.",
+  "items": [
+    {
+      "id": "20260320-110705-abivax-netsuite-implementation-customer-side-support-team",
+      "sourceFolder": "temp/recent-email-attachments/20260320-110705 - ABIVAX_NetSuite_Implementation_Customer_Side_support_Team",
+      "sourceEmail": {
+        "date": "2026-03-20T15:07:05.703Z",
+        "subject": "ABIVAX NetSuite Implementation | Customer Side support Team",
+        "fromName": "jamal azil",
+        "fromEmail": "jamal.azil@oracle.com",
+        "organization": "Oracle/NetSuite"
+      },
+      "attachmentNames": [
+        "ABIVAX Oracle Feedback File.docx",
+        "CV ACHAOUI.pdf",
+        "CV IMEGZARI.pdf",
+        "CV OICHEM.pdf",
+        "Estimates.zip",
+        "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf",
+        "Estimate_28898869 (licenses, support, and professional services)V2.pdf",
+        "Estimate_28938415 (NSAW).pdf",
+        "Estimate_28938454 (ACS).pdf",
+        "Estimate_28938606 (NSIP).pdf"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/netsuite-commercial/Estimates.zip",
+        "data/abivax/vendor-assets/netsuite-commercial/Estimates/Estimates/Estimate_28938415 (NSAW).pdf",
+        "data/abivax/vendor-assets/netsuite-commercial/Estimates/Estimates/Estimate_28938454 (ACS).pdf",
+        "data/abivax/vendor-assets/netsuite-commercial/Estimates/Estimates/Estimate_28938606 (NSIP).pdf",
+        "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/ABIVAX Oracle Feedback File.docx",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/CV ACHAOUI.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/CV IMEGZARI.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/CV OICHEM.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates.zip",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates_unzipped/Estimate_28898869 (licenses, support, and professional services)V2.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates_unzipped/Estimate_28938415 (NSAW).pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates_unzipped/Estimate_28938454 (ACS).pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates_unzipped/Estimate_28938606 (NSIP).pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      ],
+      "registryDocumentIds": [
+        "netsuite-sow-draft-v3-20260317",
+        "netsuite-oracle-feedback-file-20260320"
+      ],
+      "status": "archived",
+      "needsPromotion": false,
+      "notes": "All meaningful attachments from this staged package appear to be archived under data/abivax/vendor-assets."
+    },
+    {
+      "id": "20260319-152820-cfgi-support-proposal-for-abivax-netsuite-program",
+      "sourceFolder": "temp/recent-email-attachments/20260319-152820 - CFGI_Support_Proposal_for_Abivax_NetSuite_Program",
+      "sourceEmail": {
+        "date": "2026-03-19T19:28:20.529Z",
+        "subject": "CFGI Support Proposal for Abivax NetSuite Program",
+        "fromName": "Jean-Arnold Coutareau",
+        "fromEmail": "jacoutareau@cfgi.com",
+        "organization": "CFGI"
+      },
+      "attachmentNames": [
+        "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx",
+        "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx",
+        "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf"
+      ],
+      "registryDocumentIds": [
+        "cfgi-combined-advisory-proposal-20260319",
+        "cfgi-advisory-effort-workbook-20260319"
+      ],
+      "status": "archived",
+      "needsPromotion": false,
+      "notes": "All meaningful attachments from this staged package appear to be archived under data/abivax/vendor-assets."
+    },
+    {
+      "id": "20260317-192828-cfgi-proposal",
+      "sourceFolder": "temp/recent-email-attachments/20260317-192828 - CFGI_Proposal",
+      "sourceEmail": {
+        "date": "2026-03-17T18:28:28.041Z",
+        "subject": "CFGI Proposal",
+        "fromName": "Walid Bouassida",
+        "fromEmail": "wbouassida@cfgi.com",
+        "organization": "CFGI"
+      },
+      "attachmentNames": [
+        "Abivax_CFGI_PMO&Change proposal.pdf"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/cfgi-pmo-change/Abivax_CFGI_PMO&Change proposal.pdf"
+      ],
+      "registryDocumentIds": [
+        "cfgi-local-pmo-change-proposal-20260317"
+      ],
+      "status": "archived",
+      "needsPromotion": false,
+      "notes": "All meaningful attachments from this staged package appear to be archived under data/abivax/vendor-assets."
+    },
+    {
+      "id": "20260317-165711-re-external-re-abivax-x-netsuite-following-up-on-our-meeting",
+      "sourceFolder": "temp/recent-email-attachments/20260317-165711 - Re_External_RE_ABIVAX_x_NetSuite_Following_up_on_our_meeting",
+      "sourceEmail": {
+        "date": "2026-03-17T15:57:11.628Z",
+        "subject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+        "fromName": "jamal azil",
+        "fromEmail": "jamal.azil@oracle.com",
+        "organization": "Oracle/NetSuite"
+      },
+      "attachmentNames": [
+        "ABIVAX TEAM V1.pptx",
+        "NetSuite Offer Summary V2.xlsx",
+        "Netsuite RACI standard Suite Success ABIVAX V1.xlsx",
+        "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/netsuite-commercial/ABIVAX TEAM V1.pptx",
+        "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary V2.xlsx",
+        "data/abivax/vendor-assets/netsuite-commercial/Netsuite RACI standard Suite Success ABIVAX V1.xlsx",
+        "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      ],
+      "registryDocumentIds": [
+        "netsuite-offer-summary-v2-20260317",
+        "netsuite-sow-draft-v3-20260317",
+        "netsuite-raci-v1-20260317",
+        "netsuite-team-v1-20260317"
+      ],
+      "status": "archived",
+      "needsPromotion": false,
+      "notes": "All meaningful attachments from this staged package appear to be archived under data/abivax/vendor-assets."
+    },
+    {
+      "id": "20260223-060347-not-virus-scanned-re-abivax-offer-netsuite",
+      "sourceFolder": "temp/recent-email-attachments/20260223-060347 - Not_Virus_Scanned_Re_ABIVAX_Offer_-_Netsuite",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "ABIVAX  - Draft-Implementation Timeline V2.xlsx",
+        "Abivax - Netsuite Demonstration Feedback 230226.pptx",
+        "FX Rate - Treasury Management - VTA Declaration Clarification.pdf",
+        "Interfaces ABIVAX.xlsx"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/netsuite/ABIVAX  - Draft-Implementation Timeline V2.xlsx",
+        "data/abivax/vendor-assets/netsuite/Interfaces ABIVAX.xlsx"
+      ],
+      "registryDocumentIds": [
+        "netsuite-timeline-v2-20260223",
+        "netsuite-interface-workbook-20260223"
+      ],
+      "status": "partially_archived",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260225-104256-re-erp-scope-alignment-sox-findings-and-reporting-process-documentation",
+      "sourceFolder": "temp/recent-email-attachments/20260225-104256 - RE_ERP_scope_alignment_-_SOX_findings_and_reporting_process_documentation",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "01 - Abivax x CFGI - Project Plan.xlsx",
+        "Abivax FSCP FINAL RCM 22 December 2025.xlsx",
+        "Abivax PtP - FINAL_23 December 2025.xlsx"
+      ],
+      "archivedPaths": [],
+      "registryDocumentIds": [],
+      "status": "staged_only",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260226-043314-re-france-p2p-follow-up-for-erp-planning",
+      "sourceFolder": "temp/recent-email-attachments/20260226-043314 - RE_France_P2P_-_Follow-up_for_ERP_planning",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "ABIVAX_Procédure Achat - étapes 1 à 4 - MAJ 02.2026.pdf",
+        "Approval  Invoices Authorization Matrix.pdf",
+        "Approval PO matrix.pdf",
+        "Moyen de paiement - virements bancaires.xlsx",
+        "REC0234-V03_DocuShare User Guide.pdf",
+        "Saisie en devise.pdf",
+        "Signature policy.pdf",
+        "SOP - Purchase Order and Contract Process.pdf",
+        "Supplier data base cleaning.xlsx"
+      ],
+      "archivedPaths": [],
+      "registryDocumentIds": [],
+      "status": "staged_only",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260302-122420-commitment",
+      "sourceFolder": "temp/recent-email-attachments/20260302-122420 - commitment",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "ENGAGE_2025 - 31.12.2025.xlsx"
+      ],
+      "archivedPaths": [],
+      "registryDocumentIds": [],
+      "status": "staged_only",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260302-123412-trustpair-data-supplier-bases",
+      "sourceFolder": "temp/recent-email-attachments/20260302-123412 - Trustpair_data_supplier_bases",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "Base supplier Trustpair.xlsx"
+      ],
+      "archivedPaths": [],
+      "registryDocumentIds": [],
+      "status": "staged_only",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260303-055611-planning-q1-2026",
+      "sourceFolder": "temp/recent-email-attachments/20260303-055611 - Planning_Q1_2026",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "Abivax planning Q1 2026  social  PBC.xlsx"
+      ],
+      "archivedPaths": [],
+      "registryDocumentIds": [],
+      "status": "staged_only",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260305-101755-abivax-x-netsuite-following-up-on-our-meeting",
+      "sourceFolder": "temp/recent-email-attachments/20260305-101755 - ABIVAX_x_NetSuite_Following_up_on_our_meeting",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "Estimates.zip",
+        "NetSuite Offer Summary.xlsx",
+        "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf",
+        "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/netsuite-commercial/Estimates.zip",
+        "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary.xlsx",
+        "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "data/abivax/vendor-assets/netsuite-commercial/nsgbu-subscription-services-agreement-v061625-uk-eng.pdf",
+        "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/Estimates.zip"
+      ],
+      "registryDocumentIds": [
+        "netsuite-offer-summary-20260305",
+        "netsuite-sow-draft-20260305"
+      ],
+      "status": "archived",
+      "needsPromotion": false,
+      "notes": "All meaningful attachments from this staged package appear to be archived under data/abivax/vendor-assets."
+    },
+    {
+      "id": "20260305-104503-excels-on-treasury",
+      "sourceFolder": "temp/recent-email-attachments/20260305-104503 - Excels_on_Treasury",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "2025-2026 Treasury Management Report v11.xlsx",
+        "Cash Forecast Monthly Planning 2026.xlsx",
+        "Forecast12m 20260305.xlsx",
+        "Management placements  et Exposition FX 20251112.xlsx"
+      ],
+      "archivedPaths": [],
+      "registryDocumentIds": [],
+      "status": "staged_only",
+      "needsPromotion": true,
+      "notes": "Some or all attachments from this staged package are still only present in temp/recent-email-attachments."
+    },
+    {
+      "id": "20260310-150121-abivax-cfgi-netsuite-implementation-proposal",
+      "sourceFolder": "temp/recent-email-attachments/20260310-150121 - ABIVAX_CFGI_-_NetSuite_Implementation_Proposal",
+      "sourceEmail": null,
+      "attachmentNames": [
+        "CFGI_Abivax_NS_Proposal_03.10.26.pdf"
+      ],
+      "archivedPaths": [
+        "data/abivax/vendor-assets/cfgi-implementation/CFGI_Abivax_NS_Proposal_03.10.26.pdf"
+      ],
+      "registryDocumentIds": [
+        "cfgi-netsuite-proposal-20260310"
+      ],
+      "status": "archived",
+      "needsPromotion": false,
+      "notes": "All meaningful attachments from this staged package appear to be archived under data/abivax/vendor-assets."
+    }
+  ]
+}

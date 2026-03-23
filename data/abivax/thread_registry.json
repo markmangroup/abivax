@@ -1,0 +1,1361 @@
+{
+  "generatedAt": "2026-03-23T16:05:42.638Z",
+  "purpose": "Tracks recent email threads across inbox and sent exports so sessions know what context window they are operating on and who is waiting on whom.",
+  "threads": [
+    {
+      "threadKey": "prise de référence - netsuite",
+      "subject": "Prise de référence - NetSuite",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 9,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-23T09:27:39.122Z",
+        "fromName": "Tchervenkov, Laure",
+        "fromEmail": "laure.tchervenkov@efeso.com",
+        "attachments": [],
+        "subject": "Re: Prise de référence - NetSuite"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Jade Nguyen",
+        "Michael Markman",
+        "Philippe Goncalves",
+        "Sébastien ROSSI-FERRARI",
+        "Tchervenkov, Laure",
+        "laure.tchervenkov@efeso.com",
+        "srossi-ferrari@ennov.com"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "lucca : actions à réaliser",
+      "subject": "Lucca : Actions à réaliser",
+      "organization": "Lucca",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 2,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-23T05:11:55.625Z",
+        "fromName": "Lucca",
+        "fromEmail": "no-reply@ilucca.net",
+        "attachments": [],
+        "subject": "Lucca : Actions à réaliser"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Lucca",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "michael markman, let us know about your stay!",
+      "subject": "Michael Markman, let us know about your stay!",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-22T05:02:32.102Z",
+        "fromName": "M Social Hotel Paris",
+        "fromEmail": "surveys@inguest.com",
+        "attachments": [],
+        "subject": "Michael Markman, let us know about your stay!"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "M Social Hotel Paris",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "weekly summary alert for abivax",
+      "subject": "Weekly Summary Alert for Abivax",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-20T21:54:27.779Z",
+        "fromName": "Abivax",
+        "fromEmail": "no-reply@notification.gcs-web.com",
+        "attachments": [],
+        "subject": "Weekly Summary Alert for Abivax"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Abivax",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "abivax netsuite implementation | customer side support team",
+      "subject": "ABIVAX NetSuite Implementation | Customer Side support Team",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-20T15:07:05.703Z",
+        "fromName": "jamal azil",
+        "fromEmail": "jamal.azil@oracle.com",
+        "attachments": [
+          "CV OICHEM.pdf",
+          "CV IMEGZARI.pdf",
+          "CV ACHAOUI.pdf",
+          "Estimates.zip",
+          "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf",
+          "ABIVAX Oracle Feedback File.docx"
+        ],
+        "subject": "ABIVAX NetSuite Implementation | Customer Side support Team"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Abdelhafid IRBAIYNE",
+        "Jade Nguyen",
+        "Laurent Bailly",
+        "Michael Markman",
+        "Venceslas dEchallens",
+        "Vincent Gehanno",
+        "jamal azil"
+      ],
+      "recentAttachments": [
+        "ABIVAX Oracle Feedback File.docx",
+        "CV ACHAOUI.pdf",
+        "CV IMEGZARI.pdf",
+        "CV OICHEM.pdf",
+        "Estimates.zip",
+        "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      ],
+      "canonicalDocuments": [
+        {
+          "id": "netsuite-oracle-feedback-file-20260320",
+          "title": "ABIVAX Oracle Feedback File",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20/ABIVAX Oracle Feedback File.docx"
+        },
+        {
+          "id": "netsuite-support-team-package-20260320",
+          "title": "NetSuite support team CV and estimate package",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-support-team-2026-03-20"
+        }
+      ]
+    },
+    {
+      "threadKey": "docusign emails – stay vigilant !",
+      "subject": "DocuSign Emails – Stay Vigilant !",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-20T10:13:42.250Z",
+        "fromName": "Cyber Security",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=E123EA8DD4DB481798BFC5B32644F38F-CYBER SECUR",
+        "attachments": [],
+        "subject": "DocuSign Emails – Stay Vigilant !"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Cyber Security"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "m social paris- invoice copy",
+      "subject": "M Social Paris- Invoice Copy",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-20T09:22:34.558Z",
+        "fromName": "billing@millenniumhotels.co.uk",
+        "fromEmail": "billing@millenniumhotels.co.uk",
+        "attachments": [
+          "20260320_5222934.PDF"
+        ],
+        "subject": "M Social Paris- Invoice Copy"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "billing@millenniumhotels.co.uk"
+      ],
+      "recentAttachments": [
+        "20260320_5222934.PDF"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "guest badge",
+      "subject": "Guest badge",
+      "organization": "Abivax",
+      "waitingStatus": "waiting_on_mike",
+      "inboundCount": 2,
+      "outboundCount": 1,
+      "latestInbound": {
+        "date": "2026-03-20T08:47:18.838Z",
+        "fromName": "Emilie Leveau",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=C824039C30F84516A5A379B5E74A5E58-4CF185E8-87",
+        "attachments": [],
+        "subject": "RE: Guest badge"
+      },
+      "latestOutbound": {
+        "date": "2026-03-20T08:28:42.368Z",
+        "to": [
+          "Emilie Leveau"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "Re: Guest badge"
+      },
+      "participants": [
+        "Emilie Leveau",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "cfgi support proposal for abivax netsuite program",
+      "subject": "CFGI Support Proposal for Abivax NetSuite Program",
+      "organization": "CFGI",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T19:28:20.529Z",
+        "fromName": "Jean-Arnold Coutareau",
+        "fromEmail": "jacoutareau@cfgi.com",
+        "attachments": [
+          "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf",
+          "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx"
+        ],
+        "subject": "CFGI Support Proposal for Abivax NetSuite Program"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Angela DePoy",
+        "Hema Keshava",
+        "Jean-Arnold Coutareau",
+        "Kenneth Schatz",
+        "Michael Markman",
+        "Shine Thomas",
+        "wbouassida"
+      ],
+      "recentAttachments": [
+        "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx",
+        "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf"
+      ],
+      "canonicalDocuments": [
+        {
+          "id": "cfgi-combined-advisory-proposal-20260319",
+          "title": "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf"
+        },
+        {
+          "id": "cfgi-advisory-effort-workbook-20260319",
+          "title": "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/cfgi-advisory-combined-2026-03-19/ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx"
+        }
+      ]
+    },
+    {
+      "threadKey": "hedge accounting",
+      "subject": "Hedge accounting",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 2,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T17:45:08.861Z",
+        "fromName": "Lapous, Robin",
+        "fromEmail": "rlapous@kpmg.fr",
+        "attachments": [],
+        "subject": "RE: Hedge accounting"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Hema Keshava",
+        "Lapous, Robin",
+        "Michael Markman",
+        "Philippe Goncalves",
+        "Roxandra Sturdza",
+        "Souchon, Aurelie",
+        "Trinidad Mesa"
+      ],
+      "recentAttachments": [
+        "Abivax - Comptabilité couverture.xlsx",
+        "Abivax - Hedging documentation.docx",
+        "Abivax - Note Hedge Accounting v17.03.2026.pdf"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "here’s your code to finish signing in",
+      "subject": "Here’s your code to finish signing in",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T16:15:16.972Z",
+        "fromName": "SecurityServices_NoReply@adp.com",
+        "fromEmail": "SecurityServices_NoReply@adp.com",
+        "attachments": [],
+        "subject": "Here’s your code to finish signing in"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "SecurityServices_NoReply@adp.com"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "here’s your code to reset your adp password",
+      "subject": "Here’s your code to reset your ADP password",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T16:13:27.473Z",
+        "fromName": "SecurityServices_NoReply@adp.com",
+        "fromEmail": "SecurityServices_NoReply@adp.com",
+        "attachments": [],
+        "subject": "Here’s your code to reset your ADP password"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "SecurityServices_NoReply@adp.com"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "treasury",
+      "subject": "Treasury",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T16:06:38.440Z",
+        "fromName": "Roxandra Sturdza",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST",
+        "attachments": [
+          "Abivax TOM - V260305.pdf"
+        ],
+        "subject": "Treasury"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "Roxandra Sturdza"
+      ],
+      "recentAttachments": [
+        "Abivax TOM - V260305.pdf"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "[lucca] un nouvel article \"hr communication : march 2026 organization chart & bios new joiners \" a été publié",
+      "subject": "[Lucca] Un nouvel article \"HR communication : March 2026 Organization Chart & Bios New Joiners \" a été publié",
+      "organization": "Lucca",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T15:32:20.973Z",
+        "fromName": "Lucca",
+        "fromEmail": "no-reply@ilucca.net",
+        "attachments": [],
+        "subject": "[Lucca] Un nouvel article \"HR communication : March 2026 Organization Chart &  Bios New Joiners \" a été publié"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Lucca",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "hr communication : abivax new joiners",
+      "subject": "HR Communication : Abivax New Joiners",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T15:13:53.009Z",
+        "fromName": "Sophie Lacourrege",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=30ADCB094AED454894DD399888592AFB-CD466DEC-FB",
+        "attachments": [],
+        "subject": "HR Communication : Abivax New Joiners"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "ALLABIVAX-E",
+        "Alexis Gillis",
+        "Christine Cook",
+        "David Zhang",
+        "Didier Blondel",
+        "Emilie Leveau",
+        "Fabio Cataldi",
+        "Ida Hatoum",
+        "Jerome Denis",
+        "Marc de Garidel",
+        "Maurus de la Rosa",
+        "Michael Nesrallah",
+        "Nadege Briancon-Eris",
+        "Pierre Courteille",
+        "Sophie Lacourrege",
+        "allabivax"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "hedge accounting memo",
+      "subject": "Hedge accounting memo",
+      "organization": "Abivax",
+      "waitingStatus": "waiting_on_external",
+      "inboundCount": 1,
+      "outboundCount": 2,
+      "latestInbound": {
+        "date": "2026-03-19T08:48:16.722Z",
+        "fromName": "Roxandra Sturdza",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST",
+        "attachments": [],
+        "subject": "RE: Hedge accounting memo"
+      },
+      "latestOutbound": {
+        "date": "2026-03-19T09:59:14.618Z",
+        "to": [
+          "Roxandra Sturdza"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "RE: Hedge accounting memo"
+      },
+      "participants": [
+        "Michael Markman",
+        "Roxandra Sturdza"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "2026-2027 open enrollment is here, michael",
+      "subject": "2026-2027 Open Enrollment is here, Michael",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-19T03:14:02.454Z",
+        "fromName": "NoReply.ADPBenefits@adp.com",
+        "fromEmail": "NoReply.ADPBenefits@adp.com",
+        "attachments": [],
+        "subject": "2026-2027 Open Enrollment is here, Michael"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "NoReply.ADPBenefits@adp.com",
+        "michaelkmarkman@gmail.com"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "cfgi support model for abivax netsuite program",
+      "subject": "CFGI Support Model for Abivax NetSuite Program",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "waiting_on_mike",
+      "inboundCount": 1,
+      "outboundCount": 1,
+      "latestInbound": {
+        "date": "2026-03-18T18:04:55.622Z",
+        "fromName": "Jean-Arnold Coutareau",
+        "fromEmail": "jacoutareau@cfgi.com",
+        "attachments": [],
+        "subject": "RE: CFGI Support Model for Abivax NetSuite Program"
+      },
+      "latestOutbound": {
+        "date": "2026-03-18T17:40:33.457Z",
+        "to": [
+          "Kenneth Schatz",
+          "Jean-Arnold Coutareau",
+          "Angela DePoy"
+        ],
+        "cc": [
+          "Hema Keshava"
+        ],
+        "attachments": [],
+        "subject": "CFGI Support Model for Abivax NetSuite Program"
+      },
+      "participants": [
+        "Angela DePoy",
+        "Hema Keshava",
+        "Jean-Arnold Coutareau",
+        "Kenneth Schatz",
+        "Michael Markman",
+        "Shine Thomas"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "next meeting in english",
+      "subject": "Next meeting in english",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-18T17:47:08.958Z",
+        "fromName": "Roxandra Sturdza",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST",
+        "attachments": [],
+        "subject": "Next meeting in english"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Lou-Anne Lemercier Metayer",
+        "Michael Markman",
+        "Roxandra Sturdza",
+        "Tristan Guillaumin"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "team dinner",
+      "subject": "Team Dinner",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-18T17:21:12.061Z",
+        "fromName": "Fatma Hemdani",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=60230A76732C47ADBC10429F73B26BD4-8BB630F2-30",
+        "attachments": [],
+        "subject": "Team Dinner"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Denis Jankovic",
+        "Fatma Hemdani",
+        "Frederick Golly",
+        "Hema Keshava",
+        "Juliette Courtot",
+        "Matt Epley",
+        "Michael Markman",
+        "Philippe Goncalves",
+        "Roxandra Sturdza",
+        "Trinidad Mesa"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "kpmg proposal",
+      "subject": "KPMG proposal",
+      "organization": "KPMG",
+      "waitingStatus": "waiting_on_external",
+      "inboundCount": 3,
+      "outboundCount": 7,
+      "latestInbound": {
+        "date": "2026-03-18T15:56:19.780Z",
+        "fromName": "Denoual, Sebastien",
+        "fromEmail": "sdenoual@kpmg.fr",
+        "attachments": [],
+        "subject": "Re: KPMG proposal"
+      },
+      "latestOutbound": {
+        "date": "2026-03-18T15:57:22.698Z",
+        "to": [
+          "Denoual, Sebastien",
+          "Girard, Camille"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "Re: KPMG proposal"
+      },
+      "participants": [
+        "Ben Alaya, Aymen",
+        "Denoual, Sebastien",
+        "Girard, Camille",
+        "Hema Keshava",
+        "Madjoubi, Toufik",
+        "Michael Markman"
+      ],
+      "recentAttachments": [
+        "032026_Proposal_AMOA_ABIVAX_v1.pdf"
+      ],
+      "canonicalDocuments": [
+        {
+          "id": "kpmg-amoa-proposal-20260310",
+          "title": "032026_Proposal_AMOA_ABIVAX_v1",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/kpmg-pmo/032026_Proposal_AMOA_ABIVAX_v1.pdf"
+        }
+      ]
+    },
+    {
+      "threadKey": "tr: hedge accounting memo",
+      "subject": "TR: Hedge accounting memo",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-18T14:40:32.616Z",
+        "fromName": "Roxandra Sturdza",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2DF5016FCC204D93A8CFD4E872429842-ROXANDRA ST",
+        "attachments": [
+          "Abivax - Note Hedge Accounting v17.03.2026.pdf",
+          "Abivax - Comptabilité couverture.xlsx",
+          "Abivax - Hedging documentation.docx"
+        ],
+        "subject": "TR: Hedge accounting memo"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Hema Keshava",
+        "Michael Markman",
+        "Philippe Goncalves",
+        "Roxandra Sturdza",
+        "Trinidad Mesa"
+      ],
+      "recentAttachments": [
+        "Abivax - Comptabilité couverture.xlsx",
+        "Abivax - Hedging documentation.docx",
+        "Abivax - Note Hedge Accounting v17.03.2026.pdf"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "abivax <> cfgi - netsuite implementation proposal",
+      "subject": "ABIVAX <> CFGI - NetSuite Implementation Proposal",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "waiting_on_mike",
+      "inboundCount": 1,
+      "outboundCount": 2,
+      "latestInbound": {
+        "date": "2026-03-18T13:04:51.074Z",
+        "fromName": "Kenneth Schatz",
+        "fromEmail": "kschatz@cfgi.com",
+        "attachments": [],
+        "subject": "Re: ABIVAX <> CFGI - NetSuite Implementation Proposal"
+      },
+      "latestOutbound": {
+        "date": "2026-03-18T09:38:43.485Z",
+        "to": [
+          "Kenneth Schatz"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "RE: ABIVAX <> CFGI - NetSuite Implementation Proposal"
+      },
+      "participants": [
+        "Kenneth Schatz",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": [
+        {
+          "id": "cfgi-netsuite-proposal-20260310",
+          "title": "CFGI_Abivax_NS_Proposal_03.10.26",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/cfgi-implementation/CFGI_Abivax_NS_Proposal_03.10.26.pdf"
+        }
+      ]
+    },
+    {
+      "threadKey": "reference contact & template",
+      "subject": "Reference contact & template",
+      "organization": "Abivax",
+      "waitingStatus": "waiting_on_mike",
+      "inboundCount": 1,
+      "outboundCount": 2,
+      "latestInbound": {
+        "date": "2026-03-18T11:17:24.536Z",
+        "fromName": "Jade Nguyen",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=71D049EEF9FB411D8505FEF564B72005-9C790ACD-07",
+        "attachments": [],
+        "subject": "Re: Reference contact & template"
+      },
+      "latestOutbound": {
+        "date": "2026-03-13T17:46:41.864Z",
+        "to": [
+          "Hema Keshava"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "Re: Reference contact & template"
+      },
+      "participants": [
+        "Ben Alaya, Aymen",
+        "Girard, Camille",
+        "Hema Keshava",
+        "Jade Nguyen",
+        "Michael Markman",
+        "Philippe Goncalves",
+        "Trinidad Mesa"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "we are at the reception, could you please come pick us up?",
+      "subject": "We are at the reception, could you please come pick us up?",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-18T10:04:19.621Z",
+        "fromName": "jamal azil",
+        "fromEmail": "jamal.azil@oracle.com",
+        "attachments": [],
+        "subject": "We are at the reception, could you please come pick us up?"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "jamal azil"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "systems access",
+      "subject": "Systems Access",
+      "organization": "Other",
+      "waitingStatus": "outbound_only",
+      "inboundCount": 0,
+      "outboundCount": 1,
+      "latestInbound": null,
+      "latestOutbound": {
+        "date": "2026-03-18T09:32:22.176Z",
+        "to": [
+          "Denis Jankovic"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "RE: Systems Access"
+      },
+      "participants": [
+        "Denis Jankovic",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "tr: systems access",
+      "subject": "TR: Systems Access",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-18T09:12:35.804Z",
+        "fromName": "Denis Jankovic",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A4B2FD1B89F24D009B3B8D3E85419E7E-26484CEF-AF",
+        "attachments": [],
+        "subject": "TR: Systems Access"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Denis Jankovic",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "trustpair - invitation to create an account",
+      "subject": "Trustpair - Invitation to create an account",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-18T09:11:02.544Z",
+        "fromName": "Trustpair",
+        "fromEmail": "no-reply@trustpair.com",
+        "attachments": [],
+        "subject": "Trustpair - Invitation to create an account"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "Trustpair"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "cfgi proposal",
+      "subject": "CFGI Proposal",
+      "organization": "CFGI",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-17T18:28:28.041Z",
+        "fromName": "Walid Bouassida",
+        "fromEmail": "wbouassida@cfgi.com",
+        "attachments": [
+          "Abivax_CFGI_PMO&Change proposal.pdf"
+        ],
+        "subject": "CFGI Proposal"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Hema Keshava",
+        "Jean-Arnold Coutareau",
+        "Michael Markman",
+        "Walid Bouassida"
+      ],
+      "recentAttachments": [
+        "Abivax_CFGI_PMO&Change proposal.pdf"
+      ],
+      "canonicalDocuments": [
+        {
+          "id": "cfgi-local-pmo-change-proposal-20260317",
+          "title": "Abivax_CFGI_PMO&Change proposal",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/cfgi-pmo-change/Abivax_CFGI_PMO&Change proposal.pdf"
+        }
+      ]
+    },
+    {
+      "threadKey": "[external] : re: abivax x netsuite : following up on our meeting",
+      "subject": "[External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "waiting_on_mike",
+      "inboundCount": 4,
+      "outboundCount": 2,
+      "latestInbound": {
+        "date": "2026-03-17T16:16:08.834Z",
+        "fromName": "jamal azil",
+        "fromEmail": "jamal.azil@oracle.com",
+        "attachments": [],
+        "subject": "Re: [External] : RE: ABIVAX x NetSuite : Following up on our meeting"
+      },
+      "latestOutbound": {
+        "date": "2026-03-17T15:59:21.542Z",
+        "to": [
+          "jamal azil"
+        ],
+        "cc": [
+          "Girard, Camille",
+          "Laurent Bailly",
+          "Vincent Gehanno",
+          "Venceslas dEchallens",
+          "Olivier ROCHETTE",
+          "Ben Alaya, Aymen"
+        ],
+        "attachments": [],
+        "subject": "RE: [External] : RE: ABIVAX x NetSuite : Following up on our meeting"
+      },
+      "participants": [
+        "Abdelhafid IRBAIYNE",
+        "Ben Alaya, Aymen",
+        "Girard, Camille",
+        "Laurent Bailly",
+        "Mazdak SAYYEDLAR",
+        "Michael Markman",
+        "Olivier ROCHETTE",
+        "Venceslas dEchallens",
+        "Vincent Gehanno",
+        "jamal azil"
+      ],
+      "recentAttachments": [
+        "ABIVAX TEAM V1.pptx",
+        "NetSuite Offer Summary V2.xlsx",
+        "Netsuite RACI standard Suite Success ABIVAX V1.xlsx",
+        "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      ],
+      "canonicalDocuments": [
+        {
+          "id": "netsuite-offer-summary-v2-20260317",
+          "title": "NetSuite Offer Summary V2",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary V2.xlsx"
+        },
+        {
+          "id": "netsuite-sow-draft-v3-20260317",
+          "title": "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026",
+          "status": "draft",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+        },
+        {
+          "id": "netsuite-raci-v1-20260317",
+          "title": "Netsuite RACI standard Suite Success ABIVAX V1",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/Netsuite RACI standard Suite Success ABIVAX V1.xlsx"
+        },
+        {
+          "id": "netsuite-team-v1-20260317",
+          "title": "ABIVAX TEAM V1",
+          "status": "current",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/ABIVAX TEAM V1.pptx"
+        }
+      ]
+    },
+    {
+      "threadKey": "erp program legal review support: netsuite and kpmg documents",
+      "subject": "ERP program legal review support: NetSuite and KPMG documents",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "outbound_only",
+      "inboundCount": 0,
+      "outboundCount": 2,
+      "latestInbound": null,
+      "latestOutbound": {
+        "date": "2026-03-17T15:37:40.922Z",
+        "to": [
+          "Thomas Descusses",
+          "Olivia Bui",
+          "Peggy Gambardella",
+          "Christophe Hennequin",
+          "Jade Nguyen"
+        ],
+        "cc": [
+          "Hema Keshava"
+        ],
+        "attachments": [
+          "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+          "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+        ],
+        "subject": "RE: ERP program legal review support: NetSuite and KPMG documents"
+      },
+      "participants": [
+        "Christophe Hennequin",
+        "Didier Blondel",
+        "Hema Keshava",
+        "Jade Nguyen",
+        "Michael Markman",
+        "Olivia Bui",
+        "Peggy Gambardella",
+        "Thomas Descusses"
+      ],
+      "recentAttachments": [
+        "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf",
+        "nsgbu-subscription-services-agreement-v061625-uk-eng.pdf"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "[abivax #116646] accès réseau abivax",
+      "subject": "[Abivax #116646] Accès réseau ABIVAX",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-17T15:29:56.620Z",
+        "fromName": "Juliette Courtot",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=56AAF871E6B145A4A2A877E59639F184-JULIETTE.CO",
+        "attachments": [],
+        "subject": "RE: [Abivax #116646] Accès réseau ABIVAX"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Christophe Hennequin",
+        "Juliette Courtot",
+        "Michael Markman",
+        "Support MBVSI"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "weekly summary of qms documents update 17mar2026",
+      "subject": "Weekly Summary of QMS Documents Update 17Mar2026",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-17T15:22:39.427Z",
+        "fromName": "Malinda Micho",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=5972A36688624BBBADE0ACF2AE9511CB-A9217426-07",
+        "attachments": [],
+        "subject": "RE: Weekly Summary of QMS Documents Update 17Mar2026"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "ALLABIVAX-E",
+        "Katy Vu",
+        "Malinda Micho",
+        "Mark Hronec",
+        "allabivax"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "more ways to save",
+      "subject": "More ways to save",
+      "organization": "Other",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-17T15:08:48.208Z",
+        "fromName": "ADP TotalSource",
+        "fromEmail": "noreply@user.adp.com",
+        "attachments": [],
+        "subject": "More ways to save"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "ADP TotalSource",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "engage file",
+      "subject": "ENGAGE FILE",
+      "organization": "Abivax",
+      "waitingStatus": "waiting_on_external",
+      "inboundCount": 1,
+      "outboundCount": 1,
+      "latestInbound": {
+        "date": "2026-03-17T13:37:55.389Z",
+        "fromName": "Juliette Courtot",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=56AAF871E6B145A4A2A877E59639F184-JULIETTE.CO",
+        "attachments": [
+          "ENGAGE_2026.xlsx"
+        ],
+        "subject": "ENGAGE FILE"
+      },
+      "latestOutbound": {
+        "date": "2026-03-17T14:03:54.758Z",
+        "to": [
+          "Juliette Courtot"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "RE: ENGAGE FILE"
+      },
+      "participants": [
+        "Juliette Courtot",
+        "Michael Markman"
+      ],
+      "recentAttachments": [
+        "ENGAGE_2026.xlsx"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "accès réseau abivax",
+      "subject": "Accès réseau ABIVAX",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-17T13:30:32.407Z",
+        "fromName": "Juliette Courtot",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=56AAF871E6B145A4A2A877E59639F184-JULIETTE.CO",
+        "attachments": [],
+        "subject": "Accès réseau ABIVAX"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Benjamin Talmant",
+        "Christophe Hennequin",
+        "Jade Nguyen",
+        "Juliette Courtot",
+        "Lionel Le Floch",
+        "Michael Markman",
+        "Philippe Goncalves",
+        "Support MBVSI"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "quick discussion on kpmg erp support proposal",
+      "subject": "Quick discussion on KPMG ERP support proposal",
+      "organization": "KPMG",
+      "waitingStatus": "waiting_on_external",
+      "inboundCount": 1,
+      "outboundCount": 2,
+      "latestInbound": {
+        "date": "2026-03-17T09:34:50.050Z",
+        "fromName": "Girard, Camille",
+        "fromEmail": "camillegirard@kpmg.fr",
+        "attachments": [],
+        "subject": "RE: Quick discussion on KPMG ERP support proposal"
+      },
+      "latestOutbound": {
+        "date": "2026-03-17T11:07:11.519Z",
+        "to": [
+          "Girard, Camille"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "RE: Quick discussion on KPMG ERP support proposal"
+      },
+      "participants": [
+        "Girard, Camille",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "[rappel] objectifs annuels 2026",
+      "subject": "[Rappel] Objectifs Annuels 2026",
+      "organization": "Lucca",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-17T05:00:36.567Z",
+        "fromName": "Lucca",
+        "fromEmail": "no-reply@ilucca.net",
+        "attachments": [],
+        "subject": "[Rappel] Objectifs Annuels 2026"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Lucca",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "automatic reply: [external] : re: abivax x netsuite : following up on our meeting",
+      "subject": "Automatic reply: [External] : RE: ABIVAX x NetSuite : Following up on our meeting",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 2,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-16T17:18:32.597Z",
+        "fromName": "jamal azil",
+        "fromEmail": "jamal.azil@oracle.com",
+        "attachments": [],
+        "subject": "Automatic reply: [External] : RE: ABIVAX x NetSuite : Following up on our meeting"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Michael Markman",
+        "Venceslas dEchallens",
+        "jamal azil"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "2026 march madness -> sign-up & key dates",
+      "subject": "2026 March Madness -> Sign-Up & Key Dates",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 1,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-16T15:51:55.272Z",
+        "fromName": "Adrian Holbrook",
+        "fromEmail": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=58161941CBE64A879014D4A2E8D5220F-EA331A62-88",
+        "attachments": [
+          "image.png"
+        ],
+        "subject": "Re: 2026 March Madness -> Sign-Up & Key Dates "
+      },
+      "latestOutbound": null,
+      "participants": [
+        "ALLABIVAXUS",
+        "Adrian Holbrook"
+      ],
+      "recentAttachments": [
+        "image.png"
+      ],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "abivax x cfgi - treasury it conversation",
+      "subject": "Abivax x CFGI - Treasury IT Conversation",
+      "organization": "Abivax",
+      "waitingStatus": "inbound_only",
+      "inboundCount": 2,
+      "outboundCount": 0,
+      "latestInbound": {
+        "date": "2026-03-16T11:16:02.812Z",
+        "fromName": "Jean-Arnold Coutareau",
+        "fromEmail": "jacoutareau@cfgi.com",
+        "attachments": [],
+        "subject": "RE: Abivax x CFGI - Treasury IT Conversation"
+      },
+      "latestOutbound": null,
+      "participants": [
+        "Angela DePoy",
+        "Hema Keshava",
+        "Jean-Arnold Coutareau",
+        "Michael Markman",
+        "Roxandra Sturdza",
+        "Tim Winston",
+        "Trinidad Mesa",
+        "Youness Tyamaz",
+        "wbouassida"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "finance ai use cases during the erp transition",
+      "subject": "Finance AI use cases during the ERP transition",
+      "organization": "Other",
+      "waitingStatus": "outbound_only",
+      "inboundCount": 0,
+      "outboundCount": 1,
+      "latestInbound": null,
+      "latestOutbound": {
+        "date": "2026-03-16T11:07:39.616Z",
+        "to": [
+          "Jade Nguyen"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "Finance AI use cases during the ERP transition"
+      },
+      "participants": [
+        "Jade Nguyen",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "abivax x netsuite : following up on our meeting",
+      "subject": "ABIVAX x NetSuite : Following up on our meeting",
+      "organization": "Oracle/NetSuite",
+      "waitingStatus": "outbound_only",
+      "inboundCount": 0,
+      "outboundCount": 1,
+      "latestInbound": null,
+      "latestOutbound": {
+        "date": "2026-03-16T10:37:56.369Z",
+        "to": [
+          "jamal azil"
+        ],
+        "cc": [
+          "Girard, Camille",
+          "Ben Alaya, Aymen",
+          "Laurent Bailly",
+          "Vincent Gehanno",
+          "Venceslas dEchallens"
+        ],
+        "attachments": [],
+        "subject": "RE: ABIVAX x NetSuite : Following up on our meeting"
+      },
+      "participants": [
+        "Ben Alaya, Aymen",
+        "Girard, Camille",
+        "Laurent Bailly",
+        "Michael Markman",
+        "Venceslas dEchallens",
+        "Vincent Gehanno",
+        "jamal azil"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": [
+        {
+          "id": "netsuite-offer-summary-20260305",
+          "title": "NetSuite Offer Summary",
+          "status": "superseded",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/NetSuite Offer Summary.xlsx"
+        },
+        {
+          "id": "netsuite-sow-draft-20260305",
+          "title": "SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026",
+          "status": "superseded",
+          "sourcePath": "data/abivax/vendor-assets/netsuite-commercial/SuiteSuccess Financials Premium SOW ABIVAX - DRAFT - 05032026.pdf"
+        }
+      ]
+    },
+    {
+      "threadKey": "your visit to the paris office",
+      "subject": "Your visit to the Paris office",
+      "organization": "Other",
+      "waitingStatus": "outbound_only",
+      "inboundCount": 0,
+      "outboundCount": 1,
+      "latestInbound": null,
+      "latestOutbound": {
+        "date": "2026-03-15T21:04:00.299Z",
+        "to": [
+          "Matt Epley"
+        ],
+        "cc": [],
+        "attachments": [],
+        "subject": "Re: Your visit to the Paris office"
+      },
+      "participants": [
+        "Matt Epley",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    },
+    {
+      "threadKey": "v3 availability poll – [1/2] master data management workshop",
+      "subject": "V3 Availability Poll – [1/2] Master Data Management Workshop",
+      "organization": "Other",
+      "waitingStatus": "outbound_only",
+      "inboundCount": 0,
+      "outboundCount": 1,
+      "latestInbound": null,
+      "latestOutbound": {
+        "date": "2026-03-13T14:14:39.896Z",
+        "to": [
+          "Girard, Camille",
+          "Hema Keshava",
+          "Christophe Hennequin"
+        ],
+        "cc": [
+          "Ben Alaya, Aymen"
+        ],
+        "attachments": [],
+        "subject": "Re: V3 Availability Poll – [1/2] Master Data Management Workshop"
+      },
+      "participants": [
+        "Ben Alaya, Aymen",
+        "Christophe Hennequin",
+        "Girard, Camille",
+        "Hema Keshava",
+        "Michael Markman"
+      ],
+      "recentAttachments": [],
+      "canonicalDocuments": []
+    }
+  ]
+}

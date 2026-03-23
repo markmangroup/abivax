@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-03-23T16:05:42.638Z",
+  "purpose": "Current machine-readable operating context across Outlook-derived inputs, staged document packages, and canonical repo promotion state.",
+  "sourceSystems": {
+    "outlookInboxLocalScan": {
+      "sourcePath": "temp/recent-emails.json",
+      "exists": true,
+      "fileModifiedAt": "2026-03-23T15:35:49.997Z",
+      "earliestEmailAt": "2026-03-13T14:14:39.896Z",
+      "latestEmailAt": "2026-03-23T09:27:39.122Z",
+      "emailCount": 57
+    },
+    "outlookSentLocalScan": {
+      "sourcePath": "temp/recent-sent-emails.json",
+      "exists": true,
+      "fileModifiedAt": "2026-03-23T15:27:05.280Z",
+      "emailCount": 27
+    },
+    "stagedEmailIngest": {
+      "sourcePath": "data/abivax/emails_staging/ingest_index.json",
+      "lastRunAt": "2026-03-09T12:29:32.6452913-04:00",
+      "windowStart": "2026-03-06T10:18:34.5011972-05:00",
+      "windowEnd": "2026-03-09T12:29:32.6452913-04:00",
+      "totalEmails": 6
+    },
+    "stagedEmailWatermark": {
+      "sourcePath": "data/abivax/email_ingest_state.json",
+      "lastPulledAt": "2026-03-09T12:29:32.6452913-04:00",
+      "lastRunFile": "emails_2026-03-09.json"
+    },
+    "stagedAttachmentFolders": {
+      "sourcePath": "temp/recent-email-attachments",
+      "folderCount": 20,
+      "queueItemCount": 13,
+      "stagedOnlyCount": 6
+    },
+    "canonicalRegistry": {
+      "sourcePath": "data/abivax/document_registry.json",
+      "documentCount": 21
+    }
+  },
+  "activeContextWindow": {
+    "inboxEarliestAt": "2026-03-13T14:14:39.896Z",
+    "inboxLatestAt": "2026-03-23T09:27:39.122Z",
+    "note": "Use this window as the explicit freshness boundary for sessions relying on local Outlook exports."
+  },
+  "workQueues": {
+    "unpromotedDocumentPackages": 7,
+    "activeThreads": 45,
+    "waitingOnMikeThreads": 5,
+    "waitingOnExternalThreads": 4
+  },
+  "latestPackagesByOrganization": {
+    "netSuite": {
+      "threadKey": "abivax netsuite implementation | customer side support team",
+      "subject": "ABIVAX NetSuite Implementation | Customer Side support Team",
+      "latestInboundAt": "2026-03-20T15:07:05.703Z",
+      "latestOutboundAt": null,
+      "waitingStatus": "inbound_only",
+      "recentAttachments": [
+        "ABIVAX Oracle Feedback File.docx",
+        "CV ACHAOUI.pdf",
+        "CV IMEGZARI.pdf",
+        "CV OICHEM.pdf",
+        "Estimates.zip",
+        "SuiteSuccess Financials Premium SOW UK - ABIVAX draft V3 17032026.pdf"
+      ]
+    },
+    "cfgi": {
+      "threadKey": "cfgi support proposal for abivax netsuite program",
+      "subject": "CFGI Support Proposal for Abivax NetSuite Program",
+      "latestInboundAt": "2026-03-19T19:28:20.529Z",
+      "latestOutboundAt": null,
+      "waitingStatus": "inbound_only",
+      "recentAttachments": [
+        "ABIVAX_CFGI_Advisory model_Effort Details_03.19.26.xlsx",
+        "CFGI_Abivax_NS_Advisory_Proposal_03.19.26vF.pdf"
+      ]
+    },
+    "kpmg": {
+      "threadKey": "kpmg proposal",
+      "subject": "KPMG proposal",
+      "latestInboundAt": "2026-03-18T15:56:19.780Z",
+      "latestOutboundAt": "2026-03-18T15:57:22.698Z",
+      "waitingStatus": "waiting_on_external",
+      "recentAttachments": [
+        "032026_Proposal_AMOA_ABIVAX_v1.pdf"
+      ]
+    },
+    "abivaxInternal": {
+      "threadKey": "hedge accounting",
+      "subject": "Hedge accounting",
+      "latestInboundAt": "2026-03-19T17:45:08.861Z",
+      "latestOutboundAt": null,
+      "waitingStatus": "inbound_only",
+      "recentAttachments": [
+        "Abivax - Comptabilité couverture.xlsx",
+        "Abivax - Hedging documentation.docx",
+        "Abivax - Note Hedge Accounting v17.03.2026.pdf"
+      ]
+    }
+  },
+  "outputFiles": {
+    "currentContext": "data/abivax/current_context.json",
+    "documentIntakeQueue": "data/abivax/document_intake_queue.json",
+    "threadRegistry": "data/abivax/thread_registry.json"
+  }
+}
