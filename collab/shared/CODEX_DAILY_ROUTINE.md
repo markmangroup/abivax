@@ -39,7 +39,7 @@ Use whatever local Outlook/desktop scripts are current for this machine.
 
 For each new email thread or attachment since the last watermark in `data/abivax/email_ingest_state.json`:
 
-1. Identify new packages (vendor emails, internal threads, attachments)
+1. Identify new packages (vendor emails, internal threads, attachments, broader-role/career-relevant emails)
 2. Archive attachments into `data/abivax/vendor-assets/` or appropriate subfolder
 3. Update `data/abivax/document_intake_queue.json` with new items
 4. Update `data/abivax/thread_registry.json` with latest thread state
@@ -51,6 +51,9 @@ Priority threads to always check:
 - KPMG (Camille Girard)
 - Internal Abivax (Hema Keshava, Jade Nguyen, Didier Blondel)
 - Reference calls (any NetSuite reference thread)
+- Broader role / career / visibility threads that may matter to Mike beyond ERP execution
+
+Do not limit the sync to ERP-only email. If something is relevant to Mike's broader Abivax role, leadership visibility, internal positioning, or future outputs, it should be surfaced too.
 
 ---
 
@@ -81,6 +84,10 @@ Contents must include:
 3. Which threads are now waiting on Mike (and need replies)
 4. Explicit list of files Claude should read for this session
 5. What Claude's task is today (if known from context)
+
+Also include:
+- any broader-role / career-relevant email signals surfaced in `data/abivax/current_context.json`
+- whether Claude should decide where those signals belong in the app or output system
 
 If no specific Claude task is known, default to:
 - Review new thread activity

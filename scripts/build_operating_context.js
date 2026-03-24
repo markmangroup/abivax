@@ -145,6 +145,81 @@ function summarizeRecentPackage(items, orgName) {
   };
 }
 
+function subjectIncludes(thread, patterns) {
+  const value = `${thread.subject} ${thread.latestInbound?.subject || ""} ${thread.latestOutbound?.subject || ""}`.toLowerCase();
+  return patterns.some((pattern) => value.includes(pattern));
+}
+
+function participantIncludes(thread, patterns) {
+  const value = (thread.participants || []).join(" ").toLowerCase();
+  return patterns.some((pattern) => value.includes(pattern));
+}
+
+function classifyThreadFocus(thread) {
+  if (
+    subjectIncludes(thread, ["netsuite", "oracle", "cfgi", "kpmg", "erp", "sow", "reference"]) ||
+    ["Oracle/NetSuite", "CFGI", "KPMG", "Reference / EFESO"].includes(thread.organization)
+  ) {
+    return "erp";
+  }
+
+  if (
+    subjectIncludes(thread, [
+      "objective",
+      "objectifs annuels",
+      "new joiners",
+      "organization chart",
+      "hr communication",
+      "hedge accounting",
+      "treasury",
+      "leadership",
+      "bio",
+      "performance",
+      "promotion",
+      "career",
+      "talent",
+    ]) ||
+    participantIncludes(thread, ["didier", "hema", "sophie lacourrege", "marc de garidel"])
+  ) {
+    return "broader-role";
+  }
+
+  if (
+    subjectIncludes(thread, [
+      "guest badge",
+      "march madness",
+      "stay vigilant",
+      "code to finish signing in",
+      "code to reset your adp password",
+      "open enrollment",
+      "hotel",
+      "invoice copy",
+    ]) ||
+    thread.organization === "Lucca"
+  ) {
+    return "admin-noise";
+  }
+
+  if (thread.organization === "Abivax" || thread.organization === "Other") {
+    return "general";
+  }
+
+  return "general";
+}
+
+function summarizeThread(thread) {
+  return {
+    threadKey: thread.threadKey,
+    subject: thread.subject,
+    organization: thread.organization,
+    waitingStatus: thread.waitingStatus,
+    latestInboundAt: thread.latestInbound?.date || null,
+    latestOutboundAt: thread.latestOutbound?.date || null,
+    participants: thread.participants.slice(0, 8),
+    recentAttachments: thread.recentAttachments.slice(0, 8),
+  };
+}
+
 function main() {
   const root = process.cwd();
   const tempEmailsPath = path.join(root, "temp", "recent-emails.json");
@@ -258,6 +333,12 @@ function main() {
         threadKey: thread.threadKey,
         subject: thread.subject,
         organization: thread.organization,
+        focus: classifyThreadFocus({
+          ...thread,
+          waitingStatus: makeThreadStatus(thread.latestInbound, thread.latestOutbound),
+          participants: [...thread.participants].sort(),
+          recentAttachments: [...thread.recentAttachments].sort(),
+        }),
         waitingStatus: makeThreadStatus(thread.latestInbound, thread.latestOutbound),
         inboundCount: thread.inboundCount,
         outboundCount: thread.outboundCount,
@@ -383,6 +464,7 @@ function main() {
       activeThreads: threads.length,
       waitingOnMikeThreads: threads.filter((thread) => thread.waitingStatus === "waiting_on_mike").length,
       waitingOnExternalThreads: threads.filter((thread) => thread.waitingStatus === "waiting_on_external").length,
+      broaderRoleCandidates: threads.filter((thread) => thread.focus === "broader-role").length,
     },
     latestPackagesByOrganization: {
       netSuite: summarizeRecentPackage(threads, "Oracle/NetSuite"),
@@ -395,6 +477,20 @@ function main() {
       documentIntakeQueue: "data/abivax/document_intake_queue.json",
       threadRegistry: "data/abivax/thread_registry.json",
     },
+    broaderRoleSignals: {
+      purpose: "Threads that may matter for Mike's broader role, reputation, leadership visibility, or future app/output design even if they are not direct ERP execution items.",
+      candidateCount: threads.filter((thread) => thread.focus === "broader-role").length,
+      candidates: threads
+        .filter((thread) => thread.focus === "broader-role")
+        .sort((a, b) => String(b.latestInbound?.date || b.latestOutbound?.date || "").localeCompare(String(a.latestInbound?.date || a.latestOutbound?.date || "")))
+        .slice(0, 12)
+        .map(summarizeThread),
+      instructionsForClaude: [
+        "Review these broader-role threads in addition to ERP/vendor threads.",
+        "Decide which facts should live in canonical data versus a lighter operator/context layer.",
+        "Recommend where this information should be consumed in the app or output system so Mike benefits from it in future sessions."
+      ]
+    }
   };
 
   saveJson(intakeQueuePath, {

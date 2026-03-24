@@ -1,4 +1,4 @@
-# Codex Handoff — 2026-03-24
+# Codex Handoff - 2026-03-24
 
 **Read `collab/shared/CODEX_DAILY_ROUTINE.md` first. That file is the standing instruction set.**
 
@@ -6,57 +6,78 @@ This file adds today's specific context on top of the routine.
 
 ---
 
-## What Claude did yesterday / this morning (2026-03-23 → 2026-03-24)
+## What Codex refreshed today
 
-- Read and verified all source documents directly (NetSuite SOW v3, CFGI combined proposal, estimates, Oracle feedback file)
-- Fixed three bugs in the app (people.json missing fields, spine redirect, Today page React crash)
-- Wrote vendor email drafts and May 21 backward plan: `collab/claude/outputs/2026-03-23_vendor-followups-and-may21.md`
-- Committed all changes (commit `40c76c7`) — **not yet pushed to GitHub (VM network restriction)**
-
-**Mike needs to push from his machine before Codex pulls:**
-```
-git push origin main
-```
+- Pulled latest GitHub state before running the daily sync
+- Refreshed local Outlook inbox and sent exports on this machine
+- Rebuilt `data/abivax/current_context.json`, `data/abivax/document_intake_queue.json`, and `data/abivax/thread_registry.json`
+- Kept the March 19 CFGI combined package and March 20 NetSuite package as the latest canonical vendor packages
+- Expanded the operating-context layer so broader-role, career, and leadership-relevant emails are surfaced alongside ERP threads
 
 ---
 
-## What to specifically check today
+## What to specifically use as current truth
 
 ### Oracle / NetSuite thread
-- Last inbound: 2026-03-20 (Jamal — SOW v3 + estimates + CVs + Oracle Feedback File)
-- Last outbound: none yet
-- **SOW validity expires March 30, 2026 — one week from yesterday**
-- Check for any new reply from Jamal or Oracle team since March 20
+
+- Last inbound: 2026-03-20 (Jamal - SOW v3, estimates, CVs, Oracle Feedback File)
+- Last outbound: none yet in repo memory
+- SOW validity expires March 30, 2026
+- Codex did not find a newer Oracle / NetSuite reply in the March 24 local refresh
 
 ### CFGI thread
-- Last inbound: 2026-03-19 (Jean-Arnold — combined advisory proposal)
-- Last outbound: none yet
-- Check for any new reply from CFGI since March 19
 
-### Reference call thread (Efeso / Laure Tchervenkov)
-- Last inbound: 2026-03-23 09:27 (Laure replied — "Re: Prise de référence - NetSuite")
-- Check if any follow-up came in since then
-- This is a NetSuite reference check — document any substantive content
+- Last inbound: 2026-03-19 (Jean-Arnold - combined advisory proposal)
+- Last outbound: none yet in repo memory
+- Codex did not find a newer CFGI reply in the March 24 local refresh
 
-### Any other new inbound relevant to the program
+### Reference call thread
+
+- Last inbound: 2026-03-23 09:27 ET (Laure - `Re: Prise de reference - NetSuite`)
+- Codex did not find a newer follow-up in the March 24 local refresh
+
+### Broader-role / leadership signals surfaced in the refresh
+
+- `New Equity Program Approved by the Board`
+- `Abivax - Phase 2 | Workshop Best of Breed Treasury`
+- `Corporate card`
+- `Abivax 2026 Initiatives`
+- `Hedge accounting`
+
+Use `data/abivax/current_context.json` for the full candidate list and timestamps.
 
 ---
 
-## What to tell Claude after sync
+## Claude's task after this sync
 
-Once pushed, Claude's task is:
-- Review any new Oracle, CFGI, or reference call content
-- Update the vendor email drafts if new information changes what Mike should say
-- Keep working on the May 21 backward plan if needed
-- The two email drafts in `collab/claude/outputs/2026-03-23_vendor-followups-and-may21.md` are ready for Mike to send — flag if anything from the new emails changes that
+- Review any new Oracle, CFGI, or reference-call content only if it appears in the synced repo state
+- Update the vendor email drafts if today's refreshed context changes what Mike should send
+- Keep the May 21 backward plan current
+- Review broader-role and career-relevant inbox signals and recommend where they should be consumed in the app or output system
+- Operate from the declared freshness boundary in `data/abivax/current_context.json` instead of reopening older assumptions
+
+The existing vendor draft output remains:
+
+- `collab/claude/outputs/2026-03-23_vendor-followups-and-may21.md`
 
 ---
 
-## Files Claude should read at start of next session
+## Files Claude should read
 
 - `collab/shared/CODEX_DAILY_ROUTINE.md`
 - `collab/shared/CURRENT_OPERATING_BRIEF.md`
+- `collab/shared/SOURCE_SYSTEM_FLOW.md`
+- `collab/shared/CONTEXT_WINDOW_PROTOCOL.md`
 - `data/abivax/current_context.json`
+- `data/abivax/document_intake_queue.json`
 - `data/abivax/thread_registry.json`
-- This file (`collab/claude/prompts/2026-03-24_CODEX_HANDOFF.md`)
-- Whatever Codex writes as the Claude handoff after today's sync
+- `collab/claude/prompts/2026-03-23_CLAUDE_HANDOFF_PACKET.md`
+- this file: `collab/claude/prompts/2026-03-24_CODEX_HANDOFF.md`
+
+---
+
+## Declared freshness boundary
+
+- Local Outlook inbox snapshot is current through `2026-03-24T14:20:40.352Z`
+- Local Outlook sent snapshot was refreshed on March 24, 2026
+- Treat `data/abivax/current_context.json` as the canonical boundary for this handoff

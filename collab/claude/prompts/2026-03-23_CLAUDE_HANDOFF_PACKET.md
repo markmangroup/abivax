@@ -9,8 +9,8 @@ Claude is the active context window once Mike switches.
 Do not assume Mike will bounce back to Codex casually.
 Only hand back to Codex if there is:
 
-- a new external/source-system trigger, or
-- a blocker requiring Outlook/Desktop/repo-write refresh work
+- a new external or source-system trigger, or
+- a blocker requiring Outlook, Desktop, or repo-refresh work
 
 If that happens, follow `collab/shared/CONTEXT_WINDOW_PROTOCOL.md`.
 
@@ -35,9 +35,10 @@ Use `data/abivax/current_context.json` as the explicit context-window declaratio
 
 Current intended read:
 
-- local Outlook inbox/sent snapshot is current through the March 23, 2026 refresh performed by Codex
+- local Outlook inbox and sent snapshot is current through the March 24, 2026 refresh performed by Codex
 - the March 19 CFGI combined package is archived and canonicalized
-- the March 20 NetSuite support/legal package is archived and canonicalized
+- the March 20 NetSuite support and legal package is archived and canonicalized
+- broader-role and leadership-relevant inbox signals are surfaced in `data/abivax/current_context.json` and are in scope for Claude
 
 ## What is already done by Codex
 
@@ -47,17 +48,20 @@ Current intended read:
 - single-active-window protocol documented
 - operating context files generated
 - canonical vendor review updated for the March 19 and March 20 packages
+- broader-role / career signal detection added to the operating context layer
 
 ## What Claude should do
 
 - Work only from repo context unless a real trigger requires handoff back to Codex
 - Draft, synthesize, and plan against the current package
 - Assume the board-to-May-21 objective is the governing frame
+- Review broader-role and career-relevant inbox signals in `data/abivax/current_context.json`, not just ERP or vendor threads
+- Help determine where those broader signals should be consumed in the app or output system
 
 ## What Claude should not do
 
 - Do not ask Mike to reconstruct context from memory if it should already be in the repo
-- Do not treat old UI/front-end work as active
+- Do not treat old UI or front-end work as active
 - Do not reopen Codex unless the protocol actually requires it
 
 ## If Claude must hand back to Codex
@@ -67,4 +71,4 @@ Write one short note with:
 1. what Claude was doing
 2. what new trigger or blocker occurred
 3. exactly what Codex must refresh or ingest
-4. which prompt/file Claude should resume from after Codex finishes
+4. which prompt or file Claude should resume from after Codex finishes

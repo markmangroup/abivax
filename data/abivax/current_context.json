@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-03-23T16:05:42.638Z",
+  "generatedAt": "2026-03-24T14:56:21.857Z",
   "purpose": "Current machine-readable operating context across Outlook-derived inputs, staged document packages, and canonical repo promotion state.",
   "sourceSystems": {
     "outlookInboxLocalScan": {
       "sourcePath": "temp/recent-emails.json",
       "exists": true,
-      "fileModifiedAt": "2026-03-23T15:35:49.997Z",
-      "earliestEmailAt": "2026-03-13T14:14:39.896Z",
-      "latestEmailAt": "2026-03-23T09:27:39.122Z",
-      "emailCount": 57
+      "fileModifiedAt": "2026-03-24T14:56:10.517Z",
+      "earliestEmailAt": "2026-03-15T21:04:00.299Z",
+      "latestEmailAt": "2026-03-24T14:20:40.352Z",
+      "emailCount": 62
     },
     "outlookSentLocalScan": {
       "sourcePath": "temp/recent-sent-emails.json",
       "exists": true,
-      "fileModifiedAt": "2026-03-23T15:27:05.280Z",
-      "emailCount": 27
+      "fileModifiedAt": "2026-03-24T14:56:09.820Z",
+      "emailCount": 26
     },
     "stagedEmailIngest": {
       "sourcePath": "data/abivax/emails_staging/ingest_index.json",
@@ -40,15 +40,16 @@
     }
   },
   "activeContextWindow": {
-    "inboxEarliestAt": "2026-03-13T14:14:39.896Z",
-    "inboxLatestAt": "2026-03-23T09:27:39.122Z",
+    "inboxEarliestAt": "2026-03-15T21:04:00.299Z",
+    "inboxLatestAt": "2026-03-24T14:20:40.352Z",
     "note": "Use this window as the explicit freshness boundary for sessions relying on local Outlook exports."
   },
   "workQueues": {
     "unpromotedDocumentPackages": 7,
-    "activeThreads": 45,
-    "waitingOnMikeThreads": 5,
-    "waitingOnExternalThreads": 4
+    "activeThreads": 53,
+    "waitingOnMikeThreads": 4,
+    "waitingOnExternalThreads": 6,
+    "broaderRoleCandidates": 12
   },
   "latestPackagesByOrganization": {
     "netSuite": {
@@ -88,15 +89,14 @@
       ]
     },
     "abivaxInternal": {
-      "threadKey": "hedge accounting",
-      "subject": "Hedge accounting",
-      "latestInboundAt": "2026-03-19T17:45:08.861Z",
+      "threadKey": "abivax - phase 2 | workshop best of breed treasury",
+      "subject": "Abivax - Phase 2 | Workshop Best of Breed Treasury",
+      "latestInboundAt": "2026-03-24T09:10:26.500Z",
       "latestOutboundAt": null,
       "waitingStatus": "inbound_only",
       "recentAttachments": [
-        "Abivax - Comptabilité couverture.xlsx",
-        "Abivax - Hedging documentation.docx",
-        "Abivax - Note Hedge Accounting v17.03.2026.pdf"
+        "Abivax - Phase 2 WS BoB Treasury CR.pdf",
+        "RE ERPbesoin trésorerie (fichiers à extraire) - ERPTMS (envoi du fichier de paiement).msg"
       ]
     }
   },
@@ -104,5 +104,218 @@
     "currentContext": "data/abivax/current_context.json",
     "documentIntakeQueue": "data/abivax/document_intake_queue.json",
     "threadRegistry": "data/abivax/thread_registry.json"
+  },
+  "broaderRoleSignals": {
+    "purpose": "Threads that may matter for Mike's broader role, reputation, leadership visibility, or future app/output design even if they are not direct ERP execution items.",
+    "candidateCount": 12,
+    "candidates": [
+      {
+        "threadKey": "new equity program approved by the board",
+        "subject": "New Equity Program Approved by the Board",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-24T12:39:38.991Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Alexis Gillis",
+          "Amy Adams",
+          "Arick Forsyth",
+          "Ashley Harper",
+          "Aude Garcel",
+          "Audrey Abecassis Borgus",
+          "Audrey Vautrin",
+          "Bhushan Kanumuri"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "abivax - phase 2 | workshop best of breed treasury",
+        "subject": "Abivax - Phase 2 | Workshop Best of Breed Treasury",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-24T09:10:26.500Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Ben Alaya, Aymen",
+          "Denis Jankovic",
+          "Girard, Camille",
+          "Hema Keshava",
+          "Jade Nguyen",
+          "Matt Epley",
+          "Mercier, Thelma",
+          "Michael Markman"
+        ],
+        "recentAttachments": [
+          "Abivax - Phase 2 WS BoB Treasury CR.pdf",
+          "RE ERPbesoin trésorerie (fichiers à extraire) - ERPTMS (envoi du fichier de paiement).msg"
+        ]
+      },
+      {
+        "threadKey": "corporate card",
+        "subject": "Corporate card",
+        "organization": "Other",
+        "waitingStatus": "outbound_only",
+        "latestInboundAt": null,
+        "latestOutboundAt": "2026-03-23T19:36:01.791Z",
+        "participants": [
+          "Hema Keshava",
+          "Matt Epley",
+          "Michael Markman"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "abivax 2026 initiatives",
+        "subject": "Abivax 2026 Initiatives",
+        "organization": "Abivax",
+        "waitingStatus": "waiting_on_external",
+        "latestInboundAt": "2026-03-23T17:28:31.959Z",
+        "latestOutboundAt": "2026-03-23T18:44:46.348Z",
+        "participants": [
+          "Didier Blondel",
+          "Michael Markman"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "hedge accounting",
+        "subject": "Hedge accounting",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-19T17:45:08.861Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Hema Keshava",
+          "Lapous, Robin",
+          "Michael Markman",
+          "Philippe Goncalves",
+          "Roxandra Sturdza",
+          "Souchon, Aurelie",
+          "Trinidad Mesa"
+        ],
+        "recentAttachments": [
+          "Abivax - Comptabilité couverture.xlsx",
+          "Abivax - Hedging documentation.docx",
+          "Abivax - Note Hedge Accounting v17.03.2026.pdf"
+        ]
+      },
+      {
+        "threadKey": "treasury",
+        "subject": "Treasury",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-19T16:06:38.440Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Michael Markman",
+          "Roxandra Sturdza"
+        ],
+        "recentAttachments": [
+          "Abivax TOM - V260305.pdf"
+        ]
+      },
+      {
+        "threadKey": "[lucca] un nouvel article \"hr communication : march 2026 organization chart & bios new joiners \" a été publié",
+        "subject": "[Lucca] Un nouvel article \"HR communication : March 2026 Organization Chart & Bios New Joiners \" a été publié",
+        "organization": "Lucca",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-19T15:32:20.973Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Lucca",
+          "Michael Markman"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "hr communication : abivax new joiners",
+        "subject": "HR Communication : Abivax New Joiners",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-19T15:13:53.009Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "ALLABIVAX-E",
+          "Alexis Gillis",
+          "Christine Cook",
+          "David Zhang",
+          "Didier Blondel",
+          "Emilie Leveau",
+          "Fabio Cataldi",
+          "Ida Hatoum"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "hedge accounting memo",
+        "subject": "Hedge accounting memo",
+        "organization": "Abivax",
+        "waitingStatus": "waiting_on_external",
+        "latestInboundAt": "2026-03-19T08:48:16.722Z",
+        "latestOutboundAt": "2026-03-19T09:59:14.618Z",
+        "participants": [
+          "Michael Markman",
+          "Roxandra Sturdza"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "team dinner",
+        "subject": "Team Dinner",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-18T17:21:12.061Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Denis Jankovic",
+          "Fatma Hemdani",
+          "Frederick Golly",
+          "Hema Keshava",
+          "Juliette Courtot",
+          "Matt Epley",
+          "Michael Markman",
+          "Philippe Goncalves"
+        ],
+        "recentAttachments": []
+      },
+      {
+        "threadKey": "tr: hedge accounting memo",
+        "subject": "TR: Hedge accounting memo",
+        "organization": "Abivax",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-18T14:40:32.616Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Hema Keshava",
+          "Michael Markman",
+          "Philippe Goncalves",
+          "Roxandra Sturdza",
+          "Trinidad Mesa"
+        ],
+        "recentAttachments": [
+          "Abivax - Comptabilité couverture.xlsx",
+          "Abivax - Hedging documentation.docx",
+          "Abivax - Note Hedge Accounting v17.03.2026.pdf"
+        ]
+      },
+      {
+        "threadKey": "[rappel] objectifs annuels 2026",
+        "subject": "[Rappel] Objectifs Annuels 2026",
+        "organization": "Lucca",
+        "waitingStatus": "inbound_only",
+        "latestInboundAt": "2026-03-17T05:00:36.567Z",
+        "latestOutboundAt": null,
+        "participants": [
+          "Lucca",
+          "Michael Markman"
+        ],
+        "recentAttachments": []
+      }
+    ],
+    "instructionsForClaude": [
+      "Review these broader-role threads in addition to ERP/vendor threads.",
+      "Decide which facts should live in canonical data versus a lighter operator/context layer.",
+      "Recommend where this information should be consumed in the app or output system so Mike benefits from it in future sessions."
+    ]
   }
 }
