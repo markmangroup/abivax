@@ -901,10 +901,14 @@ function loadPillarSynthesis(): OperatorSummary | null {
     const pillars: Array<{
       id: string;
       shortLabel: string;
-      keyDecisionsPending?: Array<{ decision: string; owner: string; impact: string }>;
-      nextMoves?: string[];
-      waitingOn?: string[];
+      keyDecisionsPending?: Array<{ decision: string; owner: string; impact: string; entity?: string }>;
+      nextMoves?: Array<string | { fact: string; entity?: string }>;
+      waitingOn?: Array<string | { fact: string; entity?: string }>;
     }> = raw.pillars || [];
+
+    // Helper: pillar_synthesis stores nextMoves/waitingOn as either plain strings or {fact, entity} objects
+    const extractText = (item: string | { fact: string; entity?: string }): string =>
+      typeof item === "string" ? item : item.fact ?? "";
 
     const topDecisions: OperatorSummary["topDecisions"] = [];
     for (const pillar of pillars) {
@@ -924,7 +928,7 @@ function loadPillarSynthesis(): OperatorSummary | null {
     for (const pillar of pillars) {
       const moves = pillar.nextMoves || [];
       if (moves.length > 0) {
-        topNextMoves.push({ move: moves[0], pillar: pillar.shortLabel || pillar.id });
+        topNextMoves.push({ move: extractText(moves[0]), pillar: pillar.shortLabel || pillar.id });
       }
       if (topNextMoves.length >= 5) break;
     }
@@ -933,7 +937,7 @@ function loadPillarSynthesis(): OperatorSummary | null {
     for (const pillar of pillars) {
       const waiting = pillar.waitingOn || [];
       if (waiting.length > 0) {
-        topWaitingOn.push({ item: waiting[0], pillar: pillar.shortLabel || pillar.id });
+        topWaitingOn.push({ item: extractText(waiting[0]), pillar: pillar.shortLabel || pillar.id });
       }
     }
 
